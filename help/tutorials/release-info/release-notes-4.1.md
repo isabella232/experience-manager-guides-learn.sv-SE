@@ -1,9 +1,10 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides 4.1
-description: 'Senaste utgåvan av Adobe Experience Manager Guides '
-source-git-commit: 714d335d95c54fb02b0fe02ad112fa36719dc970
+description: Senaste utgåvan av Adobe Experience Manager Guides
+exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
+source-git-commit: 7fc8eb3ea46eee89eac4d5779f14d61aa6106505
 workflow-type: tm+mt
-source-wordcount: '2983'
+source-wordcount: '2973'
 ht-degree: 2%
 
 ---
@@ -18,7 +19,7 @@ Du kan enkelt uppgradera din nuvarande version av Adobe Experience Manager Guide
 * Om du använder version 3.8.5 måste du uppgradera till version 4.0.x innan du uppgraderar till 4.1.
 * Om du har en tidigare version än 3.8.5, se uppgraderingsavsnittet i den produktspecifika installationsguiden.
 
-Mer information finns i [Uppgraderingsinstruktioner](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/4-1/Adobe-Experience-Manager-Guides_Upgrade-Instructions_EN.pdf).
+Mer information finns i [Uppgraderingsinstruktioner](assets/Adobe-Experience-Manager-Guides_Upgrade-Instructions_EN.pdf).
 
 ## Kompatibilitetsmatris
 
@@ -289,4 +290,3 @@ De buggar som har åtgärdats i olika områden listas nedan:
 * SVG-bilder som inte återges korrekt i redigeringslägena i XML-redigeraren. (9426)
 * Baslinjen respekteras inte vid publicering via Salesforce. (8953)
 * Det finns inte möjlighet att rensa rotkartan från användarinställningarna. (8534)
-
