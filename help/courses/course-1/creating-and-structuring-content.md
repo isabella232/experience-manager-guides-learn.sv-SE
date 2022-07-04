@@ -2,7 +2,7 @@
 title: Skapa innehåll i [!DNL AEM Guides]
 description: Skapa innehåll i [!DNL Adobe Experience Manager Guides]
 exl-id: f7cfc5c8-414f-4480-a9c9-b9920975a55d
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 6959927315c7afc62a7423e835a36895c76fdc6d
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -24,6 +24,7 @@ När du har lärt dig användargränssnittet kan du börja skapa och strukturera
 1. Välj **+** ikon och **Mapp**.
 
    ![+ ikon](images/lesson-3/+-icon.png)
+
 1. Ge mappen en titel.
 1. Välj **Skapa**.
 Du har skapat en ny mapp som nu visas i databasen. Den här mappen blir ditt hem för allt kursinnehåll.
@@ -37,6 +38,7 @@ Nu kan vi skapa en mapp i den nya mappen som innehåller bilder eller annat inne
    ![Ellipsikon](images/lesson-3/ellipses-icon.png)
 
    Menyn Alternativ visas.
+
 1. Välj **Skapa mappen \>**.
    ![Skapa en undermapp](images/lesson-3/create-subfolder-with-markings.png)
 
@@ -49,6 +51,7 @@ Nu kan vi skapa en mapp i den nya mappen som innehåller bilder eller annat inne
    ![Ellipsikon](images/lesson-3/ellipses-icon.png)
 
    Menyn Alternativ visas.
+
 1. Välj **Skapa \> ämne**.
 
    ![Skapa ett nytt ämne](images/lesson-3/create-topic-with-markings.png)
@@ -93,6 +96,7 @@ Du kan spara ditt arbete när som helst med Spara eller Spara som ny version. An
    >[!NOTE]
    > 
    > Om ditt program är konfigurerat med fördefinierade etiketter kan du välja bland dessa för att säkerställa en konsekvent etikettering.
+
 1. Välj **Spara**.
 
    Du har skapat en ny version av ämnet och versionsnumret uppdateras.

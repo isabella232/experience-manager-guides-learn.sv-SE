@@ -2,7 +2,7 @@
 title: Villkor
 description: Arbeta med villkor i AEM
 exl-id: 2cb670d9-1a22-47c6-8409-52d1d526010a
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 01083e771baced42146044bf319d3897a2c5f51b
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
@@ -31,11 +31,11 @@ Exempelfiler som du kan välja att använda för den här lektionen finns i file
 
 5. Fyll i de obligatoriska fälten.
 
-   ・ Namnet ska motsvara ett attribut som används för profilering.
+   - Namnet ska motsvara ett attribut som används för profilering.
 
-   ・ Värdet är den exakta posten som kommer att användas i DITA-kodkällan.
+   - Värdet är den exakta posten som kommer att användas i DITA-kodkällan.
 
-   ・ Etiketten är det ord som visas av användaren som skriver in attribut.
+   - Etiketten är det ord som visas av användaren som anger attribut.
 
 6. Klicka [!UICONTROL **Spara**].
 
@@ -104,7 +104,6 @@ På villkorspanelen kan du styra tilldelningen av attribut- och värdepar.
    >[!IMPORTANT]
    >
    >Viktigt: Den valda rotkartan måste vara den karta som innehåller ämnesschemat.
-
 
    ![Användarinställningar](images/lesson-13/user-preferences-2.png)
 

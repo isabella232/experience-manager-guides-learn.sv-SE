@@ -2,7 +2,7 @@
 title: Arbetsflöden för att skapa enkelt innehåll
 description: Skapa innehåll i AEM stödlinjer
 exl-id: e4b8e512-0688-44f7-b981-78af33b57b08
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 92c269c4a5f73317345bbd0ab247951656426ff4
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -37,13 +37,13 @@ Du kan lägga till bilder direkt från en lokal enhet.
 
 3. Använd **Innehållsegenskaper** på den högra panelen för att ändra en bilds
 
-   ・ skala
+   - scale
 
-   • position
+   - position
 
-   ・ justering, eller
+   - justering, eller
 
-   ・ andra attribut.
+   - andra attribut.
 
    ![Innehållsegenskaper](images/lesson-15/content-properties.png)
 
@@ -98,7 +98,6 @@ Användare kan vilja ladda ned en PDF i det aktuella ämnet för att kommentera 
 3. Välj **Sök i**.
 
 4. Välj antingen **Databas** eller **Karta** för att gå till den önskade ämnesplatsen.
-
 
 ## Version av ett ämne
 
@@ -183,7 +182,6 @@ Versionsnumret uppdateras.
    - Versionshistoriken med etiketter visas till vänster.
 
    ![Versionshistorik](images/lesson-15/version-history.png)
-
 
 4. Klicka på en version för att komma åt alternativ som **Återgå till den här versionen** och **Förhandsgranska version**.
 

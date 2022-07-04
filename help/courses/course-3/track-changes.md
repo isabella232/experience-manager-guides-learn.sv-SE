@@ -2,7 +2,7 @@
 title: Spåra ändringar
 description: Spåra ändringar i AEM
 exl-id: 57779920-b3b4-44be-a1fb-89ea7c89eef7
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 7bc636b4aceee327d86cfa74a9f8e61e0ad0a1cf
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -92,9 +92,9 @@ När du arbetar i en miljö med flera författare kan det vara svårt att spåra
 
 4. Välj:
 
-   ・ **Spåra ändringar från vald version**: Det här alternativet visar alla innehållsuppdateringar i form av spårade ändringar. Du kan sedan välja att acceptera eller ignorera ändringar i dokumentet en åt gången eller alla samtidigt.
+   - **Spåra ändringar från vald version**: Det här alternativet visar alla innehållsuppdateringar i form av spårade ändringar. Du kan sedan välja att acceptera eller ignorera ändringar i dokumentet en åt gången eller alla samtidigt.
 
-   ・ **Återställ till markerad version**: Med det här alternativet återställs den aktuella versionen av dokumentet till den valda versionen. Det ger ingen kontroll över vilket innehåll som godkänns eller avvisas.
+   - **Återställ till markerad version**: Med det här alternativet återställs den aktuella versionen av dokumentet till den valda versionen. Det ger ingen kontroll över vilket innehåll som godkänns eller avvisas.
 
 5. Klicka [!UICONTROL **Klar**].
 

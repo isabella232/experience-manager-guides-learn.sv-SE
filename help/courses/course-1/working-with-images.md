@@ -2,7 +2,7 @@
 title: Arbeta med bilder i AEM
 description: Arbeta med bilder i Adobe Experience Manager-guider
 exl-id: 8b920a9a-bedb-434c-b6fb-3569ce4b7a81
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1f8fe099be2b4123eec6f7c973668b415097ac45
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -27,10 +27,10 @@ Du kan hämta exempelbildfilen från [här.](assets/working-with-images/SignInSc
 
    ![Överför resurser](images/lesson-4/upload-assets.png)
 
-
 1. Välj den bild som du vill överföra från ditt lokala system och välj **Öppna**.
 
    The [!UICONTROL Upload Assets] visas.
+
 1. Välj **Överför**.
 
 ## Infoga en bild i ett ämne
@@ -52,7 +52,6 @@ Se till att ämnet är öppet i dokumentredigeraren för följande.
 1. Välj **Infoga bild** ikon.
 
    ![Ikonen Infoga bild](images/lesson-4/insert-image.png)
-
 
    Dialogrutan Infoga bild visas.
 
@@ -88,9 +87,11 @@ När du har gjort en betydande ändring i ämnet kan det nu vara bra att spara d
 1. Ange eventuella relevanta etiketter i fältet Versionsetiketter.
 
    Med etiketter kan du ange vilken version du vill inkludera vid publicering.
+
    >[!NOTE]
    > 
    > Om ditt program är konfigurerat med fördefinierade etiketter kan du välja bland dessa för att säkerställa en konsekvent etikettering.
+
 1. Välj **Spara**.
 
    Du har skapat en ny version av ämnet och versionsnumret uppdateras.

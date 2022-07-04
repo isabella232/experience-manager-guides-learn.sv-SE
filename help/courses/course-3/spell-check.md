@@ -2,7 +2,7 @@
 title: Stavningskontrollera och sök/ersätt
 description: Använda stavningskontroll och sök/ersätt i AEM
 exl-id: 5f39618d-a919-4d3c-a4de-2896f2d1bf20
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 0b4326b02ef52f5de77c3f26c18feec84567cebb
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Du kan använda ett annat stavningskontrollverktyg än webbläsarens standardord
 
 3. Det finns två alternativ:
 
-   ・ **Stavningskontroll för webbläsare** — standardinställningen där stavningskontrollen använder webbläsarens inbyggda ordlista.
+   - **Stavningskontroll för webbläsare** — standardinställningen där stavningskontrollen använder webbläsarens inbyggda ordlista.
 
-   ・ **AEM stavningskontroll** — använd detta för att skapa en egen ordlista med AEM egna ordlista.
+   - **AEM stavningskontroll** — använd detta för att skapa en egen ordlista med AEM egna ordlista.
 
 4. Välj **AEM stavningskontroll**.
 
@@ -59,19 +59,17 @@ Administratören kan ändra inställningarna så att den AEM ordlistan känner i
 
    ![CRXDE Lite Config-nod](images/lesson-11/config-node.png)
 
-
 4. Skapa en ny fil.
 
    a. Högerklicka på konfigurationsmappen.
-b. Välj **Skapa > Skapa fil**.
+
+   b. Välj **Skapa > Skapa fil**.
 
    ![Skapa ny ordlistefil](images/lesson-11/new-dictionary-file.png)
-
 
    c. Namnge filen _**user_dictionary.txt**_.
 
    ![Text för användarlexikon](images/lesson-11/user-dictionary.png)
-
 
    d. Klicka [!UICONTROL **OK**].
 
@@ -109,12 +107,11 @@ Författare kan behöva starta om sin Web Editor-session för att få den uppdat
 
 4. Välj antingen
 
-   ・ **Checka ut filen före ersättning** — Om det är aktiverat av en administratör checkas filen ut automatiskt innan söktermerna ersätts.
+   - **Checka ut filen före ersättning** — Om det är aktiverat av en administratör checkas filen ut automatiskt innan söktermerna ersätts.
 
-   ・ **Endast hela ord** — begränsar sökningen så att endast det angivna ordet eller frasen returneras.
+   - **Endast hela ord** — begränsar sökningen så att endast det angivna ordet eller frasen returneras.
 
    ![Sök ersätt i databas](images/lesson-11/repository-find-replace.png)
-
 
 5. Klicka på [!UICONTROL **Använd filter**] om du vill markera den sökväg i databasen där du vill utföra sökningen.
 

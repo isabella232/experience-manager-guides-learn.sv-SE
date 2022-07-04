@@ -2,7 +2,7 @@
 title: Användarinställningar, redigeringsinställningar och redigeringsverktygsfält
 description: Ändra användarinställningar och redigeringsinställningar i AEM
 exl-id: 8cb099e4-d985-4eeb-b1a5-0e372b04d218
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 3d81727cdf4a58921724b0f1aa93b0700f821f60
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 0%
@@ -25,13 +25,13 @@ Taggar är visuella tecken som anger ett elements gränser. En elementgräns mar
 
    Taggar visas i avsnittet. Med taggvyn kan du:
 
-   ・ Markera innehållet i ett element genom att klicka på öppningstaggen eller den avslutande taggen.
+   - Markera ett elements innehåll genom att klicka på den inledande eller avslutande taggen.
 
-   ・ Expandera eller komprimera taggar genom att klicka på plustecknet (+) eller minustecknet (-) i taggen.
+   - Expandera eller komprimera taggar genom att klicka på tecknet + eller - i taggen.
 
-   ・ Använd snabbmenyn för att klippa ut, kopiera eller klistra in det markerade elementet.
+   - Använd snabbmenyn för att klippa ut, kopiera eller förbi det markerade elementet.
 
-   ・ Dra och släpp element genom att markera taggen och släppa elementet på en giltig plats.
+   - Dra och släpp element genom att markera taggen och släppa elementet på en giltig plats.
 
 2. Klicka på [!UICONTROL **Växla taggvy**] ikonen igen om du vill dölja taggar.
 
@@ -75,11 +75,11 @@ Med verktygsfältet längst upp till höger på skärmen kan du växla mellan vy
 
 ![Lägen](images/lesson-2/modes.png)
 
-・ Välj **Upphovsman** för att visa strukturen och innehållet medan du arbetar med ett ämne.
+- Välj **Upphovsman** för att visa strukturen och innehållet medan du arbetar med ett ämne.
 
-・ Välj **Källa** för att visa den underliggande XML som ämnet består av.
+- Välj **Källa** för att visa den underliggande XML som ämnet består av.
 
-・ Välj **Förhandsgranska** för att visa hur ett ämne visas när det visas av en användare i webbläsaren.
+- Välj **Förhandsgranska** för att visa hur ett ämne visas när det visas av en användare i webbläsaren.
 
 ## Ändra temat med användarinställningar
 
