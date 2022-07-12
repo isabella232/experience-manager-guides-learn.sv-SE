@@ -1,7 +1,9 @@
 ---
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
-source-git-commit: 4665e861ddae7c62fdddf67c7adde543bc1f642d
+hide: true
+hidefromtoc: true
+source-git-commit: 698469293e41558753ff6aada92f050f45be867a
 workflow-type: tm+mt
 source-wordcount: '2208'
 ht-degree: 0%
