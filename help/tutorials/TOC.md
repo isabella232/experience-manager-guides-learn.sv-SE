@@ -2,10 +2,10 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: fe11e980d9daa7a8892230f3d3e23a2d88827647
+source-git-commit: 66e04e9e7a7514be2629c59cbb5332ea77c264a4
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -38,3 +38,6 @@ ht-degree: 3%
    + [Publicera PDF](./web-editor/native-pdf-web-editor.md)
    + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
 + Versionshantering {#versioning}
++ Dolda artiklar {#hidden}
+   + [Dold PDF-mall](./native-pdf/pdf-template.md)
+   + [Dolda komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
