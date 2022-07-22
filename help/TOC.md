@@ -2,10 +2,10 @@
 user-guide-title: Tutorials- och videokurser för AEM
 user-guide-description: Utforska vår samling självstudiekurser och videor för Adobe Experience Manager Guides.
 breadcrumb-title: Tutorials och videoklipp för AEM stödlinjer
-source-git-commit: f08fe1a96f0a0bcb9a50e316bd0b6c9ff2670104
+source-git-commit: d8ffc09abc0a79d21d2d1df1832f75a34130a65e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +41,8 @@ ht-degree: 0%
    + Artiklar om inbyggd PDF i PIA {#hidden}
       + [Dold PDF-mall](./tutorials/native-pdf/pdf-template.md)
       + [Dolda komponenter i en PDF-mall](./tutorials/native-pdf/components-pdf-template.md)
-+ [Videor](./courses/overview.md)
++ Videor {#videos}
+   + [Översikt](./courses/overview.md)
    + Komma igång med [!DNL AEM Guides] {#getting-started}
       + [Kursöversikt](./courses/course-1/overview.md)
       + [Förstå AEM användargränssnitt](./courses/course-1/understanding-the-aem-user-interface.md)
