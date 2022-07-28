@@ -2,9 +2,9 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: 8a0049d737dd4d80cf42f8b9d4ffa8adc349682f
+source-git-commit: cb066f0e09aec000f216c11c774c8da111b2a7f7
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '121'
 ht-degree: 3%
 
 ---
@@ -41,3 +41,4 @@ ht-degree: 3%
 + Artiklar om inbyggd PDF i PIA {#hidden}
    + [Dold PDF-mall](./native-pdf/pdf-template.md)
    + [Dolda komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
+   + [Dold Designa en sidlayout](./native-pdf/design-page-layout.md)
