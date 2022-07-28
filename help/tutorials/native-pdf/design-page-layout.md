@@ -4,7 +4,7 @@ description: Lär dig hur du utformar sidlayouten för att presentera informatio
 hide: true
 hidefromtoc: true
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 64e8ab1288674437f6182010ce4963b3780e98a9
+source-git-commit: 2607a02867765b8f78134ab4e37012e8b08e222c
 workflow-type: tm+mt
 source-wordcount: '3289'
 ht-degree: 0%
@@ -137,11 +137,11 @@ I följande exempel infogar vi ett sidnummer och en avsnittsrubrik i sidfotsomr�
 
    <img src="./assets/insert-page-number-field.svg" width="400">
 
-   <br>
+   <img src="./assets/transparent-background.png" width="30">
 
    >[!NOTE]
    >
-   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid formatet som du vill redigera, gör ändringar och klickar på OK.
+   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid det format du vill redigera, gör ändringar och klickar på OK.
 
    Standardsidnummerfältet infogas i sidfotsområdet i sidlayouten.
 
@@ -175,7 +175,7 @@ I följande exempel infogar vi ett sidnummer och en avsnittsrubrik i sidfotsomr�
 
 | Utvecklarhörn: | <img src="./assets/developer-corner-icon.svg" width="25"> |
 |--- |--- |
-| Om du vill arbeta direkt med CSS- och HTML-koden kan du även göra det genom att gå till källvyn i sidlayouten och göra ändringar i koden. I följande kodutdrag visas samma sidfotsinställning som i koden: |
+Om du vill arbeta direkt med CSS- och HTML-koden kan du även göra det genom att gå till källvyn i sidlayouten och göra ändringar i koden. I följande kodutdrag visas samma sidfotsinställning som i koden:
 
 ```md
 …
@@ -206,6 +206,7 @@ I följande exempel infogar vi en kapitelinnehållsförteckning i första sidlay
    Standardkapitelinnehållsförteckningen infogas i innehållsområdet.
 
    <img src="./assets/chapter-toc-default.png" width="400">
+    <img src="./assets/transparent-background.png" width="30">
 
    >[!NOTE]
    >
@@ -221,7 +222,7 @@ I följande exempel infogar vi en kapitelinnehållsförteckning i första sidlay
 
    <img src="./assets/chapter-toc-updated.png" width="400">
 
-   <br>
+   <img src="./assets/transparent-background.png" width="30">
 
    >[!NOTE]
    >
@@ -265,7 +266,7 @@ Så här skapar du en sidlayout med flera kolumner:
 
    <img src="./assets/element-span-across-columns.png" width="400">
 
-   <br>
+   <img src="./assets/transparent-background.png" width="30">
 
    >[!IMPORTANT]
    Du kan använda Span Column-egenskapen för alla DITA-element.
