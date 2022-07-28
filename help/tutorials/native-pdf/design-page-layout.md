@@ -1,14 +1,16 @@
 ---
 title: Publiceringsfunktion för PDF | Designa en sidlayout
-description: 'Lär dig hur du utformar sidlayouten för att presentera information i olika delar av PDF. '
+description: Lär dig hur du utformar sidlayouten för att presentera information i olika delar av PDF.
 hide: true
 hidefromtoc: true
-source-git-commit: 97c7337684e4afb8352912e53d6a59939f7d182f
+exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
+source-git-commit: 64e8ab1288674437f6182010ce4963b3780e98a9
 workflow-type: tm+mt
 source-wordcount: '3289'
 ht-degree: 0%
 
 ---
+
 
 # Utforma en sidlayout
 
@@ -85,7 +87,7 @@ Om du till exempel vill infoga en bild i sidhuvudsområdet på första sidan i k
 
 1. Klicka på Redigera sidhuvud (<img src="./assets/header-icon.svg" width="25">) för att föra markören in i sidhuvudsområdet.
 
-1. Klicka på Infoga bild (<img src="./assets/insert-image-icon.svg" width="25"> ).
+1. Klicka på Infoga bild (<img src="./assets/insert-image-icon.svg" width="25">).
 
    Popup-fönstret Välj bana visas.
 
@@ -135,9 +137,11 @@ I följande exempel infogar vi ett sidnummer och en avsnittsrubrik i sidfotsomr�
 
    <img src="./assets/insert-page-number-field.svg" width="400">
 
+   <br>
+
    >[!NOTE]
    >
-   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid det format du vill redigera, gör ändringar och klickar på OK.
+   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid formatet som du vill redigera, gör ändringar och klickar på OK.
 
    Standardsidnummerfältet infogas i sidfotsområdet i sidlayouten.
 
@@ -169,9 +173,9 @@ I följande exempel infogar vi ett sidnummer och en avsnittsrubrik i sidfotsomr�
 
       <img src="./assets/topic-title-moved-right-footer.png" width="500">
 
-| Utvecklarhörn: | <img src="./assets/developer-corner-icon.svg" width="40"> |
+| Utvecklarhörn: | <img src="./assets/developer-corner-icon.svg" width="25"> |
 |--- |--- |
-Om du vill arbeta direkt med CSS- och HTML-koden kan du även göra det genom att gå till källvyn i sidlayouten och göra ändringar i koden. I följande kodutdrag visas samma sidfotsinställning som i koden:
+| Om du vill arbeta direkt med CSS- och HTML-koden kan du även göra det genom att gå till källvyn i sidlayouten och göra ändringar i koden. I följande kodutdrag visas samma sidfotsinställning som i koden: |
 
 ```md
 …
@@ -217,6 +221,8 @@ I följande exempel infogar vi en kapitelinnehållsförteckning i första sidlay
 
    <img src="./assets/chapter-toc-updated.png" width="400">
 
+   <br>
+
    >[!NOTE]
    >
    >I den slutliga publicerade PDF visas bara innehållsförteckningsposterna baserat på innehållet i dina kapitel. Om du inte har rubriker på nivå 5 i ett kapitel visas det inte i det slutliga resultatet.
@@ -258,6 +264,8 @@ Så här skapar du en sidlayout med flera kolumner:
    Som framgår av följande exempel är egenskapen Spänn över spalt för rubriktexten inställd på alla. Detta garanterar att även om dokumentet är flerspaltig, sträcker sig rubriken över flera spalter.
 
    <img src="./assets/element-span-across-columns.png" width="400">
+
+   <br>
 
    >[!IMPORTANT]
    Du kan använda Span Column-egenskapen för alla DITA-element.
@@ -385,4 +393,3 @@ Mer information om hur dessa egenskaper används finns i dokumentationen till W3
 * **Bakgrund**: Innehåller egenskaper som innehåller en bakgrundsbild eller färgskugga. Du kan ställa in bildstorlek (genom att ställa in höjd eller bredd), Upprepa bakgrund (som upprepning, ingen upprepning, rund eller mer) och Bakgrundsposition (som vänster överkant, höger mittpunkt, centrera nederkant eller mer).
 
 * **Flera kolumner**: Innehåller egenskaper för att konfigurera egenskaper med flera kolumner för sidan eller för specifika element, t.ex. kapitelinnehållsförteckning. Mer information om egenskaperna och hur du använder dem finns i _Arbeta med sidlayout med flera kolumner_.
-
