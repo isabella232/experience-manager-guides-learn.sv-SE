@@ -1,10 +1,15 @@
 ---
-source-git-commit: abc315e399e78c341bad034591d88800d51fa798
+title: Publiceringsfunktion för PDF | Designa en sidlayout
+description: 'Lär dig hur du utformar sidlayouten för att presentera information i olika delar av PDF. '
+hide: true
+hidefromtoc: true
+source-git-commit: 77256556d9222ffd096a599e5875c94108ebb8ed
 workflow-type: tm+mt
-source-wordcount: '3275'
+source-wordcount: '3300'
 ht-degree: 0%
 
 ---
+
 # Utforma en sidlayout
 
 När du skapar ett PDF-dokument har du olika avsnitt för olika typer av information. Ett PDF-dokument kan till exempel börja med en framsida eller en försättssida, som skulle innehålla företagets logotyp, boktitel eller versionsinformation. Då finns det kapitel, bilagor eller ordlistor. Varje avsnitt i ett PDF-dokument ser olika ut och det uppnås genom att sidlayouten skapas och anpassas.
@@ -51,7 +56,7 @@ I följande exempel får du hjälp med att skapa varianter av en sidlayout:
 
    När du skapar en sidlayout öppnas den som standard även för redigering. På följande skärmbild visas en tom (standard) sidlayout:
 
-   <img src=".\assets\default-blank-page-layout.png" height="400">
+   <img src="./assets/default-blank-page-layout.png" height="400">
 
    Sidhuvudet, sidfoten och innehållsområdet i en mall skapas som standard. Du kan enkelt anpassa dessa områden med de verktyg, sidegenskaper och innehållsegenskaper som finns i användargränssnittet. Om du vill ha en mer avancerad konfiguration kan du använda källvyn och lägga till din anpassade HTML- och CSS-kod.
 
@@ -73,9 +78,9 @@ Om du till exempel vill infoga en bild i sidhuvudsområdet på första sidan i k
 
    > **Anteckning**: Se _Anpassa en sidlayout_ för att öppna en sidlayout för anpassning eller redigering.
 
-1. Klicka på Redigera sidhuvud (<img src=".\assets\header-icon.svg" width="25">) för att föra markören in i sidhuvudsområdet.
+1. Klicka på Redigera sidhuvud (<img src="./assets/header-icon.svg" width="25">) för att föra markören in i sidhuvudsområdet.
 
-1. Klicka på Infoga bild (<img src=".\assets\insert-image-icon.svg" width="25"> ).
+1. Klicka på Infoga bild (<img src="./assets/insert-image-icon.svg" width="25"> ).
 
    Popup-fönstret Välj bana visas.
 
@@ -83,7 +88,7 @@ Om du till exempel vill infoga en bild i sidhuvudsområdet på första sidan i k
 
    I följande skärmbild visas en exempelbild som lagts till i sidhuvudsområdet.
 
-   <img src=".\assets\image-in-header-area.png" width="500">
+   <img src="./assets/image-in-header-area.png" width="500">
 
    När en bild har infogats kan du ändra dess attribut så att den ser ut som du vill ha den. Det enklaste sättet att ändra hur en bild eller något annat element på sidlayouten ser ut är att använda panelen Innehållsegenskaper. Se _Arbeta med panelen Innehållsegenskaper_ för de olika egenskaper som är tillgängliga via användargränssnittet för anpassning.
 
@@ -111,7 +116,7 @@ I följande exempel infogar vi ett sidnummer och en avsnittsrubrik i sidfotsomr�
 
    Obs! Se _Anpassa en sidlayout_ för att öppna en sidlayout för anpassning eller redigering.
 
-1. Klicka på Redigera sidfot (![](.\assets\footer-icon.svg)) för att placera markören i sidfotsområdet.
+1. Klicka på Redigera sidfot (![](./assets/footer-icon.svg)) för att placera markören i sidfotsområdet.
 
 1. Infoga ett styckeelement genom att klicka på Infoga HTML-element <img src="./assets/insert-html-element-2.svg" width="25"> och väljer Stycke i listan med element.
 
@@ -123,7 +128,7 @@ I följande exempel infogar vi ett sidnummer och en avsnittsrubrik i sidfotsomr�
 
    <img src="./assets/insert-page-number-field.svg" width="400">
 
-   > **Anteckning**: Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid formatet som du vill redigera, gör ändringar och klickar på OK.
+   > **Anteckning**: Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid det format du vill redigera, gör ändringar och klickar på OK.
 
    Standardsidnummerfältet infogas i sidfotsområdet i sidlayouten.
 
@@ -263,7 +268,7 @@ När du utformar en sidlayout är det viktigt att du har kontroll över olika si
 
 Låt oss titta på ett exempel där en kombination av stående och liggande sidorientering och vyrotationsegenskaper används. I det här exemplet skapar vi en PDF med stående orientering som standard, men en tabell återges i liggande orientering med innehåll i 90-gradersvyn medurs. Resultatet ser ut ungefär så här:
 
-<img src=".\assets\portrait-landscape-page-layouts.png" height="800">
+<img src="./assets/portrait-landscape-page-layouts.png" height="800">
 
 I ovanstående utdata visas informationen i kontaktlistan i liggande läge med innehållet roterat i 90 grader. Det återstående innehållet visas i normalt stående läge.
 
@@ -281,7 +286,7 @@ Utför följande steg för att utföra ovanstående åtgärder:
 
    1. Klicka på i den högra panelen **Sidegenskaper**.
 
-      <img src=".\assets\page-properties-panel.png" width="300">
+      <img src="./assets/page-properties-panel.png" width="300">
    1. Ändra **Orientering** till **Liggande**.
 
 1. Ändra egenskapen Visa rotation om du vill återge innehåll 90 grader medsols.
@@ -301,11 +306,11 @@ Utför följande steg för att utföra ovanstående åtgärder:
 
    1. Högerklicka på **Andra format** och välja **Nytt format**.
 
-      <img src=".\assets\stylesheet-other-new-style.png" width="300">
+      <img src="./assets/stylesheet-other-new-style.png" width="300">
 
    1. I **Lägg till format** popup, enter `landscape-style` i **Klass** namnfält.
 
-      <img src=".\assets\stylesheet-new-landscape-style.png" width="400">
+      <img src="./assets/stylesheet-new-landscape-style.png" width="400">
 
    1. Klicka **Klar**.
 
@@ -317,7 +322,7 @@ Utför följande steg för att utföra ovanstående åtgärder:
 
    1. Retur `Landscape` i **Sidlayout** -egenskap.
 
-      <img src=".\assets\new-style-with-landscape-layout.png" width="500">
+      <img src="./assets/new-style-with-landscape-layout.png" width="500">
 
 1. Lägg till formatet i utdataklassdefinitionen för den tabell som ska återges i liggande layout.
 
@@ -327,13 +332,13 @@ Utför följande steg för att utföra ovanstående åtgärder:
 
    1. Klicka på `table` för att markera tabellen.
 
-      <img src=".\assets\new-style-table-element.png" width="400">
+      <img src="./assets/new-style-table-element.png" width="400">
 
    1. I den högra panelen klickar du på och öppnar **Innehållsegenskaper** -panelen.
 
    1. I **Innehållsegenskaper** panel, lägga till en ny `outputclass` egenskap med `landscape-style` som egenskapsvärde.
 
-      <img src=".\assets\new-style-table-outputclass.png" height="400">
+      <img src="./assets/new-style-table-outputclass.png" height="400">
 
    1. Klicka **Spara alla** för att spara den uppdaterade filen.
 
@@ -353,7 +358,7 @@ Med panelen Innehållsegenskaper kan du enkelt uppdatera utseendet och känslan 
 
 * **Kant**: Innehåller egenskaper för att lägga till och formatera en kant i ett element i sidlayouten. Du kan ange Kantsida (som alla, översta, nedersta, högra eller vänstra), Kantformat (som heldragen, streckad, prickade linjer eller fler), Kantfärg, Bredd och Radius för en böjd kant. I följande exempel har en böjd kantlinje lagts till i sidhuvudsområdet på sidan.
 
-   <img src=".\assets\border-properties.png" width="500">
+   <img src="./assets/border-properties.png" width="500">
 
 * **Layout**: Innehåller egenskaper för att konfigurera layouten för ett element i sidlayouten. Du kan ange Höjd, Bredd, Marginaler och Utfyllnad (för överkant, nederkant, vänster eller höger), Vågrät eller Lodrät justering, Flyt (som vänster, höger eller ingen), Rensa (som vänster, höger, båda eller ingen), Elementets position (som absolut, fast, relativ eller mer), Visa (som block, innehåll, korrigera eller mer), Z-index, Genomskinlighet, Omforma (genom att rotera eller rotera skalförändring) och Omforma ursprung (med X- och Y-förskjutning).
 
