@@ -3,9 +3,10 @@ title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 hide: true
 hidefromtoc: true
-source-git-commit: 698469293e41558753ff6aada92f050f45be867a
+exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
+source-git-commit: e0602e325fec014fe5a9ebe231b0c62611a4e52d
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2295'
 ht-degree: 0%
 
 ---
@@ -39,6 +40,19 @@ Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en s
 1. Klicka **Klar**.
 
    Den nya layouten skapas och läggs till under Sidlayouter.
+
+### Duplicera en sidlayout
+
+1. I **Mallar** i mallen som du vill duplicera dubbelklickar du på **Sidlayouter** eller klicka på **>** ikon före **Sidlayouter**.
+
+   Då visas en lista med sidlayouter i mallen.
+
+1. Håll pekaren över den sidlayout som du vill duplicera och klicka på (*Alternativ* ikon) **...** och markera **Duplicera** på snabbmenyn.
+
+1. I _Duplicera layout_ anger du ett namn för sidlayouten.
+
+1. Klicka **Klar**.
+En kopia av den valda sidlayouten skapas och läggs till under Sidlayouter.
 
 ### Anpassa en sidlayout
 
