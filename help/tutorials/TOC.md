@@ -2,9 +2,9 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: cb066f0e09aec000f216c11c774c8da111b2a7f7
+source-git-commit: 0f5c1cabdbda9fa2606f67faedbf9a38ca1ec0aa
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '124'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,8 @@ ht-degree: 3%
    + Versionsinformation {#release-notes}
       + Cloud Services {#cloud-release-notes}
          + [Distributionsanvisningar](./release-info/deploy-xml-on-aemaacs.md)
-         + [Aktuella versionsinformation](./release-info/release-notes-2022.5.0.md)
+         + [Aktuella versionsinformation](./release-info/release-notes-2022.8.0.md)
+         + [Versionsinformation](./release-info/release-notes-2022.5.0.md)
          + [Versionsinformation, april](./release-info/release-notes-2022.4.0.md)
          + [Versionsinformation om mars](./release-info/release-notes-2022.3.0.md)
          + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
