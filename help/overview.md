@@ -1,15 +1,15 @@
 ---
-title: Stödlinjer för Tutorials för Experience Manager
+title: Självstudiekurser för stödlinjer för Experience Manager
 description: En samling självstudiekurser för Experience Manager Guides (tidigare XML Documentation för Adobe Experience Manager).
 exl-id: 06dd1b77-1a98-430f-8322-475d4fa4947b
-source-git-commit: b2c51539bbe49c6d5de601e319ceb5def99d9020
+source-git-commit: 0ab4c1590507b38cd3dbeb385a2200dc169fc36a
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '318'
 ht-degree: 1%
 
 ---
 
-# Tutorials- och videokurser för [!DNL Adobe Experience Manager Guides] {#overview}
+# [!DNL Adobe Experience Manager Guides] självstudiekurser {#overview}
 
 [!DNL Adobe Experience Manager Guides] (kallas [!DNL AEM Guides] längre fram i den här guiden) är en kraftfull innehållshanteringslösning på enterprisenivå. Det möjliggör inbyggt DITA-stöd i Adobe Experience Manager, vilket gör det möjligt för AEM att hantera DITA-baserad framtagning och leverans av innehåll. Man kan skapa material offline med valfritt DITA-verktyg, t.ex. Adobe FrameMaker eller en lättanvänd webbredigerare.
 
@@ -30,6 +30,10 @@ Med [!DNL AEM Guides] kan företag leverera sömlösa och personaliserade upplev
 * **[[!DNL AEM Guides] Komma igång-kurs](course-1/overview.md)**
 
    *Lär dig hur du skapar, organiserar, redigerar och publicerar innehåll med [!DNL Adobe Experience Manager Guides].*
+
+* **[Redigering i den inbyggda webbredigeraren](course-3/overview.md)**
+
+   *Lär dig hur du skapar innehåll med den inbyggda webbredigeraren i Experience Manager-stödlinjerna. Få en fullständig förståelse för användarinställningar, redigeringsinställningar, konfiguration, verktygsfält med mera.*
 
 * **[Generera utdata med [!DNL AEM Guides]](course-2/overview.md)**
 
