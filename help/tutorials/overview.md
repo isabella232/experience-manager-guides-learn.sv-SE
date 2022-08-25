@@ -1,17 +1,17 @@
 ---
 title: Stödlinjer för Tutorials för Experience Manager
-description: En samling självstudiekurser för Experience Manager Guides (tidigare XML Documentation för Adobe Experience Manager).
+description: Hitta självstudievideor för Experience Manager Guides (tidigare XML Documentation för Adobe Experience Manager). Lär dig mer om inbyggt DITA-stöd och strukturerad redigering i Experience Manager.
 exl-id: 06dd1b77-1a98-430f-8322-475d4fa4947b
-source-git-commit: 8a0049d737dd4d80cf42f8b9d4ffa8adc349682f
+source-git-commit: fff5c163bc8551bea298cd8da320c2abf9b9be3b
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 1%
+source-wordcount: '286'
+ht-degree: 0%
 
 ---
 
 # Tutorials för [!DNL Adobe Experience Manager Guides] {#overview}
 
-[!DNL Adobe Experience Manager Guides] (kallas [!DNL AEM Guides] längre fram i den här guiden) är en kraftfull innehållshanteringslösning på enterprisenivå. Det möjliggör inbyggt DITA-stöd i Adobe Experience Manager, vilket gör det möjligt för AEM att hantera DITA-baserad framtagning och leverans av innehåll. Man kan skapa material offline med valfritt DITA-verktyg, t.ex. Adobe FrameMaker eller en lättanvänd webbredigerare.
+[!DNL Experience Manager Guides] (kallas _[!DNL AEM Guides]_nedan) är en kraftfull innehållshanteringslösning på enterprisenivå. Det möjliggör inbyggt DITA-stöd i Experience Manager och gör det möjligt för AEM att hantera DITA-baserad framtagning och leverans av innehåll. Man kan skapa material offline med valfritt DITA-verktyg, t.ex. Adobe FrameMaker eller en lättanvänd webbredigerare.
 
 [!DNL AEM Guides] innehåller alla centrala CCMS-funktioner, som samarbete, granskning, översättning, sökning och rapporter för DITA-innehåll, vilket gör att skribenterna kan göra mer på kortare tid genom effektiv återanvändning av innehåll och kraftfulla arbetsflöden. Dessutom kan man med ett enda klick skapa DITA-baserade utdata för de vanligaste formaten - Experience Manager Sites, PDF, HTML 5, EPUB och skräddarsydda utdata via DITA-OT.
 
@@ -19,17 +19,17 @@ Med [!DNL AEM Guides] kan företag leverera sömlösa och personaliserade upplev
 
 >[!NOTE]
 > 
-> Adobe Experience Manager Guides hette tidigare &quot;XML Documentation for Adobe Experience Manager&quot;. Observera att vissa referenser i dokumentationen fortfarande kan avse tidigare branding men fortfarande gäller för det aktuella erbjudandet.
+> Adobe Experience Manager Guides hette tidigare _XML Documentation för Adobe Experience Manager_. Observera att vissa referenser i dokumentationen fortfarande kan avse tidigare branding men fortfarande gäller för det aktuella erbjudandet.
 
 ## Nyheter
 
 * **[[!DNL AEM Guides] Komma igång-kurs](../courses/course-1/overview.md)**
 
-   *Lär dig hur du skapar, organiserar, redigerar och publicerar innehåll med [!DNL Adobe Experience Manager Guides].*
+   _Lär dig hur du skapar, organiserar, redigerar och publicerar innehåll med [!DNL Adobe Experience Manager Guides]._
 
 * **[Generera utdata med [!DNL AEM Guides]](../courses/course-2/overview.md)**
 
-   *Lär dig generera utdata med [!DNL Adobe Experience Manager Guides]. Lär dig mer om olika funktioner för generering av utdata - rapporter, baslinjer, villkor, felsökning, masspublicering och aktivering.*
+   _Lär dig generera utdata med [!DNL Adobe Experience Manager Guides]. Lär dig mer om olika funktioner för generering av utdata - rapporter, baslinjer, villkor, felsökning, masspublicering och aktivering._
 
 
 <!--
