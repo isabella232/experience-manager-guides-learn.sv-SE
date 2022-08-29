@@ -2,9 +2,9 @@
 title: Stödlinjer för Tutorials för Experience Manager
 description: Hitta självstudievideor för Experience Manager Guides (tidigare XML Documentation för Adobe Experience Manager). Lär dig mer om inbyggt DITA-stöd och strukturerad redigering i Experience Manager.
 exl-id: 06dd1b77-1a98-430f-8322-475d4fa4947b
-source-git-commit: fff5c163bc8551bea298cd8da320c2abf9b9be3b
+source-git-commit: 7fa60a962a94ad5011359398cc668f8080859a8c
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,11 @@ Med [!DNL AEM Guides] kan företag leverera sömlösa och personaliserade upplev
 * **[[!DNL AEM Guides] Komma igång-kurs](../courses/course-1/overview.md)**
 
    _Lär dig hur du skapar, organiserar, redigerar och publicerar innehåll med [!DNL Adobe Experience Manager Guides]._
+
+
+* **[[!DNL AEM Guides] Redigering i den inbyggda webbredigeraren](../courses/course-3/overview.md)**
+
+   _Lär dig hur du skapar innehåll med den inbyggda webbredigeraren i  [!DNL Adobe Experience Manager Guides]. Få en fullständig förståelse för användarinställningar, redigeringsinställningar, konfiguration, verktygsfält med mera._
 
 * **[Generera utdata med [!DNL AEM Guides]](../courses/course-2/overview.md)**
 
