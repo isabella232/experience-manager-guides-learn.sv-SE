@@ -2,7 +2,7 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: 3c4ae9f5c00fa4918130df98cd42d7dd06e88543
+source-git-commit: 78db1486af3eb99b165a136d6bae6f7f15a1b527
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 3%
@@ -43,4 +43,4 @@ ht-degree: 3%
    + [Dold PDF-mall](./native-pdf/pdf-template.md)
    + [Dolda komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
    + [Dold Designa en sidlayout](./native-pdf/design-page-layout.md)
-   + [Dold formatmall](./native-pdf/Stylesheet.md)
+   + [Dold formatmall](./native-pdf/stylesheet.md)
