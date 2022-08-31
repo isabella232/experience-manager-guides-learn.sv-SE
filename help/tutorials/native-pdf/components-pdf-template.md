@@ -4,30 +4,34 @@ description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar o
 hide: true
 hidefromtoc: true
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: e0602e325fec014fe5a9ebe231b0c62611a4e52d
+source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2275'
 ht-degree: 0%
 
 ---
 
-# Komponenter i en PDF-mall
+# Komponenter i en PDF-mall {#components-pdf-template}
 
 En PDF-mall har fyra komponenter: Sidlayouter, formatmallar, resurser och inställningar. Du kan skapa en mall genom att anpassa de här enskilda komponenterna och koppla mallen till en förinställning för utdata när du genererar utdata för PDF. I följande avsnitt beskrivs dessa komponenter och deras anpassningsprocess i detalj.
 
 
-## Skapa och anpassa sidlayouter
+## Skapa och anpassa sidlayouter {#create-customize-page-layout}
 
 Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en sida genom att definiera sidhuvudet, sidfoten och innehållsområdet på en sida. Med layoutredigeraren i WYSIWYG kan du skapa en sidlayout för olika avsnitt i en PDF, t.ex. framsidan och baksidan av omslaget, kapitlet, innehållsförteckningen (TOC), indexet, tom sida, Lista över illustrationer (LOF), Lista över tabeller (LOT), ordlistan eller skapa en layout för en anpassad sida. I mallinställningarna för PDF kan du tilldela en sidlayout med olika avsnitt i PDF, som sedan används för att generera utdata från PDF.
 
-### Skapa en ny sidlayout
+### Skapa en ny sidlayout {#create-page-layout}
 
-> **Anteckning**: Det finns exempelsidlayouter som levereras utanför kartongen. Du kan anpassa dessa eller skapa nya sidlayouter.
+>[!NOTE]
+>
+>Det finns exempelsidlayouter som levereras utanför kartongen. Du kan anpassa dessa eller skapa nya sidlayouter.
 
 1. Gå till webbredigeraren **Utdata** -fliken.
 1. Expandera den vänstra sidlisten och klicka på **Mallar**.
 1. Öppna mallen som du vill arbeta med.
-   > **Anteckning**: Du kan öppna en mall genom att dubbelklicka på dess namn eller klicka på >-ikonen bredvid dess namn.
+   >[!NOTE]
+   >
+   >Du kan öppna en mall genom att dubbelklicka på dess namn eller klicka på >-ikonen bredvid dess namn.
 1. Om du vill skapa en ny sidlayout gör du något av följande:
    * Hovra över **Sidlayouter** och klicka på&#x200B;*Alternativ* ikon) **...** och välja **Ny sidlayout**.
    * I **Mallar** klickar du på **+** ikon bredvid **Mallar** och välja **Sidlayout** på snabbmenyn.
@@ -36,12 +40,14 @@ Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en s
 
       <img src="assets/add-layout-2.png" alt="Dialogrutan Lägg till layout" width="250">
 1. Ange ett namn för den nya sidlayouten.
-   > **Obs!** Undvik att använda specialtecken när du namnger en sidlayout. Ett blanksteg i namnet ersätts med understrecket&quot;_&quot;.
+   >[!NOTE]
+   >
+   >Undvik att använda specialtecken när du namnger en sidlayout. Ett blanksteg i namnet ersätts med understrecket&quot;_&quot;.
 1. Klicka **Klar**.
 
    Den nya layouten skapas och läggs till under Sidlayouter.
 
-### Duplicera en sidlayout
+### Duplicera en sidlayout {#duplicate-page-layout}
 
 1. I **Mallar** i mallen som du vill duplicera dubbelklickar du på **Sidlayouter** eller klicka på **>** ikon före **Sidlayouter**.
 
@@ -54,7 +60,7 @@ Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en s
 1. Klicka **Klar**.
 En kopia av den valda sidlayouten skapas och läggs till under Sidlayouter.
 
-### Anpassa en sidlayout
+### Anpassa en sidlayout {#customize-page-layout}
 
 1. I **Mallar** i mallen som du vill redigera dubbelklickar du på **Sidlayouter** eller klicka på **>** ikon före **Sidlayouter**.
 
@@ -66,13 +72,13 @@ En kopia av den valda sidlayouten skapas och läggs till under Sidlayouter.
    Då öppnas sidlayoutredigeraren för anpassning.
 1. När du har gjort ändringarna klickar du på *Spara alla* (eller `Crl+S`).
 
-   Mer information om hur du definierar enskilda layoutelement som sidhuvud, sidfot, sidnummer, rubrik med mera finns i *Arbeta med sidlayoutselement*.
+   Mer information om hur du definierar enskilda layoutelement som sidhuvud, sidfot, sidnummer, rubrik med mera finns i [Utforma en sidlayout](design-page-layout.md).
 
-## Anpassa PDF med formatmallar
+## Anpassa PDF med formatmallar {#stylesheet-customization}
 
 Med inställningarna i formatmallskomponenten kan du formatera sidlayoutskomponenterna och DITA-innehållet med WYSIWYG-redigeraren eller arbeta direkt med CSS-filen. Du kan skapa egna format eller anpassa standardformategenskaperna. WYSIWYG-redigeraren ger dig tillgång till de flesta egenskaper som du behöver för att formatera din sidlayout eller DITA-innehåll. För avancerade anpassningar kan du arbeta direkt i källvyn.
 
-### Skapa en ny formatmall
+### Skapa en ny formatmall {#create-stylesheet}
 
 CSS-filer tillhandahålls för innehåll och layout, men du kan skapa en ny formatmall som använder flera anpassningar för en viss formattyp som sedan kan användas för en målkomponent. Som standard paketeras CSS-exempelfiler i produkten. Dessa CSS-filer är avsedda att hjälpa dig att ordna formatinformation för innehåll och layout. Du kan välja att sammanfoga dessa format i en eller flera CSS-filer.
 
@@ -92,7 +98,7 @@ Så här skapar du en formatmall:
 
    En ny formatmall skapas och läggs till under formatmallsavsnittet.
 
-### Skapa ett nytt format
+### Skapa ett nytt format {#create-style}
 
 Som standard innehåller CSS-filerna format för rubriker, stycken, tecken, hyperlänkar, bilder, tabeller, div, sidor och andra format. Du kan åsidosätta standardformatet eller skapa ett nytt format.
 
@@ -114,7 +120,7 @@ Så här skapar du ett nytt format:
 
    Ett nytt format skapas och läggs till under basformatet.
 
-### Anpassa ett fördefinierat eller nytt format
+### Anpassa ett fördefinierat eller nytt format {#customize-style}
 
 När du har skapat en ny CSS-fil med standardformat eller vill anpassa format i en befintlig CSS-fil kan du använda formatredigeraren för att göra det.
 
@@ -134,7 +140,9 @@ Så här anpassar du en stil:
 
 1. Om du vill anpassa ett format dubbelklickar du på det eller klickar på >-ikonen före ett format för att visa och anpassa det med formatredigeraren.
 
-## Arbeta med resurser
+mer information om hur du arbetar med de vanligaste formaten finns i [Arbeta med vanliga innehållsformat](stylesheet.md)
+
+## Arbeta med resurser {#work-with-resources}
 
 Detta är en behållare för alla resurser som används för att utforma en mall. Du kan tänka dig det som en mapp som innehåller resurser som bakgrundsbilder, anpassade teckensnitt, logotyper med mera. När du lägger till en resurs i mallen överförs den eller checkas in i resursmappen. Du kan sedan använda dessa resurser för att anpassa eller utforma dina PDF-mallar.
 
@@ -146,13 +154,16 @@ Följ stegen nedan för att lägga till en resursfil i resursmappen:
    <img src="assets/resources-import-assets.png" alt="Överför resurser" width="300">
 
    Sökvägen dit resursfilen ska överföras visas i **Välj resursmapp** fält.
-   > **Obs!** Du kan inte ändra sökvägen för överföring av resurser. Som standard lagras alla resurser under `/content/dam/dita-templates/pdf/<PDF-template-name>` mapp.
+   >[!NOTE]
+   >
+   >Du kan inte ändra sökvägen för överföring av resurser. Som standard lagras alla resurser under `/content/dam/dita-templates/pdf/<PDF-template-name>` mapp.
 
 1. Klicka **Välj filer** för att bläddra i resursfilen från din lokala dator
+
 1. Klicka **Överför**.
 Den valda filen importeras och visas under mappen Resurser.
 
-## Avancerade PDF-inställningar
+## Avancerade PDF-inställningar {#advanced-pdf-settings}
 
 Använd avsnittet Inställningar för att konfigurera de avancerade inställningarna för PDF sidlayout, med början PDF från udda eller jämna sidor, format för korsreferenserna och aktivering av utskriftsmärken i det slutliga PDF som genereras med mallen.
 
@@ -181,10 +192,12 @@ Ange de grundläggande konfigurationsinställningarna för att starta ett kapite
    Här ser du att det första kapitlet Avancerade PDF-inställningar inte får något sidnummer, som det har kapslade eller underordnade avsnitt. Ett sidnummer om det tilldelas till Bilaga och Rättslig information eftersom de är fristående ämnen utan något underordnat ämne.
 
 * **Ledarformat**: Använd listrutan för att välja prickade, heldragna eller mellanslag för att koppla rubriknivåer till motsvarande sidnummer.
-Information om hur du använder rubriknivåer för innehållsförteckningens struktur och format finns i *Definiera innehållsförteckning*.
+Information om hur du använder rubriknivåer för innehållsförteckningens struktur och format finns i [Lägga till en kapitelinnehållsförteckning](design-page-layout.md#add-chapter-toc).
 
-   > **Anteckning**: Om du är CSS-utvecklare kan du definiera ledarformatet direkt i CSS-filen också.
-* **Använd fortsättningsmarkör för register**: Välj det här alternativet om du vill definiera markörer för långa tabeller som sprids över flera sidor. Mer information om att använda fortsättningsmarkörer för tabeller finns i Använda fortsättningsmarkörer för tabeller.
+   >[!NOTE]
+   >
+   >Om du är CSS-utvecklare kan du definiera ledarformatet direkt i CSS-filen också.
+* **Använd fortsättningsmarkör för register**: Välj det här alternativet om du vill definiera markörer för långa tabeller som sprids över flera sidor. <!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 **Sidlayouter**
 
@@ -195,7 +208,7 @@ Om du inte har skapat någon layout för ett visst avsnitt i dokumentet kan du v
 Om du vill ha en omslag och en baksida måste du ha en sidlayout som skapas och används i inställningarna. Annars kommer PDF inte att innehålla omslag och baksidor.
 
 
-Mer information om sidlayouter finns i *Ange sidlayout*.
+Mer information om sidlayouter finns i [Utforma en sidlayout](design-page-layout.md).
 
 **Skriv ut**
 
@@ -212,10 +225,12 @@ Konfigurera utskriftsinställningarna för att tilldela skrivarmärken, välja f
 * **Media Box-storlek**: Detta är den totala sidstorleken inklusive utökat område som används av skrivarmärken. Använd listrutan för att välja sidstorlek för dina utdata från PDF eller skapa en egen anpassad storlek.
 
 * **Färgmodell**: Du kan välja mellan RGB eller CMYK-färgrymder för att skriva ut PDF-dokumentet. Välj RGB om du vill visa PDF digitalt och CMYK för fysisk utskrift. Färger som definieras i dokumentet konverteras till den valda färgrymden.
-   > **Anteckning**: En ICC-färgprofil krävs för att skapa PDF/A om CMYK-färgmodellen används.
+   >[!NOTE]
+   >
+   >En ICC-färgprofil krävs för att skapa PDF/A om CMYK-färgmodellen används.
 
-   Mer information om hur du använder de här utskriftsinställningarna finns i *Utskriftsinställningar*.
+   <!--For more information on applying these print settings, see *Printing preferences*.-->
 
 **Korsreferenser**
 
-Använd fliken Korsreferens för att definiera hur korsreferenserna ska publiceras i PDF. Du kan formatera korsreferenserna för ämnesrubrik, tabeller, figurer och mycket annat. Mer information finns i *Formatera korsreferenser*.
+Använd fliken Korsreferens för att definiera hur korsreferenserna ska publiceras i PDF. Du kan formatera korsreferenserna för ämnesrubrik, tabeller, figurer och mycket annat. <!--For more information, see *Format cross-references*.-->

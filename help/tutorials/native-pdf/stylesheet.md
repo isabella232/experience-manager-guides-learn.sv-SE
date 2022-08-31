@@ -3,7 +3,7 @@ title: Publiceringsfunktion för PDF | Arbeta med vanliga innehållsformat
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
 hide: true
 hidefromtoc: true
-source-git-commit: 78db1486af3eb99b165a136d6bae6f7f15a1b527
+source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
 workflow-type: tm+mt
 source-wordcount: '3500'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Arbeta med vanliga innehållsformat
+# Arbeta med vanliga innehållsformat {#work-with-common-styles}
 
 En formatmall innehåller definitioner av format för de element som används i utdata från PDF. Du kan välja att arbeta med exempelformatmallarna eller skapa nya. I de flesta fall kan du snabbt komma igång genom att skapa en kopia av OTB-exempelformatmallen.
 
@@ -36,7 +36,7 @@ I följande avsnitt beskrivs de vanligaste formatinställningarna i form av exem
 >
 >I följande exempel antas du arbeta med den exempelformatmall som levereras med produkten.
 
-## Arbeta med rubrikformat
+## Arbeta med rubrikformat {#heading-styles}
 
 Rubrikformaten kapslar in alla basformat för de rubriker som används i innehållet. OTB får du 6 basrubrikformat och ett rubrikformat för ämnet/kapitlet och bilagans rubrikrubrik. I ett strukturerat dokument representerar H1 ämnets eller kapitlets rubrik och H2 till H6 används för underämnen eller avsnitt i ett ämne/kapitel. Den här rubrikhierarkin används automatiskt på innehållet när motsvarande rubrik hittas.
 
@@ -44,7 +44,7 @@ Rubrikformaten kapslar in alla basformat för de rubriker som används i innehå
 >
 >Du kan skapa egna rubrikformat och de kan användas i ditt innehåll med hjälp av klassen output. Mer information finns i steg 4 i *Använda sidorientering och vyrotation* exempel.
 
-### Skapa anpassade rubriker på kapitelnivå
+### Skapa anpassade rubriker på kapitelnivå {#create-chapter-level-heading}
 
 I en bok (eller en bokmapp) arbetar du med kapitel. Basrubrikformaten är utformade på ett sådant sätt att de tillämpas på rubriker på kapitelnivå utan anpassningar. Men om du vill skapa rubriker för innehållet måste du skapa rubrikerna. Som standard `h1.chapter` rubriken används på kapitlets namn. Om du vill att kapiteltiteln ska visas i ett annat format måste du anpassa `h1.chapter` stil. På samma sätt kan du skapa egna format för underrubriker i kapitlet. Om du till exempel vill skapa ett anpassat format för alla 2<sup>end</sup> och 3<sup>rd</sup> nivårubriker i kapitlet måste du skapa ett nytt format som `h2.chatper` och `h3.chatper`.
 
@@ -66,7 +66,7 @@ Ett nytt rubrikformat med namnet `h2.chapter` skapas och läggs till i listan Ru
 
 När du har skapat ett format kan du anpassa de önskade egenskaperna för formatet med hjälp av formatredigeraren.
 
-### Skapa rubriker med automatisk numrering
+### Skapa rubriker med automatisk numrering {#auto-number-heading}
 
 Ett av de vanligaste utdataformaten är autonumrerade rubriker. Dessa rubriker representerar kapitelnummer, ämne och underteman. Rubrikerna för automatisk numrering skiljer sig från listformaten där en lista med objekt i ett ämne tilldelas automatiska nummer.
 
@@ -129,11 +129,11 @@ Egenskaperna för formatet h1 visas på egenskapspanelen tillsammans med förhan
 
    <img src="./assets/auto-number-output.png" width="500">
 
-## Arbeta med styckeformat
+## Arbeta med styckeformat {#paragraph-style}
 
 Du kan skapa ett styckeformat om du vill använda specialformatering för ett helt stycke. Med pseudoklassen kan du emellertid bara använda ett format på en viss del av texten. I följande exempel skapar vi ett styckeformat som använder anfangsformatet.
 
-### Skapa anfangsstil
+### Skapa anfangsstil {#drop-cap-style}
 
 En anfangsstil (eller en versalstil som tappats) används i tidskrifter och litterära dokument där det första tecknet i ett stycke eller avsnitt får en viss speciell formatering. Du kan uppnå samma effekt med publiceringsfunktionen för PDF.
 
@@ -164,11 +164,11 @@ Som `p` -taggen är kopplad till `<p>` i DITA behöver du inte lägga till det h
 
 <img src="./assets/char-style-drop-cap.png" width="500">
 
-## Arbeta med teckenformat
+## Arbeta med teckenformat {#char-style}
 
 Med teckenformat kan du skapa format för formatering av tecken och ord i innehållet. Du kan till exempel skapa ett teckenformat för infogad kod eller ett filnamn, eller skapa ett format som använder flera formatformat för markerat innehåll.
 
-### Skapa ett textbundet teckenformat
+### Skapa ett textbundet teckenformat {#inline-char-style}
 
 Formatering av infogade tecken eller ord i ett stycke är ett mycket vanligt format. Det krävs två åtgärder för att skapa ett infogat format: först skapar du ett nytt format i formatmallen och sedan tillämpar du formatet i innehållet med `outputclass` -attribut.
 
@@ -210,7 +210,7 @@ I följande exempel visas det fetkursiva formatet som används på olika ställe
 
 <img src="./assets/char-format-applied.png" width="500">
 
-## Anpassa listformat
+## Anpassa listformat {#custom-list-style}
 
 Listformaten innehåller standardformatinställningarna för de sorterade och osorterade listorna. Du kan enkelt anpassa de här listformaten så att de uppfyller dokumentationskraven.
 
@@ -269,7 +269,7 @@ I följande exempel anpassar vi det numrerade eller ordnade listformatet:
       <img src="./assets/list-number-format-final.png" width="500">
 
 
-## Arbeta med tabellformat
+## Arbeta med tabellformat {#table-styles}
 
 Med formatmallarna kan du designa *n* antal tabellformat. Med tabellformaten kan du utforma hur hela tabellen, en viss rad eller kolumn, ska se ut. Med kontroll för formatering på cellnivå kan du skapa mycket presenterbara tabellformat.
 
@@ -320,7 +320,7 @@ I följande exempel ser vi hur du skapar ett tabellformat och de olika tabellfor
 
    <img src="./assets/table-final-design.png" width="500">
 
-## Arbeta med andra format
+## Arbeta med andra format {#other-styles}
 
 Om du arbetar med strukturerat (DITA) innehåll kommer du att märka att nästan alla DITA-element har en formatkoppling i standardformatmallen. Till exempel en `<shortdesc>` elementets format definieras under **Annat format** > **.shortdesc** formatdefinition. Du kan enkelt anpassa alla dessa format och de används automatiskt i PDF-utdata som genereras från ditt strukturerade innehåll. Det innebär att du, till skillnad från andra anpassade format, inte behöver lägga till ett `outputclass` på innehållet i dessa format.
 
