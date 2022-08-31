@@ -3,9 +3,9 @@ title: Publiceringsfunktion för PDF | Arbeta med vanliga innehållsformat
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
 hide: true
 hidefromtoc: true
-source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
+source-git-commit: cbd5f4b0763bf4087d016f3d3c8d723518f0b8e7
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3496'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Formatredigeraren är en WYSIWYG-redigerare som döljer alla komplexa CSS-koder 
 * Sidformat
 * Andra format
 
-När du arbetar med strukturerat DITA-innehåll finns formatmappningen för de flesta DITA-elementen på plats i standardformatmallen. Om du arbetar med DITA-standardelement kan du ändra deras utseende och känsla genom att ändra formatdefinitionen direkt. Dessa formatdefinitioner är tillgängliga under kategorin Annat format. Mer information finns i *Arbeta med andra format* senare i det här avsnittet.
+När du arbetar med strukturerat DITA-innehåll finns formatmappningen för de flesta DITA-elementen på plats i standardformatmallen. Om du arbetar med DITA-standardelement kan du ändra deras utseende och känsla genom att ändra formatdefinitionen direkt. Dessa formatdefinitioner är tillgängliga under kategorin Annat format. Mer information finns i [Arbeta med andra format](#other-styles) senare i det här avsnittet.
 
 I följande avsnitt beskrivs de vanligaste formatinställningarna i form av exempel.
 
@@ -42,20 +42,20 @@ Rubrikformaten kapslar in alla basformat för de rubriker som används i innehå
 
 >[!NOTE]
 >
->Du kan skapa egna rubrikformat och de kan användas i ditt innehåll med hjälp av klassen output. Mer information finns i steg 4 i *Använda sidorientering och vyrotation* exempel.
+>Du kan skapa egna rubrikformat och de kan användas i ditt innehåll med hjälp av klassen output. Mer information finns i steg 4 i [Använda sidorientering och vyrotation](design-page-layout.md#page-orientation-rotation) exempel.
 
 ### Skapa anpassade rubriker på kapitelnivå {#create-chapter-level-heading}
 
 I en bok (eller en bokmapp) arbetar du med kapitel. Basrubrikformaten är utformade på ett sådant sätt att de tillämpas på rubriker på kapitelnivå utan anpassningar. Men om du vill skapa rubriker för innehållet måste du skapa rubrikerna. Som standard `h1.chapter` rubriken används på kapitlets namn. Om du vill att kapiteltiteln ska visas i ett annat format måste du anpassa `h1.chapter` stil. På samma sätt kan du skapa egna format för underrubriker i kapitlet. Om du till exempel vill skapa ett anpassat format för alla 2<sup>end</sup> och 3<sup>rd</sup> nivårubriker i kapitlet måste du skapa ett nytt format som `h2.chatper` och `h3.chatper`.
 
-Eftersom publiceringsfunktionen för ursprungliga PDF innehåller basformatsdefinitionerna för de vanligaste formaten, används standardformatet för innehållet även om du av misstag tar bort ett format. Om det t.ex. inte finns någon formatdefinition för h2-formatet i din formatmall kommer publiceringsfunktionen för PDF att använda en grundstil på h2-innehåll.
+Eftersom publiceringsfunktionen för ursprungliga PDF innehåller basformatsdefinitionerna för de vanligaste formaten, används standardformatet för innehållet även om du av misstag tar bort ett format. Om det t.ex. inte finns någon formatdefinition för h2-formatet i din formatmall kommer publiceringsfunktionen för PDF att använda en grundstil för h2-innehåll.
 
 I det här exemplet skapar vi en kapitelrubrikstil på den andra nivån:
 
 1. Öppna den formatmall du vill använda för redigering.
    >[!NOTE]
    >
-   >Se *Anpassa ett fördefinierat eller nytt format* för att öppna en formatmall för anpassning eller redigering.
+   >Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Rubrikformat**.
 1. Högerklicka på **Rubrikformat** stil och välj **Nytt format**.
@@ -76,7 +76,7 @@ I det här exemplet anpassar vi rubrikerna från nivå 1 till nivå 3 för att a
 
    >[!NOTE]
    >
-   >Se *Anpassa ett fördefinierat eller nytt format* för att öppna en formatmall för anpassning eller redigering.
+   >Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Rubrikformat**.
 
@@ -142,7 +142,7 @@ I följande exempel skapar vi en anfangsstil:
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
-   Se *Anpassa ett fördefinierat eller nytt format* för att öppna en formatmall för anpassning eller redigering.
+   Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Styckeformat**.
 
@@ -177,7 +177,7 @@ I följande exempel skapar vi ett infogat teckenformat:
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
-   Se *Anpassa ett fördefinierat eller nytt format* för att öppna en formatmall för anpassning eller redigering.
+   Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Teckenformat**.
 
@@ -196,7 +196,7 @@ I följande exempel skapar vi ett infogat teckenformat:
    * **Teckensnitt**: Alla teckensnittsrelaterade egenskaper kan anpassas i det här avsnittet. Som standard medföljer vissa teckensnitt. Du kan välja önskat teckensnitt för teckenformatet. Ange till exempel teckensnittsfamiljen som *Serif,* och markera *Fet* och *Kursiv* i egenskapen Teckensnittsformat. Du kan också anpassa andra teckensnittsegenskaper som Teckenbredd (som fet, ljusare), Textdekoration (som understrykning, överstrykning), Teckenstorlek, Teckenfärg, Textjustering med mera.
 
       >[!NOTE]
-      Du kan också lägga till teckensnitt i mallen, som lagras i avsnittet Resurser i mallen. Mer information om hur du lägger till teckensnitt och arbetar med resurser finns i **Lägg till en länk till avsnittet Resurser**.
+      Du kan också lägga till teckensnitt i mallen, som lagras i avsnittet Resurser i mallen. Mer information om hur du lägger till teckensnitt och arbetar med resurser finns i [Arbeta med resurser](components-pdf-template.md#work-with-resources).
 
    * **Layout**: Du kan ange layoutrelaterade egenskaper som höjd och bredd, marginal, utfyllnad, justering med mera.
 
@@ -219,7 +219,7 @@ I följande exempel anpassar vi det numrerade eller ordnade listformatet:
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
-   Se *Anpassa ett fördefinierat eller nytt format* för att öppna en formatmall för anpassning eller redigering.
+   Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Listformat**.
 
@@ -278,7 +278,7 @@ I följande exempel ser vi hur du skapar ett tabellformat och de olika tabellfor
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
-   Se *Anpassa ett fördefinierat eller nytt format* för att öppna en formatmall för anpassning eller redigering.
+   Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** högerklicka på **Tabellformat** och välja **Nytt format**.
 
@@ -331,7 +331,7 @@ I följande exempel skapar vi ett nytt fönsternamn (`wintitle`):
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
-   Se *Anpassa ett fördefinierat eller nytt format* för att öppna en formatmall för anpassning eller redigering.
+   Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** lista, expandera **Andra format**.
 
