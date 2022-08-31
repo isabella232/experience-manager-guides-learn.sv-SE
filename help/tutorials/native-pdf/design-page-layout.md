@@ -4,9 +4,9 @@ description: Lär dig hur du utformar sidlayouten för att presentera informatio
 hide: true
 hidefromtoc: true
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
+source-git-commit: 7b96fe9e8fad0e017626be04f5c41c1e42e7469d
 workflow-type: tm+mt
-source-wordcount: '4686'
+source-wordcount: '4649'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ När du utformar en sidlayout är det viktigt att du har kontroll över olika si
 >
 >Panelen Sidegenskaper kapslar in egenskaperna och följer regler som definierats under [Page Media-standarder](https://www.w3.org/TR/css-page-3/).
 
-* **Sidstorlek** : Ange den sidstorlek som du vill använda för sidlayouten. I listrutan Sidstorlek kan du välja mellan över 15 sidstorlekar. Du kan också skapa en sidlayout med en anpassad sidstorlek, se [Ange sidstorlek](design-page-layout.md#set-the-page-size) för mer information.
+* **Sidstorlek** : Ange den sidstorlek som du vill använda för sidlayouten. I listrutan Sidstorlek kan du välja mellan över 15 sidstorlekar. Du kan också skapa en sidlayout med en anpassad sidstorlek, se [Ange sidstorlek](#set-page-size) för mer information.
 
 * **Orientering** : Ange den sidorientering som ska användas för sidlayouten. Du kan välja mellan stående eller liggande sidorientering. Observera att du kan välja att använda olika orienteringar för olika sidvarianter i en sidlayout. Om innehållet till exempel innehåller en bred tabell eller en stor bild kan du skapa en liggande sidlayout och använda den layouten på den bredare tabellen eller bilden.
 
@@ -341,7 +341,7 @@ I följande skärmbild visas en exempelbild som lagts till i sidhuvudsområdet.
 
 <img src="./assets/image-in-header-area.png" width="500">
 
-När en bild har infogats kan du ändra dess attribut så att den ser ut som du vill ha den. Det enklaste sättet att ändra hur en bild eller något annat element på sidlayouten ser ut är att använda panelen Innehållsegenskaper. Se [Arbeta med panelen Innehållsegenskaper](design-page-layout.md#work-with-content-properties-panel) för de olika egenskaper som är tillgängliga via användargränssnittet för anpassning.
+När en bild har infogats kan du ändra dess attribut så att den ser ut som du vill ha den. Det enklaste sättet att ändra hur en bild eller något annat element på sidlayouten ser ut är att använda panelen Innehållsegenskaper. Se [Arbeta med panelen Innehållsegenskaper](#work-with-content-props) för de olika egenskaper som är tillgängliga via användargränssnittet för anpassning.
 
 ### Lägg till fält och metadata {#add-fields-metadata}
 
@@ -361,7 +361,7 @@ Det finns följande kategorier för fält som du kan infoga i sidlayouten:
 
 Var och en av dessa fältkategorier innehåller olika variationer där fältinformationen kan infogas. Ett datumfält kan t.ex. ha olika variationer, t.ex. `YYYY-MM-DD`, `MM/DD/YY`, `MM/DD/YYYY` och så vidare. På samma sätt kan sidnummer ha variationer i form av latinska, decimala eller till och med språkspecifika format som _Arabiska_, _Devanagari_, _Hebreiska_, med mera.
 
-Förutom de fördefinierade fälten kan du även lägga till metadatainformation som variabler eller fält i sidlayouten. Dessa metadata lagras i DITA-kartinnehållet och kan enkelt infogas i sidlayouten. Mer information finns i [Lägg till fält och metadata](design-page-layout.md#add-fields-and-metadata).
+Förutom de fördefinierade fälten kan du även lägga till metadatainformation som variabler eller fält i sidlayouten. Dessa metadata lagras i DITA-kartinnehållet och kan enkelt infogas i sidlayouten. <!--For more information, see [Add fields and metadata](design-page-layout.md#add-fields-and-metadata).-->
 
 I följande exempel infogar vi ett sidnummer och en kapitelrubrik i sidfotsområdet i en sidlayout.
 
@@ -387,7 +387,7 @@ I följande exempel infogar vi ett sidnummer och en kapitelrubrik i sidfotsområ
 
    >[!NOTE]
    >
-   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid det format du vill redigera, gör ändringar och klickar på OK. Mer information finns i [Lägg till fält och metadata](design-page-layout.md#add-fields-and-metadata).
+   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid formatet som du vill redigera, gör ändringar och klickar på OK. Mer information finns i [Lägg till fält och metadata](#add-fields-metadata).
 
    Standardsidnummerfältet infogas i sidfotsområdet i sidlayouten.
 
@@ -449,7 +449,7 @@ I följande exempel infogar vi en kapitelinnehållsförteckning i den första si
 
 >[!NOTE]
 >
->I den här proceduren antas att du har skapat varianten Första sidan för en kapitelsidlayout. Instruktioner om hur du skapar en sidvariant finns i _Skapa de första, högra eller vänstra sidlayoutvarianterna_.
+>I den här proceduren antas att du har skapat varianten Första sidan för en kapitelsidlayout. Instruktioner om hur du skapar en sidvariant finns i [Skapa de första, högra eller vänstra sidlayoutvarianterna](#page-layout-variants).
 
 1. Öppna önskad sidlayout för redigering.
 
@@ -483,7 +483,7 @@ I följande exempel infogar vi en kapitelinnehållsförteckning i den första si
    >
    >I den slutliga publicerade PDF visas bara innehållsförteckningsposterna baserat på innehållet i dina kapitel. Om du inte har rubriker på nivå 5 i ett kapitel visas det inte i det slutliga resultatet.
 
-Utseendet på standardinnehållsförteckningen kan anpassas med hjälp av formatmallarna. Det format som börjar med `chaptoc-level-#` (som `chaptoc-level-1`, `chaptoc-level-2`och så vidare) används för att anpassa formaten för kapitelinnehållsförteckningen. Mer information om de formatmallselement som används i innehållsförteckningen och hur du anpassar dem finns i _Anpassa standardkapitelinnehållsförteckning_.
+Utseendet på standardinnehållsförteckningen kan anpassas med hjälp av formatmallarna. Det format som börjar med `chaptoc-level-#` (som `chaptoc-level-1`, `chaptoc-level-2`och så vidare) används för att anpassa formaten för kapitelinnehållsförteckningen. <!--For more details on the stylesheet elements used in the TOC and how to customize them, see _Customize default chapter TOC_-->.
 
 >[!IMPORTANT]
 >
@@ -519,7 +519,7 @@ Så här skapar du en sidlayout med flera kolumner:
 
    * **Kolumnmellanrum** : Ange avståndet mellan enskilda kolumner.
 
-   * **Kolumnintervall** : Om du vill att ett element på sidlayouten ska spänna över flera kolumner måste du använda den här egenskapen. Detta uppnås genom att formatet för det önskade elementet ändras med formatmallarna. Mer information finns i _Avsnitt som förklarar formatanpassning_.
+   * **Kolumnintervall** : Om du vill att ett element på sidlayouten ska spänna över flera kolumner måste du använda den här egenskapen. Detta uppnås genom att du ändrar formatet för det önskade elementet med formatmallarna. <!--for more information see _Section explaining style customization_-->.
 
    Om du i sidlayouten vill att en viss text ska visas på den första sidan i alla kapitelsidlayouter, kan du lägga till den i varianten för den första sidan i kapitelsidlayouten.
 
@@ -549,4 +549,4 @@ Med panelen Innehållsegenskaper kan du enkelt uppdatera utseendet och känslan 
 * **Layout** : Innehåller egenskaper för att konfigurera layouten för ett element i sidlayouten. Du kan ange Höjd, Bredd, Marginaler och Utfyllnad (för överkant, nederkant, vänster eller höger), Vågrät eller Lodrät justering, Flyt (som vänster, höger eller ingen), Rensa (som vänster, höger, båda eller ingen), Elementets position (som absolut, fast, relativ eller mer), Visa (som block, innehåll, korrigera eller mer), Z-index, Genomskinlighet, Omforma (genom att rotera eller rotera skalförändring) och Omforma ursprung (med X- och Y-förskjutning).
 
 * **Bakgrund** : Innehåller egenskaper som innehåller en bakgrundsbild eller färgskugga. Du kan ställa in bildstorlek (genom att ställa in höjd eller bredd), Upprepa bakgrund (som upprepning, ingen upprepning, rund eller mer) och Bakgrundsposition (som vänster överkant, höger mittpunkt, centrera nederkant eller mer).
-* **Flera kolumner** : Innehåller egenskaper för att konfigurera egenskaper med flera kolumner för sidan eller för specifika element, t.ex. kapitelinnehållsförteckning. Mer information om egenskaperna och hur du använder dem finns i _Arbeta med sidlayout med flera kolumner_.
+* **Flera kolumner** : Innehåller egenskaper för att konfigurera egenskaper med flera kolumner för sidan eller för specifika element, t.ex. kapitelinnehållsförteckning. Mer information om egenskaperna och hur du använder dem finns i [Arbeta med sidlayout med flera kolumner](#multi-column-layout).
