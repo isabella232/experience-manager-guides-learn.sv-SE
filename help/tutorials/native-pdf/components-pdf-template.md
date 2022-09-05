@@ -1,10 +1,8 @@
 ---
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
-hide: true
-hidefromtoc: true
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 563a301e4db20cd8076eaffd970d53b7a8743449
+source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
 workflow-type: tm+mt
 source-wordcount: '2275'
 ht-degree: 0%
@@ -165,7 +163,7 @@ Den valda filen importeras och visas under mappen Resurser.
 
 ## Avancerade PDF-inställningar {#advanced-pdf-settings}
 
-Använd avsnittet Inställningar för att konfigurera de avancerade inställningarna för PDF sidlayout, med början PDF från udda eller jämna sidor, format för korsreferenserna och aktivering av utskriftsmärken i det slutliga PDF som genereras med mallen.
+Använd avsnittet Inställningar för att konfigurera de avancerade inställningarna för sidlayout, med början från PDF från udda eller jämn PDF, format för korsreferenserna och aktivering av utskriftsmärken i det slutliga PDF som genereras med mallen.
 
 Konfigurera genom att klicka på **Inställningar** i **Mallar** för att visa följande alternativ:
 

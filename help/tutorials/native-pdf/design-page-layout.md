@@ -1,10 +1,8 @@
 ---
 title: Publiceringsfunktion för PDF | Designa en sidlayout
 description: Lär dig hur du utformar sidlayouten för att presentera information i olika delar av PDF.
-hide: true
-hidefromtoc: true
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 7b96fe9e8fad0e017626be04f5c41c1e42e7469d
+source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
 workflow-type: tm+mt
 source-wordcount: '4649'
 ht-degree: 0%
@@ -387,7 +385,7 @@ I följande exempel infogar vi ett sidnummer och en kapitelrubrik i sidfotsområ
 
    >[!NOTE]
    >
-   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid formatet som du vill redigera, gör ändringar och klickar på OK. Mer information finns i [Lägg till fält och metadata](#add-fields-metadata).
+   >Du kan också redigera formatet för alla fält, förutom standardformatet. Om du vill göra det klickar du på ikonen Redigera bredvid det format du vill redigera, gör ändringar och klickar på OK. Mer information finns i [Lägg till fält och metadata](#add-fields-metadata).
 
    Standardsidnummerfältet infogas i sidfotsområdet i sidlayouten.
 

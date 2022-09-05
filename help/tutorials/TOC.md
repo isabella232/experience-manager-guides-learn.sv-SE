@@ -2,9 +2,9 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: 78db1486af3eb99b165a136d6bae6f7f15a1b527
+source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '127'
 ht-degree: 3%
 
 ---
@@ -32,15 +32,15 @@ ht-degree: 3%
    + [Arbeta med villkorsstyrda utdata](./content-architecture/create-and-use-conditions.md)
    + [Skapa globala nycklar](./content-architecture/create-global-keys.md)
 + Konfigurerar {#configuring}
+   + Konfigurera publiceringsfunktionen för PDF {#config-native-pdf-publish}
+      + [PDF-mall](./native-pdf/pdf-template.md)
+      + [Komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
+      + [Utforma en sidlayout](./native-pdf/design-page-layout.md)
+      + [Arbeta med vanliga innehållsformat](./native-pdf/stylesheet.md)
    + [Konfigurera en anpassad DITA-OT](./configuring/setup-a-custom-dita-ot.md)
 + Översättning {#translation}
    + [Exkludera stycken från översättning](./translation/exclude-paragraphs-from-translation.md)
 + Web Editor {#web-editor}
-   + [Publicera PDF](./web-editor/native-pdf-web-editor.md)
+   + [Publicera PDF-utdata](./web-editor/native-pdf-web-editor.md)
    + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
 + Versionshantering {#versioning}
-+ Artiklar om inbyggd PDF i PIA {#hidden}
-   + [Dold PDF-mall](./native-pdf/pdf-template.md)
-   + [Dolda komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
-   + [Dold Designa en sidlayout](./native-pdf/design-page-layout.md)
-   + [Dold formatmall](./native-pdf/stylesheet.md)
