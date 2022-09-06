@@ -2,9 +2,9 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
+source-git-commit: cf0ccd878ec25cb9eadd2cc5fa6f63eeec8a442c
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '125'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 3%
    + [Arbeta med villkorsstyrda utdata](./content-architecture/create-and-use-conditions.md)
    + [Skapa globala nycklar](./content-architecture/create-global-keys.md)
 + Konfigurerar {#configuring}
-   + Konfigurera publiceringsfunktionen för PDF {#config-native-pdf-publish}
+   + Publicering i PDF {#config-native-pdf-publish}
       + [PDF-mall](./native-pdf/pdf-template.md)
       + [Komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
       + [Utforma en sidlayout](./native-pdf/design-page-layout.md)
