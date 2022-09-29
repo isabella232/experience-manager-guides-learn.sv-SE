@@ -1,7 +1,7 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, september 2022-versionen
 description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: f2ad6e920c47fff61dd85e3aeafb558c7fd6cfea
+source-git-commit: 748a37298849b3fbf6079c19de3cb052dee3a464
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 3%
@@ -58,7 +58,7 @@ AEM Guides as a Cloud Service innehåller många förbättringar och nya funktio
 Nu kan du skapa dynamiska baslinjer baserat på etiketter med hjälp av AEM stödlinjer. Om du genererar en baslinje, hämtar en baslinje eller skapar ett översättningsprojekt med hjälp av en baslinje, hämtas filerna dynamiskt baserat på de uppdaterade etiketterna. Den här funktionen är praktisk eftersom du inte behöver ändra baslinjen när du uppdaterar etiketterna.
 Du kan också exportera ögonblicksbilden av baslinjen som en CSV-fil.
 
-![Skapa baslinjer](assets/preset-metadata.png)
+![Skapa baslinjer](assets/dynamic-baseline.png)
 
 ### Söka efter och ersätta text på mappningsnivå
 
