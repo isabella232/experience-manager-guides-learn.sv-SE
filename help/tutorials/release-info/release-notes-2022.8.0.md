@@ -1,21 +1,21 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, augusti 2022-versionen
-description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 7cc33e4621c2bfbf08a720f173e8e419c5424a6c
+description: Augustiversionen av Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: d49ccb3f654dede0c0447849d89ecbab333a1055
 workflow-type: tm+mt
 source-wordcount: '1156'
 ht-degree: 1%
 
 ---
 
-# Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
+# Augustiversionen av Adobe Experience Manager Guides as a Cloud Service
 
-## Uppgradera till den senaste versionen
+## Uppgradera till augusti-versionen
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö du vill uppgradera.
 2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.8.167.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till den senaste versionen av AEM Guides as a Cloud Service.
+3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till augusti-versionen av AEM Guides as a Cloud Service.
 
 ## Kompatibilitetsmatris
 
@@ -40,7 +40,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 ## Nya funktioner och förbättringar
 
-AEM Guides as a Cloud Service innehåller många förbättringar och nya funktioner i den senaste versionen:
+AEM Guides as a Cloud Service innehåller många förbättringar och nya funktioner i augusti-versionen:
 
 ### Layoutvyn i kartredigeraren
 
