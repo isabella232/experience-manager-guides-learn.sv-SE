@@ -2,9 +2,9 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: e3dfbe036758bc4357b474a35e44d12296ac4a52
+source-git-commit: e65bad1487c957894fd206f7e42a998c15497905
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '126'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # Tutorials för [!DNL Adobe Experience Manager Guides] {#tutorials}
 
-+ [Tutorials för [!DNL AEM Guides] för AEM](overview.md)
++ [Tutorials för [!DNL AEM Guides]](overview.md)
 + Versionsinformation {#release-info}
    + [[!DNL AEM Guides] releaser](./release-info/latest-release-info.md)
    + Versionsinformation {#release-notes}
