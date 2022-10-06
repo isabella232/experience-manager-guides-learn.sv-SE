@@ -2,24 +2,83 @@
 title: Versionsinformation | Adobe Experience Manager Guides 4.1
 description: Senaste utgåvan av Adobe Experience Manager Guides
 exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
-source-git-commit: 7fc8eb3ea46eee89eac4d5779f14d61aa6106505
+source-git-commit: f74126c1eb7bccf0c9464cbe9b1138af5bd4938f
 workflow-type: tm+mt
-source-wordcount: '2973'
-ht-degree: 2%
+source-wordcount: '3275'
+ht-degree: 3%
 
 ---
 
-# Senaste utgåvan av Adobe Experience Manager Guides
+# 4.1.x-versionen av Adobe Experience Manager Guides
+
+Den här versionsinformationen innehåller uppgraderingsinstruktioner, nya funktioner och förbättringar i version 4.1.x av Adobe Experience Manager Guides (kallas senare *AEM stödlinjer*).
 
 ## Uppgradera till den senaste versionen
 
-Du kan enkelt uppgradera din nuvarande version av Adobe Experience Manager Guides (kallas senare *AEM stödlinjer*) till version 4.1. Innan du uppgraderar till version 4.1 AEM handboken måste du tänka på följande:
-
-* Om du använder version 4.0.x kan du uppgradera direkt till version 4.1. Du måste uppgradera till version 4.0.x innan du uppgraderar till 4.1.
+Du kan enkelt uppgradera din nuvarande version av AEM till version 4.1.2. Innan du uppgraderar till version 4.1.2 AEM handboken måste du tänka på följande:
+* Om du använder version 4.1 eller 4.1.x kan du uppgradera direkt till version 4.1.2.
+* Om du använder version 4.0.x måste du uppgradera till version 4.1 eller 4.1.x innan du uppgraderar till 4.1.2.
 * Om du använder version 3.8.5 måste du uppgradera till version 4.0.x innan du uppgraderar till 4.1.
 * Om du har en tidigare version än 3.8.5, se uppgraderingsavsnittet i den produktspecifika installationsguiden.
 
-Mer information finns i [Uppgraderingsinstruktioner](assets/Adobe-Experience-Manager-Guides_Upgrade-Instructions_EN.pdf).
+Mer information finns i [Uppgraderingsinstruktioner](assets/Adobe-Experience-Manager-Guides-Upgrade-Instructions-EN.pdf).
+
+## 4.1.2 | Versionsinformation
+
+## Kompatibilitetsmatris
+
+I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av AEM 4.1.2.
+
+### Adobe Experience Manager
+
+**Ej UID**
+Version 6.5 Service Pack 13, 12, 11 eller 10
+
+**UUID**
+Version 6.5 Service Pack 13, 12, 11 eller 10
+
+Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigurera Adobe Experience Manager-guider.
+
+
+### FrameMaker och FrameMaker Publishing Server
+
+| Frigör | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
+| --- | --- | --- | --- | --- |
+| 4.1.2 (ej UUID) | 2020.2 eller senare* | 2019 | 2020.3 eller senare | 2019.8 (senaste uppdateringen) |
+| 4.1.2 (UUID) | 2020.2 eller senare* | Inte kompatibel | 2020.4 eller senare | Inte kompatibel |
+|  |  |  |  |
+
+*Originalplan och villkor skapade i AEM stöds i FMPS-versioner från och med 2020.2.
+
+### Syrgasanslutning
+
+| Frigör | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
+| --- | --- | --- |--- |--- |
+| 4.1.2 (ej UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
+| 4.1.2 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
+|  |  |  |
+
+
+## Åtgärdade problem
+
+De buggar som har åtgärdats i olika områden listas nedan:
+
+* När du väljer alla mappprofiler visas en osynlig mappprofil (som är felaktig). (10393)
+* När du skapar baslinjen väljs inte den senaste versionen, när användarens tidszon skiljer sig från serverns tidszon. (10336)
+* Kortkommandot Ctrl+F öppnar inte webbläsarsökningen modal på Resurskonsolen efter installationen av AEM Guides 4.1. (10339)
+* Fel vid skapande av baslinje inträffar för det ämne som har referensen till en mapp. (10383)
+* Fliken Utdatainställningar visar ibland en tom skärm och i vissa fall visas icke-redigerbara förinställningar. (10390)
+* Hantering av nyckelrutor leder till undantag och fel. (10449)
+
+### Kända problem med lösningar
+
+* Baslinje som exporteras under översättning läses inte in på baslinjefliken i redigeraren.
+
+   **Tillfällig lösning**: Använd baslinjefliken på DITA-kartkontrollpanelen.
+
+## 4.1 | Versionsinformation
+
+Den här versionsinformationen innehåller uppgraderingsinstruktioner, nya funktioner och förbättringar i version 4.1.x av Adobe Experience Manager Guides (kallas senare *AEM stödlinjer*).
 
 ## Kompatibilitetsmatris
 
@@ -59,7 +118,7 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 
 ## Nya funktioner och förbättringar
 
-AEM innehåller många förbättringar och nya funktioner i den senaste versionen:
+AEM innehåller många förbättringar och nya funktioner i version 4.1:
 
 ### Förbättrad webbredigerare
 

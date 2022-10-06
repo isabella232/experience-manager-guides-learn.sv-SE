@@ -2,9 +2,9 @@
 user-guide-title: Tutorials för AEM stödlinjer
 user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
 breadcrumb-title: AEM Guides Tutorials
-source-git-commit: e65bad1487c957894fd206f7e42a998c15497905
+source-git-commit: 7f0427213d71742b69bb392cea2064f05365f1a7
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '127'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,8 @@ ht-degree: 3%
          + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
          + [Versionsinformation för januari](./release-info/release-notes-2022.1.0.md)
       + Lokalt/Managed Services {#on-prem-release-notes}
-         + [4.1 Versionsinformation](./release-info/release-notes-4.1.md)
++
+         + [4.1.x Versionsinformation](./release-info/release-notes-4.1.md)
          + [4.0.x Versionsinformation](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html)
          + [Versionsinformation om 3.8.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-3-8.html)
 + Exempel på innehållsarkitektur och -användning {#content-arch}
