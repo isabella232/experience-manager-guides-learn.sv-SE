@@ -26,7 +26,6 @@ ht-degree: 3%
          + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
          + [Versionsinformation för januari](./release-info/release-notes-2022.1.0.md)
       + Lokalt/Managed Services {#on-prem-release-notes}
-+
          + [4.1.x Versionsinformation](./release-info/release-notes-4.1.md)
          + [4.0.x Versionsinformation](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html)
          + [Versionsinformation om 3.8.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-3-8.html)
