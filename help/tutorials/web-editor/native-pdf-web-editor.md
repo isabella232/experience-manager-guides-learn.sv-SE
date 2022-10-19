@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 1b46f5e496e6c974abeba019a9d3174d5bc5315c
+source-git-commit: d832e78b690b533f44dc2205e9fea483d9213c58
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2299'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Förinställningspanelen öppnas.
    * Klicka på ikonen + mot **Förinställningar** för att lägga till en ny förinställning för **Typ: PDF**
 3. Så här konfigurerar du inställningar för en befintlig förinställning för PDF:
    * Klicka på  **Alternativ** ![alternativ](assets/options.svg) -ikonen bredvid önskad förinställning och välj **Redigera**.
-Du kan använda följande inställningar i **Allmänt**, **Layout**, **Säkerhet** och **Avancerat** för att konfigurera en förinställning för PDF:
+Du kan använda följande inställningar i **Allmänt**, **Metadata**, **Layout**, **Säkerhet** och **Avancerat** för att konfigurera en förinställning för PDF:
 
 **Allmänt**
 
@@ -74,6 +74,23 @@ Används för att ange grundläggande utdatainställningar, t.ex. en utdatasökv
 | **PDF-fil** | Ange ett filnamn för att spara PDF. Som standard lägger filnamnet PDF till DITA-mappningsnamnet tillsammans med förinställningsnamnet. Diditamap är till exempel&quot;TestMap&quot; och namnet på förinställningen är&quot;preset1&quot;. Standardnamnet för pdf är&quot;TestMap_preset1.pdf&quot;. |
 | **Använd villkor med** | För villkorat innehåll väljer du något av följande alternativ för att generera utdata i PDF baserat på dessa villkor: <br>* **Ingen används** Välj det här alternativet om du inte vill tillämpa något villkor på kartan och källinnehållet. <br> * **Ditaval-fil** Välj en DITAVAL-fil för att generera villkorat innehåll. Markera genom att klicka på Villkorsförinställning och leta reda på filen. <br> * **Förinställning för villkor** Välj en villkorsförinställning i listrutan om du vill använda ett villkor när du publicerar utdata. Det här alternativet är synligt om du har lagt till ett villkor för DITA-kartfilen. De villkorliga inställningarna finns på fliken Villkorsförinställningar i DITA-kartkonsolen. Mer information om förinställda villkor finns i [Använda förinställningar för villkor](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-condition-presets.html). <br> |
 | **Använd baslinje** | Om du har skapat en baslinje för den valda DITA-kartan väljer du det här alternativet för att ange vilken version du vill publicera. Se [Arbeta med baslinje](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-baseline-for-publishing.html) för mer information. |
+
+**Metadata**
+
+Metadata är beskrivningen eller definitionen av ditt innehåll. Metadata hjälper till vid innehållshantering och hjälper till att söka efter filer på Internet.
+
+Använd fliken Metadata för att ange namn, författare, ämne och nyckelord för utdata från PDF. Dessa metadata mappas till metadata på fliken Beskrivning i dokumentegenskaperna för utdata-PDF.
+
+**Anteckning**: Dessa metadata åsidosätter metadata som definierats på boknivå.
+
+![metadata, flik](assets/pdf-metadata.png)
+
+| Inställning | Beskrivning |
+|---|---|
+| **Titel** | Ange en kort och tydlig titel för att definiera dokumentet. |
+| **Författare** | Ange namnen på författarna som skapade dokumentet. |
+| **Ämne** | Definiera det ämne eller den samling som dokumentet är relaterat till. |
+| **Nyckelord** | Använd relevanta nyckelord för att förbättra sökmotoroptimeringen (SEO) och hjälpa användarna att hitta relaterat innehåll. |
 
 **Layout**
 

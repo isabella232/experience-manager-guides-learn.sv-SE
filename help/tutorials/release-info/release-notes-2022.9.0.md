@@ -1,21 +1,21 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, september 2022-versionen
-description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 748a37298849b3fbf6079c19de3cb052dee3a464
+description: Septemberversionen av Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: 28712c3f2057d7553ed2fe955db0dfe278c8a9b9
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1285'
 ht-degree: 3%
 
 ---
 
-# Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
+# Septemberversionen av Adobe Experience Manager Guides as a Cloud Service
 
-## Uppgradera till den senaste versionen
+## Uppgradera till september-versionen
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
-1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö du vill uppgradera.
+1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
 2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.9.178.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till den senaste versionen av AEM Guides as a Cloud Service.
+3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till september-versionen av AEM Guides as a Cloud Service.
 
 ## Steg för indexering av befintligt innehåll
 
@@ -50,7 +50,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 ## Nya funktioner och förbättringar
 
-AEM Guides as a Cloud Service innehåller många förbättringar och nya funktioner i den senaste versionen:
+AEM Guides as a Cloud Service innehåller många förbättringar och nya funktioner i versionen från september:
 
 
 ### Skapa en dynamisk baslinje baserad på etiketter
