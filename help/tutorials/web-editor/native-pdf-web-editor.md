@@ -2,16 +2,16 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: d832e78b690b533f44dc2205e9fea483d9213c58
+source-git-commit: e7fe44f6d0c0ce08d5f94140474212c280b41f52
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2297'
 ht-degree: 0%
 
 ---
 
 # Publicera PDF-utdata
 
-Med AEM Guides kan du generera PDF av enskilda ämnen eller en hel kartfil. Du kan publicera ditt innehåll i PDF-format på något av följande tre sätt:
+Med AEM stödlinjer kan du generera PDF för enskilda ämnen eller en hel kartfil. Du kan publicera ditt innehåll i PDF-format på något av följande tre sätt:
 
 * **DITA-OT**
 
