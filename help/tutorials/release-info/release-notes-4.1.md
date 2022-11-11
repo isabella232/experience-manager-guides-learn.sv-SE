@@ -2,9 +2,9 @@
 title: Versionsinformation | Adobe Experience Manager Guides 4.1
 description: Senaste utgåvan av Adobe Experience Manager Guides
 exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
-source-git-commit: f74126c1eb7bccf0c9464cbe9b1138af5bd4938f
+source-git-commit: 0bddd791e7fb6e6f8eb0f8e2ad73146a758ffc47
 workflow-type: tm+mt
-source-wordcount: '3275'
+source-wordcount: '3400'
 ht-degree: 3%
 
 ---
@@ -119,6 +119,18 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 ## Nya funktioner och förbättringar
 
 AEM innehåller många förbättringar och nya funktioner i version 4.1:
+
+### PDF
+
+Stöd för att skapa ett inbyggt PDF har också lagts till i version 4.1 av AEM. En ny publiceringsmotor har lagts till med följande funktioner:
+* Skapa en CSS-mall
+* Skapa olika sidmallar
+* Designa PDF-mallar med CSS och sidmallar
+* Publicera karta och ämnesinnehåll i PDF-format
+
+### Stöd för kunskapsbasens webbplatssökväg vid artikelbaserad publicering
+
+AEM Guides innehåller den artikelbaserade publiceringsfunktionen för att stegvis generera utdata från ett eller flera ämnen eller publicera innehållet på en kunskapsbaserad plattform. I version 4.1 har du ytterligare ett alternativ för att välja den platssökväg i kunskapsbasen till vilken ämnet/kartan ska publiceras. När du har valt sökvägen genereras utdata på den angivna sökvägen.
 
 ### Förbättrad webbredigerare
 
