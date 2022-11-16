@@ -2,9 +2,9 @@
 title: Versionsinformation | Adobe Experience Manager Guides 4.1
 description: Senaste utgåvan av Adobe Experience Manager Guides
 exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
-source-git-commit: 0bddd791e7fb6e6f8eb0f8e2ad73146a758ffc47
+source-git-commit: c7b147777a59d422e93d63118e84d806adaaad24
 workflow-type: tm+mt
-source-wordcount: '3400'
+source-wordcount: '3532'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,56 @@ Den här versionsinformationen innehåller uppgraderingsinstruktioner, nya funkt
 
 ## Uppgradera till den senaste versionen
 
-Du kan enkelt uppgradera din nuvarande version av AEM till version 4.1.2. Innan du uppgraderar till version 4.1.2 AEM handboken måste du tänka på följande:
-* Om du använder version 4.1 eller 4.1.x kan du uppgradera direkt till version 4.1.2.
-* Om du använder version 4.0.x måste du uppgradera till version 4.1 eller 4.1.x innan du uppgraderar till 4.1.2.
+Du kan enkelt uppgradera din nuvarande version av AEM till version 4.1.3. Innan du uppgraderar till version 4.1.3 AEM handboken måste du tänka på följande:
+* Om du använder version 4.1 eller 4.1.x kan du uppgradera direkt till version 4.1.3.
+* Om du använder version 4.0.x måste du uppgradera till version 4.1 eller 4.1.x innan du uppgraderar till 4.1.3.
 * Om du använder version 3.8.5 måste du uppgradera till version 4.0.x innan du uppgraderar till 4.1.
 * Om du har en tidigare version än 3.8.5, se uppgraderingsavsnittet i den produktspecifika installationsguiden.
 
 Mer information finns i [Uppgraderingsinstruktioner](assets/Adobe-Experience-Manager-Guides-Upgrade-Instructions-EN.pdf).
+
+## 4.1.3 | Versionsinformation
+
+## Kompatibilitetsmatris
+
+I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av AEM 4.1.3.
+
+### Adobe Experience Manager
+
+**Ej UID**
+Version 6.5 Service Pack 13, 12, 11 eller 10
+
+**UUID**
+Version 6.5 Service Pack 13, 12, 11 eller 10
+
+Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigurera Adobe Experience Manager-guider.
+
+
+### FrameMaker och FrameMaker Publishing Server
+
+| Frigör | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
+| --- | --- | --- | --- | --- |
+| 4.1.3 (ej UUID) | 2020.2 eller senare* | 2019 | 2020.3 eller senare | 2019.8 (senaste uppdateringen) |
+| 4.1.3 (UUID) | 2020.2 eller senare* | Inte kompatibel | 2020.4 eller senare | Inte kompatibel |
+|  |  |  |  |
+
+*Originalplan och villkor skapade i AEM stöds i FMPS-versioner från och med 2020.2.
+
+### Syrgasanslutning
+
+| Frigör | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
+| --- | --- | --- |--- |--- |
+| 4.1.3 (ej UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
+| 4.1.3 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
+|  |  |  |
+
+
+## Åtgärdade problem
+
+Felet som har åtgärdats listas nedan:
+
+* Webbredigeraren läser in tomma sidor ibland. (10678)
+
 
 ## 4.1.2 | Versionsinformation
 
