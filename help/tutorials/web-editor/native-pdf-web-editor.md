@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: e7fe44f6d0c0ce08d5f94140474212c280b41f52
+source-git-commit: e03ef8e99b2d60dc8d34a76d0a02180eab41e35f
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -56,11 +56,14 @@ Så här skapar eller konfigurerar du en förinställning för PDF:
 
 1. Klicka på fliken Utdata **Förinställningar** till vänster.
 Förinställningspanelen öppnas.
-   ![förinställningspanelen](assets/preset-panel.png)
-2. I utdata **Förinställningar** gör du något av följande:
+
+<img src="assets/preset-panel.png" alt="förinställningspanelen" width="600">
+
+1. I utdata **Förinställningar** gör du något av följande:
    * Dubbelklicka på en fördefinierad förinställning för PDF för att visa den.
    * Klicka på ikonen + mot **Förinställningar** för att lägga till en ny förinställning för **Typ: PDF**
-3. Så här konfigurerar du inställningar för en befintlig förinställning för PDF:
+
+1. Så här konfigurerar du inställningar för en befintlig förinställning för PDF:
    * Klicka på  **Alternativ** ![alternativ](assets/options.svg) -ikonen bredvid önskad förinställning och välj **Redigera**.
 Du kan använda följande inställningar i **Allmänt**, **Metadata**, **Layout**, **Säkerhet** och **Avancerat** för att konfigurera en förinställning för PDF:
 
@@ -70,10 +73,12 @@ Används för att ange grundläggande utdatainställningar, t.ex. en utdatasökv
 
 | Inställning | Beskrivning |
 | --- | --- |
-| **Utdatasökväg** | Sökvägen i AEM där utdata från PDF lagras. Kontrollera att utdatasökvägen inte finns inuti projektmappen. Om du inte anger något värde genereras utdata på standardplatsen för DITA-scheman. |
-| **PDF-fil** | Ange ett filnamn för att spara PDF. Som standard lägger filnamnet PDF till DITA-mappningsnamnet tillsammans med förinställningsnamnet. Diditamap är till exempel&quot;TestMap&quot; och namnet på förinställningen är&quot;preset1&quot;. Standardnamnet för pdf är&quot;TestMap_preset1.pdf&quot;. |
-| **Använd villkor med** | För villkorat innehåll väljer du något av följande alternativ för att generera utdata i PDF baserat på dessa villkor: <br>* **Ingen används** Välj det här alternativet om du inte vill tillämpa något villkor på kartan och källinnehållet. <br> * **Ditaval-fil** Välj en DITAVAL-fil för att generera villkorat innehåll. Markera genom att klicka på Villkorsförinställning och leta reda på filen. <br> * **Förinställning för villkor** Välj en villkorsförinställning i listrutan om du vill använda ett villkor när du publicerar utdata. Det här alternativet är synligt om du har lagt till ett villkor för DITA-kartfilen. De villkorliga inställningarna finns på fliken Villkorsförinställningar i DITA-kartkonsolen. Mer information om förinställda villkor finns i [Använda förinställningar för villkor](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-condition-presets.html). <br> |
+| **Utdatasökväg** | Sökvägen i AEM där utdata från PDF lagras. Kontrollera att utdatasökvägen inte finns inuti projektmappen. Om du inte anger något värde genereras utdata på standardplatsen för DITA-scheman.<br>Du kan också använda följande variabler som inte finns i kartongen för att definiera utdatasökvägen. Du kan definiera det här alternativet med en eller flera variabler. <br> `${map_filename}`: Använder DITA-mappningsfilens namn för att skapa målsökvägen. <br> `${map_title}`: Använder DITA-kartans titel för att skapa målsökvägen. <br>`${preset_name}`: Använder förinställningsnamnet för utdata för att skapa målsökvägen. <br> `${language_code}`: Använder språkkoden där kartfilen finns för att skapa målsökvägen. <br> `${map_parentpath}`: Använder den fullständiga sökvägen för kartfilen för att skapa målsökvägen.  <br>`${path_after_langfolder}`: Mappningsfilens sökväg används efter språkmappen för att skapa målsökvägen. |
+| **PDF-fil** | Ange ett filnamn för att spara PDF. Som standard lägger filnamnet PDF till DITA-mappningsnamnet tillsammans med förinställningsnamnet. Diditamap är till exempel&quot;TestMap&quot; och namnet på förinställningen är&quot;preset1&quot;. Standardnamnet för pdf är&quot;TestMap_preset1.pdf&quot;. <br>Du kan också använda följande variabler som inte finns i kartongen för att definiera filen PDF. Du kan definiera det här alternativet med en eller flera variabler. <br>`${map_filename}`<br>`${map_title}`<br>`${preset_name}` <br> `${language_code}`. |
+| **Använd villkor med** | För villkorat innehåll väljer du något av följande alternativ för att generera utdata i PDF baserat på dessa villkor: <br>* **Ingen används** Välj det här alternativet om du inte vill tillämpa något villkor på kartan och källinnehållet. <br>* **Ditaval-fil** Välj en DITAVAL-fil för att generera villkorat innehåll. Markera genom att klicka på Villkorsförinställning och leta reda på filen. <br> * **Förinställning för villkor** Välj en villkorsförinställning i listrutan om du vill använda ett villkor när du publicerar utdata. Det här alternativet är synligt om du har lagt till ett villkor för DITA-kartfilen. De villkorliga inställningarna finns på fliken Villkorsförinställningar i DITA-kartkonsolen. Mer information om förinställda villkor finns i [Använda förinställningar för villkor](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-condition-presets.html). <br> |
 | **Använd baslinje** | Om du har skapat en baslinje för den valda DITA-kartan väljer du det här alternativet för att ange vilken version du vill publicera. Se [Arbeta med baslinje](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-baseline-for-publishing.html) för mer information. |
+| **Skapa PDF med ändringsfältet mellan publicerade versioner** | Använd följande alternativ för att skapa en PDF som visar skillnader i innehåll mellan två versioner med hjälp av ändringsfält:   <br>* **Baslinje för föregående version** Välj den baslinjeversion som du vill jämföra med den aktuella versionen eller med en annan baslinje. Ett ändringsfält visas i PDF för att ange det ändrade innehållet. Ett ändringsfält är en lodrät linje som visuellt identifierar nytt eller ändrat innehåll. Ändringsfältet visas till vänster om innehållet som har infogats, ändrats eller tagits bort. <br> **Anteckning**: Om du väljer **Använd baslinje** och väljer en baslinje att publicera kommer jämförelsen att göras mellan de två valda baslinjeversionerna. Om du t.ex. väljer baslinje version 1.3 under **Använd baslinje** och version 1.1 under **Baslinje för föregående version** kommer jämförelsen att göras mellan originalversionen version 1.1 och originalversionen 1.3. <br>* **Visa tillagd text** Välj det här alternativet om du vill visa den infogade texten i grön färg och understruken. Det här alternativet är markerat som standard. <br> * **Visa borttagen text** Välj det här alternativet om du vill visa den borttagna texten i röd färg och markerad med genomstrykning. Det här alternativet är markerat som standard. <br>**Anteckning** Du kan också anpassa formateringen för ändringsfältet, infogat innehåll eller borttaget innehåll med formatmallen.<br> |
+| **Arbetsflöde efter generering** | Välj det här alternativet om du vill visa en nedrullningsbar lista som innehåller alla arbetsflöden som är konfigurerade i AEM. Du kan välja det arbetsflöde som du vill köra när arbetsflödet för generering av PDF har slutförts. |
 
 **Metadata**
 
@@ -83,7 +88,8 @@ Använd fliken Metadata för att ange namn, författare, ämne och nyckelord fö
 
 **Anteckning**: Dessa metadata åsidosätter metadata som definierats på boknivå.
 
-![metadata, flik](assets/pdf-metadata.png)
+<img src="assets/pdf-metadata.png" alt="metadata, flik" width="600">
+
 
 | Inställning | Beskrivning |
 |---|---|
@@ -147,6 +153,6 @@ Du kan visa en förloppsindikator bredvid den valda förinställningen på panel
 6. När utdatagenereringen är klar klickar du på  **Visa utdata** ![visa utdata](assets/view-output.svg) ikonen i det övre fältet för att visa utdata.\
    A **Lyckades** visas längst ned till höger på skärmen.
 Om utdata inte lyckas visas felmeddelandet nedan.
-   ![fellogg](assets/error-log.png)
+<img src="assets/error-log.png" alt="fellogg" width="250">
 
 Om du vill visa felloggen klickar du på **Stäng** håller du muspekaren över den valda förinställningsfliken och klickar på ![alternativ](assets/options.svg) **Alternativ** > **Visa logg**.

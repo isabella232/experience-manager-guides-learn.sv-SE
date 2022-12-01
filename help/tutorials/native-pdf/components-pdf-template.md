@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
+source-git-commit: f693ebb6a96ed9898050a754e10a74db235299fe
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2516'
 ht-degree: 0%
 
 ---
@@ -185,6 +185,7 @@ Ange de grundläggande konfigurationsinställningarna för att starta ett kapite
    I ovanstående exempel är Avancerade PDF-inställningar, Bilaga och Legal ämnesrubriker på första nivån eller kapitelrubriker. Alla rubriker tilldelas ett sidnummer.
 
    Om du väljer det här alternativet och genererar utdata får du nu följande innehållsförteckning:
+
    <img src="assets/page-number-missing-in-toc.png" alt="Överför resurser" width="250">
 
    Här ser du att det första kapitlet Avancerade PDF-inställningar inte får något sidnummer, som det har kapslade eller underordnade avsnitt. Ett sidnummer om det tilldelas till Bilaga och Rättslig information eftersom de är fristående ämnen utan något underordnat ämne.
@@ -201,10 +202,35 @@ Information om hur du använder rubriknivåer för innehållsförteckningens str
 
 Inställningarna för sidlayout ger dig fullständig kontroll över hur du anger vilken sidlayout som ska användas för ett visst avsnitt i dokumentet. Om du till exempel vill välja en layout för innehållsförteckningen klickar du på listrutan under innehållsförteckningsfältet och väljer den layout som du har utformat för att generera innehållsförteckningen.
 
-Om du inte har skapat någon layout för ett visst avsnitt i dokumentet kan du välja en layout som fungerar som standardlayout för sådana avsnitt eller avsnitt. Standardsidlayouten används sedan för alla avsnitt som inte har någon dedikerad sidlayout.
+Följande inställningar är tillgängliga under avsnittet Sidlayout:
 
-Om du vill ha en omslag och en baksida måste du ha en sidlayout som skapas och används i inställningarna. Annars kommer PDF inte att innehålla omslag och baksidor.
+<img src="assets/template-page-layout.png" alt="Sidlayouter" width="550">
 
+
+**Standardsidlayout**: Välj en sidlayout som fungerar som standardlayout för alla sidor i PDF. Det här är den grundläggande sidlayouten som används i avsnitt eller ämnen där du inte har skapat en dedikerad sidlayout.
+
+**Sidlayout för olika avsnitt**: Du kan mappa en sidlayout med följande avsnitt av PDF-utdata:
+* Innehåll
+* Lista över siffror
+* Lista över tabeller
+* Kapitel och ämnen
+* Index
+* Ordlista
+
+Om du inte vill visa ett visst avsnitt i utdata för PDF kan du inaktivera det genom att aktivera växlingsknappen.
+
+**Kapitel och ämnen** layout är alltid aktiverat och **Ordlista** layout är alltid inaktiverat som standard. Du kan inte växla dem.
+
+Du kan också ange i vilken ordning de olika avsnitten ska skapas i PDF. Om du vill ändra standardordningen för de här sidorna håller du ned muspekaren till vänster om en sidlayout och klickar på ikonen med prickade streck för att dra och släppa sidlayouten till önskad plats.
+PDF innehåller de aktiverade sidlayouterna i den ordning som du har ordnat dem här.
+
+**Sidlayout för tomma sidor**: Du kan också ange sidlayouten för de tomma sidorna. Den valda layouten används på alla tomma sidor. Om du till exempel har utformat en tom sidlayout för alla tomma sidor väljer du **Tom** i listrutan och alla tomma sidor i dokumentet har en tom sidlayout.
+
+**Försättsblad och Baksida**: Om du har utformat en omslagssidlayout kan du mappa den till **Försättsblad** alternativ. Om du har en baksideslayout kan du också mappa den till **Baksida** alternativ. Om ingen layout för omslag eller baksidor har skapats används standardsidlayouten.
+
+>[!NOTE]
+>
+>Bokmappsinställningarna har företräde framför sidlayoutsinställningarna.
 
 Mer information om sidlayouter finns i [Utforma en sidlayout](design-page-layout.md).
 

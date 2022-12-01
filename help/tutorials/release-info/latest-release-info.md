@@ -2,9 +2,9 @@
 title: AEM
 description: Senaste AEM och AEM
 exl-id: 780697a9-bdc6-40c2-b258-64639fe30f88
-source-git-commit: 4066b22849271f29b5339dbd2f1bfa0946cdbd8b
+source-git-commit: f693ebb6a96ed9898050a754e10a74db235299fe
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -13,17 +13,39 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Guides] är ett program som distribueras till AEM. Det är en kraftfull, komponentbaserad innehållshanteringslösning (CCMS) som möjliggör inbyggt DITA-stöd i Adobe Experience Manager och ger möjlighet att AEM hantera DITA-baserad framtagning och leverans av innehåll.
 
-## UUID kontra UUID förklaras
+Paket med AEM stödlinjer är tillgängliga i två varianter - UUID-bygge och icke-UID-byggen.
 
-[!DNL AEM Guides] paket är tillgängliga i två lägen - UUID-bygge och icke-UID-byggen.
+## UUID- och icke-UUID-byggen
 
-Kunderna måste välja mellan UUID och icke UID-läge vid första konfigurationen (kontakta din Customer Success Manager för att få hjälp att fatta beslut baserat på din användning).
+De viktigaste skillnaderna mellan UUID- och icke-UID-byggen är följande:
 
-Vid uppgradering från en version av [!DNL AEM Guides] till en nyare version måste kunderna se till att de väljer samma läge (UUID/icke-UID) för att matcha det befintliga läget. En icke-UID-version får inte uppgraderas direkt till en UUID-version. Att gå från icke-UID-bygge till UUID-bygge kräver innehållsmigrering.
+|  | UUID-bygge | Icke-UID-bygge |
+|---|---|---|
+| **Identifiering av tillgångar** | Alla resurser identifieras med hjälp av sökvägen för resursen i databasen. | Alla resurser identifieras med sitt UUID (unikt ID som genereras av systemet när resursen först överfördes). |
+| **Referensskapande** | Alla innehållsreferenser skapas baserat på deras sökvägar. | Alla innehållsreferenser skapas baserat på deras UUID. |
+
+### Fördelar med UUID-bygge
+
+* UUID-installationen har högre prestanda:
+   * Referenser är banoberoende: Referenshanteringssystemet är medvetet om länkarna eftersom referenserna skapas baserat på UUID:n och inte sökvägarna.
+   * Flyttnings-/uppdateringsåtgärderna är effektiva: UUID:n förblir desamma även om resurserna flyttas till en annan sökväg i databasen. Ingen bearbetning krävs för att korrigera referenserna mellan resurserna vid flytt/uppdatering.
+* UUID-bygget ser framåt, eftersom vi även använder det här ramverket för molnkonfiguration av AEM.
+
+
+### Välj mellan de två byggen
+
+* Om du är ny kund rekommenderar vi att du använder UUID-bygge.
+* Om du är en befintlig kund kan du välja att gå över till UUID-bygge eftersom migreringen från icke-UID till UUID nu är möjlig. Mer information finns i *Migrering av icke-UID till UUID-innehåll* i **Installera och konfigurera Adobe Experience Manager Guides.**
+
+>[!NOTE]
+>
+>* Kunderna måste välja mellan UUID- och icke-UID-läge vid den första konfigurationen (om du behöver hjälp, kontakta Customer Success Manager för att få hjälp med att fatta beslut baserat på din användning).
+>* När man uppgraderar från en version av AEM Guides till en nyare version måste man se till att man väljer samma läge (UUID/icke-UID) för att matcha det befintliga läget. En icke-UID-build ska inte uppgraderas direkt till en UUID-build. Att gå från icke-UID-bygge till UUID-bygge kräver innehållsmigrering.
+
 
 **Uppgraderar byggen**
 
-När du uppgraderar från en äldre version till en nyare version av [!DNL AEM Guides]kan du behöva köra vissa migreringsskript. Se Versionsinformation och versionsspecifik dokumentation för uppgraderingsinstruktioner.
+När du uppgraderar från en äldre version till en nyare version av [!DNL AEM Guides]kan du behöva köra migreringsskript. Se Versionsinformation och versionsspecifik dokumentation för uppgraderingsinstruktioner.
 
 Alla uppgraderingssökvägar stöds inte direkt. Till exempel går det bara att uppgradera direkt till version 4.0 från version 3.8. Om du har en tidigare version än 3.8 hittar du uppgraderingsinstruktioner i den versionsspecifika dokumentationen [Hjälparkiv](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html).
 Kontakta er Customer Success Manager för att validera uppgraderingsprocessen.
