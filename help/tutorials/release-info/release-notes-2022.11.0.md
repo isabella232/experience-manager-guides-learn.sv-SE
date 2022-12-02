@@ -1,10 +1,11 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, november 2022-utgåvan
 description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 549417d6a45508d0afe98574499f1694ae32e708
+exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
+source-git-commit: 84ff7619722fbda2787ce4c27cc69b5f71e25927
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 2%
+source-wordcount: '1370'
+ht-degree: 1%
 
 ---
 
@@ -131,7 +132,6 @@ Nu kan du även generera innehållsförteckningen i DITA-kartor med en avancerad
 
 De buggar som har åtgärdats i olika områden listas nedan:
 
-* PDF | En fotnot i tabellhuvudet leder till en fet och centrerad fotnotstext i sidfoten i utdata från PDF. (10610)
 * PDF | `conkeyref` löses inte i genererade utdata för PDF. (10564)
 * PDF | Problem uppstår vid åtkomst av metadata för en karta i utdata från PDF. (10556)
 * PDF | Infogat format används för att generera taggar i stället för klassnamn.  (10498)
@@ -141,7 +141,6 @@ De buggar som har åtgärdats i olika områden listas nedan:
 * Anteckning inuti en paragraf som är en konref visas inte i förhandsvisningen. (10559)
 * Hela listan tas bort om du placerar backstegstangenten i slutet av ett listobjekt. (10540)
 * Om du använder en inbyggd PDF-export `<indexterm>` är inte kapslade i indexet. (10521)
-* Använda felaktig baslinjepublicering `cq:tags` plockas (hämtas från aktuell arbetskopia i stället för versionskopia). (10494)
 * **Automatiskt indrag** i verktygsfältet saknas i källvyn. (10448)
 * Det första tecknet i ett listobjekt försvinner när listan redigeras. (10447)
 * Flera popup-fönster visas om någon DITA-resursversion ändras och sparas i redigeringsfönstret för baslinjen. (10399)
@@ -150,7 +149,6 @@ De buggar som har åtgärdats i olika områden listas nedan:
 * Efterbearbetning blockeras för hela språkmappen vars resurser finns i ett aktivt översättningsprojekt. (10332)
 * Fliken Mall i XML-redigeraren är inte synlig för mappprofiladministratörer. (10266)
 * Navigeringsproblem uppstår i Web Editor efter 4.0-uppgraderingen. (10159)
-* Det första tecknet bryts på koreanska när du redigerar i webbredigeraren. (10049)
 * SVG-filer visas inte i förhandsgranskningsläget. (10010)
 * Om fliken Utdata i redigeraren innehåller fler förinställningar kan avsnittet med förinställningar inte rullas och alla förinställningar visas inte. (9787)
 * **Redigera** och **Anteckna** alternativen för en bild fungerar inte korrekt i kolumnvyn. (8758)
