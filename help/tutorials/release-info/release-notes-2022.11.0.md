@@ -2,9 +2,9 @@
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, november 2022-utgåvan
 description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
 exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
-source-git-commit: 84ff7619722fbda2787ce4c27cc69b5f71e25927
+source-git-commit: 0663ed4434fdf583a9446891f944d94b85f375c6
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1372'
 ht-degree: 1%
 
 ---
@@ -101,9 +101,7 @@ På översättningens kontrollpanel kan du även se kolumnen Versionsetikett. D�
 <img src="assets/send-translation.png" alt="skicka för översättning" width="600">
 
 
-## Förbättrad publicering i PDF
-
-### PDF med ändringsfält som visar skillnaden mellan dokumentversioner
+### PDF | PDF med ändringsfält som visar skillnaden mellan dokumentversioner
 
 Nu kan du skapa en PDF som visar skillnaderna i innehåll mellan två versioner med hjälp av ändringsfältet. Du kan välja att jämföra den aktuella versionen med en baslinje från den tidigare versionen eller jämföra de två valda baslinjeversionerna.
 
@@ -113,7 +111,7 @@ Ett ändringsfält visas i PDF för att ange det ändrade, infogade eller bortta
 * Visa det infogade innehållet i grön färg och understruken
 * Visa borttaget innehåll i röd färg och markerat med genomstrykning
 
-### Variabelstöd för utdatasökväg och PDF-filnamn
+### PDF | Variabelstöd för utdatasökväg och PDF-filnamn
 
 Nu kan du även använda följande variabler för att definiera utdatasökväg och PDF-fil. Du kan definiera dessa alternativ med en eller flera variabler:
 * `${map_filename}`
@@ -124,7 +122,7 @@ Nu kan du även använda följande variabler för att definiera utdatasökväg o
 * `${path_after_langfolder}` (Endast för utdatasökväg)
 
 
-### Generera innehållsförteckning för DITA-kartor och ändra ordning på sidlayouter
+### PDF | Generera innehållsförteckning för DITA-kartor och ändra ordning på sidlayouter
 
 Nu kan du även generera innehållsförteckningen i DITA-kartor med en avancerad PDF-inställning för mallen. Du kan välja att aktivera eller inaktivera visningen av de olika sidlayouterna och även ändra ordningen på deras position.
 
