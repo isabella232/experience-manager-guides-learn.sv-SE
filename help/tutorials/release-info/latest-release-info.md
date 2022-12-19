@@ -2,7 +2,7 @@
 title: AEM
 description: Senaste AEM och AEM
 exl-id: 780697a9-bdc6-40c2-b258-64639fe30f88
-source-git-commit: f693ebb6a96ed9898050a754e10a74db235299fe
+source-git-commit: f74a9168708299d66d014dbc4bf280a1a4f07592
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Paket med AEM stödlinjer är tillgängliga i två varianter - UUID-bygge och ic
 
 De viktigaste skillnaderna mellan UUID- och icke-UID-byggen är följande:
 
-|  | UUID-bygge | Icke-UID-bygge |
+|  | Icke-UID-bygge | UUID-bygge |
 |---|---|---|
 | **Identifiering av tillgångar** | Alla resurser identifieras med hjälp av sökvägen för resursen i databasen. | Alla resurser identifieras med sitt UUID (unikt ID som genereras av systemet när resursen först överfördes). |
 | **Referensskapande** | Alla innehållsreferenser skapas baserat på deras sökvägar. | Alla innehållsreferenser skapas baserat på deras UUID. |
