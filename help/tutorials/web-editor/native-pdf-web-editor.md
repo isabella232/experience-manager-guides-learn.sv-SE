@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: e03ef8e99b2d60dc8d34a76d0a02180eab41e35f
+source-git-commit: 618030a32b6cc8d703e71d4eb91a340cb89a413b
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Använd följande alternativ för att ange avancerade inställningar för att sa
 | Inställning | Beskrivning |
 | --- | --- |
 | **Skapa tillgänglig (taggad) PDF** | Välj det här alternativet om du vill generera en PDF med taggar. Ett PDF med märkord gör det enklare för skärmläsare att läsa och navigera i innehåll, hyperlänkar, bokmärken och så vidare. Om en tabell till exempel är taggad vet skärmläsaren att den läser tabellen och inte bara rader och text. |
-| **Sammanfoga PDF som ingår i innehållsförteckningen** | Markera det här alternativet om du vill sammanfoga PDF i utdata genom att lägga till dem i innehållsförteckningen. PDF infogas på den plats som anges i innehållsförteckningen och sidorna ökas därefter. |
+| **Sammanfoga PDF som ingår i innehållsförteckningen** | Välj det här alternativet om du vill sammanfoga befintlig PDF med dina utdata genom att lägga till dem på DITA-kartan som en resursfil. PDF infogas på den plats som visas på kartan och sidorna ökas därefter. |
 | **Bädda in använda teckensnitt** | Välj det här alternativet när du använder teckensnitt som kanske inte är installerade på slutanvändarens dator. När det här alternativet är markerat bäddas de använda teckensnitten in i PDF så att användaren kan se PDF som det är tänkt, även om teckensnitten inte är installerade på datorn. <br> **Anteckning**: Ett teckensnitt kan bara bäddas in om det innehåller en inställning från teckensnittsleverantören som tillåter att det bäddas in. Kontrollera att du har rätt inställning eller licens innan du bäddar in ett teckensnitt. |
 | **Använd automatisk avstavning** | När automatisk avstavning är aktiverat bryts ord i slutet av rader grammatiskt till rätt ställen med ett bindestreck. |
 | **Aktivera JavaScript** | Aktivera det här alternativet om du har en JavaScript-kod som du vill använda för att omforma ditt innehåll dynamiskt innan du genererar ett PDF. |
