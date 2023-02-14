@@ -2,7 +2,7 @@
 title: Paneler
 description: Använda paneler i AEM
 exl-id: 24ecfc93-3540-4efa-ae85-afb346454b7f
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '1446'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Webbredigeraren AEM stödlinjer är uppdelad i flera avsnitt, bland annat ett huvudverktygsfält, ett sekundärt verktygsfält, en vänster panel, ett område för innehållsredigering och en höger panel.
 
->[!VIDEO](https://video.tv.adobe.com/v/342760)
+>[!VIDEO](https://video.tv.adobe.com/v/342760?quality=12&learn=on)
 
 ## Ändra storlek på den vänstra panelen
 

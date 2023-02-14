@@ -2,7 +2,7 @@
 title: Stavningskontrollera och sök/ersätt
 description: Använda stavningskontroll och sök/ersätt i AEM
 exl-id: 5f39618d-a919-4d3c-a4de-2896f2d1bf20
-source-git-commit: 0b4326b02ef52f5de77c3f26c18feec84567cebb
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 AEM Guides Editor har kraftfulla funktioner för stavningskontroll och Sök och ersätt.
 
->[!VIDEO](https://video.tv.adobe.com/v/342768)
+>[!VIDEO](https://video.tv.adobe.com/v/342768?quality=12&learn=on)
 
 Korrigera ett stavfel
 
@@ -39,7 +39,7 @@ Du kan använda ett annat stavningskontrollverktyg än webbläsarens standardord
 
    - **Stavningskontroll för webbläsare** — standardinställningen där stavningskontrollen använder webbläsarens inbyggda ordlista.
 
-   - **AEM stavningskontroll** — använd detta för att skapa en egen ordlista med AEM egna ordlista.
+   - **AEM stavningskontroll** — använd detta för att skapa en egen ordlista med AEM egna ordlistan.
 
 4. Välj **AEM stavningskontroll**.
 

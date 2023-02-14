@@ -2,7 +2,7 @@
 title: Återanvändning av innehåll
 description: Återkommande användning av funktioner i AEM
 exl-id: 453c5a09-0bcf-4760-87fc-df3ea4a3a30a
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 En av huvudfunktionerna i DITA är möjligheten att återanvända innehåll. Det gör det möjligt att återanvända innehåll från små fraser upp till hela ämnen eller kartor.  Men för att innehållet ska kunna återanvändas på ett effektivt sätt måste det hanteras väl. Se till att ni har en effektiv innehållsstrategi när ni arbetar med återanvändbar information.
 
->[!VIDEO](https://video.tv.adobe.com/v/342757)
+>[!VIDEO](https://video.tv.adobe.com/v/342757?quality=12&learn=on)
 
 ## Skapa ett återanvändbart ämne
 

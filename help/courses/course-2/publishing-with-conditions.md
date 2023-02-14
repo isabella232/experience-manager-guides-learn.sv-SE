@@ -2,7 +2,7 @@
 title: Publicera med villkor
 description: Publicera med villkor med Adobe Experience Manager Guides
 exl-id: ea94824a-884b-447f-9562-e6c629b8133b
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Med villkorlig publicering kan en innehållskälla skrivas för en eller flera målgrupper, produkter eller plattformar. Den här informationen kan sedan publiceras dynamiskt och endast det innehåll som krävs i utdata.
 
->[!VIDEO](https://video.tv.adobe.com/v/339041)
+>[!VIDEO](https://video.tv.adobe.com/v/339041?quality=12&learn=on)
 
 ## Förberedelse för övningen
 

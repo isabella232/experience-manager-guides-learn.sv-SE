@@ -2,7 +2,7 @@
 title: Villkor
 description: Arbeta med villkor i AEM
 exl-id: 2cb670d9-1a22-47c6-8409-52d1d526010a
-source-git-commit: 01083e771baced42146044bf319d3897a2c5f51b
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
@@ -15,7 +15,7 @@ I DITA styrs villkoren ofta av attribut som Product, Platform och Audience. Dess
 
 Exempelfiler som du kan välja att använda för den här lektionen finns i filen [villkor.zip](assets/conditions.zip).
 
->[!VIDEO](https://video.tv.adobe.com/v/342755)
+>[!VIDEO](https://video.tv.adobe.com/v/342755?quality=12&learn=on)
 
 ## Tilldela villkor till en mappprofil
 

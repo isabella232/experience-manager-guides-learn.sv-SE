@@ -2,7 +2,7 @@
 title: Kartor och bokkartor
 description: Skapa och redigera kartor och bokkartor i AEM
 exl-id: 9c717e4b-017b-4f2b-b93e-f2c0e7525c55
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 Med Adobe Experience Manager Guides karteditor kan du skapa och redigera kartefiler. Med Kartredigeraren kan du redigera två typer av filer - DITA-karta och bokkarta. För våra syften bör dessa anses vara i stort sett utbytbara begrepp.
 Kartredigeraren finns i två lägen - den grundläggande kartredigeraren och den avancerade karteditorn.
 
->[!VIDEO](https://video.tv.adobe.com/v/342766)
+>[!VIDEO](https://video.tv.adobe.com/v/342766?quality=12&learn=on)
 
 ## Skapa en karta
 

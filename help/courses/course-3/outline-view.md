@@ -2,7 +2,7 @@
 title: Dispositionsvy
 description: Använda dispositionsvyn i AEM
 exl-id: 300f550f-dc79-4971-b8ba-43fe8499ea02
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Dispositionsvyn har ett brett stöd när du arbetar med ett strukturerat dokument. Expandera och komprimera vyn, navigera i strukturen, arbeta med attribut (t.ex. för att skapa ett nytt ID) och ordna om, dela upp och strukturera om element med en enkel musklickning.
 
->[!VIDEO](https://video.tv.adobe.com/v/342767)
+>[!VIDEO](https://video.tv.adobe.com/v/342767?quality=12&learn=on)
 
 ## Expandera och komprimera dispositionsvyn
 

@@ -2,7 +2,7 @@
 title: Arbetsflöden för att skapa enkelt innehåll
 description: Skapa innehåll i AEM stödlinjer
 exl-id: e4b8e512-0688-44f7-b981-78af33b57b08
-source-git-commit: 92c269c4a5f73317345bbd0ab247951656426ff4
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 AEM Guides Editor har flera genvägar som gör det enklare att skapa innehåll. Med dessa genvägar kan användare snabbt lägga till och ändra bilder, arbeta med flera ämnen samtidigt, korrigera fel, ladda ned PDF och arbeta med versioner och etiketter.
 
->[!VIDEO](https://video.tv.adobe.com/v/342770)
+>[!VIDEO](https://video.tv.adobe.com/v/342770?quality=12&learn=on)
 
 ## Lägga till en bild
 

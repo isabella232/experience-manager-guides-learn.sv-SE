@@ -2,7 +2,7 @@
 title: Masspublicering
 description: Masspublicering i [!DNL Adobe Experience Manager Guides]
 exl-id: b277e846-ef71-47ec-a66c-ac9d392d53e0
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Vid publicering behövs ofta mer än en typ av dokumentation. Med Kartsamlingar kan du styra hur många utdata och typer av utdata som ska monteras och genereras och starta en bulkpublicering. På kontrollpanelen Publicera kan du visa aktiva publiceringsjobb. På kontrollpanelen Publicera gruppvis kan du aktivera samlingar gruppvis.
 
->[!VIDEO](https://video.tv.adobe.com/v/338985)
+>[!VIDEO](https://video.tv.adobe.com/v/338985?quality=12&learn=on)
 
 ## Arbeta med kartsamlingar
 

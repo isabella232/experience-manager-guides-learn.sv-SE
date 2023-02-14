@@ -2,7 +2,7 @@
 title: Felsökning av publiceringsfel
 description: Felsökning av publiceringsfel i [!DNL Adobe Experience Manager Guides]
 exl-id: b37ea3e7-59cf-4fc5-8fae-e1fadd26f8d8
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Felsökning av publiceringsfel
 
-Det är oftast enkelt att publicera en karta. Öppna kartan, välj en förinställning för utdata och generera utdata! Om en karta eller dess ämnen innehåller fel kan dock utdatagenereringen misslyckas. När detta inträffar är det viktigt att du vet hur du felsöker.
+Det är oftast enkelt att publicera en karta. Öppna kartan, välj en förinställning för utdata och generera utdata! Om en karta eller dess ämnen innehåller fel kan dock utdatagenereringen misslyckas. När detta händer är det viktigt att du vet hur du felsöker.
 
->[!VIDEO](https://video.tv.adobe.com/v/338990)
+>[!VIDEO](https://video.tv.adobe.com/v/338990?quality=12&learn=on)
 
 ## Förberedelse för övningen
 

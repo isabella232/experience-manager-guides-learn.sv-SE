@@ -2,7 +2,7 @@
 title: Förinställningar för utdata
 description: En förinställning är en samling publiceringsegenskaper som har tilldelats en karta
 exl-id: b0c64737-48a0-4337-8a7f-35d1deb03366
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 En förinställning för utdata är en samling publiceringsegenskaper som har tilldelats en karta. Dessa kan skapas eller ändras vid behov.
 
->[!VIDEO](https://video.tv.adobe.com/v/338989)
+>[!VIDEO](https://video.tv.adobe.com/v/338989?quality=12&learn=on)
 
 ## Åtkomst till förinställningar för utdata
 
