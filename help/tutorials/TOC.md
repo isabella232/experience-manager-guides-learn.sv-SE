@@ -1,11 +1,11 @@
 ---
-user-guide-title: Tutorials för AEM stödlinjer
-user-guide-description: Läs vår samling självstudiekurser för Adobe Experience Manager Guides.
-breadcrumb-title: AEM Guides Tutorials
-source-git-commit: 4183162142f5f6291fdb6e832e10b46a3c0da73a
+user-guide-title: Självstudiekurser om användarhandböcker om AEM
+user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
+breadcrumb-title: Självstudiekurser om användarhandböcker om AEM
+source-git-commit: d3ed2b8f5beac05e41c22c6dee6ccdb38a26a083
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 3%
+source-wordcount: '144'
+ht-degree: 14%
 
 ---
 
@@ -47,3 +47,7 @@ ht-degree: 3%
    + [Publicera PDF-utdata](./web-editor/native-pdf-web-editor.md)
    + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
 + Versionshantering {#versioning}
++ Knowledge Base {#knowledge-base}
+   + [Hantera innehåll med hjälp av baslinjer](./knowledge-base/expert-sessions/baselines-dec22.md)
+   + [Skapa webbaserat innehåll](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
+   + [Översätta innehåll](./knowledge-base/expert-sessions/translating-content-using-aem-guides-oct22.md)

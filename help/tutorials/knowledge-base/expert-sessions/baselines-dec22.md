@@ -1,0 +1,60 @@
+---
+title: Hantera innehåll med hjälp av baslinjer
+description: Lär dig hur du använder baslinjer för att hantera ditt innehåll effektivt.
+source-git-commit: 34b373b5f2cdd082ea7b9f9c33bfb903bd8a493a
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 0%
+
+---
+
+# Hantera innehåll med hjälp av baslinjer
+
+Versionshantering AEM guiderna görs med en baslinje som gör att du kan välja en version av dina ämnen och resurser, som sedan kan användas för publicering eller översättning.
+
+## Sessionsöversikt
+
+Under den här sessionen får du lära dig hur du använder baslinjer för att hantera ditt innehåll effektivt.
+
+## Sessionsregistrering
+
+>Se inspelningen [video](https://video.tv.adobe.com/v/3414172/version-management-release-management-baseline?quality=12&learn=on) session.
+
+## Högdagrar
+
+- **Datum** - 8 december 2022
+- **Antal deltagare** - 64
+- **Varaktighet** - 60 minuter
+- **Målgrupp** - Kunder, partners och anställda på Adobe
+
+## Viktiga uppgifter
+
+Under den här sessionen får du lära dig mer om följande:
+- Olika baslinjeåtgärder i AEM stödlinjer
+- Hämta, publicera och översätta med en baslinje
+- Bästa tillvägagångssätt för att använda en baslinje
+- Titta på en ny funktion, **Skapa dynamiska baslinjer**
+
+## Relaterade resurser
+
+- **Videofilmer** -  [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/videos/advanced-user-guide/overview.html?lang=en)
+
+- **Användarhandbok** - [Arbeta med baslinje](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-baseline-for-publishing.html)
+
+- **Community-forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+
+>[!NOTE]
+>
+>Funktionerna som visas under den här sessionen finns i följande versioner av AEM.
+> - On-prem 4.1 och senare
+> - Cloud Services 2211 och senare
+
+
+## Fler expertsessioner
+
+- **Ämne** - [Skapa webbaserat innehåll](webbased-authoring-jan2023.md)
+- **Schemalagd den** - 19 januari 2023
+
+## Kontakta oss
+
+Om du har frågor kan du skicka ett e-postmeddelande till oss på techcomm@adobe.com.
