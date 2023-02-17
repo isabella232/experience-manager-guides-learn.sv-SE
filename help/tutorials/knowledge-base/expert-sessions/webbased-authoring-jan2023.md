@@ -2,9 +2,9 @@
 title: Skapa webbaserat innehåll
 description: Lär dig hur du skapar strukturerat innehåll med webbredigeraren.
 exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
-source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
+source-git-commit: cb7cb66eb4ba81120afb43582867e859661b434c
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Under den här sessionen får du lära dig att skapa, publicera och hantera inne
 
 ## Sessionsregistrering
 
->[video](https://video.tv.adobe.com/v/3414171/dita-authoring-ccms-web-author?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3414171/dita-authoring-ccms-web-author?quality=12&learn=on)
 
 ## Högdagrar
 

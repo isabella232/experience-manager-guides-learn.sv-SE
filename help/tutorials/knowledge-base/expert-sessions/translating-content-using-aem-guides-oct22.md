@@ -2,9 +2,9 @@
 title: Översätta innehåll
 description: Lär dig hur du översätter innehåll till flera språk.
 exl-id: c8dacbdc-4b0b-44ca-82d4-889cd83741ff
-source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
+source-git-commit: cb7cb66eb4ba81120afb43582867e859661b434c
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Under den här sessionen får du lära dig mer om översättningsprocessen, inte
 
 ## Sessionsregistrering
 
->[video](https://video.tv.adobe.com/v/3414140/translation-aem-guides?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3414140/translation-aem-guides?quality=12&learn=on)
 
 ## Högdagrar
 
