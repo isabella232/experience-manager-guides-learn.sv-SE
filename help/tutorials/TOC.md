@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om användarhandböcker om AEM
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om användarhandböcker om AEM
-source-git-commit: d3ed2b8f5beac05e41c22c6dee6ccdb38a26a083
+source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '146'
 ht-degree: 14%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 14%
    + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
 + Versionshantering {#versioning}
 + Knowledge Base {#knowledge-base}
-   + [Hantera innehåll med hjälp av baslinjer](./knowledge-base/expert-sessions/baselines-dec22.md)
-   + [Skapa webbaserat innehåll](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
-   + [Översätta innehåll](./knowledge-base/expert-sessions/translating-content-using-aem-guides-oct22.md)
+   + Expertsession {#expert-session}
+      + [Hantera innehåll med hjälp av baslinjer](./knowledge-base/expert-sessions/baselines-dec22.md)
+      + [Skapa webbaserat innehåll](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
+      + [Översätta innehåll](./knowledge-base/expert-sessions/translating-content-using-aem-guides-oct22.md)

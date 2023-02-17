@@ -1,9 +1,10 @@
 ---
 title: Hantera innehåll med hjälp av baslinjer
 description: Lär dig hur du använder baslinjer för att hantera ditt innehåll effektivt.
-source-git-commit: 34b373b5f2cdd082ea7b9f9c33bfb903bd8a493a
+exl-id: 3fc2e889-b255-4e8d-9750-ab61337107ae
+source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Under den här sessionen får du lära dig hur du använder baslinjer för att h
 
 ## Sessionsregistrering
 
->Se inspelningen [video](https://video.tv.adobe.com/v/3414172/version-management-release-management-baseline?quality=12&learn=on) session.
+>[video](https://video.tv.adobe.com/v/3414172/version-management-release-management-baseline?quality=12&learn=on)
 
 ## Högdagrar
 
@@ -50,11 +51,11 @@ Under den här sessionen får du lära dig mer om följande:
 > - Cloud Services 2211 och senare
 
 
-## Fler expertsessioner
+## Nästa expertsession
 
 - **Ämne** - [Skapa webbaserat innehåll](webbased-authoring-jan2023.md)
 - **Schemalagd den** - 19 januari 2023
 
 ## Kontakta oss
 
-Om du har frågor kan du skicka ett e-postmeddelande till oss på techcomm@adobe.com.
+Om du har frågor kan du skicka ett e-postmeddelande till oss på <techcomm@adobe.com>

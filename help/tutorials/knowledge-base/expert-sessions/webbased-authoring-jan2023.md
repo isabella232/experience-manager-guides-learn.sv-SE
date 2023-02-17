@@ -1,13 +1,13 @@
 ---
 title: Skapa webbaserat innehåll
 description: Lär dig hur du skapar strukturerat innehåll med webbredigeraren.
-source-git-commit: 78d8834a3c5ba038f28289bd5c90755badb38d82
+exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
+source-git-commit: 5b3ffb33619755b3a5bc6c541a07b3084e9154f1
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
-
 
 # Skapa webbaserat innehåll
 
@@ -19,7 +19,7 @@ Under den här sessionen får du lära dig att skapa, publicera och hantera inne
 
 ## Sessionsregistrering
 
->Se inspelningen [video](https://video.tv.adobe.com/v/3414171/dita-authoring-ccms-web-author?quality=12&learn=on) session.
+>[video](https://video.tv.adobe.com/v/3414171/dita-authoring-ccms-web-author?quality=12&learn=on)
 
 ## Högdagrar
 
@@ -51,11 +51,11 @@ Under den här sessionen får du lära dig mer om följande:
 > - Cloud Services 2211 och senare
 
 
-## Fler expertsessioner
+## Nästa expertsession
 
 - **Ämne** - PDF *(baserat på undersökningsresultat)*
 - **Schemalagd den** - 23 februari 2023
 
 ## Kontakta oss
 
-Om du har frågor kan du skicka ett e-postmeddelande till oss på techcomm@adobe.com.
+Om du har frågor kan du skicka ett e-postmeddelande till oss på <techcomm@adobe.com>
