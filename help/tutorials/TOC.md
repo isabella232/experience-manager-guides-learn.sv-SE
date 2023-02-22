@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om användarhandböcker om AEM
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om användarhandböcker om AEM
-source-git-commit: 638bc7daa3bccfdb0334927ac277c4052cf2becb
+source-git-commit: ae85e78b428f1962945d3212f1b42839dbbe3096
 workflow-type: tm+mt
-source-wordcount: '149'
-ht-degree: 14%
+source-wordcount: '175'
+ht-degree: 12%
 
 ---
 
@@ -28,6 +28,7 @@ ht-degree: 14%
          + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
          + [Versionsinformation för januari](./release-info/release-notes-2022.1.0.md)
       + Lokalt/Managed Services {#on-prem-release-notes}
+         + [4.2 Versionsinformation](./release-info/release-notes-4.2.md)
          + [4.1.x Versionsinformation](./release-info/release-notes-4.1.md)
          + [4.0.x Versionsinformation](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html)
          + [Versionsinformation om 3.8.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-3-8.html)
@@ -40,6 +41,9 @@ ht-degree: 14%
       + [Komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
       + [Utforma en sidlayout](./native-pdf/design-page-layout.md)
       + [Arbeta med vanliga innehållsformat](./native-pdf/stylesheet.md)
+      + [Använd egen stil på innehållsförteckningsposter och ämnesinnehåll](./native-pdf/custom-style-toc.md)
+      + [Lägga till ett eget bokmärke i utdata från PDF](./native-pdf/add-custom-bookmark.md)
+      + [Använd JavaScript för att arbeta med innehåll eller stil](./native-pdf/use-javascript-content-style.md)
    + [Konfigurera en anpassad DITA-OT](./configuring/setup-a-custom-dita-ot.md)
 + Översättning {#translation}
    + [Exkludera stycken från översättning](./translation/exclude-paragraphs-from-translation.md)

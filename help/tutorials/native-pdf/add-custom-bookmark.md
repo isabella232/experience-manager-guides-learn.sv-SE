@@ -1,9 +1,9 @@
 ---
-title: Publiceringsfunktion för PDF | Använd egen stil på innehållsförteckningsposter och ämnesinnehåll
+title: Publiceringsfunktion för PDF | Lägg till ett eget bokmärke i utdata från PDF
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-source-git-commit: fbb81704ea8d9d2793b066fa159b405460fa1dcf
+source-git-commit: fb7ffbaefcdca4302e43d8369bc056c1f08a3ed6
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,7 @@ Vanligtvis återges innehållsförteckningen i en DITA-karta som bokmärken i de
 `bookmark-level: 3`
 
 Här är `bookmark-level` är ett attribut och ett tal `3` är värdet som anger nivån i bokmärkeshierarkin där bokmärket läggs till. I följande exempel innehåller ämnet Kontakter på första nivån en tabell, Kontaktlista, där vi har lagt till en `outputclass` attribut med värdet för `custom-bookmark`.
+
 
 <img src="./assets/custom-bookmark-attribute.png" width="500">
 
@@ -33,3 +34,8 @@ Följande definition av `custom-bookmark` klassen läggs till i CSS-filen:
 I PDF-utdata visas *Kontaktlista* tabellen läggs till på den andra nivån i PDF-bokmärkeslistan enligt nedan:
 
 <img src="./assets/custom-bookmark-in-pdf-output.png" width="500">
+
+>[!NOTE]
+>
+>Du måste välja rätt nivå där det anpassade bokmärket ska läggas till. Om du anger ett tal som är mindre än det överordnade objektets bokmärke, får det anpassade bokmärket det överordnade bokmärkets position och alla andra bokmärken visas som underordnade. Detta kan leda till oväntad bokmärkesstruktur.
+
