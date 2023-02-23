@@ -1,9 +1,10 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides 4.2
 description: Senaste utgåvan av Adobe Experience Manager Guides
-source-git-commit: 2fb46bdfb7f42fd9b3ef19343700009818c5b4f2
+exl-id: 8a7fef77-63af-462f-89c5-054ab31e079b
+source-git-commit: 890d64aed5f4005e3f4d3143bc35804e39036ad3
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3668'
 ht-degree: 1%
 
 ---
@@ -251,12 +252,12 @@ Ett ändringsfält visas i PDF för att ange det ändrade, infogade eller bortta
 ### PDF | Variabelstöd för utdatasökväg och PDF-filnamn
 
 Nu kan du även använda följande variabler för att definiera utdatasökväg och PDF-fil. Du kan definiera dessa alternativ med en eller flera variabler:
-* ${map_filename}
-* ${map_title}
-* ${preset_name}
-* ${language_code}
-* ${map_parentpath} (endast för utdatasökväg)
-* ${path_after_langfolder} (Endast för utdatasökväg)
+* `${map_filename}`
+* `${map_title}`
+* `${preset_name}`
+* `${language_code}`
+* `${map_parentpath}` (Endast för utdatasökväg)
+* `${path_after_langfolder}` (Endast för utdatasökväg)
 
 ### PDF | Generera innehållsförteckning för DITA-kartor och ändra ordning på sidlayouter
 
