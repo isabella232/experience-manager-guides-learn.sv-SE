@@ -1,9 +1,9 @@
 ---
 title: Grundläggande publicering i PDF
 description: Lär dig hur du publicerar PDF med den inbyggda PDF-motorn i AEM.
-source-git-commit: b79e7287cdf7eaff0a6fa47d94e12c8928a44b49
+source-git-commit: 285dbf9ea7eb5eb4288dfbdfc977d35b2feef111
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '233'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Under den här sessionen får du lära dig mer om följande:
 
 - **Videofilmer** -  [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/videos/advanced-user-guide/overview.html?lang=en)
 
-- **Användarhandbok** - [Skapa innehåll](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/pdf-template.html?lang=en)
+- **Användarhandbok** - [PDF](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/pdf-template.html?lang=en)
 
 - **Community-forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
@@ -53,7 +53,7 @@ Under den här sessionen får du lära dig mer om följande:
 
 ## Nästa expertsession
 
-- **Ämne** - Publicering och rapporter *(baserat på undersökningsresultat)*
+- **Ämne** - TBD *(väntar på undersökningsresultat)*
 - **Schemalagd den** - 30 mars 2023
 
 ## Kontakta oss

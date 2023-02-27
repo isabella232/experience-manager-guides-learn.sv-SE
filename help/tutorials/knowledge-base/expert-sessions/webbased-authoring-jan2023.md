@@ -2,9 +2,9 @@
 title: Skapa webbaserat innehåll
 description: Lär dig hur du skapar strukturerat innehåll med webbredigeraren.
 exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
-source-git-commit: cb7cb66eb4ba81120afb43582867e859661b434c
+source-git-commit: 285dbf9ea7eb5eb4288dfbdfc977d35b2feef111
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Under den här sessionen får du lära dig mer om följande:
 
 ## Nästa expertsession
 
-- **Ämne** - PDF *(baserat på undersökningsresultat)*
+- **Ämne** - [Grundläggande publicering i PDF](native-pdf-publishing-essentials-feb23.md)
 - **Schemalagd den** - 23 februari 2023
 
 ## Kontakta oss
