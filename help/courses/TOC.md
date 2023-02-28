@@ -1,11 +1,11 @@
 ---
-user-guide-title: Videofilmer om Adobe Experience Manager Guides
-user-guide-description: En samling videor för Adobe Experience Manager Guides.
-breadcrumb-title: Videofilmer om AEM stödlinjer
+user-guide-title: Videor om användarhandböcker om Adobe Experience Manager
+user-guide-description: En samling videor om användarhandböcker om Adobe Experience Manager.
+breadcrumb-title: Videor om användarhandböcker för AEM
 source-git-commit: 7d5e4616c0f36c696549e9e08a1b5c137f36a66c
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 1%
+ht-degree: 15%
 
 ---
 
