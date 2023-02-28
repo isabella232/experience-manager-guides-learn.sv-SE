@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om användarhandböcker om AEM
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om användarhandböcker om AEM
-source-git-commit: fefff9510c94c1917da694e30ffaf90bb887b577
+source-git-commit: 9eb44211684c8a3af036acf12390dafb617fd24a
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 11%
+source-wordcount: '189'
+ht-degree: 12%
 
 ---
 
@@ -58,3 +58,10 @@ ht-degree: 11%
       + [Hantera innehåll med hjälp av baslinjer](./knowledge-base/expert-sessions/baselines-dec22.md)
       + [Skapa webbaserat innehåll](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Grundläggande publicering i PDF](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
+   + Artiklar {#kb-articles}
+      + Redigering {#authoring}
+         + Webeditor {#webeditor}
+            + Schematron {#schematron}
+               + [Schematronvalidering](./knowledge-base/kb-articles/authoring/webeditor/schematron/vailidating-with-schematron.md)
+      + Arbetsflöden {#workflows}
+         + [Arbetsflöde efter generering](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
