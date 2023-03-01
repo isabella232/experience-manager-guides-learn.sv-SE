@@ -1,28 +1,28 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, november 2022-utgåvan
-description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
+description: Novemberversionen av Adobe Experience Manager Guides as a Cloud Service
 exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
-source-git-commit: 0663ed4434fdf583a9446891f944d94b85f375c6
+source-git-commit: 715d5622c4cc59dfb24ac9a3442e61efdb10a797
 workflow-type: tm+mt
 source-wordcount: '1372'
 ht-degree: 1%
 
 ---
 
-# Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
+# Novemberversionen av Adobe Experience Manager Guides as a Cloud Service
 
-## Uppgradera till den senaste versionen
+## Uppgradera till november-versionen
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
 2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.11.198.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till den senaste versionen av AEM Guides as a Cloud Service.
+3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till Novemberversionen av AEM Guides as a Cloud Service.
 
 ## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM stödlinjer as a Cloud Service)
 
 Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappningsnivå:
 
-* Kör en serverbegäran (med korrekt autentisering) - `http://<server:port>/bin/guides/map-find/indexin`.
+* Kör en serverbegäran (med korrekt autentisering) - `http://<server:port>/bin/guides/map-find/indexing`.
 (Valfritt: Du kan skicka specifika sökvägar för mappningarna för att indexera dem. Som standard indexeras alla mappningar || Exempel: `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
 
 * API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port>/bin/guides/map-find/indexing?jobId={jobId}`
@@ -54,7 +54,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 ## Nya funktioner och förbättringar
 
-AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i den senaste versionen:
+AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i november-versionen:
 
 
 ### Ta bort filer från databaspanelen

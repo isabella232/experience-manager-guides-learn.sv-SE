@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om användarhandböcker om AEM
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om användarhandböcker om AEM
-source-git-commit: 9eb44211684c8a3af036acf12390dafb617fd24a
+source-git-commit: d13a04448be357f37290dbd37317d82b5a8ea736
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 12%
+source-wordcount: '204'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,8 @@ ht-degree: 12%
    + Versionsinformation {#release-notes}
       + Cloud Services {#cloud-release-notes}
          + [Distributionsanvisningar](./release-info/deploy-xml-on-aemaacs.md)
-         + [Aktuella versionsinformation](./release-info/release-notes-2022.11.0.md)
+         + [Aktuella versionsinformation](./release-info/release-notes-2023.2.0.md)
+         + [Versionsinformation, november](./release-info/release-notes-2022.11.0.md)
          + [Versionsinformation, oktober](./release-info/release-notes-2022.10.0.md)
          + [Versionsinformation för september](./release-info/release-notes-2022.9.0.md)
          + [Versionsinformation, augusti](./release-info/release-notes-2022.8.0.md)
@@ -58,6 +59,8 @@ ht-degree: 12%
       + [Hantera innehåll med hjälp av baslinjer](./knowledge-base/expert-sessions/baselines-dec22.md)
       + [Skapa webbaserat innehåll](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Grundläggande publicering i PDF](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
+   + Publicering{#publishing}
+      + [Konfigurera ny mikrotjänstbaserad publicering för AEM Guides as a Cloud Service](./knowledge-base/publishing/configure-microservices.md)
    + Artiklar {#kb-articles}
       + Redigering {#authoring}
          + Webeditor {#webeditor}
