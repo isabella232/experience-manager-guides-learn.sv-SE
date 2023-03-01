@@ -1,7 +1,7 @@
 ---
 title: Konfigurera ny mikrotjänstbaserad publicering för AEM Guides as a Cloud Service
 description: Lär dig hur du konfigurerar ny mikrotjänstbaserad publicering för AEM.
-source-git-commit: afbc1712cf45dd0b570e20683946af6a86edae7e
+source-git-commit: c2981b5635353eb84c9e46a03de1b1ed07aa5bf3
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Eftersom den nya molnpubliceringstjänsten skyddas av Adobe IMS JWT-baserad aute
 
 Så här skapar du IMS-konfigurationer i Adobe Developer Console:
 
-1. Open Developer Console: `https://developer.adobe.com/console`.
+1. Öppna Developer Console: `https://developer.adobe.com/console`.
 
 1. Växla till **Projekt** från början.
 
