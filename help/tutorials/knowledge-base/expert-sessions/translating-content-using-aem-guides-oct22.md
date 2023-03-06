@@ -2,9 +2,9 @@
 title: Översätta innehåll
 description: Lär dig hur du översätter innehåll till flera språk.
 exl-id: c8dacbdc-4b0b-44ca-82d4-889cd83741ff
-source-git-commit: cb7cb66eb4ba81120afb43582867e859661b434c
+source-git-commit: 3d12389dbd7458a74bb9b9ec488e83bf39c8c9bf
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,6 @@ Under den här sessionen får du lära dig mer om följande:
 > - On-prem 4.1 eller senare
 > - Cloud Services 2207 eller senare
 
-
-## Nästa expertsession
-
-- **Ämne** - [Hantera innehåll med hjälp av baslinjer](baselines-dec22.md)
-- **Schemalagd den** - 8 december 2022
 
 ## Kontakta oss
 
