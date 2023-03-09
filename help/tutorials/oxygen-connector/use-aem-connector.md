@@ -1,5 +1,5 @@
 ---
-source-git-commit: f79a387de64a31dc62455992c54fc82dc6235ebc
+source-git-commit: 2e1f1644e5f22fc928ad813f46137a3f284df022
 workflow-type: tm+mt
 source-wordcount: '5800'
 ht-degree: 0%
@@ -645,21 +645,21 @@ Lösning: Gör så här för att aktivera funktionen för generering av loggar i
 
     1.  Bläddra till installationsplatsen för Sygen XML Author.
     
-    2.  Öppna filen syreAuthor19.1.vmoptions i en textredigerare.
+    1.  Öppna filen syreAuthor19.1.vmoptions i en textredigerare.
     
     **Obs!**
     
     Versionsnumret för filen kan variera beroende på vilket versionsnummer programmet har som är installerat på datorn.
     
-    3.  Lägg till följande rad i filen:
+    1.  Lägg till följande rad i filen:
     
     &quot;
     -Djava.util.log.config.file=./log.properties
     &quot;
     
-    4.  Spara och stäng filen.
+    1.  Spara och stäng filen.
     
-    5.  På samma plats skapar du en fil med namnet log.properties med följande innehåll:
+    1.  På samma plats skapar du en fil med namnet log.properties med följande innehåll:
     
     &quot;
     handlers=java.util.log.FileHandler
@@ -671,9 +671,9 @@ Lösning: Gör så här för att aktivera funktionen för generering av loggar i
     java.util.log.FileHandler.format=[%1$tF %1$tT] [%4$s] %5$s %n
     &quot;
     
-    6.  Spara och stäng filen.
+    1.  Spara och stäng filen.
     
-    7.  Starta Syrgas XML Author.
+    1.  Starta Syrgas XML Author.
     
     
     Plugin-programmet skapar nu loggar i användarens hemkatalog med filnamnet aem-pluginX.log \(*där X anger rotationsnumret*\).
