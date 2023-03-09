@@ -2,7 +2,7 @@
 user-guide-title: Självstudiekurser om användarhandböcker om AEM
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 77447339e68e90ee1a38081ef82be7b7cd7826ac
+source-git-commit: 53a4917328626f589f2a9e8243d169fa10a6efff
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 11%
@@ -67,6 +67,6 @@ ht-degree: 11%
             + Schematron {#schematron}
                + [Schematronvalidering](./knowledge-base/kb-articles/authoring/webeditor/schematron/vailidating-with-schematron.md)
       + Publicering {#publishing}
-         + [FMPS och stödlinjer](./knowledge-base/kb-articles/publishing/FMPSandGuides.md)
+         + [FMPS och stödlinjer](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
       + Arbetsflöden {#workflows}
          + [Arbetsflöde efter generering](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
