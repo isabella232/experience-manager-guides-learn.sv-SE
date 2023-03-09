@@ -1,10 +1,16 @@
 ---
-source-git-commit: 2e1f1644e5f22fc928ad813f46137a3f284df022
+title: Syrgas-plugin för Adobe Experience Manager Guides
+description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager Guides för att skapa och hantera ditt innehåll.
+hide: true
+hidefromtoc: true
+source-git-commit: d52a3c2a09a5a3d8e572191b4f4ebf1aa25f30df
 workflow-type: tm+mt
-source-wordcount: '5800'
+source-wordcount: '5812'
 ht-degree: 0%
 
 ---
+
+
 # Syrgas-plugin för Adobe Experience Manager Guides {#id1645H6010Q5}
 
 Med Syrgas-pluginen för Adobe Experience Manager Guides \(kallas senare för Syrgas-plugin för AEM Guides i guiden\) kan du ansluta Syrgas-XML-författaren till Adobe Experience Manager \(AEM\)-databasen för att skapa och hantera innehåll. Du kan använda plugin-programmet för att bläddra bland, söka efter och öppna filer; filer för utcheckning och incheckning, överför mappar och filer AEM databasen. På panelen AEM stödlinjer i skrivbordsprogrammet kan du markera önskade mappar \(från AEM databas\) i listan med favoritmappar så att du snabbt kommer åt dem. Dessutom kan du installera ett paket i AEM webbgränssnitt och öppna DITA-filerna i Sygen XML Author direkt från AEM webbgränssnitt.
@@ -17,7 +23,7 @@ Syrgas-pluginen för AEM-guider är tillgänglig via Adobe Software Distribution
 
 När du har installerat installationsprogrammet installerar du det på den lokala datorn där syre-XML-författaren är installerad. Innan du påbörjar installationen måste du se till att systemet uppfyller de tekniska kraven för att installera syrgas-plugin för AEM.
 
-### Tekniska krav {.section}
+### Tekniska krav
 
 - Syrgas XML Author version 24.1
 
@@ -30,7 +36,7 @@ När du har installerat installationsprogrammet installerar du det på den lokal
 - Java Development Kit
    - Oracle SE 8 JRE 1.8
 
-### Installera plugin-programmet i Windows {.section}
+### Installera plugin-programmet i Windows
 
 **Viktigt:**
 
@@ -42,18 +48,18 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
 
    Installationsguidens välkomstskärm visas.
 
-2. Klicka **Nästa** och bläddra till den plats där .exe-filen för Sygen XML Author finns tillgänglig.
+1. Klicka **Nästa** och bläddra till den plats där .exe-filen för Sygen XML Author finns tillgänglig.
 
-3. Markera filen och klicka på **Öppna**.
+1. Markera filen och klicka på **Öppna**.
 
-   Platsen för den valda filen läggs till i installationsguiden.
+   Den valda filens plats läggs till i installationsguiden.
 
-4. Klicka på **Nästa**.
+1. Klicka på **Nästa**.
 
-5. Klicka **Installera**.
+1. Klicka **Installera**.
 
-6. Klicka **Slutför** för att stänga installationsguiden.
-7. Starta Syrgas XML Author.
+1. Klicka **Slutför** för att stänga installationsguiden.
+1. Starta Syrgas XML Author.
 
    Panelen AEM stödlinjer visas i Syrgas XML-författare.
 
@@ -64,7 +70,7 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
    Om du inte ser panelen AEM stödlinjer läser du i felsökningsavsnittet -[Panelen AEM stödlinjer saknas](#id192BH200ZAX).
 
 
-### Installera plugin-programmet på Mac {.section}
+### Installera plugin-programmet på Mac
 
 **Viktigt:**
 
@@ -74,7 +80,7 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
 
 1. Leta reda på plugin-programmets .dmg-fil på datorn.
 
-2. Dubbelklicka på .dmg-filen för att öppna filinnehållet.
+1. Dubbelklicka på .dmg-filen för att öppna filinnehållet.
 
    DMG-filen innehåller en mapp av typen aem-connector-x.x och en aem-connector-x.x-setup.
 
@@ -82,10 +88,10 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
 
    x.x i filnamnet är plugin-programmets versionsnummer.
 
-3. Kopiera mappen aem-connector-x.x i mappen plugins i Oxygen XML Author.
-4. Dubbelklicka på filen aem-connector-x.x-setup för att starta installationsprogrammet.
+1. Kopiera mappen aem-connector-x.x i mappen plugins i Oxygen XML Author.
+1. Dubbelklicka på filen aem-connector-x.x-setup för att starta installationsprogrammet.
 
-5. Starta Syrgas XML Author.
+1. Starta Syrgas XML Author.
 
    Panelen AEM stödlinjer visas i Syrgas XML-författare.
 
@@ -96,14 +102,14 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
    Om du inte ser panelen AEM stödlinjer läser du i felsökningsavsnittet -[Panelen AEM stödlinjer saknas](#id192BH200ZAX).
 
 
-### Installera paketet för att aktivera dokumentredigeringsfunktionen från AEM webbgränssnitt {#id182CE0Q0TY4 .section}
+### Installera paketet för att aktivera dokumentredigeringsfunktionen från AEM webbgränssnitt {#id182CE0Q0TY4}
 
 Som författare kan du öppna och redigera dina DITA-kartor eller ämnen i Sygen XML Author direkt från AEM webbgränssnitt. Om du vill aktivera den här funktionen i AEM webbgränssnitt måste AEM-administratören installera ett paket i den AEM utvecklingsinstansen.
 
 Som AEM administratör följer du de här stegen för att installera paketet:
 
 1. Hämta paketets ZIP-fil från IT-avdelningen.
-2. Logga in i AEM *\(som administratör\)* och navigera till CRX Package Manager. Standardwebbadressen för att få åtkomst till pakethanteraren är
+1. Logga in i AEM *\(som administratör\)* och navigera till CRX Package Manager. Standardwebbadressen för att få åtkomst till pakethanteraren är
 
    ```
    http://<server name>:<port>/crx/packmgr/index.jsp
@@ -113,18 +119,18 @@ Som AEM administratör följer du de här stegen för att installera paketet:
 
    ![](images/package-manager.png)
 
-3. Om du vill ladda upp syrgaspaketet klickar du på **Överför paket**.
-4. I dialogrutan Överför paket navigerar du till syrepaketfilen som du hämtade i steg 1 och klickar på OK.
+1. Om du vill ladda upp syrgaspaketet klickar du på **Överför paket**.
+1. I dialogrutan Överför paket navigerar du till syrepaketfilen som du hämtade i steg 1 och klickar på OK.
 
    Paketet överförs till din AEM.
 
-5. Starta installationen genom att klicka på **Installera**.
+1. Starta installationen genom att klicka på **Installera**.
 
    ![](images/oxygen-package.png)
 
-6. I dialogrutan Installera paket klickar du på **Installera**.
-7. När installationen är klar klickar du på hemknappen i det övre vänstra hörnet av CRX Package Manager.
-8. Välj en DITA-fil i resursmappen.
+1. I dialogrutan Installera paket klickar du på **Installera**.
+1. När installationen är klar klickar du på hemknappen i det övre vänstra hörnet av CRX Package Manager.
+1. Välj en DITA-fil i resursmappen.
 
    **Redigera i syrgas** är tillgängligt i verktygsfältet. Mer information om hur du använder det här alternativet finns i [Öppna DITA-avsnittet i Sygen XML Author från AEM webbgränssnitt](#id182CE0I905Z).
 
@@ -141,7 +147,7 @@ När du har hämtat och installerat plugin-programmet måste du konfigurera föl
 - **Allmänna inställningar**: Anslutningsinställningar för plugin-programmet, till exempel AEM server-URL, inloggningsinformation o.s.v.
 - **Inställningar för anpassning av profileringsattribut**: Den här konfigurationen krävs för profileringsattributscheman för dokumentationsuppsättningarna.
 
-### Inställningar för webbautentisering {.section}
+### Inställningar för webbautentisering
 
 JxBrowser används för SSO-autentisering av syreanslutningens plugin. Det är en krombaserad webbläsare. För java 9+ krävs åtkomst till icke-publika API:er, och du måste uttryckligen ge åtkomst till JxBrowser. Mer information finns i [JxBrowser - felsökning](https://jxbrowser-support.teamdev.com/docs/guides/troubleshooting/issues.html).
 
@@ -181,7 +187,7 @@ Lägg till följande rader i syreAuthor.bat
 
 Du måste köra syre från syreAuthor.sh för Mac och syreAuthor.bat för Windows som administratör.
 
-### Allmänna inställningar {.section}
+### Allmänna inställningar
 
 Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-plugin-programmet för Adobe Experience Manager-guider:
 
@@ -189,7 +195,7 @@ Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-
 
    ![](images/Settings.png)
 
-2. Ange följande information:
+1. Ange följande information:
    - **Server-URL**: URL för AEM server, till exempel:
 
       ```
@@ -213,44 +219,44 @@ Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-
    - **Stäng filen vid incheckning**: Om det här alternativet är markerat stängs filerna vid incheckning. Innan du stänger filen visas ett popup-fönster där du kan ange versionskommentarerna.
    - **Visa dialogrutan Checka in när filen stängs**: Om du väljer det här alternativet visas ett popup-fönster när du stänger en fil. I popup-fönstret kan du välja att checka in filen eller stänga filen utan att checka in den.
    - **Automatisk utcheckning av fil när den öppnas**: Om du dubbelklickar på en fil checkas den ut automatiskt och öppnas för redigering. Om filen redan är utcheckad öppnas den helt enkelt för redigering. Om det här alternativet inte är markerat öppnas en fil som du inte har ett lås i skrivskyddat läge när du öppnar den.
-3. Klicka **OK**.
+1. Klicka **OK**.
 
-### Inställningar för anpassning av profileringsattribut {#id1827K0D0OHT .section}
+### Inställningar för anpassning av profileringsattribut {#id1827K0D0OHT}
 
 Du måste konfigurera inställningarna i Sygen XML Author för att använda profileringsattributet som är kopplat till DITA-avsnitten i AEM.
 
 Utför följande steg för att konfigurera profileringsattribut:
 
 1. I Syrgas XML Author klickar du på **Alternativ** \> **Inställningar**.
-2. I **Dokumenttypsassociation** flik, välja **DITA** och klicka sedan på **Utöka**.
+1. I **Dokumenttypsassociation** flik, välja **DITA** och klicka sedan på **Utöka**.
 
    ![](images/document_type_association.png)
 
-3. I **Klassökväg** väljer du com.adobe.o2.connector i **Använd inläsare för överordnad klass från plugin-program med ID** nedrullningsbar meny.
+1. I **Klassökväg** väljer du com.adobe.o2.connector i **Använd inläsare för överordnad klass från plugin-program med ID** nedrullningsbar meny.
 
    ![](images/DITA%20Extension.png)
 
-4. I **Tillägg** gör du följande ändringar:
-5. 
+1. I **Tillägg** gör du följande ändringar:
+1. 
    - Klicka **Välj** bredvid **Avlyssnare för författartilläggsstatus** under **Enskilda tillägg** och väljer CustomAuthorExtensionStateListener - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
 - Klicka **Välj** bredvid **Redigerare för anpassat attributvärde** under **Enskilda tillägg** och väljer CustomValueEditor - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
 På följande skärmbild visas den konfigurerade **Tillägg** för DITA-ämnen:
 
    ![](images/dita-topic-extension-tab.png)
 
-6. Klicka **OK** i alla dialogrutor för att spara ändringarna.
+1. Klicka **OK** i alla dialogrutor för att spara ändringarna.
 
-### Konfigurera DITA-mappningstillägg {.section}
+### Konfigurera DITA-mappningstillägg
 
 Konfiguration av DITA-mappningstillägg krävs för att aktivera öppning av mappningsfiler i Sygen XML Author direkt från AEM webbgränssnitt. Dessa konfigurationer liknar konfigurationerna för profileringsattribut som gjordes i föregående procedur.
 
 Utför följande steg för att konfigurera DITA-mappningstillägget:
 
 1. I Syrgas XML Author klickar du på&#x200B;**Alternativ** \> **Inställningar**.
-2. I **Dokumenttypsassociation** flik, välja **DITA-karta** och klicka sedan på **Utöka**.
-3. I **Klassökväg** väljer du com.adobe.o2.connector i **Använd inläsare för överordnad klass från plugin-program med ID** nedrullningsbar meny.
-4. I **Tillägg** gör du följande ändringar:
-5. 
+1. I **Dokumenttypsassociation** flik, välja **DITA-karta** och klicka sedan på **Utöka**.
+1. I **Klassökväg** väljer du com.adobe.o2.connector i **Använd inläsare för överordnad klass från plugin-program med ID** nedrullningsbar meny.
+1. I **Tillägg** gör du följande ändringar:
+1. 
    - Klicka **Välj** bredvid **Avlyssnare för författartilläggsstatus** under **Enskilda tillägg** och väljer CustomDITAMapAuthorExtensionStateListener - com.adobe.o2.framework.extn i dialogrutan **Klass** lista. Klicka **OK**.
 - Klicka **Välj** bredvid **Redigerare för anpassat attributvärde** under **Enskilda tillägg** och väljer CustomValueEditor - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
 - *\(Valfritt\)* Om du inte vill lösa referenser när du öppnar en kartfil måste du göra följande ytterligare konfiguration:
@@ -261,11 +267,11 @@ Utför följande steg för att konfigurera DITA-mappningstillägget:
 
    ![](images/dita-map-extension-tab.png)
 
-6. Klicka **OK** i alla dialogrutor för att spara ändringarna.
+1. Klicka **OK** i alla dialogrutor för att spara ändringarna.
 
 ## Arbeta med Sygen Plugin för AEM Guides {#id1826JG00WY4}
 
-### AEM stödlinjepanelen {.section}
+### AEM stödlinjepanelen
 
 På följande skärm visas AEM stödlinjepanelen.
 
@@ -287,12 +293,12 @@ På följande skärm visas AEM stödlinjepanelen.
 - **Inställningar**: Du kan använda det här alternativet för att öppna den allmänna dialogrutan Inställningar för plugin-programmet.
 - **Utloggning**: Välj det här alternativet om du vill stänga AEM serveranslutning. Det här alternativet är bara tillgängligt om du använder läget Webbautentisering.
 
-### Funktioner på snabbmenyn {.section}
+### Funktioner på snabbmenyn
 
 Funktionerna för Sygen-plugin-programmet för AEM stödlinjer är tillgängliga när du högerklickar på en mapp eller fil i AEM. De funktioner som är tillgängliga för mapparna skiljer sig från filerna. Här är en fullständig lista över funktioner i Sygen Plugin för AEM Guides-snabbmenyn:
 
 - **Öppna**: Öppnar den markerade filen eller expanderar den markerade mappen.
-- **Öppna i**: Du kan välja att öppna den markerade filen i AEM webbredigerare eller kartkontrollpanel eller kartredigerare. Mer information om de här alternativen finns i [Öppna filen i AEM redigerare](#id195GH0V30KX).
+- **Öppna i**: Du kan välja att öppna den markerade filen i AEM webbredigeraren eller kartkontrollpanelen, eller i kartredigeraren. Mer information om de här alternativen finns i [Öppna filen AEM redigeraren för stödlinjer](#id195GH0V30KX).
 - **Checka ut**: Checkar ut en fil från AEM. Mer information finns i [Checka ut filer](#id195HC020TS4).
 - **Checka ut med beroenden**: Checkar ut en fil med dess direkta referenser. Mer information finns i [Checka ut filer](#id195HC020TS4).
 - **Checka ut med skrivskyddade beroenden**: Checkar ut den markerade filen tillsammans med tillhörande beroenden. Du kan inte göra några ändringar i de beroende filerna. Mer information finns i [Checka ut filer](#id195HC020TS4).
@@ -310,13 +316,13 @@ Funktionerna för Sygen-plugin-programmet för AEM stödlinjer är tillgängliga
 - **Visa metadata**: Visar metadata som DITA-klass, dokumentets titel, typ, UUID och annan information som är kopplad till en fil. Mer information finns i [Visa metadata för en fil](#id195GHN0H05C).
 - **Visa versioner**: Visar versionshistoriken för en fil. Mer information finns i [Visa versionshistorik för en fil](#id195GI000D5Q).
 
-### Öppna en fil i Sygen XML Author {#id195GHJ0A0UB .section}
+### Öppna en fil i Sygen XML Author {#id195GHJ0A0UB}
 
 När du har anslutit till AEM kan du öppna filer för redigering i Sygen XML Author. Så här öppnar du en fil för redigering i Sygen XML Author:
 
 1. Högerklicka på en fil på panelen AEM stödlinjer som du vill öppna för redigering.
 
-2. Välj **Öppna** på snabbmenyn.
+1. Välj **Öppna** på snabbmenyn.
 
    Filen öppnas i redigeraren i Sygen XML Author.
 
@@ -331,13 +337,13 @@ Om du har valt **Automatisk utcheckning av fil när den öppnas** när du öppna
 
 Du kan också dubbelklicka på en fil för att öppna den.
 
-### Öppna filen i AEM redigerare {#id195GH0V30KX .section}
+### Öppna filen AEM redigeraren för stödlinjer {#id195GH0V30KX}
 
-Om du vill använda de redigeringsprogram som är tillgängliga AEM stödlinjerna kan du göra det genom att välja önskat alternativ på snabbmenyn. Utför följande steg för att använda AEM Guides editor i stället för redaktör för Sygen XML:
+Om du vill använda de redigeringsprogram som är tillgängliga AEM stödlinjerna kan du göra det genom att välja önskat alternativ på snabbmenyn. Utför följande steg för att använda AEM Guides redigerare i stället för Sygen XML Authors redigerare:
 
 1. Högerklicka på en fil på panelen AEM stödlinjer som du vill öppna för redigering.
 
-2. Välj **Öppna i** på snabbmenyn och välj bland följande alternativ:
+1. Välj **Öppna i** på snabbmenyn och välj bland följande alternativ:
 
 - **Webbämnesredigerare**: Om filen du öppnar är en .xml- eller .dita-fil kan du öppna den för redigering i webbredigeraren. Välj **Webbämnesredigerare** om du vill öppna den markerade filen för redigering i Web Editor.
 
@@ -346,12 +352,12 @@ Om du vill använda de redigeringsprogram som är tillgängliga AEM stödlinjern
 - **Web DITA Map Editor**: Om du vill öppna .ditamap-filen för redigering i kartredigeraren väljer du det här alternativet. Med alternativet DITA Map Editor kan du lägga till eller ta bort ämnen, lägga till relationstabeller och utföra andra åtgärder på kartan.
 
 
-### Checka ut filer {#id195HC020TS4 .section}
+### Checka ut filer {#id195HC020TS4}
 
 När du checkar ut en fil lagras den lokalt på datorn och låses för redigering i AEM. Utför följande steg för att checka ut en fil:
 
 1. Högerklicka på en fil på panelen AEM stödlinjer.
-2. Välj något av följande alternativ:
+1. Välj något av följande alternativ:
    - **Checka ut:** Checkar ut en fil AEM databasen och gör den tillgänglig för redigering.
    - **Checka ut med beroenden**: Checkar ut en fil med dess direkta referenser. Du kan göra ändringar på överordnade och underordnade sidor med det här alternativet. Syrgas-plugin för AEM stödlinjer har stöd för att checka ut en nivå av beroende. Karta A refererar till exempel till ämne A och ämne A refererar till ämne B. Om du checkar ut karta A checkas ämne A ut oavsett nivå i TOC-hierarkin. Ämne B kommer dock inte att checkas ut eftersom det inte är direkt länkat från A-karta.
    - **Checka ut med skrivskyddade beroenden**: Checkar ut en fil och hämtar dess beroenden till din lokala dator som skrivskyddade kopior. Du kan inte göra några ändringar i de beroende filerna.
@@ -370,13 +376,13 @@ På skärmbilden ovan visas en fil som har checkats ut av en annan användare me
 
 Om den utcheckade filen tas bort eller flyttas till en annan mapp i AEM visas ett felmeddelande när du checkar in filen. Kontrollera att den utcheckade filen inte flyttas eller tas bort med AEM webbgränssnitt.
 
-### Checka in en fil {#id182CF0J0FHS .section}
+### Checka in en fil {#id182CF0J0FHS}
 
 När du checkar in en fil lagras den lokala kopian från systemet i AEM och fillåset tas bort. Utför följande steg för att checka in en fil:
 
 1. Spara filen genom att klicka på **Fil** \> **Spara**.
 
-2. Högerklicka på en utcheckad fil och välj mellan följande två alternativ:
+1. Högerklicka på en utcheckad fil och välj mellan följande två alternativ:
 
    - **Checka in**: Checkar in den valda filen från ditt lokala system i AEM.
    - **Checka in med beroende:** Om du har checkat ut en fil tillsammans med dess underordnade filer, använder du det här alternativet för att checka in alla beroende filer i en enda åtgärd. När du väljer det här alternativet visas dialogrutan Checka in med alla beroende filer. Klicka på OK om du vill checka in alla filer samtidigt.
@@ -391,19 +397,19 @@ När du checkar in en fil lagras den lokala kopian från systemet i AEM och fill
 
       Om du har checkat in en beroende fil via AEM uppdateras inte fillistan i Syrgasförfattaren förrän du uppdaterar mappen Uppdatera och Uppdatera utcheckade filer. Om du gör en incheckning med beroende med vissa filer incheckade AEM visas ett felmeddelande med en lista över de filer som inte kunde checkas in.
 
-3. \(Valfritt\) Lägg till en kommentar i dialogrutan Checka in **Versionskommentarer** textruta.
+1. \(Valfritt\) Lägg till en kommentar i dialogrutan Checka in **Versionskommentarer** textruta.
 
    **Obs!**
 
    Den här kommentaren visas i filens AEM versionshistorik.
 
-4. Klicka **OK**.
+1. Klicka **OK**.
 
 **Obs!**
 
 Om den utcheckade filen tas bort eller flyttas till en annan mapp i AEM visas ett felmeddelande när du checkar in filen. Kontrollera att den utcheckade filen inte flyttas eller tas bort med AEM webbgränssnitt.
 
-### Utcheckade filer AEM vyn Stödlinjer {.section}
+### Utcheckade filer AEM vyn Stödlinjer
 
 När du har flera mappar är det inte lätt att ta reda på hur många filer som är utcheckade i en vy. AEM innehåller utcheckade filer AEM vyn Stödlinjer, som ger en fullständig ögonblicksbild av de utcheckade filerna. I den här vyn kan du enkelt ta reda på vilka filer som har checkats in av dig i AEM med hjälp av AEM. Utför följande steg för att komma åt och arbeta med den här vyn:
 
@@ -413,7 +419,7 @@ När du har flera mappar är det inte lätt att ta reda på hur många filer som
 
    ![](images/files-checkedout-view.png)
 
-2. Högerklicka på en fil i den här vyn för att få följande alternativ:
+1. Högerklicka på en fil i den här vyn för att få följande alternativ:
 
    - [Öppna](#id195GH0V30KX)
    - [Öppna i](#id195GH0V30KX)
@@ -432,12 +438,12 @@ När du har flera mappar är det inte lätt att ta reda på hur många filer som
 - Du kan sortera fillistan utifrån filnamn, titel eller sökväg. Om en ny fil är utcheckad visas filen i sorterad ordning i vyn.
 
 
-### Överför filer och mappar {#id195HC03F03J .section}
+### Överför filer och mappar {#id195HC03F03J}
 
 Så här överför du filer eller mappar:
 
 1. Högerklicka på en mapp på panelen AEM stödlinjer.
-2. Välj något av följande alternativ:
+1. Välj något av följande alternativ:
    - **Överför fil\(er\)**: Välj det här alternativet om du vill överföra en eller flera filer till den valda mappen i AEM. I dialogrutan Välj filer \(er\) att överföra markerar du filerna och klickar på **Öppna**.
    - **Överför med beroenden**: Välj det här alternativet om du vill överföra en DITA-fil med tillhörande beroenden. Markera filerna i dialogrutan Välj den fil som ska överföras och klicka på **Öppna**.
    - **Överför mapp**: Välj det här alternativet om du vill överföra en mapp i AEM. I dialogrutan Välj markerar du mappen och klickar på **Välj**.
@@ -461,7 +467,7 @@ Följande punkter måste beaktas när innehåll flyttas eller kopieras från dit
 - När du checkar ut innehåll från AEM databas och gör ändringar i det lokala systemet, kontrollerar du att filnamnet inte ändras när du överför filen.
 
 
-### Lägg till eller ta bort favoriter {#id195HC04405P .section}
+### Lägg till eller ta bort favoriter {#id195HC04405P}
 
 Följ de här stegen för att lägga till eller ta bort en mapp i mappen Favoriter på panelen AEM stödlinjer:
 
@@ -470,26 +476,26 @@ Följ de här stegen för att lägga till eller ta bort en mapp i mappen Favorit
    - Högerklicka på en mapp i **Favoriter** mapp och markera **Ta bort från Favoriter**.
    - Högerklicka på en mapp i AEM under **DAM** mapp som redan lagts till som favorit och väljer **Ta bort från Favoriter**.
 
-### Visa versionshistorik för en fil {#id195GI000D5Q .section}
+### Visa versionshistorik för en fil {#id195GI000D5Q}
 
 Följ de här stegen för att visa en fils versionshistorik:
 
 1. Högerklicka på en fil på panelen AEM stödlinjer.
 
-2. Välj **Visa versioner** på snabbmenyn.
+1. Välj **Visa versioner** på snabbmenyn.
 
    Filens versionshistorik visas i dialogrutan Versioner.
 
    ![](images/version-history.png)
 
 
-### Visa metadata för en fil {#id195GHN0H05C .section}
+### Visa metadata för en fil {#id195GHN0H05C}
 
-Så här visar du en fils metadata:
+Så här visar du metadata för en fil:
 
 1. Högerklicka på en fil på panelen AEM stödlinjer.
 
-2. Välj **Visa metadata** på snabbmenyn.
+1. Välj **Visa metadata** på snabbmenyn.
 
    Filens metadata som DITA-klass, dokumenttillstånd, ändringsdatum, storlek, titel och UUID visas i dialogrutan Metadata.
 
@@ -503,15 +509,15 @@ Du kan söka efter ämnen i den AEM databasen med hjälp av sökfältet på pane
 Utför följande steg för att söka efter ämnen:
 
 1. Välj en mapp i den AEM databasen där du vill söka efter ett ämne.
-2. Ange sökfrågan \(t.ex. `introduction`\) i sökfältet i Syrgas-pluginen för AEM stödlinjer.
-3. Klicka på sökknappen eller tryck på Retur.
+1. Ange sökfrågan \(t.ex. `introduction`\) i sökfältet i Syrgas-pluginen för AEM stödlinjer.
+1. Klicka på sökknappen eller tryck på Retur.
 
    Resultatet visas på fliken Sökresultat som en lista med filsökvägen. Om det inte finns något matchande resultat för sökfrågan, hittades inga resultat i &lt;path of=&quot;&quot; the=&quot;&quot; selected=&quot;&quot; folder=&quot;&quot;> meddelandet visas.
 
    ![](images/Search.png)
 
-4. \(Valfritt\) Dubbelklicka på en fil i sökresultatet för att öppna den i Sygen XML Author.
-5. Gör något av följande om du vill gå tillbaka till AEM.
+1. \(Valfritt\) Dubbelklicka på en fil i sökresultatet för att öppna den i Sygen XML Author.
+1. Gör något av följande om du vill gå tillbaka till AEM.
    - Om du vill visa vyn AEM databas utan att rensa sökresultaten klickar du på **Bläddra** -fliken.
    - Om du vill ta bort sökresultaten och visa AEM databas klickar du på ikonen Ta bort sökning.
 
@@ -533,22 +539,22 @@ Gör så här för att öppna ett DITA-ämne i Sygen XML Author:
 
    Om ämnet inte är utcheckat checkas det först ut och öppnas sedan i syrgas i redigeringsläge.
 
-2. Välj Syrgas-XML-författare *&lt;version>* i **Starta program** meddelanderuta. Du kan välja **Kom ihåg mitt val för AEM länkar** för att spara dina inställningar.
+1. Välj Syrgas-XML-författare *&lt;version>* i **Starta program** meddelanderuta. Du kan välja **Kom ihåg mitt val för AEM länkar** för att spara dina inställningar.
 
 **Redigera ett DITA-avsnitt**
 
 Utför följande steg för att redigera ett DITA-ämne i Sygen XML Author:
 
 1. Markera och checka ut ett ämne i dina resurser.
-2. Klicka **Redigera i syrgas** i verktygsfältet.
+1. Klicka **Redigera i syrgas** i verktygsfältet.
 
    **Obs!**
 
    Om ämnet inte är utcheckat checkas det först ut och öppnas sedan i syrgas i redigeringsläge.
 
-3. Välj Syrgas-XML-författare *&lt;version>* i **Starta program** meddelanderuta. Du kan välja **Kom ihåg mitt val för AEM länkar** för att spara dina inställningar.
-4. Redigera ämnet i Syrgas XML Author.
-5. Kolla in ämnet från Syrgas-pluginen för AEM stödlinjer.
+1. Välj Syrgas-XML-författare *&lt;version>* i **Starta program** meddelanderuta. Du kan välja **Kom ihåg mitt val för AEM länkar** för att spara dina inställningar.
+1. Redigera ämnet i Syrgas XML Author.
+1. Kolla in ämnet från Syrgas-pluginen för AEM stödlinjer.
 
    Mer information om hur du checkar in ett ämne med Syrgas-plugin för AEM finns i [Checka in en fil](#id182CF0J0FHS).
 
@@ -568,18 +574,18 @@ Kontrollera att du har lagt till villkorsattributen i AEM och angett [Inställni
 Följ de här stegen för att lägga till villkorliga attribut i innehållet i Sygen XML Author:
 
 1. Checka ut och öppna ett ämne i *Syrgas-plugin för AEM*.
-2. Markera den del av innehållet där du vill använda villkorsattributen.
-3. Dubbelklicka på villkorsattributet på attributpanelen i Författaren för syrgas-XML.
+1. Markera den del av innehållet där du vill använda villkorsattributen.
+1. Dubbelklicka på villkorsattributet på attributpanelen i Författaren för syrgas-XML.
 
    ![](images/attribute-panel.png)
 
-4. I **Tillgänglig** i dialogrutan Redigera attribut markerar du attributen och klickar på **Lägg till**.
+1. I **Tillgänglig** i dialogrutan Redigera attribut markerar du attributen och klickar på **Lägg till**.
 
    Följande skärm visar `audience` attribut.
 
    ![](images/edit-attributes.png)
 
-5. Klicka **OK**.
+1. Klicka **OK**.
 
    Attributen läggs till i innehållet.
 
@@ -588,7 +594,7 @@ Följ de här stegen för att lägga till villkorliga attribut i innehållet i S
 
 Det här avsnittet handlar om några av de vanligaste problemen som du kan stöta på när du arbetar med plugin-programmet, tillsammans med deras lösningar.
 
-### Panelen AEM stödlinjer saknas {#id192BH200ZAX .section}
+### Panelen AEM stödlinjer saknas {#id192BH200ZAX}
 
 Problem: Om du inte ser panelen AEM stödlinjer i Sygen XML Author kan du prova följande lösningar:
 
@@ -596,7 +602,7 @@ Lösning 1: : 1.  Aktivera plugin-programmet i Sygen XML Author.
 
     Klicka på **Alternativ** \> **Inställningar** \> **Plugins** och välj **Syrgasplugin för Adobe Experience Manager-guider.**
 
-2. Starta om Syrgas XML Author.
+1. Starta om Syrgas XML Author.
 
 
 Lösning 2: : Om du fortfarande inte ser panelen AEM stödlinjer aktiverar du fönstret AEM stödlinjer.
@@ -610,7 +616,7 @@ Lösning 3: : Avinstallera och installera om Syrgas-plugin-programmet för Adobe
     - I Mac öppnar du mappen aem-connector-x.x i mappen plugins i Oxygen XML Author och flyttar den till **Trash*. Töm sedan mappen **Trash**.
 
 
-### Konfigurera port för DITA-OT-omvandling {.section}
+### Konfigurera port för DITA-OT-omvandling
 
 Problem: När du kör en DITA-OT-omformning på filer som bearbetas av plugin-programmet misslyckas omformningen med följande fel:
 
@@ -631,13 +637,13 @@ Lösning: Problemet har åtgärdats genom att en proxyserver har lagts till mell
     5.  Starta om Syrgas XML Author och kör DITA-OT-omvandlingen.
 
 
-### Panelen AEM stödlinjer bläddrar inte till den öppnade filplatsen {.section}
+### Panelen AEM stödlinjer bläddrar inte till den öppnade filplatsen
 
 Problem: När du väljer att öppna en fil för redigering i Syrgas XML Author från AEM server öppnas filen för redigering i Syrgas XML Author. AEM på stödlinjepanelen visas dock inte filens plats i navigeringsträdet.
 
 Lösning: Problemet har observerats i scenarier där filsökvägen innehåller /content/dam två gånger. Som standard lagras alla resurser i AEM under mappen /content/dam. Om du överför eller skapar en mappstruktur som även innehåller /content/dam i mappen, observeras problemet. Du kan utföra alla normala åtgärder för sådana filer, men deras plats i navigeringsträdet visas inte som standard. Om du vill komma åt den filen i navigeringsträdet måste du bläddra till filens plats manuellt. Observera att dubblettsökvägen /content/dam ersätts med /content/assets i navigeringsträdet.
 
-### Konfigurera loggning {.section}
+### Konfigurera loggning
 
 Problem: Som standard genereras inga loggar av Syrgas-plugin-programmet för AEM Guides, vilket gör det svårt att felsöka ett felscenario.
 
