@@ -1,7 +1,7 @@
 ---
 title: FMPS och AEM
 description: Publicera med FMPS via AEM
-source-git-commit: 5c53f89a811571c2193769bb4821657df3212dc0
+source-git-commit: 82f010a97d0ed0e3c6351e6411e5955c79e0b01f
 workflow-type: tm+mt
 source-wordcount: '686'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Välj FrameMaker Publishing Server på menyn &quot;Generera PDF med&quot;.
 Användaren kan ange &quot;settings File(.sts)&quot; och &quot;ditaval. Filtreringen görs i enlighet med de villkor du anger.
 
 - **inställningsfil**: FrameMaker /FMPS Publish-inställning som innehåller alla inställningar som du vill att FMPS ska använda vid publicering Till exempel: Generera utdata med den anpassade mallen, Generera märken och utfall (PDF), Generera PDF med innehållsförteckning, index osv.
-- **FMPS finns:** I fördefinierad kombination av fil för ändringar och inställningar kan användaren skapa en förinställning för FMPS som kan återanvändas för publiceringsbehov i stället för att ge separata fil för ändringar och inställningar.
+- **FMPS-förinställning:** I fördefinierad kombination av fil för ändringar och inställningar kan användaren skapa en förinställning för FMPS som kan återanvändas för publiceringsbehov i stället för att ge separata fil för ändringar och inställningar.
 
 **Obs!** Om du inte väljer någon av inställningarna eller FMPS-förinställningen publiceras FMPS med standardsysteminställningen.
 
