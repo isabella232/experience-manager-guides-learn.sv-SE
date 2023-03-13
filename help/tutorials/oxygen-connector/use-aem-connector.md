@@ -1,9 +1,9 @@
 ---
 title: Syrgas-plugin för Adobe Experience Manager Guides
 description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager Guides för att skapa och hantera ditt innehåll.
-source-git-commit: 50b1b02c69ff81d4ee050d02ed945e88fac9dae0
+source-git-commit: c3d50c3fc9f12d98942b6cb68512e01559b47d93
 workflow-type: tm+mt
-source-wordcount: '5812'
+source-wordcount: '5792'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,9 @@ Med Syrgas-pluginen för Adobe Experience Manager Guides \(kallas senare för Sy
 
 Syrgas-pluginen för AEM-guider är tillgänglig via Adobe Software Distribution Portal. Sök efter&quot;syre&quot; på fliken Experience Manager och hämta plugin-installationsprogrammet från [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html).
 
-**Obs!** Kontrollera versionskompatibiliteten för Syrgasanslutning i versionsinformationen för de specifika Adobe Experience Manager-guiderna.
+>[!NOTE]
+>
+>Kontrollera versionskompatibiliteten för Syrgasanslutning i versionsinformationen för de specifika Adobe Experience Manager-guiderna.
 
 När du har installerat installationsprogrammet installerar du det på den lokala datorn där syre-XML-författaren är installerad. Innan du påbörjar installationen måste du se till att systemet uppfyller de tekniska kraven för att installera syrgas-plugin för AEM.
 
@@ -36,9 +38,9 @@ När du har installerat installationsprogrammet installerar du det på den lokal
 
 ### Installera plugin-programmet i Windows
 
-**Viktigt:**
-
-Om du har en äldre version av plugin-programmet installerad på datorn måste du avinstallera det innan du startar installationsprocessen. Se **Avinstallerar paket** i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/package-manager.html) artikel för avinstallationsinstruktioner.
+>[!IMPORTANT]
+>
+>Om du har en äldre version av plugin-programmet installerad på datorn måste du avinstallera det innan du startar installationsprocessen. Se **Avinstallerar paket** i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/package-manager.html) artikel för avinstallationsinstruktioner.
 
 Utför följande steg på datorn där Oxygen XML Author är installerat:
 
@@ -63,16 +65,16 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
 
    ![](images/oxygen-aem-connector.png)
 
-   **Obs!**
-
-   Om du inte ser panelen AEM stödlinjer läser du i felsökningsavsnittet -[Panelen AEM stödlinjer saknas](#id192BH200ZAX).
+   >[!NOTE]
+   >
+   >Om du inte ser panelen AEM stödlinjer läser du i felsökningsavsnittet -[Panelen AEM stödlinjer saknas](#id192BH200ZAX).
 
 
 ### Installera plugin-programmet på Mac
 
-**Viktigt:**
-
-Om du har en äldre version av plugin-programmet installerad på datorn måste du avinstallera det innan du startar installationsprocessen. Se **Avinstallerar paket** i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/package-manager.html) anvisningar för artikelavinstallation.
+>[!IMPORTANT]
+>
+>Om du har en äldre version av plugin-programmet installerad på datorn måste du avinstallera det innan du startar installationsprocessen. Se **Avinstallerar paket** i [Så här arbetar du med paket](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/package-manager.html) anvisningar för artikelavinstallation.
 
 Utför följande steg på datorn där Oxygen XML Author är installerat:
 
@@ -82,9 +84,9 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
 
    DMG-filen innehåller en mapp av typen aem-connector-x.x och en aem-connector-x.x-setup.
 
-   **Obs!**
-
-   x.x i filnamnet är plugin-programmets versionsnummer.
+   >[!NOTE]
+   >
+   >x.x i filnamnet är plugin-programmets versionsnummer.
 
 1. Kopiera mappen aem-connector-x.x i mappen plugins i Oxygen XML Author.
 1. Dubbelklicka på filen aem-connector-x.x-setup för att starta installationsprogrammet.
@@ -95,9 +97,9 @@ Utför följande steg på datorn där Oxygen XML Author är installerat:
 
    ![](images/oxygen-aem-connector-mac.png)
 
-   **Obs!**
-
-   Om du inte ser panelen AEM stödlinjer läser du i felsökningsavsnittet -[Panelen AEM stödlinjer saknas](#id192BH200ZAX).
+   >[!NOTE]
+   >
+   >Om du inte ser panelen AEM stödlinjer läser du i felsökningsavsnittet -[Panelen AEM stödlinjer saknas](#id192BH200ZAX).
 
 
 ### Installera paketet för att aktivera dokumentredigeringsfunktionen från AEM webbgränssnitt {#id182CE0Q0TY4}
@@ -132,9 +134,9 @@ Som AEM administratör följer du de här stegen för att installera paketet:
 
    **Redigera i syrgas** är tillgängligt i verktygsfältet. Mer information om hur du använder det här alternativet finns i [Öppna DITA-avsnittet i Sygen XML Author från AEM webbgränssnitt](#id182CE0I905Z).
 
-   **Obs!**
-
-   The **Redigera i syrgas** är synligt när du markerar ett DITA-avsnitt. Om du markerar flera ämnen visas inte alternativet.
+   >[!NOTE]
+   >
+   >The **Redigera i syrgas** är synligt när du markerar ett DITA-avsnitt. Om du markerar flera ämnen visas inte alternativet.
 
 
 ## Konfigurera Syrgas-plugin för AEM {#id1826KF00AHS}
@@ -151,7 +153,9 @@ JxBrowser används för SSO-autentisering av syreanslutningens plugin. Det är e
 
 Uppdatera de angivna filerna för att konfigurera inställningarna för webbautentisering i Syrgas-pluginprogrammet för AEM stödlinjer:
 
-**Obs!** Säkerhetskopiera filen innan du uppdaterar den.
+>[!NOTE]
+>
+>Säkerhetskopiera filen innan du uppdaterar den.
 
 **För Mac och syrgas 24.1**
 
@@ -181,9 +185,9 @@ Lägg till följande rader i syreAuthor.bat
 -Djdk.module.illegalAccess=permit -Djava.ipc.external=true
 ```
 
-**Obs!**
-
-Du måste köra syre från syreAuthor.sh för Mac och syreAuthor.bat för Windows som administratör.
+>[!NOTE]
+>
+>Du måste köra syre från syreAuthor.sh för Mac och syreAuthor.bat för Windows som administratör.
 
 ### Allmänna inställningar
 
@@ -191,7 +195,7 @@ Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-
 
 1. Klicka på inställningsikonen på panelen AEM stödlinjer och välj sedan **Inställningar**.
 
-   ![](images/Settings.png)
+   ![](images/settings.png)
 
 1. Ange följande information:
    - **Server-URL**: URL för AEM server, till exempel:
@@ -202,9 +206,9 @@ Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-
 
       Ange värdnamnet och porten för servern där AEM distribueras i ovanstående URL.
 
-      **Viktigt:**
-
-      Om AEM distribueras på port 80 eller 443 behöver du inte ange den i URL:en.
+      >[!IMPORTANT]
+      >
+      >Om AEM distribueras på port 80 eller 443 behöver du inte ange den i URL:en.
 
    - **Autentisering:** Välj från **Grundläggande \(användarnamn/lösenord\)** eller **Webbautentisering**. Om du väljer **Grundläggande** autentisering som du måste ange **Användarnamn** och **Lösenord** i dialogrutan Inställningar.
 
@@ -232,7 +236,7 @@ Utför följande steg för att konfigurera profileringsattribut:
 
 1. I **Klassökväg** väljer du com.adobe.o2.connector i **Använd inläsare för överordnad klass från plugin-program med ID** nedrullningsbar meny.
 
-   ![](images/DITA%20Extension.png)
+   ![](images/dita-extension.png)
 
 1. I **Tillägg** gör du följande ändringar:
 1. 
@@ -286,7 +290,9 @@ På följande skärm visas AEM stödlinjepanelen.
 - **Anslut**: Välj det här alternativet om du vill ansluta till AEM. Alternativet är inaktiverat när Sygen XML Author är ansluten till AEM Server.
 - **Uppdatera**: Välj det här alternativet om du vill få den senaste statusen för filerna och mappen från AEM.
 
-   **Obs!** Spara filerna innan du uppdaterar dem. När du väljer **Uppdatera** får du en varning om att spara filerna innan du uppdaterar dem. Om du inte har sparat dina filer kan du klicka på **Avbryt** och spara dem.
+   >[!NOTE]
+   >
+   >Spara filerna innan du uppdaterar dem. När du väljer **Uppdatera** får du en varning om att spara filerna innan du uppdaterar dem. Om du inte har sparat dina filer kan du klicka på **Avbryt** och spara dem.
 
 - **Inställningar**: Du kan använda det här alternativet för att öppna den allmänna dialogrutan Inställningar för plugin-programmet.
 - **Utloggning**: Välj det här alternativet om du vill stänga AEM serveranslutning. Det här alternativet är bara tillgängligt om du använder läget Webbautentisering.
@@ -331,9 +337,9 @@ När du har anslutit till AEM kan du öppna filer för redigering i Sygen XML Au
 
 Om du har valt **Automatisk utcheckning av fil när den öppnas** när du öppnar en fil, blir filen automatiskt utcheckad och tillgänglig för redigering. Om du vill öppna en fil kan du antingen dubbelklicka på ett filnamn eller högerklicka på filnamnet och välja **Öppna** på snabbmenyn. Om det här alternativet inte är markerat öppnas filen i skrivskyddat läge.
 
-**Obs!**
-
-Du kan också dubbelklicka på en fil för att öppna den.
+>[!NOTE]
+>
+>Du kan också dubbelklicka på en fil för att öppna den.
 
 ### Öppna filen AEM redigeraren för stödlinjer {#id195GH0V30KX}
 
@@ -370,9 +376,9 @@ När en fil är utcheckad ändras ikonen för filen så att dess låsta status v
 
 På skärmbilden ovan visas en fil som har checkats ut av en annan användare med en svart färgad låsikon \(A\). Filen som har checkats ut av den aktuella användaren visas med ett grönt lås \(B\).
 
-**Obs!**
-
-Om den utcheckade filen tas bort eller flyttas till en annan mapp i AEM visas ett felmeddelande när du checkar in filen. Kontrollera att den utcheckade filen inte flyttas eller tas bort med AEM webbgränssnitt.
+>[!NOTE]
+>
+>Om den utcheckade filen tas bort eller flyttas till en annan mapp i AEM visas ett felmeddelande när du checkar in filen. Kontrollera att den utcheckade filen inte flyttas eller tas bort med AEM webbgränssnitt.
 
 ### Checka in en fil {#id182CF0J0FHS}
 
@@ -397,15 +403,15 @@ När du checkar in en fil lagras den lokala kopian från systemet i AEM och fill
 
 1. \(Valfritt\) Lägg till en kommentar i dialogrutan Checka in **Versionskommentarer** textruta.
 
-   **Obs!**
-
-   Den här kommentaren visas i filens AEM versionshistorik.
+   >[!NOTE]
+   >
+   >Den här kommentaren visas i filens AEM versionshistorik.
 
 1. Klicka **OK**.
 
-**Obs!**
-
-Om den utcheckade filen tas bort eller flyttas till en annan mapp i AEM visas ett felmeddelande när du checkar in filen. Kontrollera att den utcheckade filen inte flyttas eller tas bort med AEM webbgränssnitt.
+>[!NOTE]
+>
+>Om den utcheckade filen tas bort eller flyttas till en annan mapp i AEM visas ett felmeddelande när du checkar in filen. Kontrollera att den utcheckade filen inte flyttas eller tas bort med AEM webbgränssnitt.
 
 ### Utcheckade filer AEM vyn Stödlinjer
 
@@ -512,7 +518,7 @@ Utför följande steg för att söka efter ämnen:
 
    Resultatet visas på fliken Sökresultat som en lista med filsökvägen. Om det inte finns något matchande resultat för sökfrågan, hittades inga resultat i &lt;path of=&quot;&quot; the=&quot;&quot; selected=&quot;&quot; folder=&quot;&quot;> meddelandet visas.
 
-   ![](images/Search.png)
+   ![](images/search.png)
 
 1. \(Valfritt\) Dubbelklicka på en fil i sökresultatet för att öppna den i Sygen XML Author.
 1. Gör något av följande om du vill gå tillbaka till AEM.
@@ -523,9 +529,9 @@ Utför följande steg för att söka efter ämnen:
 
 Du kan öppna och redigera ditt DITA-ämne i Sygen XML Author från AEM webbgränssnitt. Du måste installera ett paket i AEM för att kunna aktivera det här alternativet. Mer information om paketinstallation finns i [Installera paketet för att aktivera dokumentredigeringsfunktionen från AEM webbgränssnitt](#id182CE0Q0TY4).
 
-**Obs!**
-
-The **Redigera i syrgas** är tillgängligt från olika platser i AEM: när ett ämne är markerat, när ett ämne förhandsgranskas eller från fliken Ämnen och rapporter i DITA-kartkonsolen. Om du markerar flera ämnen visas inte alternativet i verktygsfältet.
+>[!NOTE]
+>
+>The **Redigera i syrgas** är tillgängligt från olika platser i AEM: när ett ämne är markerat, när ett ämne förhandsgranskas eller från fliken Ämnen och rapporter i DITA-kartkonsolen. Om du markerar flera ämnen visas inte alternativet i verktygsfältet.
 
 **Öppna ett DITA-avsnitt**
 
@@ -533,9 +539,9 @@ Gör så här för att öppna ett DITA-ämne i Sygen XML Author:
 
 1. Välj ett ämne i dina resurser och klicka på **Redigera i syrgas** i verktygsfältet.
 
-   **Obs!**
-
-   Om ämnet inte är utcheckat checkas det först ut och öppnas sedan i syrgas i redigeringsläge.
+   >[!NOTE]
+   >
+   >Om ämnet inte är utcheckat checkas det först ut och öppnas sedan i syrgas i redigeringsläge.
 
 1. Välj Syrgas-XML-författare *&lt;version>* i **Starta program** meddelanderuta. Du kan välja **Kom ihåg mitt val för AEM länkar** för att spara dina inställningar.
 
@@ -546,9 +552,9 @@ Utför följande steg för att redigera ett DITA-ämne i Sygen XML Author:
 1. Markera och checka ut ett ämne i dina resurser.
 1. Klicka **Redigera i syrgas** i verktygsfältet.
 
-   **Obs!**
-
-   Om ämnet inte är utcheckat checkas det först ut och öppnas sedan i syrgas i redigeringsläge.
+   >[!NOTE]
+   >
+   >Om ämnet inte är utcheckat checkas det först ut och öppnas sedan i syrgas i redigeringsläge.
 
 1. Välj Syrgas-XML-författare *&lt;version>* i **Starta program** meddelanderuta. Du kan välja **Kom ihåg mitt val för AEM länkar** för att spara dina inställningar.
 1. Redigera ämnet i Syrgas XML Author.
@@ -556,18 +562,18 @@ Utför följande steg för att redigera ett DITA-ämne i Sygen XML Author:
 
    Mer information om hur du checkar in ett ämne med Syrgas-plugin för AEM finns i [Checka in en fil](#id182CF0J0FHS).
 
-   **Obs!**
-
-   Kontrollera att du checkar in ämnet med Syrgas-plugin för AEM Guides. Om du checkar in från AEM webbgränssnitt sparas inte ändringarna du gör i Sygen XML Author i den incheckade versionen av ämnet.
+   >[!NOTE]
+   >
+   >Kontrollera att du checkar in ämnet med Syrgas-plugin för AEM Guides. Om du checkar in från AEM webbgränssnitt sparas inte ändringarna du gör i Sygen XML Author i den incheckade versionen av ämnet.
 
 
 ## Arbeta med attributprofiler {#id1827JA002YK}
 
 Med AEM Guides kan du enkelt skapa och associera villkorliga attribut med relevanta DITA-attribut. Du kan definiera villkorliga attribut på global nivå eller på mappnivå. De globalt definierade villkoren visas i alla projekt och på mappnivå visas bara i projekt som skapats i den angivna mappen. Innehållsförfattare kan använda dessa villkorsstyrda attribut för att villkoralisera innehåll i sina DITA-avsnitt eller -kartor som de skapar eller använder. Mer information om hur du skapar villkorliga attribut i AEM med hjälp av AEM stödlinjer finns i *Konfigurera villkorsstyrda attribut för globala profiler eller profiler på mappnivå* i Installera och konfigurera Adobe Experience Manager-guider.
 
-**Obs!**
-
-Kontrollera att du har lagt till villkorsattributen i AEM och angett [Inställningar för anpassning av profileringsattribut](#id1827K0D0OHT) innan du lägger till villkorliga attribut i innehållet.
+>[!NOTE]
+>
+>Kontrollera att du har lagt till villkorsattributen i AEM och angett [Inställningar för anpassning av profileringsattribut](#id1827K0D0OHT) innan du lägger till villkorliga attribut i innehållet.
 
 Följ de här stegen för att lägga till villkorliga attribut i innehållet i Sygen XML Author:
 
@@ -651,9 +657,9 @@ Lösning: Gör så här för att aktivera funktionen för generering av loggar i
     
     1.  Öppna filen syreAuthor19.1.vmoptions i en textredigerare.
     
-    **Obs!**
-    
-    Versionsnumret för filen kan variera beroende på vilket versionsnummer programmet har som är installerat på datorn.
+    >[!OBS!]
+    >
+    >Filens versionsnummer kan variera beroende på vilket versionsnummer som finns i det program som är installerat på datorn.
     
     1.  Lägg till följande rad i filen:
     
