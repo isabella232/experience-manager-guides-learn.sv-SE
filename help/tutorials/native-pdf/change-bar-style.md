@@ -1,7 +1,7 @@
 ---
 title: Publiceringsfunktion för PDF | Arbeta med anpassade ändringsfältstilar
 description: Lär dig hur du använder format på ändringsfält.
-source-git-commit: 79de97e667bffae8d120deee68a0a82011047cf5
+source-git-commit: b6fd82fd09c04a3deefab51b1064a3b6aea73e47
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -12,8 +12,7 @@ ht-degree: 0%
 
 Ett ändringsfält är en lodrät linje som visuellt identifierar nytt eller ändrat innehåll. Med AEM stödlinjer kan du visa ett ändringsfält till vänster om det ändrade innehållet i ämnen och även de ändrade avsnitten i innehållsförteckningen för PDF.
 
-Mer information om hur du visar ändringsfältet finns i *Skapa PDF med ändringsfältet mellan publicerade versioner* ange
-[Publicera PDF-utdata](../web-editor/native-pdf-web-editor.md).
+Mer information om hur du visar ändringsfältet finns i *Skapa PDF med ändringsfältet mellan publicerade versioner* ange [Publicera PDF-utdata](../web-editor/native-pdf-web-editor.md).
 
 ## Ändrat innehåll i ämnen
 
