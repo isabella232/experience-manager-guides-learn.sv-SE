@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om användarhandböcker om AEM
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 53a4917328626f589f2a9e8243d169fa10a6efff
+source-git-commit: f5591818f3b9479678026a578b29d7e56e55f506
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 11%
+source-wordcount: '214'
+ht-degree: 10%
 
 ---
 
@@ -41,10 +41,13 @@ ht-degree: 11%
       + [PDF-mall](./native-pdf/pdf-template.md)
       + [Komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
       + [Utforma en sidlayout](./native-pdf/design-page-layout.md)
-      + [Arbeta med vanliga innehållsformat](./native-pdf/stylesheet.md)
-      + [Använd egen stil på innehållsförteckningsposter och ämnesinnehåll](./native-pdf/custom-style-toc.md)
-      + [Lägga till ett eget bokmärke i utdata från PDF](./native-pdf/add-custom-bookmark.md)
-      + [Använd JavaScript för att arbeta med innehåll eller stil](./native-pdf/use-javascript-content-style.md)
+      + Vanliga innehållsformat {#content-styles}
+         + [Arbeta med vanliga innehållsformat](./native-pdf/stylesheet.md)
+         + [Arbeta med anpassade ändringsfältstilar](./native-pdf/change-bar-style.md)
+         + [Använd egen stil på innehållsförteckningsposter och ämnesinnehåll](./native-pdf/custom-style-toc.md)
+         + [Lägga till ett eget bokmärke i utdata från PDF](./native-pdf/add-custom-bookmark.md)
+         + [Använd JavaScript för att arbeta med innehåll eller stil](./native-pdf/use-javascript-content-style.md)
+         + [Använda anpassade format i fotnoter](./native-pdf/footnote-number-style.md)
    + [Konfigurera en anpassad DITA-OT](./configuring/setup-a-custom-dita-ot.md)
 + Översättning {#translation}
    + [Exkludera stycken från översättning](./translation/exclude-paragraphs-from-translation.md)
