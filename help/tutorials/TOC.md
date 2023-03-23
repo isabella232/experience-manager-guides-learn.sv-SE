@@ -1,11 +1,11 @@
 ---
-user-guide-title: Självstudiekurser om användarhandböcker om AEM
+user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
 source-git-commit: f5591818f3b9479678026a578b29d7e56e55f506
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
