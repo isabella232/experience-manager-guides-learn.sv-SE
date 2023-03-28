@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, mars 2023-utgåvan
 description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 27c8c0f3ac5c6d9c318ac8fb7ed13299ac9994de
+source-git-commit: 07709048f560a77b923436d990c831a5f8b907e3
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kal
 
 ## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM stödlinjer as a Cloud Service)
 
-Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappningsnivå:
+Utför följande steg för att indexera det befintliga innehållet och använda den nya texten för att söka och ersätta på mappnivå:
 
 * Kör en serverbegäran (med korrekt autentisering) - `http://<server:port>/bin/guides/map-find/indexing`.
 (Valfritt: Du kan skicka specifika sökvägar för mappningarna för att indexera dem. Som standard indexeras alla mappningar || Exempel: `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
