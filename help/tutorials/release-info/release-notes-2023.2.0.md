@@ -1,21 +1,22 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, februari 2023-versionen
-description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: d56855bf9078482ec1676b0eeb7a13df05475d5c
+description: Februariversion av Adobe Experience Manager Guides as a Cloud Service
+exl-id: c639b136-11ed-4a8b-a595-4bb5da879747
+source-git-commit: ee520ab86ea41df7556a1f40d7bfc5e3617b34ae
 workflow-type: tm+mt
 source-wordcount: '2178'
 ht-degree: 1%
 
 ---
 
-# Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
+# Februariversion av Adobe Experience Manager Guides as a Cloud Service
 
-## Uppgradera till den senaste versionen
+## Uppgradera till februari-versionen
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
 2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.2.235.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till den senaste versionen av AEM Guides as a Cloud Service.
+3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till februari-utgåvan av AEM Guides as a Cloud Service.
 
 ## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM stödlinjer as a Cloud Service)
 
@@ -53,7 +54,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 ## Nya funktioner och förbättringar
 
-AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i den senaste versionen:
+AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i februari-versionen:
 
 ### Generera rapporter från Web Editor
 

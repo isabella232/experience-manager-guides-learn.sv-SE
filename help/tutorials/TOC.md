@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: f5591818f3b9479678026a578b29d7e56e55f506
+source-git-commit: ee520ab86ea41df7556a1f40d7bfc5e3617b34ae
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 10%
 
 ---
 
@@ -18,16 +18,19 @@ ht-degree: 0%
    + Versionsinformation {#release-notes}
       + Cloud Services {#cloud-release-notes}
          + [Distributionsanvisningar](./release-info/deploy-xml-on-aemaacs.md)
-         + [Aktuella versionsinformation](./release-info/release-notes-2023.2.0.md)
-         + [Versionsinformation, november](./release-info/release-notes-2022.11.0.md)
-         + [Versionsinformation, oktober](./release-info/release-notes-2022.10.0.md)
-         + [Versionsinformation för september](./release-info/release-notes-2022.9.0.md)
-         + [Versionsinformation, augusti](./release-info/release-notes-2022.8.0.md)
-         + [Versionsinformation](./release-info/release-notes-2022.5.0.md)
-         + [Versionsinformation, april](./release-info/release-notes-2022.4.0.md)
-         + [Versionsinformation om mars](./release-info/release-notes-2022.3.0.md)
-         + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
-         + [Versionsinformation för januari](./release-info/release-notes-2022.1.0.md)
+         + 2023 års utgåvor{#2023-releases}
+            + [Aktuella versionsinformation](./release-info/release-notes-2023.3.0.md)
+            + [Versionsinformation, februari](./release-info/release-notes-2023.2.0.md)
+         + 2022 års utgåvor {#2022-releases}
+            + [Versionsinformation, november](./release-info/release-notes-2022.11.0.md)
+            + [Versionsinformation, oktober](./release-info/release-notes-2022.10.0.md)
+            + [Versionsinformation för september](./release-info/release-notes-2022.9.0.md)
+            + [Versionsinformation, augusti](./release-info/release-notes-2022.8.0.md)
+            + [Versionsinformation](./release-info/release-notes-2022.5.0.md)
+            + [Versionsinformation, april](./release-info/release-notes-2022.4.0.md)
+            + [Versionsinformation om mars](./release-info/release-notes-2022.3.0.md)
+            + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
+            + [Versionsinformation för januari](./release-info/release-notes-2022.1.0.md)
       + Lokalt/Managed Services {#on-prem-release-notes}
          + [4.2 Versionsinformation](./release-info/release-notes-4.2.md)
          + [4.1.x Versionsinformation](./release-info/release-notes-4.1.md)
