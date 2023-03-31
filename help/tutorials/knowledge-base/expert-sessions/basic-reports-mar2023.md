@@ -1,9 +1,9 @@
 ---
 title: Rapporter i AEM
 description: Ta reda på vilka rapporter som finns tillgängliga i AEM för att hjälpa användarna att förbättra innehållskvaliteten.
-source-git-commit: 98c81b20a5ae6347d7c06a98112564d5a5b3d81b
+source-git-commit: b909e6848c3f81e3350c1ce07165d5ea00564345
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Under den här sessionen får du veta mer om följande:
 
 ## Relaterade resurser
 
-- **[Hämta PDF](./assets/aem-guides-expert-session-reports-documentation.pdf)** för att förstå detaljerna i de rapporter som visas under sessionen.
+- **[Ladda ned handboken AEM Guides Reports](./assets/aem-guides-expert-session-reports-documentation.pdf)** för att förstå detaljerna i de rapporter som visas under sessionen.
 
 - **Videofilmer** -  [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/videos/output-generation/working-with-reports.html?lang=en)
 
