@@ -1,9 +1,10 @@
 ---
 title: Rapporter i AEM
 description: Ta reda på vilka rapporter som finns tillgängliga i AEM för att hjälpa användarna att förbättra innehållskvaliteten.
-source-git-commit: b909e6848c3f81e3350c1ce07165d5ea00564345
+exl-id: f0d761ff-efea-452c-bb8e-865f34a182fc
+source-git-commit: 7871a54f3181fd114e24e0e10cfc15351cefd761
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -64,7 +65,7 @@ Under den här sessionen får du veta mer om följande:
 
 ## Nästa expertsession
 
-- **Ämne** - TBD *(väntar på undersökningsresultat)*
+- **Ämne** - Innehåll och mallar
 - **Schemalagd den** - 27 april 2023
 
 
