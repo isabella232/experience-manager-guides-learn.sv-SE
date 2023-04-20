@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: f26b8f94e1d7a3c9dd0aaab2eb196a77119e47ac
+source-git-commit: 6351465954bc9ce38151cd0bec339cd0653027f2
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 10%
+source-wordcount: '240'
+ht-degree: 9%
 
 ---
 
@@ -66,15 +66,17 @@ ht-degree: 10%
       + [Skapa webbaserat innehåll](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Grundläggande publicering i PDF](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
       + [Rapporter i AEM](./knowledge-base/expert-sessions/basic-reports-mar2023.md)
-   + Publicering{#publishing}
-      + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
    + Artiklar {#kb-articles}
       + Redigering {#authoring}
          + Webeditor {#webeditor}
+            + Anpassa {#customizing}
+               + [Lägg till anpassad knapp i verktygsfältet](./knowledge-base/kb-articles/authoring/webeditor/customization/add-custom-button-to-webeditor-toolbar.md)
+               + [Lägg till anpassade format i webbredigeraren](./knowledge-base/kb-articles/authoring/webeditor/customization/add-custom-styles-to-webeditor.md)
             + Schematron {#schematron}
                + [Schematronvalidering](./knowledge-base/kb-articles/authoring/webeditor/schematron/vailidating-with-schematron.md)
       + Publicering {#publishing}
          + [Configuring AEM Environment for Native PDF publishing](./knowledge-base/kb-articles/publishing/configuring-aem-environment-for-native-pdf-publishing.md)
          + [FMPS och stödlinjer](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
+         + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
       + Arbetsflöden {#workflows}
          + [Arbetsflöde efter generering](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
