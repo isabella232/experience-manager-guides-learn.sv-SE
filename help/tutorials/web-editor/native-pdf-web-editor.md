@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: cc7ae2e5445cca11e169667d3af8aa9de93809b9
+source-git-commit: b9cf70ac957bfacbf9a6bf4c3b32d4f73c2b1287
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2755'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Används för att ange grundläggande utdatainställningar, t.ex. en utdatasökv
 | Inställning | Beskrivning |
 | --- | --- |
 | **Utdatasökväg** | Sökvägen i AEM där utdata från PDF lagras. Kontrollera att utdatasökvägen inte finns inuti projektmappen. Om du inte anger något värde genereras utdata på standardplatsen för DITA-scheman.<br>Du kan också använda följande variabler som inte finns i kartongen för att definiera utdatasökvägen. Du kan definiera det här alternativet med en eller flera variabler. <br> `${map_filename}`: Använder DITA-mappningsfilens namn för att skapa målsökvägen. <br> `${map_title}`: Använder DITA-kartans titel för att skapa målsökvägen. <br>`${preset_name}`: Använder förinställningsnamnet för utdata för att skapa målsökvägen. <br> `${language_code}`: Använder språkkoden där kartfilen finns för att skapa målsökvägen. <br> `${map_parentpath}`: Använder den fullständiga sökvägen för kartfilen för att skapa målsökvägen.  <br>`${path_after_langfolder}`: Mappningsfilens sökväg används efter språkmappen för att skapa målsökvägen. |
-| **PDF-fil** | Ange ett filnamn för att spara PDF. Som standard lägger filnamnet PDF till DITA-mappningsnamnet tillsammans med förinställningsnamnet. Diditamap är till exempel&quot;TestMap&quot; och namnet på förinställningen är&quot;preset1&quot;. Standardnamnet för pdf är&quot;TestMap_preset1.pdf&quot;. <br>Du kan också använda följande variabler som inte finns i kartongen för att definiera filen PDF. Du kan definiera det här alternativet med en eller flera variabler. <br>`${map_filename}`<br>`${map_title}`<br>`${preset_name}` <br> `${language_code}`. |
+| **PDF-fil** | Ange ett filnamn för att spara PDF. Som standard lägger filnamnet PDF till DITA-mappningsnamnet tillsammans med förinställningsnamnet. Diditamap är till exempel TestMap och förinställningens namn är preset1. Standardnamnet för pdf är TestMap_preset1.pdf. <br>Du kan också använda följande variabler som inte finns i kartongen för att definiera filen PDF. Du kan definiera det här alternativet med en eller flera variabler. <br>`${map_filename}`<br>`${map_title}`<br>`${preset_name}` <br> `${language_code}`. |
 | **Använd villkor med** | För villkorat innehåll väljer du något av följande alternativ för att generera utdata i PDF baserat på dessa villkor: <br><ul> <li> **Ingen används** Välj det här alternativet om du inte vill tillämpa något villkor på kartan och källinnehållet. <br><li> **Ditaval-fil** Välj en DITAVAL-fil för att generera villkorat innehåll. Markera genom att klicka på Villkorsförinställning och leta reda på filen. <br> <li> **Förinställning för villkor** Välj en villkorsförinställning i listrutan om du vill använda ett villkor när du publicerar utdata. Det här alternativet är synligt om du har lagt till ett villkor för DITA-kartfilen. De villkorliga inställningarna finns på fliken Villkorsförinställningar i DITA-kartkonsolen. Mer information om förinställda villkor finns i [Använda förinställningar för villkor](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-condition-presets.html). <br> </ul> |
 | **Använd baslinje** | Om du har skapat en baslinje för den valda DITA-kartan väljer du det här alternativet för att ange vilken version du vill publicera. Se [Arbeta med baslinje](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Fgenerate-output-use-baseline-for-publishing.html) för mer information. |
 | **Skapa PDF med ändringsfältet mellan publicerade versioner** | Använd följande alternativ för att skapa en PDF som visar skillnader i innehåll mellan två versioner med hjälp av ändringsfält:   <br><ul><li> **Baslinje för föregående version** Välj den baslinjeversion som du vill jämföra med den aktuella versionen eller med en annan baslinje. Ett ändringsfält visas i PDF för att ange det ändrade innehållet. Ett ändringsfält är en lodrät linje som visuellt identifierar nytt eller ändrat innehåll. Ändringsfältet visas till vänster om innehållet som har infogats, ändrats eller tagits bort. <br> **Anteckning**: Om du väljer **Använd baslinje** och väljer en baslinje att publicera kommer jämförelsen att göras mellan de två valda baslinjeversionerna. Om du t.ex. väljer baslinje version 1.3 under **Använd baslinje** och version 1.1 under **Baslinje för föregående version** kommer jämförelsen att göras mellan originalversionen version 1.1 och originalversionen 1.3. <br><li> **Visa tillagd text** Välj det här alternativet om du vill visa den infogade texten i grön färg och understruken. Det här alternativet är markerat som standard. <br> <li> **Visa borttagen text** Välj det här alternativet om du vill visa den borttagna texten i röd färg och markerad med genomstrykning. Det här alternativet är markerat som standard. <br>**Anteckning** Du kan också anpassa formateringen för ändringsfältet, infogat innehåll eller borttaget innehåll med formatmallen.<br></ul> |
@@ -84,19 +84,36 @@ Används för att ange grundläggande utdatainställningar, t.ex. en utdatasökv
 
 Metadata är beskrivningen eller definitionen av ditt innehåll. Metadata hjälper till vid innehållshantering och hjälper till att söka efter filer på Internet.
 
-Använd fliken Metadata för att ange namn, författare, ämne och nyckelord för utdata från PDF. Dessa metadata mappas till metadata på fliken Beskrivning i dokumentegenskaperna för utdata-PDF.
+Använd fliken Metadata för att ange metadatafält som författarens namn, dokumenttitel, nyckelord, copyrightinformation och andra datafält för utdata från PDF. Du kan också lägga till anpassade metadata för utdata från PDF.
+
+Dessa metadata mappas till metadata på fliken Beskrivning i dokumentegenskaperna för utdata-PDF.
 
 **Anteckning**: Dessa metadata åsidosätter metadata som definierats på boknivå.
 
 <img src="assets/pdf-metadata.png" alt="metadata, flik" width="600">
 
+Från förinställningarna för utdata, **markera PDF** > **Metadata** för att lägga till och anpassa metadataalternativ.
+* **Ange XMP fil**
 
-| Inställning | Beskrivning |
-|---|---|
-| **Titel** | Ange en kort och tydlig titel för att definiera dokumentet. |
-| **Författare** | Ange namnen på författarna som skapade dokumentet. |
-| **Ämne** | Definiera det ämne eller den samling som dokumentet är relaterat till. |
-| **Nyckelord** | Använd relevanta nyckelord för att förbättra sökmotoroptimeringen (SEO) och hjälpa användarna att hitta relaterat innehåll. |
+   Metadatafält kan fyllas i direkt genom import [XMP](https://www.adobe.com/products/xmp.html) (Extensible Metadata Platform)-fil. Här kan du hämta ett XMP.
+
+[Hämta](assets/SampleXMP.xmp)
+
+   Du kan också generera en XMP med Adobe Acrobat.
+   1. Klicka **Fil** > **Egenskaper** i Acrobat.
+   1. Under **Beskrivning**, klicka **Ytterligare metadata**.
+   1. Välj **Avancerat**.
+   1. Klicka på **Spara**.
+
+   XMP sparas på enheten.
+
+* **Ange namn och värden för metadata**
+
+   1. Lägg till namn genom att välja i listrutan eller lägg till egna metadata genom att skriva direkt i namnfältet.
+   1. Ange värdet för metadata och klicka på plustecknet (+).
+Metadata läggs till i listan med metadata för PDF.
+
+
 
 **Layout**
 
@@ -105,8 +122,8 @@ Används för att ange sidlayouter och ange alternativ för sidvisning för PDF,
 | Inställning | Beskrivning |
 | --- | --- |
 | **PDF-mall** | PDF-mallar har en tydlig struktur för att definiera sidlayouter, formatera innehåll och tillämpa olika inställningar på utdata från PDF. Välj en mall i listrutan PDF. |
-| **Sidvisning** | Använd sidvisningen för sidvyn som visar hur PDF visas när den öppnas. Välj en önskad vy i listrutan Sidvisning. <br><ul><li> **Standard**  Visas enligt standardinställningen för PDF i visningsprogrammet på användarens dator.  <br> <li> **Enkelsidig vy** Visar en sida i taget.   <br> <li> **Enkelsidig rullning** Visar en sida i en kontinuerlig lodrät kolumn.  <br> <li> **Dubbelsidig vy** Visar tvåsidigt uppslag sida vid sida. .<br> <li> **Dubbelsidig rullning** Visar tvåsidigt uppslag sida vid sida med kontinuerlig rullning. </ul> |
-| **Zoomning** | Välj det här alternativet om du vill ändra storlek på sidvyn som visar hur PDF visas när den öppnas.  <br><ul><li> **Standard** Visas enligt standardinställningen för PDF i visningsprogrammet på användarens dator    <br> <li> **100 %** Visar sidan i verklig storlek.     <br> <li> **Anpassa till sida** Sidbredden och sidhöjden anpassas till dokumentrutan. .<br> <li> **Anpassa sidbredd** Gör att sidans bredd fyller ut dokumentfönstrets bredd.  <br> <li> **Anpassa sidhöjd** Gör att sidans höjd fyller ut dokumentrutans höjd. </ul> |
+| **Sidvisning** | Använd sidvisningen för sidvyn som visar hur PDF visas när den öppnas. Välj en önskad vy i listrutan Sidvisning. <br><ul><li> **Standard**  Visar som standardinställningen för PDF-visningsprogrammet på en användares dator.  <br> <li> **Enkelsidig vy** Visar en sida i taget.   <br> <li> **Enkelsidig rullning** Visar en sida i en kontinuerlig lodrät kolumn.  <br> <li> **Dubbelsidig vy** Visar tvåsidigt uppslag sida vid sida. .<br> <li> **Dubbelsidig rullning** Visar tvåsidigt uppslag sida vid sida med kontinuerlig rullning. </ul> |
+| **Zooma** | Välj det här alternativet om du vill ändra storlek på sidvyn som visar hur PDF visas när den öppnas.  <br><ul><li> **Standard** Visas enligt standardinställningen för PDF-visningsprogrammet på användarens dator    <br> <li> **100 %** Visar sidan i verklig storlek.     <br> <li> **Anpassa till sida** Sidbredden och sidhöjden anpassas till dokumentrutan. .<br> <li> **Anpassa sidbredd** Gör att sidans bredd fyller ut dokumentfönstrets bredd.  <br> <li> **Anpassa sidhöjd** Gör att sidans höjd fyller ut dokumentrutans höjd. </ul> |
 
 **Dokumentskydd**
 
@@ -143,14 +160,14 @@ När du har konfigurerat förinställningen kan du generera utdata från panelen
 1. Under **Upphovsman** väljer du **Databas** Visa.\
    Databaspanelen öppnas.
 
-2. Öppna DITA-schemafilen i panelen Databas **Kartvy**.
+1. Öppna DITA-schemafilen i panelen Databas **Kartvy**.
 
-3. I **Utdata** flik, klicka **Förinställningar** om du vill visa förinställningspanelen.
+1. I **Utdata** flik, klicka **Förinställningar** om du vill visa förinställningspanelen.
 Information om hur du skapar eller konfigurerar en förinställning finns i [Skapa en förinställning för PDF](#create-output-preset).
-4. Spara inställningarna genom att klicka på **Spara alla** ![spara alla](assets/SaveFloppy_icon.svg) i det övre vänstra hörnet av verktygsfältet i utdatavy.
-5. Klicka på **Generera förinställning** ![generera förinställning](assets/generate-output.svg) ikonen i det övre fältet.
+1. Spara inställningarna genom att klicka på **Spara alla** ![spara alla](assets/SaveFloppy_icon.svg) i det övre vänstra hörnet av verktygsfältet i utdatavy.
+1. Klicka på **Generera förinställning** ![generera förinställning](assets/generate-output.svg) ikonen i det övre fältet.
 Du kan visa en förloppsindikator bredvid den valda förinställningen på panelen Utdatainställningar.
-6. När utdatagenereringen är klar klickar du på  **Visa utdata** ![visa utdata](assets/view-output.svg) ikonen i det övre fältet för att visa utdata.\
+1. När utdatagenereringen är klar klickar du på  **Visa utdata** ![visa utdata](assets/view-output.svg) ikonen i det övre fältet för att visa utdata.\
    A **Lyckades** visas längst ned till höger på skärmen.
 Om utdata inte lyckas visas felmeddelandet nedan.
 <img src="assets/error-log.png" alt="fellogg" width="250">

@@ -2,7 +2,7 @@
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, aprilversion 2022
 description: aprilversion av Adobe Experience Manager Guides as a Cloud Service
 exl-id: c735ba24-a803-454b-8723-57dacf90061b
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 2%
@@ -15,8 +15,8 @@ ht-degree: 2%
 
 Uppgradera din nuvarande [!DNL Adobe Experience Manager Guides] as a Cloud Service (kallas senare *[!DNL AEM Guides]as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.4.133.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till aprilversionen av [!DNL AEM Guides] as a Cloud Service.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.4.133.
+1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till aprilversionen av [!DNL AEM Guides] as a Cloud Service.
 
 ## Kompatibilitetsmatris
 
@@ -52,8 +52,8 @@ En DITA-innehållsnyckelreferens infogar en del av innehållet från ett ämne i
 Nu löses nyckelreferenserna utifrån rotmappningen som angetts i följande prioritetsordning:
 
 1. Användarinställningar
-2. Kartvyn, panel
-3. Mappprofil
+1. Kartvyn, panel
+1. Mappprofil
 
 Mer information finns i *Lös nyckelreferenser* i användarhandboken.
 

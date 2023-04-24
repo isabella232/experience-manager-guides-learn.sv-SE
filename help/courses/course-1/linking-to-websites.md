@@ -2,7 +2,7 @@
 title: Länka till webbplatser i [!DNL AEM Guides]
 description: Länka till webbplatser i [!DNL Adobe Experience Manager Guides]
 exl-id: 6b89f52e-ac15-4604-8bac-ab0bb5b5a978
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -18,18 +18,18 @@ Webblänkar dirigerar läsare till webbplatser för mer information, gör det m�
 ## Infoga en länk
 
 1. Välj ditt koncept i databasen och öppna det i redigeraren.
-2. Lägg till en textsträng i konceptet och markera den eller markera befintlig text.
+1. Lägg till en textsträng i konceptet och markera den eller markera befintlig text.
 
    Den markerade texten är den plats där länken infogas.
-3. Välj **Infoga korsreferens** från verktygsfältet.
+1. Välj **Infoga korsreferens** från verktygsfältet.
 
    ![Ikonen Infoga korsreferens](images/lesson-5/insert-crossref-icon.png)
 
    Dialogrutan Referens visas.
 
 
-4. Välj **Webblänk** från den vänstra menyn.
-5. Klistra in önskad URL och klicka sedan **Välj**.
+1. Välj **Webblänk** från den vänstra menyn.
+1. Klistra in önskad URL och klicka sedan **Välj**.
 
    Länken fungerar och en webbsida öppnas i en ny webbläsarflik när någon klickar på den.
 

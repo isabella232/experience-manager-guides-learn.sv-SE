@@ -2,7 +2,7 @@
 title: Användarinställningar, redigeringsinställningar och redigeringsverktygsfält
 description: Ändra användarinställningar och redigeringsinställningar i AEM
 exl-id: 8cb099e4-d985-4eeb-b1a5-0e372b04d218
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Taggar är visuella tecken som anger ett elements gränser. En elementgräns mar
 
    - Dra och släpp element genom att markera taggen och släppa elementet på en giltig plats.
 
-2. Klicka på [!UICONTROL **Växla taggvy**] ikonen igen om du vill dölja taggar.
+1. Klicka på [!UICONTROL **Växla taggvy**] ikonen igen om du vill dölja taggar.
 
 Taggar försvinner så att du kan fokusera på texten.
 
@@ -47,7 +47,7 @@ Genom att låsa (eller checka ut) en fil får användaren exklusiv skrivåtkomst
 
    Filen har checkats ut och en låsikon visas bredvid filnamnet i databasen.
 
-2. Klicka på [!UICONTROL **Lås upp**] ikon.
+1. Klicka på [!UICONTROL **Lås upp**] ikon.
 
    ![Incheckning](images/lesson-2/check-in-icon.png)
 
@@ -59,13 +59,13 @@ Databasen uppdateras och visar att filen har checkats in.
 
    ![Special](images/lesson-2/special-icon.png)
 
-2. I dialogrutan Infoga specialtecken skriver du namnet på tecknet i sökfältet.
+1. I dialogrutan Infoga specialtecken skriver du namnet på tecknet i sökfältet.
 
    Du kan också använda listrutan Välj kategori för att visa alla tecken i en viss kategori.
 
-3. Markera önskat tecken.
+1. Markera önskat tecken.
 
-4. Klicka [!UICONTROL **Infoga**].
+1. Klicka [!UICONTROL **Infoga**].
 
 Specialtecknet infogas i texten.
 
@@ -89,13 +89,13 @@ Du kan välja mellan ljusa och mörka teman för redigeraren. Med hjälp av tema
 
    ![Användarinställningar](images/reuse/user-prefs-icon.png)
 
-2. I dialogrutan Användarinställningar klickar du på [!UICONTROL **Tema**] listruta.
+1. I dialogrutan Användarinställningar klickar du på [!UICONTROL **Tema**] listruta.
 
-3. Välj bland de tillgängliga alternativen.
+1. Välj bland de tillgängliga alternativen.
 
    ![Teman](images/lesson-2/themes.png)
 
-4. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 Redigeraren uppdateras för att visa det tema du föredrar.
 
@@ -107,13 +107,13 @@ Du kan uppdatera bassökvägen så att databasvyn visar innehållet från en vis
 
    ![Användarinställningar](images/reuse/user-prefs-icon.png)
 
-2. I dialogrutan Användarinställningar klickar du på [!UICONTROL **Mapp**] -ikonen bredvid bassökvägen.
+1. I dialogrutan Användarinställningar klickar du på [!UICONTROL **Mapp**] -ikonen bredvid bassökvägen.
 
    ![Sökväg till basmapp](images/lesson-2/base-path-folder-icon.png)
 
-3. I dialogrutan Välj sökväg klickar du på kryssrutan bredvid en viss mapp.
+1. I dialogrutan Välj sökväg klickar du på kryssrutan bredvid en viss mapp.
 
-4. Klicka [!UICONTROL **Välj**].
+1. Klicka [!UICONTROL **Välj**].
 
 Nästa gång du startar Redigeraren visar databasen de filer som har angetts i grundsökvägen.
 
@@ -125,13 +125,13 @@ Den globala profilen är systemstandard. Administratörer kan skapa ytterligare 
 
    ![Användarinställningar](images/reuse/user-prefs-icon.png)
 
-2. I dialogrutan Användarinställningar klickar du på [!UICONTROL **Mappprofiler**] listruta.
+1. I dialogrutan Användarinställningar klickar du på [!UICONTROL **Mappprofiler**] listruta.
 
    ![Profillista](images/lesson-2/folder-profiles-dropdown.png)
 
-3. Välj en profil bland de tillgängliga alternativen.
+1. Välj en profil bland de tillgängliga alternativen.
 
-4. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 Den nya mappprofilen har nu tilldelats. Verktygsfältsalternativen, visningslägena och Villkor och fragment har ändrats i den vänstra panelen. Det kan också ändra utseendet på innehållet i redigeraren.
 
@@ -143,11 +143,11 @@ Redigeringsinställningarna är tillgängliga för administrativa användare. Me
 
    ![Inställningar för Redigeraren](images/lesson-2/editor-settings-icon.png)
 
-2. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Allmänt**] -fliken.
+1. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Allmänt**] -fliken.
 
-3. Välj det lexikon du vill arbeta med.
+1. Välj det lexikon du vill arbeta med.
 
-4. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 Ordlistan uppdateras. Observera att när du växlar till AEM stavningskontroll kan du använda en anpassad ordlista.
 
@@ -159,13 +159,13 @@ En av de funktioner som du kan anpassa med redigeringsinställningarna är panel
 
    ![Inställningar för Redigeraren](images/lesson-2/editor-settings-icon.png)
 
-2. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Paneler**] -fliken.
+1. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Paneler**] -fliken.
 
-3. Växla de tillgängliga panelerna till Visa eller Dölj efter behov.
+1. Växla de tillgängliga panelerna till Visa eller Dölj efter behov.
 
    ![Växla panel](images/lesson-2/toggle-panels.png)
 
-4. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 Den vänstra panelen är nu konfigurerad att endast visa paneler som är växlade till Visa.
 
@@ -177,15 +177,15 @@ Med Elements List kan du namnge ett specifikt element och tilldela det en mer an
 
    ![Inställningar för Redigeraren](images/lesson-2/editor-settings-icon.png)
 
-2. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Elementlista**] -fliken.
+1. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Elementlista**] -fliken.
 
-3. Skriv en **Elementnamn** och **Etikett** i respektive fält.
+1. Skriv en **Elementnamn** och **Etikett** i respektive fält.
 
-4. Klicka på [!UICONTROL **Plus**] om du vill lägga till fler element i listan.
+1. Klicka på [!UICONTROL **Plus**] om du vill lägga till fler element i listan.
 
    ![Elementlista](images/lesson-2/elements-list.png)
 
-5. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 Du kan omedelbart se ändringen i Elements-listan i de befintliga taggarna i redigeraren. Du kan även se dem i alternativen som visas när du lägger till ett nytt element.
 
@@ -197,11 +197,11 @@ Attributlistan fungerar på ungefär samma sätt som elementlistan. I redigering
 
    ![Inställningar för Redigeraren](images/lesson-2/editor-settings-icon.png)
 
-2. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Attributlista**] -fliken.
+1. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Attributlista**] -fliken.
 
-3. Skriv en **Attributnamn** och **Etikett** i respektive fält.
+1. Skriv en **Attributnamn** och **Etikett** i respektive fält.
 
-4. Klicka på [!UICONTROL **Plus**] om du vill lägga till fler attribut i listan.
+1. Klicka på [!UICONTROL **Plus**] om du vill lägga till fler attribut i listan.
 
 ## Konfigurera villkor i redigeringsinställningarna
 
@@ -211,13 +211,13 @@ På fliken Villkor kan du konfigurera flera egenskaper.
 
    ![Inställningar för Redigeraren](images/lesson-2/editor-settings-icon.png)
 
-2. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Villkor**] -fliken.
+1. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Villkor**] -fliken.
 
-3. Markera kryssrutorna för de villkor som du vill använda.
+1. Markera kryssrutorna för de villkor som du vill använda.
 
    ![Fliken Villkor](images/lesson-2/condition.png)
 
-4. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 ## Skapa en publiceringsprofil i redigeringsinställningarna
 
@@ -227,12 +227,12 @@ Publiceringsprofiler kan användas för att publicera kunskapsbasen. Salesforce 
 
    ![Inställningar för Redigeraren](images/lesson-2/editor-settings-icon.png)
 
-2. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Profiler**] -fliken.
+1. I dialogrutan Inställningar för Redigeraren klickar du på [!UICONTROL **Profiler**] -fliken.
 
-3. Klicka på [!UICONTROL **Plus**] -ikon bredvid Profiler.
+1. Klicka på [!UICONTROL **Plus**] -ikon bredvid Profiler.
 
-4. Fyll i fälten efter behov.
+1. Fyll i fälten efter behov.
 
-5. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 En publiceringsprofil har skapats.

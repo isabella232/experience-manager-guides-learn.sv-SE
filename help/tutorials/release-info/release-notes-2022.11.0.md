@@ -2,7 +2,7 @@
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, november 2022-utgåvan
 description: Novemberversionen av Adobe Experience Manager Guides as a Cloud Service
 exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
-source-git-commit: 715d5622c4cc59dfb24ac9a3442e61efdb10a797
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '1372'
 ht-degree: 1%
@@ -15,8 +15,8 @@ ht-degree: 1%
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.11.198.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till Novemberversionen av AEM Guides as a Cloud Service.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.11.198.
+1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till Novemberversionen av AEM Guides as a Cloud Service.
 
 ## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM stödlinjer as a Cloud Service)
 

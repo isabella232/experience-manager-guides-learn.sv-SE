@@ -2,7 +2,7 @@
 title: Förinställningar för utdata
 description: En förinställning är en samling publiceringsegenskaper som har tilldelats en karta
 exl-id: b0c64737-48a0-4337-8a7f-35d1deb03366
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -29,13 +29,13 @@ En förinställning för utdata visas när en karta i XML-redigeraren öppnas p�
 
 1. Välj en förinställning för baslinjeutdata. Du kan till exempel välja AEM eller PDF om den nya förinställningen som ska skapas är för en webbplats eller för att tillhandahålla Adobe PDF-innehåll.
 
-2. Klicka **Skapa**.
+1. Klicka **Skapa**.
 
-3. Välj en utdatatyp om det behövs.
+1. Välj en utdatatyp om det behövs.
 
-4. Baserat på utdatatypen kan du konfigurera alternativen ytterligare.
+1. Baserat på utdatatypen kan du konfigurera alternativen ytterligare.
 
-5. Klicka **Klar**.
+1. Klicka **Klar**.
 
 ## Redigera en förinställning
 
@@ -43,14 +43,14 @@ Utdataförinställningar är fördefinierade men kan anpassas efter behov.
 
 1. Öppna kartkontrollpanelen.
 
-2. Välj **Förinställningar för utdata** -fliken.
+1. Välj **Förinställningar för utdata** -fliken.
 
-3. Välj en förinställning för utdata.
+1. Välj en förinställning för utdata.
 
-4. Klicka **Redigera**.
+1. Klicka **Redigera**.
 
-5. Ändra inställningarna efter behov.
+1. Ändra inställningarna efter behov.
 
    ![Redigera-Utdata-Förinställning](images/edit-output-preset.png)
 
-6. Klicka **Klar**.
+1. Klicka **Klar**.

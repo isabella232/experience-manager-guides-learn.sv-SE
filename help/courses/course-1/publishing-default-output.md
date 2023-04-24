@@ -2,7 +2,7 @@
 title: Publicera standardutdata i AEM
 description: Publicerar standardutdata i [!DNL Adobe Experience Manager Guides]
 exl-id: 97a259dd-4266-4a7b-8677-3fa261714687
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -25,13 +25,13 @@ Det finns ett antal tillgängliga förinställningar att välja mellan. Den här
 
    Kartkontrollpanelen öppnas på en annan flik.
 
-2. På fliken Utdatainställningar väljer du AEM Plats och PDF.
+1. På fliken Utdatainställningar väljer du AEM Plats och PDF.
 
    ![Förinställningar för utdata](images/lesson-9/pdf-aem.png)
 
-3. Välj **Generera.**
+1. Välj **Generera.**
 
-4. Navigera till sidan Utdata för att visa status för dina genererade utdata.
+1. Navigera till sidan Utdata för att visa status för dina genererade utdata.
 
    En grön cirkel visar att genereringen är klar.
 

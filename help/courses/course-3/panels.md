@@ -2,7 +2,7 @@
 title: Paneler
 description: Använda paneler i AEM
 exl-id: 24ecfc93-3540-4efa-ae85-afb346454b7f
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '1446'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Beständiga paneler som den vänstra panelen kan ändras i storlek.
 
 1. Placera markören på panelkanten.
 
-2. När dubbelpilen visas klickar du och drar inåt eller utåt efter behov.
+1. När dubbelpilen visas klickar du och drar inåt eller utåt efter behov.
 
 ## Expandera eller komprimera sidofältet i den vänstra panelen
 
@@ -31,7 +31,7 @@ I den utökade vyn visas namnen och ikonerna som visas som verktygstips i den ko
 
    ![Expandera marginallist](images/lesson-5/expand-sidebar.png)
 
-2. Klicka på [!UICONTROL **Sidebar**] om du vill komprimera panelen igen.
+1. Klicka på [!UICONTROL **Sidebar**] om du vill komprimera panelen igen.
 
    ![Dölj sidofältet](images/lesson-5/collapse-sidebar.png)
 
@@ -41,15 +41,15 @@ I den vänstra panelen kan du med Favoriter skapa en lista med specifika dokumen
 
 1. Välj **Favoriter** till vänster.
 
-2. Klicka på [!UICONTROL **Plus**] ikon.
+1. Klicka på [!UICONTROL **Plus**] ikon.
 
    ![Favoriter Plus](images/lesson-5/favorites-plus.png)
 
-3. I dialogrutan Ny samling anger du en **Titel** och **Beskrivning**.
+1. I dialogrutan Ny samling anger du en **Titel** och **Beskrivning**.
 
    Observera att när du väljer Offentlig innebär det att andra användare kan se den här favoriten.
 
-4. Klicka [!UICONTROL **Skapa**].
+1. Klicka [!UICONTROL **Skapa**].
 
 Du har nu skapat en Favoriter-samling.
 
@@ -59,19 +59,19 @@ När du har skapat en samling kan du börja lägga till favoriter i den.
 
 1. Välj **Databasvy** till vänster.
 
-2. Klicka på [!UICONTROL **Ellips**] som finns bredvid ett ämne för att komma åt sammanhangsberoende alternativ.
+1. Klicka på [!UICONTROL **Ellips**] som finns bredvid ett ämne för att komma åt sammanhangsberoende alternativ.
 
-3. Välj **Lägg till i** > **Favoriter**.
+1. Välj **Lägg till i** > **Favoriter**.
 
-4. I dialogrutan Lägg till i Favoriter väljer du **Ny samling** eller **Befintlig samling**.
+1. I dialogrutan Lägg till i Favoriter väljer du **Ny samling** eller **Befintlig samling**.
 
    Här väljer vi att lägga till i en befintlig samling.
 
    ![Dialogrutan Favoriter](images/lesson-5/add-to-favorites-dialog.png)
 
-5. Välj en samling i listrutan om det behövs.
+1. Välj en samling i listrutan om det behövs.
 
-6. Klicka [!UICONTROL **Lägg till**].
+1. Klicka [!UICONTROL **Lägg till**].
 
 Avsnittet läggs till i den favoritsamling du väljer. Du kan visa den på menyn Favoriter.
 
@@ -81,23 +81,23 @@ Ett annat sätt att lägga till ett ämne i dina favoriter är från ett öppet 
 
 1. Navigera till **Databasvy**.
 
-2. Dubbelklicka på ett ämne för att öppna det.
+1. Dubbelklicka på ett ämne för att öppna det.
 
-3. Högerklicka på filens **Titelflik** i redigeraren för att komma åt sammanhangsberoende alternativ.
+1. Högerklicka på filens **Titelflik** i redigeraren för att komma åt sammanhangsberoende alternativ.
 
-4. Välj **Lägg till i** > **Favoriter**.
+1. Välj **Lägg till i** > **Favoriter**.
 
    ![Lägg till i Favoriter](images/lesson-5/addto-favorites.png)
 
-5. I dialogrutan Lägg till i Favoriter väljer du **Ny samling** eller **Befintlig samling**.
+1. I dialogrutan Lägg till i Favoriter väljer du **Ny samling** eller **Befintlig samling**.
 
    Här väljer vi att lägga till i en ny samling.
 
-6. I dialogrutan Ny samling anger du en **Titel** och **Beskrivning**.
+1. I dialogrutan Ny samling anger du en **Titel** och **Beskrivning**.
 
    Observera att markera **Offentlig** innebär att andra användare kan se den här favoriten.
 
-7. Klicka [!UICONTROL **Skapa**].
+1. Klicka [!UICONTROL **Skapa**].
 
 Den nya favoriten har skapats och grupperats. Du kan visa den på menyn Favoriter.
 
@@ -107,11 +107,11 @@ Det är enkelt att visa vilka ämnen du redan har lagt till i dina favoritsamlin
 
 1. Välj [!UICONTROL **Favoriter**] till vänster.
 
-2. Under Favoriter klickar du på [!UICONTROL **Pil**] -ikonen bredvid en samling för att visa dess innehåll.
+1. Under Favoriter klickar du på [!UICONTROL **Pil**] -ikonen bredvid en samling för att visa dess innehåll.
 
    ![Visa favoriter](images/lesson-5/view-favorites.png)
 
-3. Klicka på [!UICONTROL **Ellips**] bredvid ett ämne för att visa sammanhangsberoende alternativ, inklusive alternativet att ta bort det från favoritlistan.
+1. Klicka på [!UICONTROL **Ellips**] bredvid ett ämne för att visa sammanhangsberoende alternativ, inklusive alternativet att ta bort det från favoritlistan.
 
 ## Filtrera en sökning i databasvyn
 
@@ -119,15 +119,15 @@ Med det förbättrade filtret i databasen kan du söka efter text med en mängd 
 
 1. Navigera till **Databasvy**.
 
-2. Klicka på [!UICONTROL **Filtersökning**] ikon.
+1. Klicka på [!UICONTROL **Filtersökning**] ikon.
 
    ![Ikon för databasfilter](images/lesson-5/repository-filter-icon.png)
 
-3. Skriv text i den markerade banan eller välj en ny bana om det behövs.
+1. Skriv text i den markerade banan eller välj en ny bana om det behövs.
 
    Listan med filer uppdateras när du skriver text i filtret.
 
-4. Klicka på pilikonen bredvid en sökkategori om du vill begränsa sökningen ytterligare.
+1. Klicka på pilikonen bredvid en sökkategori om du vill begränsa sökningen ytterligare.
 
    ![Filtervillkor](images/lesson-5/filter-criteria.png)
 
@@ -169,21 +169,21 @@ Fragment är små innehållsfragment som kan återanvändas som utgångspunkt f�
 
 1. Öppna ett ämne i Redigeraren.
 
-2. Markera ett element i ämnet.
+1. Markera ett element i ämnet.
 
-3. Klicka på den sekundära musknappen i elementet.
+1. Klicka på den sekundära musknappen i elementet.
 
-4. Välj Skapa på menyn som visas [!UICONTROL **Fragment**].
+1. Välj Skapa på menyn som visas [!UICONTROL **Fragment**].
 
    ![Skapa fragment](images/lesson-5/create-snippet.png)
 
-5. I dialogrutan Nytt fragment lägger du till en **Titel** och **Beskrivning**.
+1. I dialogrutan Nytt fragment lägger du till en **Titel** och **Beskrivning**.
 
-6. Redigera fragmentet efter behov.
+1. Redigera fragmentet efter behov.
 
    Observera att en sammanhangsbaserad kontroll meddelar dig visuellt om du infogar ett fel i innehållet.
 
-7. Klicka [!UICONTROL **Skapa**].
+1. Klicka [!UICONTROL **Skapa**].
 
 Fragmentet läggs till i listan med tillgängliga fragment. Den är klar att dras och släppas på en giltig plats i ämnet.
 
@@ -205,11 +205,11 @@ Egenskaper för innehåll på den högra panelen innehåller specifik informatio
 
 1. Öppna ett ämne i **XML Editor**.
 
-2. Välj en **element**.
+1. Välj en **element**.
 
    Innehållsegenskaper visar elementets aktuella typ och attribut.
 
-3. Ange en ny **Värde** för elementet.
+1. Ange en ny **Värde** för elementet.
 
    ![Nytt värde](images/lesson-5/new-value.png)
 
@@ -221,31 +221,31 @@ Filegenskaper visar ytterligare information om hela det öppna avsnittet. En del
 
 1. Öppna ett ämne i Redigeraren.
 
-2. Klicka på [!UICONTROL  **Filegenskaper**] på den högra panelen.
+1. Klicka på [!UICONTROL  **Filegenskaper**] på den högra panelen.
 
    ![Ikon för filegenskaper](images/lesson-5/file-properties-icon.png)
 
-3. Ange **Dokumenttillstånd** till **Redigera**. Observera att listan med referenser är tom.
+1. Ange **Dokumenttillstånd** till **Redigera**. Observera att listan med referenser är tom.
 
    ![Inga referenser](images/lesson-5/no-references.png)
 
-4. Stäng ämnet.
+1. Stäng ämnet.
 
-5. Välj [!UICONTROL **Databasvy**] till vänster.
+1. Välj [!UICONTROL **Databasvy**] till vänster.
 
-6. Öppna en karta.
+1. Öppna en karta.
 
    Vyn ändras till Kartvy.
 
-7. Klicka på [!UICONTROL **Redigera**] ikon.
+1. Klicka på [!UICONTROL **Redigera**] ikon.
 
    ![Redigera kartikon](images/lesson-5/edit-map-icon.png)
 
-8. När kartan är öppen för redigering växlar du tillbaka till **Databasvy**.
+1. När kartan är öppen för redigering växlar du tillbaka till **Databasvy**.
 
-9. Dra och släpp det ämne du arbetar med på kartan.
+1. Dra och släpp det ämne du arbetar med på kartan.
 
-10. Klicka på [!UICONTROL **Spara**] ikonen i det övre verktygsfältet.
+1. Klicka på [!UICONTROL **Spara**] ikonen i det övre verktygsfältet.
 
 Ämnet läggs till på kartan. När du nu öppnar ämnet och markerar filegenskaperna, kan du se att Referenser uppdateras för att återspegla att ämnet används på den angivna kartan.
 
@@ -257,13 +257,13 @@ Den högra panelen innehåller en genväg till granskningsflödet.
 
    ![Granska ikon](images/lesson-5/review-icon.png)
 
-2. Klicka [!UICONTROL **Skapa granskning**].
+1. Klicka [!UICONTROL **Skapa granskning**].
 
    ![Skapa granskning](images/lesson-5/create-review.png)
 
-3. Fyll i fälten efter behov i dialogrutan Skapa granskningsuppgift.
+1. Fyll i fälten efter behov i dialogrutan Skapa granskningsuppgift.
 
-4. Klicka på [!UICONTROL **Nästa**].
+1. Klicka på [!UICONTROL **Nästa**].
 
 Granskningsaktiviteten skapas.
 

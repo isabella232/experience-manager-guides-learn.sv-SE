@@ -2,7 +2,7 @@
 title: Konfiguration av redigeringsprogram för AEM
 description: Konfigurera redigeraren för AEM
 exl-id: 437d9598-4afc-431f-81bd-6762e22656b7
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -25,17 +25,17 @@ Du kan alltid hämta standardgränssnittskonfigurationen till din lokala dator, 
 
    ![Verktygsikon](images/reuse/tools-icon.png)
 
-2. Välj **Stödlinjer** till vänster.
+1. Välj **Stödlinjer** till vänster.
 
-3. Klicka på [!UICONTROL **Mappprofiler**] platta.
+1. Klicka på [!UICONTROL **Mappprofiler**] platta.
 
    ![Mappprofiler](images/reuse/folder-profiles-tile.png)
 
-4. Välj en mappprofil.
+1. Välj en mappprofil.
 
-5. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
+1. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
 
-6. Klicka [!UICONTROL **Hämta**] Standard.
+1. Klicka [!UICONTROL **Hämta**] Standard.
 
    ![Hämta standard](images/lesson-4/download-default.png)
 
@@ -47,15 +47,15 @@ När du har anpassat gränssnittskonfigurationen kan du överföra den. Observer
 
 1. Klicka på knappen [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
 
-2. Under gränssnittskonfigurationen för XML-redigeraren klickar du på [!UICONTROL **Överför**].
+1. Under gränssnittskonfigurationen för XML-redigeraren klickar du på [!UICONTROL **Överför**].
 
    ![Överför](images/lesson-4/upload.png)
 
-3. Dubbelklicka på filen för den ändrade användargränssnittskonfigurationen, eller så som visas här, den medföljande exempelfilen.
+1. Dubbelklicka på filen för den ändrade användargränssnittskonfigurationen, eller så som visas här, den medföljande exempelfilen.
 
    ![Exempel på konfigurationsfil](images/lesson-4/sample-config-file.png)
 
-4. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
+1. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
 
 Den ändrade gränssnittskonfigurationen har överförts.
 
@@ -67,17 +67,17 @@ Precis som med gränssnittskonfigurationen kan du hämta CSS-mallayouten. Du kan
 
    ![Verktygsikon](images/reuse/tools-icon.png)
 
-2. Välj **Stödlinjer** till vänster.
+1. Välj **Stödlinjer** till vänster.
 
-3. Klicka på [!UICONTROL **Mappprofiler**] platta.
+1. Klicka på [!UICONTROL **Mappprofiler**] platta.
 
    ![Mappprofiler](images/reuse/folder-profiles-tile.png)
 
-4. Välj en mappprofil.
+1. Välj en mappprofil.
 
-5. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
+1. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
 
-6. Under CSS-mallayout klickar du på [!UICONTROL **Hämta**].
+1. Under CSS-mallayout klickar du på [!UICONTROL **Hämta**].
 
    ![Hämta CSS](images/lesson-4/download-css.png)
 
@@ -89,15 +89,15 @@ När du har anpassat CSS-mallayouten kan du överföra den. Observera att en exe
 
 1. Klicka på knappen [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
 
-2. Under CSS-mallayout klickar du på [!UICONTROL **Överför**].
+1. Under CSS-mallayout klickar du på [!UICONTROL **Överför**].
 
    ![Överför CSS](images/lesson-4/upload-css.png)
 
-3. Dubbelklicka på filen för din egen anpassade CSS-layout eller den exempelfil som visas här.
+1. Dubbelklicka på filen för din egen anpassade CSS-layout eller den exempelfil som visas här.
 
    ![Exempel på CSS-fil](images/lesson-4/sample-css-file.png)
 
-4. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
+1. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
 Du har överfört den anpassade CSS-mallayouten.
 
 ## Redigera XML-redigerarkodfragment
@@ -108,25 +108,25 @@ Kodavsnitt är återanvändbara innehållsdelar som kan vara specifika för en p
 
    ![Verktygsikon](images/reuse/tools-icon.png)
 
-2. Välj **Stödlinjer** till vänster.
+1. Välj **Stödlinjer** till vänster.
 
-3. Klicka på [!UICONTROL **Mappprofiler**] platta.
+1. Klicka på [!UICONTROL **Mappprofiler**] platta.
 
    ![Mappprofiler](images/reuse/folder-profiles-tile.png)
 
-4. Välj en mappprofil.
+1. Välj en mappprofil.
 
-5. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
+1. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
 
-6. Klicka på under XML-redigerarfragment **Överför**.
+1. Klicka på under XML-redigerarfragment **Överför**.
 
    ![Överför fragment](images/lesson-4/upload-snippets.png)
 
-7. Välj egna fragment eller använd de medföljande exemplen.
+1. Välj egna fragment eller använd de medföljande exemplen.
 
    ![Exempelkod](images/lesson-4/sample-snippet.png)
 
-8. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
+1. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
 
 Du har lagt till nya fragment i redigeraren.
 
@@ -138,17 +138,17 @@ Som standard kan författare skapa egna etiketter och associera dem med ämnesfi
 
    ![Verktygsikon](images/reuse/tools-icon.png)
 
-2. Välj **Stödlinjer** till vänster.
+1. Välj **Stödlinjer** till vänster.
 
-3. Klicka på [!UICONTROL **Mappprofiler**] platta.
+1. Klicka på [!UICONTROL **Mappprofiler**] platta.
 
    ![Mappprofiler](images/reuse/folder-profiles-tile.png)
 
-4. Välj en mappprofil.
+1. Välj en mappprofil.
 
-5. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
+1. Klicka på [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
 
-6. Klicka på under Versionsetiketter för XML-innehåll [!UICONTROL **Hämta**].
+1. Klicka på under Versionsetiketter för XML-innehåll [!UICONTROL **Hämta**].
 
    ![Ladda ned etiketter](images/lesson-4/download-labels.png)
 
@@ -160,14 +160,14 @@ När du har laddat ned och ändrat etiketterna kan du ladda upp avsnittet XML Co
 
 1. Klicka på knappen [!UICONTROL **Konfiguration av XML-redigerare**] -fliken.
 
-2. Klicka på under Versionsetiketter för XML-innehåll [!UICONTROL **Överför**].
+1. Klicka på under Versionsetiketter för XML-innehåll [!UICONTROL **Överför**].
 
    ![Ladda upp etiketter](images/lesson-4/upload-labels.png)
 
-3. Dubbelklicka på filen för antingen egna etiketter eller exempelfilen som visas här.
+1. Dubbelklicka på filen för antingen egna etiketter eller exempelfilen som visas här.
 
    ![Exempeletikettfil](images/lesson-4/sample-labels-file.png)
 
-4. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
+1. Klicka [!UICONTROL **Spara**] i skärmens övre vänstra hörn.
 
 Du har överfört anpassade versionsetiketter för XML-innehåll.

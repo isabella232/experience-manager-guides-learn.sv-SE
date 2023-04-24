@@ -2,7 +2,7 @@
 title: Korsreferenser och länkar
 description: Skapa korsreferenser och länkar i AEM stödlinjer
 exl-id: bee7d50f-cbdd-4ac8-b15b-101febc4ae80
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Du kan skapa en extern korsreferens genom att dra och släppa ett ämne från da
 
 1. Öppna en fil där du vill infoga en extern korsreferens.
 
-2. Tilldela ett ID till elementet som ska refereras.
+1. Tilldela ett ID till elementet som ska refereras.
 
    a. Klicka inuti elementet.
 
@@ -34,15 +34,15 @@ Du kan skapa en extern korsreferens genom att dra och släppa ett ämne från da
 
    d. Visa elementet och dess värde i **Dispositionsvy** vid behov.
 
-3. **Spara** ämnet som kontrollerar att databasen har det uppdaterade ID:t.
+1. **Spara** ämnet som kontrollerar att databasen har det uppdaterade ID:t.
 
-4. Klicka på [!UICONTROL **Referens**] ikonen i det övre verktygsfältet.
+1. Klicka på [!UICONTROL **Referens**] ikonen i det övre verktygsfältet.
 
    ![Verktygsfält](images/lesson-7/references-icon.png)
 
-5. Från **Innehållsreferens** markerar du det ID och elementpar som du vill infoga som en korsreferens.
+1. Från **Innehållsreferens** markerar du det ID och elementpar som du vill infoga som en korsreferens.
 
-6. Klicka [!UICONTROL **Välj**].
+1. Klicka [!UICONTROL **Välj**].
 
 Korsreferensen har lagts till i ämnet.
 
@@ -57,9 +57,9 @@ Vissa ändringar kan leda till brutna korsreferenser. Detta kan vara att ta bort
 
 1. Navigera till **Dispositionsvy** till vänster.
 
-2. Klicka på [!UICONTROL **Filter**] ikon.
+1. Klicka på [!UICONTROL **Filter**] ikon.
 
-3. Välj **Brutna länkar**.
+1. Välj **Brutna länkar**.
 
    ![Listruta för filter](images/lesson-7/broken-links.png)
 

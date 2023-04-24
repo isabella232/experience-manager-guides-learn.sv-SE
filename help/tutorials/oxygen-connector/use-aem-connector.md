@@ -1,9 +1,11 @@
 ---
 title: Syrgas-plugin för Adobe Experience Manager Guides
 description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager Guides för att skapa och hantera ditt innehåll.
-source-git-commit: c3d50c3fc9f12d98942b6cb68512e01559b47d93
+hide: true
+hidefromtoc: true
+source-git-commit: 96347fed96979eb735dc55c32fcda90cc70ddcb4
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5762'
 ht-degree: 0%
 
 ---
@@ -111,11 +113,9 @@ Som AEM administratör följer du de här stegen för att installera paketet:
 1. Hämta paketets ZIP-fil från IT-avdelningen.
 1. Logga in i AEM *\(som administratör\)* och navigera till CRX Package Manager. Standardwebbadressen för att få åtkomst till pakethanteraren är
 
-   ```
-   http://<server name>:<port>/crx/packmgr/index.jsp
-   ```
+   `http://<server name>:<port>/crx/packmgr/index.jsp`
 
-   Pakethanteraren hanterar paketen i din lokala AEM. Mer information om hur du arbetar med Pakethanteraren finns i [Så här arbetar du med paket](https://docs.adobe.com/docs/en/aem/6-3/administer/content/package-manager.html) i AEM.
+   Pakethanteraren hanterar paketen i din lokala AEM. Mer information om hur du arbetar med Pakethanteraren finns i [Så här arbetar du med paket](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=en) i AEM.
 
    ![](images/package-manager.png)
 
@@ -161,13 +161,25 @@ Uppdatera de angivna filerna för att konfigurera inställningarna för webbaute
 
 Lägg till följande rader i env.sh
 
-```
---illegal-access=permit\--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED\--add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED\--add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\--add-opens=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\--add-opens=javafx.graphics/javafx.stage=ALL-UNNAMED\--add-opens=javafx.graphics/com.sun.javafx.tk.quantum=ALL-UNNAMED\--add-exports=java.desktop/sun.awt=ALL-UNNAMED\--add-opens javafx.swing/javafx.embed.swing=ALL-UNNAMED
+```java
+--illegal-access=permit\
+--add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED\
+--add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED\
+--add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\
+--add-opens=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED\
+--add-opens=javafx.graphics/javafx.stage=ALL-UNNAMED\
+--add-opens=javafx.graphics/com.sun.javafx.tk.quantum=ALL-UNNAMED\
+--add-exports=java.desktop/sun.awt=ALL-UNNAMED\
+--add-opens javafx.swing/javafx.embed.swing=ALL-UNNAMED
 ```
 
 Lägg till följande rader i syreAuthor.sh
 
-```
+```java
 -Djdk.module.illegalAccess=permit\-Djava.ipc.external=true\
 ```
 
@@ -175,13 +187,13 @@ Lägg till följande rader i syreAuthor.sh
 
 Lägg till följande rader i env.bat
 
-```
+```java
 --illegal-access=permit --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED --add-exports=javafx.controls/com.sun.javafx.scene.control=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED --add-exports=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.glass.ui=ALL-UNNAMED --add-opens=javafx.graphics/javafx.stage=ALL-UNNAMED --add-opens=javafx.graphics/com.sun.javafx.tk.quantum=ALL-UNNAMED --add-exports=java.desktop/sun.awt=ALL-UNNAMED --add-opens javafx.swing/javafx.embed.swing=ALL-UNNAMED
 ```
 
 Lägg till följande rader i syreAuthor.bat
 
-```
+```java
 -Djdk.module.illegalAccess=permit -Djava.ipc.external=true
 ```
 
@@ -200,7 +212,7 @@ Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-
 1. Ange följande information:
    - **Server-URL**: URL för AEM server, till exempel:
 
-      ```
+      ```http
       http[s]://<host>:<port>
       ```
 
@@ -349,11 +361,11 @@ Om du vill använda de redigeringsprogram som är tillgängliga AEM stödlinjern
 
 1. Välj **Öppna i** på snabbmenyn och välj bland följande alternativ:
 
-- **Webbämnesredigerare**: Om filen du öppnar är en .xml- eller .dita-fil kan du öppna den för redigering i webbredigeraren. Välj **Webbämnesredigerare** om du vill öppna den markerade filen för redigering i Web Editor.
+   - **Webbämnesredigerare**: Om filen du öppnar är en .xml- eller .dita-fil kan du öppna den för redigering i webbredigeraren. Välj **Webbämnesredigerare** om du vill öppna den markerade filen för redigering i Web Editor.
 
-- **Kartkontrollpanel**: Du kan välja att redigera en .ditamap-fil på kartkontrollpanelen där du kan utföra olika åtgärder på kartfilen. De här åtgärderna är beroende av rollen/gruppen som du tillhör.
+   - **Kartkontrollpanel**: Du kan välja att redigera en .ditamap-fil på kartkontrollpanelen där du kan utföra olika åtgärder på kartfilen. De här åtgärderna är beroende av rollen/gruppen som du tillhör.
 
-- **Web DITA Map Editor**: Om du vill öppna .ditamap-filen för redigering i kartredigeraren väljer du det här alternativet. Med alternativet DITA Map Editor kan du lägga till eller ta bort ämnen, lägga till relationstabeller och utföra andra åtgärder på kartan.
+   - **Web DITA Map Editor**: Om du vill öppna .ditamap-filen för redigering i kartredigeraren väljer du det här alternativet. Med alternativet DITA Map Editor kan du lägga till eller ta bort ämnen, lägga till relationstabeller och utföra andra åtgärder på kartan.
 
 
 ### Checka ut filer {#id195HC020TS4}
@@ -391,15 +403,15 @@ När du checkar in en fil lagras den lokala kopian från systemet i AEM och fill
    - **Checka in**: Checkar in den valda filen från ditt lokala system i AEM.
    - **Checka in med beroende:** Om du har checkat ut en fil tillsammans med dess underordnade filer, använder du det här alternativet för att checka in alla beroende filer i en enda åtgärd. När du väljer det här alternativet visas dialogrutan Checka in med alla beroende filer. Klicka på OK om du vill checka in alla filer samtidigt.
 
-      Om du inte har checkat ut beroende filer och sedan väljer det här alternativet checkas bara de beroende filerna som du har \(separat\) utcheckade in. En lista över filer som inte kunde checkas in visas:
+   Om du inte har checkat ut beroende filer och sedan väljer det här alternativet checkas bara de beroende filerna som du har \(separat\) utcheckade in. En lista över filer som inte kunde checkas in visas:
 
-      ![](images/check-in-error.png)
+   ![](images/check-in-error.png)
 
-      Vi rekommenderar att du inte flyttar en fil som är utcheckad. Om en utcheckad fil flyttas till en annan plats måste du dock avbryta utcheckningen av filen. Om du vill uppdatera filen checkar du ut den igen, gör ändringar och checkar sedan in den igen. Om du försöker checka in en fil som har flyttats från den ursprungliga platsen visas ett fel.
+   Vi rekommenderar att du inte flyttar en fil som är utcheckad. Om en utcheckad fil flyttas till en annan plats måste du dock avbryta utcheckningen av filen. Om du vill uppdatera filen checkar du ut den igen, gör ändringar och checkar sedan in den igen. Om du försöker checka in en fil som har flyttats från den ursprungliga platsen visas ett fel.
 
-      Om en beroende fil är utcheckad i AEM, kommer Checka in med beroende inte att visa den beroende filen i dialogrutan Checka in. Om du vill visa en lista över beroende filer som är utcheckade i AEM måste du göra en mappuppdatering.
+   Om en beroende fil är utcheckad i AEM, kommer Checka in med beroende inte att visa den beroende filen i dialogrutan Checka in. Om du vill visa en lista över beroende filer som är utcheckade i AEM måste du göra en mappuppdatering.
 
-      Om du har checkat in en beroende fil via AEM uppdateras inte fillistan i Syrgasförfattaren förrän du uppdaterar mappen Uppdatera och Uppdatera utcheckade filer. Om du gör en incheckning med beroende med vissa filer incheckade AEM visas ett felmeddelande med en lista över de filer som inte kunde checkas in.
+   Om du har checkat in en beroende fil via AEM uppdateras inte fillistan i Syrgasförfattaren förrän du uppdaterar mappen Uppdatera och Uppdatera utcheckade filer. Om du gör en incheckning med beroende med vissa filer incheckade AEM visas ett felmeddelande med en lista över de filer som inte kunde checkas in.
 
 1. \(Valfritt\) Lägg till en kommentar i dialogrutan Checka in **Versionskommentarer** textruta.
 
@@ -600,45 +612,47 @@ Det här avsnittet handlar om några av de vanligaste problemen som du kan stöt
 
 ### Panelen AEM stödlinjer saknas {#id192BH200ZAX}
 
-Problem: Om du inte ser panelen AEM stödlinjer i Sygen XML Author kan du prova följande lösningar:
+**Problem** - Om du inte ser panelen AEM i Sygen XML Author kan du prova följande lösningar:
 
-Lösning 1: : 1.  Aktivera plugin-programmet i Sygen XML Author.
+Lösning 1:
 
-    Klicka på **Alternativ** \> **Inställningar** \> **Plugins** och välj **Syrgasplugin för Adobe Experience Manager-guider.**
+1. Aktivera plugin-programmet i Sygen XML Author.
+
+   Klicka **Alternativ** \> **Inställningar** \> **Plugins** och markera **Syrgas-plugin för Adobe Experience Manager Guides.**
 
 1. Starta om Syrgas XML Author.
 
 
-Lösning 2: : Om du fortfarande inte ser panelen AEM stödlinjer aktiverar du fönstret AEM stödlinjer.
+Lösning 2:
 
-    Klicka på **Window** \> **Visa** \> **AEM stödlinjer** i Författaren av syre.
+1. Om du fortfarande inte ser panelen AEM stödlinjer aktiverar du fönstret AEM stödlinjer.
 
-Lösning 3: : Avinstallera och installera om Syrgas-plugin-programmet för Adobe Experience Manager Guides.
+   Klicka på i Författare för Syrgas XML **Fönster** \> **Visa vy** \> **AEM stödlinjer**.
 
-    - I Windows avinstallerar du plugin-programmet från listan **Lägg till eller ta bort program**. Installera sedan om plugin-programmet.
-    
-    - I Mac öppnar du mappen aem-connector-x.x i mappen plugins i Oxygen XML Author och flyttar den till **Trash*. Töm sedan mappen **Trash**.
+Lösning 3:
+
+1. Avinstallera och installera om Syrgas-plugin-programmet för Adobe Experience Manager Guides.
+
+   - I Windows avinstallerar du plugin-programmet från **Lägg till eller ta bort program** lista. Installera sedan om plugin-programmet.
+
+   - I Mac går du till mappen aem-connector-x.x i mappen plugins i Oxygen XML Author och flyttar den till **Papperskorgen**. Töm sedan **Papperskorgen** mapp.
 
 
 ### Konfigurera port för DITA-OT-omvandling
 
-Problem: När du kör en DITA-OT-omformning på filer som bearbetas av plugin-programmet misslyckas omformningen med följande fel:
+**Problem** - När du kör en DITA-OT-omformning på filer som bearbetas av plugin-programmet misslyckas omformningen med följande fel:
 
-    ![](images/proxy-server-path-error.png)
+![](images/proxy-server-path-error-new.png)
 
-Lösning: Problemet har åtgärdats genom att en proxyserver har lagts till mellan DITA-OT och plugin-programmet. Den här proxyservern bearbetar och delar alla filer som begärts av DITA-OT för omvandlingar. Standardporten som den här servern har konfigurerats på är: `5972`. Om du använder den här porten för någon annan server kan du ange en annan port för proxyservern.
+**Lösning** - Problemet har åtgärdats genom att en proxyserver har lagts till mellan DITA-OT och plugin-programmet. Den här proxyservern bearbetar och delar alla filer som begärts av DITA-OT för omvandlingar. Standardporten som den här servern har konfigurerats på är: `5972`. Om du använder den här porten för någon annan server kan du ange en annan port för proxyservern.
 
-    Utför följande steg för att ändra standardporten för proxyservern:
-    
-    1.  Bläddra till din \(användarens\) arbetskatalog.
-    
-    2.  Skapa en fil med namnet aem\_connector\_proxy.
-    
-    3.  Öppna filen i valfri textredigerare och lägg till ett tillgängligt portnummer på den första raden i filen.
-    
-    4.  Spara och stäng filen.
-    
-    5.  Starta om Syrgas XML Author och kör DITA-OT-omvandlingen.
+Utför följande steg för att ändra standardporten för proxyservern:
+
+1. Bläddra till din \(användarens\) arbetskatalog.
+1. Skapa en fil med namnet aem\_connector\_proxy.
+1. Öppna filen i valfri textredigerare och lägg till ett tillgängligt portnummer på den första raden i filen.
+1. Spara och stäng filen.
+1. Starta om Syrgas XML Author och kör DITA-OT-omvandlingen.
 
 
 ### Panelen AEM stödlinjer bläddrar inte till den öppnade filplatsen
@@ -653,38 +667,36 @@ Problem: Som standard genereras inga loggar av Syrgas-plugin-programmet för AEM
 
 Lösning: Gör så här för att aktivera funktionen för generering av loggar i plugin-programmet:
 
-    1.  Bläddra till installationsplatsen för Sygen XML Author.
-    
-    1.  Öppna filen syreAuthor19.1.vmoptions i en textredigerare.
-    
-    >[!OBS!]
-    >
-    >Filens versionsnummer kan variera beroende på vilket versionsnummer som finns i det program som är installerat på datorn.
-    
-    1.  Lägg till följande rad i filen:
-    
-    &quot;
-    -Djava.util.log.config.file=./log.properties
-    &quot;
-    
-    1.  Spara och stäng filen.
-    
-    1.  På samma plats skapar du en fil med namnet log.properties med följande innehåll:
-    
-    &quot;
-    handlers=java.util.log.FileHandler
-    java.util.log.FileHandler.level = DEBUG
-    java.util.log.FileHandler.limit = 1048576
-    java.util.log.FileHandler.count = 5
-    java.util.log.FileHandler.pattern = %h/aem-plugin%g.log
-    java.util.log.FileHandler.formatter = java.util.log.SimpleFormatter
-    java.util.log.FileHandler.format=[%1$tF %1$tT] [%4$s] %5$s %n
-    &quot;
-    
-    1.  Spara och stäng filen.
-    
-    1.  Starta Syrgas XML Author.
-    
-    
-    Plugin-programmet skapar nu loggar i användarens hemkatalog med filnamnet aem-pluginX.log \(*där X anger rotationsnumret*\).
+1. Bläddra till installationsplatsen för Sygen XML Author.
 
+1. Öppna filen syreAuthor19.1.vmoptions i en textredigerare.
+
+   >[!NOTE]
+   >
+   >Versionsnumret för filen kan variera beroende på vilket versionsnummer programmet har som är installerat på datorn.
+
+1. Lägg till följande rad i filen:
+
+   ```java
+   -Djava.util.logging.config.file=./log.properties
+   ```
+
+1. Spara och stäng filen.
+
+1. På samma plats skapar du en fil med namnet log.properties med följande innehåll:
+
+   ```java
+   handlers=java.util.logging.FileHandler
+   java.util.logging.FileHandler.level = DEBUG
+   java.util.logging.FileHandler.limit = 1048576
+   java.util.logging.FileHandler.count = 5
+   java.util.logging.FileHandler.pattern = %h/aem-plugin%g.log
+   java.util.logging.FileHandler.formatter = java.util.logging.SimpleFormatter
+   java.util.logging.FileHandler.format=[%1$tF %1$tT] [%4$s] %5$s %n
+   ```
+
+1. Spara och stäng filen.
+1. Starta Syrgas XML Author.
+
+
+Plugin-programmet skapar nu loggar i användarens hemkatalog med filnamnet aem-pluginX.log \(*där X anger rotationsnumret*\).

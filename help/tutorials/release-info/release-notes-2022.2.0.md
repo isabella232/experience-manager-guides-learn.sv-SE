@@ -2,7 +2,7 @@
 title: Versionsinformation för [!DNL AEM Guides], februari 2022-utgåvan
 description: Februariversion av [!DNL Adobe Experience Manager Guides] as a Cloud Service
 exl-id: eb7ff475-bb5b-4d32-b291-024147fbfed1
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 2%
@@ -15,8 +15,8 @@ ht-degree: 2%
 
 Uppgradera din nuvarande [!DNL Adobe Experience Manager Guides] as a Cloud Service (kallas senare [!DNL AEM Guides] as a Cloud Service) konfigurera genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.2.114.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till februari-versionen av [!DNL AEM Guides] as a Cloud Service.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.2.114.
+1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till februari-versionen av [!DNL AEM Guides] as a Cloud Service.
 
 ## Kompatibilitetsmatris
 

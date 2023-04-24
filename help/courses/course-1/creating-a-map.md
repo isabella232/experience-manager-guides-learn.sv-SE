@@ -2,7 +2,7 @@
 title: Skapa en karta i [!DNL AEM Guides]
 description: Lär dig hur du skapar en karta i [!DNL Adobe Experience Manager Guides]
 exl-id: e38a7fd5-2a29-4248-8e8f-e6a87e1eae9c
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%
@@ -82,7 +82,7 @@ Ditt innehåll öppnas i [!UICONTROL Preview].
 Du kan redigera ämneshierarkin i kartan.
 
 1. Klicka på ett ämnes ikon för att markera det.
-2. Använd pilarna för att nedgradera respektive höja upp element.
+1. Använd pilarna för att nedgradera respektive höja upp element.
 
    ![Databasikon](images/lesson-8/left-right.png)
 

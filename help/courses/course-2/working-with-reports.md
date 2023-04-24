@@ -2,7 +2,7 @@
 title: Arbeta med rapporter
 description: Arbeta med rapporter i [!DNL Adobe Experience Manager Guides]
 exl-id: 755506a6-c416-4a8c-8359-8db7e63a90a4
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 0%
@@ -27,11 +27,11 @@ Du kan hämta exempelfiler för övningen här.
 
    ![ellipses-9.png](images/ellipses-9.png)
 
-2. Välj **[!UICONTROL Upload Assets]**.
+1. Välj **[!UICONTROL Upload Assets]**.
 
    ![upload-assets.png](images/upload-assets.png)
 
-3. Markera de filer som du vill överföra till mappen och välj **Överför**.
+1. Markera de filer som du vill överföra till mappen och välj **Överför**.
 
 DITA-filerna öppnas och du bör granska dem för att se om det finns problem med saknat innehåll, referenser eller korsreferenser.
 
@@ -41,15 +41,15 @@ DITA-filerna öppnas och du bör granska dem för att se om det finns problem me
 
    ![ellipses-9.png](images/ellipses-9.png)
 
-2. Välj **Skapa > Karta**.
+1. Välj **Skapa > Karta**.
 
    ![create-map.png](images/create-map.png)
 
    Dialogrutan Skapa ny karta visas.
 
-3. Välj **Bookmap** (eller **Karta** baserat på innehållstypen som du skapar) i listrutan och ge kartan en titel.
+1. Välj **Bookmap** (eller **Karta** baserat på innehållstypen som du skapar) i listrutan och ge kartan en titel.
 
-4. Välj **Skapa**.
+1. Välj **Skapa**.
 
 Kartan skapas och den vänstra listen ändras automatiskt från databasvyn till kartvyn.
 
@@ -60,22 +60,22 @@ Det här är redigeringsikonen och du kan öppna kartan i redigeraren.
 
    ![edit-map.png](images/edit-map.png)
 
-2. Växla tillbaka till databasvyn genom att välja ikonen Databas.
+1. Växla tillbaka till databasvyn genom att välja ikonen Databas.
 
    ![database-button.png](images/repository-button.png)
 
-3. Lägg till ett ämne på kartan genom att dra och släppa det från databasen till kartan i redigeraren.
+1. Lägg till ett ämne på kartan genom att dra och släppa det från databasen till kartan i redigeraren.
 Radindikatorn visar var ämnet placeras.
 
-4. Fortsätt lägga till ämnen efter behov.
+1. Fortsätt lägga till ämnen efter behov.
 
-5. När du är klar väljer du **Spara som ny version.**
+1. När du är klar väljer du **Spara som ny version.**
 
    ![save-as-new-version.png](images/save-as-new-version.png)
 
-6. I *Kommentarer till den nya versionen* anger du en beskrivande kommentar.
+1. I *Kommentarer till den nya versionen* anger du en beskrivande kommentar.
 
-7. Välj **Spara**.
+1. Välj **Spara**.
 
 ## Generera AEM
 
@@ -84,16 +84,16 @@ Radindikatorn visar var ämnet placeras.
    ![open-map-dashboard.png](images/open-map-dashboard.png)
 
    Kartkontrollpanelen öppnas på en annan flik.
-2. Välj **AEM**.
+1. Välj **AEM**.
 
    ![aem-site-checkbox](images/aem-site-checkbox.png)
 
-3. Välj **Generera**.
+1. Välj **Generera**.
 
-4. Navigera till sidan Utdata för att visa status för dina genererade utdata.
+1. Navigera till sidan Utdata för att visa status för dina genererade utdata.
 Om fel uppstår kan en orange cirkel visas i kolumnen Generationsinställning i stället för grön på fliken Utdata, vilket anger att genereringen är klar.
 
-5. Markera länken under kolumnen Generationsinställning för att öppna de genererade utdata.
+1. Markera länken under kolumnen Generationsinställning för att öppna de genererade utdata.
 Granska utdata för innehåll som saknas.
 
 ## Fliken Rapporter
@@ -114,9 +114,9 @@ Om bilder saknas i filerna kan det bero på att innehållet har överförts, men
 
    ![image-ellipsis.png](images/image-ellipsis.png)
 
-2. Välj **[!UICONTROL Upload Assets]** och markera de saknade bilderna.
+1. Välj **[!UICONTROL Upload Assets]** och markera de saknade bilderna.
 
-3. Välj **Överför**.
+1. Välj **Överför**.
 
 De saknade bilderna har överförts. Nu visas de här bilderna i en ny genererad AEM, och inga bildfel visas på fliken Rapporter.
 
@@ -132,11 +132,11 @@ Förutom [!UICONTROL Upload Assets] kan du överföra resurser genom att dra och
 
    ![reuse-ellipsis.png](images/reuse-ellipsis.png)
 
-2. Välj **Visa i resursgränssnitt**.
+1. Välj **Visa i resursgränssnitt**.
 
    ![assets_ui.png](images/assets_ui.png)
 
-3. Dra och släpp filen i mappen.
+1. Dra och släpp filen i mappen.
 Filen överförs och conref-felet åtgärdas.
 
 Alla fel har nu åtgärdats. Rapportsidan anger att det inte finns fler fel och när du genererar en AEM resulterar detta i en fullständig utskrift utan att några komponenter saknas.

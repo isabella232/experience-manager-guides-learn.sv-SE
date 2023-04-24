@@ -2,7 +2,7 @@
 title: Tangenter
 description: Med tangenter kan du inkludera variabelinformation i när du arbetar med DITA i AEM stödlinjer
 exl-id: cb64e094-fe6d-4a5e-8f0e-25ae58aaa2c6
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Exempelfiler som du kan välja att använda för den här lektionen finns i file
 
    h. Välj [!UICONTROL **Extract**] längst upp till höger på skärmen.
 
-2. När extraheringen är klar klickar du på [!UICONTROL **Gå till målmappen**].
+1. När extraheringen är klar klickar du på [!UICONTROL **Gå till målmappen**].
 
    ![Bekräftelse](images/lesson-9/go-to-target.png)
 
@@ -69,9 +69,9 @@ För att använda tangenter på rätt sätt måste användarinställningarna ref
 
    g. **Spara** användarinställningarna.
 
-2. Navigera till **Kartvy**.
+1. Navigera till **Kartvy**.
 
-3. Öppna den angivna kartan.
+1. Öppna den angivna kartan.
 
 Tangenterna är lösta.
 
@@ -79,11 +79,11 @@ Tangenterna är lösta.
 
 1. Öppna en karta med en angiven rotkarta.
 
-2. Välj en tangent.
+1. Välj en tangent.
 
    ![Nyckellistruta](images/lesson-9/hybrid-key.png)
 
-3. Infoga ett nytt nyckelord.
+1. Infoga ett nytt nyckelord.
 
    a. Klicka på en giltig plats på kartan.
 
@@ -95,7 +95,7 @@ Tangenterna är lösta.
 
    d. Klicka [!UICONTROL **Infoga**].
 
-4. Lägg till topicmeta i nyckelordet.
+1. Lägg till topicmeta i nyckelordet.
 
    a. Klicka på [!UICONTROL **Infoga element**] ikonen i det övre verktygsfältet.
 
@@ -103,7 +103,7 @@ Tangenterna är lösta.
 
    b. I dialogrutan Infoga element söker du efter och väljer &quot;topicmeta&quot;.
 
-5. Lägg till nyckelord i ämnesmetan.
+1. Lägg till nyckelord i ämnesmetan.
 
    a. Klicka på [!UICONTROL **Infoga element**] ikonen i det övre verktygsfältet.
 
@@ -111,7 +111,7 @@ Tangenterna är lösta.
 
    b. I dialogrutan Infoga element söker du efter och väljer &quot;nyckelord&quot;.
 
-6. Lägg till ett nyckelord i ämnesmetan.
+1. Lägg till ett nyckelord i ämnesmetan.
 
    a. Klicka på [!UICONTROL **Infoga element**] ikonen i det övre verktygsfältet.
 
@@ -119,7 +119,7 @@ Tangenterna är lösta.
 
    b. I **Infoga element** dialogruta, söka efter och markera &quot;nyckelord&quot;
 
-7. Skriv värdet för nyckelordet i nyckelordet.
+1. Skriv värdet för nyckelordet i nyckelordet.
 
 På kartan ska din nyckeldef nu se ut ungefär så här:
 
@@ -131,16 +131,16 @@ Kodavsnitt är små innehållsfragment som kan återanvändas i olika ämnen i d
 
 1. Markera ett nyckelordselement på kartan.
 
-2. På snabbmenyn klickar du på [!UICONTROL **Skapa fragment**].
+1. På snabbmenyn klickar du på [!UICONTROL **Skapa fragment**].
 
-3. I dialogrutan Nytt fragment lägger du till en titel och en beskrivning.
+1. I dialogrutan Nytt fragment lägger du till en titel och en beskrivning.
 Du kan också ta bort befintliga nycklar eller nyckelordsdefinitioner från innehållet.
 
-4. Klicka [!UICONTROL **Skapa**].
+1. Klicka [!UICONTROL **Skapa**].
 
-5. Välj **Fragment**.
+1. Välj **Fragment**.
 
-6. Dra och släpp det fragment du nyss skapade från fragmentpanelen på kartan.
+1. Dra och släpp det fragment du nyss skapade från fragmentpanelen på kartan.
 
-7. Uppdatera nyckelordet efter behov med Content Properties.
+1. Uppdatera nyckelordet efter behov med Content Properties.
 När du sparar och uppdaterar den här uppsättningen nycklar är de tillgängliga för alla användare som har definierat en karta som innehåller samma rotkarta.

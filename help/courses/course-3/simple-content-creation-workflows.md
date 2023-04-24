@@ -2,7 +2,7 @@
 title: Arbetsflöden för att skapa enkelt innehåll
 description: Skapa innehåll i AEM stödlinjer
 exl-id: e4b8e512-0688-44f7-b981-78af33b57b08
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
@@ -23,19 +23,19 @@ Du kan lägga till bilder direkt från en lokal enhet.
 
    ![Dialogrutan Överför resurser](images/lesson-15/upload-assets-dialog.png)
 
-2. Ändra mappsökvägen till önskad bildplats.
+1. Ändra mappsökvägen till önskad bildplats.
 
-3. Ändra bildens namn till något som motsvarar dess syfte.
+1. Ändra bildens namn till något som motsvarar dess syfte.
 
-4. Klicka [!UICONTROL **Överför**].
+1. Klicka [!UICONTROL **Överför**].
 
 ## Ändra en bild
 
 1. Ändra storlek på en bild genom att dra och släppa ett hörn.
 
-2. Flytta en bild till en annan plats i ämnet genom att dra och släppa den.
+1. Flytta en bild till en annan plats i ämnet genom att dra och släppa den.
 
-3. Använd **Innehållsegenskaper** på den högra panelen för att ändra en bilds
+1. Använd **Innehållsegenskaper** på den högra panelen för att ändra en bilds
 
    - scale
 
@@ -53,11 +53,11 @@ Delad vy är användbart när du jämför ämnen, kopierar och klistrar in mella
 
 1. Öppna två eller flera relaterade ämnen.
 
-2. Klicka på en fils titelflik för att öppna snabbmenyn.
+1. Klicka på en fils titelflik för att öppna snabbmenyn.
 
-3. Välj [!UICONTROL **Dela**].
+1. Välj [!UICONTROL **Dela**].
 
-4. Välj **Höger**.
+1. Välj **Höger**.
 
    ![Delad vy](images/lesson-15/split-view.png)
 
@@ -65,11 +65,11 @@ Delad vy är användbart när du jämför ämnen, kopierar och klistrar in mella
 
 1. Leta reda på ordet eller frasen som innehåller felet.
 
-2. Tryck och håll [!UICONTROL **Ctrl**].
+1. Tryck och håll [!UICONTROL **Ctrl**].
 
-3. Klicka på den sekundära musknappen på felet.
+1. Klicka på den sekundära musknappen på felet.
 
-4. Välj rätt stavning.
+1. Välj rätt stavning.
 
 Felet har korrigerats i avsnittstexten.
 
@@ -79,41 +79,41 @@ Användare kan vilja ladda ned en PDF i det aktuella ämnet för att kommentera 
 
 1. Klicka [!UICONTROL **Förhandsgranska**] längst upp till höger på skärmen.
 
-2. Klicka på [!UICONTROL **PDF, ikon**] ovanför ämnet. En dialogruta visas.
+1. Klicka på [!UICONTROL **PDF, ikon**] ovanför ämnet. En dialogruta visas.
 
    ![PDF Export](images/lesson-15/pdf-export.png)
 
-3. Fyll i informationen för antingen **Transformeringsnamn** eller **Kommandoradsargument för DITA-OT** vid behov. Observera att PDF fortfarande genereras om alla fält lämnas tomma.
+1. Fyll i informationen för antingen **Transformeringsnamn** eller **Kommandoradsargument för DITA-OT** vid behov. Observera att PDF fortfarande genereras om alla fält lämnas tomma.
 
-4. Klicka [!UICONTROL **Hämta**]. PDF genererar.
+1. Klicka [!UICONTROL **Hämta**]. PDF genererar.
 
-5. Använd tillgängliga ikoner för att konfigurera, hämta eller dela ämnet i PDF.
+1. Använd tillgängliga ikoner för att konfigurera, hämta eller dela ämnet i PDF.
 
 ## Leta reda på ett ämne i databasen eller kartan
 
 1. Öppna ämnet.
 
-2. Klicka på den sekundära musknappen på fliken Titel.
+1. Klicka på den sekundära musknappen på fliken Titel.
 
-3. Välj **Sök i**.
+1. Välj **Sök i**.
 
-4. Välj antingen **Databas** eller **Karta** för att gå till den önskade ämnesplatsen.
+1. Välj antingen **Databas** eller **Karta** för att gå till den önskade ämnesplatsen.
 
 ## Version av ett ämne
 
 1. Ändra ett ämne.
 
-2. Spara ämnet.
+1. Spara ämnet.
 
-3. Klicka på **Databas** ikonen i den övre vänstra menyn.
+1. Klicka på **Databas** ikonen i den övre vänstra menyn.
 
    ![Databasikon](images/lesson-15/repository-icon.png)
 
-4. Lägg till **Kommentarer för ny version**.
+1. Lägg till **Kommentarer för ny version**.
 
    ![Dialogrutan Ny version](images/lesson-15/version-dialog.png)
 
-5. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 Versionsnumret uppdateras.
 
@@ -123,7 +123,7 @@ Det kan vara svårt att spåra ett ämnes tillstånd baserat på endast versions
 
 1. Välj en **Mappprofil**.
 
-2. Konfigurera XML-redigeraren i mappprofilen.
+1. Konfigurera XML-redigeraren i mappprofilen.
 
    a. Välj Redigera längst upp till vänster på skärmen.
 
@@ -131,15 +131,15 @@ Det kan vara svårt att spåra ett ämnes tillstånd baserat på endast versions
 
    ![Etiketter för innehållsversion](images/lesson-15/version-labels.png)
 
-3. Välj [!UICONTROL **Överför**].
+1. Välj [!UICONTROL **Överför**].
 
-4. Välj en fil som ReviewLabels.json eller liknande. Mer information om hur du skapar en sådan fil finns i en annan video.
+1. Välj en fil som ReviewLabels.json eller liknande. Mer information om hur du skapar en sådan fil finns i en annan video.
 
-5. Klicka [!UICONTROL **Öppna**].
+1. Klicka [!UICONTROL **Öppna**].
 
-6. Klicka [!UICONTROL **Spara**] längst upp till vänster på skärmen Mappprofil.
+1. Klicka [!UICONTROL **Spara**] längst upp till vänster på skärmen Mappprofil.
 
-7. Klicka [!UICONTROL **Stäng**] överst till höger.
+1. Klicka [!UICONTROL **Stäng**] överst till höger.
 
 Versionsetiketter har lästs in.
 
@@ -147,25 +147,25 @@ Versionsetiketter har lästs in.
 
 1. Läs in versionsetiketter.
 
-2. Klicka på [!UICONTROL **Användarinställningar**] ikonen längst upp till vänster i det aktuella avsnittet.
+1. Klicka på [!UICONTROL **Användarinställningar**] ikonen längst upp till vänster i det aktuella avsnittet.
 
    ![Mappprofil](images/lesson-15/folder-profile-icon.png)
 
-3. Välj samma mappprofil där versionsetiketter tidigare lästes in.
+1. Välj samma mappprofil där versionsetiketter tidigare lästes in.
 
-4. I dialogrutan Användarinställningar kontrollerar du att bassökvägen refererar till samma information som mappprofilen har tillämpats på.
+1. I dialogrutan Användarinställningar kontrollerar du att bassökvägen refererar till samma information som mappprofilen har tillämpats på.
 
    ![Användarinställningar](images/lesson-15/user-preferences.png)
 
-5. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
-6. Version av ämnet.
+1. Version av ämnet.
 
-7. Lägg till en kommentar och välj en versionsetikett i listrutan.
+1. Lägg till en kommentar och välj en versionsetikett i listrutan.
 
    ![Dialogrutan Ny versionsetikett](images/lesson-15/labels-dialog.png)
 
-8. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 Versionsnumret uppdateras.
 
@@ -173,9 +173,9 @@ Versionsnumret uppdateras.
 
 1. På den vänstra panelen letar du reda på aktuell ämnesrubrik.
 
-2. Klicka på titeln för att öppna snabbmenyn.
+1. Klicka på titeln för att öppna snabbmenyn.
 
-3. Välj [!UICONTROL **Visa i resursgränssnitt**].
+1. Välj [!UICONTROL **Visa i resursgränssnitt**].
 
    ![Resurser, användargränssnitt](images/lesson-15/view-assets-ui.png)
 
@@ -183,7 +183,7 @@ Versionsnumret uppdateras.
 
    ![Versionshistorik](images/lesson-15/version-history.png)
 
-4. Klicka på en version för att komma åt alternativ som **Återgå till den här versionen** och **Förhandsgranska version**.
+1. Klicka på en version för att komma åt alternativ som **Återgå till den här versionen** och **Förhandsgranska version**.
 
 ## Skapa en ny mall
 
@@ -191,12 +191,12 @@ Det finns mallar för både ämnen och kartor. Administratörer har åtkomst til
 
 1. Klicka [!UICONTROL **Mallar**] i den vänstra panelen.
 
-2. Välj antingen Karta eller Ämne för att öppna den associerade snabbmenyn.
+1. Välj antingen Karta eller Ämne för att öppna den associerade snabbmenyn.
 
-3. Klicka för att lägga till den nya mallen.
+1. Klicka för att lägga till den nya mallen.
 
    ![Ny ämnesmall](images/lesson-15/version-history.png)
 
-4. Fyll i fälten i den resulterande dialogrutan.
+1. Fyll i fälten i den resulterande dialogrutan.
 
 Skalmallen visas med exempelinnehåll och en exempelstruktur.

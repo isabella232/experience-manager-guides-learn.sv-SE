@@ -2,7 +2,7 @@
 title: Publicera med villkor
 description: Publicera med villkor med Adobe Experience Manager Guides
 exl-id: ea94824a-884b-447f-9562-e6c629b8133b
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -25,19 +25,19 @@ Du kan hämta exempelfiler för övningen här.
 
 1. Öppna det ämne som ska ändras.
 
-2. Ange den text som ska bli villkorlig. Ett eller flera stycken, en hel tabell, en illustration eller annat innehåll.
+1. Ange den text som ska bli villkorlig. Ett eller flera stycken, en hel tabell, en illustration eller annat innehåll.
 
    ![Presenting-Information](images/presenting-info.png)
 
-3. Markera det specifika innehåll som du vill tilldela ett villkorsattribut till. Ett enstaka stycke i källan.
+1. Markera det specifika innehåll som du vill tilldela ett villkorsattribut till. Ett enstaka stycke i källan.
 
    ![Template-Choice](images/template-choice.png)
 
-4. I högra rullen ser du till att Egenskaper visas.
+1. I högra rullen ser du till att Egenskaper visas.
 
-5. Lägg till ett attribut för målgrupp, produkt eller plattform.
+1. Lägg till ett attribut för målgrupp, produkt eller plattform.
 
-6. Tilldela ett värde till attributet. Innehållet visas med uppdateringar för att visa villkorlig kod.
+1. Tilldela ett värde till attributet. Innehållet visas med uppdateringar för att visa villkorlig kod.
 
    ![Ange mall](images/specify-template.png)
 
@@ -45,9 +45,9 @@ Du kan hämta exempelfiler för övningen här.
 
 1. Klicka **Förhandsgranska**.
 
-2. Under **Filter** markerar eller avmarkerar du de villkor som ska visas eller döljas.
+1. Under **Filter** markerar eller avmarkerar du de villkor som ska visas eller döljas.
 
-3. Markera eller avmarkera **Markera villkorstext**.
+1. Markera eller avmarkera **Markera villkorstext**.
 
    ![Förhandsgranska-villkorligt-innehåll](images/preview-conditional-content.png)
 
@@ -57,19 +57,19 @@ En villkorsförinställning är en samling egenskaper som definierar vad som ska
 
 1. På kartkontrollpanelen väljer du **Förinställningar för villkor** -fliken.
 
-2. Klicka **Skapa**.
+1. Klicka **Skapa**.
 
-3. Välj **Lägg till** (eller **Lägg till alla**).
+1. Välj **Lägg till** (eller **Lägg till alla**).
 
-4. Ge villkoret ett namn.
+1. Ge villkoret ett namn.
 
-5. Välj en kombination av attribut, etikett och åtgärd.
+1. Välj en kombination av attribut, etikett och åtgärd.
 
    ![Create-Condition-Preset](images/create-condition-preset.png)
 
-6. Upprepa efter behov.
+1. Upprepa efter behov.
 
-7. Klicka **Spara**.
+1. Klicka **Spara**.
 
 ## Generera villkorliga utdata
 
@@ -79,17 +79,17 @@ När villkoren har tillämpats på innehållet kan de genereras som utdata. Dett
 
 1. Välj **Förinställningar för utdata** -fliken.
 
-2. Välj en förinställning för utdata.
+1. Välj en förinställning för utdata.
 
-3. Klicka **Redigera**.
+1. Klicka **Redigera**.
 
-4. Under **Använd villkor med** välj en villkorsförinställning.
+1. Under **Använd villkor med** välj en villkorsförinställning.
 
    ![Generate-Conditional-output](images/generate-conditional-output.png)
 
-5. Klicka **Klar**.
+1. Klicka **Klar**.
 
-6. Generera förinställningen för utdata och granska innehållet.
+1. Generera förinställningen för utdata och granska innehållet.
 
 ## Generera villkorliga utdata med en DITAval-fil
 
@@ -97,14 +97,14 @@ DITAval-filen kan användas för att publicera villkorsstyrt innehåll. Detta kr
 
 1. Välj **Förinställningar för utdata** -fliken.
 
-2. Välj en förinställning för utdata.
+1. Välj en förinställning för utdata.
 
-3. Klicka **Redigera**.
+1. Klicka **Redigera**.
 
-4. Välj en DITAval-fil under Använd villkor med.
+1. Välj en DITAval-fil under Använd villkor med.
 
    ![Generate-Using-DITAval](images/generate-using-ditaval.png)
 
-5. Klicka **Klar**.
+1. Klicka **Klar**.
 
-6. Generera förinställningen för utdata och granska innehållet.
+1. Generera förinställningen för utdata och granska innehållet.

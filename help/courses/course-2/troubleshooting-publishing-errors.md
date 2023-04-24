@@ -2,7 +2,7 @@
 title: Felsökning av publiceringsfel
 description: Felsökning av publiceringsfel i [!DNL Adobe Experience Manager Guides]
 exl-id: b37ea3e7-59cf-4fc5-8fae-e1fadd26f8d8
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Loggfilen som genereras kan öppnas för granskning.
 
    ![fellogg](images/error-log.png)
 
-2. Bläddra igenom felloggen.
+1. Bläddra igenom felloggen.
 
 ## Visa och dölja feltyper
 
@@ -63,7 +63,7 @@ I felloggen visas varje feltyp i en unik färg.
 
 1. **Välj** eller **avmarkera** feltyper för att visa eller dölja markeringar.
 
-2. Navigera till fel med **nästa** eller **föregående** knappar (pilar).
+1. Navigera till fel med **nästa** eller **föregående** knappar (pilar).
 
 ## Åtgärda fel
 

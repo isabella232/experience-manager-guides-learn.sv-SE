@@ -2,7 +2,7 @@
 title: Villkor
 description: Arbeta med villkor i AEM
 exl-id: 2cb670d9-1a22-47c6-8409-52d1d526010a
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
@@ -21,15 +21,15 @@ Exempelfiler som du kan välja att använda för den här lektionen finns i file
 
 1. Välj **Mappprofiler** platta.
 
-2. Klicka [!UICONTROL **Villkorliga attribut**].
+1. Klicka [!UICONTROL **Villkorliga attribut**].
 
-3. Klicka [!UICONTROL **Redigera**] i profilens övre vänstra hörn.
+1. Klicka [!UICONTROL **Redigera**] i profilens övre vänstra hörn.
 
-4. Klicka [!UICONTROL **Lägg till**].
+1. Klicka [!UICONTROL **Lägg till**].
 
    ![Villkor i mappprofiler](images/lesson-13/add-name.png)
 
-5. Fyll i de obligatoriska fälten.
+1. Fyll i de obligatoriska fälten.
 
    - Namnet ska motsvara ett attribut som används för profilering.
 
@@ -37,7 +37,7 @@ Exempelfiler som du kan välja att använda för den här lektionen finns i file
 
    - Etiketten är det ord som visas av användaren som anger attribut.
 
-6. Klicka [!UICONTROL **Spara**].
+1. Klicka [!UICONTROL **Spara**].
 
 >[!NOTE]
 >
@@ -49,11 +49,11 @@ Om ingen anpassad mappprofil har tilldelats ett koncept kan du tilldela attribut
 
 1. Från **Databasvy** klickar du på elementet som du vill arbeta med för att markera det.
 
-2. I **Innehållsegenskaper** klickar du på [!UICONTROL **Attribut**] listruta.
+1. I **Innehållsegenskaper** klickar du på [!UICONTROL **Attribut**] listruta.
 
-3. Välj det attribut du vill tilldela.
+1. Välj det attribut du vill tilldela.
 
-4. Lägg till en **Värde**.
+1. Lägg till en **Värde**.
 
 Kopplingen attribut och värde tilldelas nu till det valda elementet.
 
@@ -73,9 +73,9 @@ På villkorspanelen kan du styra tilldelningen av attribut- och värdepar.
 
    c. Klicka [!UICONTROL **Spara**].
 
-2. Expandera listrutorna för Audience och Platform från villkorspanelen. Observera att de tillgängliga villkoren är mappprofilspecifika.
+1. Expandera listrutorna för Audience och Platform från villkorspanelen. Observera att de tillgängliga villkoren är mappprofilspecifika.
 
-3. Dra och släpp ett villkor till önskat element för att tilldela det.
+1. Dra och släpp ett villkor till önskat element för att tilldela det.
 
 ## Tilldela ett ämnesschema
 
@@ -83,11 +83,11 @@ På villkorspanelen kan du styra tilldelningen av attribut- och värdepar.
 
 1. Navigera till **Databasvy**.
 
-2. Välj en karta som refererar till objektschemat. I det här exemplet används kartan som anropas _Design och layout_.
+1. Välj en karta som refererar till objektschemat. I det här exemplet används kartan som anropas _Design och layout_.
 
    ![Användarinställningar](images/lesson-13/subject-scheme-map.png)
 
-3. Konfigurera användarinställningar.
+1. Konfigurera användarinställningar.
 
    a. Klicka på [!UICONTROL **Användarinställningar**] ikon.
 
@@ -119,6 +119,6 @@ På villkorspanelen kan du styra tilldelningen av attribut- och värdepar.
 
 1. Navigera till **Inställningar för Redigeraren**.
 
-2. Välj **Villkor** -fliken.
+1. Välj **Villkor** -fliken.
 
-3. Markera rutan **Visa ämnesschema på panelen Villkor**
+1. Markera rutan **Visa ämnesschema på panelen Villkor**

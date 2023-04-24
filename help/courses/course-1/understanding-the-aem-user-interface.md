@@ -2,7 +2,7 @@
 title: Förstå AEM användargränssnitt i [!DNL AEM Guides]
 description: Förstå AEM användargränssnitt i [!DNL Adobe Experience Manager Guides]
 exl-id: 955a05ed-92d3-480e-9c6b-a0ff362cc464
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Läs om hur du hanterar resurser, filer och mappar i XML-redigeraren för Experi
 ## Åtkomst till XML-redigeraren
 
 1. Ange ditt användarnamn och lösenord och välj **[!UICONTROL Sign In]**.
-2. Välj **[!UICONTROL XML Editor]** på AEM navigeringssida.
+1. Välj **[!UICONTROL XML Editor]** på AEM navigeringssida.
 
 ## XML-redigeringsvyer
 
@@ -81,7 +81,7 @@ Du kan gå tillbaka till XML-redigeraren från vilken vy som helst i resursgrän
 
 1. Markera det ämne du vill redigera i listan.
 Avsnittet visas i resursgränssnittet.
-2. Välj **Redigera** i det övre verktygsfältet.
+1. Välj **Redigera** i det övre verktygsfältet.
 Du återgår till XML-redigeraren.
 
 ### Returnera från kortvyn

@@ -2,7 +2,7 @@
 title: Versionsinformation | Adobe Experience Manager Guides 4.1
 description: Senaste utgåvan av Adobe Experience Manager Guides
 exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
-source-git-commit: c7b147777a59d422e93d63118e84d806adaaad24
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '3532'
 ht-degree: 3%
@@ -186,8 +186,8 @@ En DITA-innehållsnyckelreferens infogar en del av innehållet från ett ämne i
 Nu löses nyckelreferenserna utifrån rotmappningen som angetts i följande prioritetsordning:
 
 1. Användarinställningar
-2. Kartvyn, panel
-3. Mappprofil
+1. Kartvyn, panel
+1. Mappprofil
 
 Mer information finns i *Lös nyckelreferenser* i guiden Använda Adobe Experience Manager-stödlinjer.
 

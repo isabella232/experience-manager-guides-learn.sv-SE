@@ -2,7 +2,7 @@
 title: Masspublicering
 description: Masspublicering i [!DNL Adobe Experience Manager Guides]
 exl-id: b277e846-ef71-47ec-a66c-ac9d392d53e0
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%
@@ -23,44 +23,43 @@ Med Kartsamlingar kan du styra vilka typer av utdata som ska genereras för en e
 
 1. På menyn Navigering klickar du på **Resurser**.
 
-2. Välj Kartsamlingar.
+1. Välj Kartsamlingar.
 
-3. Klicka **Skapa**.
+1. Klicka **Skapa**.
 
-4. Ange en samlingstitel.
+1. Ange en samlingstitel.
 
    ![Karta - samling](images/map-collection.png)
 
-5. Klicka **Skapa**.
-6. Stäng meddelandet.
+1. Klicka **Skapa**.
+1. Stäng meddelandet.
 
-7. Öppna kartsamlingen (klicka på det grå avsnittet nedanför rutan)
+1. Öppna kartsamlingen (klicka på det grå avsnittet nedanför rutan)
 
-8. Klicka **Redigera**.
+1. Klicka **Redigera**.
 
-9. Lägg till kartor efter behov.
+1. Lägg till kartor efter behov.
 
-10. Markera eller avmarkera **Förinställningar för utdata** för varje karta.
-
-11. Klicka **Klar**.
+1. Markera eller avmarkera **Förinställningar för utdata** för varje karta.
+1. Klicka **Klar**.
 
 ### Förinställningar för filtreringskarta
 
 1. Öppna en förinställning för karta.
 
-2. Under **Filter** utöka och markera alternativ efter behov.
+1. Under **Filter** utöka och markera alternativ efter behov.
 
 ### Generera innehåll i en kartsamling
 
 1. Öppna en förinställning för karta.
 
-2. Om du vill kan du klicka **Generera alla**.
+1. Om du vill kan du klicka **Generera alla**.
 
-3. Du kan också välja kartor och utdatatyper att generera och klicka på **Generera markerade**.
+1. Du kan också välja kartor och utdatatyper att generera och klicka på **Generera markerade**.
 
-4. Om det behövs växlar du till fliken Utdata.
+1. Om det behövs växlar du till fliken Utdata.
 
-5. Granska utdata.
+1. Granska utdata.
 
 ## Visa aktiva publiceringsjobb i Publish Dashboard
 
@@ -68,14 +67,14 @@ På kontrollpanelen Publicera kan du visa aktiva publiceringsjobb. Den visar en 
 
 1. I navigeringsvyn klickar du på **verktyg** ikon.
 
-2. Klicka på **[!DNL Guides]**.
+1. Klicka på **[!DNL Guides]**.
 
-3. Välj **Publish Dashboard** platta.
+1. Välj **Publish Dashboard** platta.
 
        Om kontrollpanelen är tom körs inga publiceringsjobb.
        
    
-4. Filtrera instrumentpanelen efter behov för att visa alla publiceringsjobb.
+1. Filtrera instrumentpanelen efter behov för att visa alla publiceringsjobb.
 
 ### Arbeta med kontrollpanelen för masspublicering
 
@@ -85,34 +84,29 @@ På kontrollpanelen Publicera gruppvis kan du arbeta med samlingar för gruppakt
 
 1. I navigeringsvyn klickar du på **verktyg** ikon.
 
-2. Klicka på **[!DNL Guides]**.
+1. Klicka på **[!DNL Guides]**.
 
-3. Välj **Publish Dashboard** platta.
+1. Välj **Publish Dashboard** platta.
 
-4. Ange en samlingstitel.
+1. Ange en samlingstitel.
 
-5. Klicka **Skapa**.
+1. Klicka **Skapa**.
 
-6. Klicka **Öppna**.
+1. Klicka **Öppna**.
 
-7. Öppna kartsamlingen (klicka på det grå avsnittet nedanför rutan)
+1. Öppna kartsamlingen (klicka på det grå avsnittet nedanför rutan)
 
-8. Klicka **Redigera**.
+1. Klicka **Redigera**.
 
-9. Lägg till kartor efter behov.
+1. Lägg till kartor efter behov.
 
-10. Markera eller avmarkera **Förinställningar för utdata** för varje karta.
-
-11. Klicka **Klar**.
-
-12. Stäng kartsamlingen när du är klar.
+1. Markera eller avmarkera **Förinställningar för utdata** för varje karta.
+1. Klicka **Klar**.
+1. Stäng kartsamlingen när du är klar.
 
 ### Snabbpublicera en samling för massaktivering
 
 1. Välj en gruppruta för aktiveringssamling.
-
-2. Klicka **Öppna**.
-
-3. Markera en eller flera kartor.
-
-4. Klicka **Snabbpublicering**.
+1. Klicka **Öppna**.
+1. Markera en eller flera kartor.
+1. Klicka **Snabbpublicering**.

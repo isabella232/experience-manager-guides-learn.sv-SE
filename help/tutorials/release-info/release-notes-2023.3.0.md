@@ -1,21 +1,21 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, mars 2023-utgåvan
-description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 07709048f560a77b923436d990c831a5f8b907e3
+description: Mars-utgåvan av Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: d762cccc4a8f89eb91a1a8eb2c1410a7e0358b85
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '588'
+ht-degree: 1%
 
 ---
 
 # Mars-utgåvan av Adobe Experience Manager Guides as a Cloud Service
 
-## Uppgradera till den senaste versionen
+## Uppgradera till mars-utgåvan
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
 2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.3.242.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till den senaste versionen av AEM Guides as a Cloud Service.
+3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till mars-utgåvan av AEM Guides as a Cloud Service.
 
 ## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM stödlinjer as a Cloud Service)
 
@@ -52,7 +52,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 ## Nya funktioner och förbättringar
 
-AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i den senaste versionen:
+AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i mars 2023-versionen:
 
 ### Öppna och spela upp video- eller ljudfiler i Web Editor
 

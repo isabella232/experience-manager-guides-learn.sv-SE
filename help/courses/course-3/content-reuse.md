@@ -2,7 +2,7 @@
 title: Återanvändning av innehåll
 description: Återkommande användning av funktioner i AEM
 exl-id: 453c5a09-0bcf-4760-87fc-df3ea4a3a30a
-source-git-commit: 1c4d278a05f2612bc55ce277efb5da2e6a0fa9a9
+source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 1%
@@ -21,17 +21,17 @@ När en ändring görs i ett återanvändbart källämne uppdateras informatione
 
 1. Navigera till **Databas**.
 
-2. Klicka på **snabbmeny** bredvid mappen för återanvändning.
+1. Klicka på **snabbmeny** bredvid mappen för återanvändning.
 
-3. Välj **Skapa > Dita-ämne**.
+1. Välj **Skapa > Dita-ämne**.
 
-4. Fyll i fälten i dialogrutan Skapa nytt ämne. Till exempel:
+1. Fyll i fälten i dialogrutan Skapa nytt ämne. Till exempel:
 
    ![Bekräftelse](images/lesson-8/new-topic-dialog.png)
 
-5. Klicka [!UICONTROL **Skapa**].
+1. Klicka [!UICONTROL **Skapa**].
 
-6. Lägg till innehåll i ämnet efter behov.
+1. Lägg till innehåll i ämnet efter behov.
 
 ## Lägga till ett nytt återanvändbart element i ett ämne
 
@@ -41,24 +41,24 @@ Det finns flera metoder för att lägga till återanvändbara element. Här är 
 
 1. Klicka på ämnet på en giltig plats.
 
-2. Välj **Infoga återanvändbart innehåll** ikonen i det övre verktygsfältet.
+1. Välj **Infoga återanvändbart innehåll** ikonen i det övre verktygsfältet.
 
    ![Bekräftelse](images/lesson-8/insert-reuse-icon.png)
 
-3. I dialogrutan Återanvänd innehåll klickar du på [!UICONTROL **Mapp**] ikon.
+1. I dialogrutan Återanvänd innehåll klickar du på [!UICONTROL **Mapp**] ikon.
 
-4. Navigera till önskad mapp.
+1. Navigera till önskad mapp.
 
-5. Välj ett ämne med återanvändbara komponenter.
+1. Välj ett ämne med återanvändbara komponenter.
 Till exempel:
 
    ![Bekräftelse](images/lesson-8/reusable-topic.png)
 
-6. Klicka [!UICONTROL **Välj**].
+1. Klicka [!UICONTROL **Välj**].
 
-7. Välj en specifik komponent som ska återanvändas.
+1. Välj en specifik komponent som ska återanvändas.
 
-8. Klicka [!UICONTROL **Välj**].
+1. Klicka [!UICONTROL **Välj**].
 
 Det återanvändbara elementet har nu infogats i avsnittet.
 
@@ -66,19 +66,19 @@ Det återanvändbara elementet har nu infogats i avsnittet.
 
 1. Navigera till **Återanvändbart innehåll** till vänster.
 
-2. Klicka på [!UICONTROL **Lägg till**] på panelen Återanvändbart innehåll.
+1. Klicka på [!UICONTROL **Lägg till**] på panelen Återanvändbart innehåll.
 
    ![Bekräftelse](images/lesson-8/reuse-contents-icon.png)
 
-3. Navigera till en mapp.
+1. Navigera till en mapp.
 
-4. Välj ett eller flera specifika ämnen.
+1. Välj ett eller flera specifika ämnen.
 
-5. Klicka [!UICONTROL **Lägg till**].
+1. Klicka [!UICONTROL **Lägg till**].
 
-6. Expandera från panelen Återanvändbart innehåll **Elementöversikt**.
+1. Expandera från panelen Återanvändbart innehåll **Elementöversikt**.
 
-7. Dra och släpp ett element i ämnet på en giltig plats.
+1. Dra och släpp ett element i ämnet på en giltig plats.
 
 Det återanvändbara elementet har nu infogats i avsnittet.
 
@@ -88,12 +88,12 @@ Den post du just skapade är ett återanvändbart element. Därför krävs ett I
 
 1. Klicka inuti posten.
 
-2. Klicka på listrutan under Attribut i panelen Innehållsegenskaper.
+1. Klicka på listrutan under Attribut i panelen Innehållsegenskaper.
 
-3. Välj **ID**.
+1. Välj **ID**.
 
-4. Ange ett logiskt namn för värdet.
+1. Ange ett logiskt namn för värdet.
 
-5. Spara eller versionshantera ämnet så att ändringen återspeglas i databasen.
+1. Spara eller versionshantera ämnet så att ändringen återspeglas i databasen.
 
 ID:t och värdet har tilldelats elementet.
