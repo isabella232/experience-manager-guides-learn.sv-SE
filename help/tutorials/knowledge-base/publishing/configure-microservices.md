@@ -1,9 +1,10 @@
 ---
 title: Konfigurera ny mikrotjänstbaserad publicering för AEM Guides as a Cloud Service
 description: Lär dig hur du konfigurerar ny mikrotjänstbaserad publicering för AEM.
-source-git-commit: c2981b5635353eb84c9e46a03de1b1ed07aa5bf3
+exl-id: 92e3091d-6337-4dc6-9609-12b1503684cd
+source-git-commit: 95c89acd02b798d42c817b52f6f8e0710a0abb76
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,6 +14,10 @@ ht-degree: 0%
 Med den nya publiceringsmikrotjänsten kan användare köra stora publiceringsarbetsbelastningar samtidigt AEM Guides as a Cloud Service och utnyttja den branschledande Adobe I/O Runtime serverlösa plattform.
 
 För varje publiceringsbegäran AEM Guides as a Cloud Service körs en separat behållare som skalas vågrätt efter användarens önskemål. Detta ger användarna möjlighet att köra flera publiceringsbegäranden och få bättre prestanda än de stora AEM på plats-servrarna.
+
+>[!NOTE]
+>
+> För närvarande stöder den mikrotjänstbaserade publiceringen i AEM endast utdata från PDF med hjälp av Native PDF-publicering eller via DITA-OT. Vi kommer att lägga till stöd för mikrotjänstbaserad publicering för fler utdatatyper i framtida versioner.
 
 Eftersom den nya molnpubliceringstjänsten skyddas av Adobe IMS JWT-baserad autentisering bör kunderna följa stegen nedan för att integrera sina miljöer med Adobe säkra tokenbaserade autentiseringsarbetsflöden och börja använda den nya molnbaserade, skalbara publiceringslösningen.
 
@@ -102,6 +107,8 @@ När detta är klart bör du kunna använda den nya mikrotjänstbaserade molnpub
 **Fil**: `com.adobe.fmdita.publishworkflow.PublishWorkflowConfigurationService.xml`
 
 **Innehåll**:
+* `dxml.use.publish.microservice`: Växla för att aktivera mikrotjänstbaserad PDF-publicering med DITA-OT
+* `dxml.use.publish.microservice.native.pdf`: Växla för att aktivera mikrotjänstbaserad publicering i PDF
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,5 +116,6 @@ När detta är klart bör du kunna använda den nya mikrotjänstbaserade molnpub
           jcr:primaryType="sling:OsgiConfig"
           dxml.publish.microservice.url="https://adobeioruntime.net/api/v1/web/543112-guidespublisher/default/publishercaller.json"
           dxml.use.publish.microservice="{Boolean}true"
+          dxml.use.publish.microservice.native.pdf="{Boolean}true"
 />
 ```
