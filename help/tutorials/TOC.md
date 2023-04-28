@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: d6edeaf6b0d309d1e8301b1695edbc5b2f953d7a
+source-git-commit: a2f656c4f547e215a8bbb927f20f8e97d29ef29d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '733'
+ht-degree: 3%
 
 ---
 
@@ -182,15 +182,19 @@ ht-degree: 0%
       + [Hantera innehåll med hjälp av baslinjer](./knowledge-base/expert-sessions/baselines-dec22.md)
       + [Skapa webbaserat innehåll](./knowledge-base/expert-sessions/webbased-authoring-jan2023.md)
       + [Grundläggande publicering i PDF](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
-   + Publicering{#publishing}
-      + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
+      + [Rapporter i AEM](./knowledge-base/expert-sessions/basic-reports-mar2023.md)
+      + [Innehåll och mallar](./knowledge-base/expert-sessions/content-and-template-setup-apr2023.md)
    + Artiklar {#kb-articles}
       + Redigering {#authoring}
          + Webeditor {#webeditor}
+            + Anpassa {#customizing}
+               + [Lägg till anpassad knapp i verktygsfältet](./knowledge-base/kb-articles/authoring/webeditor/customization/add-custom-button-to-webeditor-toolbar.md)
+               + [Lägg till anpassade format i webbredigeraren](./knowledge-base/kb-articles/authoring/webeditor/customization/add-custom-styles-to-webeditor.md)
             + Schematron {#schematron}
                + [Schematronvalidering](./knowledge-base/kb-articles/authoring/webeditor/schematron/vailidating-with-schematron.md)
       + Publicering {#publishing}
          + [Configuring AEM Environment for Native PDF publishing](./knowledge-base/kb-articles/publishing/configuring-aem-environment-for-native-pdf-publishing.md)
          + [FMPS och stödlinjer](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
+         + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
       + Arbetsflöden {#workflows}
          + [Arbetsflöde efter generering](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
