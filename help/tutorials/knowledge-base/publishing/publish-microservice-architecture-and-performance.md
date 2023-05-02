@@ -1,9 +1,9 @@
 ---
 title: Cloud Publishing Microservice Architecture and Performance
 description: Förstå hur den nya mikrotjänsten möjliggör skalbar publicering på AEMaaCS.
-source-git-commit: c67cc61938b407c3b11c5f793c6becdc9e015670
+source-git-commit: a8466a16cea7df7757d15005baaf73a39c7952ea
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Cloud Publishing Microservice Architecture and Performance Analysis
 
-Den här artikeln innehåller information om arkitekturen och vissa prestandanummer för den nya molnpubliceringsmikrotjänsten.
+I den här artikeln får du information om arkitekturen och prestandanalen i den nya molnpubliceringsmikrotjänsten.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Resursbegränsningen var den främsta anledningen att komma på en dedikerad tj�
 
 ## Introduktion till den nya arkitekturen
 
-Tjänsten använder Adobe branschledande molnlösningar som App Builder, IO Eventing, IMS för att skapa ett serverlöst erbjudande. Dessa tjänster är i sig baserade på de allmänt accepterade branschstandarderna som Kubernetes, docker.
+Tjänsten använder Adobe branschledande molnlösningar som App Builder, IO Eventing, IMS för att skapa ett serverlöst erbjudande. Dessa tjänster bygger i sig på de allmänt vedertagna branschstandarderna Kubernetes och Docker.
 
 Varje begäran till den nya publiceringsmikrotjänsten körs i en isolerad dockningsbehållare som endast kör en publiceringsbegäran åt gången. Flera nya behållare skapas automatiskt om nya publiceringsbegäranden tas emot. Denna konfiguration med en enda behållare per begäran gör att mikrotjänsten kan leverera bästa prestanda till kunderna utan att medföra några säkerhetsrisker. De här behållarna tas bort när publiceringen är klar och frigör därmed resurser som används.
 
@@ -42,9 +42,9 @@ All kommunikation skyddas av Adobe IMS med JWT-baserad autentisering och auktori
 
 ## Resultatanalys
 
-I det här avsnittet visas mikrotjänstens prestandanummer. Observera att den gamla molnarkitekturen hade problem med att publicera stora kartor eller att köra flera parallella publiceringar. I det här avsnittet jämförs mikrotjänstens prestandanummer med AEM.
+I det här avsnittet visas mikrotjänstens prestandanummer. Den jämför mikrotjänstens prestanda med AEM Guides on-prem-erbjudanden eftersom den gamla molnarkitekturen hade problem med samtidig publicering eller publicering av mycket stora kartor.
 
-Om du publicerar en stor karta på plats kanske du måste justera Java-heap-parametrarna, annars kan du råka ut för minnesfel. I molnet är mikrotjänsten redan profilerad och har optimalt Java-heap och andra konfigurationer som anges i paketet.
+Om du publicerar en stor karta lokalt kanske du måste justera Java-heap-parametrarna, annars kan du råka ut för minnesfel. I molnet är mikrotjänsten redan profilerad och har optimala Java-heap och andra konfigurationer direkt.
 
 ### Köra en publicering i molnet jämfört med lokalt
 
@@ -64,18 +64,18 @@ Om du publicerar en stor karta på plats kanske du måste justera Java-heap-para
 
 * Cloud
 
-   Nya Publishing Microservice lyser i det här scenariot. Som du ser i bilden nedan kan molnet publicera flera samtidiga publiceringsjobb utan att publiceringstiden ökar nämnvärt.
+   Ny publiceringsmikrotjänst visas i det här scenariot. Som du ser i bilden nedan kan molnet publicera flera samtidiga publiceringsjobb utan att publiceringstiden ökar nämnvärt.
 
    <img src="assets/cloud_bulk_publish.png" alt="fliken Projekt" width="600">
 
 * Lokalt
 
-   Om parallell publicering körs på plats försämras prestandan avsevärt. Den här prestandasänkningen är allvarligare om utgivare publicerar ännu fler kartor samtidigt.
+   Om samtidig publicering körs på en lokal server försämras prestandan avsevärt. Den här prestandasänkningen är allvarligare om utgivare publicerar ännu fler kartor samtidigt.
 
    <img src="assets/onprem_bulk_publish.png" alt="fliken Projekt" width="600">
 
 ## Ytterligare fördelar
 
-Vissa sökvägar för varje publiceringsbegäran måste köras på den AEM instansen för att hämta korrekt publiceringsinnehåll som ska skickas till mikrotjänsten. Den nya molnarkitekturen använder AEM jobb i stället för AEM arbetsflöden, vilket var fallet i den gamla arkitekturen. Med den här ändringen kan AEM guidade administratörer konfigurera köinställningar för molnpublicering separat utan att påverka andra AEM eller arbetsflödeskonfigurationer.
+En del av varje publiceringsbegäran måste köras på den AEM instansen för att hämta korrekt publiceringsinnehåll som ska skickas till mikrotjänsten. Den nya molnarkitekturen använder AEM jobb i stället för AEM arbetsflöden, vilket var fallet i den gamla arkitekturen. Med den här ändringen kan AEM guidade administratörer konfigurera köinställningar för molnpublicering separat utan att påverka andra AEM eller arbetsflödeskonfigurationer.
 
 Mer information om hur du konfigurerar den nya publiceringsmikrotjänsten finns här: [Konfigurera Microservice](configure-microservices.md)

@@ -1,7 +1,8 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, aprilversion 2023
 description: Den senaste versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 77b118655ad8e37e00b0371497e4a2578ddd276e
+exl-id: 3b09f0b3-cfa4-422d-91b7-733ab1c1896c
+source-git-commit: cf612da41f79b0bf9da4c4d7454a0e3c86af7a4c
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 1%
@@ -66,7 +67,7 @@ Du kan importera en XMP och AEM stödlinjer kan välja information från filen. 
 
 ### Förbättrad dispositionsvy
 
-AEM innehåller en improviserad dispositionsvy där du får den hierarkiska vyn över elementen som används i dokumentet.
+AEM innehåller en förbättrad panel för dispositionsvy där du kan se den hierarkiska vyn över de element som används i dokumentet.
 
 <img src="assets/select-element-content-outline-view_cs.png" alt=" inbyggda PDF-metadata">
 
@@ -104,4 +105,3 @@ De buggar som har åtgärdats i olika områden listas nedan:
 Adobe har identifierat följande kända fel i AEM Guide as a Cloud Service April 2023.
 
 * PDF | Gamla metadata fylls inte i förrän förinställningen för utdata öppnas explicit.
-
