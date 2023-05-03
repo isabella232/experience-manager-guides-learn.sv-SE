@@ -1,7 +1,7 @@
 ---
 title: Cloud Publishing Microservice Architecture and Performance
 description: Förstå hur den nya mikrotjänsten möjliggör skalbar publicering på AEMaaCS.
-source-git-commit: a8466a16cea7df7757d15005baaf73a39c7952ea
+source-git-commit: 2e45f132ced5ac29118a7301f104bedc03c93253
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Resursbegränsningen var den främsta anledningen att komma på en dedikerad tj�
 
 Tjänsten använder Adobe branschledande molnlösningar som App Builder, IO Eventing, IMS för att skapa ett serverlöst erbjudande. Dessa tjänster bygger i sig på de allmänt vedertagna branschstandarderna Kubernetes och Docker.
 
-Varje begäran till den nya publiceringsmikrotjänsten körs i en isolerad dockningsbehållare som endast kör en publiceringsbegäran åt gången. Flera nya behållare skapas automatiskt om nya publiceringsbegäranden tas emot. Denna konfiguration med en enda behållare per begäran gör att mikrotjänsten kan leverera bästa prestanda till kunderna utan att medföra några säkerhetsrisker. De här behållarna tas bort när publiceringen är klar och frigör därmed resurser som används.
+Varje begäran till den nya publiceringsmikrotjänsten körs i en isolerad dockningsbehållare som endast kör en publiceringsbegäran åt gången. Flera nya behållare skapas automatiskt om nya publiceringsbegäranden tas emot. Denna konfiguration med en enda behållare per begäran gör att mikrotjänsten kan leverera bästa prestanda till kunderna utan att medföra några säkerhetsrisker. Behållarna tas bort när publiceringen är klar och frigör därmed oanvända resurser.
 
 All kommunikation skyddas av Adobe IMS med JWT-baserad autentisering och auktorisering och körs via HTTPS.
 

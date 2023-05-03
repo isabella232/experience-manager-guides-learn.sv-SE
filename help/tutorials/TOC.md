@@ -2,10 +2,10 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 954c58e92e3d90b3b45bda573d581f5201d439ae
+source-git-commit: 01c84074bc31898d2a1481d0ed5ddda0a8dba2c0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '737'
+ht-degree: 3%
 
 ---
 
@@ -195,7 +195,7 @@ ht-degree: 0%
       + Publicering {#publishing}
          + [Configuring AEM Environment for Native PDF publishing](./knowledge-base/kb-articles/publishing/configuring-aem-environment-for-native-pdf-publishing.md)
          + [FMPS och stödlinjer](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
-         + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
          + [Microservice-arkitektur och prestanda](./knowledge-base/publishing/publish-microservice-architecture-and-performance.md)
+         + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
       + Arbetsflöden {#workflows}
          + [Arbetsflöde efter generering](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
