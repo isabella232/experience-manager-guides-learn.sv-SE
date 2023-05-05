@@ -1,13 +1,13 @@
 ---
 title: Använd etiketter
 description: Lär dig hur du använder etiketter
-source-git-commit: 331871308035441f047b1ed588215b586daf3d28
+exl-id: 3ea56d06-537f-4bfd-922d-df1f23e61a20
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # Använd etiketter {#id164JBG0M0T1}
 
@@ -33,8 +33,7 @@ Utför följande steg för att lägga till en etikett i ditt ämne:
 
    Etiketterna visas i versionshistoriken för det valda ämnet. På följande skärmbild visas etiketterna *x.x-release* och *Användarhandbok* läggs till i den markerade versionen av ämnet.
 
-
-![](images/labels.png)
+   ![](images/labels.png){width="300" align="left"}
 
 >[!NOTE]
 >
@@ -49,12 +48,11 @@ Så här tar du bort en etikett:
 
    I versionshistoriken ser du alla versioner av ett ämne och tillhörande etiketter. Följande bild visar ett exempel på olika versioner av ett ämne och en version har etiketter tillagda.
 
-   ![](images/labels.png)
+   ![](images/labels.png){width="300" align="left"}
 
 1. Klicka på knappen Ta bort \(**X**\) om du vill ta bort etiketten.
 
-   ![](images/delete-labels.png)
+   ![](images/delete-labels.png){width="300" align="left"}
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

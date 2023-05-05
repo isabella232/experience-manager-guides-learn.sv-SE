@@ -1,13 +1,13 @@
 ---
 title: Generera utdata från panelen Databas
 description: Lär dig hur du genererar utdata från panelen Databas
-source-git-commit: a78a775406c07c1ec12665cdb00f65ca91f03f95
+exl-id: 3dea81c3-1e57-4f14-9afe-6b075bd410e0
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
 
 ---
-
 
 # Generera utdata från panelen Databas eller panelen Kartvy {#id218CL6010AE}
 
@@ -28,16 +28,16 @@ Utför följande steg för att generera utdata för ett eller flera ämnen på d
 1. I **Upphovsman** markerar du det ämne i DITA-kartan som du vill publicera.
 
 1. Välj **Snabbgenerering** på Alternativ-menyn för det markerade ämnet.
-   ![](images/select-topic-options-menu_cs.png)
+   ![](images/select-topic-options-menu_cs.png){width="650" align="left"}
 
 1. Om du vill publicera ett ämne som används i en enskild DITA-karta väljer du förinställningarna för den karta som du vill publicera och klickar på **Generera**.
-   ![](images/select-preset_cs.png)
+   ![](images/select-preset_cs.png){width="350" align="left"}
 
 1. Du ser status för genereringsprocessen för utdata. Om du vill visa utdata för du muspekaren över avsnittet och klickar på Visa utdata.
 
 1. Om du har ett gemensamt ämne som används i flera ämnen, väljer du de olika DITA-kartorna och de utdataförinställningar som du vill använda för att publicera och klickar på **Generera.**
 
-   ![](images/select-preset-multiple-maps_cs.png)
+   ![](images/select-preset-multiple-maps_cs.png){width="350" align="left"}
 
 1. Du ser status för genereringsprocessen för utdata.
 
@@ -46,7 +46,7 @@ Utför följande steg för att generera utdata för ett eller flera ämnen på d
    - **Karta**: Visar DITA-kartor som innehåller det markerade ämnet.
    - **Status**: Visar publiceringsstatus för varje ämne.
 Om du vill visa utdata för du muspekaren över avsnittet och klickar på Visa utdata.
-      ![](images/output-multiple-maps_cs.png)
+      ![](images/output-multiple-maps_cs.png){width="800" align="left"}
 
 
 ## Generera utdata för en DITA-karta från Web Editor
@@ -57,7 +57,7 @@ Utför följande steg för att generera utdata för hela DITA-kartan:
 
 1. Välj **Snabbgenerering** på Alternativ-menyn på DITA-kartan.
 
-   ![](images/select-map-options-menu_cs.png)
+   ![](images/select-map-options-menu_cs.png){width="650" align="left"}
 
 1. Välj de förinställningar för DITA-kartan som du vill publicera och klicka på **Generera.**
 
@@ -78,10 +78,9 @@ Utför följande steg för att generera utdata för mer än ett avsnitt på DITA
    >
    > Du ser bara de förinställningar för utdata i den aktuella DITA-kartan som innehåller alla valda avsnitt.
 
-   ![](images/generate-output-multiple-topics_cs.png)
+   ![](images/generate-output-multiple-topics_cs.png){width="650" align="left"}
 
 1. Du ser statusen för utdatagenereringsprocessen.Håll muspekaren över avsnittet och klicka på Visa utdata om du vill visa utdata.
 
 
 **Överordnat ämne:**[ Artikelbaserad publicering från webbredigeraren](web-editor-article-publishing.md)
-

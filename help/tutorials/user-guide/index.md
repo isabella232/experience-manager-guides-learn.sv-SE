@@ -1,5 +1,5 @@
 ---
-source-git-commit: 09a77f4acac6902935c587af9a0568cd8761810f
+source-git-commit: 834e67fa1f015b86082b42c4213976ee24a403d5
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
          - [Arbeta med den avancerade kartredigeraren](map-editor-advanced-map-editor.md)
          - [Arbeta med den grundläggande kartredigeraren](map-editor-basic-map-editor.md)
          - [Andra funktioner i kartredigerarna](map-editor-other-features.md)
-      - [DITAVAL editor](id17C5E0U0OQE.md#id17C5E0U0OQE)
+      - [DITAVAL editor](ditaval-editor.md#ditaval-editor)
    - [Skapa innehåll med skrivbordsverktyg](author-desktop-tools.md)
       - [Arbeta med FrameMaker](author-desktop-framemaker.md)
       - [Arbeta med syre](author-desktop-oxygen.md)

@@ -1,13 +1,13 @@
 ---
 title: Skapa förinställningar från Web Editor
 description: Lär dig hur du skapar förinställningar för utdata från Web Editor
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 7fde0057-06a5-428e-a91b-9e9386a56270
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # Skapa förinställningar från Web Editor {#id218CL400JW3}
 
@@ -27,7 +27,7 @@ Följ de här stegen för att skapa förinställningar för DITA-kartan:
 
 1. I **Utdata** väljer du ikonen + för att skapa en förinställning för DITA-kartan.
 
-   ![](images/output-tab-preset_cs.png)
+   ![](images/output-tab-preset_cs.png){width="350" align="left"}
 
 1. Ange namnet på förinställningen i dialogrutan Lägg till förinställning och klicka sedan på **Lägg till**.
 
@@ -43,20 +43,19 @@ Följ de här stegen för att skapa förinställningar för DITA-kartan:
    1. Från **Artiklar** väljer du de ämnen som du vill generera utdata för.
 1. Välj **Generera förinställning** längst upp för att generera utdata.
 
-   ![](images/add-preset-articles-tab_cs.png)
+   ![](images/add-preset-articles-tab_cs.png){width="800" align="left"}
 
 1. Du ser status för genereringsprocessen för utdata. The **Ämnen** -kolumnen listar de ämnen som utdata genereras för när **Status** -kolumnen visar publiceringsstatusen för varje ämne.
 
    Om du vill visa utdata för du muspekaren över avsnittet och klickar på Visa utdata.
 
-   ![](images/add-preset-output-generated_cs.png)
+   ![](images/add-preset-output-generated_cs.png){width="800" align="left"}
 
 
 >[!NOTE]
 >
 > Du kan också redigera, byta namn på, duplicera eller ta bort en befintlig förinställning på Alternativ-menyn.
 
-![](images/edit-preset_cs.png)
+![](images/edit-preset_cs.png){width="550" align="left"}
 
 **Överordnat ämne:**[ Artikelbaserad publicering från webbredigeraren](web-editor-article-publishing.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Bekanta dig med Web Editors funktioner
 description: Lär dig hur du känner till Web Editor-funktionerna
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
+source-git-commit: f7eea65f58927527dbd90138a653f75ee181d141
 workflow-type: tm+mt
 source-wordcount: '14387'
 ht-degree: 0%
 
 ---
-
 
 # Bekanta dig med Web Editors funktioner {#id176NC500V5Z}
 

@@ -2,7 +2,7 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 01c84074bc31898d2a1481d0ed5ddda0a8dba2c0
+source-git-commit: 0cc1e12382fb90784ea78cb500bf0a24d6ec50df
 workflow-type: tm+mt
 source-wordcount: '737'
 ht-degree: 3%
@@ -86,7 +86,7 @@ ht-degree: 3%
                + [Arbeta med den grundläggande kartredigeraren](./user-guide/map-editor-basic-map-editor.md)
                + [Andra funktioner i kartredigerarna](./user-guide/map-editor-other-features.md)
             + DITAVAL Editor {#ditaval-editor}
-               + [Arbeta med DITAVAL-redigeraren](./user-guide/id17C5E0U0OQE.md)
+               + [Arbeta med DITAVAL-redigeraren](./user-guide/ditaval-editor.md)
          + Skrivbordsverktyg för innehåll {#author-using-desktop-tools}
             + [Skapa innehåll med skrivbordsverktyg](./user-guide/author-desktop-tools.md)
             + [Arbeta med FrameMaker](./user-guide/author-desktop-framemaker.md)

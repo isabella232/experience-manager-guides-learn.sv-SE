@@ -1,13 +1,13 @@
 ---
 title: Tilldela om granskningsuppgift med meddelande
 description: Lär dig hur du omtilldelar en granskningsåtgärd med hjälp av ett meddelande
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: d20865a8-2c30-4bd7-8594-64e0ccdb665a
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
 
 ---
-
 
 # Tilldela om granskningsuppgift med meddelande {#id21BNH03M0KS}
 
@@ -28,7 +28,7 @@ Utför följande steg för att omtilldela en granskningsåtgärd från inkorgsme
    >
    > Granskaren måste ha behörighet att tilldela om och vara en del av användar-administratörsgruppen.
 
-   ![](images/reassign-user-inbox.png)
+   ![](images/reassign-user-inbox.png){width="800" align="left"}
 
 1. Välj **Tilldela igen**.
 
@@ -37,4 +37,3 @@ När granskningsaktiviteten har omtilldelats visas namnet på granskaren som upp
 Den tilldelade granskaren får ett meddelande i Inkorgen om den omtilldelade granskningsuppgiften.
 
 **Överordnat ämne:**[ Granska ämnen och kartor](review.md)
-

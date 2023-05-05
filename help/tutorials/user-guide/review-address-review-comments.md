@@ -1,13 +1,13 @@
 ---
 title: Adressgranskningskommentarer
 description: Lär dig hur du hanterar granskningskommentarer
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 04f6114d-601f-4e92-a303-18a6dd309a49
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
 
 ---
-
 
 # Adressgranskningskommentarer {#id2056B0X0KBI}
 
@@ -19,7 +19,7 @@ En författare kan adressera kommentarer i ett dokument från Web Editor. Visuel
 >
 > När du adresserar granskningskommentarer \(för ett aktivt granskningsdokument\) ska du se till att du inte öppnar ämnet i granskningen på flera flikar med full taggvy aktiverat, inte växla mellan redigeringsläget och källvyn.
 
-![](images/comments-page-web-editor_cs.png)
+![](images/comments-page-web-editor_cs.png){width="650" align="left"}
 
 I webbredigeringsläget innehåller den högra panelen ikonerna Granska och Spårade ändringar. Granskningspanelen visar alla kommentarer som granskarna har gjort i dokumentet. På panelen Spårade ändringar visas status för alla infogade och borttagna kommentarer i dokumentet.
 
@@ -41,11 +41,11 @@ I webbredigeringsläget innehåller den högra panelen ikonerna Granska och Spå
 
    Om du vill infoga den föreslagna ändringen \(infoga eller ta bort\) en i taget högerklickar du bara på kommentaren i innehållet och väljer Acceptera ändring eller Ignorera ändring. Beroende på vad du väljer godkänns eller avvisas kommentaren. Om det finns en godtagen kommentar läggs innehållet till i innehållet. och om det avvisas tas det bort från innehållet. Statusen för kommentaren ändras också på granskningspanelen.
 
-   ![](images/import-comment-accept-web-editor_cs.png)
+   ![](images/import-comment-accept-web-editor_cs.png){width="800" align="left"}
 
    Du kan också använda granskningsfunktionen på den högra panelen för att godkänna eller avvisa kommentarer. Om du klickar på en kommentar markeras kommentaren i dokumentet.
 
-   ![](images/changes-tab_cs.png)
+   ![](images/changes-tab_cs.png){width="800" align="left"}
 
    >[!IMPORTANT]
    >
@@ -61,4 +61,3 @@ I webbredigeringsläget innehåller den högra panelen ikonerna Granska och Spå
 
 
 **Överordnat ämne:**[ Granska ämnen och kartor](review.md)
-

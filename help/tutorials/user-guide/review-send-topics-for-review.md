@@ -1,13 +1,13 @@
 ---
 title: Skicka ämnen för granskning
 description: Lär dig hur du skickar ämnen för granskning
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 7a9b36ad-44d4-4952-9906-d95feb95d0c6
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '2733'
 ht-degree: 0%
 
 ---
-
 
 # Skicka ämnen för granskning {#id199RD0S035Z}
 
@@ -43,7 +43,7 @@ Så här skapar du en granskningsuppgift och skickar ämnen för granskning:
 
 1. Klicka på ikonen Välj i snabbåtgärden och välj de ämnen som du vill skicka för granskning.
 
-   ![](images/select-asset-62.png)
+   ![](images/select-asset-62.png){width="300" align="left"}
 
 1. Klicka på i verktygsfältet **Skapa granskningsuppgift**. Sidan där granskningsaktiviteten skapas visas.
 
@@ -51,7 +51,7 @@ Så här skapar du en granskningsuppgift och skickar ämnen för granskning:
    >
    > Du kan skapa en granskningsåtgärd för endast de ämnen som har en revision. Om det markerade ämnet inte har någon revidering visas ett meddelande.
 
-   ![](images/create-review-task-023.png)
+   ![](images/create-review-task-023.png){width="650" align="left"}
 
 1. Ange **Titel** för uppgiften och välj en DITA **Projekt** i listrutan.
 
@@ -91,7 +91,7 @@ Så här skapar du en granskningsuppgift och skickar ämnen för granskning:
 
    Sidan Innehåll visas.
 
-   ![](images/content_page_review.png)
+   ![](images/content_page_review.png){width="800" align="left"}
 
 1. På sidan Innehåll väljer du en version av ämnet som du vill dela för granskning.
 
@@ -112,7 +112,7 @@ Så här skapar du en granskningsuppgift och skickar ämnen för granskning:
 
    Sidan Granskare visas där du kan lägga till eller ta bort granskare. Som standard läggs granskarna som läggs till i fältet Tilldela till automatiskt till varje ämne som markeras för granskningen.
 
-   ![](images/add-reviewers-topics.png)
+   ![](images/add-reviewers-topics.png){width="650" align="left"}
 
 1. På sidan Granskare kan du lägga till eller ta bort granskare. Följande åtgärder är tillgängliga på sidan Granskare:
 
@@ -208,7 +208,7 @@ Så här skickar du ett eller flera avsnitt tillsammans med kartfilen för grans
 
    Innehållssidan visas med alla ämnen som kartfilen refererar till. Om din DITA-karta innehåller kapslade kartor listas även ämnen från kapslade kartor här.
 
-   ![](images/content-page-map-review.png)
+   ![](images/content-page-map-review.png){width="800" align="left"}
 
 1. På sidan Innehåll väljer du en version av ämnet som du vill dela för granskning.
 
@@ -265,4 +265,3 @@ Så här skickar du ett eller flera avsnitt tillsammans med kartfilen för grans
 Ett e-postmeddelande skickas till alla granskare som meddelar att de har tilldelats ämnen för granskning. E-postmeddelandet innehåller en direkt länk som de kan klicka på och komma åt ämnet i ett webbläsarfönster. Ämnen tillsammans med DITA-kartan öppnas i granskningsläget.
 
 **Överordnat ämne:**[ Granska ämnen och kartor](review.md)
-

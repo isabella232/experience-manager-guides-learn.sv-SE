@@ -1,13 +1,13 @@
 ---
 title: Skapa en karta
 description: Lär dig hur du skapar en karta
-source-git-commit: 66915827a0b169069cc482763f0f50b9e9b6aa64
+exl-id: d35ee09f-f951-4866-a2b1-e4b19f76e7a1
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en karta {#id176FEN0D05Z}
 
@@ -25,7 +25,7 @@ Så här skapar du en kartfil:
    >
    > Hur ämnen hänvisas till i en kartfil beror på kartmallen. Om du till exempel väljer mallen Karta refererar ämnet till \(`topicref`\) används för att referera till ämnen. Om det är en bokmapp skapas ämnesreferenser med `chapter` i DITA.
 
-   ![](images/map-template.png)
+   ![](images/map-template.png){width="650" align="left"}
 
 1. Ange kartan på sidan Egenskaper **Titel**.
 
@@ -41,7 +41,7 @@ Så här skapar du en kartfil:
 
    Alla nya mappningsfiler som du skapar från resursgränssnittet **Skapa** \> **DITA-karta** eller webbredigeraren tilldelas ett unikt mappnings-ID. Dessutom sparas den nya kartan som den senaste arbetskopian i DAM. Om du inte sparar en revision av en nyligen skapad karta visas inget versionsnummer i Tidigare versioner. Om du öppnar kartan för redigering visas versionsinformationen i det övre högra hörnet på mappningsfilens flik:
 
-   ![](images/first-version-map-none.png)
+   ![](images/first-version-map-none.png){width="650" align="left"}
 
    Versionsinformationen för en nyligen skapad karta visas som *ingen*. När du sparar en ny version tilldelas den ett versionsnummer som 1.0. Mer information om hur du sparar en ny version finns i [Spara som ny version](web-editor-features.md#save-as-new-version-id209ME400GXA).
 
@@ -53,4 +53,3 @@ Så här skapar du en kartfil:
 
 
 **Överordnat ämne:**[ Arbeta med kartredigeraren](map-editor.md)
-

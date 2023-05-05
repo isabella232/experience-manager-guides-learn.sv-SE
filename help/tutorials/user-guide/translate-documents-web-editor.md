@@ -1,13 +1,13 @@
 ---
 title: Översätta dokument från Web Editor
 description: Lär dig hur du översätter dokument från Web Editor
-source-git-commit: 331871308035441f047b1ed588215b586daf3d28
+exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '1517'
 ht-degree: 0%
 
 ---
-
 
 # Översätta dokument från Web Editor {#id21BKF0Z0YZF}
 
@@ -46,7 +46,7 @@ Innan du utför stegen i den här proceduren måste du se till att du har skapat
    >
    > Språk visar endast de språk för vilka en språkmapp skapas parallellt med källspråket. En språkmapp som skapats på en annan nivå, t.ex. en nivå ned från källspråksmappen, visas inte heller. Se till att du skapar alla målspråksmappar på samma nivå som källspråksmappen.
 
-   ![](images/translation-languages.png)
+   ![](images/translation-languages.png){width="350" align="left"}
 
 1. Du kan även använda följande alternativ:
 
@@ -72,11 +72,11 @@ Innan du utför stegen i den här proceduren måste du se till att du har skapat
    - **Måletikett**: Etikett för den valda versionen av målfilen
 1. Klicka **Skicka för översättning** i det övre högra hörnet.
 
-   ![](images/translation-send.png)
+   ![](images/translation-send.png){width="800" align="left"}
 
 1. Välj **Skapa ett nytt översättningsprojekt**.
 
-   ![](images/translation-project-types.png)
+   ![](images/translation-project-types.png){width="350" align="left"}
 
    Förutom ett nytt översättningsprojekt kan du även välja mellan följande alternativ:
 
@@ -107,7 +107,7 @@ Om du vill lägga till källversionsetiketten i målkopian måste systemadminist
 
 Om du till exempel har källfiler med versionsetiketten `Release 1.0` som används på dem kan du också skicka källetiketten \(`Release 1.0`\) till den översatta filen.
 
-![](images/translation-pass-source-label.png)
+![](images/translation-pass-source-label.png){width="650" align="left"}
 
 >[!NOTE]
 >
@@ -117,7 +117,7 @@ Om du till exempel har källfiler med versionsetiketten `Release 1.0` som använ
 
 AEM innehåller en funktion för att kontrollera skillnaderna mellan den valda versionen och den senaste översatta källversionen av avsnitten. Du kan välja att översätta **Slut på synkronisering** filer baserat på gjorda ändringar.
 
-![](images/translation-version-diff.png)
+![](images/translation-version-diff.png){width="800" align="left"}
 
 Välj **Visa differens** icon \(![](images/show-difference-icon.svg)\) om du vill se skillnaderna mellan den senaste översatta versionen och den aktuella versionen av den markerade filen.
 
@@ -127,7 +127,7 @@ Välj **Visa differens** icon \(![](images/show-difference-icon.svg)\) om du vil
 
 The **Versionsskillnad** visas. Den visar **Senaste översatta version** och **Vald version** nummer till vänster. I förhandsgranskningsfönstret visas skillnaderna mellan den senaste översatta versionen och den valda versionen av ämnet.
 
-![](images/version-diff.png)
+![](images/version-diff.png){width="650" align="left"}
 
 ## Stäng av synkroniserade resurser
 
@@ -138,7 +138,7 @@ Så här stänger du statusen Skickat synkronisering:
 1. Markera de icke-synkroniserade resurser som du vill ändra statusen för.
 1. Välj **Synkronisera markering** button \(![](images/translation-mark-in-sync-icon.svg)\) överst. The **Synkronisera markering** visas.
 
-   ![](images/translation-mark-in-sync.png)
+   ![](images/translation-mark-in-sync.png){width="550" align="left"}
 
 1. Klicka **Tvinga synkronisering**. Statusen är synkroniserad för de valda Out-of-sync-resurserna.
 
@@ -156,7 +156,6 @@ Vissa av referenserna på översättningsinstrumentpanelen kanske håller på at
 
 Klicka på namnet på referensen i dialogrutan för att öppna den i förhandsgranskningsläge. Du kan också klicka på översättningsprojektet för att starta översättningen.
 
-![](images/translation-in-progress.png)
+![](images/translation-in-progress.png){width="550" align="left"}
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

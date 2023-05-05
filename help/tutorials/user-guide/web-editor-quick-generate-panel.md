@@ -1,13 +1,13 @@
 ---
 title: Använda snabbgenereringspanelen
 description: Lär dig hur du använder snabbgenereringspanelen
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: d48803d9-470c-4679-8def-72b45a85917b
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Använd snabbgenereringspanelen för att generera och visa utdata {#id22AKE050F5L}
 
@@ -17,7 +17,7 @@ AEM stödlinjer har en **Snabbgenerering** som är integrerad i Web Editor. På 
 >
 > The **Snabbgenerering** visas för DITA-kartan som öppnas på panelen Kartvy.
 
-![](images/quick-generate-map-view.png)
+![](images/quick-generate-map-view.png){width="800" align="left"}
 
 Utför följande steg för att generera utdata från **Snabbgenerering** panel:
 
@@ -28,4 +28,3 @@ Utför följande steg för att generera utdata från **Snabbgenerering** panel:
 1. Klicka **Visa utdata** \( ![](images/view-output-icon.svg)\) -ikon för en viss förinställning för att visa de utdata som genereras för förinställningen.
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

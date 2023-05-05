@@ -1,13 +1,13 @@
 ---
 title: Arbeta med den grundläggande kartredigeraren
 description: Lär dig hur du arbetar med den grundläggande kartredigeraren
-source-git-commit: af5c64312a608affe95fd552b3dd1b2e05ea2b8e
+exl-id: 85194806-db3f-442b-a551-540d148d26ec
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 0%
 
 ---
-
 
 # Arbeta med den grundläggande kartredigeraren {#id1942CM005Y4}
 
@@ -37,7 +37,7 @@ Utför följande steg för att skapa kartfilen:
 
    Kartfilen öppnas för redigering i kartredigeraren. Med hjälp av kartredigeraren kan du skapa en karta med hjälp av de ämnen som för närvarande är tillgängliga och som visas i referensfältet.
 
-   ![](images/dita-map-01.png)
+   ![](images/dita-map-01.png){width="800" align="left"}
 
 1. Använda **Referenser** navigera till den mapp som innehåller de ämnen eller undermappar som du vill lägga till.
 
@@ -66,13 +66,13 @@ Utför följande steg för att skapa kartfilen:
 
 I huvudverktygsfältet i redigeraren för grundläggande kartor kan du utföra följande åtgärder:
 
-![](images/ditamap-toolbar-actions.png)
+![](images/ditamap-toolbar-actions.png){width="800" align="left"}
 
 **S: Sök**
 
 Du kan söka efter och ta med de ämnen som behövs från DAM. Om du klickar på den här ikonen visas dialogrutan Sök:
 
-![](images/search-dita-map.png)
+![](images/search-dita-map.png){width="800" align="left"}
 
 Ange de nyckelord som du vill söka efter. Dessa nyckelord matchas i ämnets filnamn, innehåll och till och med attributvärden. När sökresultaten är tillgängliga markerar du det önskade ämnet och klickar på knappen Markera för att lägga till de markerade filerna i slutet av kartstrukturen. Du kan filtrera sökresultaten genom att ange parametrar för Ändra datum.
 
@@ -100,19 +100,19 @@ I **Standardläge** Om du klickar på en ämneslänk visas förhandsgranskningen
 **Obs!** I standardläget kan du använda kortkommandon för att ångra \(`Ctrl+z`\) eller gör om \(`Ctrl+y`\) den senaste åtgärden.
 
 
-![](images/dita-map-invalid-source.png)
+![](images/dita-map-invalid-source.png){width="650" align="left"}
 
 **G: Kartegenskaper**
 
 Visa dialogrutan Kartegenskaper där du kan ange attribut och metadatainformation för kartan. Om du vill lägga till ett attribut klickar du på **Lägg till** längst ned till vänster i dialogrutan för att få fram **Attribut** nedrullningsbar lista. Välj det attribut du vill lägga till i listan. Om det markerade attributet har fördefinierade värden som anges i DTD:n visas dessa värden i en ny listruta. Du kan välja önskat värde i listrutan. Om det inte finns något fördefinierat värde visas en textruta där du kan ange ett värde för det valda attributet.
 
-![](images/map-properties.png)
+![](images/map-properties.png){width="300" align="left"}
 
 ## Funktioner på ämnesnivå i Grundläggande kartredigerare
 
 När du placerar muspekaren över ett ämne eller en undermappsfil i redigeraren för den grundläggande kartan kan du utföra följande åtgärder:
 
-![](images/ditamap-actions.png)
+![](images/ditamap-actions.png){width="650" align="left"}
 
 **S: Flytta åt vänster eller Flytta åt höger**
 
@@ -123,7 +123,7 @@ Klicka på vänster- eller högerpilsikonerna för att flytta ämnet åt vänste
 Klicka på ikonen Egenskaper för att öppna dialogrutan Egenskaper för utskrift. I den här dialogrutan kan du ange ämnesattribut och metadatainformation. Mer information om attribut och metadata för standardämnen finns i [topicref](https://docs.oasis-open.org/dita/v1.2/os/spec/langref/topicref.html) dokumentation i OASIS DITA Language Specification.
 
 
-![](images/map-properties-metadata.png)
+![](images/map-properties-metadata.png){width="350" align="left"}
 
 **C: Lägg till ny referens**
 
@@ -155,7 +155,7 @@ Utför följande steg när du vill arbeta med relationstabeller i redigeraren f�
 
 1. Välj **Relaterad** i verktygsfältet.
 
-   ![](images/reltable.png)
+   ![](images/reltable.png){width="650" align="left"}
 
 1. Dra och släpp ämnen från ämneslistan till Reltable-redigeraren.
 
@@ -163,13 +163,13 @@ Utför följande steg när du vill arbeta med relationstabeller i redigeraren f�
    >
    > Du kan lägga till ämnen från valfri mapp i referensfältet.
 
-   ![](images/create-reltable.png)
+   ![](images/create-reltable.png){width="550" align="left"}
 
 1. Om du vill lägga till en rubrik i din relationstabell klickar du på **Lägg till ny rubrik**.
 
 1. Om du vill lägga till en kolumn i relationstabellen klickar du på **Lägg till en kolumn**.
 
-   ![](images/complete-reltable.png)
+   ![](images/complete-reltable.png){width="550" align="left"}
 
 1. Klicka **Spara**.
 
@@ -189,4 +189,3 @@ Om du vill ta bort ett ämne från tabellen klickar du på kryssikonen bredvid �
 Om du vill ta bort relationstabellen klickar du var som helst utanför relationstabellen och klickar på Ta bort.
 
 **Överordnat ämne:**[ Arbeta med kartredigeraren](map-editor.md)
-

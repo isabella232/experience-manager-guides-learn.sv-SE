@@ -1,13 +1,13 @@
 ---
 title: Hantera granskningsåtgärder med hjälp av Kontrollpanelen
 description: Lär dig hur du hanterar granskningsåtgärder med hjälp av Kontrollpanelen
-source-git-commit: f3d747082103c73a365ee400cbd4dcdabd36eabf
+exl-id: 617017fe-59b6-4b38-b375-a126fa9dddf5
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 0%
 
 ---
-
 
 # Hantera granskningsåtgärder med hjälp av Kontrollpanelen {#id2056B0Y70X4}
 
@@ -23,13 +23,13 @@ Utför följande steg för att komma åt och använda kontrollpanelen:
 
    En projektpanel med åtgärdsrutor visas.
 
-   ![](images/review-management.png)
+   ![](images/review-management.png){width="800" align="left"}
 
 1. Klicka på de tre punkterna i **Recensioner** platta.
 
    Kontrollpanelen för granskning visas. Kontrollpanelen visar alla granskningsåtgärder som du har skapat.
 
-   ![](images/review-dashboard.png)
+   ![](images/review-dashboard.png){width="800" align="left"}
 
    På kontrollpanelen Granska visas information om granskningsaktiviteten, t.ex. aktivitetsnamn, vem som startade granskningen, datum när granskningen startades, förfallodatum, status, antal nya kommentarer som inte har godkänts eller avvisats av författaren samt namn på granskarna. Uppgifterna visas i ordningen för nyligen skapade uppgifter till äldre uppgifter.
 
@@ -48,7 +48,7 @@ Utför följande steg för att komma åt och använda kontrollpanelen:
 
 ## Fliken Uppgift
 
-![](images/review-task-page.png)
+![](images/review-task-page.png){width="800" align="left"}
 
 Du kan utföra följande åtgärder under **Uppgift** tab:
 
@@ -69,7 +69,7 @@ Du kan utföra följande åtgärder under **Uppgift** tab:
 
 ## Fliken Innehåll
 
-![](images/review-content-page.png)
+![](images/review-content-page.png){width="800" align="left"}
 
 Du kan utföra följande åtgärder under **Innehåll** tab:
 
@@ -88,7 +88,7 @@ Du kan utföra följande åtgärder under **Innehåll** tab:
 
 ## Fliken Granskare {#reviewer-tab-id199RF0N0MUI}
 
-![](images/reviewers-tab.png)
+![](images/reviewers-tab.png){width="800" align="left"}
 
 Du kan utföra följande åtgärder under **Granskare** tab:
 
@@ -109,7 +109,7 @@ Du kan utföra följande åtgärder under **Granskare** tab:
 
 Om du väljer en granskningsuppgift och klickar på **Status** visas statusrapporten för granskningsaktiviteten:
 
-![](images/review-status-report.png)
+![](images/review-status-report.png){width="800" align="left"}
 
 Statusrapporten för granskningsaktiviteten innehåller följande information:
 
@@ -123,4 +123,3 @@ Statusrapporten för granskningsaktiviteten innehåller följande information:
 - Det datum då granskaren senast öppnade ett ämne.
 
 **Överordnat ämne:**[ Granska ämnen och kartor](review.md)
-

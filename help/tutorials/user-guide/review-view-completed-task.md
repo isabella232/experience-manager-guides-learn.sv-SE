@@ -1,13 +1,13 @@
 ---
 title: Visa en slutförd granskningsuppgift
 description: Lär dig hur du visar en slutförd granskningsuppgift
-source-git-commit: 176aee433300ce8d4d9cfbab2edb007acae4de87
+exl-id: 37f10fc3-e4ca-4e73-a887-65c7e9496f5e
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
-
 
 # Visa en slutförd granskningsuppgift
 
@@ -19,8 +19,7 @@ Som granskare kan du se en indikator på kommentarspanelen som visar att granskn
 
 Du kan dock söka efter och filtrera kommentarer. Du kan också välja att visa eller dölja villkor och visa villkorsstyrt innehåll i enlighet med detta. Du kan hämta alla bifogade filer, men du kan inte överföra eller ta bort bifogade filer för kommentarerna.
 
-<img src="images/complete-task-reviewer.png" alt="granskningsuppgiftens granskare har slutförts" width="800">
-
+![](images/complete-task-reviewer.png){width="800" align="left"}
 
 
 ## Som författare
@@ -29,7 +28,6 @@ Som författare kan du se statusen stängd på panelen Granska. Du kan läsa en 
 
 Du kan dock söka efter och filtrera kommentarer. Du kan hämta alla bifogade filer, men du kan inte överföra eller ta bort bifogade filer för kommentarerna.
 
-<img src="images/completed-task-author.png" alt=" slutförd granskningsuppgiftens författare" width="800">
+![](images/completed-task-author.png){width="800" align="left"}
 
 Både som granskare eller författare kan du visa det granskade innehållet tillsammans med kommentarerna, men du kan inte göra några ändringar i en slutförd granskningsåtgärd.
-

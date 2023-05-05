@@ -1,13 +1,13 @@
 ---
 title: Skapa ett DITA-projekt
 description: Lär dig hur du skapar ett DITA-projekt
-source-git-commit: 101766d51d43eb728f0316155acffd19548f83be
+exl-id: 6dc88ac4-249a-4da2-9787-a58370e281ca
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
 
 ---
-
 
 # Skapa ett DITA-projekt {#id1645HA00NM6}
 
@@ -33,7 +33,7 @@ Så här skapar du ett DITA-projekt:
 
 1. Klicka **Skapa** \> **Projekt** för att starta guiden Skapa projekt.
 
-   ![](images/project-console-63.png)
+   ![](images/project-console-63.png){width="650" align="left"}
 
 1. På sidan Skapa projekt väljer du **DITA-projekt** mall och klicka på **Nästa**.
 
@@ -41,7 +41,7 @@ Så här skapar du ett DITA-projekt:
 
    Information i **Grundläggande** tab:
 
-   ![](images/create-project.png)
+   ![](images/create-project.png){width="650" align="left"}
 
    - Ange projektets **Titel**, **Beskrivning** och **Förfallodatum**.
 
@@ -75,4 +75,3 @@ Så här skapar du ett DITA-projekt:
 
 
 **Överordnat ämne:**[ Granska ämnen och kartor](review.md)
-

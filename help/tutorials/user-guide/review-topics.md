@@ -1,13 +1,13 @@
 ---
 title: Granska ämnen
 description: Lär dig hur du granskar ämnen
-source-git-commit: 849985574a4d21334ac73be3e664ff5ea9a898c4
+exl-id: ca94ec2e-cd45-418d-9b35-73d587ba51ec
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '2271'
 ht-degree: 0%
 
 ---
-
 
 # Granska ämnen {#id2056B0W0FBI}
 
@@ -37,7 +37,7 @@ Utför följande steg för att granska ett ämne:
 
    Följande skärm visas när en DITA-karta används för att initiera granskningsarbetsflödet:
 
-   ![](images/multiple-topics-review.png)
+   ![](images/multiple-topics-review.png){width="800" align="left"}
 
    Följande alternativ är tillgängliga på den här skärmen:
 
@@ -57,13 +57,13 @@ Utför följande steg för att granska ett ämne:
 
    Alla ämnen på kartan visas som ett sammansatt dokument. De ämnen som granskaren får granska visas normalt. De ämnen som granskningen inte får granska visas inte.
 
-   ![](images/review-read-only.png)
+   ![](images/review-read-only.png){width="800" align="left"}
 
    På skärmbilden ovan delas ämnet Allmän beskrivning för granskning av den aktuella granskaren, som visas normalt. Nästa avsnitt, Historik över flyginnehåll, delas dock inte för granskning och visas i skrivskyddat läge. Det ämne som för närvarande är i fokus markeras också i innehållsförteckningen.
 
    Följande skärm visas när ett eller flera ämnen markeras och delas för granskning:
 
-   ![](images/review-composite-view.png)
+   ![](images/review-composite-view.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -85,15 +85,15 @@ Utför följande steg för att granska ett ämne:
 
 När du visar ett enskilt ämne får du ytterligare ett alternativ för att växla tillbaka till dokumentvyn. På skärmbilden nedan öppnas ett visst ämne från en kartfil för granskning. Det markerade alternativet — **Visa dokumentvy** gör att användaren kan växla tillbaka till dokumentvyn för kartfilen.
 
-![](images/switch-document-view.png)
+![](images/switch-document-view.png){width="800" align="left"}
 
 **Arbeta med olika typer av kommentarverktyg** - Du kan lägga till textbundna kommentarer genom att markera text, stryka över text, infoga text eller lägga till en kommentaranteckning. De olika kommentarsverktygen som finns i verktygsfältet Kommentarer beskrivs nedan:
 
-![](images/comments-toolbar.png)
+![](images/comments-toolbar.png){width="350" align="left"}
 
 - **Högdager** \(![](images/review-highlight-icon.svg)\): Om du vill lägga till en markeringskommentar markerar du texten och klickar på markeringsikonen. Du kan också klicka på markeringsikonen och markera önskad text:
 
-   ![](images/highlight-comment.png)
+   ![](images/highlight-comment.png){width="650" align="left"}
 
    Ett popup-fönster visas på panelen Kommentarer där du kan lägga till din kommentar för det markerade innehållet.
 
@@ -112,7 +112,7 @@ Du kan också markera och genomstryka text snabbt med det sammanhangsberoende ve
 
 1. Markera den text som du vill markera eller genomstryka. Kontextverktygsfältet visas.
 
-   ![](images/review-quick-launch-toolbar.png)
+   ![](images/review-quick-launch-toolbar.png){width="550" align="left"}
 
 1. Klicka på **Högdager** eller **Genomstruken** ikon.
 1. Du kan lägga till kommentarer i kommentarpanelen för markerings- eller genomstrykningsåtgärden.
@@ -128,7 +128,7 @@ De åtgärder du kan utföra med panelen Kommentarer beskrivs nedan:
 - Du kan redigera din egen kommentar genom att klicka på den kommenterade texten i panelen Kommentarer och sedan välja **Redigera** på Alternativ-menyn.
 - Du kan ta bort dina egna kommentarer genom att klicka på kommentaren i panelen Kommentarer och sedan markera **Ta bort** på Alternativ-menyn.
 
-   ![](images/review-comment-options-menu.png)
+   ![](images/review-comment-options-menu.png){width="300" align="left"}
 
    >[!NOTE]
    >
@@ -142,17 +142,17 @@ De åtgärder du kan utföra med panelen Kommentarer beskrivs nedan:
 
 - På följande skärmbild visas innehållet i *Granska* läge:
 
-![](images/review-author-mode.png)
+![](images/review-author-mode.png){width="550" align="left"}
 
 På följande skärmbild visas innehållet i *Förhandsgranska* läge:
 
-![](images/review-preview-mode.png)
+![](images/review-preview-mode.png){width="550" align="left"}
 
 **Lägga till bilagor till kommentarer** - Om du vill komplettera din kommentar genom att ange ytterligare information som finns i en annan fil, kan du göra det genom att bifoga den med din kommentar. Som granskare kan du enkelt lägga till en eller flera filer från det lokala systemet i kommentaren. En fil kan läggas till i alla kommentarformer som stöds - Markera, Genomstruken, Infoga text eller Kommentar.
 
 När du infogar någon av kommentarerna visas kommentarsfönstret. När du har angett ytterligare kommentarer eller information i popup-fönstret skickar du det genom att klicka på Retur. När kommentaren har lagts till kan du lägga till en bilaga till kommentaren.
 
-![](images/comment-pop-up-panel.png)
+![](images/comment-pop-up-panel.png){width="800" align="left"}
 
 På skärmbilden ovan innehåller dokumentet popup-fönstret för markeringskommentaren och kommentaren läggs även till på panelen Kommentarer. Ikonen för bifogade filer ![](images/file-attach-review.svg)är tillgängligt tillsammans med kommentaren på båda platserna.
 
@@ -177,21 +177,21 @@ Utför följande steg för att lägga till en bifogad fil i kommentaren:
 
 - Som standard visas bara två filer som är bifogade med en kommentar. Om det finns fler filer **Visa bifogad fil** till höger visar antalet bifogade filer \(som är fler än två\) som är kopplade till kommentaren. Du kan klicka på numret om du vill visa alla bifogade filer. Om du t.ex. har fyra bilagor med en kommentar, visas +2 på knappen.
 
-![](images/review-view-attachment.png)
+![](images/review-view-attachment.png){width="550" align="left"}
 
 - När du placerar muspekaren över en bifogad fil kan du hämta eller ta bort den bifogade filen. Det går bara att ta bort den bifogade filen om den aktuella granskaren har lagt till kommentaren, vilket visas på följande skärmbild:
 
-![](images/current-user-comment-options.png)
+![](images/current-user-comment-options.png){width="550" align="left"}
 
 De andra granskarna eller författarna får endast alternativet för att hämta bifogade filer.
 
-![](images/other-reviewer-download.png)
+![](images/other-reviewer-download.png){width="550" align="left"}
 
 - Du kan hämta alla bilagor som är kopplade till en kommentar från **Visa bifogade filer** -dialogrutan. Markera de bifogade filerna och klicka på **Hämta** -ikonen på kommentarsnivå.
 
 - Du kan även ta bort de bifogade filer som är kopplade till en kommentar från **Visa bifogade filer** -dialogrutan. Markera de bifogade filerna och klicka på **Ta bort** ikon.
 
-![](images/attach-files-comments-panel.png)
+![](images/attach-files-comments-panel.png){width="550" align="left"}
 
 
 **Panelen Villkor** - Om ditt ämne har villkorsstyrt innehåll visas **Villkor** \(![](images/conditions-icon.svg)\) till höger. Klicka på **Villkor** -ikonen öppnar villkorspanelen där du kan markera innehållet enligt de tillgängliga villkoren i ämnet.
@@ -200,7 +200,7 @@ De andra granskarna eller författarna får endast alternativet för att hämta 
 
 : Du kan inaktivera **Markera alla villkor** och se allt innehåll i ämnet som normal text utan högdagrar.
 
-![](images/review-conditions-panel.png)
+![](images/review-conditions-panel.png){width="350" align="left"}
 
 Du kan välja att dölja eller visa ett visst villkor.
 
@@ -208,7 +208,7 @@ Du kan välja att dölja eller visa ett visst villkor.
 - Om du visar ett villkorsstyrt innehåll markeras i granskningsläget. I följande skärmbild använder till exempel bara innehållet två villkor - `win` och `mac` markeras.
 
 
-![](images/review-condition-normal-mode.png)
+![](images/review-condition-normal-mode.png){width="650" align="left"}
 
 I förhandsgranskningsläget är det icke-villkorade innehållet och det villkorade innehållet som använder de två visade villkoren - `win` och `mac` visas. Det återstående villkorade innehållet som villkoren är dolda för visas inte.
 
@@ -220,7 +220,7 @@ I förhandsgranskningsläget är det icke-villkorade innehållet och det villkor
 
 - Klicka på ikonen för inaktuell kommentar \(![](images/outdated-comment-icon.svg)\) visar skillnaderna mellan den senaste och den kommenterade versionen av dokumentet. Versionsnumren \(för de versioner som jämförs\) visas högst upp i dokumenten.
 
-   ![](images/comments-page-review-mode.png)
+   ![](images/comments-page-review-mode.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -244,4 +244,3 @@ Välj ett eller flera av följande filtreringsalternativ på menyn **Filtertyp**
 Om du vill ta bort filtret och visa alla kommentarer avmarkerar du alla filter i dialogrutan **Filtertyp** och klicka **Använd**.
 
 **Överordnat ämne:**[ Granska ämnen och kartor](review.md)
-

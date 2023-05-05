@@ -1,13 +1,13 @@
 ---
 title: Masstaggning av DITA-innehåll
 description: Lär dig hur du gruppvis taggar DITA-innehåll
-source-git-commit: 528dd5d33f38c29809e7e7dafd77d860daaba8db
+exl-id: 0e855575-e62f-4dc7-869c-7fd3ec61ffdb
+source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
 
 ---
-
 
 # Masstaggning av DITA-innehåll {#id179SG0TN05Z}
 
@@ -31,7 +31,7 @@ Använd funktionen för bulktaggning för att lägga till flera taggar samtidigt
 
 1. Markera de ämnen eller delmappar som du vill använda taggar på.
 
-   ![](images/apply-tags-uuid.png)
+   ![](images/apply-tags-uuid.png){width="650" align="left"}
 
 
    >[!NOTE]
@@ -106,4 +106,3 @@ Utför följande steg för att ta bort alla taggar från ett eller flera ämnen:
 Om du har en lång lista med taggar som används i dina ämnen kan det vara lite besvärligt att navigera. Du kan enkelt dölja taggar i från DITA-kartkonsolvyn genom att klicka på ikonen Dölj taggar. Om taggarna inte visas visas visas alla taggar om du klickar på Visa taggar.
 
 **Överordnat ämne:**[ Hantera metadata](manage-metadata.md)
-

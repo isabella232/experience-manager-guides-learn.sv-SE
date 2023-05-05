@@ -1,13 +1,13 @@
 ---
 title: Skapa kartor baserade på anpassade mallar
 description: Lär dig hur du skapar kartor baserade på anpassade mallar
-source-git-commit: 66915827a0b169069cc482763f0f50b9e9b6aa64
+exl-id: 02513148-3876-4549-962a-9984f619030f
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '870'
 ht-degree: 0%
 
 ---
-
 
 # Skapa kartor baserade på anpassade mallar {#id225VF0808MP}
 
@@ -33,7 +33,7 @@ Så här skapar du en ämnesmall:
 
 1. I **Resurser, användargränssnitt** navigera till mappen Dita-templates.
 
-   ![](images/dita-templates.png)
+   ![](images/dita-templates.png){width="800" align="left"}
 
 1. Klicka **ämnen** mapp att öppna.Klicka på **Skapa \> DITA-mall**.
 1. Välj **Ämne** och sedan klicka **Nästa.**
@@ -55,7 +55,7 @@ Så här skapar du en mappningsmall:
 1. Klicka **kartor** för att öppna den.
 1. Klicka **Skapa DITA-mall \>.**
 
-   ![](images/create-dita-template.png)
+   ![](images/create-dita-template.png){width="300" align="left"}
 
 1. Välj **Karta** och klicka **Nästa**.
 1. Ange kartmallen på sidan Egenskaper **Titel**.
@@ -104,7 +104,11 @@ Om du inte använder klammerparenteser runt titeln kommer den resulterande DITA-
 Exempel
 
 ```XML
-<title>	<sub>		<b>{title}</b>	</sub></title>
+<title>    
+    <sub>        
+        <b>{title}</b>    
+    </sub>
+</title>
 ```
 
 ## Använd kartmallen för att skapa nya kartor
@@ -144,4 +148,3 @@ Kartan genererar alla resurser som refereras till inuti mallmappen. En del typer
 - Om en annan karta eller ett annat ämne skapas på samma nivå i mappen läggs namnen på de nyskapade resurserna till med 0,1,2 och så vidare. Du kan välja att öppna kartan för redigering eller spara kartfilen i databasen.
 
 **Överordnat ämne:**[ Arbeta med kartredigeraren](map-editor.md)
-

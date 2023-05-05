@@ -1,13 +1,13 @@
 ---
 title: Skapa och hantera baslinjer från Web Editor
 description: Lär dig hur du skapar och hanterar baslinjer i Web Editor
-source-git-commit: 873111892d5b479f80a40c0b18cda9b538f5a1de
+exl-id: 9e390489-16f5-4f9a-a821-5150a66c2ed4
+source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
 workflow-type: tm+mt
 source-wordcount: '1190'
 ht-degree: 0%
 
 ---
-
 
 # Skapa och hantera baslinjer från Web Editor {#id223MB0ZF043}
 
@@ -24,7 +24,7 @@ Du kan skapa en baslinje i Web Editor genom att utföra följande steg:
 1. Öppna DITA-schemafilen i Kartvyn på databaspanelen.
 1. Klicka på **Hantera** -fliken. The **Baslinje** På panelen visas baslinjerna för DITA-kartan.
 
-   ![](images/baseline-manage.png)
+   ![](images/baseline-manage.png){width="800" align="left"}
 
 1. På **Baslinje** klickar du på +-ikonen längst upp till höger. Du kan skapa en baslinje med en specifik version av ämnen och refererat innehåll som är tillgängligt på ett visst datum och en viss tid, eller med en etikett definierad för en version av ämnen.
 1. Ange ett namn för baslinjen i **Baslinjenamn**.
@@ -52,7 +52,7 @@ Du kan skapa en baslinje i Web Editor genom att utföra följande steg:
 
    Baslinjer som baseras på etiketter uppdateras dynamiskt. Om du genererar en baslinje, hämtar en baslinje eller skapar ett översättningsprojekt med hjälp av en baslinje, hämtas filerna dynamiskt baserat på de uppdaterade etiketterna. Om du till exempel har använt version 1.2 av ett ämne med Label Release 1.0 för baslinjen och senare uppdaterat version 1.5 med Label Release 1.0, uppdateras baslinjen dynamiskt och version 1.5 används.
 
-   ![](images/dynamic-baseline.png)
+   ![](images/dynamic-baseline.png){width="550" align="left"}
 
    - **Markera etiketter**: Om du har angett rubriker för ämnena visas etiketterna i **Markera etiketter** listruta. Du kan välja etiketten/etiketterna i listan. De etiketter som är markerade först får högre prioritet än de som väljs senare.
 1. **Indirekta referenser**: För indirekta referenser i DITA-kartan får du följande alternativ:
@@ -74,7 +74,7 @@ Du kan hantera befintliga baslinjer med hjälp av de olika funktionerna på kont
 - Du kan visa eller redigera innehållet i en befintlig baslinje genom att dubbelklicka på baslinjen i listan på panelen Baslinje. Baslinjeredigeringsfönstret i mitten visar DITA-kartfilen, kartans innehåll eller ämnen samt det refererade innehållet.
 
 
-![](images/baseline-options.png)
+![](images/baseline-options.png){width="550" align="left"}
 
 Du kan även utföra följande åtgärder på baslinjen på Alternativ-menyn:
 
@@ -92,7 +92,7 @@ Du kan även utföra följande åtgärder på baslinjen på Alternativ-menyn:
 
 Använda ikonen Filter i **Baslinjefilter** kan du använda filter på baslinjen som öppnas i redigeringsfönstret för baslinjen:
 
-![](images/baseline-filter.png)
+![](images/baseline-filter.png){width="350" align="left"}
 
 - Filtrera filerna baserat på filnamn eller filplats.
 - Filtrera filerna baserat på värdena för olika kolumner som filtyp, referenstyp och så vidare.
@@ -107,4 +107,3 @@ Använda ikonen Filter i **Baslinjefilter** kan du använda filter på baslinjen
 När du har redigerat baslinjen kan du klicka på **Spara** överst för att spara ändringarna i baslinjen. Du kan klicka på **Återställ** om du inte vill spara ändringen och återställa baslinjen. När du klickar på **Återställ** visas en varning om att ändringar som inte sparats går förlorade.
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-
