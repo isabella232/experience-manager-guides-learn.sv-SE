@@ -1,13 +1,13 @@
 ---
 title: Skicka metadata till utdata med DITA-OT
 description: Lär dig hur du skickar metadata till utdata med DITA-OT
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: 637895e5-aece-4827-a32e-f2ae3e3704ef
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
-
 
 # Skicka metadata till utdata med DITA-OT {#id21BJ00QD0XA}
 
@@ -19,7 +19,7 @@ Utför följande steg för att skicka metadata till utdata med DITA-OT-publiceri
 1. Markera och redigera en förinställning som du vill skicka metadatafälten till. Välj t.ex. förinställningen PDF.
 1. Välj **DITA-OT** under Generera &lt;output> Använda alternativet i den valda förinställningen för utdata.
 
-   ![](images/custom-meta-data-output-preset.png)
+   ![](images/custom-meta-data-output-preset.png){width="800" align="left"}
 
 1. I listrutan Egenskaper väljer du de metadata som du vill skicka till DITA-OT-publicering.
 
@@ -35,7 +35,7 @@ Utför följande steg för att skicka metadata till utdata med DITA-OT-publiceri
 
 1. Från **Egenskaper** väljer du önskade anpassade egenskaper och standardegenskaper. Välj till exempel `author`, `dc:title`och `dc:description`. Dessa är standard `metadata/properties` som skapas när vi skapar en fil. De valda egenskaperna visas under listrutan.
 
-   ![](images/selected-metadata-properties.png)
+   ![](images/selected-metadata-properties.png){width="300" align="left"}
 
 1. Klicka **Klar** längst upp till vänster för att spara ändringarna.
 1. Generera utdata.
@@ -43,4 +43,3 @@ Utför följande steg för att skicka metadata till utdata med DITA-OT-publiceri
 De valda metadataegenskaperna skickas till utdata som genereras med DITA-OT.
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Arbeta med baslinje
 description: Lär dig hur du arbetar med baslinjen
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: dcafab53-c388-48c3-9455-e4251cdda17d
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1917'
 ht-degree: 0%
 
 ---
-
 
 # Arbeta med baslinje {#id1825FI0J0PF}
 
@@ -46,8 +46,7 @@ Så här skapar du en baslinje:
 1. I **Ange version baserad på** väljer du något av följande alternativ:
 
    - **Etikett**: Välj det här alternativet om du vill välja ämnen enligt den etikett som används på dem. Ange en etikett för att filtrera listan baserat på den angivna strängen. I den filtrerade listan kan du välja en etikett för att välja ämnen och andra resurser med den angivna etiketten.
-
-      När du väljer **Etikett**, får du också ytterligare ett alternativ för att använda den senaste versionen av ämnen som inte har den angivna etiketten. Om du inte markerar det här alternativet och det finns ämnen eller mediefiler som inte har den angivna etiketten, kommer baslinjen inte att kunna skapas. Mer information om hur du lägger till etiketter finns i [Använd etiketter](web-editor-use-label.md#).
+   När du väljer **Etikett**, får du också ytterligare ett alternativ för att använda den senaste versionen av ämnen som inte har den angivna etiketten. Om du inte markerar det här alternativet och det finns ämnen eller mediefiler som inte har den angivna etiketten, kommer baslinjen inte att kunna skapas. Mer information om hur du lägger till etiketter finns i [Använd etiketter](web-editor-use-label.md#).
 
    - **Version on** &lt;*tidsstämpel*\>: Hämtar ämnesversionen som angivet datum och angiven tid. Observera att den tidpunkt som du anger här motsvarar tidszonen för AEM. Om servern befinner sig i en annan tidszon hämtas ämnen enligt serverns tidszon och inte enligt den lokala tidszonen.
 
@@ -55,7 +54,7 @@ Så här skapar du en baslinje:
 
 1. Om du vill använda en annan version för ett eller flera ämnen kan du göra det genom att manuellt markera de ämnena. Klicka **Sök ämne** väljer du det ämne som du vill använda en annan version för. I listrutan Välj en version för det valda ämnet väljer du en version av ämnet som du vill använda i baslinjen och klickar på **OK**.
 
-   ![](images/baseline-select-version-drop-down.png)
+   ![](images/baseline-select-version-drop-down.png){width="800" align="left"}
 
    Informationen om ämnet och den valda versionen lagras i serverdelen. Du kan upprepa det här steget om du vill ändra den valda versionen för flera ämnen.
 
@@ -133,7 +132,7 @@ Utför följande steg för att lägga till en etikett i flera ämnen och referer
 
 1. Klicka **Lägg till etiketter**.
 
-   ![](images/add-label-baseline-uuid.png)
+   ![](images/add-label-baseline-uuid.png){width="800" align="left"}
 
 1. I **Lägg till etikett** anger du en unik etikett som ska kopplas till baslinjen.
 
@@ -144,7 +143,7 @@ Utför följande steg för att lägga till en etikett i flera ämnen och referer
    - Klicka **Lägg till**.
 Den angivna etiketten läggs till på DITA-kartan och de ämnen och innehåll som refereras.
 
-      ![](images/label-added-baseline-uuid.png)
+      ![](images/label-added-baseline-uuid.png){width="650" align="left"}
 
 
 ## Exportera översatt originalplan {#id196SE600GHS}
@@ -163,7 +162,7 @@ Utför följande steg för att exportera en översatt baslinje:
 
 1. I **Översättning** -fliken, expandera **Baslinje** i den vänstra listen.
 
-   ![](images/export-baseline.png)
+   ![](images/export-baseline.png){width="800" align="left"}
 
 1. Välj **Använd baslinje** och välj den baslinje som du vill exportera.
 
@@ -177,4 +176,3 @@ Utför följande steg för att exportera en översatt baslinje:
 
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Profilering av villkorliga attribut
 description: Lär dig hur du använder villkorlig attributprofilering
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 31b0ffe6-44e7-459d-a8df-a64ec868768c
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # Profilering av villkorliga attribut {#id1843I0HN0Y4}
 
@@ -43,7 +43,7 @@ Så här definierar du villkorliga attribut:
 
    På följande skärmbild visas definitionen för `platform` attribut med värdet `unix` och en etikett på `Red Hat Linux`.
 
-   ![](images/add-profile.png)
+   ![](images/add-profile.png){width="800" align="left"}
 
 1. Om du vill lägga till fler värden för samma attribut klickar du på **+** och ange ytterligare värde och etikett.
 
@@ -54,7 +54,6 @@ Så här definierar du villkorliga attribut:
 
 The `platform` -attributet lagras i systemet. När en författare bestämmer sig för att använda `platform` i ett DITA-ämne i en mapp ser de värdena på fliken Egenskaper i Web Editor.
 
-![](images/properties-tab.png)
+![](images/properties-tab.png){width="350" align="left"}
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

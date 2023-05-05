@@ -1,13 +1,13 @@
 ---
 title: Översätt ändrade ämnen
 description: Lär dig hur du översätter ändrade ämnen
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 48b868c3-27ec-4641-b40d-17a641be7497
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '603'
 ht-degree: 0%
 
 ---
-
 
 # Översätt ändrade ämnen {#id16A5A0B6072}
 
@@ -29,7 +29,7 @@ Utför följande steg för att skicka ett ändrat ämne för omöversättning:
 
    Om du klickar på pilen visas mer information. du kan se den aktuella språkkopian.
 
-   ![](images/out-of-sync-uuid.png)
+   ![](images/out-of-sync-uuid.png){width="800" align="left"}
 
 1. Klicka i kryssrutan för att markera de ämnen som du vill skicka för omöversättning.
 
@@ -51,7 +51,7 @@ Utför följande steg för att skicka ett ändrat ämne för omöversättning:
 
 1. Navigera till översättningsprojektet i projektkonsolen. Ett nytt översättningsjobbkort skapas i mappen. Klicka på ellipsen för att visa resurserna i mappen.
 
-   ![](images/incremental-job.PNG)
+   ![](images/incremental-job.PNG){width="300" align="left"}
 
 1. Klicka på pilen på översättningsjobbkortet och välj **Starta** från listan. Ett meddelande meddelar att jobbet har startats.
 
@@ -76,4 +76,3 @@ Utför följande steg för att skicka ett ändrat ämne för omöversättning:
 
 
 **Överordnat ämne:**[&#x200B;Översätta innehåll](translation.md)
-

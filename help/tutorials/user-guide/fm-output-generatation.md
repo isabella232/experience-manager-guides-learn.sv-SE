@@ -1,13 +1,13 @@
 ---
 title: Generera utdata från FrameMaker-dokument
 description: Lär dig hur du genererar utdata från FrameMaker-dokument
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: d3cef05b-8574-4e86-ab94-c9b880fb9c29
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
-
 
 # Generera utdata från FrameMaker-dokument {#id1645H8040HD}
 
@@ -31,17 +31,4 @@ Informationen i följande avsnitt är till för utgivare som ska använda arbets
 >[!IMPORTANT]
 >
 > Funktioner som beskrivs i det här avsnittet är endast tillgängliga för användare med utgivare eller administratörsbehörighet.
-
-- **[Förinställningar för utdata](fm-output-understand-presets.md)**
-
-- **[PDF](fm-output-pdf-preset.md)**
-
-- **[HTML5](fm-output-html5-preset.md)**
-
-- **[ePub](fm-output-epub-preset.md)**
-
-- **[Generera utdata från .book- eller .fm-filer](fm-output-generate.md)**
-
-- **[Visa status för utdatagenereringsaktiviteten](fm-output-view-status.md)**
-
 

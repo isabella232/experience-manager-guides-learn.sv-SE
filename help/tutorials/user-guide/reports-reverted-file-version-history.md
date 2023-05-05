@@ -1,13 +1,13 @@
 ---
 title: Rapport över versionshistorik för återskapade filer
 description: Lär dig hur du rapporterar versionshistorik för återskapade filer
-source-git-commit: bb7a8d49e5425b7fc856277c054558c75394fcb2
+exl-id: fa90b373-742a-4102-b00f-07e4113fef98
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
 
 ---
-
 
 # Rapport över versionshistorik för återskapade filer {#id205BBC00PRK}
 
@@ -19,7 +19,7 @@ Du kommer åt den här rapporten från följande platser:
 
 - **Resurser, användargränssnitt**: genom att markera en fil och öppna **Versionshistorik** från den vänstra listen. The **Versionshistorik** vyn innehåller **Återställ versionsloggar** längst ned på panelen. När du klickar på den här länken visas den markerade filens historik för de återskapade versionerna.
 
-   ![](images/revert-log-from-assets-ui.png)
+   ![](images/revert-log-from-assets-ui.png){width="300" align="left"}
 
 - **Förhandsgranskning av ämne**: när du förhandsgranskar ett ämne kan du även visa **Versionshistorik** från den vänstra listen. Du får en panel som liknar resursgränssnittet där du kan klicka på **Återställ versionsloggar** om du vill komma åt det aktiva dokumentets återskapade versionshistorik.
 
@@ -38,7 +38,7 @@ Utför följande steg för att komma åt rapporten Återgå historik:
 
 1. Klicka **Visa loggar** för att generera rapporten för den valda filen eller mappen.
 
-   ![](images/revert-version-history-report.png)
+   ![](images/revert-version-history-report.png){width="800" align="left"}
 
    Rapporten innehåller följande information:
 
@@ -56,4 +56,3 @@ Utför följande steg för att komma åt rapporten Återgå historik:
 
 
 **Överordnat ämne:**[ Rapporter](reports-intro.md)
-

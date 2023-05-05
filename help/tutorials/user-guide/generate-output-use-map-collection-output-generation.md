@@ -1,13 +1,13 @@
 ---
 title: Använd kartsamling för generering av utdata
 description: Lär dig hur du använder kartsamling för att generera utdata
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
 
 ---
-
 
 # Använd kartsamling för generering av utdata {#id1723F20G0HS}
 
@@ -25,7 +25,7 @@ Så här skapar du en kartsamling och lägger till DITA-kartor i samlingen:
 
    Om länken Kartsamlingar inte är tillgänglig väljer du **Navigering** i den vänstra listen och klicka sedan **Kartsamlingar**.
 
-   ![](images/access-map-collection-left-rail.png)
+   ![](images/access-map-collection-left-rail.png){width="350" align="left"}
 
 1. Ange en titel för kartsamlingen.
 1. Klicka **Skapa**.
@@ -47,8 +47,7 @@ Så här skapar du en kartsamling och lägger till DITA-kartor i samlingen:
 
    DITA-kartfilerna läggs till i din kartsamling.
 
-
-![](images/maps_presets_62_63.png)
+   ![](images/maps_presets_62_63.png){width="800" align="left"}
 
 Följande filtreringsalternativ och mappningsinformation visas på samlingssidan:
 
@@ -93,7 +92,6 @@ Så här konfigurerar och genererar du utdata med en kartsamling:
 
 Liknar hur du avbryter en utdatagenereringsuppgift från [DITA map console](generate-output-for-a-dita-map.md#id2061H100T5Z) eller [Publish Dashboard](generate-output-publish-dashboard.md#)kan du avbryta en utdatagenereringsaktivitet från en kartsamling. Gå till fliken Utdata i en kartsamling, gå till den publiceringsåtgärd som du vill avbryta och klicka på **Avbryt det här jobbet** om du vill avbryta publiceringsåtgärden.
 
-![](images/cancel-publish-task-map-collection.png)
+![](images/cancel-publish-task-map-collection.png){width="800" align="left"}
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

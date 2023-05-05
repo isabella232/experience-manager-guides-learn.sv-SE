@@ -1,13 +1,13 @@
 ---
 title: Generera utdata för en DITA-karta från kartkonsolen
 description: Lär dig hur du genererar utdata för en DITA-karta från kartkonsolen
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 98afbdd2-56d7-44b0-ad2a-25e9143c88f3
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 0%
 
 ---
-
 
 # Generera utdata för en DITA-karta från kartkonsolen {#id1825FG00UHT}
 
@@ -19,7 +19,7 @@ Utför följande steg för att generera utdata för en DITA-karta:
 
 1. Välj en eller flera förinställningar som du vill använda för att generera utdata.
 
-   ![](images/generate-multiple-outputs-uuid.png)
+   ![](images/generate-multiple-outputs-uuid.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -68,7 +68,7 @@ Så här återskapar du utdata för ett visst ämne eller en grupp ämnen:
    >
    > Om du har lagt till nya ämnen i DITA-kartan kan du inte generera dessa nya ämnen härifrån. Du måste först publicera de nya ämnena med DITA-kartpubliceringsfunktionen.
 
-   ![](images/regenerate-topics.png)
+   ![](images/regenerate-topics.png){width="800" align="left"}
 
 1. Klicka **Återskapa**.
 
@@ -95,7 +95,7 @@ Utför följande steg för att visa kön för generering av utdata:
 
 1. Klicka **Utdata**.
 
-   ![](images/output-queued.png)
+   ![](images/output-queued.png){width="800" align="left"}
 
    Sidan Utdata är uppdelad i två delar:
 
@@ -132,17 +132,17 @@ Utför följande steg för att avbryta en utdatagenereringsaktivitet från DITA-
 
 1. Klicka på *Avbryt det här jobbet* ikon.
 
-   ![](images/cancel-publish-task-map-console.png)
+   ![](images/cancel-publish-task-map-console.png){width="800" align="left"}
 
 1. Klicka **Ja** i meddelandet Bekräfta annullering.
 
-   ![](images/confirm-cancel-output-map-condole.png)
+   ![](images/confirm-cancel-output-map-condole.png){width="800" align="left"}
 
    Om aktiviteten inte har startats ännu körs kommandot cancel för uppgiften. För en uppgift som avbryts ställs statusen in på Avbryta.
 
    När aktiviteten har avbrutits flyttas den till **Genererade utdata** lista med **Avbruten** status. När du hovrar över den avbrutna uppgiften visas namnet på den användare som avbrutit uppgiften. På följande skärmbild visas *HTML5* aktiviteten har avbrutits.
 
-   ![](images/cancelled-output-task.png)
+   ![](images/cancelled-output-task.png){width="800" align="left"}
 
 
 ## Ta bort en utdataåtgärd från DITA-kartkonsolen
@@ -159,7 +159,7 @@ Så här tar du bort en utdatauppgift från listan Genererade utdata:
 
 1. Klicka på ikonen Ta bort.
 
-   ![](images/delete-output-task.png)
+   ![](images/delete-output-task.png){width="800" align="left"}
 
 1. Klicka **Ja** i meddelandet Bekräfta borttagning.
 
@@ -167,4 +167,3 @@ Så här tar du bort en utdatauppgift från listan Genererade utdata:
 
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

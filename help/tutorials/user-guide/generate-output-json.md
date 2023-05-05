@@ -1,13 +1,13 @@
 ---
 title: JSON
 description: Lär dig använda JSON
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: 0a938cc2-1a6f-4ee4-ad7e-f94ad2a0cf94
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
-
 
 # JSON {#id231KK0180T4}
 
@@ -38,7 +38,7 @@ Följande alternativ är tillgängliga för JSON-förinställningen:
 >
 > Du kan också redigera JSON-filen i Web Editor.
 
-| JSON-utdataalternativ | Beskrivning |
+| JSON-alternativ | Beskrivning |
 | --- | --- |
 | Utdatasökväg | Den sökväg i AEM där JSON-utdata lagras. |
 | Indexfil | Du kan ge indexfilen ett namn som du skapar för JSON-utdata. Som standard väljs filnamnet på DITA-kartan och ett suffix läggs till (som `map_filename_index.json`).<br><br>Du kan också använda variabler när du ställer in indexfilen. Mer information om hur du använder variabler finns i [Använd variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn](generate-output-use-variables.md#id18BUG70K05Z). |
@@ -48,4 +48,3 @@ Följande alternativ är tillgängliga för JSON-förinställningen:
 | Arbetsflöde efter generering | När du väljer det här alternativet visas en ny arbetsflödeslista som innehåller alla arbetsflöden som är konfigurerade i AEM. Du måste välja ett arbetsflöde som du vill köra när arbetsflödet för generering av utdata har slutförts.<br><br>**Anteckning**: Mer information om hur du skapar ett anpassat arbetsflöde för efterhandsgenerering finns i _Anpassa arbetsflödet för efterhandsproduktion_ i den as a Cloud Service guiden Installera och konfigurera Adobe Experience Manager Guides. |
 
 **Överordnat ämne:**[ Förinställningar för utdata](generate-output-understand-presets.md)
-

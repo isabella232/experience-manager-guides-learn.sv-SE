@@ -1,13 +1,13 @@
 ---
 title: Generering av utdata
 description: Lär dig generera utdata
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 32fc32f8-16b1-4c3c-a6e2-abfb8fba9e66
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
-
 
 # Generering av utdata {#id1645H8040HD}
 
@@ -43,29 +43,4 @@ Informationen i följande avsnitt är till för utgivare som ska använda arbets
 >[!IMPORTANT]
 >
 > Funktioner som beskrivs i det här avsnittet är endast tillgängliga för användare med utgivare eller administratörsbehörighet.
-
-- **[Förinställningar för utdata](generate-output-understand-presets.md)**
-
-- **[Använd variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn](generate-output-use-variables.md)**
-
-- **[Skapa, redigera, duplicera eller ta bort en förinställning för utdata](generate-output-create-edit-preset.md)**
-
-- **[Skicka metadata till utdata med DITA-OT](pass-metadata-dita-ot.md)**
-
-- **[Profilering av villkorliga attribut](generate-output-conditional-attribute-profiling.md)**
-
-- **[Använda förinställningar för villkor](generate-output-use-condition-presets.md)**
-
-- **[Arbeta med baslinje](generate-output-use-baseline-for-publishing.md)**
-
-- **[Generera utdata för en DITA-karta från kartkonsolen](generate-output-for-a-dita-map.md)**
-
-- **[Använd kartsamling för generering av utdata](generate-output-use-map-collection-output-generation.md)**
-
-- **[Hantera publiceringsuppgifter med Publish Dashboard](generate-output-publish-dashboard.md)**
-
-- **[Grundläggande felsökning](generate-output-basic-troubleshooting.md)**
-
-- **[Massaktivering av publicerat innehåll](conf-bulk-activation.md)**
-
 

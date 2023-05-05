@@ -1,13 +1,13 @@
 ---
 title: Skapa en gruppaktiveringskarta
 description: Lär dig hur du skapar en gruppaktiveringskarta
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 7d17fb37-9486-4a3b-a421-08e279c95b6c
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en gruppaktiveringskarta {#id214GG0E90EV}
 
@@ -43,7 +43,7 @@ Så här skapar du en gruppaktiveringskarta:
 
    DITA-kartfilerna läggs till i din gruppaktiveringskarta.
 
-   ![](images/bulk-activation-collection-created.png)
+   ![](images/bulk-activation-collection-created.png){width="800" align="left"}
 
 
 Fliken Kartor och förinställningar innehåller information i följande kolumner:
@@ -70,4 +70,3 @@ Följande filteralternativ är tillgängliga på den vänstra panelen:
 - **Kartor och förinställningar** tabell: Tabellen Kartor och Förinställningar innehåller följande kolumner:
 
 **Överordnat ämne:**[ Massaktivering av publicerat innehåll](conf-bulk-activation.md)
-

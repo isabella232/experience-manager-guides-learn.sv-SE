@@ -1,13 +1,13 @@
 ---
 title: DITA-kartrapport från kartpanelen
 description: Lär dig hur du skapar en DITA-kartrapport från kartpanelen
-source-git-commit: 8a104cfe17778a71915e3700f49fc6892493ccd0
+exl-id: 8ba1dc83-fa96-4ae0-bfa8-89b5a8949f08
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 0%
 
 ---
-
 
 # DITA-kartrapport från kartpanelen {#id205BB800EEN}
 
@@ -23,7 +23,7 @@ Utför följande steg för att visa DITA-kartrapporten:
 
 1. Klicka **Rapporter**.
 
-   ![](images/reports-page-uuid.png)
+   ![](images/reports-page-uuid.png){width="800" align="left"}
 
    Rapportsidan är uppdelad i två delar:
 
@@ -35,7 +35,7 @@ Utför följande steg för att visa DITA-kartrapporten:
 
       När du klickar på ett ämne visas en detaljerad rapport om det valda ämnet.
 
-      ![](images/detailed-report-uuid.png)
+      ![](images/detailed-report-uuid.png){width="800" align="left"}
 
       Objekt markerade under **A**, **B**, **C** och **D** beskrivs nedan:
 
@@ -79,20 +79,19 @@ Utför följande steg för att generera CSV-filen för en DITA-kartrapport:
 
 1. Klicka **Generera rapport** överst till vänster för att generera DITA-kartrapporten.
 
-   ![](images/generate-DITA-map-report.png)
+   ![](images/generate-DITA-map-report.png){width="800" align="left"}
 
 1. Du får ett meddelande när rapporten är klar att hämtas. Klicka **Hämta** om du vill hämta CSV-filen för den genererade rapporten.
 
-   ![](images/download-report-dialog.png)
+   ![](images/download-report-dialog.png){width="550" align="left"}
 
 
    Du kan även hämta CSV-filen för den genererade rapporten senare från AEM.
 
    Klicka på den genererade rapporten i Inkorgen för att hämta rapporten.
 
-   ![](images/report-inbox--notification.png)
+   ![](images/report-inbox--notification.png){width="300" align="left"}
 
 När rapporten har laddats ned i Inkorgen kan du även välja rapporten och använda ikonen Öppna längst upp för att öppna den valda rapporten.
 
 **Överordnat ämne:**[ Rapporter](reports-intro.md)
-

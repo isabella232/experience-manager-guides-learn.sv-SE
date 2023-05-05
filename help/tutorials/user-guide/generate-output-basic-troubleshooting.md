@@ -1,13 +1,13 @@
 ---
 title: Grundläggande felsökning
 description: Lär dig grundläggande felsökning
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: b5ab2618-6f11-4aaa-8471-09521f8bb512
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
 
 ---
-
 
 # Grundläggande felsökning {#id1821I0Y0G0A}
 
@@ -21,7 +21,7 @@ Utför följande steg för att visa och kontrollera loggfilen för generering av
 
    The **Allmänt** kolumn i **Genererade utdata** visar ikonerna för att ge en visuell indikation på om utdatagenereringen lyckades eller inte.
 
-   ![](images/output-general-settings.png)
+   ![](images/output-general-settings.png){width="300" align="left"}
 
    På skärmbilden ovan visar den första och tredje ikonen misslyckad generering av utdata. Den andra ikonen visar att det gick att generera utdata, men med meddelanden. Den sista genereringen är en lyckad utdatagenerering utan något meddelande.
 
@@ -29,7 +29,7 @@ Utför följande steg för att visa och kontrollera loggfilen för generering av
 
    Loggfilen öppnas på en ny flik.
 
-   ![](images/log-file.png)
+   ![](images/log-file.png){width="800" align="left"}
 
 1. Använd följande filter för att markera texten i loggfilen:
    - Allvarligt: Markerar de allvarliga felen i loggfilen med rosa färg.
@@ -61,15 +61,15 @@ Så här kopierar och kontrollerar du loggfilen för generering av utdata i en t
 
    - *DITA-mappningsfilrelaterat fel*: Om ett fel påträffas i DITA-kartfilen eller i någon annan fil som finns i DITA-kartan innehåller loggfilen strängen &quot;BUILD FAILED&quot;. Du kan kontrollera informationen i loggfilen för att hitta den felaktiga filen och åtgärda problemet.
 
-      I följande exempelavsnitt av loggfilen visas `BUILD FAILED` tillsammans med orsaken till felet.
+   I följande exempelavsnitt av loggfilen visas `BUILD FAILED` tillsammans med orsaken till felet.
 
-      ![](images/dita-error-in-log-file.png)
+   ![](images/dita-error-in-log-file.png){width="650" align="left"}
 
-      - *AEM Guides-relaterat fel*: Den andra typen av fel som du kan identifiera i loggfilen har att göra med själva AEM. I det här fallet tolkas DITA-mappningsfilen, men utdatagenereringsprocessen misslyckas på grund av ett internt fel i AEM. För sådana fel måste du be om hjälp från det tekniska supportteamet.
+   - *AEM Guides-relaterat fel*: Den andra typen av fel som du kan identifiera i loggfilen har att göra med själva AEM. I det här fallet tolkas DITA-mappningsfilen, men utdatagenereringsprocessen misslyckas på grund av ett internt fel i AEM. För sådana fel måste du be om hjälp från det tekniska supportteamet.
 
-         I följande exempelavsnitt av loggfilen visas `BUILD SUCCESSFUL` meddelande, följt av ett annat tekniskt fel.
+   I följande exempelavsnitt av loggfilen visas `BUILD SUCCESSFUL` meddelande, följt av ett annat tekniskt fel.
 
-         ![](images/process-error-in-log-file.png)
+   ![](images/process-error-in-log-file.png){width="650" align="left"}
 
 
 ## Åtgärda JSP-kompileringsfel
@@ -90,4 +90,3 @@ Utför följande steg för att lösa problemet:
 
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

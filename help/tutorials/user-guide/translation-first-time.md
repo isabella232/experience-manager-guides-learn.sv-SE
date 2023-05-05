@@ -1,13 +1,13 @@
 ---
 title: Bästa tillvägagångssätt för innehållsöversättning
 description: Lär dig hur du bäst hanterar översättning av innehåll
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 4eff0f27-b3d1-4c6e-af88-bcb3f6d96990
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 0%
 
 ---
-
 
 # Bästa tillvägagångssätt för innehållsöversättning {#id1678G0S702F}
 
@@ -29,7 +29,7 @@ Tänk på följande när du översätter innehåll:
 
 Följande bild visar ett exempel på en mappstruktur i AEM när du har globalt använt innehåll och tre språkversioner.
 
-![](images/aem-directory_structure.png)
+![](images/aem-directory_structure.png){width="800" align="left"}
 
 ## Konfigurera översättningstjänst
 
@@ -129,4 +129,3 @@ När översättningen är klar ändras översättningsjobbets status till *Klar 
 > Om du avvisar översättningen för ett eller flera ämnen i ett översättningsjobb, visas **Pågår** översättningsstatusen för alla avvisade ämnen återställs till den ursprungliga statusen. Statusen för de refererade ämnena kontrolleras och återställs enligt det senaste översättningstillståndet. Översättningsfilerna som skapats i målprojektet tas inte bort även om översättningen avvisas för dem.
 
 **Överordnat ämne:**[&#x200B;Översätta innehåll](translation.md)
-

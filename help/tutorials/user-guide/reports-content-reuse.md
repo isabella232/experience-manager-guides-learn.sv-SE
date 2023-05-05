@@ -1,13 +1,13 @@
 ---
 title: Återanvänd innehåll - rapport
 description: Lär dig hur man återanvänder innehåll
-source-git-commit: bb7a8d49e5425b7fc856277c054558c75394fcb2
+exl-id: 658ae0fd-9032-4480-b9e4-fe4fec261e72
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
-
 
 # Återanvänd innehåll - rapport {#id205BB900OQD}
 
@@ -31,7 +31,7 @@ Utför följande steg för att visa rapporten för återanvändning av innehåll
 
 1. Klicka **Generera rapport** för att få rapporten om återanvändning av innehåll.
 
-   ![](images/content-reuse-uuid.png)
+   ![](images/content-reuse-uuid.png){width="800" align="left"}
 
    Rapportsidan är uppdelad i två delar:
 
@@ -61,4 +61,3 @@ Utför följande steg för att visa rapporten för återanvändning av innehåll
 > Du kan också exportera återanvändningsrapporten för innehåll i CSV-format. Klicka på länken Exportera till CSV längst upp till vänster på skärmen och välj en plats där du vill spara CSV-filen. Du kan sedan öppna den här CSV-filen i valfri CSV-redigerare.
 
 **Överordnat ämne:**[ Rapporter](reports-intro.md)
-

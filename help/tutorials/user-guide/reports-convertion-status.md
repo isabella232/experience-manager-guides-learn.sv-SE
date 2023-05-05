@@ -1,13 +1,13 @@
 ---
 title: Statusrapport för konvertering
 description: Lär dig hur du konverterar statusrapport
-source-git-commit: bb7a8d49e5425b7fc856277c054558c75394fcb2
+exl-id: 41887af2-404f-41d7-b54c-ec49797200f0
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # Statusrapport för konvertering {#id205BBA00WZZ}
 
@@ -23,7 +23,7 @@ Följ de här stegen för att visa rapporten om konverteringsstatus:
 
    Statusrapporten för konvertering visas för alla konverteringsåtgärder som körs i systemet.
 
-   ![](images/conversion-status-report.png)
+   ![](images/conversion-status-report.png){width="800" align="left"}
 
 1. Rapportsidan är uppdelad i två delar:
 
@@ -33,7 +33,7 @@ Följ de här stegen för att visa rapporten om konverteringsstatus:
 
       På följande skärmbild visas rapportdata för konverteringsåtgärder som har statusen Misslyckad, Aktiv och Köad.
 
-      ![](images/conversion-report-failed-active-queued.png)
+      ![](images/conversion-report-failed-active-queued.png){width="800" align="left"}
 
    - **Rapportdata:**
 
@@ -55,4 +55,3 @@ Följ de här stegen för att visa rapporten om konverteringsstatus:
 
 
 **Överordnat ämne:**[ Rapporter](reports-intro.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Redigera en gruppaktiveringskarta
 description: Lär dig hur du redigerar en gruppaktiveringskarta
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 110eba52-c886-4148-aff9-9c4e1d3d85bd
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
-
 
 # Redigera en gruppaktiveringskarta {#id214GI40B0XA}
 
@@ -33,7 +33,7 @@ Du kan redigera en gruppaktiveringskarta genom att lägga till eller ta bort en 
 
 1. Klicka **Ta bort**.
 
-   ![](images/bulk-activation-delete-map.png)
+   ![](images/bulk-activation-delete-map.png){width="800" align="left"}
 
    Den markerade kartan tas bort från samlingen med bulkaktiveringskartor.
 
@@ -41,4 +41,3 @@ Du kan redigera en gruppaktiveringskarta genom att lägga till eller ta bort en 
 
 
 **Överordnat ämne:**[ Massaktivering av publicerat innehåll](conf-bulk-activation.md)
-

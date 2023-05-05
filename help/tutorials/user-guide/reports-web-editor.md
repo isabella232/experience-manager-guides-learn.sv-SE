@@ -1,13 +1,13 @@
 ---
 title: DITA-kartrapport från Web Editor
 description: Lär dig DITA-kartrapport från Web Editor
-source-git-commit: 895d9bd3587c871d5223df5b71403d10bdc3d762
+exl-id: b1011cec-6374-4026-bf1c-54a1981c760e
+source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 0%
 
 ---
-
 
 # DITA-kartrapport från Web Editor {#id231HF0Z0NXA}
 
@@ -25,9 +25,10 @@ Du kan skapa en ämnesrapport genom att utföra följande steg:
 1. Klicka på **Hantera** -fliken.
 1. Dubbelklicka **Ämneslista** till vänster. Listan med ämnen i DITA-kartan visas.
 
-   ![](images/web-editor-topiclist-panel.png)
+   ![](images/web-editor-topiclist-panel.png){width="800" align="left"}
 
 1. Från **Filter** Panelen du kan filtrera ämnen baserat på **Referenstyp** \(direkt eller indirekt\), **Dokumenttillstånd** \(aktuell status för dina ämnen. Om dina ämnen till exempel är i läget Redigera, Under granskning eller Granskad visas de här alternativen) eller **Upphovsman** av ämnet.
+
 1. Du kan också använda följande alternativ för ämnesfiltrering för att välja att visa följande kolumner i listan:
 
    - **Ämne** Ämnets namn anges på DITA-kartan. Du kan klicka på ämnet för att redigera det.
@@ -57,7 +58,7 @@ Så här visar du metadata för referenserna i den aktuella DITA-kartan:
 1. Klicka på **Hantera** -fliken.
 1. Dubbelklicka **Metadata** till vänster. Metadatalistan med alla referenser i DITA-kartan visas. Detta inkluderar även mediereferenserna.
 
-   ![](images/web-editor-metadata-panel.png)
+   ![](images/web-editor-metadata-panel.png){width="800" align="left"}
 
 1. Från **Filter** kan du filtrera ämnen baserat på **Dokumenttillstånd** \(aktuell status för dina ämnen. Om dina ämnen till exempel är i redigeringsläge, granskningsläge eller granskningsläge, visas de här avsnitten\), **Referenser** \(direkt eller indirekt\), **Filtyp** \(Karta, Ämne och Bild\) för referensen.
 1. Du kan även välja att bara visa **Filer utan taggar** eller också väljer du särskilda taggar i **Taggar** för att visa de filer som är associerade med dem.
@@ -92,7 +93,7 @@ Så här visar du metadata för referenserna i den aktuella DITA-kartan:
 
 1. Välj **Hantera** uppifrån.
 
-   ![](images/web-editor-manage-metadata.png)
+   ![](images/web-editor-manage-metadata.png){width="350" align="left"}
 
 1. Om du vill lägga till nya taggar väljer du nya taggar i listrutan för att använda dem i alla markerade avsnitt. Du kan också ta bort taggar genom att klicka på kryssikonen bredvid taggen.
 
@@ -114,11 +115,11 @@ The **Multimedia** rapporten innehåller detaljerad information om de multimedia
 
    - När du beställer **Multimedia**, visas multimedias***namn i den första kolumnen och sedan visas namnen på alla referenser i vilka de har använts i en annan kolumn på samma rad. På följande skärmbild visas multimedia WarmCoolForC.gif i den första kolumnen och tre referenser som den används i visas i den tredje kolumnen på samma rad.
 
-      ![](images/multimedia-report-file-order.png)
+      ![](images/multimedia-report-file-order.png){width="650" align="left"}
 
    - Om du beställer av **Används i** -kolumnen visas den omformade vyn där namnen på de referenser som multimedia har använts i listas i den första kolumnen medan multimedianamnen listas i en annan kolumn på separata rader. På följande skärmbild visas namnen på tre referenser \(Justera platstemperaturen, Ändra visning av platstemperatur och besättningsområde\) i den första kolumnen och multimediafilen WarmCoolForC.gif visas i den tredje kolumnen på tre separata rader.
 
-      ![](images/multimedia-report-used-in-order.png)
+      ![](images/multimedia-report-used-in-order.png){width="650" align="left"}
 
 1. Du kan filtrera multimedia baserat på **Multimediatyp** och **Referenstyp**. Listan med multimediefiler visas baserat på dina val i listrutan. Du kan t.ex. välja att bara visa ljudreferenserna på DITA-kartan, och en fil visar bara de ljudreferenser som används i den.
 
@@ -138,10 +139,11 @@ The **Multimedia** rapporten innehåller detaljerad information om de multimedia
    >[!NOTE]
    >
    > Klicka **Uppdatera** om du vill få en ny lista över multimedia och se eventuella ändringar i kartfilen eller om några multimedia på din DITA-karta har uppdaterats.
+
 1. Du kan också klicka på och spela upp en ljud- eller videofil i Web Editor. Du kan ändra volymen eller vyn för videon. På snabbmenyn har du också möjlighet att hämta, ändra uppspelningshastighet eller visa bild-i-bild.
-   ![](images/video-web-editor.png)
+
+   ![](images/video-web-editor.png){width="800" align="left"}
 
 1. Klicka **Hämta CSV** om du vill hämta den aktuella ögonblicksbilden av multimedia på DITA-kartan. CSV innehåller de markerade kolumnerna och multimedia som filtreras i **Multimedia** vy. Du kan sedan öppna den här multimediala CSV-filen i valfri CSV-redigerare.
 
 **Överordnat ämne:**[ Rapporter](reports-intro.md)
-
