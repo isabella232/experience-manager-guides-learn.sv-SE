@@ -1,9 +1,9 @@
 ---
 title: Innehåll och mallar
 description: Läs mer om hur du ställer in innehåll och mallar i AEM.
-source-git-commit: a2f656c4f547e215a8bbb927f20f8e97d29ef29d
+source-git-commit: 87c92776f417aba49096b447baf81916dea5d57f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -64,8 +64,8 @@ Under den här sessionen får du veta mer om följande:
 
 ## Nästa expertsession
 
-- **Ämne** - TBD
-- **Schemalagd den** - 25 maj 2023
+- **Ämne** - Publicering i PDF - Exempel på inlärning (del 1)
+- **Schemalagd den** - 1 juni 2023
 
 
 ## Kontakta oss
