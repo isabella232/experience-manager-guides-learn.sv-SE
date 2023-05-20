@@ -1,13 +1,13 @@
 ---
 title: Andra funktioner i kartredigerarna
 description: Lär dig hur du använder andra funktioner i kartredigerarna
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: ed6f42f6-b95e-4c4d-a648-6f29641a3488
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
 
 ---
-
 
 # Andra funktioner i kartredigerarna {#id1942D0T0HUI}
 
@@ -40,4 +40,3 @@ Den här rotmappningen kommer att gälla för alla resurser \(mappar och underma
 **Ämnesredigeringsvy** - Klicka på ikonen Tangentmatchning när du redigerar ett DITA-avsnitt och välj den DITA-fil som ska användas för att lösa nyckelreferenserna.
 
 **Överordnat ämne:**[ Arbeta med kartredigeraren](map-editor.md)
-

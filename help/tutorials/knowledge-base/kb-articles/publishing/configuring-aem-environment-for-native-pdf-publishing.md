@@ -1,13 +1,13 @@
 ---
 title: Konfigurera AEM miljö för publicering i Native PDF
 description: Konfigurera AEM miljö för publicering i Native PDF
-source-git-commit: f26b8f94e1d7a3c9dd0aaab2eb196a77119e47ac
+exl-id: 40266ca0-0b0b-4418-b606-f70270addbaa
+source-git-commit: 7b48633ef2418fa7c91842a8d2c2a4177017ef58
 workflow-type: tm+mt
 source-wordcount: '797'
 ht-degree: 1%
 
 ---
-
 
 # Konfigurera AEM miljö för publicering i Native PDF
 

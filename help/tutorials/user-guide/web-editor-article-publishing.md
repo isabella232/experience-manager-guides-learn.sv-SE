@@ -1,13 +1,13 @@
 ---
 title: Artikelbaserad publicering från webbredigeraren
 description: Lär dig hur du använder artikelbaserad publicering från webbredigeraren
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: b827c606-0d4b-4e7b-8a82-75b375dffe1a
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
 
 ---
-
 
 # Artikelbaserad publicering från webbredigeraren {#id218CL05J0M1}
 
@@ -31,4 +31,3 @@ Du kan också använda de förinställningar för utdata som du har skapat för 
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

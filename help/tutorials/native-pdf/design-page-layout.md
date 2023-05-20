@@ -347,8 +347,8 @@ Fält är mycket användbara när du vill infoga en del av informationen som är
 
 Det finns följande kategorier för fält som du kan infoga i sidlayouten:
 
-* Date
-* Time
+* Datum
+* Tid
 * Ämnestitel
 * Projektets titel
 * Sidnummer

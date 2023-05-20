@@ -1,13 +1,13 @@
 ---
 title: Lär dig hur du översätter innehåll
 description: Lär dig hur du översätter innehåll
-source-git-commit: 6eb8d29e71301581e8dbb5b6a4252194c5a89f96
+exl-id: 21a3307f-2b25-40e8-8801-2f3fd5b2415f
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
-
 
 # Översätta innehåll {#id1645H700L67}
 
@@ -27,5 +27,3 @@ AEM Guides innehåller kraftfulla funktioner som gör att du kan översätta dit
 - **[Visa översättningsstatus](translation-view-trans-state-6234.md)**
 
 - **[Översätt ändrade ämnen](translation-modified-topics-6234.md)**
-
-

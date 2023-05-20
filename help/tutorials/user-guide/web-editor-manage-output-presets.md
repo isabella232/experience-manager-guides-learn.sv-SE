@@ -1,13 +1,13 @@
 ---
 title: Hantera förinställningar för utdata för global profil och mappprofil
 description: Lär dig hur du hanterar förinställningar för utdata för global profil och mappprofil
-source-git-commit: 3b33b27e4acb8d0b185427725e23b8beac0c2a46
+exl-id: 40ea464c-16c8-4c95-9c0e-61b6bad95272
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
 
 ---
-
 
 # Hantera förinställningar för utdata för global profil och mappprofil {#id22BLJ0D0V1U}
 
@@ -52,4 +52,3 @@ Du kan även utföra följande åtgärder på förinställningen på Alternativ-
 > När en förinställning för utdata i globala profiler och mappprofiler tas bort återspeglas den i alla relaterade kartor och visas inte under **Utdata** -fliken.
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

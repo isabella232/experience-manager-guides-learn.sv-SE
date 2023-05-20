@@ -1,7 +1,8 @@
 ---
 title: Publiceringsfunktion för PDF | Använda egna format i fotnoter
 description: Lär dig hur du använder format på siffror i fotnoter.
-source-git-commit: ef562c43f5b70d3fe425427108ad8277e1456f24
+exl-id: f1068f2f-2ace-4bdb-b5a4-46b03d4e43d6
+source-git-commit: 7b48633ef2418fa7c91842a8d2c2a4177017ef58
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%

@@ -1,13 +1,13 @@
 ---
 title: Överför filer
 description: Lär dig hur du överför filer
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: d6a73953-94dd-4fa5-b09c-5e4c77fead62
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
 
 ---
-
 
 # Överför filer {#id176FF000JUI}
 
@@ -46,4 +46,3 @@ Mer information om hur de olika scenarierna för filöverföring visas i [Överf
 Om du använder ett verktyg som AEM skrivbordsapp eller massinläsare för resurser, styrs åtgärden som ska utföras på en dubblettfil av en inställning på den AEM servern. Kontakta systemadministratören om du vill veta mer om den här konfigurationen.
 
 **Överordnat ämne:**[ Hantera innehåll](authoring.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Publiceringsfunktion för PDF | Använd JavaScript för att arbeta med innehåll eller format
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-source-git-commit: 09918abbdade934468dea1c55d0ca2cd60622b35
+exl-id: 2f301f6a-0d1c-4194-84c2-0fddaef8d3ec
+source-git-commit: e2349fc14143e5e49f8672ef1bfa48984df3b1c7
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
 
 ---
-
 
 # Använd JavaScript för att arbeta med innehåll eller stil
 

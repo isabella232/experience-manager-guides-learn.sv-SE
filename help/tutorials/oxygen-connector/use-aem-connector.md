@@ -3,13 +3,13 @@ title: Syrgas-plugin för Adobe Experience Manager Guides
 description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager Guides för att skapa och hantera ditt innehåll.
 hide: true
 hidefromtoc: true
-source-git-commit: 96347fed96979eb735dc55c32fcda90cc70ddcb4
+exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '5762'
 ht-degree: 0%
 
 ---
-
 
 # Syrgas-plugin för Adobe Experience Manager Guides {#id1645H6010Q5}
 

@@ -1,13 +1,13 @@
 ---
 title: Skapa innehåll med skrivbordsverktyg
 description: Lär dig hur du skapar innehåll med hjälp av skrivbordsverktyg
-source-git-commit: 5a1c20f2e071d29f6aedc6ff4e56712123cc358f
+exl-id: 43ffb7a6-9740-4e39-bb03-4f8a124f26d3
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
 
 ---
-
 
 # Skapa innehåll med skrivbordsverktyg {#id221EB0Z80KS}
 
@@ -19,4 +19,3 @@ AEM Guides har också stöd för redigering med verktyg som Adobe FrameMaker och
 
 
 **Överordnat ämne:**[ Skapa innehåll](authoring-content.md)
-

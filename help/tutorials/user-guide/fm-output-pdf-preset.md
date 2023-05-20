@@ -1,13 +1,13 @@
 ---
 title: PDF
 description: Lär dig PDF
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: ece004ed-5233-460b-889d-94e693ceed93
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 0%
 
 ---
-
 
 # PDF {#id205BB0T20RH}
 
@@ -39,4 +39,3 @@ Följande alternativ är tillgängliga för utdata från PDF:
 | Kör arbetsflöde efter generering | När du väljer det här alternativet visas en ny arbetsflödeslista som innehåller alla arbetsflöden som är konfigurerade i AEM. Du måste välja ett arbetsflöde som du vill köra när arbetsflödet för generering av utdata har slutförts. |
 
 **Överordnat ämne:**[ Generera utdata från FrameMaker-dokument](fm-output-generatation.md)
-

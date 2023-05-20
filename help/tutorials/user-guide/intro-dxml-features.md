@@ -1,13 +1,13 @@
 ---
 title: AEM
 description: Lär dig hur du AEM viktiga stödlinjer
-source-git-commit: 9fd780707f0757036e5c4ccfacbb2231cd8edadc
+exl-id: f456741a-b504-4686-8230-64fac0ad8939
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 0%
 
 ---
-
 
 # AEM {#id167G9I060SI}
 
@@ -74,4 +74,3 @@ Nedan följer en lista över andra användbara resurser i AEM, som finns på sid
 * [Hjälp* Arkiveringssida](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html) (åtkomst till äldre versionsdokumentation)
 
 **Överordnat ämne:**[ Om Adobe Experience Manager Guides as a Cloud Service](intro.md)
-

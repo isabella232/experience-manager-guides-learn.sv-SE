@@ -1,7 +1,8 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, mars 2023-utgåvan
 description: Mars-utgåvan av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: d762cccc4a8f89eb91a1a8eb2c1410a7e0358b85
+exl-id: b3fe7cc8-1654-467a-ab18-6e6912855ecc
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 1%
@@ -81,4 +82,3 @@ Adobe har identifierat följande kända fel i AEM Guide as a Cloud Service March
 * Användarna kan inte spara eller skapa en version av en duplicerad resurs.
 
 **Tillfällig lösning**: Innan du gör några ändringar i den duplicerade resursen bearbetar du om den från resursgränssnittet.
-

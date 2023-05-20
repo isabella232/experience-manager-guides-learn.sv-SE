@@ -1,13 +1,13 @@
 ---
 title: Andra funktioner i Web Editor
 description: Lär dig hur du använder andra funktioner i Web Editor
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: dea19372-8a15-4b5d-aea4-47dc914d779e
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 0%
 
 ---
-
 
 # Andra funktioner i Web Editor {#id2056B0B0YPF}
 
@@ -212,4 +212,3 @@ Gör följande för att automatiskt generera ID för ett eller flera element:
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

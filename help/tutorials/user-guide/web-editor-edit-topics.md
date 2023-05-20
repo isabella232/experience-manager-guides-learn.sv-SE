@@ -1,13 +1,13 @@
 ---
 title: Redigera ämnen i Web Editor
 description: Lär dig hur du redigerar ämnen i Web Editor
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: 9950df78-09bd-433a-891d-0d689bb0c2e4
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
 
 ---
-
 
 # Redigera ämnen i Web Editor {#id2056B040VUI}
 
@@ -53,4 +53,3 @@ AEM innehåller en indikator för arbetskopiering som visar om den aktuella \(ar
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

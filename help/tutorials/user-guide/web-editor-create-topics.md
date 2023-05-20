@@ -1,13 +1,13 @@
 ---
 title: Skapa ämnen
 description: Lär dig hur du skapar ämnen
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: 336bbbff-f268-40be-ad3a-9c72923be71b
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
 
 ---
-
 
 # Skapa ämnen {#id2056AL00O5Z}
 
@@ -57,4 +57,3 @@ Så här skapar du ett ämne:
 > När du har skapat ditt DITA-avsnitt kan du fortsätta spara ändringarna i arbetskopian och skapa en ny version när du har slutfört uppdateringarna av ämnet.
 
 **Överordnat ämne:**[ Skapa och förhandsgranska ämnen](create-preview-topics.md)
-

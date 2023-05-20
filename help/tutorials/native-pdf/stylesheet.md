@@ -1,13 +1,13 @@
 ---
 title: Publiceringsfunktion för PDF | Arbeta med vanliga innehållsformat
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
+exl-id: 42ba7347-d81d-45d9-9627-8d164e4f9539
+source-git-commit: 2fde719ced7d94af382a13e31af1c04591c8a258
 workflow-type: tm+mt
 source-wordcount: '3496'
 ht-degree: 0%
 
 ---
-
 
 # Arbeta med vanliga innehållsformat {#work-with-common-styles}
 

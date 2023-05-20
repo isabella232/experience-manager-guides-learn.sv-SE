@@ -1,13 +1,13 @@
 ---
 title: Använd variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn
 description: Lär dig hur du använder variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: e8d5b7c7-4f80-4ab6-9ad1-308bf0d4cf74
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
 
 ---
-
 
 # Använd variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn
 
@@ -27,4 +27,3 @@ I följande tabell visas de variabler som stöds i paketet:
 
 Dessutom kan du använda metadata som definierats för DITA-kartan eller bokmappsfilen som variabler. Metadata finns under `/jcr:content/metadata` noden i DITA-kartan eller bokmappningsfilen. En av metadataegenskaperna som definieras i `/jcr:content/metadata` noden är `dc:title`. Du kan ange `${dc:title}` och titelvärdet används i det slutliga resultatet.
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

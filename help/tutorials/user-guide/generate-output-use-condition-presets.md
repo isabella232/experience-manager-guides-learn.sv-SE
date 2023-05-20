@@ -1,13 +1,13 @@
 ---
 title: Använda förinställningar för villkor
 description: Lär dig hur du använder villkorsförinställningar
-source-git-commit: 6eb8d29e71301581e8dbb5b6a4252194c5a89f96
+exl-id: cd8f8196-ba03-4a4b-9ce8-2651de4e5cc2
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
 
 ---
-
 
 # Använda förinställningar för villkor {#id1825FL004PN}
 
@@ -72,4 +72,3 @@ Du kan ta bort en eller flera villkorsförinställningar från **Förinställnin
 1. Klicka **Ta bort** för att bekräfta åtgärden.
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

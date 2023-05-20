@@ -1,13 +1,13 @@
 ---
 title: Förinställningar för utdata
 description: Lär dig mer om förinställningar för utdata
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: ff4dedbb-47c4-40c7-950c-51f70d5d4b1b
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
 
 ---
-
 
 # Förinställningar för utdata {#understanding_output_settings}
 
@@ -36,4 +36,3 @@ I följande avsnitt beskrivs de alternativ som är tillgängliga för de utdataf
 
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)
-

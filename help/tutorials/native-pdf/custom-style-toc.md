@@ -1,13 +1,13 @@
 ---
 title: Publiceringsfunktion för PDF | Använd egen stil på innehållsförteckningsposter och ämnesinnehåll
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-source-git-commit: 09918abbdade934468dea1c55d0ca2cd60622b35
+exl-id: f65c9683-a1fc-432a-854b-83e8f39d7dae
+source-git-commit: e2349fc14143e5e49f8672ef1bfa48984df3b1c7
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 
 ---
-
 
 # Använd egen stil på innehållsförteckningsposter och ämnesinnehåll
 
@@ -72,5 +72,3 @@ Slutligen kan du också använda format på hela innehållet i ämnet. Därför 
 Med formatattributen ovan läggs ett ändringsfält till till vänster om *Flyghistorik* enligt nedan:
 
 <img src="./assets/pdf-output-topic-content.jpg" width="500">
-
-

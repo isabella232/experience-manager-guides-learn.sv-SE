@@ -1,13 +1,13 @@
 ---
 title: Skapa innehåll
 description: Lär dig hur du skapar innehåll
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: bba2a7a1-ffbc-4d28-9b70-a0274f03e29b
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
-
 
 # Skapa innehåll {#id221EAJ0A047}
 
@@ -22,5 +22,3 @@ Du kan också använda skrivbordsverktygen för att skapa innehåll. Med de här
 - **[Skapa innehåll med hjälp AEM stödlinjer](authoring-content-xml-doc.md)**
 
 - **[Skapa innehåll med skrivbordsverktyg](author-desktop-tools.md)**
-
-

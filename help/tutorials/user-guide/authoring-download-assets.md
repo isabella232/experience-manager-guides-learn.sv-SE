@@ -1,13 +1,13 @@
 ---
 title: Hämta filer
 description: Lär dig hur du hämtar filer
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: 3b588256-da30-4a98-be5c-fa36cfa8a80b
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Hämta filer {#id216MC0H0BE8}
 
@@ -56,4 +56,3 @@ Följ de här stegen för att hämta en DITA-kartfil tillsammans med de beroende
 När kartan har laddats ned kan du markera kartan och använda ikonen Öppna längst upp för att öppna den markerade rapporten.
 
 **Överordnat ämne:**[ Hantera innehåll](authoring.md)
-

@@ -1,7 +1,8 @@
 ---
 title: Lägg till en ny anpassad åtgärdsknapp i webbredigeringsverktygsfältet
 description: Lär dig hur du lägger till en ny anpassad knapp i webbredigeringsverktygsfältet och anropar javascript för att anpassa funktionen.
-source-git-commit: 26a6acde54953eab1d751f165d0f7769c7e790fe
+exl-id: 118c4545-9eda-4e1e-a224-843767e49b5b
+source-git-commit: ed3adf0cf8006c76461de34c6a2a4ba38d8b3406
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%

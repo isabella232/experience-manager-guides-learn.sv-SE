@@ -1,13 +1,13 @@
 ---
 title: Skapa markeringsdokument
 description: Lär dig hur du skapar markeringsdokument
-source-git-commit: fa6e9f8b32d191f5b6f7136724d2145d81317767
+exl-id: ad20ca0b-a01d-4e72-8e3e-1d6feb41e52a
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # Skapa markeringsdokument från webbredigeraren {#id223MIE0B079}
 
@@ -60,4 +60,3 @@ Följ de här stegen för att skapa ett markeringsämne från webbredigeraren:
 > Om du inte har sparat ändringarna visas ett popup-fönster och du uppmanas att spara avsnittet innan du stänger det.
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

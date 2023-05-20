@@ -1,13 +1,13 @@
 ---
 title: Generera PDF
 description: Lär dig generera utdata från PDF
-source-git-commit: 8b6294425c6e60d1c5b37d98e99114014a104ee6
+exl-id: 799b7875-0de2-40c6-9e7f-7edc79b98a4b
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 0%
 
 ---
-
 
 # PDF {#id205BE600HAH}
 
@@ -66,4 +66,3 @@ Följande alternativ är tillgängliga för utdata från PDF:
 | Egenskaper | Välj de egenskaper som du vill bearbeta som metadata. Dessa egenskaper ställs in från sidan Egenskaper i DITA-kartan eller bokmappningsfilen. De egenskaper du väljer i listrutan visas under **Egenskaper** och tas bort från listrutan. När de har angetts kopieras även dessa egenskaper till avsnitten på kartan.<br><br>Obs! Du kan också skicka metadata till utdata med DITA-OT-publicering. Mer information finns i [Skicka metadata till utdata med DITA-OT](pass-metadata-dita-ot.md#id21BJ00QD0XA). |
 
 **Överordnat ämne:**[ Förinställningar för utdata](generate-output-understand-presets.md)
-

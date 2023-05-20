@@ -1,13 +1,13 @@
 ---
 title: Arbeta med webbredigeraren
 description: Lär dig hur du arbetar med Web Editor
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 77d5daa7-4c19-448f-b10e-b52a055467ae
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
 
 ---
-
 
 # Arbeta med webbredigeraren {#id181OD0QE05Z}
 
@@ -45,4 +45,3 @@ Dessutom är Web Editor DITA-kompatibelt och stöder DITA 1.3, 1.2-standarderna,
 
 
 **Överordnat ämne:**[ Skapa innehåll med hjälp AEM stödlinjer](authoring-content-xml-doc.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Kortkommandon i Web Editor
 description: Lär dig hur du använder kortkommandon i Web Editor
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: e8be4c83-a236-43c1-b778-c3da92537174
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
 
 ---
-
 
 # Kortkommandon i Web Editor {#id2056B0A0WHT}
 
@@ -37,4 +37,3 @@ Det finns många åtgärder i Web Editor som du kan utföra med hjälp av kortko
 | Gör om senaste åtgärd | ***Ctrl***+**Y** |
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

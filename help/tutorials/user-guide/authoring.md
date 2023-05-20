@@ -1,13 +1,13 @@
 ---
 title: Hantera innehåll
 description: Lär dig hantera innehåll
-source-git-commit: bad2f5cea2c00ca6c9758da27f0dba89a8579eb7
+exl-id: d2fa31a7-a8ce-4d17-bd4e-0f51ea751dca
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
-
 
 # Hantera innehåll {#id164JBG0M0T1}
 
@@ -98,8 +98,3 @@ Med AEM Guides kan du konfigurera redigeringsmallar, utdatamallar, villkorsattri
 Du kan även delegera mappspecifika konfigurationer till en avdelning eller produktadministratörer för att decentralisera administrationen.
 
 Mer information om hur du konfigurerar globala profiler och profiler på mappnivå finns i *Konfigurera globala profiler eller profiler på mappnivå* i Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
-
-
-
-
-

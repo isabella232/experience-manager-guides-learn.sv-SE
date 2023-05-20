@@ -140,7 +140,7 @@ Utför följande steg för att avbryta en utdatagenereringsaktivitet från DITA-
 
    Om aktiviteten inte har startats ännu körs kommandot cancel för uppgiften. För en uppgift som avbryts ställs statusen in på Avbryta.
 
-   När aktiviteten har avbrutits flyttas den till **Genererade utdata** lista med **Avbruten** status. När du hovrar över den avbrutna uppgiften visas namnet på den användare som avbrutit uppgiften. På följande skärmbild visas *HTML5* aktiviteten har avbrutits.
+   När uppgiften har avbrutits flyttas den till **Genererade utdata** lista med **Avbruten** status. När du hovrar över den avbrutna uppgiften visas namnet på den användare som avbrutit uppgiften. På följande skärmbild visas *HTML5* aktiviteten har avbrutits.
 
    ![](images/cancelled-output-task.png){width="800" align="left"}
 

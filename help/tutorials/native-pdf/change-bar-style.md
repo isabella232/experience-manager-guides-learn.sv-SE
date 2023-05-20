@@ -1,7 +1,8 @@
 ---
 title: Publiceringsfunktion för PDF | Arbeta med anpassade ändringsfältstilar
 description: Lär dig hur du använder format på ändringsfält.
-source-git-commit: b6fd82fd09c04a3deefab51b1064a3b6aea73e47
+exl-id: a81ec56c-ccbb-4599-a696-8edef7a73cdd
+source-git-commit: 7b48633ef2418fa7c91842a8d2c2a4177017ef58
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%

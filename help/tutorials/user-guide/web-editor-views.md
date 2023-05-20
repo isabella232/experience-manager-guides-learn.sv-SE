@@ -1,13 +1,13 @@
 ---
 title: Vyer i Web Editor
 description: Lär dig hur du visar Web Editor
-source-git-commit: fa6e9f8b32d191f5b6f7136724d2145d81317767
+exl-id: 86d8abc2-1d0e-4744-91c9-848c00447971
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '1424'
 ht-degree: 0%
 
 ---
-
 
 # Vyer i Web Editor {#id204GK0D0V5Z}
 
@@ -150,4 +150,3 @@ Så här exporterar du ett ämne som PDF:
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Publiceringsfunktion för PDF | Lägg till ett eget bokmärke i utdata från PDF
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-source-git-commit: fb7ffbaefcdca4302e43d8369bc056c1f08a3ed6
+exl-id: 6e6dbba3-da41-4066-b7b2-735a3d92b70a
+source-git-commit: e2349fc14143e5e49f8672ef1bfa48984df3b1c7
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
-
 
 # Lägga till ett eget bokmärke i utdata från PDF
 
@@ -38,4 +38,3 @@ I PDF-utdata visas *Kontaktlista* tabellen läggs till på den andra nivån i PD
 >[!NOTE]
 >
 >Du måste välja rätt nivå där det anpassade bokmärket ska läggas till. Om du anger ett tal som är mindre än det överordnade objektets bokmärke, får det anpassade bokmärket det överordnade bokmärkets position och alla andra bokmärken visas som underordnade. Detta kan leda till oväntad bokmärkesstruktur.
-

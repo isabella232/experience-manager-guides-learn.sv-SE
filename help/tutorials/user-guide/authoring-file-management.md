@@ -1,13 +1,13 @@
 ---
 title: Hantera filer och mappar
 description: Lär dig hur du hanterar filer och mappar
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: e7810b06-f49f-467a-b987-a5e6f731d4cf
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 0%
 
 ---
-
 
 # Hantera filer och mappar {#id2116G0L08XA}
 
@@ -249,4 +249,3 @@ Om mediefilen har ändrats kan du söka efter och förhandsgranska filerna i **V
 
 
 **Överordnat ämne:**[ Hantera innehåll](authoring.md)
-

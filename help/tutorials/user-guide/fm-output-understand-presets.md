@@ -1,13 +1,13 @@
 ---
 title: Introduktion till förinställningar för utdata
 description: En introduktion till förinställningarna
-source-git-commit: 7e6ac1146bf5b60c15f549fa9636850db305479f
+exl-id: a084e643-cae6-4263-a498-3ae62228b886
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
 
 ---
-
 
 # Förinställningar för utdata {#understanding_output_settings}
 
@@ -16,4 +16,3 @@ AEM Guides har stöd för att skapa utdata för FrameMaker-dokument i formaten P
 I följande avsnitt beskrivs de alternativ som är tillgängliga för de utdataformat som stöds.
 
 **Överordnat ämne:**[ Generera utdata från FrameMaker-dokument](fm-output-generatation.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Rapporter
 description: Lär dig hur du rapporterar
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: baf3bc11-0725-418e-afef-fe9aa55327fe
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 1%
 
 ---
-
 
 # Rapporter {#id1645H9007MZ}
 
@@ -27,5 +27,3 @@ Du kan skapa DITA-kartrapporter på två sätt:
 - **[Statusrapport för konvertering](reports-convertion-status.md)**
 
 - **[Rapport över versionshistorik för återskapade filer](reports-reverted-file-version-history.md)**
-
-

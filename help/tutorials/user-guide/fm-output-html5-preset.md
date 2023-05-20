@@ -1,13 +1,13 @@
 ---
 title: HTML5
 description: Lär dig hur du använder HTML5
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 9ac39237-c6b3-47d9-8d54-67150002c050
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%
 
 ---
-
 
 # HTML5 {#id205BB0U70MG}
 
@@ -26,4 +26,3 @@ Följande alternativ är tillgängliga för HTML5-utdata:
 | Kör arbetsflöde efter generering | När du väljer det här alternativet visas en ny arbetsflödeslista som innehåller alla arbetsflöden som är konfigurerade i AEM. Du måste välja ett arbetsflöde som du vill köra när arbetsflödet för generering av utdata har slutförts. |
 
 **Överordnat ämne:**[ Generera utdata från FrameMaker-dokument](fm-output-generatation.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Granska ämnen och kartor
 description: Lär dig hur du granskar ämnen och kartor
-source-git-commit: 7cd719921e68ac1763d09d9665d912e3697e5849
+exl-id: 26860f5d-d744-49b4-8483-4e0f3798af93
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # Granska ämnen och kartor {#id1645H6010Q5}
 
@@ -62,5 +62,3 @@ Tillgängliga funktioner för *granskare*:
 - **[Adressgranskningskommentarer](review-address-review-comments.md)**
 
 - **[Hantera granskningsåtgärder med hjälp av Kontrollpanelen](review-manage-tasks-review-dashboard.md)**
-
-

@@ -4,7 +4,7 @@ description: Lär dig hur du publicerar PDF med den inbyggda PDF-motorn i AEM.
 exl-id: e7ba6d2d-ebfb-4400-9b10-c4fb173123cf
 source-git-commit: 093cb6c3b3a523e56f401e813c2b51a414c725d2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---

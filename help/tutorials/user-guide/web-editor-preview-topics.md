@@ -1,13 +1,13 @@
 ---
 title: Förhandsgranska ett ämne
 description: Lär dig hur du förhandsgranskar ett avsnitt
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: fb8eb87b-2a98-4540-9329-08a759145497
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 0%
 
 ---
-
 
 # Förhandsgranska ett ämne {#id1696II000QR}
 
@@ -214,4 +214,3 @@ Om kolumnen Utcheckad inte visas väljer du **Visa inställningar** under **List
    En ny gren skapas från den valda versionen av ämnet. Processen ovan gäller även för återställning till en specifik version av ett ämne. Att återgå till en viss version innebär tekniskt sett att du skapar en ny gren från den valda versionen och gör den versionen till aktuell arbetskopia av ämnet. Du kan också visa historiken för filer som har återförts i rapporten Återgå till tidigare version. Mer information om den här rapporten finns i [Rapport över versionshistorik för återskapade filer](reports-reverted-file-version-history.md#).
 
 **Överordnat ämne:**[ Skapa och förhandsgranska ämnen](create-preview-topics.md)
-

@@ -1,13 +1,13 @@
 ---
 title: Starta Web Editor
 description: Lär dig hur du startar Web Editor
-source-git-commit: cc0fbca257d82cc82db5b5da8d263309fd71de55
+exl-id: f02f9612-7aaa-42ea-bad3-c44d23b5d034
+source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Starta Web Editor {#id2056B0140HS}
 
@@ -102,4 +102,3 @@ Så här öppnar du Web Editor från DITA-kartkonsolen:
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)
-
