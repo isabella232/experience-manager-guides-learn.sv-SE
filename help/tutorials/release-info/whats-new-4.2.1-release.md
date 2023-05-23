@@ -1,9 +1,9 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides 4.2.1
 description: Läs om de nya och förbättrade funktionerna i 4.2.1-utgåvorna av Adobe Experience Manager Guides
-source-git-commit: 66b83f940457c64dadc5b319e1274960ac0f6da8
+source-git-commit: 8ea7b6d80b94d24910ac00bf1fb1d40d6992a166
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Nu kan du enkelt navigera från webbredigeraren till AEM navigeringssida.
 
 * Klicka på **Stödlinjer** ikon (![](assets/aem-guides-icon.png) ), för att gå tillbaka till AEM.
 
+
+Mer information finns i [AEM](../user-guide/web-editor-launch-editor.md#id2056BG00RZJ)
 
 ## Avancerat stöd för metadata vid PDF-publicering
 
@@ -45,7 +47,7 @@ I dispositionsvyn finns följande förbättringar:
 
 * Med sökfunktionen kan du söka efter ett element efter dess namn, id, text eller attributvärde.
 
-Mer information finns i beskrivningen av funktionen Konturvy i [Vänster panel](../user-guide/web-editor-features.md) -avsnitt.
+Mer information finns i beskrivningen av funktionen Konturvy i [Vänster panel](../user-guide/web-editor-features.md#id2051EA0M0HS) -avsnitt.
 
 ## Generera multimedierapporten från webbredigeraren
 
@@ -80,4 +82,4 @@ AEM Guides innehåller nu en funktion för att öppna och spela upp ljud- och vi
 
 <img src="assets/video-web-editor.png" alt="spela upp video" width="600">
 
-Mer information finns i funktionsbeskrivningen för databasvyn i [Vänster panel](../user-guide/web-editor-features.md) -avsnitt.
+Mer information finns i funktionsbeskrivningen för databasvyn i [Vänster panel](../user-guide/web-editor-features.md#id2051EA0M0HS) -avsnitt.
