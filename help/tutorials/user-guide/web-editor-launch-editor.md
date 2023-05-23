@@ -2,9 +2,9 @@
 title: Starta Web Editor
 description: Lär dig hur du startar Web Editor
 exl-id: f02f9612-7aaa-42ea-bad3-c44d23b5d034
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: dce7b1c97f8f7f79b313b08ca0489e8e50b633ec
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,34 @@ I följande avsnitt beskrivs hur du kommer åt och startar webbredigeraren från
 
 När du loggar in AEM visas navigeringssidan:
 
-![](images/web-editor-from-navigation-page_cs.png){width="800" align="left"}
+![](images/web-editor-from-navigation-page.png){width="800" align="left"}
 
-Klicka på **XML Editor** går direkt till webbredigeraren.
+Klicka på **Stödlinjer** går direkt till webbredigeraren.
 
 ![](images/web-editor-launch-page.png){width="800" align="left"}
 
 När du har startat webbredigeraren utan att välja någon fil visas en tom webbredigeringsskärm. Du kan öppna en fil för redigering AEM databasen eller din favoritsamling.
+
+- Klicka på **Stödlinjer** ikon (![](images/aem-guides-icon.png) ), för att gå tillbaka till AEM.
+
+- The **Stäng** tar dig till ett mål baserat på dina inställningar:
+
+
+
+   <details>
+
+   <summary> Cloud Services </summary>
+
+   Om du använder Cloud Services klickar du på **Stäng** för att gå tillbaka till AEM.
+   </details>
+
+   <details>
+
+   <summary> Lokal programvara</summary>
+
+   Om du använder AEM Guides On-Local Software (4.2.1 och senare) klickar du på **Stäng** till höger om du vill gå tillbaka till den aktuella filsökvägen i resursgränssnittet.
+
+   </details>
 
 ## AEM Assets UI {#id2056BG0307U}
 
@@ -80,7 +101,7 @@ En annan plats där du kan starta Web Editor är från AEM Assets-gränssnittet.
 
 Så här öppnar du Web Editor från DITA-kartkonsolen:
 
-1. Navigera till och klicka på DITA-mappningsfilen som innehåller det ämne som du vill redigera i resursgränssnittet.
+1. Navigera till och klicka på DITA-mappningsfilen som innehåller det ämne du vill redigera i resursgränssnittet.
 
    DITA-kartkonsolen visas.
 
@@ -98,7 +119,7 @@ Så här öppnar du Web Editor från DITA-kartkonsolen:
 
    >[!IMPORTANT]
    >
-   > Om administratören har konfigurerat **Inaktivera redigering utan utcheckning** måste du checka ut filen innan du redigerar. Om du inte checkar ut filen öppnas dokumentet i skrivskyddat läge i redigeraren.
+   > Om administratören har konfigurerat **Inaktivera redigering utan utcheckning** måste du checka ut filen innan du redigerar. Om du inte checkar ut filen öppnas dokumentet i redigeraren i skrivskyddat läge.
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)

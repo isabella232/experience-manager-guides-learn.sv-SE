@@ -2,16 +2,18 @@
 title: Skapa ämnen
 description: Lär dig hur du skapar ämnen
 exl-id: 336bbbff-f268-40be-ad3a-9c72923be71b
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: e69665f3c4a0db10365719ac671cbd3ac0c455ec
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
 
 # Skapa ämnen {#id2056AL00O5Z}
 
-Med AEM Guides kan du skapa DITA-ämnen av typen: variabel, uppgift, begrepp, referens, ordlista, DITAVAL med mera. Förutom att skapa ämnen baserat på färdiga mallar kan du även definiera egna mallar. Mer information om hur du använder egna DITA-mallar finns i *Konfigurera mallar och taggar för redigering* i Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
+Med AEM Guides kan du skapa DITA-ämnen av typen: variabel, uppgift, begrepp, referens, ordlista, DITAVAL med mera. Förutom att skapa ämnen baserat på färdiga mallar kan du även definiera egna mallar. Mallarna måste läggas till i mappprofilen för att kunna visas i mallvalet Utskrift och webbredigeraren.
+
+Observera att konfiguration av global profil och mappprofil endast är tillgänglig för administratörer på mappnivå. Mer information om hur du konfigurerar globala profiler och profiler på mappnivå finns i *Konfigurera redigeringsmallar* i Installera och konfigurera Adobe Experience Manager Guides för installationen.
 
 Så här skapar du ett ämne:
 
@@ -23,7 +25,7 @@ Så här skapar du ett ämne:
 
    ![](images/create_dita_topic.png){width="800" align="left"}
 
-   Som standard innehåller AEM stödlinjer de vanligaste DITA-ämnesmallarna. Du kan konfigurera fler ämnesmallar enligt organisationens krav, se *Konfigurera mallar och taggar för redigering* i Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
+   Som standard innehåller AEM stödlinjer de vanligaste DITA-ämnesmallarna. Du kan konfigurera fler ämnesmallar enligt organisationens krav, se *Konfigurera redigeringsmallar* i Installera och konfigurera Adobe Experience Manager Guides för installationen.
 
    >[!NOTE]
    >

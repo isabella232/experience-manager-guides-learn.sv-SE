@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 0cc1e12382fb90784ea78cb500bf0a24d6ec50df
+source-git-commit: 6982737881d7dcf314d28a69060db7031e156c76
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '1012'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,13 @@ ht-degree: 3%
             + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
             + [Versionsinformation för januari](./release-info/release-notes-2022.1.0.md)
       + Lokalt/Managed Services {#on-prem-release-notes}
-         + [4.2 Versionsinformation](./release-info/release-notes-4.2.md)
+         + 4.2 Utgåva {#42-release}
+            + Nyheter {#42-whats-new}
+               + [4.2.1 Nyheter](./release-info/whats-new-4.2.1-release.md)
+               + [4.2 Nyheter](./release-info/whats-new-4.2-release.md)
+            + Versionsinformation {#42-release-notes}
+               + [4.2.1 Versionsinformation](./release-info/release-notes-4.2.1.md)
+               + [4.2 Versionsinformation](./release-info/release-notes-4.2.md)
          + [4.1.x Versionsinformation](./release-info/release-notes-4.1.md)
          + [4.0.x Versionsinformation](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-4-0.html)
          + [Versionsinformation om 3.8.x](https://helpx.adobe.com/xml-documentation-for-experience-manager/release-note/release-notes-xml-documentation-solution-3-8.html)
@@ -156,6 +162,64 @@ ht-degree: 3%
       + [Återanvänd innehåll - rapport](./user-guide/reports-content-reuse.md)
       + [Statusrapport för konvertering](./user-guide/reports-convertion-status.md)
       + [Rapport över versionshistorik för återskapade filer](./user-guide/reports-reverted-file-version-history.md)
++ Installations- och konfigureringshandbok {#install-guide}
+   + Lokalt {#on-prem-ig}
+      + [Ansvarsfriskrivning](./install-guide/rebranding-disclaimer.md)
+      + [Om den här guiden](./install-guide/introduction.md)
+      + Hämta och installera {#download-install-aemg}
+         + [Översikt](./install-guide/download-install.md)
+         + [Tekniska krav](./install-guide/download-install-technical-requirements.md)
+         + [Installera Adobe Experience Manager](./install-guide/download-install-aem.md)
+         + [Hämta och installera AEM för första gången](./install-guide/download-install-aemg-first-time.md)
+         + [Konfigurera Dispatcher](./install-guide/download-install-configure-dispatcher.md)
+         + [Verifiera installation av AEM](./install-guide/download-install-verify-aemg-installation.md)
+         + [Uppgradera Adobe Experience Manager-guider](./install-guide/upgrade-xml-documentation.md)
+         + [Avinstallera AEM](./install-guide/download-install-unistall-aemg.md)
+         + [Recommendations för prestandaoptimering](./install-guide/download-install-recommend-perf-optimiz.md)
+      + [Migrering av icke-UID till UUID-innehåll](./install-guide/migrate-uuid-non-uuid.md)
+      + [Användaradministration och -säkerhet](./install-guide/user-admin-sec.md)
+      + [Använd anpassad DITA-OT- och DITA-specialisering](./install-guide/dita-ot-specialization.md)
+      + [Konfigurera dokumentlägen](./install-guide/customize-doc-state.md)
+      + Migrering av innehåll {#content-migration}
+         + [Migrera befintligt innehåll](./install-guide/migrate-content.md)
+         + [Överför befintligt DITA-innehåll](./install-guide/migrate-content-upload-existing-dita-content.md)
+         + [Migrera icke-DITA-innehåll](./install-guide/migrate-content-non-dita.md)
+      + Konfigurera UUID-baserade och icke-UID-baserade filnamn {#conf-non-uuid-filename}
+         + [Konfigurera filnamn](./install-guide/conf-file-names.md)
+         + [Konfigurera automatiska filnamn baserat på UUID](./install-guide/conf-auto-uuid-filenames.md)
+         + [Konfigurera Regx för giltiga filnamnstecken](./install-guide/conf-file-names-valid-regx.md)
+         + [Konfigurera giltiga filnamn för AEM](./install-guide/conf-file-names-valid-regx-aem-site-output.md)
+      + Arbeta med teman och kartor {#topic-map-template}
+         + [Konfigurera ämne- och mappningsmallar](./install-guide/conf-template-tags.md)
+         + [Konfigurera anpassad ämnesmall för DITA](./install-guide/conf-template-tags-custom-dita-topic-template.md)
+         + [Konfigurera anpassad DITA-mappningsmall](./install-guide/conf-template-tags-custom-dita-map-templates.md)
+      + Arbeta med Web Editor-konfigurationer {#web-editor-configs}
+      + [Anpassa Web Editor](./install-guide/conf-web-editor.md)
+      + [Anpassa verktygsfältet](./install-guide/conf-web-editor-customize-toolbar.md)
+      + [Konfigurera standardvärde för taggvyn](./install-guide/configure-default-value-tags-view.md)
+      + [Konfigurera visning av UUID-baserade länkar](./install-guide/conf-uuid-based-links.md)
+      + [Öppna DITA-avsnitt eller DITA-kartfiler på samma flik](./install-guide/open-dita-files-same-tab.md)
+      + [Konfigurera en anpassad panel i den vänstra panelen](./install-guide/configure-custom-panel.md)
+      + [Konfigurera autosparande av filer i Web Editor](./install-guide/auto-save-in-editor.md)
+      + [Konfigurera filter för filbläddringsdialogrutan](./install-guide/conf-custom-file-filters.md)
+      + [Konfigurera uppmaningen att spara som en ny version vid stängning](./install-guide/conf-save-as-new-version-close.md)
+      + [Konfigurera en uppmaning om att checka in en fil vid stängning](./install-guide/conf-checkin-file-close.md)
+      + [Konfigurera tillåtna specialtecken](./install-guide/conf-special-chars.md)
+      + [Generera element-ID automatiskt](./install-guide/auto-generate-ids.md)
+      + [Anpassa AEM standardordlista](./install-guide/customize-aem-custom-dictionary.md)
+      + [Konfigurera textfilter](./install-guide/config-text-filters.md)
+      + [Konfigurera antalet LimitReads för en fråga](./install-guide/conf-query-limitreads.md)
+      + [Installera paket för artikelbaserad publicering](./install-guide/configure-article-based-publishing.md)
+      + [Ange avancerad kartredigerare som standard](./install-guide/conf-map-editor.md)
+      + [Inkludera @navtitle-attribut som standard](./install-guide/auto-add-navtitle.md)
+      + [Konfigurera globala profiler eller profiler på mappnivå](./install-guide/conf-folder-level.md)
+      + [Versionshantering](./install-guide/version-management.md)
+      + [Integrera skrivbordsbaserade XML-redigerare](./install-guide/integrate-desktop-editors.md)
+      + [Konfigurera inställningar för utdatagenerering](./install-guide/conf-output-generation.md)
+      + [Konfigurera och anpassa arbetsflöden](./install-guide/customize-workflows.md)
+      + [Översätta innehåll](./install-guide/translation.md)
+      + [Konfigurera sökning i AEM Assets UI](./install-guide/conf-dita-search.md)
+      + [Bilaga](./install-guide/appendix.md)
 + Exempel på innehållsarkitektur och -användning {#content-arch}
    + [Arbeta med villkorsstyrda utdata](./content-architecture/create-and-use-conditions.md)
    + [Skapa globala nycklar](./content-architecture/create-global-keys.md)

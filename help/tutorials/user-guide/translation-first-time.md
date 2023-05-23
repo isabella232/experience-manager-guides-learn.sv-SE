@@ -2,9 +2,9 @@
 title: Bästa tillvägagångssätt för innehållsöversättning
 description: Lär dig hur du bäst hanterar översättning av innehåll
 exl-id: 4eff0f27-b3d1-4c6e-af88-bcb3f6d96990
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: d87a2e054310e3421dcbf347232a420638823b93
 workflow-type: tm+mt
-source-wordcount: '1237'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
@@ -103,6 +103,16 @@ Så här skapar du ett översättningsprojekt:
 1. Klicka **Starta** för att skapa ett nytt översättningsprojekt.
 
    Ett nytt översättningsprojekt skapas med den valda versionen av ämnena. Nu visas ett popup-meddelande som bekräftar att översättningsprojektet har skapats. När alla målspråkskopior är tillgängliga i översättningsprojektet visas ett meddelande i Inkorgen. När målspråkets kopieringsområde är tillgängligt i översättningsprojektet kan du påbörja översättningsjobbet.
+
+   ![](images/status-translation-uuid.png){width="800" align="left"}
+
+
+På fliken Översättning finns följande avsnitt:
+
+- **Sammanfattning**: Visar antalet refererade ämnen och källspråk tillsammans med koden.
+- **Detaljer**: Visar ämnesrubrik, typ av ämne, språkkod för ämnet, källspråk, version av källämnet, etikett som lagts till i ämnet och översättningsstatus.
+
+
 
 
 ## Starta översättningsjobbet {#id225IK030OE8}
