@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 6982737881d7dcf314d28a69060db7031e156c76
+source-git-commit: c8feab55ed3b8e7b36ec46b21f63155766627e40
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1009'
 ht-degree: 3%
 
 ---
@@ -220,9 +220,6 @@ ht-degree: 3%
       + [Översätta innehåll](./install-guide/translation.md)
       + [Konfigurera sökning i AEM Assets UI](./install-guide/conf-dita-search.md)
       + [Bilaga](./install-guide/appendix.md)
-+ Exempel på innehållsarkitektur och -användning {#content-arch}
-   + [Arbeta med villkorsstyrda utdata](./content-architecture/create-and-use-conditions.md)
-   + [Skapa globala nycklar](./content-architecture/create-global-keys.md)
 + Konfigurerar {#configuring}
    + Publicering i PDF {#config-native-pdf-publish}
       + [PDF-mall](./native-pdf/pdf-template.md)
@@ -235,9 +232,6 @@ ht-degree: 3%
          + [Lägga till ett eget bokmärke i utdata från PDF](./native-pdf/add-custom-bookmark.md)
          + [Använd JavaScript för att arbeta med innehåll eller stil](./native-pdf/use-javascript-content-style.md)
          + [Använda anpassade format i fotnoter](./native-pdf/footnote-number-style.md)
-   + [Konfigurera en anpassad DITA-OT](./configuring/setup-a-custom-dita-ot.md)
-+ Översättning {#translation}
-   + [Exkludera stycken från översättning](./translation/exclude-paragraphs-from-translation.md)
 + Versionshantering {#versioning}
 + Knowledge Base {#knowledge-base}
    + Expertsession {#expert-session}
@@ -261,5 +255,11 @@ ht-degree: 3%
          + [FMPS och stödlinjer](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
          + [Microservice-arkitektur och prestanda](./knowledge-base/publishing/publish-microservice-architecture-and-performance.md)
          + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
+         + [Konfigurera en anpassad DITA-OT](./knowledge-base/kb-articles/publishing/setup-a-custom-dita-ot.md)
       + Arbetsflöden {#workflows}
          + [Arbetsflöde efter generering](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
+      + Översättning {#translation}
+         + [Exkludera stycken från översättning](./knowledge-base/kb-articles/translation/exclude-paragraphs-from-translation.md)
+      + Användningsexempel {#use-cases}
+         + [Arbeta med villkorligt innehåll](./knowledge-base/kb-articles/content-architecture/working-with-conditional-content.md)
+         + [Arbeta med tangenter](./knowledge-base/kb-articles/content-architecture/working-with-keys.md)
