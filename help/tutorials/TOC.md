@@ -2,7 +2,7 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: c8feab55ed3b8e7b36ec46b21f63155766627e40
+source-git-commit: 414ee8ae3b12bb40054ddbe9e1a008ebc6058f89
 workflow-type: tm+mt
 source-wordcount: '1009'
 ht-degree: 3%
@@ -184,7 +184,7 @@ ht-degree: 3%
          + [Migrera befintligt innehåll](./install-guide/migrate-content.md)
          + [Överför befintligt DITA-innehåll](./install-guide/migrate-content-upload-existing-dita-content.md)
          + [Migrera icke-DITA-innehåll](./install-guide/migrate-content-non-dita.md)
-      + Konfigurera UUID-baserade och icke-UID-baserade filnamn {#conf-non-uuid-filename}
+      + Konfigurera UUID- och icke UUID-baserade filnamn {#conf-non-uuid-filename}
          + [Konfigurera filnamn](./install-guide/conf-file-names.md)
          + [Konfigurera automatiska filnamn baserat på UUID](./install-guide/conf-auto-uuid-filenames.md)
          + [Konfigurera Regx för giltiga filnamnstecken](./install-guide/conf-file-names-valid-regx.md)

@@ -1,7 +1,7 @@
 ---
 title: Uppgradera Adobe Experience Manager-guider
 description: Lär dig hur du uppgraderar Adobe Experience Manager-guider
-source-git-commit: 629a3714e7b75af609238a506688da2674bf31cc
+source-git-commit: 414ee8ae3b12bb40054ddbe9e1a008ebc6058f89
 workflow-type: tm+mt
 source-wordcount: '2750'
 ht-degree: 0%
@@ -68,16 +68,22 @@ Utför följande steg innan du installerar version 4.0:
 
 Detta API är utformat för att utvärdera den aktuella systemstatusen och rapportera om uppgraderingen är möjlig eller inte. Om du vill köra det här skriptet utlöser du slutpunkten nedan:
 
-|Slutpunkt|/bin/dxml/upgrade/3xto4x/report| |Typ av begäran|**GET** Du kan använda en webbläsare, där du är inloggad som administratör för AEM.| |Förväntat svar|- Om alla nödvändiga noder kan flyttas, kommer en kontroll att utföras. <br>- Om det finns en nod på målplatsen får du ett relevant fel. Rensa databasen \(delete node /var/dxml\) och installera om uppgraderingspaketet och utlösa sedan den här slutpunkten igen. <br>**Obs!** Detta är inget vanligt fel eftersom målplatsen inte används tidigare av 3.x AEM Guides. <br> - Om det här skriptet inte lyckas ska du inte fortsätta och rapportera till ditt kundteam.|
+| Slutpunkt | /bin/dxml/upgrade/3xto4x/report |
+| --- | --- |
+| Typ av begäran | **GET** Du kan använda en webbläsare, där du är inloggad som administratör för AEM. |
+| Förväntat svar | - Om alla nödvändiga noder kan flyttas får du en kontroll som du godkänt. <br>- Om det finns en nod på målplatsen får du ett relevant fel. Rensa databasen \(delete node /var/dxml\) och installera om uppgraderingspaketet och utlösa sedan den här slutpunkten igen. <br>**Obs!** Detta är inget vanligt fel eftersom målplatsen inte används tidigare av 3.x AEM Guides. <br> - Om det här manuset inte lyckas ska du inte fortsätta och rapportera till ditt kundframgångsteam. |
 
 **API för systemdatamigrering**
 
-Detta API är utformat för att migrera systemdata enligt anvisningarna i [Migreringsmappning](#id2244LE040XA) -avsnitt.
+Detta API är utformat för att migrera systemdata enligt anvisningarna i **Migreringsmappning** -avsnitt.
 
 1. Kör inte det här skriptet om API:t för Kontrollera uppgraderingskompatibilitet misslyckas \(fortsätt inte\).
 1. När API:t för kontroll av uppgraderingskompatibilitet returneras kan du köra uppgraderingsskriptet.
 
-|Slutpunkt|/bin/dxml/upgrade/3xto4x| |Typ av begäran|**POST** Skriptet är en begäran om POST och ska därför köras via agenter som Postman.| |Förväntat svar|- När migreringen är klar kan du installera XML Documentation-lösning version 4.0.<br>- Om fel uppstår återställer du till den sista kontrollpunkten och delar felloggarna med API-utdata till kundens framgångsgrupp.|
+| Slutpunkt | /bin/dxml/upgrade/3xto4x |
+| --- | --- |
+| Typ av begäran | **POST** Skriptet är en begäran om POST och ska därför köras via agenter som Postman. |
+| Förväntat svar | - När migreringen är klar kan du installera XML Documentation-lösning version 4.0.<br>- Om fel uppstår återställer du till den senaste kontrollpunkten och delar felloggarna med API-utdata till kundens framgångsgrupp. |
 
 **Migreringsmappning**: API:t ovan migrerar alla data under källplatsen till målplatsen.
 
@@ -388,7 +394,7 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
    - `excludeList` borde ha `"event-user-data:changedByWorkflowProcess"`.
 
 
-1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan följer några exempel:
+1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan ges några exempel:
    - Alla komponenter som överlappas av/libs/fmditor/libsska jämföras med den nya produktkoden och uppdateringar ska göras i överlagrade filer under/i appar.
    - Alla kategorier av klientlib som används från produkten bör granskas för ändringar. Alla åsidosatta konfigurationer \(exempel nedan\) bör jämföras med de senaste för att få de senaste funktionerna:
    - elementmapping.xml
