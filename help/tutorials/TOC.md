@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 414ee8ae3b12bb40054ddbe9e1a008ebc6058f89
+source-git-commit: 12b37bd34dd066b92d932967c755480092935016
 workflow-type: tm+mt
-source-wordcount: '1009'
+source-wordcount: '1014'
 ht-degree: 3%
 
 ---
@@ -242,6 +242,7 @@ ht-degree: 3%
       + [Grundläggande publicering i PDF](./knowledge-base/expert-sessions/native-pdf-publishing-essentials-feb23.md)
       + [Rapporter i AEM](./knowledge-base/expert-sessions/basic-reports-mar2023.md)
       + [Innehåll och mallar](./knowledge-base/expert-sessions/content-and-template-setup-apr2023.md)
+      + [Inlärning i PDF -  - del 1](./knowledge-base/expert-sessions/native-pdf-publishing-eamples-part1-june2023.md)
    + Artiklar {#kb-articles}
       + Redigering {#authoring}
          + Webeditor {#webeditor}
