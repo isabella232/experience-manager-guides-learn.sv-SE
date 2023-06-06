@@ -1,7 +1,7 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade problem i Adobe Experience Manager Guides, juni 2023-versionen
 description: Läs om felkorrigeringarna och hur du uppgraderar till juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 5e1d1cef82c409a6404934d5c28a94c5b9230233
+source-git-commit: 03d90157f7169373a287f24ab666bfea634e0ca4
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 2%
@@ -103,7 +103,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | FMPS | FrameMaker |
 | --- | --- | --- |
-| 2023.05.0 | Inte kompatibel | 2022 eller senare |
+| 2023.06.0 | Inte kompatibel | 2022 eller senare |
 |  |  |  |
 
 
@@ -111,7 +111,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.05.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
+| 2023.06.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
 |  |  |  |  |
 
 
