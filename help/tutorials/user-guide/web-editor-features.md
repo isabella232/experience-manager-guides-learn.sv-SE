@@ -2,9 +2,9 @@
 title: Bekanta dig med Web Editors funktioner
 description: Lär dig hur du känner till Web Editor-funktionerna
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: f7eea65f58927527dbd90138a653f75ee181d141
+source-git-commit: e7a34908b0e61d33469ef83683507f16ab12f0bd
 workflow-type: tm+mt
-source-wordcount: '14387'
+source-wordcount: '14919'
 ht-degree: 0%
 
 ---
@@ -161,6 +161,7 @@ Användarinställningarna är tillgängliga för alla författare. Med hjälp av
 
 ![](images/user_preference_editor.PNG){width="550" align="left"}
 
+- **Använd enhetstema**: Markera den här kryssrutan om du vill att AEM stödlinjer automatiskt ska växla mellan ljusa och mörka teman baserat på temat på enheten.
 - **Tema**: Du kan välja bland temana Ljus, Ljusast, Mörk eller Mörkast för redigeraren. När det gäller det ljusaste temat använder verktygsfälten och panelerna en ljusare grå bakgrund. När det gäller ljustemat använder verktygsfälten och panelerna ljusgrå bakgrund. När det gäller det mörkaste temat använder verktygsfälten och panelerna en mörkare svart bakgrund. När det gäller mörkt tema använder verktygsfälten och panelerna svart färgbakgrund. I alla teman visas området för innehållsredigering med vit färgbakgrund.
 
 - **Mappprofiler**: Mappprofilen styr olika konfigurationer för villkorsattribut, redigeringsmallar, utdatainställningar och Web Editor-konfigurationer. Den globala profilen visas som standard. Om administratören dessutom har konfigurerat mappprofiler i systemet visas även dessa mappprofiler i listan Mappprofiler.
@@ -671,9 +672,20 @@ Om du vill lägga till en fil i din favoritsamling använder du någon av följa
    ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
 
 
+** Menyn Alternativ för favoritsamlingen**\
+Du kan även utföra många åtgärder med Alternativ-menyn som är tillgänglig för en Favoritsamling:
+
+![](images/favorites-options.png){width="400" align="left"}
+- **Byt namn**: Byt namn på den valda samlingen.
+- **Ta bort**: Ta bort den markerade filen.
+- **Uppdatera**: Hämta en ny lista med filer och mappar från databasen.
+- **Visa i resursgränssnitt**: Visa fil- eller mappinnehållet i resursgränssnittet.
+
+
 >[!NOTE]
 >
-> Om du vill ta bort ett objekt från favoritlistan klickar du på alternativikonen bredvid filen eller mappen i favoritlistan och väljer **Ta bort från Favoriter**.
+> Du kan även uppdatera listan med hjälp av ikonen Uppdatera högst upp.
+
 
 **Databasvy** - ![](images/Repository_icon.svg)
 
@@ -761,6 +773,8 @@ Du kan se olika alternativ på Alternativ-menyn beroende på om du väljer en me
 - Duplicera
 - Checka ut/Checka in
 - Förhandsgranska
+- Flytta till
+- Byt namn
 - Ta bort
 - Kopiera
 - Komprimera alla
@@ -784,6 +798,41 @@ De olika alternativen på Alternativ-menyn förklaras nedan:
 - **Förhandsgranska**: Få en snabb förhandsgranskning av filen \(.dita/.xml\) utan att öppna den.
 
    ![](images/quick-preview_cs.png){width="800" align="left"}
+
+- **Byt namn**: Använd det här alternativet om du vill byta namn på den markerade filen. Ange namnet på den nya filen i dialogrutan **Byt namn på resurs** -dialogrutan.
+   - Du kan byta namn på en fil av valfri typ.
+   - Du kan inte ändra filtillägget.
+   - Två filer kan inte ha samma namn. Du kan alltså inte byta namn på en fil till ett namn som redan finns. Ett fel visas.
+
+- **Flytta till**: Använd det här alternativet om du vill flytta den markerade filen till en annan mapp.
+   - Du kan antingen skriva namnet på målmappen eller välja **Markera bana** för att välja målmappen.
+   - Du kan flytta en fil av valfri typ till valfritt mål i innehållsmappen.
+   - Två filer kan inte ha samma namn. Du kan alltså inte flytta en fil till en mapp där det redan finns en fil med samma namn.
+
+   Om du försöker flytta en fil till en mapp där det finns en fil med samma namn men en annan titel, visas dialogrutan Byt namn och flytta filen. Du måste byta namn på filen innan du flyttar den. Den flyttade filen i målmappen har det nya filnamnet.
+
+   ![](images/rename-move-asset.png){width="550" align="left"}
+
+   >[!NOTE]
+   > Du kan också dra och släppa en fil till en annan målmapp.
+
+   **Uteslutningsscenarier**
+
+   AEM Guides tillåter inte att du byter namn på eller flyttar en fil i följande scenarier:
+
+   - Du kan inte flytta eller byta namn på en fil om den ingår i en granskning eller ett översättningsarbetsflöde.
+
+   - Om någon annan användare checkar ut filen kan du inte byta namn på den eller flytta den. Du kommer inte att se alternativet Byt namn eller Flytta till för filen.
+   >[!NOTE]
+   > Om administratören har gett dig behörighet för en mapp är det bara **Byt namn** eller **Flytta till** visas.
+
+   <details>
+    <summary> Cloud Services </summary>
+
+   Om du byter namn på eller flyttar en fil bryts inte befintliga referenser från eller till filen, eftersom varje fil har ett unikt UUID.
+   </details>
+
+
 
 - **Ta bort**: Använd det här alternativet om du vill ta bort den markerade filen. En bekräftelse visas innan filen tas bort.
 
@@ -1202,32 +1251,86 @@ I följande exempel visas hur du använder ämnesschemat i AEM.
 
    ![](images/subject-scheme-apply.png){width="650" align="left"}
 
+   **Hantera hierarkiska definitioner av ämnesdefinitioner och uppräkningar**
 
-**Listrutan Attribut**
+   Förutom att hantera uppräkningarna och ämnesdefinitionerna som finns på samma karta, innehåller AEM stödlinjer även funktionen som definierar uppräkningar och ämnesdefinitioner i två separata kartor. Du kan definiera ämnesdefinitionen i en karta och uppräkningsdefinitionerna i en annan karta och sedan lägga till kartreferensen. I följande XML-kod skapas ämnesdefinitioner och uppräkningsdefinitioner i två separata kartor.
 
-Du kan också ändra värdet för ämnesschemat med hjälp av listrutan Attribut på panelen Innehållsegenskaper i redigeringsvyn. Om du vill ändra värdet väljer du ett värde i listrutan Attribut.
+   Ämnesdefinitionerna definieras i `subject_scheme_map_1.ditamap`
 
-![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
 
-Du kan också använda värden för ett attribut genom att välja flera värden i listrutan.
+   ```XML
+   <?xml version="1.0" encoding="UTF-8"?> 
+   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+   <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
+   <title>subject_scheme_map_1</title> 
+   <subjectdef keys="os" navtitle="Operating system"> 
+   <subjectdef keys="linux" navtitle="Linux"> 
+   <subjectdef keys="redhat" navtitle="RedHat Linux"/> 
+   <subjectdef keys="suse" navtitle="SuSE Linux"/> 
+   </subjectdef> 
+   <subjectdef keys="windows" navtitle="Windows"/> 
+   <subjectdef keys="zos" navtitle="z/OS"/> 
+   </subjectdef> 
+   </subjectScheme>  
+   ```
 
-**Källvy**
+   Uppräkningsdefinitionen finns i subject_scheme_map_2.ditamap
 
-Du kan också ändra värdena från attributets listruta i källvyn. I källvyn kan du inte heller lägga till felaktiga värden.
+   ```XML
+   <?xml version="1.0" encoding="UTF-8"?> 
+   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+   <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
+   <title>subject_scheme_map_2</title> 
+   <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
+   </mapref> 
+   <enumerationdef> 
+   <attributedef name="platform"> 
+   </attributedef> 
+   <subjectdef keyref="os"> 
+   </subjectdef> 
+   </enumerationdef> 
+   </subjectScheme>  
+   ```
 
-![](images/subject-scheme-code-error.png){width="550" align="left"}
+   Här definieras ämnesdefinitioner i `subject_scheme_map_1.ditamap`  medan uppräkningsdef finns i `subject_scheme_map_2.ditamap`. Referensen till `subject_scheme_map_1.ditamap` läggs också till i `subject_scheme_map_2.ditamap`.
 
-**Visa och använd ämnesschemat från villkorspanelen**
+   >[!NOTE]
+   >
+   > Som `subject_scheme_map_1.ditamap` och `subject_scheme_map_2.ditamap` är refererade till varandra och därför är ämnesscheman lösta.
 
-Du kan också visa och använda ämnesschemat från villkorspanelen.
+   Referenserna för ämnesuppräkning löses i följande prioritetsordning:
 
-Om du vill visa ämnesschemat från villkorspanelen måste systemadministratören välja alternativet **Visa Ämnesschema på panelen Villkor** under fliken Villkor i redigeringsinställningarna. Mer information finns i [Fliken Villkor](#id21BMNE0602V).
+   1. Samma karta
+   1. Refererad karta
 
-På villkorspanelen visas den platta lodräta strukturen för ämnesdefinitionerna i ämnesschemat.
+   Referenserna löses inte om uppräkningen inte hittas i samma karta och den refererade kartan.
 
-![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
 
-Du kan lägga till villkor i innehållet genom att dra och släppa det önskade villkoret i innehållet. Villkorsinnehållet markeras med den färg som är definierad för villkoret.
+   **Listrutan Attribut**
+
+   Du kan också ändra värdet för ämnesschemat med hjälp av listrutan Attribut på panelen Innehållsegenskaper i redigeringsvyn. Om du vill ändra värdet väljer du ett värde i listrutan Attribut.
+
+   ![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
+
+   Du kan också använda värden för ett attribut genom att välja flera värden i listrutan.
+
+   **Källvy**
+
+   Du kan också ändra värdena från attributets listruta i källvyn. I källvyn kan du inte heller lägga till felaktiga värden.
+
+   ![](images/subject-scheme-code-error.png){width="550" align="left"}
+
+   **Visa och använd ämnesschemat från villkorspanelen**
+
+   Du kan också visa och använda ämnesschemat från villkorspanelen.
+
+   Om du vill visa ämnesschemat från villkorspanelen måste systemadministratören välja alternativet **Visa Ämnesschema på panelen Villkor** under fliken Villkor i redigeringsinställningarna. Mer information finns i [Fliken Villkor](#id21BMNE0602V).
+
+   På villkorspanelen visas den platta lodräta strukturen för ämnesdefinitionerna i ämnesschemat.
+
+   ![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
+
+   Du kan lägga till villkor i innehållet genom att dra och släppa det önskade villkoret i innehållet. Villkorsinnehållet markeras med den färg som är definierad för villkoret.
 
 **Fragment** -  ![](images/insert-snippet-icon.svg)
 

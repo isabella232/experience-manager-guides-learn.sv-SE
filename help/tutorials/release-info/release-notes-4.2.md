@@ -2,7 +2,7 @@
 title: Versionsinformation | Adobe Experience Manager Guides 4.2
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till 4.2-utgåvor av Adobe Experience Manager Guides
 exl-id: 8a7fef77-63af-462f-89c5-054ab31e079b
-source-git-commit: a54ada55dad4ff8da8eee3dccb5ad9028b4cdc9e
+source-git-commit: b7a6cb6086e94e2c0cbed8e35ca8d194a4fa36d4
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 5%
@@ -11,7 +11,7 @@ ht-degree: 5%
 
 # 4.2-utgåvan av Adobe Experience Manager Guides (februari 2023)
 
-Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problemlösning i den fasta versionen av Adobe Experience Manager Guides (senare kallad *AEM stödlinjer*).
+Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som har korrigerats i version 4.2 av Adobe Experience Manager Guides (senare kallat *AEM stödlinjer*).
 
 Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i version 4.2 av Adobe Experience Manager Guides](whats-new-4.2-release.md).
 

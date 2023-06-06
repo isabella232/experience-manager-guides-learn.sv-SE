@@ -1,13 +1,13 @@
 ---
 title: Migrering av icke-UID till UUID-innehåll
-description: Lär dig hur du migrerar UUID till UUID-innehåll
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+description: Lär dig hur du migrerar icke-UID till UUID-innehåll
+exl-id: 093b380e-9a8b-4e60-aeaa-3458e8c257f2
+source-git-commit: 21edbb2f8a49213ea95fac8a957056711219e7e4
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
-
 
 # Migrering av icke-UID till UUID-innehåll {#id226TI0U20XA}
 
@@ -57,6 +57,7 @@ Utför följande steg för att migrera ditt icke-UID-innehåll:
     - &quot;doBaselines&quot;: true/false \(Om baslinjer måste uppgraderas eller inte. Standardvärdet är true.\)
     -`processLevel`: -1\(misslyckades utan återställning\), 0\(misslyckades med återställning\), 1\(misslyckades med fel\), 2\(uppgraderades utan fel\) \(Vid nytt skriptförsök efter fel behandlas endast filer med &quot;fmUpgradeStatus&quot; &lt;= processLevel igen, annars ignoreras de. Standardvärdet är 1.\)
     -`ignoreImageVersions`: true/false \(Ignorerar bearbetning av bildversioner. Standardvärdet är false.\)
+    
     >[!OBS!]
     >
     > Vi kan köra innehållsmigrering på mappnivå eller hela innehållet/mappen eller på samma mapp \(kör migreringen igen\).
@@ -69,4 +70,3 @@ Utför följande steg för att migrera ditt icke-UID-innehåll:
 >[!NOTE]
 >
 > Om vissa filer inte bearbetas eller är skadade före migreringen kommer de att vara skadade även efter migreringen.
-

@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Designa en sidlayout
 description: Lär dig hur du utformar sidlayouten för att presentera information i olika delar av PDF.
 exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: a1367a6915e760e533bb984705f4be37596b5477
+source-git-commit: 6182455850fb14cc24ce6229f6e4cb2b547901b7
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4712'
 ht-degree: 0%
 
 ---
@@ -359,7 +359,16 @@ Det finns följande kategorier för fält som du kan infoga i sidlayouten:
 
 Var och en av dessa fältkategorier innehåller olika variationer där fältinformationen kan infogas. Ett datumfält kan t.ex. ha olika variationer, t.ex. `YYYY-MM-DD`, `MM/DD/YY`, `MM/DD/YYYY` och så vidare. På samma sätt kan sidnummer ha variationer i form av latinska, decimala eller till och med språkspecifika format som _Arabiska_, _Devanagari_, _Hebreiska_, med mera.
 
-Förutom de fördefinierade fälten kan du även lägga till metadatainformation som variabler eller fält i sidlayouten. Dessa metadata lagras i DITA-kartinnehållet och kan enkelt infogas i sidlayouten. <!--For more information, see [Add fields and metadata](design-page-layout.md#add-fields-and-metadata).-->
+Förutom de fördefinierade fälten kan du även lägga till metadatainformation som variabler eller fält i sidlayouten. Dessa metadata lagras i DITA-kartinnehållet och kan enkelt infogas i sidlayouten.
+
+Du kan också välja metadataegenskaperna från dina resurser och lägga till dem i sidlayouten. Metadata för resursen publiceras sedan för utdata från PDF. Dessa metadataegenskaper för resurserna ställs in från **Egenskaper** sidan för DITA-kartan eller bokmappningsfilen.
+
+>[!NOTE]
+>
+> Metadatafälten visas enligt ditt val av resurs eller karta i **Från** listruta.
+
+
+<!--For more information, see [Add fields and metadata](design-page-layout.md#add-fields-and-metadata).-->
 
 I följande exempel infogar vi ett sidnummer och en kapitelrubrik i sidfotsområdet i en sidlayout.
 

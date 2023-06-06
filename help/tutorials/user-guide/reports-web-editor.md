@@ -2,9 +2,9 @@
 title: DITA-kartrapport från Web Editor
 description: Lär dig DITA-kartrapport från Web Editor
 exl-id: b1011cec-6374-4026-bf1c-54a1981c760e
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 5670b4a8f34916c7ff415680c5ddcfab6e9618e6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '2351'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Du kan skapa en ämnesrapport genom att utföra följande steg:
 
    >[!NOTE]
    >
-   > Klicka **Uppdatera** om du vill få en ny lista med ämnen och se ändringar i kartfilen eller om referenser i ämnesfilen uppdateras.
+   > Klicka **Uppdatera** om du vill få en ny lista med ämnen och visa ändringar i kartfilen eller om en referens i ämnesfilen uppdateras.
 
 1. Klicka **Hämta CSV** om du vill hämta den aktuella ögonblicksbilden av ämnena i DITA-kartan. CSV innehåller de markerade kolumnerna och de avsnitt som filtreras i **Ämneslista** vy. Du kan sedan öppna den här ämneslistefilen i en CSV-redigerare.
 
@@ -75,7 +75,7 @@ Så här visar du metadata för referenserna i den aktuella DITA-kartan:
 
          >[!NOTE]
          >
-         > Som standard kan du se två taggar för en fil. Om du vill visa fler taggar klickar du på **Visa fler**. Klicka **Visa mindre** för att dra ihop listan igen.
+         > Som standard kan du visa två taggar för en fil. Om du vill visa fler taggar klickar du på **Visa fler**. Klicka **Visa mindre** för att dra ihop listan igen.
 
       - **Referenstyp** Typ av referens - direkt eller indirekt
       - **Dokumenttillstånd** \(markerat som standard\) Referensfilens aktuella läge.
@@ -101,7 +101,7 @@ Så här visar du metadata för referenserna i den aktuella DITA-kartan:
    >
    > De vanliga taggarna som används för alla markerade ämnen visas.
 
-1. Välj ett nytt dokumentläge om du vill ändra dokumentläget för alla markerade referenser. I listrutan visas det vanliga möjliga läget för alla valda ämnen. Om det aktuella läget för dina ämnen till exempel är Under granskning, kan du visa läget Utkast, Godkänt eller Granskat.
+1. Välj ett nytt dokumentläge om du vill ändra dokumentläget för alla markerade referenser. I listrutan visas det vanliga möjliga läget för alla valda ämnen. Om det aktuella läget för dina ämnen till exempel är Under granskning kan du visa läget Utkast, Godkänd eller Granskad.
 1. Klicka **Uppdatera** för att uppdatera metadata. Ett bekräftelsemeddelande visas för metadatan, oavsett om de har uppdaterats eller inte. Du kan även klicka **Hämta rapport** om du vill hämta metadata-CSV-filen från bekräftelsedialogrutan. Den här CSV-filen innehåller information om uppdateringsstatus för de valda referenserna.
 
 ## Generera en multimedierapport
@@ -117,7 +117,7 @@ The **Multimedia** rapporten innehåller detaljerad information om de multimedia
 
       ![](images/multimedia-report-file-order.png){width="650" align="left"}
 
-   - Om du beställer av **Används i** -kolumnen visas den omformade vyn där namnen på de referenser som multimedia har använts i listas i den första kolumnen medan multimedianamnen listas i en annan kolumn på separata rader. På följande skärmbild visas namnen på tre referenser \(Justera platstemperaturen, Ändra visning av platstemperatur och besättningsområde\) i den första kolumnen och multimediafilen WarmCoolForC.gif visas i den tredje kolumnen på tre separata rader.
+   - Om du beställer av **Används i** -kolumnen visas den omformade vyn där namnen på de referenser i vilka multimedia har använts listas i den första kolumnen medan multimedianamnen listas i en annan kolumn på separata rader. På följande skärmbild visas namnen på tre referenser \(Justera platstemperaturen, Ändra visning av platstemperatur och besättningsområde\) i den första kolumnen och multimediafilen WarmCoolForC.gif visas i den tredje kolumnen på tre separata rader.
 
       ![](images/multimedia-report-used-in-order.png){width="650" align="left"}
 
@@ -138,12 +138,59 @@ The **Multimedia** rapporten innehåller detaljerad information om de multimedia
 
    >[!NOTE]
    >
-   > Klicka **Uppdatera** om du vill få en ny lista över multimedia och se eventuella ändringar i kartfilen eller om några multimedia på din DITA-karta har uppdaterats.
+   > Klicka **Uppdatera** om du vill få en ny lista över multimedia och visa alla ändringar i kartfilen eller om några multimedia på din DITA-karta har uppdaterats.
 
 1. Du kan också klicka på och spela upp en ljud- eller videofil i Web Editor. Du kan ändra volymen eller vyn för videon. På snabbmenyn har du också möjlighet att hämta, ändra uppspelningshastighet eller visa bild-i-bild.
 
    ![](images/video-web-editor.png){width="800" align="left"}
 
 1. Klicka **Hämta CSV** om du vill hämta den aktuella ögonblicksbilden av multimedia på DITA-kartan. CSV innehåller de markerade kolumnerna och multimedia som filtreras i **Multimedia** vy. Du kan sedan öppna den här multimediala CSV-filen i valfri CSV-redigerare.
+
+
+## Visa och korrigera brutna länkar{#report-broken-links}
+
+The **Brutna länkar** är en användbar rapport som ger dig information om de brutna länkar som finns på din aktuella karta. Du kan visa brutna länkar, som kan vara för DITA-avsnitt, multimediafilreferenser, innehållsnyckelreferenser och så vidare. Du kan också åtgärda dem här själv.
+Rapporten innehåller detaljerad information om exempelvis den brutna länken, länktypen, filer som referensen används i och vilken typ av filer som de har använts i.
+Du kan visa rapporten för brutna länkar genom att utföra följande steg:
+1. I **Databas** öppnar du DITA-schemafilen i Kartvyn.
+1. Klicka på **Hantera** -fliken.
+1. Dubbelklicka **Brutna länkar** till vänster. Listan med brutna länkar eller referenser i DITA-kartan visas.
+1. Från **Filter** kan du ordna listan efter länkar eller efter namnen som används i referenser.
+
+   - När du beställer efter **Bruten länk**, visas sökvägarna för de brutna länkarna i den första kolumnen och sedan visas namnen på alla referenser i vilka de har använts i en annan kolumn på separata rader. Om samma brutna länk används i flera filer visas de på en rad och visas som grupperade eller underrader. På följande skärmbild visas tre brutna länkar i den första kolumnen och den referens som de används i: `TestMap.ditamap` visas i den tredje kolumnen på tre separata rader.
+   ![](images/broken-link-report.png){width="800" align="left"}
+
+   - Om du beställer via **Används i** -kolumnen visas den omformade vyn där namnen på referenserna där de brutna länkarna har använts listas i den första kolumnen medan de brutna länkarna listas i en annan kolumn på samma rad. I följande skärmbild visas referensen (i vilken den brutna länken används) `TestMap.ditamap` i den första kolumnen och de brutna länkarna visas i den tredje kolumnen på samma rad.
+   ![](images/broken-link-filter-usedin.png){width="800" align="left"}
+1. Du kan filtrera brutna länkar baserat på **Filtyp** och **Länktyp**. Listan med brutna länkar visas baserat på ditt val i listrutan. Du kan t.ex. välja att bara visa innehållsreferenserna på DITA-kartan, och en fil visar bara de innehållsreferenser som används i den.
+
+   Beroende på vilken typ av referenser som används i kartan visas filreferens, nyckelreferens, innehållsreferens, innehållsnyckelreferens, bildreferens och multimediefilsreferens i **Länktyp** och **DITA-ämne** eller **DITA-karta** visas i **Filtyp** listruta.
+1. Du kan också använda följande filtreringsalternativ för att välja att visa följande kolumner i listan:
+
+   - **Bruten länk** (markerat som standard) Sökvägen till den brutna länken anges i DITA-kartan.
+
+   - **Länktyp** (markerat som standard) Länkens typ. De tillgängliga alternativen är Content Key Reference, Content Reference, DITA Topic, File Reference, Image Reference, Key reference och Multimedia File Reference.
+
+   - **Används i** (markerat som standard) Referenserna där den brutna länken har använts. Du kan klicka på referensen för att visa den i redigeringsläge.
+
+   - **Filtyp** (markerat som standard) Referenstypen - DITA-schema eller DITA-ämne.
+Klicka **Uppdatera** om du vill få en ny lista över brutna länkar och visa ändringar i kartfilen eller om någon bruten länk i DITA-kartan uppdateras.
+1. Du kan klicka på **Åtgärda länk** ikon (![](images/fix-broken-link.svg)) för att åtgärda den brutna länken.
+
+   >[!NOTE]
+   >
+   > Håll pekaren över den brutna länksökvägen under kolumnen Bruten länk för att visa länken Korrigera (![](images/fix-broken-link.svg)).
+
+   Du kan korrigera en länk i båda vyerna - när du har beställt av **Brutna länkar** eller av **Används i**.
+
+   >[!NOTE]
+   >
+   > När du åtgärdar en bruten länk medan du har sorterat efter brutna länkar, kommer länken att korrigeras i alla filer där den används (som grupperas på en rad).
+
+1. Du måste uppdatera den nödvändiga referensinformationen i dialogrutan **Uppdatera länk** -dialogrutan. Information som krävs i **Uppdatera länk** beror på typen av referens.\
+   När du har åtgärdat en länk visas den inte under listan med brutna länkar. I stället kan du visa den under Ämneslista eller Metadata.
+
+1. Klicka **Hämta CSV** om du vill hämta den aktuella ögonblicksbilden av de brutna länkarna i DITA-kartan. CSV-filen innehåller de markerade kolumnerna och de brutna länkarna som filtreras i vyn Brutna länkar. Du kan sedan öppna och visa den här CSV-filen i valfri CSV-redigerare.
+
 
 **Överordnat ämne:**[ Rapporter](reports-intro.md)

@@ -2,9 +2,9 @@
 title: Översätta dokument från Web Editor
 description: Lär dig hur du översätter dokument från Web Editor
 exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 4d37242019ac2db734f7054324b074c0e8bc60bd
 workflow-type: tm+mt
-source-wordcount: '1517'
+source-wordcount: '1859'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,14 @@ Innan du utför stegen i den här proceduren måste du se till att du har skapat
    Förutom ett nytt översättningsprojekt kan du även välja mellan följande alternativ:
 
    - Du kan välja att **Skapa en struktur** endast för översättningsprojektet.
+   - Du kan välja att **Skapa ett nytt XLIFF-översättningsprojekt** för att konvertera XML-innehållet till XLIFF (XML Localization Interchange File Format). XLIFF är ett öppet XML-baserat format som används för att standardisera dataöverföringen mellan olika verktyg som används i innehållsöversättningsprocessen.
+I ett XLIFF-projekt exporteras innehållet till det branschledande XLIFF-formatet, som kan tillhandahållas översättningsleverantörer. XLIFF-formatet möjliggör återanvändning av segment som du redan har översatt under översättningsfasen.\
+      När XLIFF-innehållet har översatts kan det importeras till AEM stödlinjer, vilket skapar en översatt version av det ursprungliga DITA-projektet.
+
+      >[!NOTE]
+      >
+      > XLIFF-export fungerar bara med mänsklig översättningskonfiguration.
+
    - Du kan välja **Skapa ett nytt flerspråkigt översättningsprojekt** som innehåller översättningsjobb för alla språk som du har valt för översättning. Om du till exempel har valt franska, tyska och spanska skapas ett projekt som innehåller översättningsjobb för alla tre språken.
    - Om du redan har ett översättningsprojekt kan du lägga till ämnen i det projektet. Välj Lägg till i **Befintligt översättningsprojekt** i projektlistan och välj ett projekt i listan Befintliga översättningsprojekt. Du kan sortera dessa projekt efter den senaste, stigande eller fallande ordningen.
 
@@ -98,6 +106,28 @@ Innan du utför stegen i den här proceduren måste du se till att du har skapat
    >
    > Om du avvisar översättningen för ett eller flera ämnen i ett översättningsjobb, visas **Pågår** översättningsstatusen för alla avvisade ämnen återställs till den ursprungliga statusen. Statusen för de refererade ämnena kontrolleras och återställs enligt det senaste översättningstillståndet. Översättningsfilerna som skapats i målprojektet tas inte bort även om översättningen avvisas för dem.
 
+## Lägg till översättningsreglerna
+
+Med AEM Guides kan administratören konfigurera översättningsreglerna. SRX-formatet (Segmentation Rules eXchange) är en standard för utbyte av segmenteringsregler mellan olika användare och olika översättningsmiljöer. Du kan skapa en mapp och lägga till dina anpassade SRX-filer i den.
+
+SRX-filer ska namnges som `<language-code>.srx`. Exempel: en-US eller ar-AE.
+
+>[Anteckning]
+>Titeln är inte skiftlägeskänslig, så du kan ha &#39;en-US&#39;, &#39;en-us&#39; eller &#39;EN-us&#39;. AEM kan också matcha &#39;-&#39; (bindestreck) eller &#39;_&#39; (understreck). Du kan alltså ha &#39;en-US&#39; eller &#39;en_US&#39;.
+
+Du kan också placera de här filerna i en mapp under AEM resursrot som är `./content/dam`.
+
+
+
+När du har skapat mappen som innehåller SRX-filerna kan du lägga till mappsökvägen i platskonfigurationen för Translation SRX i mappprofilen.
+
+Vi rekommenderar att du bara behåller SRX-filer i den mapp som är konfigurerad i mappprofilen för att få bättre prestanda.
+
+
+AEM Guides väljer SRX-reglerna enligt översättningsprojektets källspråk. Den söker efter en anpassad SRX-fil för ett språk, och om du inte definierar en anpassad SRX-fil väljs reglerna enligt reglerna för översättning utanför rutan.
+
+
+Mer information om hur du konfigurerar globala profiler och profiler på mappnivå finns i *Konfigurera redigeringsmallar* i Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
 
 ## Skicka versionsetiketten till målversionen
 

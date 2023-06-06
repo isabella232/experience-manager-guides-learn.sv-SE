@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Använd JavaScript för att arbeta med innehåll eller format
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
 exl-id: 2f301f6a-0d1c-4194-84c2-0fddaef8d3ec
-source-git-commit: e2349fc14143e5e49f8672ef1bfa48984df3b1c7
+source-git-commit: 99ca14a816630f5f0ec1dc72ba77994ffa71dff6
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,35 @@ Sedan måste skriptet anropas från en mallfil som används för att generera ut
 De utdata som skapas med den här koden och mallen visar figurtiteln nedanför bilden:
 
 <img src="./assets/fig-title-below-image.png" width="500">
+
+## Lägga till en vattenstämpel i utdata från PDF för utkast till dokument {#watermark-draft-document}
+
+Du kan också använda JavaScript för att lägga till villkorliga vattenstämplar. Dessa vattenstämplar läggs till i dokumentet när det definierade villkoret är uppfyllt.\
+Du kan t.ex. skapa en JavaScript-fil med följande kod för att skapa en vattenstämpel i PDF som visar dokumentet som ännu inte har godkänts. Den här vattenstämpeln visas inte om du genererar PDF för dokumentet i dokumentet Godkänt.
+
+```css
+...
+/*
+* This file can be used to add a watermark to the PDF output
+* */
+
+window.addEventListener('DOMContentLoaded', function () {
+    var watermark = 'Draft'
+    var metaTag = document.getElementsByTagName('meta')
+    css = "@page {\n  @left-middle {\n    content: \"".concat(watermark, "\";\n    z-index: 100;\n    font-family: sans-serif;\n    font-size: 80pt;\n    font-weight: bold;\n    color: gray(0, 0.3);\n    text-align: center;\n    transform: rotate(-54.7deg);\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 100%;\n    height: 100%;\n  }\n}")
+    head = document.head || document.getElementsByTagName('head')[0], style = document.createElement('style');
+    style.appendChild(document.createTextNode(css));
+    window.pdfLayout.onBeforePagination(function () {
+        for (let i = 0; i < metaTag.length; i++) {
+            if (metaTag[i].getAttribute('name') === 'docstate' && metaTag[i].getAttribute('value') !== 'Approved') {
+                head.appendChild(style);
+            }
+        }
+    })
+});
+...
+```
+
+Utdata från PDF som genereras med den här koden visar en vattenstämpel *Utkast* på dokumentets försättssida:
+
+<img src="./assets/draft-watermark.png" width="500">

@@ -1,7 +1,8 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides 4.2.1
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till 4.2.1-utgåvor av Adobe Experience Manager Guides
-source-git-commit: 7fdbf99a1224124d63acaebc626e3b09475f3096
+exl-id: 19b23164-4a07-4748-a8c4-1760bfdb2ca6
+source-git-commit: 6d7b17709e7a17c30b544a7f3f3707328431aac0
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 4%
@@ -10,7 +11,7 @@ ht-degree: 4%
 
 # 4.2.1-utgåvan av Adobe Experience Manager Guides (maj 2023)
 
-Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problemlösning i den fasta versionen 4.2.1 av Adobe Experience Manager Guides (kallas senare *AEM stödlinjer*).
+Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som har korrigerats i version 4.2.1 av Adobe Experience Manager Guides (senare kallat *AEM stödlinjer*).
 
 Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i version 4.2.1 av Adobe Experience Manager Guides](whats-new-4.2.1-release.md).
 
@@ -110,5 +111,3 @@ De buggar som har åtgärdats i olika områden listas nedan:
 ### Granska
 
 * Den slutförda granskningen öppnas inte i skrivskyddat läge. (11387)
-
-

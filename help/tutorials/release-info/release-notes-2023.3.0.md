@@ -1,22 +1,26 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, mars 2023-utgåvan
 description: Mars-utgåvan av Adobe Experience Manager Guides as a Cloud Service
-exl-id: b3fe7cc8-1654-467a-ab18-6e6912855ecc
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 99ca14a816630f5f0ec1dc72ba77994ffa71dff6
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
 
-# Mars-utgåvan av Adobe Experience Manager Guides as a Cloud Service
 
-## Uppgradera till mars-utgåvan
+# Mars 2023-utgåvan av Adobe Experience Manager Guides as a Cloud Service
 
-Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
+Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som åtgärdats i version mars 2023 av Adobe Experience Manager-handboken (senare kallad *AEM stödlinjer as a Cloud Service*).
+
+Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i mars 2023-utgåvan av AEM Guides as a Cloud Service](whats-new-2023.3.0.md).
+
+## Uppgradera till mars 2023-utgåvan
+
+Uppgradera din nuvarande AEM Guides as a Cloud Service genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
 2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.3.242.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till mars-utgåvan av AEM Guides as a Cloud Service.
+3. Genomför ändringarna och kör Cloud Servicens i pipeline för att uppgradera till mars 2023-utgåvan av AEM Guides as a Cloud Service.
 
 ## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM stödlinjer as a Cloud Service)
 
@@ -51,34 +55,3 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 |  |  |  |  |
 
 
-## Nya funktioner och förbättringar
-
-AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i mars 2023-versionen:
-
-### Öppna och spela upp video- eller ljudfiler i Web Editor
-
-AEM Guides innehåller nu en funktion för att öppna och spela upp ljud- och videofiler i Web Editor. Du kan ändra volymen eller vyn för videon. Du kan även välja att **Hämta**, ändra **Uppspelningshastighet**, eller visa **Bild-i-bild**.
-
-<img src="assets/video-web-editor.png" alt="spela upp video" width="600">
-
-
-## Åtgärdade problem
-
-De buggar som har åtgärdats i olika områden listas nedan:
-
-* PDF-nedladdningsprocessen fungerar inte som den ska i Web Editor. (11496)
-* JSON-utdata | Mappa metadata med egenskapsvärde som `"value in spaces and double quotes"` leder till ett publiceringsfel. (11438)
-* Det går inte att infoga multimediefiler för ljud och video i YouTube-format med **Infoga multimedia** ikon. (11320)
-* Valideringsfel uppstår när en karta skapas med mallen som har ett specialiserat rubrikelement. (11212)
-* PDF | fotnot i tabellrubrik leder till fet och centrerad text i motsvarande sidfot i PDF-utdata. (10610)
->[!NOTE]
->
->Om du vill spegla ändringen i PDF tar du bort mappen PDF som finns i /content/dam/dita-templates och uppgraderar sedan till den senaste versionen. (10610)
-
-### Känt problem med tillfälliga lösningar
-
-Adobe har identifierat följande kända fel i AEM Guide as a Cloud Service March 2023.
-
-* Användarna kan inte spara eller skapa en version av en duplicerad resurs.
-
-**Tillfällig lösning**: Innan du gör några ändringar i den duplicerade resursen bearbetar du om den från resursgränssnittet.
