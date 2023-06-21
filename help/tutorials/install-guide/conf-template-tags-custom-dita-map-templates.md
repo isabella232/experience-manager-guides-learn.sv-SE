@@ -1,13 +1,13 @@
 ---
 title: Konfigurera anpassad DITA-mappningsmall
 description: Lär dig hur du konfigurerar en anpassad DITA-mappningsmall
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+exl-id: 2ad0fc50-97fd-437e-94cc-db5f51f3bc3f
+source-git-commit: 0dea2f1d17e7d9b12d07b459a10a00c1dd7460a5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera anpassad DITA-mappningsmall {#id1774F04F05Z}
 
@@ -50,7 +50,6 @@ Nästa gång du skapar en ny karta visas mallen på sidan Design. Mer informatio
 
 >[!TIP]
 >
-> Se [appendix.md\#](appendix.md#)den *Egna mallar* i Best practices Guide för bästa praxis när det gäller att använda anpassade kartmallar.
+> Se *Egna mallar* i Best practices Guide för bästa praxis när det gäller att använda anpassade kartmallar.
 
-**Överordnat ämne:**[ Konfigurera ämne- och mappningsmallar](conf-template-tags.md)
-
+**Överordnat ämne:** [Konfigurera ämne- och mappningsmallar](conf-template-tags.md)
