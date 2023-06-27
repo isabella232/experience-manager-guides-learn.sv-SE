@@ -1,7 +1,7 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
 description: Lär dig hur du infogar ett innehållsavdrag från datakällan
-source-git-commit: 3571b8acfa51dc91f9ed0366715357af7b2f1ecb
+source-git-commit: 84dbcd80d8b41ae52ec7389dd0d0a750ea8d6c65
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Till exempel:
 
    1. I källvyn visas data i DITA-källvyn.
       ![](images/add-content-snippet-generator.png){width="800" align="left"}
-   1. Om du vill spara resultatet av frågan anger du namnet på generatorn och klickar sedan på **LÄGG TILL**.   En ny generator för innehållsfragment läggs till i listan.
+1. Om du vill spara resultatet av frågan anger du namnet på generatorn och klickar sedan på **LÄGG TILL**.   En ny generator för innehållsfragment läggs till i listan.
 
    >[!NOTE]
    >

@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 65a35f1c7530ed479e3bc584852fabc30ceecabb
+source-git-commit: d8bc9e2673ce08fe5f71154e9d009d1847b0274d
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2903'
 ht-degree: 0%
 
 ---
@@ -179,6 +179,6 @@ Om du vill visa felloggen klickar du på **Stäng** håller du muspekaren över 
 Om du väljer **Hämta temporära filer** i Avancerade inställningar kan du även hämta de mellanliggande HTML-filer som skapas när du genererar utdata för PDF. När du har genererat utdata kan du hämta de tillfälliga filerna med **Hämta temporära filer** ![ladda ned temporära filer](assets/native-pdf-download-temporary-files-icon.svg)ikonen i det övre fältet. Med den här funktionen kan du visa dina tillfälliga HTML-format och -layouter och du kan korrigera eller ändra dina CSS-format efter dina behov.
 
 
->ANMÄRKNING
+>[!NOTE]
 >
 > The **Hämta temporära filer**  ![ladda ned temporära filer](assets/native-pdf-download-temporary-files-icon.svg) visas bara om du har genererat det senaste PDF-utdata med hjälp av förinställningen där du har valt alternativet i **Avancerat** -fliken.
