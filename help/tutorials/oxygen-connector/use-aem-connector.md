@@ -4,9 +4,9 @@ description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager
 hide: true
 hidefromtoc: true
 exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: ee4722ed92d1b1a59e8baea583517a4470f558c9
 workflow-type: tm+mt
-source-wordcount: '5762'
+source-wordcount: '5885'
 ht-degree: 0%
 
 ---
@@ -212,19 +212,19 @@ Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-
 1. Ange följande information:
    - **Server-URL**: URL för AEM server, till exempel:
 
-      ```http
-      http[s]://<host>:<port>
-      ```
+     ```http
+     http[s]://<host>:<port>
+     ```
 
-      Ange värdnamnet och porten för servern där AEM distribueras i ovanstående URL.
+     Ange värdnamnet och porten för servern där AEM distribueras i ovanstående URL.
 
-      >[!IMPORTANT]
-      >
-      >Om AEM distribueras på port 80 eller 443 behöver du inte ange den i URL:en.
+     >[!IMPORTANT]
+     >
+     >Om AEM distribueras på port 80 eller 443 behöver du inte ange den i URL:en.
 
    - **Autentisering:** Välj från **Grundläggande \(användarnamn/lösenord\)** eller **Webbautentisering**. Om du väljer **Grundläggande** autentisering som du måste ange **Användarnamn** och **Lösenord** i dialogrutan Inställningar.
 
-      Om du väljer Webbautentisering visas AEM inloggningsskärm. Ange dina inloggningsuppgifter och klicka på **Logga in** -knappen. När inloggningen är klar stängs AEM inloggningsskärmen och panelen AEM guider visar fillistan från AEM server.
+     Om du väljer Webbautentisering visas AEM inloggningsskärm. Ange dina inloggningsuppgifter och klicka på **Logga in** -knappen. När inloggningen är klar stängs AEM inloggningsskärmen och panelen AEM guider visar fillistan från AEM server.
 
    - **Tidsgräns för anslutning**: Ange hur många sekunder klienten ska vänta på ett svar från AEM. Om inget svar från servern tas emot inom den angivna tiden avslutas begäran. Standardvärdet är 20 sekunder.
 
@@ -256,7 +256,7 @@ Utför följande steg för att konfigurera profileringsattribut:
 - Klicka **Välj** bredvid **Redigerare för anpassat attributvärde** under **Enskilda tillägg** och väljer CustomValueEditor - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
 På följande skärmbild visas den konfigurerade **Tillägg** för DITA-ämnen:
 
-   ![](images/dita-topic-extension-tab.png)
+  ![](images/dita-topic-extension-tab.png)
 
 1. Klicka **OK** i alla dialogrutor för att spara ändringarna.
 
@@ -275,11 +275,11 @@ Utför följande steg för att konfigurera DITA-mappningstillägget:
 - Klicka **Välj** bredvid **Redigerare för anpassat attributvärde** under **Enskilda tillägg** och väljer CustomValueEditor - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
 - *\(Valfritt\)* Om du inte vill lösa referenser när du öppnar en kartfil måste du göra följande ytterligare konfiguration:
 
-   Klicka **Välj** bredvid **Referenshanteraren** under **Enskilda tillägg** och väljer CustomDITAMapReferenceResolver - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
+  Klicka **Välj** bredvid **Referenshanteraren** under **Enskilda tillägg** och väljer CustomDITAMapReferenceResolver - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
 
-   På följande skärmbild visas den konfigurerade **Tillägg** tab:
+  På följande skärmbild visas den konfigurerade **Tillägg** tab:
 
-   ![](images/dita-map-extension-tab.png)
+  ![](images/dita-map-extension-tab.png)
 
 1. Klicka **OK** i alla dialogrutor för att spara ändringarna.
 
@@ -302,9 +302,9 @@ På följande skärm visas AEM stödlinjepanelen.
 - **Anslut**: Välj det här alternativet om du vill ansluta till AEM. Alternativet är inaktiverat när Sygen XML Author är ansluten till AEM Server.
 - **Uppdatera**: Välj det här alternativet om du vill få den senaste statusen för filerna och mappen från AEM.
 
-   >[!NOTE]
-   >
-   >Spara filerna innan du uppdaterar dem. När du väljer **Uppdatera** får du en varning om att spara filerna innan du uppdaterar dem. Om du inte har sparat dina filer kan du klicka på **Avbryt** och spara dem.
+  >[!NOTE]
+  >
+  >Spara filerna innan du uppdaterar dem. När du väljer **Uppdatera** får du en varning om att spara filerna innan du uppdaterar dem. Om du inte har sparat dina filer kan du klicka på **Avbryt** och spara dem.
 
 - **Inställningar**: Du kan använda det här alternativet för att öppna den allmänna dialogrutan Inställningar för plugin-programmet.
 - **Utloggning**: Välj det här alternativet om du vill stänga AEM serveranslutning. Det här alternativet är bara tillgängligt om du använder läget Webbautentisering.
@@ -418,6 +418,16 @@ När du checkar in en fil lagras den lokala kopian från systemet i AEM och fill
    >[!NOTE]
    >
    >Den här kommentaren visas i filens AEM versionshistorik.
+1. Lägg till etiketter i **Etikett** textruta. Ange en etikett och tryck på Enter. Till exempel: *2307 års utgåva*.
+Om administratören har fördefinierat en lista över etiketter och överfört dem till `label.json` så visas etiketterna som en listruta. Du kan välja en eller flera etiketter i listrutan.
+   ![](images/checkin-dropdown-labels.png){width="300" align="left"}
+Du kan lägga till flera etiketter (avgränsade med kommatecken) i samma version av ett ämne.  Till exempel: *Adobe*, *AEM*,*Stödlinjer*
+Du kan dock inte lägga till samma etikett till olika versioner av ett ämne. Om du lägger till en etikett som du redan har lagt till i en tidigare version läggs den till i den senaste versionen och tas bort från den tidigare versionen.
+
+   >[!NOTE]
+   > 
+   > Dessa etiketter visas i filens AEM versionshistorik.
+
 
 1. Klicka **OK**.
 

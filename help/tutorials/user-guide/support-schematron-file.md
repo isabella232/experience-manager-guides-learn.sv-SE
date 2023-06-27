@@ -1,13 +1,13 @@
 ---
 title: Stöd för Schematron-filer
 description: Lär dig hur du validerar dina ämnen med bildtext
-source-git-commit: 5ad78d32cbfa1c913866fae5dafe97dc8f01139c
+exl-id: e5912fa1-af26-42f4-b5e5-a6d2afd45bc8
+source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
 
 ---
-
 
 # Stöd för Schematron-filer
 
@@ -55,7 +55,7 @@ När du öppnar ett ämne i webbredigeraren visas en schematronvalideringspanel 
 
 Stödet för Schematron i Web Editor hjälper dig att validera filerna mot en uppsättning regler och bibehålla konsekvens och korrekthet i alla ämnen.
 
-## Använd kontrollsatser och rapportsatser för att kontrollera regler{#schematron-assert-report}
+## Använd assert- och report-satser för att kontrollera regler{#schematron-assert-report}
 
 AEM Guides har även stöd för satserna assert och report i Schematron. Dessa satser hjälper dig att validera dina DITA-avsnitt.
 
@@ -146,10 +146,3 @@ You have <sch:value-of select="$words"/> letters. This should be greater than <s
 
 </sch:pattern> 
 ```
-
-
-
-
-
-
-

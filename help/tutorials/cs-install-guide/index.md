@@ -1,24 +1,21 @@
 ---
 source-git-commit: e3b2fc8c96ce535bb91e7bce935720aa389a917a
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
-# Installera och konfigurera Adobe Experience Manager Guides 4.2
+# Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service
 
 - [Ansvarsfriskrivning](rebranding-disclaimer.md)
 - [Om den här guiden](introduction.md)
 - [Hämta och installera](download-install.md)
-   - [Tekniska krav](download-install-technical-requirements.md)
-   - [Installera Adobe Experience Manager](download-install-AEM.md)
-   - [Hämta och installera AEM för första gången](download-install-aemg-first-time.md)
+   - [Distribuera modulen AEM stödlinjer](download-install-dxml-first-time.md)
    - [Konfigurera Dispatcher](download-install-configure-dispatcher.md)
-   - [Verifiera installation av AEM](download-install-verify-aemg-installation.md)
-   - [Uppgradera Adobe Experience Manager-guider](upgrade-xml-documentation.md)
-   - [Avinstallera AEM](download-install-unistall-aemg.md)
+   - [Verifiera installation av AEM](download-install-verify-dxml-installation.md)
+   - [AEM](download-install-upgrade-dxml.md)
+   - [Konfigurationsåsidosättningar](download-install-additional-config-override.md)
    - [Recommendations för prestandaoptimering](download-install-recommend-perf-optimiz.md)
-- [Migrering av icke-UID till UUID-innehåll](migrate-uuid-non-uuid.md)
 - [Användaradministration och -säkerhet](user-admin-sec.md)
 - [Använd anpassad DITA-OT- och DITA-specialisering](dita-ot-specialization.md)
 - [Konfigurera dokumentlägen](customize-doc-state.md)
@@ -45,13 +42,14 @@ ht-degree: 0%
    - [Generera element-ID automatiskt](auto-generate-ids.md)
    - [Anpassa AEM standardordlista](customize-aem-custom-dictionary.md)
    - [Konfigurera textfilter](config-text-filters.md)
-   - [Konfigurera antalet LimitReads för en fråga](conf-query-limitreads.md)
+   - [Konfigurera filter för filbläddringsdialogrutan](conf-custom-file-filters.md)
    - [Installera paket för artikelbaserad publicering](configure-article-based-publishing.md)
-- [Ange avancerad kartredigerare som standard](conf-map-editor.md)
-- [Inkludera @navtitle-attribut som standard](auto-add-navtitle.md)
+   - [Konfigurera generering av PDF för ett enskilt ämne](conf-pdf-generation-dita-ot.md)
+   - [Konfigurera översättningsfunktionen i webbredigeraren](conf-translation-web-editor.md)
+   - [Ange avancerad kartredigerare som standard](conf-map-editor.md)
+   - [Inkludera @navtitle-attribut som standard](auto-add-navtitle.md)
 - [Konfigurera globala profiler eller profiler på mappnivå](conf-folder-level.md)
 - [Versionshantering](version-management.md)
-- [Integrera skrivbordsbaserade XML-redigerare](integrate-desktop-editors.md)
 - [Konfigurera inställningar för utdatagenerering](conf-output-generation.md)
 - [Konfigurera och anpassa arbetsflöden](customize-workflows.md)
 - [Översätta innehåll](translation.md)

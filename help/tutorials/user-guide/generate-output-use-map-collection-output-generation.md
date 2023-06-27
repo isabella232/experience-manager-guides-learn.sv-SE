@@ -2,9 +2,9 @@
 title: Använd kartsamling för generering av utdata
 description: Lär dig hur du använder kartsamling för att generera utdata
 exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 22f88ae4097a6067ed65a963ad6765f6f8c24f36
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,15 +66,26 @@ Följande filtreringsalternativ och mappningsinformation visas på samlingssidan
 
 Så här konfigurerar och genererar du utdata med en kartsamling:
 
-1. Öppna kartsamlingen.
+1. Öppna kartsamlingen.Du kan visa olika förinställningar för utdata, t.ex. AEM, PDF (inklusive ursprunglig PDF), HTML 5, EPUB och anpassade förinställningar. Du kan även visa de förinställningar för global profil och mappprofil som har skapats av administratören.
+
+   The ![](images/global-preset-icon.svg) anger en förinställning på mappprofilnivå.
 1. \(Valfritt\) Gör något av följande beroende på dina behov:
    - Använd filter från den vänstra listen för att filtrera ändrade kartor, förinställningar eller språk.
    - Klicka på **Redigera** och ändra önskade utdata genom att aktivera eller inaktivera skjutknappen.
+
+
+
+     >[!NOTE]
+     >  
+     > Som standard är alla nya förinställningar inaktiverade.
+
+   - Du kan välja **Aktivera/inaktivera alla förinställningar för mappprofiler** för en DITA-karta för att markera alla mappprofiler för den på en gång.
+
+
 1. Gör något av följande:
 
    - Om du vill generera utdata för markerade kartor markerar du karfilerna och klickar på **Generera markerade**.
    - Om du vill generera utdata för alla DITA-kartor med deras konfigurerade förinställningar klickar du på **Generera alla**.
-
    >[!IMPORTANT]
    >
    > Om en utdatagenereringsprocess för en förinställning eller ett DITA-schema finns i kön eller pågår kan du inte initiera en annan utdatagenereringsåtgärd för samma förinställning eller karta.
@@ -85,7 +96,7 @@ Så här konfigurerar och genererar du utdata med en kartsamling:
 - Om du vill ta bort en kartsamling markerar du samlingen på sidan Kartsamling och klickar på **Ta bort**.
 - Om du vill ta bort en DITA-karta från en kartsamling öppnar du Kartsamlingen i redigeringsläge, markerar DITA-kartfilen och klickar på **Ta bort från samling**.
 
-   Detta tar även bort alla förinställningar eller språkområden som är kopplade till DITA-kartan från kartsamlingen.
+  Detta tar även bort alla förinställningar eller språkområden som är kopplade till DITA-kartan från kartsamlingen.
 
 
 ## Avbryt en utdatagenereringsaktivitet från en kartsamling

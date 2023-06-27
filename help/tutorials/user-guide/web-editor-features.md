@@ -2,9 +2,9 @@
 title: Bekanta dig med Web Editors funktioner
 description: Lär dig hur du känner till Web Editor-funktionerna
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: e7a34908b0e61d33469ef83683507f16ab12f0bd
+source-git-commit: b55b4aa572a680181388e24827daa7d045f1e406
 workflow-type: tm+mt
-source-wordcount: '14919'
+source-wordcount: '15310'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Redigeringsinställningarna är bara tillgängliga för administrativa användar
 
 - **Allmänt**: Med de allmänna inställningarna kan du konfigurera det lexikon som ska användas med Web Editor. Den här fliken innehåller tre avsnitt: **Stavningskontroll**, **Villkor** och **Redigering**.
 
-   ![](images/editor-setting-general.png){width="650" align="left"}
+  ![](images/editor-setting-general.png){width="650" align="left"}
 
    - **Stavningskontroll**: Det finns två alternativ — **AEM stavningskontroll** och **Stavningskontroll för webbläsare**. Som standard använder redigeraren funktionen Stavningskontroll i webbläsaren, där stavningskontrollen utförs med webbläsarens inbyggda ordlista. Du kan växla till AEM Stavningskontroll om du vill använda AEM ordlista, som också kan anpassas för att lägga till din egen ordlista. Mer information om hur du anpassar AEM lexikon finns i *Anpassa AEM standardordlista* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
 
@@ -108,13 +108,13 @@ Redigeringsinställningarna är bara tillgängliga för administrativa användar
 
       - **Visa nyckeln med titeln i ämnesschemapanelen**: Välj det här om du vill visa nycklarna tillsammans med rubrikerna i ämnesschemat. Om du inte väljer det här alternativet visas bara rubrikerna. Här visas till exempel nycklarna &#39;os&#39;, &#39;målgrupp&#39; och &#39;other&#39; tillsammans med titlarna.
 
-         ![](images/subject-scheme-title.png){width="550" align="left"}
+        ![](images/subject-scheme-title.png){width="550" align="left"}
 
       - **Visa ämnesschema på villkorspanelen**: Välj det här om du vill visa ett ämnesschema på villkorspanelen. Om du avmarkerar det här alternativet visas de definierade villkoren på villkorspanelen.
+
    - **Redigering**
 
       - **Aktivera Ersätt alla**: Markera det här alternativet om du vill se ikonen Ersätt alla på panelen Sök och ersätt.
-
 
 **Paneler**: Den här inställningen styr panelerna som visas på den vänstra panelen i redigeraren. Du kan växla om du vill visa eller dölja den önskade panelen.
 
@@ -126,7 +126,7 @@ Redigeringsinställningarna är bara tillgängliga för administrativa användar
 
 - **Elementlista**: Som administratör kan du styra listan med element som en författare kan infoga med [Infoga element](#id204SG30105Z) och också ange elementets visningsnamn. Med inställningen Elements List kan du ange elementets namn enligt DITA-specifikationerna och en etikett som du vill använda i stället för det DITA-definierade elementnamnet:
 
-   ![](images/editor-setting-element-list.png){width="650" align="left"}
+  ![](images/editor-setting-element-list.png){width="650" align="left"}
 
 På skärmbilden ovan visas `b` elementet har fått etiketten Fet, `codeblock` får en etikett av kodblocket tillsammans med några andra element. Om du väljer **Använd endast ovanför element** så visas endast de giltiga elementen \(vid den aktuella insättningspunkten\) i den här listan på snabbmenyn Infoga element.
 
@@ -152,7 +152,7 @@ De attribut som är definierade för ett element visas i layoutvyn och dispositi
 
    - **Sprid källversionsetiketter till målversionen**: Välj det här alternativet om du vill skicka etiketten för källfilsversionen till den översatta filen. Som standard är detta inaktiverat.
 
-   ![](images/editor-setting-translation.png){width="550" align="left"}
+  ![](images/editor-setting-translation.png){width="550" align="left"}
 
 
 **Användarinställningar** - ![](images/user_preference_editor_icon.svg)
@@ -166,11 +166,11 @@ Användarinställningarna är tillgängliga för alla författare. Med hjälp av
 
 - **Mappprofiler**: Mappprofilen styr olika konfigurationer för villkorsattribut, redigeringsmallar, utdatainställningar och Web Editor-konfigurationer. Den globala profilen visas som standard. Om administratören dessutom har konfigurerat mappprofiler i systemet visas även dessa mappprofiler i listan Mappprofiler.
 
-   Konfigurationerna som en administratör kan definiera i mappprofilen inkluderar: anpassa användargränssnittet, inklusive verktygsfältsikoner, Web Editors layout, kodavsnitt och rotkarta. Mer information finns i *Konfigurera globala profiler eller profiler på mappnivå* i as a Cloud Service Installera och konfigurera Adobe Experience Manager Guides.
+  Konfigurationerna som en administratör kan definiera i mappprofilen inkluderar: anpassa användargränssnittet, inklusive verktygsfältsikoner, Web Editors layout, kodavsnitt och rotkarta. Mer information finns i *Konfigurera globala profiler eller profiler på mappnivå* i as a Cloud Service Installera och konfigurera Adobe Experience Manager Guides.
 
-   >[!NOTE]
-   >
-   > Namnet på den aktuella mappprofilen visas som etikett för ikonen för användarinställningar i huvudverktygsfältet.
+  >[!NOTE]
+  >
+  > Namnet på den aktuella mappprofilen visas som etikett för ikonen för användarinställningar i huvudverktygsfältet.
 
 - **Grundsökväg**: Som standard visas resurser från /content/dam-platsen när du öppnar AEM från Web Editor. Arbetsmappen finns förmodligen i mappen /content/dam/. Det krävs några klick för att komma till arbetsmappen varje gång. Du kan ange grundsökvägen till din arbetsmapp och i databasvyn visas sedan innehållet från den platsen direkt. Detta minskar tiden för åtkomst till din arbetsmapp. När du infogar en referens- eller mediefil i ditt ämne börjar filbläddringsplatsen med mappen inställd i bassökvägen.
 
@@ -665,11 +665,11 @@ Om du vill lägga till en fil i din favoritsamling använder du någon av följa
 
 - Navigera till önskad fil eller mapp i databasvyn och klicka på *Alternativ* -ikonen för att öppna snabbmenyn och välja **Lägg till i Favoriter**. I dialogrutan Lägg till i Favoriter kan du välja att lägga till filen/mappen till en befintlig favorit eller skapa en ny.
 
-   ![](images/favorite-add-file-folder.png){width="300" align="left"}
+  ![](images/favorite-add-file-folder.png){width="300" align="left"}
 
 - Högerklicka på en fils flik i redigeraren för att öppna snabbmenyn. Välj **Lägg till i \> Favoriter** om du vill lägga till filen i favoritlistan.
 
-   ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
+  ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
 
 
 ** Menyn Alternativ för favoritsamlingen**\
@@ -739,27 +739,27 @@ Du kan utföra följande åtgärder med Alternativ-menyn som är tillgänglig f�
 
 - **Överför resurser**: Överför en fil från ditt lokala system till den valda mappen i AEM. Du kan också dra och släppa filer från ditt lokala system till ditt aktuella arbetspass. Det här är mycket användbart om du vill infoga bilder från ditt lokala system i avsnittet.
 
-   ![](images/upload-assets.png){width="550" align="left"}
+  ![](images/upload-assets.png){width="550" align="left"}
 
-   Du kan välja en mapp där du vill överföra filen och en förhandsvisning av bilden visas också. Om du vill byta namn på filen kan du göra det i textrutan för filnamn. Klicka på Överför för att slutföra filöverföringen. Om du har dragit och släppt en bildfil till ett ämne, läggs bildfilen till i artikeln och den överförs också.
+  Du kan välja en mapp där du vill överföra filen och en förhandsvisning av bilden visas också. Om du vill byta namn på filen kan du göra det i textrutan för filnamn. Klicka på Överför för att slutföra filöverföringen. Om du har dragit och släppt en bildfil till ett ämne, läggs bildfilen till i artikeln och den överförs också.
 
-   Om administratören har aktiverat alternativet UUID i *XMLEditorConfig* så ser du UUID för den överförda bilden i **Källa** -egenskap.
+  Om administratören har aktiverat alternativet UUID i *XMLEditorConfig* så ser du UUID för den överförda bilden i **Källa** -egenskap.
 
-   ![](images/uuid-in-source-upload-image_cs.png){width="800" align="left"}
+  ![](images/uuid-in-source-upload-image_cs.png){width="800" align="left"}
 
 - **Sök efter filer i mappen**: Flyttar fokus till databassökning där du kan ange söktermen. Sökningen utförs under den valda mappen i databasen. Du kan också använda ett filter för att returnera DITA-filer, bildfiler eller båda.
 
-   ![](images/find-files-in-folders-repo-view_cs.png){width="400" align="left"}
+  ![](images/find-files-in-folders-repo-view_cs.png){width="400" align="left"}
 
-   Du kan också söka med hjälp av filens UUID. I så fall visar sökresultaten titeln på DITA/XML-filen och om filen är en bildfil visas filens UUID. I följande sökexempel genomsöks UUID för en bildfil och i sökresultaten visas UUID för den ursprungliga bildfilen och avsnittsrubriken för den fil där bilden refereras.
+  Du kan också söka med hjälp av filens UUID. I så fall visar sökresultaten titeln på DITA/XML-filen och om filen är en bildfil visas filens UUID. I följande sökexempel genomsöks UUID för en bildfil och i sökresultaten visas UUID för den ursprungliga bildfilen och avsnittsrubriken för den fil där bilden refereras.
 
-   ![](images/uuid-repo-search-image-topic-file_cs.png){width="300" align="left"}
+  ![](images/uuid-repo-search-image-topic-file_cs.png){width="300" align="left"}
 
 - **Komprimera alla**: Komprimera alla öppna mappar i databasen och visa endast mapparna på rotnivå.
 
-   >[!NOTE]
-   >
-   > Använd **\>** -ikonen bredvid en mapp för att expandera den.
+  >[!NOTE]
+  >
+  > Använd **\>** -ikonen bredvid en mapp för att expandera den.
 
 - **Lägg till i Favoriter**: Lägger till den markerade mappen i favoriter. Du kan lägga till den i en befintlig eller ny favoritsamling.
 
@@ -791,13 +791,13 @@ De olika alternativen på Alternativ-menyn förklaras nedan:
 - **Duplicera**: Använd det här alternativet om du vill skapa en dubblett eller en kopia av den markerade filen. Du kan också ändra namn på den duplicerade filen i kommandotolken Duplicera resurs. Som standard skapas filen med suffixet \(som filnamn\_1.extension\). Filens namn är detsamma som källfilen och den nya filen börjar med version 1.0. Alla referenser, taggar och metadata kopieras medan baslinjerna inte kopieras i den duplicerade filen.
 - **Checka ut**: Lås den markerade filen för redigering. För en låst fil ändras det här alternativet till **Checka in**.
 
-   >[!NOTE]
-   >
-   > Om en fil är låst eller utcheckad av en användare och du håller muspekaren över låsikonen visas den användare \(namn\) som har låst filen.
+  >[!NOTE]
+  >
+  > Om en fil är låst eller utcheckad av en användare och du håller muspekaren över låsikonen visas den användare \(namn\) som har låst filen.
 
 - **Förhandsgranska**: Få en snabb förhandsgranskning av filen \(.dita/.xml\) utan att öppna den.
 
-   ![](images/quick-preview_cs.png){width="800" align="left"}
+  ![](images/quick-preview_cs.png){width="800" align="left"}
 
 - **Byt namn**: Använd det här alternativet om du vill byta namn på den markerade filen. Ange namnet på den nya filen i dialogrutan **Byt namn på resurs** -dialogrutan.
    - Du kan byta namn på en fil av valfri typ.
@@ -809,28 +809,29 @@ De olika alternativen på Alternativ-menyn förklaras nedan:
    - Du kan flytta en fil av valfri typ till valfritt mål i innehållsmappen.
    - Två filer kan inte ha samma namn. Du kan alltså inte flytta en fil till en mapp där det redan finns en fil med samma namn.
 
-   Om du försöker flytta en fil till en mapp där det finns en fil med samma namn men en annan titel, visas dialogrutan Byt namn och flytta filen. Du måste byta namn på filen innan du flyttar den. Den flyttade filen i målmappen har det nya filnamnet.
+  Om du försöker flytta en fil till en mapp där det finns en fil med samma namn men en annan titel, visas dialogrutan Byt namn och flytta filen. Du måste byta namn på filen innan du flyttar den. Den flyttade filen i målmappen har det nya filnamnet.
 
-   ![](images/rename-move-asset.png){width="550" align="left"}
+  ![](images/rename-move-asset.png){width="550" align="left"}
 
-   >[!NOTE]
-   > Du kan också dra och släppa en fil till en annan målmapp.
+  >[!NOTE]
+  > Du kan också dra och släppa en fil till en annan målmapp.
 
-   **Uteslutningsscenarier**
+  **Uteslutningsscenarier**
 
-   AEM Guides tillåter inte att du byter namn på eller flyttar en fil i följande scenarier:
+  AEM Guides tillåter inte att du byter namn på eller flyttar en fil i följande scenarier:
 
    - Du kan inte flytta eller byta namn på en fil om den ingår i en granskning eller ett översättningsarbetsflöde.
 
    - Om någon annan användare checkar ut filen kan du inte byta namn på den eller flytta den. Du kommer inte att se alternativet Byt namn eller Flytta till för filen.
-   >[!NOTE]
-   > Om administratören har gett dig behörighet för en mapp är det bara **Byt namn** eller **Flytta till** visas.
 
-   <details>
+  >[!NOTE]
+  > Om administratören har gett dig behörighet för en mapp är det bara **Byt namn** eller **Flytta till** visas.
+
+  <details>
     <summary> Cloud Services </summary>
 
-   Om du byter namn på eller flyttar en fil bryts inte befintliga referenser från eller till filen, eftersom varje fil har ett unikt UUID.
-   </details>
+  Om du byter namn på eller flyttar en fil bryts inte befintliga referenser från eller till filen, eftersom varje fil har ett unikt UUID.
+  </details>
 
 
 
@@ -840,23 +841,24 @@ De olika alternativen på Alternativ-menyn förklaras nedan:
    - Om det inte finns någon referens till filen från någon annan fil tas den bort och ett meddelande om att åtgärden lyckades visas.
    - Om filen är utcheckad kan du inte ta bort den och ett felmeddelande visas.
 
-      >[!NOTE]
-      >
-      > Om administratören har förhindrat att utcheckade filer tas bort visas endast felmeddelandet. Mer information finns i *Förhindra borttagning av utcheckade filer* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
+     >[!NOTE]
+     >
+     > Om administratören har förhindrat att utcheckade filer tas bort visas endast felmeddelandet. Mer information finns i *Förhindra borttagning av utcheckade filer* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
 
    - Om filen läggs till i en favoritsamling visas **Tvinga borttagning** visas och du kan framtvinga borttagning.
    - Om någon annan fil refererar till filen **Tvinga borttagning** med bekräftelsemeddelandet visas och du kan framtvinga borttagning av filen:
 
-      ![](images/options-menu-force-delete.png){width="550" align="left"}
+     ![](images/options-menu-force-delete.png){width="550" align="left"}
 
-      >[!NOTE]
-      >
-      > Om administratören har gett filborttagningsbehörighet **Tvinga borttagning** är aktiverat. Annars, **Tvinga borttagning** är inaktiverat och ett meddelande visas om att du inte har behörighet att ta bort refererade filer. Mer information finns i *Förhindra borttagning av refererade filer* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
+     >[!NOTE]
+     >
+     > Om administratören har gett filborttagningsbehörighet **Tvinga borttagning** är aktiverat. Annars, **Tvinga borttagning** är inaktiverat och ett meddelande visas om att du inte har behörighet att ta bort refererade filer. Mer information finns i *Förhindra borttagning av refererade filer* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
 
    - Om du tar bort ett refererat ämne och har öppnat filen som innehåller referenser för redigering, visas den brutna länken för den refererade filen.
-   >[!NOTE]
-   >
-   > Du kan även ta bort den markerade filen på liknande sätt med tangenten Delete på tangentbordet.
+
+  >[!NOTE]
+  >
+  > Du kan även ta bort den markerade filen på liknande sätt med tangenten Delete på tangentbordet.
 
 - **Kopiera**: Du kan välja mellan följande alternativ:
 
@@ -893,16 +895,16 @@ I **Skapa nytt ämne** kan du lämna följande information:
 
 - En mall som ämnet baseras på. Om du till exempel har en färdig installation kan du välja bland mallarna Tom, Koncept, DITAVAL, Referens, Uppgift, Ämne och Felsökning.
 
-   Om mappen har en konfigurerad mappprofil visas endast de ämnesmallar som har konfigurerats i mappprofilen.
+  Om mappen har en konfigurerad mappprofil visas endast de ämnesmallar som har konfigurerats i mappprofilen.
 
 - Sökväg där du vill spara ämnesfilen. Som standard visas sökvägen till den markerade mappen i databasen i fältet Sökväg.
 - En rubrik för ämnet.
 
 - *\(Valfritt\)* Ämnets filnamn. Filnamnet föreslås automatiskt baserat på ämnet Titel.
 
-   Om administratören har aktiverat automatiska filnamn baserat på UUID-inställningen visas inte fältet Namn så som visas på skärmbilden nedan:
+  Om administratören har aktiverat automatiska filnamn baserat på UUID-inställningen visas inte fältet Namn så som visas på skärmbilden nedan:
 
-   ![](images/new-topic-without-filename.PNG){width="300" align="left"}
+  ![](images/new-topic-without-filename.PNG){width="300" align="left"}
 
 
 När du klickar **Skapa**, skapas ämnet på den angivna sökvägen. Dessutom öppnas ämnet i Web Editor för redigering.
@@ -922,7 +924,7 @@ I **Skapa ny karta** kan du lämna följande information:
 
 - *\(Valfritt\)* Mappningens filnamn. Filnamnet föreslås automatiskt baserat på kartans titel.
 
-   Om administratören har aktiverat automatiska filnamn baserat på UUID-inställningen visas inte fältet Namn.
+  Om administratören har aktiverat automatiska filnamn baserat på UUID-inställningen visas inte fältet Namn.
 
 
 När du klickar **Skapa** skapas och läggs kartan till i den mapp som anges i fältet Sökväg. Kartan öppnas även i Kartvyn. Du kan öppna kartfilen i kartredigeraren och lägga till avsnitt i den. Mer information om hur du lägger till ämnen i en kartfil finns i [Skapa en karta](map-editor-create-map.md#).
@@ -987,9 +989,9 @@ Du kan utföra följande åtgärder på Alternativ-menyn:
 
 - **Checka ut**: Checka ut den valda filen. För en utcheckad fil ändras det här alternativet till **Checka in**.
 
-   >[!NOTE]
-   >
-   > Om en fil är låst eller utcheckad av en användare och du håller muspekaren över låsikonen visas den användare \(namn\) som har låst filen.
+  >[!NOTE]
+  >
+  > Om en fil är låst eller utcheckad av en användare och du håller muspekaren över låsikonen visas den användare \(namn\) som har låst filen.
 
 - **Förhandsgranska**: Få en snabb förhandsgranskning av filen \(.dita/.xml\) utan att öppna den.
 - **Kopiera**: Du kan välja mellan följande alternativ:
@@ -1034,15 +1036,15 @@ I dispositionsvyn finns följande funktioner:
 
 - Om du klickar på ett element i dispositionsvyn markeras elementets innehåll i författar- eller källvyn. Dispositionsvyn är fortfarande synkroniserad med författar- och källvyn. Om du gör några ändringar i en vy kan du se dem i dispositionsvyn. Om du till exempel lägger till ett stycke eller uppdaterar ett element i redigeringsvyn visas det i dispositionsvyn.
 
-   ![](images/select-element-content-outline-view_cs.png){width="650" align="left"}
+  ![](images/select-element-content-outline-view_cs.png){width="650" align="left"}
 
 - Dra och släpp element. Du kan enkelt ersätta ett element genom att släppa ett annat element på det. Om du drar och släpper ett element över ett annat element och du ser en fyrkantig ruta runt elementet, indikerar det att elementet kommer att ersättas. Den ersätter elementet som elementet släpps på.
 
-   ![](images/replace-element-outline-view_cs.png){width="300" align="left"}
+  ![](images/replace-element-outline-view_cs.png){width="300" align="left"}
 
-   Om du drar och släpper ett element visar en streckad rektangel att elementet kan placeras på den aktuella platsen. Om dra och släpp-funktionen är ogiltig visas ett felmeddelande som anger att åtgärden inte är tillåten.
+  Om du drar och släpper ett element visar en streckad rektangel att elementet kan placeras på den aktuella platsen. Om dra och släpp-funktionen är ogiltig visas ett felmeddelande som anger att åtgärden inte är tillåten.
 
-   ![](images/drop-element-outline-view_cs.png){width="300" align="left"}
+  ![](images/drop-element-outline-view_cs.png){width="300" align="left"}
 
 - The **Alternativ** i *Dispositionsvy* I kan du utföra allmänna åtgärder som Klipp ut, Kopiera, Ta bort, Generera ID, Infoga element före eller efter det aktuella elementet, Byta namn på eller ersätta ett element, Bryt ned ett element och skapa ett utdrag av det markerade elementet.
 
@@ -1086,7 +1088,7 @@ Om du vill lägga till en DITA-fil på panelen Återanvändbart innehåll använ
 
 - Klicka på ikonen + bredvid Återanvändbart innehåll för att öppna dialogrutan Bläddra i fil. Markera filen som du vill lägga till och klicka på **Lägg till** för att slutföra processen.
 
-   ![](images/reuse-content-add-dita-file_cs.png){width="650" align="left"}
+  ![](images/reuse-content-add-dita-file_cs.png){width="650" align="left"}
 
 - Klicka på alternativikonen för den önskade filen i databasvyn och välj **Lägg till i återanvändbart innehåll** på snabbmenyn.
 
@@ -1109,11 +1111,11 @@ Använd någon av följande metoder om du vill infoga innehåll från panelen Å
 
 - Håll muspekaren över ett element som du vill infoga, klicka på alternativikonen och välj **Infoga återanvändbart innehåll**.
 
-   ![](images/insert-reusable-content_cs.png){width="400" align="left"}
+  ![](images/insert-reusable-content_cs.png){width="400" align="left"}
 
-   >[!NOTE]
-   >
-   > Obs! The **Förhandsgranska** Du kan även välja det här alternativet på snabbmenyn, där du snabbt kan förhandsgranska elementet innan du infogar det.
+  >[!NOTE]
+  >
+  > Obs! The **Förhandsgranska** Du kan även välja det här alternativet på snabbmenyn, där du snabbt kan förhandsgranska elementet innan du infogar det.
 
 - Dra och släpp det återanvändbara innehållsobjektet från panelen till önskad plats i dokumentet.
 
@@ -1151,7 +1153,7 @@ Du kan konfigurera följande inställningar för verktyget Aktiveringspunkt:
    - **Skapa en ny version efter konvertering**: En ny version av ämnet skapas när konverteringen av termer har slutförts.
 - **Nästa** visas om du väljer **Manuellt för varje ämne** alternativ. Klicka **Nästa** om du vill konvertera villkoren för varje ämne utifrån de valda inställningarna. Där uppmanas du att konvertera termer i varje ämne och går vidare till nästa fil. Du kan välja att konvertera en term eller hoppa över den och gå till nästa term.
 
-   ![](images/manual-convert-skip.png){width="300" align="left"}
+  ![](images/manual-convert-skip.png){width="300" align="left"}
 
 - **Konvertera** visas om du väljer **Automatiskt för alla ämnen** alternativ. Välj **Konvertera** om du vill konvertera alla termer i dokumentet till länkade ordlisteförkortningar.
 
@@ -1303,6 +1305,7 @@ I följande exempel visas hur du använder ämnesschemat i AEM.
    1. Samma karta
    1. Refererad karta
 
+
    Referenserna löses inte om uppräkningen inte hittas i samma karta och den refererade kartan.
 
 
@@ -1346,17 +1349,17 @@ Om du vill lägga till ett fragment använder du någon av följande metoder:
 
 - Klicka på ikonen + bredvid Fragment för att öppna dialogrutan Nytt fragment.
 
-   ![](images/snippet-new-dialog.png){width="550" align="left"}
+  ![](images/snippet-new-dialog.png){width="550" align="left"}
 
-   I dialogrutan Nytt fragment anger du en rubrik som visas på fragmentpanelen, en beskrivning och en XML-kod för det fragmentinnehåll som du vill skapa. Klicka **Skapa** för att spara och skapa fragmentet.
+  I dialogrutan Nytt fragment anger du en rubrik som visas på fragmentpanelen, en beskrivning och en XML-kod för det fragmentinnehåll som du vill skapa. Klicka **Skapa** för att spara och skapa fragmentet.
 
 - Högerklicka på elementets synliga del som du vill använda som textutdrag i området för innehållsredigering och välj **Skapa fragment** på snabbmenyn. Dialogrutan Nytt kodfragment visas med XML-koden för det valda elementet i dialogrutan **Innehåll** fält. Ange **Titel** och **Beskrivning** för fragmentet och klicka på **Skapa** för att spara fragmentet.
 
 - Högerklicka var som helst på det innehåll som du vill använda som utdrag i området för innehållsredigering och välj **Skapa fragment** på snabbmenyn. Dialogrutan Nytt kodfragment visas med XML-koden för det valda elementet i dialogrutan **Innehåll** fält. Ange **Titel** och **Beskrivning** för fragmentet och klicka på **Skapa** för att spara fragmentet.
 
-   Följande skärmbild markerar vägbeskrivningen och innehållsområdet där du kan anropa snabbmenyn.
+  Följande skärmbild markerar vägbeskrivningen och innehållsområdet där du kan anropa snabbmenyn.
 
-   ![](images/snippet-create-from-breadcrumb-content.png){width="350" align="left"}
+  ![](images/snippet-create-from-breadcrumb-content.png){width="350" align="left"}
 
 
 Om du vill infoga ett fragment använder du någon av följande metoder:
@@ -1390,6 +1393,41 @@ När mallen har skapats måste du lägga till den i din globala profil eller map
 
 Med Alternativ-menyn på en befintlig mall kan du välja att **Redigera** eller **Duplicera** den. Vid duplicering behålls mallens struktur och typ \(av dokument\) och du kan återanvända den för att skapa en annan mall från den.
 
+**Granska** -  ![](images/active-review-tasklist-icon.svg)
+
+AEM innehåller en funktion för att visa alla granskningsuppgifter i dina projekt. Du kan visa alla granskningsprojekt och de aktiva granskningsåtgärderna i granskningsprojekten, som du är en del av från **Granska** -panelen.  Du kan sedan öppna granskningsåtgärderna och visa kommentarerna från olika granskare.
+Granskningspanelen visar granskningsåtgärderna. Som författare kan du adressera kommentarerna i ett ämne med hjälp av webbredigeraren.
+
+
+Så här visar du granskningskommentarerna i de aktiva granskningsuppgifterna som finns i dina projekt:
+
+1. Välj granskning ![](images/active-review-tasklist-icon.svg)   till vänster. The **Granska** panelen öppnas.  Alla granskningsprojekt och aktiva granskningsåtgärder i granskningsprojekten som du är en del av visas.
+
+   ![](images/web-editor-review-panel.png){width="300" align="left"}
+1. Välj ett granskningsprojekt och välj sedan en granskningsåtgärd i listan för att öppna den.
+1. Du kan även filtrera dina projekt på följande sätt:
+
+   - Ange söktermen eller texten som du vill hitta i projektets titel. Tryck sedan på Retur för att utföra sökningen. Du kan till exempel söka i alla projekt med termen&quot;space&quot; i titeln.
+
+   - Välj ![](images/filter-search-icon.svg)  för att öppna **Filter** -dialogrutan. Du kan välja alla eller endast specifika projekt. De valda projekten listas i **Granska** -panelen.
+     ![](images/active-review-select-project.png){width="300" align="left"}
+
+     The **Uppgifter som jag har initierat** är aktiverat som standard. Du kan bara visa de uppgifter som du har initierat.
+
+1. Som standard visas en lista över ämnen som har kommentarer kopplade till sig i granskningsprojektet. Använd de filter som behövs från den vänstra listen för att filtrera ämnen baserat på granskningskommentarerna som finns i dem:
+
+   - **Visa alla ämnen**: Listar alla ämnen som finns i projekten.
+   - **Visa ämnen med kommentarer**: Visa bara de ämnen som innehåller granskningskommentarer.
+1. Du kan också ange söktermen eller texten som du vill söka efter i avsnittets rubrik eller filsökväg. De ämnen som innehåller termen i titeln eller filsökvägen visas.
+1. Dubbelklicka på ett ämne för att öppna det i författarvyn. Du kan visa kommentarerna i **Kommentarer** -panelen.
+   ![](images/active-review-task-comments.png){width="800" align="left"}
+
+
+   >[!NOTE]
+   > 
+   > The **Granska** och **Kommentarer** Panelen är alltid synkroniserad. På panelen Kommentarer läses kommentarerna in baserat på granskningsåtgärden som läses in på panelen Granska.
+   > Mer information om hur du hanterar kommentarerna finns i [Adressgranskningskommentarer](review-address-review-comments.md#).
+
 **Sök och ersätt** -  ![](images/FindAndReplace_icon.svg)
 
 Ikonen Sök och ersätt finns längst ned på den vänstra panelen. På panelen Sök och ersätt kan du söka efter och ersätta text mellan filer på en karta eller i en mapp i databasen. Du kan söka och ersätta i alla avsnitt av en karta samt i ämnen som finns i undermappningarna på kartan.
@@ -1402,9 +1440,9 @@ Utför följande steg om du vill söka och ersätta globalt:
 1. Klicka på **Titta in i** Välj ett av följande alternativ för att utföra sökningen.
    - **Aktuell karta**: Söka i den öppna kartan
 
-      >[!NOTE]
-      >
-      > Det här alternativet visas om du redan har öppnat en karta för redigering.
+     >[!NOTE]
+     >
+     > Det här alternativet visas om du redan har öppnat en karta för redigering.
 
    - **Bana**: Om du vill söka på den markerade banan
    - **Välj karta**: Söka i den markerade kartan
@@ -1415,7 +1453,7 @@ Utför följande steg om du vill söka och ersätta globalt:
    - **Endast hela ord**: Välj det här alternativet om du vill söka efter hela söksträngen. Om du t.ex. skriver över i söksträngen returnerar sökresultatet alla filer som innehåller ord som t.ex. over och overview. Om du vill begränsa sökningen till att returnera exakt den angivna termen väljer du det här alternativet.
    - **Skapa ny version efter ersättning**: Välj det här alternativet om du vill skapa en ny version av ämnet där du väljer att ersätta texten. Du kan också ange versionskommentarer som läggs till för varje uppdaterad fil.
 
-      Om du inte markerar det här alternativet sparas ändringarna i den aktuella versionen av ämnet och ingen ny version skapas.
+     Om du inte markerar det här alternativet sparas ändringarna i den aktuella versionen av ämnet och ingen ny version skapas.
 
    - **Inkludera indirekt referens**: Välj det här alternativet om du vill söka efter strängen i de indirekta referenserna även inom DITA-kartan. Som standard är detta inaktiverat, så sökningen utförs endast på direktreferenser.
 
@@ -1428,9 +1466,9 @@ Utför följande steg om du vill söka och ersätta globalt:
 
    - **Aktuell karta**: Söka i den öppna kartan
 
-      >[!NOTE]
-      >
-      > Det här alternativet visas om du redan har öppnat en karta för redigering.
+     >[!NOTE]
+     >
+     > Det här alternativet visas om du redan har öppnat en karta för redigering.
 
    - **Bana**: Om du vill söka på den markerade banan
    - **Välj karta**: Söka i den markerade kartan
@@ -1443,7 +1481,7 @@ Utför följande steg om du vill söka och ersätta globalt:
 
    - **Skapa ny version efter ersättning**: Välj det här alternativet om du vill skapa en ny version av ämnet där du väljer att ersätta texten. Du kan också ange versionskommentarer som läggs till för varje uppdaterad fil.
 
-      Om du inte markerar det här alternativet sparas ändringarna i den aktuella versionen av ämnet och ingen ny version skapas.
+     Om du inte markerar det här alternativet sparas ändringarna i den aktuella versionen av ämnet och ingen ny version skapas.
 
    - **Inkludera indirekt referens**: Välj det här alternativet om du vill söka efter strängen i de indirekta referenserna även inom DITA-kartan. Som standard är detta inaktiverat, så sökningen utförs endast på direktreferenser.
 

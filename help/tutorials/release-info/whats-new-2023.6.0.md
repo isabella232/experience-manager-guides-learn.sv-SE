@@ -1,16 +1,17 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides, juni 2023-versionen
 description: Läs om de nya och förbättrade funktionerna i juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 5670b4a8f34916c7ff415680c5ddcfab6e9618e6
+exl-id: ff6ac4a4-76a3-4b41-9da7-6a888de0eca5
+source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
 
 # Nyheter i juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
 
-I den här artikeln beskrivs de nya och förbättrade funktionerna i versionen från juni 2023 av Adobe Experience Manager Guides (senare kallad *AEM stödlinjer as a Cloud Service*).
+I den här artikeln beskrivs de nya och förbättrade funktionerna i Adobe Experience Manager-handböckernas version från juni 2023 (senare kallad *AEM stödlinjer as a Cloud Service*).
 
 Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](release-notes-2023.6.0.md) artikel.
 
@@ -41,7 +42,13 @@ Mer information finns i [Lägga till en vattenstämpel i utdata från PDF för u
 
 ### Stöd för språkvariabler i DITA-element
 
-AEM stödlinjer har stöd för språkvariabler. Dessa variabler är mycket användbara när du vill generera lokaliserade strängar för element som anteckning, tips, varning, försiktighet. Du kan till exempel ha följande sätt att presentera din NOTE i utdata från PDF: Tyska: Notiz Spanska: Nota
+AEM stödlinjer har stöd för språkvariabler. Dessa variabler är mycket användbara när du vill generera lokaliserade strängar för element som anteckning, tips, varning, försiktighet.
+Du kan till exempel ha följande sätt att presentera din NOTE i utdata från PDF:
+
+Tyska: Notiz
+
+Spanska: Nota
+
 
 ### Stöd för språkvariabler i sidfoten
 
@@ -51,10 +58,13 @@ Du kan också använda den för att presentera talen på olika språk.
 ### Lokaliserade prefix för din innehållsförteckning
 
 Du kan även visa lokaliserade termer som används för att presentera prefixen i rubrikerna.
-Du kan till exempel ha följande sätt att presentera ditt&quot;Kapitel&quot;-prefix i utdata från PDF: Tyska: Spanska - Kapitel: Capítulo
+Du kan till exempel ha följande sätt att presentera ditt &#39;Kapitel&#39;-prefix i utdata från PDF:
+
+Tyska: Kapitel
+
+Spanska: Capítulo
 
 ### Möjlighet att använda AEM metadata i PDF-layouter
-
 
 Metadata är beskrivningen eller definitionen av ditt innehåll. Dessa metadata lagras i DITA-källans kartinnehåll.
 
@@ -76,7 +86,7 @@ Mer information finns i [Lägg till fält och metadata](../native-pdf/design-pag
 
 AEM Guides har nu även stöd för rapportprogramsatser med Schematron. En rapportprogramsats genererar ett meddelande när en testprogramsats utvärderas till true. Om du till exempel vill att den korta beskrivningen ska innehålla högst 150 tecken kan du definiera en rapportsats för att kontrollera ämnen där den korta beskrivningen innehåller mer än 150 tecken.
 
-Mer information finns i [Använd kontrollsatser och rapportsatser för att kontrollera regler](../user-guide/support-schematron-file.md#schematron-assert-report).
+Mer information finns i [Använd assert- och report-satser för att kontrollera regler](../user-guide/support-schematron-file.md#schematron-assert-report).
 
 ### Använd Regex-uttryck
 

@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: b9cf70ac957bfacbf9a6bf4c3b32d4f73c2b1287
+source-git-commit: 65a35f1c7530ed479e3bc584852fabc30ceecabb
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2904'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ Mer information om hur du genererar ett PDF med DITA-OT-metoden finns i [Generer
 
 * **FrameMaker Publishing Server (FMPS)**
 
-Använd den här metoden för att skapa utdata från PDF från både DITA-innehåll och FrameMaker-dokument (.book och .fm) som finns i AEM. Du kan skapa PDF genom att konfigurera en förinställning och publicera den med FrameMaker Publishing Server (FMPS). Du kan utforma och konfigurera utdatafilens utseende och känsla för PDF och andra format och lagra samma i en inställningsfil (.sts). Den här inställningsfilen används sedan av FMPS för att generera utdata för en DITA-karta eller en .book-fil. Information om hur du skapar eller redigerar en förinställning finns i  *Förinställningar för utdata* i [AEM Guides as a Cloud Service User Guide](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/cs-apr-22/XML-Documentation-for-Adobe-Experience-Manager_CS_User-Guide_EN.pdf).
+Använd den här metoden om du vill generera utdata från PDF inte bara DITA-innehåll, utan även FrameMaker-dokument (.book och .fm) som finns i din AEM. Du kan skapa PDF genom att konfigurera en förinställning och publicera den med FrameMaker Publishing Server (FMPS). Du kan utforma och konfigurera utdatafilens utseende och känsla för PDF och andra format och lagra samma i en inställningsfil (.sts). Den här inställningsfilen används sedan av FMPS för att generera utdata för en DITA-karta eller en .book-fil. Information om hur du skapar eller redigerar en förinställning finns i  *Förinställningar för utdata* i [AEM Guides as a Cloud Service User Guide](https://helpx.adobe.com/content/dam/help/en/xml-documentation-solution/cs-apr-22/XML-Documentation-for-Adobe-Experience-Manager_CS_User-Guide_EN.pdf).
 
-Mer information om hur du konfigurerar FMPS finns i [Generera utdata från FrameMaker-dokument](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Ffm-output-generatation.html).
+Mer information om hur du konfigurerar FMPS finns i [Generera utdata från FrameMaker](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Ffm-output-generatation.html).
 
 * **PDF**
 
@@ -56,7 +56,6 @@ Så här skapar eller konfigurerar du en förinställning för PDF:
 
 1. Klicka på fliken Utdata **Förinställningar** till vänster.
 Förinställningspanelen öppnas. <br>
-
 <img src="assets/preset-panel.png" alt="förinställningspanelen" width="600">
 
 1. I utdata **Förinställningar** gör du något av följande:
@@ -95,17 +94,17 @@ Dessa metadata mappas till metadata på fliken Beskrivning i dokumentegenskapern
 Från förinställningarna för utdata, **markera PDF** > **Metadata** för att lägga till och anpassa metadataalternativ.
 * **Ange XMP fil**
 
-   Metadatafält kan fyllas i direkt genom import [XMP](https://www.adobe.com/products/xmp.html) (Extensible Metadata Platform)-fil. Här kan du hämta ett XMP.
+  Metadatafält kan fyllas i direkt genom import [XMP](https://www.adobe.com/products/xmp.html) (Extensible Metadata Platform)-fil. Här kan du hämta ett XMP.
 
 [Hämta](assets/SampleXMP.xmp)
 
-   Du kan också generera en XMP med Adobe Acrobat.
+  Du kan också generera en XMP med Adobe Acrobat.
    1. Klicka **Fil** > **Egenskaper** i Acrobat.
    1. Under **Beskrivning**, klicka **Ytterligare metadata**.
    1. Välj **Avancerat**.
    1. Klicka på **Spara**.
 
-   XMP sparas på enheten.
+  XMP sparas på enheten.
 
 * **Ange namn och värden för metadata**
 
@@ -152,6 +151,7 @@ Använd följande alternativ för att ange avancerade inställningar för att sa
 | **Visa vattenstämpel** | Välj det här alternativet om du vill återge MathML-ekvationer i innehållet. I annat fall ignoreras ekvationerna. |
 | **Aktivera MathML-ekvationer** | Välj det här alternativet om du vill återge MathML-ekvationer i innehållet. Ekvationerna ignoreras annars som standard. |
 | **PDF-överensstämmelse** | Det är den standard som du tänker spara PDF för att säkerställa att den är kompatibel. Välj i listrutan om du vill välja i listan över tillgängliga PDF-standarder. Mer information om vilka standarder som stöds finns i [Om PDF-standarder](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
+| **Hämta temporära filer** | Markera det här alternativet om du vill hämta de mellanliggande HTML-filer som skapas när utdata för PDF skapas. Du kan hämta de tillfälliga filerna senare när du har genererat utdata. |
 
 ## Generera utdata för PDF {#generate-pdf-output}
 
@@ -173,3 +173,12 @@ Om utdata inte lyckas visas felmeddelandet nedan.
 <img src="assets/error-log.png" alt="fellogg" width="250">
 
 Om du vill visa felloggen klickar du på **Stäng** håller du muspekaren över den valda förinställningsfliken och klickar på ![alternativ](assets/options.svg) **Alternativ** > **Visa logg**.
+
+### Ladda ned temporära filer när du har genererat utdata från Native PDF
+
+Om du väljer **Hämta temporära filer** i Avancerade inställningar kan du även hämta de mellanliggande HTML-filer som skapas när du genererar utdata för PDF. När du har genererat utdata kan du hämta de tillfälliga filerna med **Hämta temporära filer** ![ladda ned temporära filer](assets/native-pdf-download-temporary-files-icon.svg)ikonen i det övre fältet. Med den här funktionen kan du visa dina tillfälliga HTML-format och -layouter och du kan korrigera eller ändra dina CSS-format efter dina behov.
+
+
+>ANMÄRKNING
+>
+> The **Hämta temporära filer**  ![ladda ned temporära filer](assets/native-pdf-download-temporary-files-icon.svg) visas bara om du har genererat det senaste PDF-utdata med hjälp av förinställningen där du har valt alternativet i **Avancerat** -fliken.

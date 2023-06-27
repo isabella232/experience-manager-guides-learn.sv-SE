@@ -1,29 +1,30 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade problem i Adobe Experience Manager Guides, juni 2023-versionen
-description: Läs om felkorrigeringarna och hur du uppgraderar till juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-exl-id: ea0ff27a-9c3a-49d7-b94a-d1b9d9e85dcf
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till juli 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
+source-git-commit: 4ba47a803eec7bcbb106c34a1ad6a7fbed9934be
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 2%
+source-wordcount: '903'
+ht-degree: 1%
 
 ---
 
 # Juniversion 2023 av Adobe Experience Manager Guides as a Cloud Service
 
-Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som åtgärdats i version juni 2023 av Adobe Experience Manager-handboken (senare kallad *AEM stödlinjer as a Cloud Service*).
+Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som åtgärdats i version juli 2023 av Adobe Experience Manager-handboken (senare kallad *AEM stödlinjer as a Cloud Service*).
 
-Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i juni 2023-versionen av AEM Guides as a Cloud Service](whats-new-2023.6.0.md).
+Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i juli 2023-versionen av AEM Guides as a Cloud Service](whats-new-2023.7.0.md).
 
-## Uppgradera till juniversionen 2023
+## Uppgradera till juliversionen 2023
 
 Uppgradera din nuvarande AEM Guides as a Cloud Service genom att utföra följande steg:
 
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.6.297.
-3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till versionen från juni 2023 av AEM Guides as a Cloud Service.
+2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.7.0.314.
+3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till juli 2023-utgåvan av AEM Guides as a Cloud Service.
 
 ## Steg för att aktivera utlösaren för ett skript via en serverlet
+
+(Endast om du använder en version som är tidigare än versionen från juni 2023 av AEM Guides as a Cloud Service)
 
 När du har slutfört installationen kan du välja att HIT-aktivera utlösaren för att starta översättningsjobbet:
 
@@ -82,7 +83,7 @@ Utför följande steg för att efterbearbeta befintligt innehåll och använda d
 
 ## Steg för att indexera befintligt innehåll så att det använder den nya sök- och ersätt-listan och ämneslistan på fliken Rapporter:
 
-(Endast om du använder en version som är tidigare än september 2022 av AEM Guides as a Cloud Service)
+(Endast om du använder en version som är tidigare än versionen från juni 2023 av AEM Guides as a Cloud Service)
 
 Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappnivå och ämneslista på fliken Rapporter:
 
@@ -97,13 +98,13 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 ## Kompatibilitetsmatris
 
-I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av AEM Guide as a Cloud Service från juni 2023.
+I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av AEM Guide as a Cloud Service juliversion 2023.
 
 ### FrameMaker och FrameMaker Publishing Server
 
 | AEM stödlinjer som en Cloud-release | FMPS | FrameMaker |
 | --- | --- | --- |
-| 2023.06.0 | Inte kompatibel | 2022 eller senare |
+| 2023.07.0 | Inte kompatibel | 2022 eller senare |
 | | | |
 
 
@@ -111,7 +112,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.06.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
+| 2023.07.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
 |  |  |  |  |
 
 
@@ -121,45 +122,16 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 ### Redigering
 
-- Navigeringsrubriken tas bort från content33 vid växling från layoutvyn till författaren eller källvyn. (12174)
-- Ibland inträffar programfel när du klickar på en DITA-karta. (11842)
-- Web Editor | Fast mellanslag läggs till i XML-redigeraren när du redigerar ett ämne. (11786)
-- Resursgränssnitt | I listvyn går det inte att sammanfoga de överlagrade kolumnerna. (11528)
-- Keyref är inte löst i kartvyn. (11490)
-- Den övre menyn visas inte när du navigerar i XML-redigeraren. (10868)
-- `conref` in ph-tagg | Den visade bläddringsdialogrutan är felaktig. (9481)
-- Lokala länkar till andra element går inte att matcha i Web Editor. (8790)
-- Funktionen Matches() fungerar inte i funktionen Schematron. (11224)
-
-
-### Förvaltning
-
-- Fliken Rapporter i webbredigerarens användargränssnitt visar inte ämneslistan med gamla DITA-kartor som skapats före uppgraderingen till 4.2. (11708)
-
-- Knappfunktionen Överför filer i resursgränssnittet i version 4.2. (11633)
+- Textbundna attribut/visningsattribut visas inte i layoutvyn i Web Editor. (12498)
+- Ladda upp filer i Sygen Plugin för AEM Guides fungerar inte i molntjänster om du har! i filnamnet. (12207)
+- DITA-kartpublicering är mycket långsam med redigerbar mall. (12075)
+- Konfigurationen för det globala profilanvändargränssnittet matchar inte mappprofilen. (11970)
+- Innehållsreferenser bryts när DITA-filer kopieras och klistras in. (11959)
+- Det går inte att redigera innehållsfragment i kolumnvyn med AEM stödlinjer installerade. (7342)
+- Innehållet förloras när en unwrapped xref finns under en underordnad elementtagg. (12532)
 
 ### Publicering
 
-- Publicering till AEM misslyckas när temporära filer från pod som kan ha uppdaterats eller startats om läses. (12113)
-- PDF | Publicering av innehåll som har en utdataklass med hakparenteser() resulterar i en publiceringsfrysning. (11936)
-- JSON-utdata | Mappa metadata med egenskapsvärde som `"value in spaces and double quotes"` leder till ett publiceringsfel. (11933)
-- Web Editor | Utdatasökväg och -mall kan inte väljas i AEM förinställning. (11530)
-- PDF | Anpassade attribut sprids inte till motorn för temporära HTML eller PDF. (DXML-12005)
-- PDF | Java OutOfMemoryError inträffar vid publicering av stort innehåll. (11789)
-- JSON-utdata | `fmUuid` -egenskapen i jcr:content-noden i JSON skiljer sig från&quot;id&quot; i JSON. (11564)
-- JSON-utdata | Om det finns en karta och ett ämne med samma filnamn tas JSON bort för kartan. (11524)
-- PDF | Xref skriver ut innehållet i href-ämnesrubriken i stället för Xref-etiketten. (11322)
-- PDF | Det går inte att spara mallinställningarna för PDF. (10751)
-- PDF | Texten sträcker sig utanför kolumnbredden och inkluderar flera xrefs. (10876)
-- PDF | `<note>``</note>` -elementet genererar ingen extra intervalltitel av sin typ. (10549)
-- PDF | Språkmetadata kan inte anges i det genererade PDF för att uppfylla kraven i WCAG 2.0. (12407)
+- Arbetsflödet för godkännande fungerar inte när dokumentläget ändras till slutläge från filegenskaperna på den högra panelen. (11026)
 
 
-
-### Översättning
-
-- Efter molnutgåvan i februari (2302) visas allt översättningsinnehåll som Inte synkroniserat eller Saknad kopia. (11834)
-
-### Granska
-
-- Nytt gränssnitt för granskning | Villkoren markeras och visas och fungerar annorlunda än de fungerar i Web Editor. (11628)
