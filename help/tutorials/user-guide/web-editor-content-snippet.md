@@ -1,7 +1,7 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
 description: Lär dig hur du infogar ett innehållsavdrag från datakällan
-source-git-commit: 84dbcd80d8b41ae52ec7389dd0d0a750ea8d6c65
+source-git-commit: e4fcf6c7b7e69d83edb91e25081dae6e7cf1ae89
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -31,6 +31,7 @@ De färdiga mallarna för den valda datakällan visas i listrutan. Du kan till e
    >[!NOTE]
    >  
    > Om administratören har konfigurerat anpassade mallar visas även dessa mallar i listrutan (baserat på mallsökvägskonfigurationerna som din administratör har konfigurerat).
+
 1. Klicka **Hämta** för att hämta data från datakällan och tillämpa mallen på data som är resultat av SQL-frågan.
 1. Du kan visa data i förhandsgranskningen eller DITA-källvyn.
 
