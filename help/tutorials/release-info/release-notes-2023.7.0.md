@@ -1,14 +1,14 @@
 ---
-title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade problem i Adobe Experience Manager Guides, juni 2023-versionen
+title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides, juli 2023-versionen
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till juli 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 4ba47a803eec7bcbb106c34a1ad6a7fbed9934be
+source-git-commit: 6061d35b86790e24c6f55e4ccac5dbb40c43aae8
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 1%
 
 ---
 
-# Juniversion 2023 av Adobe Experience Manager Guides as a Cloud Service
+# juliversionen 2023 av Adobe Experience Manager Guides as a Cloud Service
 
 Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som åtgärdats i version juli 2023 av Adobe Experience Manager-handboken (senare kallad *AEM stödlinjer as a Cloud Service*).
 

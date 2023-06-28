@@ -1,7 +1,7 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
 description: Lär dig hur du infogar ett innehållsavdrag från datakällan
-source-git-commit: f01903fe9ae3d60a8b818e881fd3b1d626fcd2bc
+source-git-commit: 6061d35b86790e24c6f55e4ccac5dbb40c43aae8
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -16,6 +16,7 @@ AEM innehåller funktioner för att ansluta till datakällan. Du kan hämta dina
 Utför följande steg för att skapa ett innehållskfragment med hjälp av generatorn för innehållsfragment och infoga det i ditt avsnitt:
 
 1. Välj **Datakällor** ![](images/data-source-icon.svg)   i den vänstra panelen för att visa de anslutna datakällorna. Panelen Datakällor öppnas och visar alla anslutna datakällor. Mer information finns i [Konfigurera en datakällanslutning](../cs-install-guide/conf-data-source-connector.md).
+
    >[!NOTE]
    >
    > Du ser de datakällor som administratören har konfigurerat anslutningen för.
@@ -31,7 +32,9 @@ De färdiga mallarna för den valda datakällan visas i listrutan. Du kan till e
    >[!NOTE]
    >  
    > Om administratören har konfigurerat anpassade mallar visas även dessa mallar i listrutan (baserat på mallsökvägskonfigurationerna som din administratör har konfigurerat).
+
 1. Klicka **Hämta** för att hämta data från datakällan och tillämpa mallen på data som är resultat av SQL-frågan.
+
 1. Du kan visa data i förhandsgranskningen eller DITA-källvyn.
 
    1. I förhandsgranskningen visas hur data visas när de infogas i innehållet. I förhandsvisningen visas en liten del av data i den valda mallens format.
