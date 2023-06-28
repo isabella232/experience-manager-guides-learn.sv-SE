@@ -1,13 +1,13 @@
 ---
 title: Cloud Publishing Microservice Architecture and Performance
 description: Förstå hur den nya mikrotjänsten möjliggör skalbar publicering på AEMaaCS.
-source-git-commit: 2e45f132ced5ac29118a7301f104bedc03c93253
+exl-id: 963d8912-be10-4d79-8ddd-12481c0ae682
+source-git-commit: 862f086c4682e3efed06d142ddd099fecc9ca00e
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
-
 
 # Cloud Publishing Microservice Architecture and Performance Analysis
 
@@ -15,7 +15,7 @@ I den här artikeln får du information om arkitekturen och prestandanalen i den
 
 >[!NOTE]
 >
-> För närvarande stöder den mikrotjänstbaserade publiceringen i AEM endast utdata från PDF med hjälp av Native PDF-publicering eller via DITA-OT. AEM kommer att lägga till stöd för mikrotjänstbaserad publicering för fler utdatatyper i framtida versioner.
+> Microservice-baserad publicering i AEM Guides har stöd för förinställningstyperna PDF (både Native och DITA-OT), HTML5 och CUSTOM.
 
 ## Problem med befintliga publiceringsarbetsflöden i molnet
 
@@ -50,29 +50,29 @@ Om du publicerar en stor karta lokalt kanske du måste justera Java-heap-paramet
 
 * Cloud
 
-   Om du utför en enstaka publicering i molnet med den nya tjänsten kan publiceringen ta lite längre tid jämfört med en enstaka publicering på plats. Den här något förhöjda tiden beror på den nya molnarkitekturens utbredning.
+  Om du utför en enstaka publicering i molnet med den nya tjänsten kan publiceringen ta lite längre tid jämfört med en enstaka publicering på plats. Den här något förhöjda tiden beror på den nya molnarkitekturens utbredning.
 
-   <img src="assets/cloud_single_publish.png" alt="fliken Projekt" width="600">
+  <img src="assets/cloud_single_publish.png" alt="fliken Projekt" width="600">
 
 * Lokalt
 
-   Resultatet av en enstaka publicering är bättre på den gamla molnarkitekturen eller på plats när den fullständiga publiceringen sker på samma stativ/dator där AEM körs.
+  Resultatet av en enstaka publicering är bättre på den gamla molnarkitekturen eller på plats när den fullständiga publiceringen sker på samma stativ/dator där AEM körs.
 
-   <img src="assets/onprem_single_publish.png" alt="fliken Projekt" width="600">
+  <img src="assets/onprem_single_publish.png" alt="fliken Projekt" width="600">
 
 ### Köra flera publiceringar i molnet jämfört med lokalt
 
 * Cloud
 
-   Ny publiceringsmikrotjänst visas i det här scenariot. Som du ser i bilden nedan kan molnet publicera flera samtidiga publiceringsjobb utan att publiceringstiden ökar nämnvärt.
+  Ny publiceringsmikrotjänst visas i det här scenariot. Som du ser i bilden nedan kan molnet publicera flera samtidiga publiceringsjobb utan att publiceringstiden ökar nämnvärt.
 
-   <img src="assets/cloud_bulk_publish.png" alt="fliken Projekt" width="600">
+  <img src="assets/cloud_bulk_publish.png" alt="fliken Projekt" width="600">
 
 * Lokalt
 
-   Om samtidig publicering körs på en lokal server försämras prestandan avsevärt. Den här prestandasänkningen är allvarligare om utgivare publicerar ännu fler kartor samtidigt.
+  Om samtidig publicering körs på en lokal server försämras prestandan avsevärt. Den här prestandasänkningen är allvarligare om utgivare publicerar ännu fler kartor samtidigt.
 
-   <img src="assets/onprem_bulk_publish.png" alt="fliken Projekt" width="600">
+  <img src="assets/onprem_bulk_publish.png" alt="fliken Projekt" width="600">
 
 ## Ytterligare fördelar
 

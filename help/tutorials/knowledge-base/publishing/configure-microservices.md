@@ -2,9 +2,9 @@
 title: Konfigurera ny mikrotjänstbaserad publicering för AEM Guides as a Cloud Service
 description: Lär dig hur du konfigurerar ny mikrotjänstbaserad publicering för AEM.
 exl-id: 92e3091d-6337-4dc6-9609-12b1503684cd
-source-git-commit: 95c89acd02b798d42c817b52f6f8e0710a0abb76
+source-git-commit: 92b087c4cb115f0966d20b6b1d9d26839c6e39b7
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ För varje publiceringsbegäran AEM Guides as a Cloud Service körs en separat b
 
 >[!NOTE]
 >
-> För närvarande stöder den mikrotjänstbaserade publiceringen i AEM endast utdata från PDF med hjälp av Native PDF-publicering eller via DITA-OT. Vi kommer att lägga till stöd för mikrotjänstbaserad publicering för fler utdatatyper i framtida versioner.
+> Microservice-baserad publicering i AEM Guides har stöd för PDF (både Native- och DITA-OT-baserade), HTML5 och anpassade utdatapunkter.
 
 Eftersom den nya molnpubliceringstjänsten skyddas av Adobe IMS JWT-baserad autentisering bör kunderna följa stegen nedan för att integrera sina miljöer med Adobe säkra tokenbaserade autentiseringsarbetsflöden och börja använda den nya molnbaserade, skalbara publiceringslösningen.
 
@@ -90,6 +90,16 @@ När du har lagt till IMS-konfigurationen i miljön utför du följande steg fö
 
 När detta är klart bör du kunna använda den nya mikrotjänstbaserade molnpubliceringen.
 
+## Vanliga frågor
+
+1. Kan en enskild nyckel användas i flera molnmiljöer?
+   * Ja, du kan generera en privat nyckel och använda den för alla miljöer, men du måste konfigurera miljövariabler för alla miljöer och använda samma nyckel.
+1. Om OSGi-konfigurationer som ska använda mikrotjänsten är aktiverade, kommer publiceringsprocessen att fungera på den lokala AEM servern med samma kodbas?
+   * Nej, om flaggan `dxml.use.publish.microservice` är inställd på `true` söker programmet alltid efter mikrotjänstkonfigurationer. Ange `dxml.use.publish.microservice` till `false` för att publicera lokalt.
+1. Hur mycket minne tilldelas DITA-processen vid användning av mikrotjänstbaserad publicering? Drivs detta via parametrar för DITA-profilant?
+   * Med mikrotjänstbaserad publicering styrs minnesallokeringen inte av DITA-profilens ant-parametrar. Det totala tillgängliga minnet för tjänstbehållaren är 8 GB, varav 6 GB tilldelas till DITA-OT-processen.
+
+
 ## Bilaga {#appendix}
 
 **Fil**:
@@ -107,7 +117,7 @@ När detta är klart bör du kunna använda den nya mikrotjänstbaserade molnpub
 **Fil**: `com.adobe.fmdita.publishworkflow.PublishWorkflowConfigurationService.xml`
 
 **Innehåll**:
-* `dxml.use.publish.microservice`: Växla för att aktivera mikrotjänstbaserad PDF-publicering med DITA-OT
+* `dxml.use.publish.microservice`: Växla för att aktivera mikrotjänstbaserad publicering med DITA-OT
 * `dxml.use.publish.microservice.native.pdf`: Växla för att aktivera mikrotjänstbaserad publicering i PDF
 
 ```

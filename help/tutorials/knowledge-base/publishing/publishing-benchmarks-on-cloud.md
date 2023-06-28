@@ -1,21 +1,22 @@
 ---
 title: Guides Publishing Benchmarks on AEMaaCS
 description: Förstå systembegränsningar för publicering på AEM Cloud.
-source-git-commit: e64430bb968b18090c3981cc2d21ebe6593ba933
+exl-id: cc6e38b9-6276-4147-beda-93f66368e15d
+source-git-commit: 06a55ef933f9e7941cef2337212a830413a478af
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '233'
 ht-degree: 4%
 
 ---
-
 
 # AEM Guides Publishing Benchmarks on AEMaaCS
 
 För närvarande AEM Guides molntjänst har vissa gränser för publiceringskartor, som Guides team aktivt arbetar med att lösa.
 
-Guiderna har redan introducerat en skalbar [Publishing Microservice](publish-microservice-architecture-and-performance.md) för stora kartor och parallell publicering. För närvarande stöder den här mikrotjänsten en delmängd av utdatatyper och stöd för andra typer håller på att utvecklas.
+Guides Team har introducerat en skalbar publiceringsmikrotjänst för stöd till stora kartor och flera samtidiga publiceringstillfällen. Mer information om den nya publiceringsmikrotjänsten finns i [publicera mikrotjänstarkitektur](publish-microservice-architecture-and-performance.md)
 
-Om du vill konfigurera den nya publiceringstjänsten för valfri AEM molnmiljö, se [Konfigurera ny mikrotjänstbaserad publicering](configure-microservices.md)
+Om du vill konfigurera den nya publiceringstjänsten för valfri AEM molnmiljö, se [konfigurera ny mikrotjänstbaserad publicering](configure-microservices.md)
+
 
 ## Körningsmiljö
 
