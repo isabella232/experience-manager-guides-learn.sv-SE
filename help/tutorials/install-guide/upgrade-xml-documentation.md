@@ -1,13 +1,13 @@
 ---
 title: Uppgradera Adobe Experience Manager-guider
 description: Lär dig hur du uppgraderar Adobe Experience Manager-guider
-source-git-commit: 414ee8ae3b12bb40054ddbe9e1a008ebc6058f89
+exl-id: fdc395cf-a54f-4eca-b69f-52ef08d84a6e
+source-git-commit: a00484a6e0a900a568ae1f651e96dca31add1bd8
 workflow-type: tm+mt
 source-wordcount: '2750'
 ht-degree: 0%
 
 ---
-
 
 # Uppgradera Adobe Experience Manager-guider {#id224MBE0M0XA}
 
@@ -214,15 +214,14 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
 
    - excludeList ska ha `"event-user-data:changedByWorkflowProcess"`.
    - Startprogram för &quot;*Noden ändrad*&quot; for **Arbetsflöde för DAM-uppdatering -** for condition &quot;`jcr:content/jcr:mimeType!=video`&quot;,
-   - 
-      - Globbing-värdet ska vara:
+   - Globbing-värdet ska vara:
 
    ```json
-   `"/content/dam(/((?!/subassets|/translation_output).)*/)renditions/original"`
+   /content/dam(/((?!/subassets|/translation_output).)*/)renditions/original
    ```
 
    - excludeList ska ha `"event-user-data:changedByWorkflowProcess"`.
-1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan följer några exempel:
+1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan ges några exempel:
    - Alla komponenter som överlappas av/libs/fmditor/libsska jämföras med den nya produktkoden och uppdateringar ska göras i överlagrade filer under/i appar.
    - Alla kategorier av klientlib som används från produkten bör granskas för ändringar. Alla åsidosatta konfigurationer \(exempel nedan\) bör jämföras med de senaste för att få de senaste funktionerna:
    - elementmapping.xml
@@ -388,11 +387,10 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
    - Startprogram för &quot;*Noden ändrad*&quot; for **Arbetsflöde för DAM-uppdatering -** for condition &quot;`jcr:content/jcr:mimeType!=video`&quot;, ska värdet Globbing vara:
 
    ```json
-   `"/content/dam(/((?!/subassets|/translation_output).)*/)renditions/original"`
+   /content/dam(/((?!/subassets|/translation_output).)*/)renditions/original
    ```
 
    - `excludeList` borde ha `"event-user-data:changedByWorkflowProcess"`.
-
 
 1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan ges några exempel:
    - Alla komponenter som överlappas av/libs/fmditor/libsska jämföras med den nya produktkoden och uppdateringar ska göras i överlagrade filer under/i appar.
@@ -408,7 +406,7 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
 Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappningsnivå:
 
 - Se till att `damAssetLucene` indexeringen har slutförts. Det kan ta upp till några timmar, beroende på mängden data som finns på servern. Du kan bekräfta att omindexeringen har slutförts genom att kontrollera att fältet för omindexering har värdet false i
-   `http://<server:port>/oak:index/damAssetLucene`.  Om du har lagt till anpassningar i `damAssetLucene`måste du kanske använda dem igen.
+  `http://<server:port>/oak:index/damAssetLucene`.  Om du har lagt till anpassningar i `damAssetLucene`måste du kanske använda dem igen.
 
 - Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika sökvägar för kartorna för indexering, som standard indexeras alla kartor \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
@@ -420,4 +418,3 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 - När jobbet är klart kommer ovanstående GET-förfrågan att svara och ange om några kartor misslyckades. De korrekt indexerade mappningarna kan bekräftas från serverloggarna.
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-
