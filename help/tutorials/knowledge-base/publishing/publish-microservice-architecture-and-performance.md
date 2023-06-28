@@ -2,9 +2,9 @@
 title: Cloud Publishing Microservice Architecture and Performance
 description: Förstå hur den nya mikrotjänsten möjliggör skalbar publicering på AEMaaCS.
 exl-id: 963d8912-be10-4d79-8ddd-12481c0ae682
-source-git-commit: 862f086c4682e3efed06d142ddd099fecc9ca00e
+source-git-commit: 4185c31ae45c7b6fd0d394a15fbca0753d5e0463
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ I den här artikeln får du information om arkitekturen och prestandanalen i den
 
 >[!NOTE]
 >
-> Microservice-baserad publicering i AEM Guides har stöd för förinställningstyperna PDF (både Native och DITA-OT), HTML5 och CUSTOM.
+> Microservice-baserad publicering i AEM Guides har stöd för PDF (både Native- och DITA-OT-baserade), HTML5 och anpassade utdatapunkter.
 
 ## Problem med befintliga publiceringsarbetsflöden i molnet
 
