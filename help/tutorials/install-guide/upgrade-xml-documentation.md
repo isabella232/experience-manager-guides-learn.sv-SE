@@ -2,9 +2,9 @@
 title: Uppgradera Adobe Experience Manager-guider
 description: Lär dig hur du uppgraderar Adobe Experience Manager-guider
 exl-id: fdc395cf-a54f-4eca-b69f-52ef08d84a6e
-source-git-commit: a00484a6e0a900a568ae1f651e96dca31add1bd8
+source-git-commit: 4c31580a7deb3e13931831c1888bbf0fd1bf9e14
 workflow-type: tm+mt
-source-wordcount: '2750'
+source-wordcount: '2896'
 ht-degree: 0%
 
 ---
@@ -236,9 +236,51 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 - Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. \(Valfritt: Du kan skicka specifika sökvägar för kartorna för indexering, som standard indexeras alla kartor \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`\)
 
-- API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
+- API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt -
+
+`http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Till exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
 
 - När jobbet är klart kommer ovanstående GET-förfrågan att svara och ange om några kartor misslyckades. De korrekt indexerade mappningarna kan bekräftas från serverloggarna.
+
+Om uppgraderingsjobbet misslyckas och följande fel visas i felloggen:
+
+&quot;Den *fråga* läsa eller bläddra mer än *100000 noder*. Bearbetningen avbröts för att undvika att andra uppgifter påverkas.&quot;
+
+Detta kan inträffa eftersom indexet inte är korrekt konfigurerat för frågan som används i uppgraderingen. Du kan prova följande lösning:
+
+1. Lägg till den booleska egenskapen i avkodningsindexet damAssetLucene `indexNodeName` as `true` i noden.
+   `/oak:index/damAssetLucene/indexRules/dam:Asset`
+1. Lägg till en ny nod med utdraget name under noden.
+
+   `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`
+och ange följande egenskaper i noden:
+
+   ```
+   name - rep:excerpt
+   propertyIndex - {Boolean}true
+   notNullCheckEnabled - {Boolean}true
+   ```
+
+   Strukturen för `damAssetLucene` ska se ut ungefär så här:
+
+   ```
+   <damAssetLucene compatVersion="{Long}2" async="async, nrt" jcr:primaryType="oak:QueryIndexDefinition" evaluatePathRestrictions="{Boolean}true" type="lucene">
+   <indexRules jcr:primaryType="nt:unstructured">
+     <dam:Asset indexNodeName="{Boolean}true" jcr:primaryType="nt:unstructured">
+       <properties jcr:primaryType="nt:unstructured">
+         <excerpt name="rep:excerpt" propertyIndex="{Boolean}true" jcr:primaryType="nt:unstructured" notNullCheckEnabled="{Boolean}true"/>
+       </properties>
+       </dam:Asset>
+     </indexRules>
+   </damAssetLucene>    
+   ```
+
+
+   (tillsammans med andra befintliga noder och egenskaper)
+
+1. Indexera om `damAssetLucene` index (genom att ange omindexeringsflaggan som `true` under och väntar på att det ska `false` igen (detta anger att omindexeringen är klar). Observera att det kan ta några timmar beroende på indexets storlek.
+1. Kör indexeringsskriptet igen genom att utföra föregående steg.
+
 
 ## Uppgradera till version 4.2.1 {#upgrade-version-4-2-1}
 

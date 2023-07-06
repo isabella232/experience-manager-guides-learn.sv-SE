@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: f693ebb6a96ed9898050a754e10a74db235299fe
+source-git-commit: 360bba8b5e6ab61314486497e9cc41348ff903c1
 workflow-type: tm+mt
-source-wordcount: '2516'
+source-wordcount: '2938'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ En PDF-mall har fyra komponenter: Sidlayouter, formatmallar, resurser och instä
 
 ## Skapa och anpassa sidlayouter {#create-customize-page-layout}
 
-Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en sida genom att definiera sidhuvudet, sidfoten och innehållsområdet på en sida. Med layoutredigeraren i WYSIWYG kan du skapa en sidlayout för olika avsnitt i en PDF, t.ex. framsidan och baksidan av omslaget, kapitlet, innehållsförteckningen (TOC), indexet, tom sida, Lista över illustrationer (LOF), Lista över tabeller (LOT), ordlistan eller skapa en layout för en anpassad sida. I mallinställningarna för PDF kan du tilldela en sidlayout med olika avsnitt i PDF, som sedan används för att generera utdata från PDF.
+Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en sida genom att definiera sidhuvudet, sidfoten och innehållsområdet på en sida. Med layoutredigeraren i WYSIWYG kan du skapa en sidlayout för olika avsnitt i en PDF, t.ex. framsidan och baksidan av försättsbladet, kapitel, innehållsförteckning (TOC), index, tom sida, framsidan av sidorna, baksidan av sidorna, figurlistan (LOF), listan över tabeller (LOT), ordlistan eller skapa en layout för en anpassad sida. I mallinställningarna för PDF kan du tilldela en sidlayout med olika avsnitt i PDF, som sedan används för att generera utdata från PDF.
 
 ### Skapa en ny sidlayout {#create-page-layout}
 
@@ -25,7 +25,7 @@ Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en s
 >Det finns exempelsidlayouter som levereras utanför kartongen. Du kan anpassa dessa eller skapa nya sidlayouter.
 
 1. Gå till webbredigeraren **Utdata** -fliken.
-1. Expandera den vänstra sidlisten och klicka på **Mallar**.
+1. Expandera den vänstra sidlisten och klicka **Mallar**.
 1. Öppna mallen som du vill arbeta med.
    >[!NOTE]
    >
@@ -34,9 +34,9 @@ Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en s
    * Hovra över **Sidlayouter** och klicka på&#x200B;*Alternativ* ikon) **...** och välja **Ny sidlayout**.
    * I **Mallar** klickar du på **+** ikon bredvid **Mallar** och välja **Sidlayout** på snabbmenyn.
 
-      Dialogrutan Lägg till layout öppnas.
+     Dialogrutan Lägg till layout öppnas.
 
-      <img src="assets/add-layout-2.png" alt="Dialogrutan Lägg till layout" width="250">
+     <img src="assets/add-layout-2.png" alt="Dialogrutan Lägg till layout" width="250">
 1. Ange ett namn för den nya sidlayouten.
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en s
 
 ### Duplicera en sidlayout {#duplicate-page-layout}
 
-1. I **Mallar** i mallen som du vill duplicera dubbelklickar du på **Sidlayouter** eller klicka på **>** ikon före **Sidlayouter**.
+1. I **Mallar** i mallen som du vill duplicera dubbelklickar du  **Sidlayouter** eller klicka på **>** ikon före **Sidlayouter**.
 
    Då visas en lista med sidlayouter i mallen.
 
@@ -60,7 +60,7 @@ En kopia av den valda sidlayouten skapas och läggs till under Sidlayouter.
 
 ### Anpassa en sidlayout {#customize-page-layout}
 
-1. I **Mallar** i mallen som du vill redigera dubbelklickar du på **Sidlayouter** eller klicka på **>** ikon före **Sidlayouter**.
+1. I **Mallar** i mallen som du vill redigera dubbelklickar du **Sidlayouter** eller klicka på **>** ikon före **Sidlayouter**.
 
    Då visas en lista med sidlayouter i mallen.
 1. Gör något av följande om du vill anpassa en sidlayout:
@@ -123,7 +123,7 @@ Så här skapar du ett nytt format:
 När du har skapat en ny CSS-fil med standardformat eller vill anpassa format i en befintlig CSS-fil kan du använda formatredigeraren för att göra det.
 
 Så här anpassar du en stil:
-1. Dubbelklicka på **Formatmallar** eller klicka på **>** ikon före **Formatmallar**.
+1. Dubbelklicka **Formatmallar** eller klicka på **>** ikon före **Formatmallar**.
 
    Detta visar standardfilerna (Innehåll och layout) och anpassade CSS-filer.
 1. Öppna en formatmall för redigering.
@@ -138,7 +138,7 @@ Så här anpassar du en stil:
 
 1. Om du vill anpassa ett format dubbelklickar du på det eller klickar på >-ikonen före ett format för att visa och anpassa det med formatredigeraren.
 
-mer information om hur du arbetar med de vanligaste formaten finns i [Arbeta med vanliga innehållsformat](stylesheet.md)
+Mer information om hur du arbetar med de vanligaste formaten finns i [Arbeta med vanliga innehållsformat](stylesheet.md).
 
 ## Arbeta med resurser {#work-with-resources}
 
@@ -171,7 +171,7 @@ Konfigurera genom att klicka på **Inställningar** i **Mallar** för att visa f
 
 Ange de grundläggande konfigurationsinställningarna för att starta ett kapitel från udda eller jämn sida, innehållsförteckningsstrukturen och definiera ledarradformatet för posterna i innehållsförteckningen. Du kan definiera följande inställning:
 
-* **Starta alltid kapitel från**: Här kan du definiera hur varje kapitel ska publiceras i den slutliga PDF. Du kan välja bland en **Ny sida**, **Udda sida**, eller **Jämn sida** alternativ. Om du väljer att starta ett nytt kapitel från en udda sida infogas en tom sida efter ett kapitel som slutar på en udda sida. Om kapitlet avslutas på sidan 15 infogas ett tomt nummer 16 i publiceringsprocessen<sup>th</sup> så att det nya kapitlet kan börja från 17<sup>th</sup> sida.
+* **Starta ett nytt kapitel från**: Här kan du definiera hur varje kapitel ska publiceras i den slutliga PDF. Du kan välja bland en **Ny sida**, **Udda sida**, **Jämn sida**, eller **Aktuell sida**  alternativ. Om du väljer att starta ett nytt kapitel från en udda sida infogas en tom sida efter ett kapitel som slutar på en udda sida. Om kapitlet avslutas på sidan 15 infogas ett tomt nummer 16 i publiceringsprocessen<sup>th</sup> så att det nya kapitlet kan börja från 17<sup>th</sup> sida.  Om du väljer **Aktuell sida** så publiceras alla kapitel utan sidbrytningar. Om ett kapitel t.ex. avslutas mitt på sidan 15, kommer nästa kapitel också att startas från den 15:e sidan.
 
 * **Starta varje ämne från en ny sida**: Om du vill att varje ämne i kapitlet ska börja på en ny sida väljer du **Starta varje ämne från en ny sida** alternativ. Om du vill att dina ämnen ska fortsätta utan sidmellanrum avmarkerar du det här alternativet.
 
@@ -180,27 +180,30 @@ Ange de grundläggande konfigurationsinställningarna för att starta ett kapite
    * **Använd rubriker upp till nivå**: Du kan justera antalet rubriknivåer som ska visas i innehållsförteckningsstrukturen på PDF.
    * **Visa inte sidnummer för den första nivån i innehållsförteckningen**: Välj det här alternativet om du vill dölja motsvarande sidnummer för alla kapitel som innehåller kapslade eller underordnade ämnen. Titta på följande exempel där en utdatafil skapas utan att markera det här alternativet.
 
-   <img src="assets/page-number-in-toc.png" alt="Överför resurser" width="250">
+  <img src="assets/page-number-in-toc.png" alt="Överför resurser" width="250">
 
-   I ovanstående exempel är Avancerade PDF-inställningar, Bilaga och Legal ämnesrubriker på första nivån eller kapitelrubriker. Alla rubriker tilldelas ett sidnummer.
+  I ovanstående exempel är Avancerade PDF-inställningar, Bilaga och Legal ämnesrubriker på första nivån eller kapitelrubriker. Alla rubriker tilldelas ett sidnummer.
 
-   Om du väljer det här alternativet och genererar utdata får du nu följande innehållsförteckning:
+  Om du väljer det här alternativet och genererar utdata får du nu följande innehållsförteckning:
 
-   <img src="assets/page-number-missing-in-toc.png" alt="Överför resurser" width="250">
+  <img src="assets/page-number-missing-in-toc.png" alt="Överför resurser" width="250">
 
-   Här ser du att det första kapitlet Avancerade PDF-inställningar inte får något sidnummer, som det har kapslade eller underordnade avsnitt. Ett sidnummer om det tilldelas till Bilaga och Rättslig information eftersom de är fristående ämnen utan något underordnat ämne.
+  Här ser du att det första kapitlet Avancerade PDF-inställningar inte får något sidnummer, som det har kapslade eller underordnade avsnitt. Ett sidnummer om det tilldelas till Bilaga och Rättslig information eftersom de är fristående ämnen utan något underordnat ämne.
 
 * **Ledarformat**: Använd listrutan för att välja prickade, heldragna eller mellanslag för att koppla rubriknivåer till motsvarande sidnummer.
 Information om hur du använder rubriknivåer för innehållsförteckningens struktur och format finns i [Lägga till en kapitelinnehållsförteckning](design-page-layout.md#add-chapter-toc).
 
-   >[!NOTE]
-   >
-   >Om du är CSS-utvecklare kan du definiera ledarformatet direkt i CSS-filen också.
+  >[!NOTE]
+  >
+  >Om du är CSS-utvecklare kan du definiera ledarformatet direkt i CSS-filen också.
+
 * **Använd fortsättningsmarkör för register**: Välj det här alternativet om du vill definiera markörer för långa tabeller som sprids över flera sidor. <!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 **Sidlayouter**
 
 Inställningarna för sidlayout ger dig fullständig kontroll över hur du anger vilken sidlayout som ska användas för ett visst avsnitt i dokumentet. Om du till exempel vill välja en layout för innehållsförteckningen klickar du på listrutan under innehållsförteckningsfältet och väljer den layout som du har utformat för att generera innehållsförteckningen.
+
+Observera att bokmappsinställningarna har företräde framför sidlayoutsinställningarna.
 
 Följande inställningar är tillgängliga under avsnittet Sidlayout:
 
@@ -209,30 +212,57 @@ Följande inställningar är tillgängliga under avsnittet Sidlayout:
 
 **Standardsidlayout**: Välj en sidlayout som fungerar som standardlayout för alla sidor i PDF. Det här är den grundläggande sidlayouten som används i avsnitt eller ämnen där du inte har skapat en dedikerad sidlayout.
 
-**Sidlayout för olika avsnitt**: Du kan mappa en sidlayout med följande avsnitt av PDF-utdata:
+**Sidlayout för olika avsnitt**: Du kan mappa en sidlayout med följande avsnitt av utdata från PDF. Om du har utformat en sidlayout för det relaterade avsnittet väljer du det i listrutan. Om ingen sidlayout har skapats för ett visst avsnitt används standardsidlayouten.
+
+* **Kapitel och ämnen**: Du kan ange sidlayouten för kapitlet och avsnitten. Den valda layouten används för alla kapitel och avsnitt.
+
+* **Innehåll**: Om du har utformat sidlayouten för innehållsförteckningen väljer du **Innehåll** i listrutan och alla innehållsförteckningssidor i dokumentet kommer att ha sidlayouten för innehållsförteckningen.
+
+* **Figurförteckning och förteckning över tabeller**: Du kan också ange sidlayout för figurer och tabeller. Den valda layouten används på alla figurer och tabeller.
+
+* **Index och ordlista**: Om du har utformat en indexsidlayout kan du mappa den till alternativet Index. Om du har en ordlistepalett kopplar du den till alternativet Ordlista.
+
+* **Sidor med inledande och bakre innehåll**: Dessa sidlayouter definierar formatet för framsidan eller baksidan av boken. Om du har utformat layouten på framsidan kan du mappa den till **Front Matter Pages** alternativ. När du väljer layouten på framsidan i listrutan används layouten på alla ämnen som finns på framsidan.
+
+  Om du har utformat bakomliggande layout kan du mappa den till **Bakre viktiga sidor** alternativ. När du väljer bakgrundslayout i listrutan används bakomliggande layout på alla ämnen som finns i bakgrunden.
+
+  **Front Matter Pages** används också som grundlayout för **Innehåll**, **Lista över siffror** och Lista över tabeller.  På samma sätt **Bakre viktiga sidor** används också som grundlayout för **Index** och **Ordlista** layouter. Om du inte har valt layouten för dessa används den valda layouten för fram- eller bakåtsidor.  Om du inte har valt layouten för sidhuvud och baksida tillämpas standardsidlayouten på dem.
+
+* **Sidlayout för tomma sidor**: Du kan också ange sidlayouten för de tomma sidorna. Den valda layouten används på alla tomma sidor. Om du till exempel har utformat en tom sidlayout för alla tomma sidor väljer du **Tom** i listrutan och alla tomma sidor i dokumentet har en tom sidlayout.
+
+* **Försättsblad och Baksida**: Om du har utformat en omslagssidlayout kan du mappa den till **Försättsblad** alternativ. Om du har en baksideslayout kan du också mappa den till **Baksida** alternativ. Om ingen layout för omslag eller baksidor har skapats används standardsidlayouten.
+
+
+
+Mer information om sidlayouter finns i [Utforma en sidlayout](design-page-layout.md).
+
+**Sidordning**
+
+Du kan aktivera eller inaktivera följande avsnitt i PDF och även ordna i vilken ordning de ska visas i det slutliga PDF-resultatet:
+
+<img src="assets/page-order-advance-settings.png" alt="Sidlayouter" width="550">
+
 * Innehåll
+* Kapitel och ämnen
 * Lista över siffror
 * Lista över tabeller
-* Kapitel och ämnen
 * Index
 * Ordlista
 
-Om du inte vill visa ett visst avsnitt i utdata för PDF kan du inaktivera det genom att aktivera växlingsknappen.
+Om du inte vill visa ett visst avsnitt i utdata för PDF kan du inaktivera det genom att stänga av växlingsfunktionen.
 
-**Kapitel och ämnen** layout är alltid aktiverat och **Ordlista** layout är alltid inaktiverat som standard. Du kan inte växla dem.
-
-Du kan också ange i vilken ordning de olika avsnitten ska skapas i PDF. Om du vill ändra standardordningen för de här sidorna håller du ned muspekaren till vänster om en sidlayout och klickar på ikonen med prickade streck för att dra och släppa sidlayouten till önskad plats.
-PDF innehåller de aktiverade sidlayouterna i den ordning som du har ordnat dem här.
-
-**Sidlayout för tomma sidor**: Du kan också ange sidlayouten för de tomma sidorna. Den valda layouten används på alla tomma sidor. Om du till exempel har utformat en tom sidlayout för alla tomma sidor väljer du **Tom** i listrutan och alla tomma sidor i dokumentet har en tom sidlayout.
-
-**Försättsblad och Baksida**: Om du har utformat en omslagssidlayout kan du mappa den till **Försättsblad** alternativ. Om du har en baksideslayout kan du också mappa den till **Baksida** alternativ. Om ingen layout för omslag eller baksidor har skapats används standardsidlayouten.
+Du kan också ange i vilken ordning de olika avsnitten ska skapas i PDF. Om du vill ändra standardordningen för de här sidorna markerar du de prickade strecken för att dra och släppa sidlayouten på önskad plats.
 
 >[!NOTE]
 >
->Bokmappsinställningarna har företräde framför sidlayoutsinställningarna.
+> Dessa inställningar för ordning och inkludering gäller endast för en DITA-karta. Dessa inställningar gäller inte för bokmappar. Sidorna i en bokmapp visas enligt ordningen i avsnitten i bokmappen.
 
-Mer information om sidlayouter finns i [Utforma en sidlayout](design-page-layout.md).
+
+PDF innehåller de aktiverade sidlayouterna i den ordning som du har ordnat dem här.
+**Kapitel och ämnen** layout är alltid aktiverat och **Ordlista** layout är alltid inaktiverat som standard. Du kan inte växla dem.
+
+
+
 
 **Skriv ut**
 
@@ -244,16 +274,16 @@ Konfigurera utskriftsinställningarna för att tilldela skrivarmärken, välja f
    * **Registreringsmärken**: Välj det här alternativet om du vill placera ett märke utanför beskärningsområdet för att justera de olika separationerna i ett färgdokument.
    * **Färgremsor**: Välj det här alternativet om du vill lägga till en rad färger utanför det beskurna området för att bibehålla färgernas enhetlighet och justera tryckfärgens densitet vid utskrift.
 
-   Ange mått för de valda skrivarmärkena med hjälp av **Linjebredd**, **Linjefärg** och **Bredd på utfallsruta** alternativ.
+  Ange mått för de valda skrivarmärkena med hjälp av **Linjebredd**, **Linjefärg** och **Bredd på utfallsruta** alternativ.
 
 * **Media Box-storlek**: Detta är den totala sidstorleken inklusive utökat område som används av skrivarmärken. Använd listrutan för att välja sidstorlek för dina utdata från PDF eller skapa en egen anpassad storlek.
 
 * **Färgmodell**: Du kan välja mellan RGB eller CMYK-färgrymder för att skriva ut PDF-dokumentet. Välj RGB om du vill visa PDF digitalt och CMYK för fysisk utskrift. Färger som definieras i dokumentet konverteras till den valda färgrymden.
-   >[!NOTE]
-   >
-   >En ICC-färgprofil krävs för att skapa PDF/A om CMYK-färgmodellen används.
+  >[!NOTE]
+  >
+  >En ICC-färgprofil krävs för att skapa PDF/A om CMYK-färgmodellen används.
 
-   <!--For more information on applying these print settings, see *Printing preferences*.-->
+  <!--For more information on applying these print settings, see *Printing preferences*.-->
 
 **Korsreferenser**
 

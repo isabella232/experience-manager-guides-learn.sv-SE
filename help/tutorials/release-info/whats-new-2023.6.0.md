@@ -2,9 +2,9 @@
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides, juni 2023-versionen
 description: Läs om de nya och förbättrade funktionerna i juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
 exl-id: ff6ac4a4-76a3-4b41-9da7-6a888de0eca5
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+source-git-commit: f1292c94d77b724467d9eede59687bf0041cbce5
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 I den här artikeln beskrivs de nya och förbättrade funktionerna i Adobe Experience Manager-handböckernas version från juni 2023 (senare kallad *AEM stödlinjer as a Cloud Service*).
 
-Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](release-notes-2023.6.0.md) artikel.
+Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](release-notes-2023.6.0.md).
 
 ## Rapporten Brutna länkar i Web Editor
 
-Med AEM Guides kan du kontrollera om dina tekniska dokument är fullständiga och generera rapporter från Web Editor. I juni 2023 AEM Guides finns en funktion för att visa och åtgärda brutna länkar. Det här är en mycket användbar rapport som hjälper dig att hantera brutna länkar. Du kan enkelt visa de brutna länkar som finns på DITA-kartan och även åtgärda dem.
+Med AEM Guides kan du kontrollera om dina tekniska dokument är fullständiga och generera rapporter från Web Editor. I juni 2023 AEM Guides finns en funktion för att visa och åtgärda brutna länkar. Det här är en användbar rapport som hjälper dig att hantera brutna länkar. Du kan enkelt visa de brutna länkar som finns på DITA-kartan och även åtgärda dem.
 ![](assets/broken-link-report.png){width="800" align="left"}
 
 När du har åtgärdat en länk visas den inte under listan med brutna länkar.
@@ -26,7 +26,7 @@ Mer information finns i [Visa och korrigera brutna länkar](../user-guide/report
 
 ## Byta namn på och flytta filer i databasvyn
 
-Nu kan du även byta namn på eller flytta en fil från databaspanelen. Den här funktionen är mycket användbar och hjälper dig att enkelt hantera dina filer från databaspanelen. Du kan markera en fil och byta namn på den eller flytta den med **Alternativ** -menyn för den markerade filen. AEM Guides visar ett meddelande när du flyttar eller byter namn på en fil.
+Nu kan du även byta namn på eller flytta en fil från databaspanelen. Den här funktionen är praktisk och hjälper dig att hantera dina filer enkelt från panelen Databas. Du kan markera en fil och byta namn på den eller flytta den med **Alternativ** -menyn för den markerade filen. AEM Guides visar ett meddelande när du flyttar eller byter namn på en fil.
 
 ![](assets/rename-move-assets.png){width="650" align="left"}
 
@@ -40,29 +40,26 @@ Nu kan du lägga till en vattenstämpel i utdata från PDF i dokumentet som änn
 
 Mer information finns i [Lägga till en vattenstämpel i utdata från PDF för utkast till dokument](../native-pdf/use-javascript-content-style.md#watermark-draft-document).
 
-### Stöd för språkvariabler i DITA-element
+### Stöd för språkvariabler
 
-AEM stödlinjer har stöd för språkvariabler. Dessa variabler är mycket användbara när du vill generera lokaliserade strängar för element som anteckning, tips, varning, försiktighet.
-Du kan till exempel ha följande sätt att presentera din NOTE i utdata från PDF:
+AEM Guides har stöd för språkvariabler. Du kan använda språkvariabler för att definiera en lokaliserad version av körklara etiketter som Anteckning, Varning och Varning eller statisk text i utdata från PDF.
+Du kan lägga till språkvariablerna eller den lokaliserade versionen av etiketterna i lämpliga avsnitt i utdata från PDF och i utdatamallarna.
 
-Tyska: Notiz
+#### Språkvariabler i utdata från PDF
 
-Spanska: Nota
+Du kan använda språkvariablerna för att definiera lokaliserade etiketter för element som Anteckning, Varning och Varning. Du kan uppdatera värdet för dessa variabler på ett eller flera språk, och sedan hämtas det lokaliserade värdet automatiskt i utdata från PDF.
+Du kan till exempel visa etiketten Note i PDF-utdata på följande sätt:
 
+* Engelska: Anteckning
+* Franska: Remarque
+* Tyska: Hinweis
 
-### Stöd för språkvariabler i sidfoten
+#### Språkvariabler i utdatamallarna
 
-Du kan lägga till en språkvariabel i ett löpande sidhuvud eller en sidfot på den överordnad sidan i ett dokument. Variabeln visas på alla innehållssidor i dokumentet där den här överordnad sidan används. Exempel: 1 av 1 sida.
-Du kan också använda den för att presentera talen på olika språk.
+Om du ville skapa PDF-utdata på olika språk var du tvungen att skapa olika PDF-mallar med lokaliserad text för varje språk. Med funktionen för språkvariabler behöver du bara skapa mallen en gång. För statisk text som du behöver lokalisera kan du sedan skapa motsvarande språkvariabler och använda dem i mallen.
+Du kan skapa språkvariabler för längre text, till exempel en hel mening eller till och med ett stycke. Du kan också använda format och formatera dessa språkvariabler med HTML-kod.
 
-### Lokaliserade prefix för din innehållsförteckning
-
-Du kan även visa lokaliserade termer som används för att presentera prefixen i rubrikerna.
-Du kan till exempel ha följande sätt att presentera ditt &#39;Kapitel&#39;-prefix i utdata från PDF:
-
-Tyska: Kapitel
-
-Spanska: Capítulo
+Mer information finns i [Stöd för språkvariabler](../native-pdf/native-pdf-language-variables.md).
 
 ### Möjlighet att använda AEM metadata i PDF-layouter
 

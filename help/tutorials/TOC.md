@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+source-git-commit: cabb567088e8f118db5af614b64948f56dc1e25e
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1394'
 ht-degree: 3%
 
 ---
@@ -159,7 +159,7 @@ ht-degree: 3%
          + [Redigera en gruppaktiveringskarta](./user-guide/conf-bulk-activation-edit-map-collection.md)
          + [Ta bort en gruppaktiveringskarta](./user-guide/conf-bulk-activation-delete-map-collection.md)
    + Generering av FrameMaker {#generate-fm-output}
-      + [Generera utdata från FrameMaker-dokument](./user-guide/fm-output-generatation.md)
+      + [Generera utdata av FrameMaker dokument](./user-guide/fm-output-generatation.md)
       + Förinställningar som stöds {#fm-docs-generating-presets}
          + [Förinställningar för generering av FrameMaker-dokument](./user-guide/fm-output-understand-presets.md)
          + [PDF](./user-guide/fm-output-pdf-preset.md)
@@ -238,6 +238,7 @@ ht-degree: 3%
             + [PDF-mall](./native-pdf/pdf-template.md)
             + [Komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
             + [Utforma en sidlayout](./native-pdf/design-page-layout.md)
+            + [Stöd för språkvariabler](./native-pdf/native-pdf-language-variables.md)
             + Vanliga innehållsformat {#content-styles}
                + [Arbeta med vanliga innehållsformat](./native-pdf/stylesheet.md)
                + [Arbeta med anpassade ändringsfältstilar](./native-pdf/change-bar-style.md)

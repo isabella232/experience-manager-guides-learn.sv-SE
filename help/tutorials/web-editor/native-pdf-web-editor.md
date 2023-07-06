@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: d8bc9e2673ce08fe5f71154e9d009d1847b0274d
+source-git-commit: 3ae7a2a5954b68da29d4268012be47cd2ac8df3e
 workflow-type: tm+mt
-source-wordcount: '2903'
+source-wordcount: '2951'
 ht-degree: 0%
 
 ---
@@ -182,3 +182,10 @@ Om du väljer **Hämta temporära filer** i Avancerade inställningar kan du äv
 >[!NOTE]
 >
 > The **Hämta temporära filer**  ![ladda ned temporära filer](assets/native-pdf-download-temporary-files-icon.svg) visas bara om du har genererat det senaste PDF-utdata med hjälp av förinställningen där du har valt alternativet i **Avancerat** -fliken.
+
+
+
+### Använd språkvariabler
+
+AEM stödlinjer har också stöd för språkvariabler. Välj **Språkvariabler** <img src="./assets/language-variables.svg" width="25">  i den vänstra panelen för att definiera en lokaliserad version av de körklara etiketterna som Anteckning, Varning och Varning eller statisk text i utdata från PDF. Mer information finns i [Stöd för språkvariabler](../native-pdf/native-pdf-language-variables.md).
+
