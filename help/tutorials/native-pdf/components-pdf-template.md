@@ -2,7 +2,7 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 360bba8b5e6ab61314486497e9cc41348ff903c1
+source-git-commit: abeef67c07189d54e4adfb634c6094f3dc70e3eb
 workflow-type: tm+mt
 source-wordcount: '2938'
 ht-degree: 0%
@@ -27,23 +27,32 @@ Med inställningarna i komponenten Sidlayout kan du utforma strukturen för en s
 1. Gå till webbredigeraren **Utdata** -fliken.
 1. Expandera den vänstra sidlisten och klicka **Mallar**.
 1. Öppna mallen som du vill arbeta med.
+
    >[!NOTE]
    >
    >Du kan öppna en mall genom att dubbelklicka på dess namn eller klicka på >-ikonen bredvid dess namn.
+
 1. Om du vill skapa en ny sidlayout gör du något av följande:
+
    * Hovra över **Sidlayouter** och klicka på&#x200B;*Alternativ* ikon) **...** och välja **Ny sidlayout**.
+
+
    * I **Mallar** klickar du på **+** ikon bredvid **Mallar** och välja **Sidlayout** på snabbmenyn.
 
-     Dialogrutan Lägg till layout öppnas.
+
+     Då öppnas **Lägg till layout** -dialogrutan.
 
      <img src="assets/add-layout-2.png" alt="Dialogrutan Lägg till layout" width="250">
+
 1. Ange ett namn för den nya sidlayouten.
    >[!NOTE]
    >
    >Undvik att använda specialtecken när du namnger en sidlayout. Ett blanksteg i namnet ersätts med understrecket&quot;_&quot;.
+
 1. Klicka **Klar**.
 
    Den nya layouten skapas och läggs till under Sidlayouter.
+
 
 ### Duplicera en sidlayout {#duplicate-page-layout}
 
