@@ -1,7 +1,7 @@
 ---
 title: PDF | Stöd för språkvariabler
 description: Använda språkvariabler i utdata- och utdatamallar för PDF
-source-git-commit: 7c7381d2d5a218de9c4ca1fbc0363eacd43947cd
+source-git-commit: 3e922ef7ed9af200aa8fcfb0cbe4489cf059e335
 workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 0%
@@ -105,18 +105,18 @@ Infoga en språkvariabel som `copyright-label` i sidhuvudsområdet utför du fö
 
 1. Öppna önskad sidlayout för redigering.
 
->[!NOTE]
->
-> Visa [Anpassa en sidlayout](../native-pdf/components-pdf-template.md#customize-a-page-layout-customize-page-layout) för att öppna en sidlayout för anpassning eller redigering:
+   >[!NOTE]
+   >
+   > Visa [Anpassa en sidlayout](../native-pdf/components-pdf-template.md#customize-a-page-layout-customize-page-layout) för att öppna en sidlayout för anpassning eller redigering.
 
 1. Markera rubriken för att aktivera den för att infoga en variabel.
 1. Välj **Infoga variabel**  <img src="./assets/insert-language-variable.svg" width="25"> i verktygsfältet.
 1. I **Infoga variabel** markerar du namnet på den språkvariabel som ska infogas och klickar på **Infoga** för att infoga den i sidhuvudsområdet.
 
->[!NOTE]
->
-> Du kan också ange söksträngen i textrutan. Variabelnamnen som innehåller den angivna strängen filtreras och visas i listan.
-> Den valda språkvariabeln infogas i sidhuvudsområdet.
+   >[!NOTE]
+   >
+   > Du kan också ange söksträngen i textrutan. Variabelnamnen som innehåller den angivna strängen filtreras och visas i listan.
+   > Den valda språkvariabeln infogas i sidhuvudsområdet.
 
 På följande skärmbild visas värdet för `copyright-label` läggs till i sidhuvudsområdet.
 
