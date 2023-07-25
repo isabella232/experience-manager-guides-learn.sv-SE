@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: cabb567088e8f118db5af614b64948f56dc1e25e
+source-git-commit: 6adc8544c7ad64bc264465a56944d49949605414
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
@@ -350,5 +350,4 @@ ht-degree: 3%
       + Användningsexempel {#use-cases}
          + [Arbeta med villkorligt innehåll](./knowledge-base/kb-articles/content-architecture/working-with-conditional-content.md)
          + [Arbeta med tangenter](./knowledge-base/kb-articles/content-architecture/working-with-keys.md)
-+ Dolda artiklar {#hidden}
    + [Använd syreanslutning](./oxygen-connector/use-aem-connector.md)
