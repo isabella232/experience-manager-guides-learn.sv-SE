@@ -1,9 +1,9 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides 4.3.0
 description: Läs om de nya och förbättrade funktionerna i 4.3.0-utgåvorna av Adobe Experience Manager Guides
-source-git-commit: ec67a3b959f9ee5b90a53134c1fe9aff8760cb6f
+source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2639'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 I den här artikeln beskrivs de nya och förbättrade funktionerna i version 4.3.0 av Adobe Experience Manager Guides (senare kallat *AEM stödlinjer*).
 
-Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och de problem som åtgärdas i den här versionen finns i  [Versionsinformation](./release-notes-4.3.md).
+Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](./release-notes-4.3.md).
 
 
 ## Ansluta till en datakälla och infoga data i dina ämnen

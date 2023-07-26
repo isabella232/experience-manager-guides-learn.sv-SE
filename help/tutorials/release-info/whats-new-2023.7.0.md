@@ -1,9 +1,9 @@
 ---
-title: Versionsinformation | Nyheter i Adobe Experience Manager Guides, juli 2023
+title: Versionsinformation | Nyheter i Adobe Experience Manager Guides, juli 2023-versionen
 description: Läs om de nya och förbättrade funktionerna i juli 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 06bff798d2e745fae1c666353045cb4c6b040207
+source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 I den här artikeln beskrivs de nya och förbättrade funktionerna i version från juli 2023 av Adobe Experience Manager-handboken (senare kallad *AEM stödlinjer as a Cloud Service*).
 
-Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](release-notes-2023.7.0.md) artikel.
+Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](release-notes-2023.7.0.md).
 
 ## Ansluta till en datakälla och infoga data i dina ämnen
 
@@ -68,6 +68,6 @@ Mer information finns i [Konfigurera mikrotjänstbaserad publicering för AEM Gu
 
 ## Visa information om AEM stödlinjernas version i Om-informationen
 
-Nu med AEM **Om** kan du även visa versionsinformation AEM stödlinjerna. Du kan visa den aktuella versionsinformationen i **Om** alternativ för **Hjälp** på AEM navigeringssida.
+Nu med AEM **Om** kan du även visa versionsinformation AEM stödlinjerna. Du kan visa den aktuella versionsinformationen i **Om** alternativ för **Hjälp** på sidan AEM.
 
 ![](assets/about-aem-help.png)(width=&quot;800&quot; align=&quot;left&quot;)

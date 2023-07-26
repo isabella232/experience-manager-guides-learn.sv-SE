@@ -1,9 +1,9 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides 4.3.0
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till 4.3.0-utgåvor av Adobe Experience Manager Guides
-source-git-commit: 756ba69360e1796e36f6cc1ef410443ef8cb4acb
+source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '998'
 ht-degree: 4%
 
 ---
@@ -81,7 +81,6 @@ De buggar som har åtgärdats i olika områden listas nedan:
 - Sökresultaten inaktiveras på panelen Sök och ersätt när du har öppnat en sökad fil. (12142)
 - Siffertangenten&quot;8&quot; på sidotangentbordet fungerar inte i redigeraren AEM stödlinjer. (12106)
 - Textbundna attribut/visningsattribut visas inte i layoutvyn i Web Editor. (12498)
-- Ladda upp filer i Sygen Plugin för AEM Guides fungerar inte i molntjänster om du har! i filnamnet. (12207)
 - Konfigurationen för det globala profilanvändargränssnittet matchar inte mappprofilen. (11970)
 - Innehållsreferenser bryts när DITA-filer kopieras och klistras in. (11959)
 - Det går inte att redigera innehållsfragment i kolumnvyn med AEM stödlinjer installerade. (7342)
@@ -93,7 +92,7 @@ De buggar som har åtgärdats i olika områden listas nedan:
 - `conref` in ph-tagg | Den visade bläddringsdialogrutan är felaktig. (9481)
 - Lokala länkar till andra element kan inte lösas i Web Editor. (8790)
 - Funktionen Matches() fungerar inte i funktionen Schematron. (11224)
-- I Sygen-pluginen för AEM Guides tar alternativet att öppna en DITA-karta i Web DITA Map Editor till det gamla användargränssnittet. (12633)
+
 
 
 ### Förvaltning
