@@ -2,9 +2,9 @@
 title: Massaktivering av publicerat innehåll
 description: Lär dig hur du aktiverar publicerat innehåll gruppvis
 exl-id: 66c454bb-f09e-442f-b863-60ee249a0e08
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: c4f383984501525527136773ce7ef556170e8ad3
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,10 @@ I ett verkligt ordscenario har författarna åtkomst till redigeringsinstansen a
 
 Med AEM Guides funktion för massaktivering kan du snabbt och enkelt aktivera ditt innehåll från redigering till publicering. Med funktionen för massaktivering kan du
 
-- Lägga till ytterligare en karta \(i en kartsamling\) till en enda aktiveringsuppgift
+- Lägga till en eller flera kartor \(till en kartsamling\) till en enda aktiveringsuppgift
 
-- Välj en av flera förinställningar som du vill publicera
+- Välj en eller flera förinställningar för utdata som du vill publicera. Du kan lägga till AEM för Site, PDF, Native PDF, HTML5, Custom och JSON.
+
 
 - Definiera språkområden där utdata ska aktiveras
 

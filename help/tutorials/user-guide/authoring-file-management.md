@@ -1,10 +1,10 @@
 ---
 title: Hantera filer och mappar
-description: Lär dig hur du hanterar filer och mappar
+description: Lär dig hantera filer och mappar
 exl-id: e7810b06-f49f-467a-b987-a5e6f731d4cf
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: d0b3ccb87901c54b86aa7d0dba14dc7201c072e9
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '3079'
 ht-degree: 0%
 
 ---
@@ -33,39 +33,39 @@ I det här avsnittet beskrivs hur AEM hanterar grundläggande filåtgärder, som
 
 - *Mappen innehåller filer med läsbara filnamn*: En ny kopia av mappen skapas med suffixet \(som mappnamn0\). Ett nytt UUID tilldelas också till filerna i mappen. Filnamnen ändras dock inte.
 
-- *Mappen innehåller filer med filnamn som baseras på ett UUID-mönster*: En ny kopia av mappen skapas med suffixet \(som mappnamn0\). Ett nytt UUID tilldelas också till alla filer i den nya mappen. Filnamnen ändras också. filnamnen är samma som det nya UUID:t.
+- *Mappen innehåller filer med filnamn som baseras på ett UUID-mönster*: En ny kopia av mappen skapas med suffixet \(som mappnamn0\). Ett nytt UUID tilldelas också till alla filer i den nya mappen. Filnamnen ändras också. Filnamnen är desamma som det nya UUID:t.
 
 
 **Kopiera och klistra in mapp på en annan plats**
 
 - *Mappen innehåller filer med läsbara filnamn*: En ny kopia av mappen skapas och ett nytt UUID tilldelas till alla filer i mappen på den nya platsen. Här ändras inte mapp- eller filnamnen.
 
-- *Mappen innehåller filer med filnamn som baseras på ett UUID-mönster*: En ny kopia av mappen skapas med samma namn som den ursprungliga mappen. Ett nytt UUID tilldelas också till alla filer i den nya mappen. Filnamnen ändras också. filnamnen är samma som det nya UUID:t.
+- *Mappen innehåller filer med filnamn som baseras på ett UUID-mönster*: En ny kopia av mappen skapas med samma namn som den ursprungliga mappen. Ett nytt UUID tilldelas också till alla filer i den nya mappen. Filnamnen ändras också. Filnamnen är desamma som det nya UUID:t.
 
 
 ## Dra och släppa filer
 
-**Dra-och-släpp med läsbara filnamn**
+**Dra och släpp med läsbara filnamn**
 
-- *Dra och släpp på samma plats*: Du har möjlighet att **Skriv över befintlig fil\(er\)**, **Behåll båda filerna** och ett alternativ för att skapa en version av den befintliga arbetskopian.
+- *Dra och släpp på samma plats*: Du har möjlighet att **Skriv över befintlig fil\**, **Behåll båda filerna\** och ett alternativ för att skapa en version av den befintliga arbetskopian.
 
-   ![](images/uuid-human-readable-drag-drop-same-location.PNG){width="650" align="center"}
+  ![](images/uuid-human-readable-drag-drop-same-location.PNG){width="650" align="center"}
 
-   Om du väljer **Skriv över befintlig fil\(er\)** ersätter filen som överförs den aktuella arbetsversionen av den befintliga filen på den ursprungliga platsen. UUID skapas eller ändras inte.
+  Om du väljer **Skriv över befintlig fil\** ersätter filen som överförs den aktuella arbetsversionen av den befintliga filen på den ursprungliga platsen. UUID skapas eller ändras inte.
 
-   Om du väljer **Behåll båda filerna** skapas en ny kopia av filen med suffixet \(som filename0.extension\). Ett nytt UUID tilldelas också till den nyligen kopierade filen.
+  Om du väljer **Behåll båda filerna\** skapas en ny kopia av filen med suffixet \(som filename0.extension\). Ett nytt UUID tilldelas också till den nyligen kopierade filen.
 
-   Om du väljer alternativet Skriv över befintlig fil, och väljer alternativet att skapa en version från den befintliga arbetskopian, skapas även en ny version från arbetskopian av dokumentet.
+  Om du väljer alternativet Skriv över befintlig fil, och väljer alternativet att skapa en version från den befintliga arbetskopian, skapas även en ny version från arbetskopian av dokumentet.
 
-   >[!NOTE]
-   >
-   > **Skapa ny version för överförd fil** måste aktiveras av administratören. Om den här funktionen är aktiverad skapas en ny version för den överförda filen. Om alternativet är avmarkerat skapas ingen version av den överförda filen. Mer information finns i *Skapa ny version för överförd fil* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
+  >[!NOTE]
+  >
+  > **Skapa ny version för överförd fil** funktionen måste aktiveras av administratören. Om den här funktionen är aktiverad skapas en ny version för den överförda filen. Om alternativet är avmarkerat skapas ingen version av den överförda filen. Mer information finns i *Skapa ny version för överförd fil* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
 
-   Om en fil redan har checkats ut av en annan användare för redigering, och du försöker överföra och skriva över den befintliga filen, misslyckas den och visar ett fel.
+  Om en fil redan har checkats ut av en annan användare för redigering, och du försöker överföra och skriva över den befintliga filen, misslyckas den och visar ett fel.
 
-   >[!NOTE]
-   >
-   >The **Skriv över utcheckad fil vid överföring** funktionen måste inaktiveras av administratören. Om den här funktionen är aktiverad kan du skriva över utcheckade filer. Om funktionen inte är aktiverad går det inte att skriva över en utcheckad fil. Mer information finns i *Skriv över utcheckad fil vid överföring* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
+  >[!NOTE]
+  >
+  >The **Skriv över utcheckad fil vid överföring** funktionen måste inaktiveras av administratören. Om den här funktionen är aktiverad kan du skriva över utcheckade filer. Om funktionen inte är aktiverad går det inte att skriva över en utcheckad fil. Mer information finns i *Skriv över utcheckad fil vid överföring* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
 
 
 - *Dra och släpp filer på en annan plats*: En ny kopia av filen skapas och ett nytt UUID tilldelas också på den nya platsen. Här är filnamnet detsamma som det ursprungliga filnamnet.
@@ -73,35 +73,35 @@ I det här avsnittet beskrivs hur AEM hanterar grundläggande filåtgärder, som
 
 **Dra och släpp med filnamn som baseras på ett UUID-mönster**
 
-*Dra och släpp filen på samma plats*: Du har möjlighet att **Skriv över befintlig fil\(er\)** tillsammans med alternativet att skapa en version av den befintliga arbetskopian.
+*Dra och släpp filen på samma plats*: Du har möjlighet att **Skriv över befintlig fil\** tillsammans med alternativet att skapa en version av den befintliga arbetskopian.
 
 ![](images/uuid-drag-drop-same-location.PNG){width="650" align="center"}
 
 När filen skrivs över ändras inte filnamnet eller dess UUID.
 
-Om du väljer **Skapa version för befintlig arbetskopia** kan du välja att en ny version av arbetskopian av dokumentet ska skapas, När den nya filen överförs skapas även en ny version av filen och den skapas som arbetskopia av dokumentet.
+Om du väljer **Skapa version för befintlig arbetskopia** och sedan skapas en ny version av arbetskopian av dokumentet. Den nya filen överförs, en ny version av filen skapas också och den skapas som arbetskopia av dokumentet.
 
-**Skapa ny version för överförd fil** måste aktiveras av administratören. Om den här funktionen är aktiverad skapas en ny version för den överförda filen. Om alternativet är avmarkerat skapas ingen version av den överförda filen. Mer information finns i *Skapa ny version för överförd fil* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
+**Skapa ny version för överförd fil** funktionen måste aktiveras av administratören. Om den här funktionen är aktiverad skapas en ny version för den överförda filen. Om alternativet är avmarkerat skapas ingen version av den överförda filen. Mer information finns i *Skapa ny version för överförd fil* i avsnittet Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service.
 
 
-*Dra och släpp filen på en annan plats*: Du har möjlighet att **Skriv över befintlig fil\(er\)**, **Flytta fil till ny plats** och ett alternativ för att skapa en version av den befintliga arbetskopian.
+*Dra och släpp filen på en annan plats*: Du har möjlighet att **Skriv över befintlig fil\**, **Flytta fil till ny plats** och ett alternativ för att skapa en version av den befintliga arbetskopian.
 
 ![](images/uuid-drag-drop-different-location.PNG){width="650" align="center"}
 
-Om du väljer **Skriv över befintlig fil\(er\)** ersätter filen som överförs den befintliga filen på den ursprungliga platsen. UUID skapas eller ändras inte.
+Om du väljer **Skriv över befintlig fil\** ersätter filen som överförs den befintliga filen på den ursprungliga platsen. UUID skapas eller ändras inte.
 
 Om du väljer **Flytta fil till ny plats** , flyttas den befintliga filen till den aktuella platsen och skrivs sedan över med filen som överförs. När du flyttar en fil till den nya platsen bryts inte befintliga referenser från eller till filen.
 
-Om du väljer alternativet att skapa en version från den befintliga kopian när du ersätter eller flyttar filerna skapas en ny version från arbetskopian av dokumentet. den nya filen antingen ersätts på den befintliga platsen eller flyttas till den nya platsen.
+Om du väljer alternativet att skapa en version från den befintliga kopian när du ersätter eller flyttar filerna skapas en ny version från arbetskopian av dokumentet. Den nya filen ersätts antingen på den befintliga platsen eller flyttas till den nya platsen.
 
 
-## Flytta flera filer samtidigt
+## Flytta flera filer samtidigt {#move-files-bulk}
 
 AEM innehåller ett verktyg för flyttning av flera filer som hjälper en administratör att flytta en mapp med ett stort antal filer från en plats till en annan. Med det här verktyget kan du enkelt flytta filer i en eller flera mappar till en annan mapp i AEM. En av de viktigaste funktionerna i det här verktyget är att det inte bara flyttar ett stort antal filer, det bevarar även referenserna till och från de filer som flyttas. Du kan ändra antalet filer som du kan flytta i grupper utan att det påverkar redigerings- och publiceringsåtgärderna.
 
 >[!NOTE]
 >
-> Verktyget Flytta gruppvis fungerar bara på mappnivå. Om du vill flytta enskilda avsnitt eller mappfiler använder du det vanliga flyttverktyget AEM resursgränssnittet.
+> Verktyget för flyttning av grupp fungerar bara på mappnivå. Om du vill flytta enskilda avsnitt eller mappfiler använder du det vanliga flyttverktyget AEM resursgränssnittet.
 
 Här är några av funktionerna som finns i verktyget Flytta satsvis:
 
@@ -111,7 +111,7 @@ Här är några av funktionerna som finns i verktyget Flytta satsvis:
 
 - Automatisk hantering av mappar med samma namn. Den här funktionen ser till att även om det finns mappar med samma namn som flyttas, skrivs de inte över.
 
-- Automatisk hantering av referenser till och från filer som flyttas.
+- Automatisk hantering av referenser till och från de filer som flyttas.
 
 
 Du måste tänka på följande innan du kör gruppbearbetningen:
@@ -125,31 +125,98 @@ Så här flyttar du flera filer samtidigt:
 1. Klicka på länken Adobe Experience Manager överst och välj **verktyg**.
 1. Välj **Stödlinjer** i listan över verktyg.
 1. Klicka på **Verktyget Massflyttning** platta.
+1. Sidan Verktyg för flyttning av grupp visas baserat på dina inställningar. Ange följande information på **Verktyget Massflyttning** sida:
 
-   Sidan Verktyg för flyttning av grupp visas.
+   <details>
 
-   ![](images/bulk-move-tool_cs.PNG){width="550" align="center"}
+   <summary> Lokalt UUID-baserat filsystem </summary>
 
-1. Ange följande information på sidan Verktyg för flyttning av flera filer:
+   ![](images/bulk-move-tool-uuid.png){width="650" align="center"}
 
-   - **Lägg till suffix till dubblettfiler**: Om du flyttar mappar med samma namn måste du markera det här alternativet. I skärmbilden ovan visas t.ex. **Källsökväg** innehåller namnet på de mappar som ska flyttas. Mappen med namnet topic finns på två olika platser - test-A och test-B. När du väljer det här alternativet flyttas mapparna. Den första flyttade mappen får namnet topic medan den andra mappen får namnet topic0. Flyttåtgärden lägger till ett suffix i sekventiell serie \(0, 1, 2 och så vidare\) i mapparna med samma namn.
+   >[!TIP]
+   >
+   > Välj <img src="images/info-icon.svg" width="25">   i närheten av ett fält för att visa mer information om det.
 
-      Om du flyttar mappar med samma namn utan att markera det här alternativet avbryts åtgärden med ett meddelande.
 
-   - **Källsökväg\(er\)**: Ange platsen för de mappar som du vill flytta. Vanligtvis måste du kopiera och klistra in källplatsen från webbläsarens adressfält. Du kan ange flera mapplatser genom att klicka på **Lägg till** -knappen.
+   - **Lägg till suffix till duplicerade mappar**: Om du flyttar mappar med samma namn måste du välja det här alternativet. I den föregående skärmbilden **Källsökväg** innehåller namnet på de mappar som ska flyttas. Mappen med namnet topic finns på två olika platser - test-A och test-B. När du väljer det här alternativet flyttas mapparna. Den första flyttade mappen får namnet topic medan den andra mappen får namnet topic0. Flyttåtgärden lägger till ett suffix i sekventiell serie \(0, 1, 2 och så vidare\) i mapparna med samma namn.
+
+     Om du flyttar mappar med samma namn utan att markera det här alternativet avbryts åtgärden med ett meddelande.
+
+   - **Källsökväg\(er)**: Ange platsen för de mappar som du vill flytta.
+
+      - Välj  **Bläddra i mapp**  <img src="images/browse-folder-icon.svg" width="25">    för att öppna dialogrutan Bläddra efter filer. Markera de mappar som du vill flytta och klicka på **Välj** för att slutföra processen.
+
+      - Du kan också skriva eller kopiera och klistra in källplatsen. Tryck på Retur för att lägga till mappen i listan.
+
+        De markerade mapparna visas tillsammans med sökvägen. Håll muspekaren över mapptaggen för att visa hela sökvägen.
+      - Du kan även ta bort mappar genom att klicka på **Ta bort** <img src="images/remove-folder.svg" width="25"> nära mappen.
+
 
    - **Målsökväg**: Ange platsen där du vill flytta källmapparna.
 
-1. Klicka **Massflyttning**.
+      - Välj  **Bläddra i mapp** <img src="images/browse-folder-icon.svg" width="25"> för att öppna dialogrutan Bläddra efter filer. Välj den plats där du vill flytta källmapparna. och klicka på Välj för att slutföra processen.
+      - Du kan också skriva eller kopiera och klistra in målsökvägen.
 
-   Systemet börjar flytta filer från källan till målplatsen. När processen är klar visas en sammanfattning av flyttprocessen längst ned på sidan.
+     Den markerade mappen visas tillsammans med sökvägen i textrutan.
 
-   ![](images/bulk-move-summary.PNG){width="650" align="center"}
 
+   - Klicka **Massflyttning**.
+
+     Systemet börjar flytta filer från källan till målplatsen. När processen är klar visas en sammanfattning av flyttprocessen till höger på sidan.
+
+     ![](images/bulk-move-summary-uuid.png){width="650" align="center"}
+
+   </details>
+
+   <details>
+
+   <summary> Lokalt icke-UID-baserat filsystem </summary>
+
+   ![](images/bulk-move-tool-non-uuid.png){width="650" align="center"}
+
+   >[!TIP]
+   >
+   > Välj <img src="images/info-icon.svg" width="25">   i närheten av ett fält för att visa mer information om det.
+
+   - **Batchstorlek**: Ange antalet filer som ska flyttas i en enda grupp. Standardvärdena om det finns 50 filer.
+   - **Vilointervall**: Ange tiden i sekunder som processen väntar innan nästa grupp startas. Under vilolägestidsintervallet korrigeras referenserna till och från de flyttade filerna. Standardintervallet för strömsparläge är 60 sekunder.
+
+
+   - **Lägg till suffix till duplicerade mappar**: Om du flyttar mappar med samma namn måste du välja det här alternativet. I den föregående skärmbilden **Källsökväg** innehåller namnet på de mappar som ska flyttas. Mappen med namnet topic finns på två olika platser - test-A och test-B. När du väljer det här alternativet flyttas mapparna. Den första flyttade mappen får namnet topic medan den andra mappen får namnet topic0. Flyttåtgärden lägger till ett suffix i sekventiell serie \(0, 1, 2 och så vidare\) i mapparna med samma namn.
+
+     Om du flyttar mappar med samma namn utan att markera det här alternativet avbryts åtgärden med ett meddelande.
+
+   - **Uppdatera referenser till utcheckade filer**: Om du flyttar mappar som innehåller utcheckade filer bör du välja det här alternativet. Om du väljer det här alternativet kommer alla filer som är utcheckade att sparas och checkas in med en ny revision. Den nya revisionen flyttas sedan till målplatsen.
+
+     Om du inte markerar det här alternativet flyttas de utcheckade filerna till målmappen med samma utcheckningsstatus. Det kan dock finnas en viss dataförlust i den här rörliga processen.
+
+
+   - **Källsökväg\(er)**: Ange platsen för de mappar som du vill flytta.
+
+      - Välj  **Bläddra i mapp**  <img src="images/browse-folder-icon.svg" width="25">    för att öppna dialogrutan Bläddra efter filer. Markera de mappar som du vill flytta och klicka på **Välj** för att slutföra processen.
+
+      - Du kan också skriva eller kopiera och klistra in källplatsen. Tryck på Retur för att lägga till mappen i listan.
+
+        De markerade mapparna visas tillsammans med sökvägen. Håll muspekaren över mapptaggen för att visa hela sökvägen.
+      - Du kan även ta bort mappar genom att klicka på **Ta bort** <img src="images/remove-folder.svg" width="25"> nära mappen.
+
+
+   - **Målsökväg**: Ange platsen där du vill flytta källmapparna.
+
+      - Välj  **Bläddra i mapp** <img src="images/browse-folder-icon.svg" width="25"> för att öppna dialogrutan Bläddra efter filer. Välj den plats där du vill flytta källmapparna. och klicka på Välj för att slutföra processen.
+      - Du kan också skriva eller kopiera och klistra in målsökvägen.
+
+        Den markerade mappen visas tillsammans med sökvägen i textrutan.
+
+   - Klicka **Massflyttning**.
+
+     Systemet börjar flytta filer från källan till målplatsen. När processen är klar visas en sammanfattning av flyttprocessen till höger på sidan.
+     ![](images/bulk-move-summary-non-uuid.png){width="650" align="center"}
+</details>
 
 ## Sök i DITA-innehåll
 
-Som standard känner AEM inte igen DITA-innehåll, vilket innebär att det inte finns någon mekanism för att söka efter DITA-innehåll i dess databas. AEM stödlinjer lägger till ett lager ovanpå AEM, vilket gör att AEM kan förstå och bearbeta DITA-innehåll. Med funktionen Sök efter DITA-innehåll i AEM Guides kan du söka efter DITA-innehåll i AEM.
+Som standard känner AEM inte igen DITA-innehåll, vilket innebär att det inte finns någon mekanism för att söka efter DITA-innehåll i dess databas. AEM stödlinjer lägger till ett lager ovanpå AEM, vilket gör det möjligt för AEM att förstå och bearbeta DITA-innehåll. Med funktionen Sök efter DITA-innehåll i AEM Guides kan du söka efter DITA-innehåll i AEM.
 
 >[!NOTE]
 >
@@ -157,9 +224,9 @@ Som standard känner AEM inte igen DITA-innehåll, vilket innebär att det inte 
 
 Med sökfunktionen kan du:
 
-- söka efter DITA-innehåll baserat på ett elementvärde, till exempel `author`= xml
-- Sök efter DITA-innehåll baserat på ett attributvärde; till exempel `@platform`= windows
-- Använd en kombination av DITA-element och attributvärde. till exempel `author`= xml `AND` `@platform`= windows
+- Sök efter DITA-innehåll baserat på ett elementvärde, till exempel `author`= xml
+- Sök efter DITA-innehåll baserat på ett attributvärde, till exempel `@platform`= windows
+- Använd en kombination av DITA-element och attributvärde, till exempel `author`= xml `AND` `@platform`= windows
 
 Utför följande steg för att söka efter DITA-innehåll i AEM:
 
@@ -207,7 +274,7 @@ Gör så här för att söka efter filer baserat på utcheckningsstatus:
 
 ## Ta bort filer
 
-Att ta bort filer från AEM är en begränsad funktion som styrs av systemadministratören. Beroende på konfigurationerna kan det vara svårt att ta bort filer om de är:
+Borttagning av filer från AEM är en begränsad funktion som styrs av systemadministratören. Beroende på konfigurationerna kan det vara svårt att ta bort filer om de är:
 
 - Utcheckad
 - Har inkommande eller utgående referenser
@@ -234,11 +301,11 @@ I det här fallet kan användare inte ta bort filer förrän alla inkommande och
 
 Mediefiler som bilder och videor är en viktig del av innehållet. När du överför och hanterar ditt innehåll kan du även arbeta med mediefiler.
 
-Om mediefilen har ändrats kan du söka efter och förhandsgranska filerna i **Versionshistorik**.Så här tar du reda på ändringar i olika versioner av en mediefil:
+Om mediefilen har ändrats kan du söka efter och förhandsgranska filerna i **Tidigare versioner**.Så här tar du reda på ändringar i olika versioner av en mediefil:
 
-1. Åtkomst till filen i **Resurser, användargränssnitt**.
+1. Öppna filen i **Resursgränssnitt**.
 1. Markera filen som du vill visa versionshistoriken för.
-1. Klicka på **Versionshistorik** och välja en version.
+1. Klicka på **Tidigare versioner** och välja en version.
 1. Du kan också se miniatyrbilder av de olika versionerna under Versionshistorik.
 
    ![](images/media-version-history-icon.png){width="800" align="center"}

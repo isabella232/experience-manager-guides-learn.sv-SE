@@ -1,7 +1,7 @@
 ---
 title: Konfigurera globala profiler eller profiler på mappnivå
 description: Lär dig hur du konfigurerar globala profiler eller profiler på mappnivå
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 6f4ab3baf0c0dd333035c3a7d131bd151b17de45
 workflow-type: tm+mt
 source-wordcount: '3962'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Du kan även delegera mappspecifika konfigurationer till en avdelning eller prod
 
 Med hjälp av panelen Mappprofiler i inställningarna för stödlinjer kan du konfigurera inställningarna på följande flikar:
 
-![](assets/folder-profile-tabs.png)
+![](assets/folder-profile-tabs.png){width="800" align="left"}
 
 - **Allmänt**: Fliken Allmänt är bara tillgänglig när du konfigurerar inställningar på mappnivå \(eller projekt/produkt\). Du kan konfigurera inställningar som mappsökvägar som inställningarna ska gälla för och användare som ska ha administratörsbehörighet för att skapa eller uppdatera konfigurationer.
 
@@ -53,7 +53,7 @@ Med hjälp av panelen Mappprofiler i inställningarna för stödlinjer kan du ko
 
    - Bookmap
 
-- **Förinställning för utdata**: På samma sätt som för redigeringsmallar finns det fem förkonfigurerade utdataförinställningar:
+- **Utdatainställning**: På samma sätt som för redigeringsmallar finns det fem förkonfigurerade utdatainställningar:
 
    - AEM
 
@@ -61,7 +61,7 @@ Med hjälp av panelen Mappprofiler i inställningarna för stödlinjer kan du ko
 
    - HTML5
 
-   - ePub
+   - EPUB
 
    - Egen
 
@@ -73,11 +73,11 @@ Med hjälp av panelen Mappprofiler i inställningarna för stödlinjer kan du ko
    - CSS-mallayout
    - XML-redigerarkodfragment
    - Versionsetiketter för XML-innehåll
-   - Rotmapp \(endast på mappnivå\)
+   - Rootmap \(endast på mappnivå\)
 
 Du kan konfigurera både den globala profilen och profilen på mappnivå. I en mappnivåprofil kan du definiera de mappar som inställningarna ska gälla för. Dessa inställningar omfattar villkorsattribut, redigeringsmallar, förinställningar för utdata och inställningar för XML-redigeraren. De villkorliga förinställningarna, redigeringsmallarna och XML-redigerarkonfigurationerna görs sedan tillgängliga för författare som arbetar i de konfigurerade mapparna. Utgivare får på samma sätt tillgång till de konfigurerade förinställningarna som definierats i de konfigurerade mapparna.
 
-En profil på mappnivå åsidosätter inställningarna som konfigurerats i den globala profilen. Om en mapp har en mappnivåprofil visar den med andra ord redigeringsmallarna, utdatamallarna och inställningarna för XML-redigeraren som är konfigurerade i motsvarande mappprofil. Den visar inte inställningarna som konfigurerats i den globala profilen. Detta gäller dock inte villkorsattributen. Om det gäller villkorliga attribut sammanfogas de villkorliga attributen på global nivå och på mappnivå.
+En profil på mappnivå åsidosätter inställningarna som konfigurerats i den globala profilen. Om en mapp har en mappnivåprofil visar den med andra ord redigeringsmallarna, utdatamallarna och inställningarna för XML-redigeraren som är konfigurerade i motsvarande mappprofil. Den visar inte inställningarna som konfigurerats i den globala profilen. Detta gäller dock inte villkorsattributen. Om du har villkorsattribut sammanfogas de på global nivå och på mappnivå.
 
 I följande avsnitt beskrivs hur du konfigurerar globala profiler och profiler på mappnivå.
 
@@ -93,11 +93,11 @@ Så här konfigurerar du den globala profilen:
 
    För första gången visas sidan Mappprofiler med endast rutan Global profil.
 
-   ![](assets/folder-profile-global.png)
+   ![](assets/folder-profile-global.png){width="800" align="left"}
 
 1. Klicka på **Global profil** platta.
 
-1. Konfigurera **Villkorliga attribut**, se [Konfigurera villkorsstyrda attribut för globala profiler eller profiler på mappnivå](#id1889D0I305Z).
+1. Konfigurera **Villkorliga attribut**, se [Konfigurera villkorliga attribut för globala profiler eller profiler på mappnivå](#id1889D0I305Z).
 
 1. Konfigurera **Redigeringsmall**, se [Konfigurera redigeringsmallar](#id1889D0IL0Y4).
 
@@ -105,7 +105,7 @@ Så här konfigurerar du den globala profilen:
 
 1. Information om hur du konfigurerar XML-redigeraren finns i [Konfigurera och anpassa XML Web Editor](#id2065G300O5Z).
 
-1. Spara och stäng **Global profil**.
+1. När du har gjort alla nödvändiga uppdateringar sparar och stänger du **Global profil**.
 
 
 ## Skapa och konfigurera en mappnivåprofil
@@ -122,7 +122,7 @@ Så här konfigurerar du en profil på mappnivå:
 
 1. Klicka **Skapa**.
 
-   ![](assets/create-folder-profile.png)
+   ![](assets/create-folder-profile.png){width="300" align="left"}
 
 1. Ange följande information i dialogrutan **Skapa mappprofil** dialog:
    - Namn på mappprofilen.
@@ -130,7 +130,7 @@ Så här konfigurerar du en profil på mappnivå:
 
      >[!NOTE]
      >
-     > Du kan inte använda flera mappprofiler på en mapp. Se till att mappen som du väljer här inte har någon annan profil. Om en överordnad-underordnad mapp har sina egna specifika profiler använder den underordnade mappen konfigurationerna från sin egen profil. Konfigurationerna från den överordnade mappen åsidosätter inte konfigurationerna för en underordnad mapp.
+     > Du kan inte använda flera mappprofiler på en mapp. Se till att mappen som du väljer här inte har någon annan profil. Om en överordnad-underordnad mapp har sina egna specifika profiler, kommer den underordnade mappen att använda konfigurationerna från sin egen profil. Konfigurationerna från den överordnade mappen åsidosätter inte konfigurationerna för en underordnad mapp.
 
 1. Klicka **Skapa**.
 
@@ -152,7 +152,7 @@ Så här konfigurerar du en profil på mappnivå:
    >
    > Se till att mappen som du väljer här inte har någon annan mappnivåprofil kopplad till sig.
 
-1. Om du vill lägga till en användare väljer du en användare på menyn **Administratörsanvändare** nedrullningsbar meny och klicka **Lägg till**.
+1. Om du vill lägga till en användare väljer du en användare på menyn **Administratörer** listruta och klicka **Lägg till**.
 
    >[!NOTE]
    >
@@ -167,7 +167,7 @@ Nu kan du konfigurera villkorsattribut, redigeringsmallar, utdatainställningar 
 >
 > När du skapar en mappprofil innehåller den som standard inga redigeringsmallar. Du måste lägga till de nödvändiga redigeringsmallarna i mappprofilen för att göra dem tillgängliga för författarna.
 
-## Konfigurera villkorsstyrda attribut för globala profiler eller profiler på mappnivå {#id1889D0I305Z}
+## Konfigurera villkorliga attribut för globala profiler eller profiler på mappnivå {#id1889D0I305Z}
 
 Utför följande steg för att konfigurera villkorliga attribut som stöds av DITA på global nivå eller mappnivå:
 
@@ -289,7 +289,7 @@ Om du har konfigurerat mallarna för en mappnivåprofil kopplas de konfigurerade
 
 ## Skapa en anpassad redigeringsmall {#id1917D0EG0HJ}
 
-AEM Guides är ett enkelt sätt att skapa redigeringsmallar. Som systemadministratör kan du använda Web Editor för att skapa redigeringsmallar från grunden. Du kan sedan lägga till den nya mallen i den globala profilen eller tilldela den till en viss mapp med den mappspecifika profilen.
+AEM Guides är ett enkelt sätt att skapa redigeringsmallar. Som systemadministratör kan du använda webbredigeraren för att skapa redigeringsmallar från grunden. Du kan sedan lägga till den nya mallen i den globala profilen eller tilldela den till en viss mapp med den mappspecifika profilen.
 
 Så här skapar du en anpassad redigeringsmall:
 
@@ -334,7 +334,7 @@ Med AEM Guides kan administratören skapa förinställningar för utdata med spe
 
 När standardförinställningarna för utdata har skapats i systemet kommer alla DITA-scheman som skapas därefter att använda standardförinställningarna för att generera utdata. Alla befintliga DITA-kartor kommer dock att fortsätta använda de förinställningar som tidigare konfigurerats med dem. Om du vill använda den nya förinställningen på alla befintliga DITA-kartor måste du köra arbetsflödet Använd förinställda ändringar.
 
-Förutom förinställningarna som konfigurerats på global nivå eller företagsnivå har utgivaren fortfarande behörighet att skapa fler förinställningar. Dessa förinställningar är dock kopplade till den DITA-karta som de skapas för. Mer information om hur du skapar förinställningar för vanliga utdata för en DITA-karta finns i *Skapa, redigera, duplicera eller ta bort en förinställning för utdata* i den as a Cloud Service guiden Använda Adobe Experience Manager Guides.
+Förutom förinställningarna som konfigurerats på global nivå eller företagsnivå har utgivaren fortfarande behörighet att skapa fler förinställningar. Dessa förinställningar är dock kopplade till den DITA-karta som de skapas för. Mer information om hur du skapar förinställningar för vanliga utdata för en DITA-karta finns i *Skapa, redigera, duplicera eller ta bort en förinställning för utdata* i den as a Cloud Service guiden Använda Adobe Experience Manager-stödlinjer.
 
 Utför följande steg för att konfigurera globala eller mappspecifika förinställningar för utdata:
 
@@ -361,12 +361,12 @@ Utför följande steg för att konfigurera globala eller mappspecifika förinst�
 
    - Klicka **Redigera** för att öppna den markerade förinställningens konfiguration för redigering.
 
-     Mer information om förinställda utdatainställningar finns i *Förinställningar för utdata* i den as a Cloud Service guiden Använda Adobe Experience Manager Guides.
+     Mer information om förinställda utdatainställningar finns i *Förinställningar för utdata* i den as a Cloud Service guiden Använda Adobe Experience Manager-stödlinjer.
 
 1. Klicka **Spara** om du vill spara förinställningarna.
 
 
-Alla DITA-kartor som skapas eller överförs efter detta kommer att ha den nya eller uppdaterade förinställningen för utdata.
+Alla DITA-kartor som skapas eller överförs efter detta har den nya eller uppdaterade förinställningen.
 
 ## Använda förinställda ändringar {#id18AGD0K0OHS}
 
@@ -409,7 +409,7 @@ Som standard har XML-webbredigeraren många funktioner som hjälper dina förfat
 
 **Användargränssnittskonfiguration för XML-redigerare**
 
-Den här inställningen styr verktygsfältet och de andra elementen i användargränssnittet i Web Editor. Klicka på ikonen Hämta för att hämta filen ui\_config.json på din lokala dator. Du kan sedan ändra filen och överföra den på samma sätt. Beroende på var du överför filen på, global nivå eller mappnivå tillämpas ändringarna därefter. Mer information om hur du anpassar XML-redigeraren med filen ui\_config.json finns i [Anpassa verktygsfältet](conf-web-editor-customize-toolbar.md#).
+Den här inställningen styr verktygsfältet och andra element i användargränssnittet i Web Editor. Klicka på ikonen Hämta för att hämta filen ui\_config.json på din lokala dator. Du kan sedan ändra filen och överföra den på samma sätt. Beroende på var du överför filen på, global nivå eller mappnivå tillämpas ändringarna därefter. Mer information om hur du anpassar XML-redigeraren med filen ui\_config.json finns i [Anpassa verktygsfältet](conf-web-editor-customize-toolbar.md#).
 
 **CSS-mallayout**
 
@@ -441,7 +441,7 @@ snippetID : Ett unikt ID för fragmentet. Det kan ta ett alfanumeriskt värde.
 
 name : Ett beskrivande namn som identifierar fragmentet. Namnet visas på fragmentpanelen.
 
-description: Lägg till en beskrivande information för fragmentet.
+description : Lägg till en beskrivande information för fragmentet.
 
 value : Ange XML-koden för fragmentet.
 

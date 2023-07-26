@@ -2,9 +2,9 @@
 title: Skapa en gruppaktiveringskarta
 description: Lär dig hur du skapar en gruppaktiveringskarta
 exl-id: 7d17fb37-9486-4a3b-a421-08e279c95b6c
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: c13d5146f478ed9b9122986a01eaa8a790bc8212
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -54,19 +54,23 @@ Fliken Kartor och förinställningar innehåller information i följande kolumne
 - **UUID**: Visar den unika identifierare som är associerad med filen.
 
 - **Språk**: Visar språkkoden för DITA-kartan.
-- **Förinställning**: Visar den förinställda utdatatyp som är konfigurerad på kartfilen.
+- **Förinställning**: Visar titeln på förinställningen som konfigurerats på kartfilen. Ikonen visas också baserat på vilken typ av förinställning som används.
+
+  >[!NOTE]
+  >
+  > Den lilla ![](images/global-preset-icon.svg) anger en förinställning på mappprofilnivå.
 - **Ändrad**: Anger om DITA-kartan uppdateras efter den senaste publikationen. Baserat på den här informationen kan du bestämma om du vill aktivera utdata för den här DITA-kartan eller inte.
-- **Genererad**: Visar datum och tid för senaste genererade utdata.
-- **Publicerad**: Visar datum och tid för den senaste publicerade \(eller aktiverade\) utdatan. Om du klickar på länken visas sidan Aktiveringsresultat med information om rotsökvägen där innehållet aktiveras.
+- **Genererad**: Visar datum och tid för den senaste genererade utdata.
+- **Publicerad**: Visar datum och tid för det senaste publicerade \(eller aktiverade\) resultatet. Om du klickar på länken visas sidan Aktiveringsresultat med information om rotsökvägen där innehållet aktiveras.
 
 
 Följande filteralternativ är tillgängliga på den vänstra panelen:
 
-- **Ändrad**: Du kan välja Ja eller Nej. Om du väljer ja visas bara de ändrade DITA-kartorna. En ändrad karta är en karta som har genererats sedan den publicerades senast.
+- **Ändrad**: Välj Ja eller Nej. Om du väljer ja visas bara de ändrade DITA-kartorna. En ändrad karta är en karta som har genererats sedan den publicerades senast.
 - **Förinställning**: Välj en förinställning som du vill filtrera ut kartfilerna för. Om du till exempel väljer *AEM* förinställning visas bara de kartor som har *AEM* förinställning för utdata konfigurerad för dem.
 - **Språk**: Du kan välja någon av de tillgängliga språkkoderna och endast visa det valda språket på fliken Kartor och förinställningar.
 
 - **Filter:** I den senaste rälen visas följande filter:
-- **Kartor och förinställningar** tabell: Tabellen Kartor och Förinställningar innehåller följande kolumner:
+- **Kartor och förinställningar** tabell: Tabellen Kartor och förinställningar innehåller följande kolumner:
 
 **Överordnat ämne:**[ Massaktivering av publicerat innehåll](conf-bulk-activation.md)

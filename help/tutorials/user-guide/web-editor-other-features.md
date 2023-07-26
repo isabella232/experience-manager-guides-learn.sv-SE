@@ -2,7 +2,7 @@
 title: Andra funktioner i Web Editor
 description: Lär dig hur du använder andra funktioner i Web Editor
 exl-id: dea19372-8a15-4b5d-aea4-47dc914d779e
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: dd744a8e5b7d60a0e5b4d0ad8f9201950e3ae1ce
 workflow-type: tm+mt
 source-wordcount: '2131'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Du får följande funktioner på snabbmenyn för en öppen fils flik:
 
 **Flera filer**
 
-När du har flera filer öppna visas fler alternativ på snabbmenyn:
+När du har flera filer öppna får du fler alternativ på snabbmenyn:
 
 ![](images/multiple-files-context-menu.png){width="550" align="left"}
 
@@ -50,18 +50,18 @@ Om du vill skapa en ny version av filen väljer du **Spara som ny version**. Mer
 
 ***Kopiera***: Du kan välja mellan följande alternativ:
 
-- **Kopiera UUID**: Om du vill kopiera UUID för den aktiva filen till Urklipp väljer du **Kopiera \> Kopiera UUID**.
+- **Kopiera UUID**: Om du vill kopiera UUID för den aktiva filen till Urklipp väljer du **Copy \> Copy UID**.
 - **Kopiera bana**: Om du vill kopiera den fullständiga sökvägen till den aktiva filen till Urklipp väljer du **Kopiera \> Kopiera bana**.
 
 
 ***Sök i***: Du kan välja mellan följande alternativ:
 
-- **Karta**: Om du har öppnat en stor DITA-karta och vill hitta exakt plats för en fil på kartan väljer du **Hitta på kartan \>**. När du väljer alternativet Hitta i karta, placeras filen \(från vilken alternativet anropas\) och markeras i karthierarkin. Om du vill kunna använda den här funktionen måste du öppna kartfilen i Web Editor. Om Kartvyn är dold visas kartvyn när funktionen anropas och filen markeras i karthierarkin.
+- **Karta**: Om du har öppnat en stor DITA-karta och vill hitta den exakta platsen för en fil på kartan väljer du **Hitta på kartan \>**. När du väljer alternativet Hitta i karta, placeras filen \(från vilken alternativet anropas\) och markeras i karthierarkin. Om du vill kunna använda den här funktionen måste du öppna kartfilen i Web Editor. Om Kartvyn är dold visas kartvyn när funktionen anropas och filen markeras i karthierarkin.
 
 - **Databas**: Liknar Hitta på karta, **Sök i databasen \>** visar platsen för filen i databasen \(eller DAM\). Databasvyn öppnas och den valda filen markeras i databasen. Om filen finns i en mapp utökas den mappen så att den visar den valda filens plats i databasen.
 
 
-***Lägg till i***: Du kan välja mellan följande alternativ:
+***Lägg till***: Du kan välja mellan följande alternativ:
 
 - **Favoriter**: Om du vill lägga till den valda filen i favoritsamlingen väljer du **Lägg till i \> Favoriter**. Mer information finns i **Favoriter** funktionsbeskrivning i [Vänster panel](web-editor-features.md#id2051EA0M0HS) -avsnitt.
 
@@ -80,7 +80,7 @@ Om du vill visa AEM egenskapssida för den markerade filen väljer du **Egenskap
 
 **Upp, Ned, Vänster eller Höger**
 
-Som standard kan du visa ett avsnitt i taget i Web Editor. Det kan finnas tillfällen då du vill se två eller flera ämnen samtidigt. Genom att dela redigerarens skärm kan du visa flera ämnen samtidigt. Om du till exempel har två ämnen - A och B öppnade i redigeraren. Högerklicka på ämne B och välj **Dela \> uppåt** delar upp redigeringsfönstret i två delar. Ämne B visas i den övre halvan och ämne A visas i den nedre halvan. På samma sätt kan du dela skärmen vågrätt genom att markera **Dela \> vänster** eller **Dela \> höger**. I följande skärmbild av Web Editor visas ämnen som delas vågrätt och lodrätt. I varje delning kan du ha olika vyer. På följande skärmbild är skärm 1 i källvyläge, skärm 2 har två dokument öppna i redigeringsläge och skärm 3 är i förhandsgranskningsläge. Du kan flytta dokument från en skärm till en annan genom att dra filfliken och släppa den på skärmen där du vill placera den. På samma sätt kan du ändra ordning på filflikarna genom att dra och flytta dem som du vill.
+Som standard kan du visa ett avsnitt i taget i Web Editor. Det kan finnas tillfällen då du vill se två eller flera ämnen samtidigt. Genom att dela redigerarens skärm kan du visa flera ämnen samtidigt. Om du till exempel har två ämnen - A och B öppnade i redigeraren. Högerklicka på ämne B och välj **Dela \> uppåt** delar upp redigeringsfönstret i två delar. Ämne B visas i den övre halvan och ämne A visas i den nedre halvan. På samma sätt kan du dela skärmen vågrätt genom att markera **Dela \> vänster** eller **Dela \> höger**. I följande skärmbild av Web Editor visas ämnen som delas vågrätt och lodrätt. I varje delning kan du ha olika vyer. På följande skärmbild är skärm 1 i källvyläge, skärm 2 har två dokument öppna i redigeringsläge och skärm 3 är i förhandsgranskningsläge. Du kan flytta dokument från en skärm till en annan genom att dra filfliken och släppa den på skärmen där du vill placera den. På samma sätt kan du ändra ordning på filflikarna genom att dra och flytta dem enligt dina önskemål.
 
 ![](images/split-editor.png){width="800" align="left"}
 
@@ -96,7 +96,7 @@ Om du vill stänga filen som du anropade snabbmenyn från väljer du **Stäng \>
 
 **Stäng filer och spara scenarier**
 
-När du försöker stänga en fil som har öppnats i Web Editor med **Stäng** på filens flik eller **Stäng** på Alternativ-menyn uppmanas du av AEM att spara redigeringarna och låsa upp en låst fil.
+När du försöker stänga en fil som har öppnats i Web Editor med **Stäng** på fliken eller **Stäng** på Alternativ-menyn uppmanas du av AEM att spara redigeringarna och låsa upp en låst fil.
 
 Frågorna baseras på följande konfigurationer som valts av administratören:
 
@@ -113,19 +113,19 @@ Du kan se följande alternativ beroende på om filen är låst/olåst och har sp
 
 - **Lås upp och stäng**: Låset på filen släpps och filen stängs.
 
-   ![](images/file-close-unlock-file.png){width="400" align="left"}
+  ![](images/file-close-unlock-file.png){width="400" align="left"}
 
 - **Spara som ny version**: Då sparas de ändringar du har gjort i innehållet och en ny version av filen skapas. Du kan också lägga till etiketter och kommentarer för den nyligen sparade versionen. Mer information om hur du sparar en ny version finns i [Spara som ny version](web-editor-features.md#save-as-new-version-id209ME400GXA).
 
 - **Lås upp filen**: Om du låser upp en fil kommer den att låsa upp filen och ändringarna sparas i den aktuella versionen av filen.
 
->[!NOTE]
->
-> Om du avmarkerar alternativet att låsa upp filen får du också ett alternativ för att stänga filen utan att spara ändringarna.
+  >[!NOTE]
+  >
+  > Om du avmarkerar alternativet att låsa upp filen får du också ett alternativ för att stänga filen utan att spara ändringarna.
 
-Till exempel visas en av uppmaningarna på följande skärmbild:
+  Till exempel visas en av uppmaningarna på följande skärmbild:
 
-![](images/file-close-save-changes-unlock.png){width="400" align="left"}
+  ![](images/file-close-save-changes-unlock.png){width="400" align="left"}
 
 **Visuella tecken för brutna referenser**
 
@@ -153,7 +153,7 @@ Till exempel visas en av uppmaningarna på följande skärmbild:
 
 **Stöd för DITA ordlistetema**
 
-- Webbredigeraren har stöd för DITA-ordlistor som du kan infoga genom att lägga till `term` eller `abbreviated-form` -element.
+- Webbredigeraren stöder DITA-ordlistor som du kan infoga genom att lägga till `term` eller `abbreviated-form` -element.
 
 **Infoga MathML-ekvationer**
 
@@ -208,7 +208,7 @@ Gör följande för att automatiskt generera ID för ett eller flera element:
 1. Markera innehållet som du vill tilldela ID:n till.
 1. Högerklicka och välj **Generera ID:n på snabbmenyn.**
 
-   Du kan också högerklicka i vägbeskrivningsfilen och välja **Generera ID:n**.
+   Du kan också högerklicka i vägbeskrivningsfilen och välja **Generera ID**.
 
 
 **Överordnat ämne:**[ Arbeta med webbredigeraren](web-editor.md)

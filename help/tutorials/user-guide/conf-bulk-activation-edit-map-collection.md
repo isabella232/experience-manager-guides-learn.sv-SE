@@ -2,9 +2,9 @@
 title: Redigera en gruppaktiveringskarta
 description: Lär dig hur du redigerar en gruppaktiveringskarta
 exl-id: 110eba52-c886-4148-aff9-9c4e1d3d85bd
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 25641f5c3207d98228d406e3b553c06d2bad1e10
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,12 @@ Du kan redigera en gruppaktiveringskarta genom att lägga till eller ta bort en 
 1. Klicka **Redigera**.
 
    Samlingssidan för bulkaktiveringskarta visas där du visas kartorna tillsammans med deras förkonfigurerade förinställningar för varje tillgängligt språkområde.
+Du kan visa de olika typerna av förinställningar för utdata tillsammans med ikonerna för dem, till exempel AEM Site, PDF, Native PDF, HTML5, Custom och JSON.
+
+   >[!NOTE]
+   >
+   > Den lilla ![](images/global-preset-icon.svg) anger en förinställning på mappprofilnivå.
+
 
 1. Använd skjutreglaget för att aktivera eller inaktivera den förinställning du vill använda för utdata.
 
@@ -33,7 +39,7 @@ Du kan redigera en gruppaktiveringskarta genom att lägga till eller ta bort en 
 
 1. Klicka **Ta bort**.
 
-   ![](images/bulk-activation-delete-map.png){width="800" align="left"}
+   ![](images/bulk-activation-delete-map.png){width="600" align="left"}
 
    Den markerade kartan tas bort från samlingen med bulkaktiveringskartor.
 

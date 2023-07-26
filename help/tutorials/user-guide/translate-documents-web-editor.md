@@ -2,9 +2,9 @@
 title: Översätta dokument från Web Editor
 description: Lär dig hur du översätter dokument från Web Editor
 exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
-source-git-commit: 4d37242019ac2db734f7054324b074c0e8bc60bd
+source-git-commit: 7df3024578ad289d9c6e0ab8b93f9fc6b9ff0bfe
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ AEM Guides har en kraftfull funktion i Web Editor som gör att du kan översätt
 
 Innan du utför stegen i den här proceduren måste du se till att du har skapat språkroten och målmapparna
 
-1. Skapa en rotmapp där källinnehållet lagras. Rotmappen måste skapas med språknamnet \(t.ex. engelska\) eller språkkoden \(en\).
+1. Skapa en rotmapp där källinnehållet lagras. Rotmappen måste skapas med språknamnet \(till exempel engelska\) eller språkkoden \(en\).
 1. Skapa de målmappar som du vill översätta innehållet till. Om du till exempel vill översätta ditt innehåll till tyska eller franska måste du skapa en mapp med namnet -de \(för tyska\) eller -fr \(för franska\).
 
 >[!NOTE]
@@ -61,16 +61,16 @@ Innan du utför stegen i den här proceduren måste du se till att du har skapat
 
    - **Titel**: Källfilens namn
    - **Filnamn**: Källfilens namn
-   - **Filtyp**: Typ av källfil. De tillgängliga alternativen är Karta, Ämne och Bild.
+   - **Filtyp**: Källfilens typ. De tillgängliga alternativen är Karta, Ämne och Bild.
    - **Referenstyp**: Direkta eller indirekta referenser
    - **Version**: Källfilens versionsnummer
    - **Versionsetikett**: Etikett för den valda versionen av källfilen
    - **Målversion**: Målfilens versionsnummer
    - **Dokumenttillstånd**: Källfilens tillstånd. De tillgängliga alternativen är Utkast, Under granskning och Granskad.
    - **Målspråk**: Det språk som du vill översätta källfilen till
-   - **Översättningsstatus**: De tillgängliga alternativen är: Slut på synkronisering, saknad kopia, pågående och synkroniserad.
+   - **Översättningsstatus**: De tillgängliga alternativen är: Osynkroniserad, Kopia saknas, Pågår och Synkroniserad.
    - **Måletikett**: Etikett för den valda versionen av målfilen
-1. Klicka **Skicka för översättning** i det övre högra hörnet.
+1. Klicka **Skicka för översättning** längst upp till höger.
 
    ![](images/translation-send.png){width="800" align="left"}
 
@@ -80,21 +80,20 @@ Innan du utför stegen i den här proceduren måste du se till att du har skapat
 
    Förutom ett nytt översättningsprojekt kan du även välja mellan följande alternativ:
 
-   - Du kan välja att **Skapa en struktur** endast för översättningsprojektet.
-   - Du kan välja att **Skapa ett nytt XLIFF-översättningsprojekt** för att konvertera XML-innehållet till XLIFF (XML Localization Interchange File Format). XLIFF är ett öppet XML-baserat format som används för att standardisera dataöverföringen mellan olika verktyg som används i innehållsöversättningsprocessen.
-I ett XLIFF-projekt exporteras innehållet till det branschledande XLIFF-formatet, som kan tillhandahållas översättningsleverantörer. XLIFF-formatet möjliggör återanvändning av segment som du redan har översatt under översättningsfasen.\
-      När XLIFF-innehållet har översatts kan det importeras till AEM stödlinjer, vilket skapar en översatt version av det ursprungliga DITA-projektet.
+   - Du kan **Skapa en struktur** endast för översättningsprojektet.
+   - Du kan **Skapa ett nytt XLIFF-översättningsprojekt** för att konvertera XML-innehållet till XLIFF (XML Localization Interchange File Format). XLIFF är ett öppet XML-baserat format som används för att standardisera dataöverföringen mellan olika verktyg som används i innehållsöversättningsprocessen. AEM har stöd för XLIFF version 1.2. I ett XLIFF-projekt exporteras innehållet till det branschledande XLIFF-formatet, som kan tillhandahållas översättningsleverantörer. XLIFF-formatet möjliggör återanvändning av segment som du redan har översatt under översättningsfasen.\
+     När XLIFF-innehållet har översatts kan det importeras till AEM stödlinjer, vilket skapar en översatt version av det ursprungliga DITA-projektet.
 
-      >[!NOTE]
-      >
-      > XLIFF-export fungerar bara med mänsklig översättningskonfiguration.
+     >[!NOTE]
+     >
+     > XLIFF-export fungerar bara med mänsklig översättningskonfiguration.
 
-   - Du kan välja **Skapa ett nytt flerspråkigt översättningsprojekt** som innehåller översättningsjobb för alla språk som du har valt för översättning. Om du till exempel har valt franska, tyska och spanska skapas ett projekt som innehåller översättningsjobb för alla tre språken.
+   - Du kan välja **Skapa ett nytt flerspråkigt översättningsprojekt** som kommer att innehålla översättningsjobb för alla språk som du har valt för översättning. Om du till exempel har valt franska, tyska och spanska skapas ett projekt som innehåller översättningsjobb för alla tre språken.
    - Om du redan har ett översättningsprojekt kan du lägga till ämnen i det projektet. Välj Lägg till i **Befintligt översättningsprojekt** i projektlistan och välj ett projekt i listan Befintliga översättningsprojekt. Du kan sortera dessa projekt efter den senaste, stigande eller fallande ordningen.
 
-      >[!NOTE]
-      >
-      > Om ditt befintliga projekt är ett omfångsprojekt har det &#39;\(omfång\)&#39; i sitt namn.
+     >[!NOTE]
+     >
+     > Om ditt befintliga projekt är ett omfångsprojekt har det &#39;\(omfång\)&#39; i sitt namn.
 
    - Om du behöver skapa omfånget för ett projekt som ska översättas kan du välja **Skapa ett nytt omfångsöversättningsprojekt**. Kopiorna skickas inte för översättning och den ursprungliga översättningsstatusen för filerna behålls. Det påverkar inte målspråkskopian av ämnen som skickas för omfång.
 1. I **Projektets titel** anger du en rubrik för projektet.
@@ -131,7 +130,7 @@ Mer information om hur du konfigurerar globala profiler och profiler på mappniv
 
 ## Skicka versionsetiketten till målversionen
 
-AEM kan du skicka källfilens etikett till målfilen. Det gör det enklare att identifiera källversionen för den översatta filen.
+Med AEM stödlinjer kan du skicka källfilens etikett till målfilen. Det gör det enklare att identifiera källversionen för den översatta filen.
 
 Om du vill lägga till källversionsetiketten i målkopian måste systemadministratören välja alternativet **Sprid källversionsetiketter till målversionen** under **Översättning** tabba in **Inställningar för Redigeraren**.
 
@@ -145,7 +144,7 @@ Om du till exempel har källfiler med versionsetiketten `Release 1.0` som använ
 
 ## Visa versionsskillnad för filer som inte är synkroniserade 
 
-AEM innehåller en funktion för att kontrollera skillnaderna mellan den valda versionen och den senaste översatta källversionen av avsnitten. Du kan välja att översätta **Slut på synkronisering** filer baserat på gjorda ändringar.
+AEM innehåller en funktion för att kontrollera skillnaderna mellan den valda versionen och den senaste översatta källversionen av avsnitten. Du kan översätta **Slut på synkronisering** filer baserat på gjorda ändringar.
 
 ![](images/translation-version-diff.png){width="800" align="left"}
 
@@ -178,7 +177,7 @@ Så här stänger du statusen Skickat synkronisering:
 
 ## Visa pågående översättningsprojekt för en karta eller ett ämne
 
-Vissa av referenserna på översättningsinstrumentpanelen kanske håller på att bearbetas. Dessa referenser har en **Pågår** länk under **Översättningsstatus** kolumn. När du klickar på länken visas **Pågående projekt** öppnas. I dialogrutan visas en lista med alla pågående översättningsprojekt \(tillsammans med målspråket\) som innehåller den valda referensen.
+Vissa av referenserna på översättningsinstrumentpanelen kanske håller på att bearbetas. Dessa referenser har en **Pågår** länk under **Översättningsstatus** kolumn. När du klickar på länken **Pågående projekt** öppnas. I dialogrutan visas en lista med alla pågående översättningsprojekt \(tillsammans med målspråket\) som innehåller den valda referensen.
 
 >[!NOTE]
 >

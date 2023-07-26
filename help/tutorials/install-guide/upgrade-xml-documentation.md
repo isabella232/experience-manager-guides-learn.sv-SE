@@ -2,9 +2,9 @@
 title: Uppgradera Adobe Experience Manager-guider
 description: Lär dig hur du uppgraderar Adobe Experience Manager-guider
 exl-id: fdc395cf-a54f-4eca-b69f-52ef08d84a6e
-source-git-commit: 4c31580a7deb3e13931831c1888bbf0fd1bf9e14
+source-git-commit: ec67a3b959f9ee5b90a53134c1fe9aff8760cb6f
 workflow-type: tm+mt
-source-wordcount: '2896'
+source-wordcount: '3216'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Följ uppgraderingsinstruktionerna som är specifika för den licensierade versionen av din produkt.
+> Följ uppgraderingsinstruktionerna för den licensierade versionen av din produkt.
 
-Du kan uppgradera din nuvarande version av AEM Guides till version 4.2.1
-- Om du använder version 4.1, 4.1.x eller 4.2 kan du uppgradera direkt till version 4.2.1.
-- Om du använder version 4.0 måste du uppgradera till version 4.2 innan du uppgraderar till version 4.2.1.
+Du kan uppgradera din nuvarande version av AEM Guides till version 4.3.0
+- Om du använder version 4.2 eller 4.2.x kan du uppgradera direkt till version 4.3.0.
+- Om du använder version 4.1, 4.1.x eller 4.2 måste du uppgradera till version 4.2.1 innan du uppgraderar till version 4.3.0.
+- Om du använder version 4.0 måste du uppgradera till version 4.2 innan du uppgraderar till version 4.3.0.
 - Om du använder version 3.8.5 måste du uppgradera till version 4.0 innan du uppgraderar till version 4.2.
 - Om du har en version som är äldre än 3.8.5, se avsnittet om AEM i den produktspecifika installationshandboken.
+
 
 >[!NOTE]
 >
@@ -30,6 +32,7 @@ Mer information finns i följande procedurer:
 - [Uppgradera från 3.8.5 till version 4.0](#id2256DK003E1)
 - [Uppgradera till version 4.2](#id22A3F500SXA)
 - [Uppgradera till version 4.2.1](#upgrade-version-4-2-1)
+- [Uppgradera till version 4.3.0](#upgrade-version-4-3)
 
 
 >[!IMPORTANT]
@@ -44,7 +47,7 @@ Innan du kör processen måste du slutföra vissa uppgifter. I följande delavsn
 
 >[!NOTE]
 >
-> Denna uppgraderingsprocess gäller endast från version 3.8.5 till version 4.0. För processen att uppgradera från version 3.4 eller senare till 3.8.5, se *AEM* i den produktspecifika installationsguiden som finns i [Hjälparkivsida](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html).
+> Denna uppgraderingsprocess gäller endast från version 3.8.5 till version 4.0. För processen att uppgradera från version 3.4 eller senare till 3.8.5, se *AEM* i den produktspecifika installationshandboken som finns i [Hjälparkivsida](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html).
 
 ****Förutsättningar****
 
@@ -60,7 +63,7 @@ Innan du startar uppgraderingen av AEM Guides bör du kontrollera att du har:
 Utför följande steg innan du installerar version 4.0:
 
 1. Se till att AEM är i version 3.8.5.
-1. Hämta uppgraderingsskriptpaketet. Om du vill göra det söker du efter&quot;XML Documentation solution 4.0 Upgrade Package&quot; på [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) som laddar ned en zip-fil.
+1. Hämta uppgraderingsskriptpaketet. Om du vill göra det söker du efter&quot;XML Documentation solution 4.0 Upgrade Package&quot; på [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) som hämtar en zip-fil.
 1. Överför det här paketet till AEM via Package Manager och installera det här paketet.
 1. När uppgraderingspaketet har installerats kör du skripten nedan i samma ordning och följer instruktionerna:
 
@@ -77,7 +80,7 @@ Detta API är utformat för att utvärdera den aktuella systemstatusen och rappo
 
 Detta API är utformat för att migrera systemdata enligt anvisningarna i **Migreringsmappning** -avsnitt.
 
-1. Kör inte det här skriptet om API:t för Kontrollera uppgraderingskompatibilitet misslyckas \(fortsätt inte\).
+1. Kör inte det här skriptet om API:t för kontroll av kompatibilitet misslyckas \(fortsätt inte\).
 1. När API:t för kontroll av uppgraderingskompatibilitet returneras kan du köra uppgraderingsskriptet.
 
 | Slutpunkt | /bin/dxml/upgrade/3xto4x |
@@ -85,7 +88,7 @@ Detta API är utformat för att migrera systemdata enligt anvisningarna i **Migr
 | Typ av begäran | **POST** Skriptet är en begäran om POST och ska därför köras via agenter som Postman. |
 | Förväntat svar | - När migreringen är klar kan du installera XML Documentation-lösning version 4.0.<br>- Om fel uppstår återställer du till den senaste kontrollpunkten och delar felloggarna med API-utdata till kundens framgångsgrupp. |
 
-**Migreringsmappning**: API:t ovan migrerar alla data under källplatsen till målplatsen.
+**Migreringsmappning**: Ovanstående API migrerar alla data under källplatsen till målplatsen.
 
 | Källa | Mål |
 |------|------|
@@ -150,7 +153,7 @@ Innan du startar uppgraderingsprocessen för AEM Guides 4.2 måste du se till at
 1. Rensa webbläsarcachen när paketet har installerats.
 1. Fortsätt uppgradera anpassningarna enligt anvisningarna i nästa avsnitt.
 
-## När du har installerat version 4.2 {#id2326F02004K}
+## Efter installationen av version 4.2 {#id2326F02004K}
 
 >[!IMPORTANT]
 >
@@ -182,11 +185,11 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
 
    **Titel:** DXML Post Process Initiator
 
-   **Beskrivning**: Initieringssteg för DXML-efterbearbetning av den ändrade/skapade resursen som kommer att utlösa ett snedjobb för DXML-efterbearbetning
+   **Beskrivning**: Initieringssteg för DXML-efterbearbetning av den ändrade/skapade resursen som utlöser ett snedjobb för DXML-efterbearbetning
 
    **Fliken Process**
 
-   - Välj **DXML Post Process Initiator** från **Process** nedrullningsbar listruta
+   - Välj **DXML Post Process Initiator** från **Process** listruta
 
    - Välj **Avancerad hanterare**
 
@@ -221,20 +224,20 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
    ```
 
    - excludeList ska ha `"event-user-data:changedByWorkflowProcess"`.
-1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan ges några exempel:
+1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan följer några exempel:
    - Alla komponenter som överlappas av/libs/fmditor/libsska jämföras med den nya produktkoden och uppdateringar ska göras i överlagrade filer under/i appar.
    - Alla kategorier av klientlib som används från produkten bör granskas för ändringar. Alla åsidosatta konfigurationer \(exempel nedan\) bör jämföras med de senaste för att få de senaste funktionerna:
    - elementmapping.xml
    - ui\_config.json\(kan ha angetts i mappprofiler\)
    - ändrad `com.adobe.fmdita.config.ConfigManager`
    - Kontrollera om någon av de anpassade koderna använder några gamla sökvägar \(som anges i [Migreringsmappning](#id2244LE040XA) ) - ska uppdateras till de nya sökvägarna så att anpassningarna också fungerar som förväntat.
-1. Läs om nya konfigurationer i den aktuella versionen \(kontrollera [Versionsinformation](../release-info/release-notes-4.2.md)\) och se om någon funktion påverkas genom att vidta lämpliga åtgärder. Ett exempel kan vara att använda&quot;Förbättrad fil- och versionshantering&quot; som introducerades i version 4.0, som du måste aktivera en konfiguration för.
+1. Läs om nya konfigurationer i den aktuella versionen \(kontrollera [Versionsinformation](../release-info/release-notes-4.3.md)\) och se om någon funktion påverkas genom att vidta lämpliga åtgärder. Ett exempel kan vara att använda&quot;Förbättrad fil- och versionshantering&quot; som introducerades i version 4.0, som du måste aktivera en konfiguration för.
 
 ## Steg för att indexera befintligt innehåll så att det använder den nya funktionen för att söka och ersätta:
 
 Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappningsnivå:
 
-- Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. \(Valfritt: Du kan skicka specifika sökvägar för kartorna för indexering, som standard indexeras alla kartor \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`\)
+- Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. \(Valfritt: Du kan skicka specifika banor för kartorna för att indexera dem. Som standard indexeras alla kartor \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`\)
 
 - API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt -
 
@@ -278,7 +281,7 @@ och ange följande egenskaper i noden:
 
    (tillsammans med andra befintliga noder och egenskaper)
 
-1. Indexera om `damAssetLucene` index (genom att ange omindexeringsflaggan som `true` under och väntar på att det ska `false` igen (detta anger att omindexeringen är klar). Observera att det kan ta några timmar beroende på indexets storlek.
+1. Indexera om `damAssetLucene` index (genom att ange omindexeringsflaggan som `true` under och väntar på att det ska `false` igen (detta anger att omindexeringen är klar). Observera att det kan ta några timmar beroende på storleken på indexet.
 1. Kör indexeringsskriptet igen genom att utföra föregående steg.
 
 
@@ -290,7 +293,7 @@ Om du använder version 4.1, 4.1.x eller 4.2 kan du uppgradera direkt till versi
 
 >[!NOTE]
 >
->Efterbearbetning och indexering kan ta några timmar. Vi rekommenderar att du startar uppgraderingsprocessen under lågtider.
+>Efterbearbetningen och indexeringen kan ta några timmar. Vi rekommenderar att du startar uppgraderingsprocessen under lågtider.
 
 ****Förutsättningar****
 
@@ -359,11 +362,11 @@ Exempellogg: Här följer ett exempel på loggar som visas i loggfilen när du h
 04.05.2023 14:17:12.909 *INFO* [pool-59-thread-1] com.adobe.fmdita.xmltranslation.ots.TranslationMapUpgradeOTS Completed the thread to upgrade translation map from V1 to V2
 ```
 
-Sök efter `com.adobe.fmdita.translationservices.TranslationMapUpgradeScript Completed porting of translation map from V1 to V2` och `com.adobe.fmdita.xmltranslation.ots.TranslationMapUpgradeOTS Completed the thread to upgrade translation map from V1 to V2` innan du fortsätter till nästa steg.
+Leta efter `com.adobe.fmdita.translationservices.TranslationMapUpgradeScript Completed porting of translation map from V1 to V2` och `com.adobe.fmdita.xmltranslation.ots.TranslationMapUpgradeOTS Completed the thread to upgrade translation map from V1 to V2` innan du fortsätter till nästa steg.
 
 
 
-## När du har installerat version 4.2.1
+## Efter installationen av version 4.2.1
 
 >[!IMPORTANT]
 >
@@ -395,11 +398,11 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
 
    **Titel:** DXML Post Process Initiator
 
-   **Beskrivning**: Initieringssteg för DXML-efterbearbetning av den ändrade/skapade resursen som kommer att utlösa ett snedjobb för DXML-efterbearbetning
+   **Beskrivning**: Initieringssteg för DXML-efterbearbetning av den ändrade/skapade resursen som utlöser ett snedjobb för DXML-efterbearbetning
 
    **Fliken Process**
 
-   - Välj **DXML Post Process Initiator** från **Process** nedrullningsbar listruta
+   - Välj **DXML Post Process Initiator** från **Process** listruta
 
    - Välj **Avancerad hanterare**
 
@@ -434,7 +437,7 @@ När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer so
 
    - `excludeList` borde ha `"event-user-data:changedByWorkflowProcess"`.
 
-1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan ges några exempel:
+1. När uppgraderingen är klar kontrollerar du att alla anpassningar/övertäckningar har validerats och uppdaterats så att de matchar den nya programkoden. Nedan följer några exempel:
    - Alla komponenter som överlappas av/libs/fmditor/libsska jämföras med den nya produktkoden och uppdateringar ska göras i överlagrade filer under/i appar.
    - Alla kategorier av klientlib som används från produkten bör granskas för ändringar. Alla åsidosatta konfigurationer \(exempel nedan\) bör jämföras med de senaste för att få de senaste funktionerna:
    - elementmapping.xml
@@ -450,7 +453,7 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 - Se till att `damAssetLucene` indexeringen har slutförts. Det kan ta upp till några timmar, beroende på mängden data som finns på servern. Du kan bekräfta att omindexeringen har slutförts genom att kontrollera att fältet för omindexering har värdet false i
   `http://<server:port>/oak:index/damAssetLucene`.  Om du har lagt till anpassningar i `damAssetLucene`måste du kanske använda dem igen.
 
-- Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika sökvägar för kartorna för indexering, som standard indexeras alla kartor \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
+- Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika banor för mappningarna för att indexera dem. Som standard indexeras alla mappningar \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
 - Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
@@ -459,4 +462,55 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 - När jobbet är klart kommer ovanstående GET-förfrågan att svara och ange om några kartor misslyckades. De korrekt indexerade mappningarna kan bekräftas från serverloggarna.
 
+
+## Uppgradera till version 4.3.0 {#upgrade-version-4-3}
+
+Uppgradering till version 4.3.0 beror på den aktuella versionen av AEM. Om du använder version 4.2 eller 4.2.x kan du uppgradera direkt till version 4.3.0.
+
+>[!NOTE]
+>
+>Efterbearbetningen och indexeringen kan ta några timmar. Vi rekommenderar att du startar uppgraderingsprocessen under lågtider.
+
+****Förutsättningar****
+
+Innan du startar uppgraderingsprocessen för AEM Guides 4.3.0 måste du se till att du har:
+
+1. Uppgraderat till AEM Guides version 4.2 eller 4.2.x och slutförde respektive installationssteg.
+1. Alla översättningsuppgifter stängdes.
+
+
+
+## Installera version 4.3.0
+
+1. Ladda ned version 4.3.0 av [Adobe Software Distribution Portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+1. Installera paket för version 4.3.0.
+1. Rensa webbläsarcachen när paketet har installerats.
+1. Uppgradera `ui_config.json` från **Konfiguration av XML-redigerare** i mappprofilen.
+
+
+## Efter installationen av version 4.3.0
+
+När du har installerat AEM Guides kan du sammanfoga de olika konfigurationer som är tillämpliga från den nyinstallerade versionen till din installation.
+
+## Steg för att bokföra det befintliga innehållet så att det använder den brutna länkrapporten
+
+
+Utför följande steg för att efterbearbeta befintligt innehåll och använda den nya brutna länkrapporten:
+
+1. (Valfritt) Om det finns fler än 100 000 dita-filer i systemet uppdaterar du `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` till ett större värde (vilket värde som helst som är större än antalet resurser, till exempel 200 000) och sedan distribuera om.
+
+   | PID | Egenskapsnyckel | Egenskapsvärde |
+   |---|---|---|
+   | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Värde: 200000 <br> Standardvärde: 10000 |
+
+1. Kör en POST-begäran till servern (med korrekt autentisering) - `http://<server:port>//bin/guides/reports/upgrade`.
+
+1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port>/bin/guides/reports/upgrade?jobId= {jobId}`
+(Till exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
+
+1. När jobbet är klart svarar den tidigare GETEN med framgång. Om jobbet misslyckas av någon anledning kan fel ses från serverloggarna.
+
+1. Återgå till standardvärdet eller det tidigare befintliga värdet för `queryLimitReads` om du har ändrat den i steg 1.
+
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
+

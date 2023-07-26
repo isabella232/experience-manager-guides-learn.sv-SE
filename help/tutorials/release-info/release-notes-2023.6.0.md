@@ -2,7 +2,7 @@
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade problem i Adobe Experience Manager Guides, juni 2023-versionen
 description: Läs om felkorrigeringarna och hur du uppgraderar till juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
 exl-id: ea0ff27a-9c3a-49d7-b94a-d1b9d9e85dcf
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+source-git-commit: 4359d857f3662ae29a55420c0fafc4a244258389
 workflow-type: tm+mt
 source-wordcount: '1143'
 ht-degree: 2%
@@ -62,19 +62,19 @@ http://<aem_domain>/var/dxml/executor-locks/translation-map-upgrade/168319003288
 
 Utför följande steg för att efterbearbeta befintligt innehåll och använda den nya brutna länkrapporten:
 
-1. (Valfritt) Uppdatera `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` till ett större värde (vilket värde som helst som är större än antalet resurser, till exempel 200 000) och sedan distribuera om.
+1. (Valfritt) Om det finns fler än 100 000 dita-filer i systemet uppdaterar du `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` till ett större värde (vilket värde som helst som är större än antalet resurser, till exempel 200 000) och sedan distribuera om.
 
    - Använd instruktionerna i *Konfigurationsåsidosättningar* i Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service för att skapa konfigurationsfilen.
    - Ange följande (egenskap) information i konfigurationsfilen för att konfigurera alternativet queryLimitReads:
 
      | PID | Egenskapsnyckel | Egenskapsvärde |
      |---|---|---|
-     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Värde: Standardvärde 20000: 100000 |
+     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Värde: 200000 Standardvärde: 100000 |
 
-1. Kör en serverbegäran (med korrekt autentisering) - `http://<server:port>//bin/guides/reports/upgrade`.
+1. Kör en POST-begäran till servern (med korrekt autentisering) - `http://<server:port>//bin/guides/reports/upgrade`.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port>/bin/guides/reports/upgrade?jobId= {jobId}`
-(Exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
+(Till exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
 
 1. När jobbet är klart svarar den tidigare GETEN med framgång. Om jobbet misslyckas av någon anledning kan fel ses från serverloggarna.
 
@@ -86,7 +86,7 @@ Utför följande steg för att efterbearbeta befintligt innehåll och använda d
 
 Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappnivå och ämneslista på fliken Rapporter:
 
-1. Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika sökvägar för kartorna för indexering, som standard indexeras alla kartor \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
+1. Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika banor för mappningarna för att indexera dem. Som standard indexeras alla mappningar \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
 1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
@@ -128,7 +128,7 @@ De buggar som har åtgärdats i olika områden listas nedan:
 - Keyref är inte löst i kartvyn. (11490)
 - Den övre menyn visas inte när du navigerar i XML-redigeraren. (10868)
 - `conref` in ph-tagg | Den visade bläddringsdialogrutan är felaktig. (9481)
-- Lokala länkar till andra element går inte att matcha i Web Editor. (8790)
+- Lokala länkar till andra element kan inte lösas i Web Editor. (8790)
 - Funktionen Matches() fungerar inte i funktionen Schematron. (11224)
 
 
@@ -143,16 +143,16 @@ De buggar som har åtgärdats i olika områden listas nedan:
 - Publicering till AEM misslyckas när temporära filer från pod som kan ha uppdaterats eller startats om läses. (12113)
 - PDF | Publicering av innehåll som har en utdataklass med hakparenteser() resulterar i en publiceringsfrysning. (11936)
 - JSON-utdata | Mappa metadata med egenskapsvärde som `"value in spaces and double quotes"` leder till ett publiceringsfel. (11933)
-- Web Editor | Utdatasökväg och -mall kan inte väljas i AEM förinställning. (11530)
+- Web Editor | Det går inte att markera utdatasökväg och -mall i AEM förinställning. (11530)
 - PDF | Anpassade attribut sprids inte till motorn för temporära HTML eller PDF. (DXML-12005)
 - PDF | Java OutOfMemoryError inträffar vid publicering av stort innehåll. (11789)
-- JSON-utdata | `fmUuid` -egenskapen i jcr:content-noden i JSON skiljer sig från&quot;id&quot; i JSON. (11564)
+- JSON-utdata | De `fmUuid` -egenskapen i jcr:content-noden i JSON skiljer sig från&quot;id&quot; i JSON. (11564)
 - JSON-utdata | Om det finns en karta och ett ämne med samma filnamn tas JSON bort för kartan. (11524)
 - PDF | Xref skriver ut innehållet i href-ämnesrubriken i stället för Xref-etiketten. (11322)
 - PDF | Det går inte att spara mallinställningarna för PDF. (10751)
 - PDF | Texten sträcker sig utanför kolumnbredden och inkluderar flera xrefs. (10876)
 - PDF | `<note>``</note>` -elementet genererar ingen extra intervalltitel av sin typ. (10549)
-- PDF | Språkmetadata kan inte anges i det genererade PDF för att uppfylla kraven i WCAG 2.0. (12407)
+- PDF | Språkmetadata kan inte anges i det genererade PDF för att uppfylla kraven i WCAG 2.0. (12296)
 
 
 

@@ -2,9 +2,9 @@
 title: Granska ämnen
 description: Lär dig hur du granskar ämnen
 exl-id: ca94ec2e-cd45-418d-9b35-73d587ba51ec
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: b9bf08ccbe2eb17ca8d4dac675155e0b4631f0a9
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2323'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,6 @@ Utför följande steg för att granska ett ämne:
 
 
 
-
    Följande skärm visas när en DITA-karta används för att initiera granskningsarbetsflödet:
 
    ![](images/multiple-topics-review.png){width="800" align="left"}
@@ -42,18 +41,23 @@ Utför följande steg för att granska ett ämne:
    Följande alternativ är tillgängliga på den här skärmen:
 
    - **A**: Namnet på granskningsaktiviteten.
-   - **B**: Klicka på ikonen Ämnesvy för att visa eller dölja ämnespanelen.
+   - **B**: Klicka på ämnesvyikonen för att visa eller dölja ämnespanelen.
 
-   - **C**: Siffrorna är markerade med ***F*** Du kan filtrera genom att välja önskat filteralternativ härifrån. Du kan filtrera kommentarer efter typ, status, granskare eller version. Om du till exempel vill se hur många genomstrykningskommentarer som har gjorts i respektive undergranskningsavsnitt klickar du på filterikonen och väljer sedan **Granskningstyp** \> **Borttagning**.
+   - **C**: Du kan söka efter det önskade ämnet genom att ange en del av texten i titeln eller filsökvägen i sökfältet.
 
-      >[!NOTE]
-      >
-      > När du använder filtren visas bara de kommentarer som matchar de valda filtren i kommentarspanelen. Antalet filtrerade kommentarer visas till vänster i ämnespanelen.
+     Välj  ![](images/view-options.svg) i sökfältet om du vill visa alla ämnen eller ämnen med kommentarer. Som standard kan du visa alla ämnen som ingår i granskningsaktiviteten.
 
-   - **D**: Ett ämne som tilldelats den aktuella granskaren för granskning visas i svart och kan klickas. När granskaren klickar på en ämneslänk visas det avsnittet högst upp på skärmen.
-   - **E**: Ett ämne som inte är tillgängligt för granskning är nedtonat. Avsnittet visas i skrivskyddat läge och du kan inte lägga till granskningskommentarer om det.
 
-   - **F**: Antal kommentarer som tagits emot i ett ämne. Numret ändras beroende på vilket filter du använder.
+   - **D**: Numren markeras med ***F*** Du kan filtrera genom att välja önskat filteralternativ härifrån. Du kan filtrera kommentarer efter typ, status, granskare eller version. Om du till exempel vill se hur många genomstrykningskommentarer som har gjorts i respektive undergranskningsavsnitt klickar du på filterikonen och väljer sedan **Granskningstyp** \> **Borttagning**.
+
+     >[!NOTE]
+     >
+     > När du använder filtren visas bara de kommentarer som matchar de valda filtren i kommentarspanelen. Antalet filtrerade kommentarer visas till vänster i ämnespanelen.
+
+   - **E**: Ett ämne som tilldelats den aktuella granskaren för granskning visas i svart och kan klickas. När granskaren klickar på en ämneslänk visas det avsnittet högst upp på skärmen.
+   - **F**: Ett ämne som inte är tillgängligt för granskning är nedtonat. Avsnittet visas i skrivskyddat läge och du kan inte lägga till granskningskommentarer om det.
+
+   - **G**: Antal kommentarer som tagits emot i ett ämne. Numret ändras beroende på vilket filter du använder.
 
    Alla ämnen på kartan visas som ett sammansatt dokument. De ämnen som granskaren får granska visas normalt. De ämnen som granskningen inte får granska visas inte.
 
@@ -69,7 +73,7 @@ Utför följande steg för att granska ett ämne:
    >
    > Om det finns flera ämnen visas de som ett sammansatt dokument i dokumentvyn. Skärmbilden ovan visar två olika ämnen som visas ett efter ett i en enda vy.
 
-1. Öppna panelen Kommentarer genom att klicka på **Kommentarer** ikonen längst upp till höger i verktygsfältet.
+1. Öppna kommentarpanelen genom att klicka på **Kommentar** ikonen längst upp till höger i verktygsfältet.
 
    Skriv granskningskommentarerna genom att välja en lämplig kommentarstyp i verktygsfältet och tryck på Retur för att skicka kommentaren.
 
@@ -77,7 +81,7 @@ Utför följande steg för att granska ett ämne:
    >
    > Kommentarspanelen visar endast kommentarerna som har getts i det aktuella avsnittet. När du flyttar fokus till ett annat ämne visas kommentarerna som ges i det andra avsnittet.
 
-1. Klicka **Stäng** när du är klar med granskningen av ämnet. När du klickar på **Stäng** kommer du att omdirigeras till sidan där du kom åt granskningsavsnittet.
+1. Klicka **Stäng** när du är klar med granskningen av ämnet. Klicka på **Stäng** kommer du att omdirigeras till sidan där du kom åt granskningsavsnittet.
 
 ## Ytterligare funktioner som finns på granskningsskärmen
 
@@ -93,15 +97,15 @@ När du visar ett enskilt ämne får du ytterligare ett alternativ för att väx
 
 - **Högdager** \(![](images/review-highlight-icon.svg)\): Om du vill lägga till en markeringskommentar markerar du texten och klickar på markeringsikonen. Du kan också klicka på markeringsikonen och markera önskad text:
 
-   ![](images/highlight-comment.png){width="650" align="left"}
+  ![](images/highlight-comment.png){width="650" align="left"}
 
-   Ett popup-fönster visas på panelen Kommentarer där du kan lägga till din kommentar för det markerade innehållet.
+  Ett popup-fönster visas på panelen Kommentarer där du kan lägga till din kommentar för det markerade innehållet.
 
 - **Genomstruken** \(![](images/review-text-strike-through-icon.svg)\): Om du vill föreslå att innehåll ska tas bort kan du göra det genom att markera innehållet och klicka på genomstrykningsikonen. Du kan också markera önskad text och klicka på Delete-tangenten:
 
-   Ett popup-fönster visas på panelen Kommentarer där du kan lägga till din kommentar för det borttagna innehållet.
+  Ett popup-fönster visas på panelen Kommentarer där du kan lägga till din kommentar för det borttagna innehållet.
 
-- **Infoga text** \(![](images/review-insert-text-icon.svg)\): Om du vill infoga text klickar du på ikonen Infoga text och placerar markören där du vill infoga texten och skriver informationen. Du kan också placera markören där du vill infoga text och börja skriva. Den tillagda informationen visas i grönt färgat teckensnitt:
+- **Infoga text** \(![](images/review-insert-text-icon.svg)\): Om du vill infoga text klickar du på ikonen Infoga text och placerar markören där du vill infoga texten och skriver i informationen. Du kan också placera markören där du vill infoga text och börja skriva. Den tillagda informationen visas i grönt färgat teckensnitt:
 
 - **Lägg till kommentar**\(![](images/review-comment-icon.svg)\): Om du vill lägga till en anteckningstyp för kommentaren klickar du på ikonen Lägg till kommentar och anger kommentaren i popup-fönstret.
 
@@ -114,7 +118,7 @@ Du kan också markera och genomstryka text snabbt med det sammanhangsberoende ve
 
    ![](images/review-quick-launch-toolbar.png){width="550" align="left"}
 
-1. Klicka på **Högdager** eller **Genomstruken** ikon.
+1. Klicka på **Högdager** eller **Genomstruken** -ikon.
 1. Du kan lägga till kommentarer i kommentarpanelen för markerings- eller genomstrykningsåtgärden.
 
 **Granska med panelen Kommentarer** - På panelen Kommentarer visas en lista med kommentarer som har getts i det aktuella ämnet. I den här panelen visas även kommentarer från andra granskare, om ämnet skickas till flera granskare. Varje kommentar på kommentarspanelen är länkad till motsvarande text i det aktuella ämnet. Den hjälper dig att identifiera kommenterad text. Varje kommentar visar namnet på granskaren som har lagt till kommentaren tillsammans med tidsstämpeln.
@@ -128,11 +132,11 @@ De åtgärder du kan utföra med panelen Kommentarer beskrivs nedan:
 - Du kan redigera din egen kommentar genom att klicka på den kommenterade texten i panelen Kommentarer och sedan välja **Redigera** på Alternativ-menyn.
 - Du kan ta bort dina egna kommentarer genom att klicka på kommentaren i panelen Kommentarer och sedan markera **Ta bort** på Alternativ-menyn.
 
-   ![](images/review-comment-options-menu.png){width="300" align="left"}
+  ![](images/review-comment-options-menu.png){width="300" align="left"}
 
-   >[!NOTE]
-   >
-   > Menyn Alternativ visas bara när du håller muspekaren över dina egna kommentarer. Den visas inte för kommentarer av andra granskare.
+  >[!NOTE]
+  >
+  > Menyn Alternativ visas bara när du håller muspekaren över dina egna kommentarer. Den visas inte för kommentarer av andra granskare.
 
 - Alla deltagande användare kan svara på kommentarer som lämnats av andra användare. Vid en kommentar klickar du på **Svara** och tryck på Retur för att skicka ett svar.
 
@@ -164,9 +168,9 @@ Utför följande steg för att lägga till en bifogad fil i kommentaren:
 
 1. Markera en eller flera filer som du vill bifoga.
 
-   De markerade filerna visas tillsammans med kommentaren på panelen Kommentarer.
+   De markerade filerna visas tillsammans med kommentaren på kommentarpanelen.
 
-   På panelen Kommentarer ser du filnamnet och dess storlek. Du kan också ta bort en fil genom att klicka på ikonen Ta bort ![](images/Delete_icon.svg) associeras med filnamnet.
+   På panelen Kommentarer ser du filnamnet och dess storlek. Du kan också ta bort en fil genom att klicka på ikonen Ta bort ![](images/Delete_icon.svg) som är associerad med filnamnet.
 
 1. Klicka **Skicka**.
 
@@ -187,9 +191,9 @@ De andra granskarna eller författarna får endast alternativet för att hämta 
 
 ![](images/other-reviewer-download.png){width="550" align="left"}
 
-- Du kan hämta alla bilagor som är kopplade till en kommentar från **Visa bifogade filer** -dialogrutan. Markera de bifogade filerna och klicka på **Hämta** -ikonen på kommentarsnivå.
+- Du kan hämta alla bilagor som är kopplade till en kommentar från **Visa bifogade filer** -dialogrutan. Markera de bifogade filerna och klicka på **Ladda ned** på kommentarsnivå.
 
-- Du kan även ta bort de bifogade filer som är kopplade till en kommentar från **Visa bifogade filer** -dialogrutan. Markera de bifogade filerna och klicka på **Ta bort** ikon.
+- Du kan även ta bort de bifogade filer som är kopplade till en kommentar från **Visa bifogade filer** -dialogrutan. Markera de bifogade filerna och klicka på **Ta bort** -ikon.
 
 ![](images/attach-files-comments-panel.png){width="550" align="left"}
 
@@ -205,7 +209,7 @@ De andra granskarna eller författarna får endast alternativet för att hämta 
 Du kan välja att dölja eller visa ett visst villkor.
 
 - Om du döljer ett villkor markeras inte innehållet som har det villkoret i granskningsläget.
-- Om du visar ett villkorsstyrt innehåll markeras i granskningsläget. I följande skärmbild använder till exempel bara innehållet två villkor - `win` och `mac` markeras.
+- Om du visar ett villkorsstyrt innehåll markeras i granskningsläget. I följande skärmbild använder till exempel bara innehållet två villkor - `win` och `mac` är markerat.
 
 
 ![](images/review-condition-normal-mode.png){width="650" align="left"}
@@ -220,13 +224,13 @@ I förhandsgranskningsläget är det icke-villkorade innehållet och det villkor
 
 - Klicka på ikonen för inaktuell kommentar \(![](images/outdated-comment-icon.svg)\) visar skillnaderna mellan den senaste och den kommenterade versionen av dokumentet. Versionsnumren \(för de versioner som jämförs\) visas högst upp i dokumenten.
 
-   ![](images/comments-page-review-mode.png){width="800" align="left"}
+  ![](images/comments-page-review-mode.png){width="800" align="left"}
 
-   >[!NOTE]
-   >
-   > När du håller pekaren över ikonen för inaktuell kommentar visas versionsnumret för det ämne som kommentaren lades till i. Om en kommentar till exempel har angetts i version 1.0 visas samma sak.
+  >[!NOTE]
+  >
+  > När du håller pekaren över ikonen för inaktuell kommentar visas versionsnumret för det ämne som kommentaren lades till i. Om en kommentar till exempel har angetts i version 1.0 visas samma sak.
 
-- När du klickar på en inaktuell kommentar öppnas kommentarens version i den vänstra panelen. Den föregående versionen visas på den vänstra panelen och den aktuella versionen visas på den högra panelen. Alla kommentarer i den inaktuella versionen importeras till vänster. Du kan jämföra den tidigare versionen med den aktuella versionen.
+- När du klickar på en inaktuell kommentar öppnas kommentarens version på den vänstra panelen. Den föregående versionen visas på den vänstra panelen och den aktuella versionen visas på den högra panelen. Alla kommentarer i den inaktuella versionen importeras till vänster. Du kan jämföra den tidigare versionen med den aktuella versionen.
 
 **Filtrera kommentarer** - Du kan filtrera kommentarer i ett dokument för att visa specifika kommentarer efter behov. Om du vill filtrera kommentarer klickar du på **Filter** icon \(![](images/filter-search-icon.svg)\) som visas på menyn till höger om textrutan Sök kommentarer på panelen Kommentarer.
 
@@ -238,7 +242,7 @@ Välj ett eller flera av följande filtreringsalternativ på menyn **Filtertyp**
 
 - **Versioner** - Filtrera på grundval av de kommentarer som inkommit om en viss version av ämnet.
 
-   När du använder filtren filtreras kommentarerna på den högra panelen efter markeringen, och antalet kommentarer i den vänstra panelen uppdateras därefter.
+  När du använder filtren filtreras kommentarerna på den högra panelen efter markeringen, och antalet kommentarer i den vänstra panelen uppdateras därefter.
 
 
 Om du vill ta bort filtret och visa alla kommentarer avmarkerar du alla filter i dialogrutan **Filtertyp** och klicka **Använd**.

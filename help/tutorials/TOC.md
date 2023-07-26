@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 6adc8544c7ad64bc264465a56944d49949605414
+source-git-commit: 33c4a7b452049ab130f7bcdf9e8a90ecead32170
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1429'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
             + Juniversion {#2306-release}
                + [Nyheter](./release-info/whats-new-2023.6.0.md)
                + [Versionsinformation](./release-info/release-notes-2023.6.0.md)
-            + aprilversion {#2304-release}
+            + April-utgåvan {#2304-release}
                + [Nyheter](./release-info/whats-new-2023.4.0.md)
                + [Versionsinformation](./release-info/release-notes-2023.4.0.md)
             + Marsutgåva {#2303-release}
@@ -46,6 +46,11 @@ ht-degree: 3%
             + [Versionsinformation, februari](./release-info/release-notes-2022.2.0.md)
             + [Versionsinformation för januari](./release-info/release-notes-2022.1.0.md)
       + Lokalt/Managed Services {#on-prem-release-notes}
+         + 4.3.0 Release {#43-release}
+            + Nyheter {#43-whats-new}
+               + [4.3.0 Nyheter](./release-info/whats-new-4.3-release.md)
+            + Versionsinformation {#43-release-notes}
+               + [4.3.0 Versionsinformation](./release-info/release-notes-4.3.md)
          + 4.2 Utgåva {#42-release}
             + Nyheter {#42-whats-new}
                + [4.2.1 Nyheter](./release-info/whats-new-4.2.1-release.md)
@@ -85,7 +90,8 @@ ht-degree: 3%
                + [Vyer i Web Editor](./user-guide/web-editor-views.md)
                + [Stöd för Schematron-filer](./user-guide/support-schematron-file.md)
                + [Skapa markeringsdokument från webbredigeraren](./user-guide/web-editor-markdown-topic.md)
-               + [Infoga ett innehållssfragment från datakällan](./user-guide/web-editor-content-snippet.md)
+               + [Lägg till citat i innehållet](./user-guide/web-editor-apply-citations.md)
+               + [Använd data från datakällor](./user-guide/web-editor-content-snippet.md)
                + [Hantera förinställningar för utdata för global profil och mappprofil](./user-guide/web-editor-manage-output-presets.md)
                + Artikelbaserad publicering {#article-based-pub}
                   + [Artikelbaserad publicering från webbredigeraren](./user-guide/web-editor-article-publishing.md)
@@ -106,7 +112,7 @@ ht-degree: 3%
             + DITAVAL Editor {#ditaval-editor}
                + [Arbeta med DITAVAL-redigeraren](./user-guide/ditaval-editor.md)
          + Skrivbordsverktyg för innehåll {#author-using-desktop-tools}
-            + [Skapa innehåll med skrivbordsverktyg](./user-guide/author-desktop-tools.md)
+            + [Skapa innehåll med hjälp av skrivbordsverktyg](./user-guide/author-desktop-tools.md)
             + [Arbeta med FrameMaker](./user-guide/author-desktop-framemaker.md)
             + [Arbeta med syre](./user-guide/author-desktop-oxygen.md)
    + Granska innehåll {#review-topic-maps}
@@ -118,7 +124,7 @@ ht-degree: 3%
          + [Granska ämnen](./user-guide/review-topics.md)
          + [Adressgranskningskommentarer](./user-guide/review-address-review-comments.md)
       + [Hantera granskningsåtgärder med hjälp av Kontrollpanelen](./user-guide/review-manage-tasks-review-dashboard.md)
-      + [Visa en slutförd granskningsuppgift](./user-guide/review-view-completed-task.md)
+      + [Visa en slutförd granskningsaktivitet](./user-guide/review-view-completed-task.md)
    + Metadata i AEM {#manaege-metadata}
       + [Hantera metadata](./user-guide/manage-metadata.md)
       + [Arbeta med metadata i AEM](./user-guide/metadata-dita.md)
@@ -136,7 +142,7 @@ ht-degree: 3%
          + [AEM](./user-guide/generate-output-aem-site.md)
          + [PDF](./user-guide/generate-output-pdf.md)
          + [HTML5](./user-guide/generate-output-html5.md)
-         + [ePub](./user-guide/generate-output-epub.md)
+         + [EPUB](./user-guide/generate-output-epub.md)
          + [Egen](./user-guide/generate-output-custom.md)
          + [JSON](./user-guide/generate-output-json.md)
       + [Använd variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn](./user-guide/generate-output-use-variables.md)
@@ -147,8 +153,8 @@ ht-degree: 3%
       + [Arbeta med baslinje](./user-guide/generate-output-use-baseline-for-publishing.md)
       + [Generera utdata för en DITA-karta från kartkonsolen](./user-guide/generate-output-for-a-dita-map.md)
       + [Använd kartsamling för generering av utdata](./user-guide/generate-output-use-map-collection-output-generation.md)
-      + Använd publiceringsfunktionen i PDF {#web-editor}
-         + [Publicera PDF-utdata](./web-editor/native-pdf-web-editor.md)
+      + Använda publiceringsfunktionen i PDF {#web-editor}
+         + [Publish PDF output](./web-editor/native-pdf-web-editor.md)
          + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
       + [Hantera publiceringsuppgifter med Publish Dashboard](./user-guide/generate-output-publish-dashboard.md)
       + [Grundläggande felsökning](./user-guide/generate-output-basic-troubleshooting.md)
@@ -161,10 +167,10 @@ ht-degree: 3%
    + Generering av FrameMaker {#generate-fm-output}
       + [Generera utdata av FrameMaker dokument](./user-guide/fm-output-generatation.md)
       + Förinställningar som stöds {#fm-docs-generating-presets}
-         + [Förinställningar för generering av FrameMaker-dokument](./user-guide/fm-output-understand-presets.md)
+         + [Förinställningar för generering av FrameMaker](./user-guide/fm-output-understand-presets.md)
          + [PDF](./user-guide/fm-output-pdf-preset.md)
          + [HTML5](./user-guide/fm-output-html5-preset.md)
-         + [ePub](./user-guide/fm-output-epub-preset.md)
+         + [EPUB](./user-guide/fm-output-epub-preset.md)
       + [Generera utdata från .book- eller .fm-filer](./user-guide/fm-output-generate.md)
       + [Visa status för utdatagenereringsaktiviteten](./user-guide/fm-output-view-status.md)
    + Rapporter i AEM {#reports-aem-guide}
@@ -211,6 +217,7 @@ ht-degree: 3%
          + [Anpassa Web Editor](./install-guide/conf-web-editor.md)
          + [Anpassa verktygsfältet](./install-guide/conf-web-editor-customize-toolbar.md)
          + [Konfigurera standardvärde för taggvyn](./install-guide/configure-default-value-tags-view.md)
+         + [Konfigurera titeln för ikonerna Checka in och Checka ut](./install-guide/conf-checkin-checkout-title.md)
          + [Konfigurera visning av UUID-baserade länkar](./install-guide/conf-uuid-based-links.md)
          + [Öppna DITA-avsnitt eller DITA-kartfiler på samma flik](./install-guide/open-dita-files-same-tab.md)
          + [Konfigurera en anpassad panel i den vänstra panelen](./install-guide/configure-custom-panel.md)
@@ -224,6 +231,7 @@ ht-degree: 3%
          + [Konfigurera textfilter](./install-guide/config-text-filters.md)
          + [Konfigurera antalet LimitReads för en fråga](./install-guide/conf-query-limitreads.md)
          + [Installera paket för artikelbaserad publicering](./install-guide/configure-article-based-publishing.md)
+         + [Konfigurera en datakällanslutning](./install-guide/conf-data-source-connector.md)
          + [Ange avancerad kartredigerare som standard](./install-guide/conf-map-editor.md)
          + [Inkludera @navtitle-attribut som standard](./install-guide/auto-add-navtitle.md)
       + Arbeta med globala profiler och mappprofiler {#global-folder-profiles}
@@ -234,18 +242,19 @@ ht-degree: 3%
          + [Integrera skrivbordsbaserade XML-redigerare](./install-guide/integrate-desktop-editors.md)
       + Arbeta med inställningar för utdatagenerering {#output-gen-config}
          + [Konfigurera inställningar för utdatagenerering](./install-guide/conf-output-generation.md)
-         + Publicering i PDF {#config-native-pdf-publish}
+         + PDF Publishing {#config-native-pdf-publish}
             + [PDF-mall](./native-pdf/pdf-template.md)
             + [Komponenter i en PDF-mall](./native-pdf/components-pdf-template.md)
-            + [Utforma en sidlayout](./native-pdf/design-page-layout.md)
+            + [Designa en sidlayout](./native-pdf/design-page-layout.md)
             + [Stöd för språkvariabler](./native-pdf/native-pdf-language-variables.md)
             + Vanliga innehållsformat {#content-styles}
                + [Arbeta med vanliga innehållsformat](./native-pdf/stylesheet.md)
                + [Arbeta med anpassade ändringsfältstilar](./native-pdf/change-bar-style.md)
-               + [Använd egen stil på innehållsförteckningsposter och ämnesinnehåll](./native-pdf/custom-style-toc.md)
+               + [Tillämpa egna format på innehållsförteckningsposter och ämnesinnehåll](./native-pdf/custom-style-toc.md)
                + [Lägga till ett eget bokmärke i utdata från PDF](./native-pdf/add-custom-bookmark.md)
                + [Använd JavaScript för att arbeta med innehåll eller stil](./native-pdf/use-javascript-content-style.md)
                + [Använda anpassade format i fotnoter](./native-pdf/footnote-number-style.md)
+            + [Konfigurera JVM-flaggor för Native PDF Publishing](./native-pdf/configure-jvm-flags.md)
       + Arbeta med anpassade arbetsflöden {#custom-workflow}
          + [Konfigurera och anpassa arbetsflöden](./install-guide/customize-workflows.md)
       + Arbeta med översättningskonfigurationer {#translate-config}
@@ -309,6 +318,7 @@ ht-degree: 3%
          + [Versionshantering](./cs-install-guide/version-management.md)
       + Arbeta med inställningar för utdatagenerering {#output-gen-config-cs}
          + [Konfigurera inställningar för utdatagenerering](./cs-install-guide/conf-output-generation.md)
+         + [PDF Publishing](./cs-install-guide/native-pdf-publishing.md)
       + Arbeta med anpassade arbetsflöden {#custom-workflow-cs}
          + [Konfigurera och anpassa arbetsflöden](./cs-install-guide/customize-workflows.md)
       + Arbeta med översättningskonfigurationer {#translate-config-cs}
@@ -341,7 +351,7 @@ ht-degree: 3%
          + [FMPS och stödlinjer](./knowledge-base/kb-articles/publishing/fmpsandguides.md)
          + [Microservice-arkitektur och prestanda](./knowledge-base/publishing/publish-microservice-architecture-and-performance.md)
          + [Konfigurera mikrotjänstbaserad publicering](./knowledge-base/publishing/configure-microservices.md)
-         + [Publicera riktmärken i AEM](./knowledge-base/publishing/publishing-benchmarks-on-cloud.md)
+         + [Publicera riktmärken i AEM molnet](./knowledge-base/publishing/publishing-benchmarks-on-cloud.md)
          + [Konfigurera en anpassad DITA-OT](./knowledge-base/kb-articles/publishing/setup-a-custom-dita-ot.md)
       + Arbetsflöden {#workflows}
          + [Arbetsflöde efter generering](./knowledge-base/kb-articles/workflows/using-post-generation-workflow.md)
@@ -351,3 +361,4 @@ ht-degree: 3%
          + [Arbeta med villkorligt innehåll](./knowledge-base/kb-articles/content-architecture/working-with-conditional-content.md)
          + [Arbeta med tangenter](./knowledge-base/kb-articles/content-architecture/working-with-keys.md)
    + [Använd syreanslutning](./oxygen-connector/use-aem-connector.md)
+
