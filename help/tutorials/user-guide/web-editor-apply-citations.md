@@ -1,7 +1,7 @@
 ---
 title: Lägga till och hantera citat i ditt innehåll
 description: Lär dig hur du implementerar referenser genom att lägga till och tillämpa citat i ditt innehåll.
-source-git-commit: f59ed1ffe8567bef48c6772a68361eacb1c7c15f
+source-git-commit: 85eb0228908134080f3f1e2644f3f7c37b8d7497
 workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 0%
@@ -45,7 +45,7 @@ The **Lägg till källhänvisning** öppnas.
 
 1. Fylla i fälten i **Lägg till källhänvisning** -dialogrutan.
 
-   >
+   >[!NOTE]
    >
    >Du kan också lägga till ISBN- eller DOI- eller PubMed-ID:t. AEM stödlinjer fyller i de andra fälten automatiskt.
 
