@@ -1,17 +1,17 @@
 ---
-title: Konfigurera AEM miljö för publicering i Native PDF
-description: Konfigurera AEM miljö för publicering i Native PDF
+title: Konfigurera AEM för Native PDF
+description: Konfigurera AEM för Native PDF
 exl-id: 40266ca0-0b0b-4418-b606-f70270addbaa
-source-git-commit: 7b48633ef2418fa7c91842a8d2c2a4177017ef58
+source-git-commit: 45dfe6078039001327e91ae85ea2a5beeacb2d59
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Konfigurera AEM miljö för publicering i Native PDF
+# Konfigurera AEM för Native PDF
 
-AEM Guides innehåller en inbyggd PDF-motor som gör det möjligt att utforma, utveckla och publicera innehåll i PDF-format.
+AEM Guides innehåller en inbyggd PDF-motor som gör det möjligt att designa, utveckla och publicera innehåll i PDF-format.
 
 Det gör det möjligt att skapa olika sidlayouter, CSS-mallar och utforma PDF-mallarna tillsammans med sidlayouterna och CSS.
 
@@ -90,8 +90,7 @@ Publiceringsmotorn i PDF behöver Oracle-JDK för att generera nodmodulerna i AE
    1. exportera JAVA\_HOME=/usr/lib/jvm/java-11.0.15.1
    2. exportera PATH=$PATH: $JAVA\_HOME/bin
 
-
-5. Starta om AEM Server
+5. Starta om AEM Server och gå till steg 12 om du använder Guides version 4.2 eller senare.
 6. Kopiera &quot;_node_modules.zip_&quot; som finns i slutet av den här artikeln i katalogen crx-quickstart/profiles/nodatum—b1aad0a7-9079-e56c-1ed8-6fcababe8166/.
 7. Öppna terminal i crx-quickstart/profiles/nodats—b1aad0a7-9079-e56c-1ed8-6fcababe8166/ plats.
 8. Ta bort nod_modules-katalog med kommandot nedan
@@ -107,12 +106,12 @@ Publiceringsmotorn i PDF behöver Oracle-JDK för att generera nodmodulerna i AE
    **unzip för installation av yum**
 
 11. Installera fontconfig-paketet.
-Kommando: installationsprogrammet för yum fontconfig
+Kommando: teckensnittskonfiguration för yum-installation
 12. Generera PDF från förinställningar i webbredigeraren.
 
-**ANMÄRKNING** : node_modules.zip-paketet kan laddas ned [här](https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:295d8f03-41e1-429b-8465-2761ce3c2fb3).
+**ANMÄRKNING** : node_modules.zip-paketet kan hämtas [här](https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:295d8f03-41e1-429b-8465-2761ce3c2fb3).
 
-Manuell import av de hämtade nodmodulerna för Linux-operativsystemet är en tillfällig lösning för användare som använder Guides 4.1 eller tidigare versioner.
+Manuell import av de hämtade nodmodulerna för Linux-operativsystemet är en tillfällig lösning för användare som använder Guides 4.1 eller tidigare versioner (steg 6-12)
 
 ## Konfigurationssteg för Mac-dator (JAVA 11/8)
 
@@ -133,7 +132,7 @@ Manuell import av de hämtade nodmodulerna för Linux-operativsystemet är en ti
 
 5. Läs in basfras igen
 
-   Kommando: source ~/.bashrc.
+   Kommando: källa ~/.bashrc.
 
 6. Kontrollera att JAVA_HOME är inställt med kommandoeko $JAVA_HOME
 
@@ -164,8 +163,22 @@ Nedan visas de vanligaste felen som kan uppstå under genereringen av PDF när m
 
 ![null-pekarundantag](../assets/publishing/null-pointer-exception.png)
 
+Om problemet kvarstår även efter att Java-miljöinställningarna har korrigerats, validera följande:
+
+1. Kontrollera om förinställningen för utdata är korrekt definierad eller skapa en ny förinställning utan blanksteg.
+
+2. Kontrollera nodresurskatalogen på /libs/fmdta/node_resources för att se till att alla nödvändiga bibliotek installeras under installationen.
+
 ### Bibliotek saknas i RHEL 7 Linux OS
 
-![saknade bibliotek](../assets/publishing/missing-libraries.png)
+![bibliotek som saknas](../assets/publishing/missing-libraries.png)
+
+### Tidsgräns för publiceringsprocess. Processen slutfördes inte under den angivna tiden 0ms
+
+![tidsgräns för publiceringsprocess](../assets/publishing/publish-process-timeout.png)
+
+Validera timeout-egenskapsvärdet för nodatumnoden i /var/dxml/profiles/b1aad0a7-9079-e56c-1ed8-6fcababe8166/nodatums i CRX-databasen. Standardvärdet är 300.
+
+
 
 Om du råkar ut för problem när du utför något av ovanstående steg kan du skicka din fråga till AEM Guides Community [forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/ct-p/aem-xml-documentation) om du behöver hjälp.
