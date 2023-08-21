@@ -1,13 +1,13 @@
 ---
 title: Konfigurera anpassad ämnesmall för DITA
 description: Lär dig hur du konfigurerar en anpassad ämnesmall för DITA
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+exl-id: f79165ef-5118-4574-815d-c4ecb2f7d58b
+source-git-commit: 20980cd289a306fc73146ec3550ae31f15e91591
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera anpassad ämnesmall för DITA {#id16A7G0O02TD}
 
@@ -45,9 +45,7 @@ I AEM Guides kan du konfigurera en mapp för lagring av dina anpassade DITA-kart
 
 `/content/dam/dita-templates/`
 
-Om du vill hantera ämne- och mappningsmallfiler finns det dedikerade mappar för att lagra ämne- och mappmallar. Som standard lagras alla ämnesmallar under `/content/dam/dita-templates/topics`
-
-mapp. Alla mappningsmallar lagras under `/content/dam/dita-templates/maps` mapp.
+Om du vill hantera ämne- och mappningsmallfiler finns det dedikerade mappar för att lagra ämne- och mappmallar. Som standard lagras alla ämnesmallar under `/content/dam/dita-templates/topics` mapp. Alla mappningsmallar lagras under `/content/dam/dita-templates/maps` mapp.
 
 Som administratör kan du välja att skapa anpassade mappnings- eller ämnesmallar i standardmappen eller skapa en egen mapp där du kan lagra egna mallar. Om du tänker använda standardmappen kan du hoppa över den här processen.
 
@@ -67,12 +65,11 @@ Så här konfigurerar du en mapp för dina anpassade ämnesmallar i DITA:
 
 1. Sök efter och klicka på *com.adobe.fmdita.config.ConfigManager* paket.
 
-1. I **Mallplats** anger du en plats där du vill lagra egna mallar.
+1. I **Plats för mallar** anger du en plats där du vill lagra egna mallar.
 
 1. Klicka **Spara**.
 
 
-Om den angivna platsen finns i DAM kopieras alla standardmallar för kartor och ämnen till den mappen. Om platsen inte finns skapas mappen med alla standardmallar för mappningar och ämnen.
+Om den angivna platsen finns i DAM kopieras alla standardmallar för kartor och ämnen till den mappen. Om platsen inte finns, skapas mappen med alla standardmallar för kartor och ämnen.
 
 **Överordnat ämne:**[ Konfigurera ämne- och mappningsmallar](conf-template-tags.md)
-

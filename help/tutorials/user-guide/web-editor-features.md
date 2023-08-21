@@ -2,9 +2,9 @@
 title: Bekanta dig med Web Editors funktioner
 description: Lär dig hur du känner till Web Editor-funktionerna
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 270b94f0c1e29237c4bdad891c41446de897fddb
+source-git-commit: 48845ffcc530baad6689c8bca8847c57bbe9bf5d
 workflow-type: tm+mt
-source-wordcount: '15461'
+source-wordcount: '15744'
 ht-degree: 0%
 
 ---
@@ -681,20 +681,25 @@ Om du vill lägga till en fil i din favoritsamling använder du någon av följa
 
   ![](images/favorite-add-file-folder.png){width="300" align="left"}
 
-- Högerklicka på en fils flik i redigeraren för att öppna snabbmenyn. Välj **Lägg till i \> Favoriter** om du vill lägga till filen i favoritlistan.
+- Högerklicka på en fils flik i redigeraren för att öppna snabbmenyn. Välj **Lägg till** > **Favoriter** om du vill lägga till filen i favoritlistan.
 
   ![](images/favorite-add-from-file-context-menu_cs.png){width="400" align="left"}
 
+>[!NOTE]
+>
+> - Om du vill ta bort ett objekt från favoritlistan markerar du alternativikonen bredvid objektet i en favoritsamling och väljer **Ta bort från Favoriter**.
+> - Om du vill förhandsgranska filen utan att öppna den markerar du en fil och väljer sedan **Förhandsgranska** på Alternativ-menyn.
 
-** Menyn Alternativ för favoritsamlingen**\
+
+
+**Menyn Alternativ för favoritsamlingen**\
 Du kan även utföra många åtgärder med Alternativ-menyn som är tillgänglig för en Favoritsamling:
 
 ![](images/favorites-options.png){width="400" align="left"}
 - **Byt namn**: Byt namn på den valda samlingen.
-- **Ta bort**: Ta bort den markerade filen.
+- **Ta bort**: Ta bort den markerade samlingen.
 - **Uppdatera**: Hämta en ny lista med filer och mappar från databasen.
 - **Visa i resursgränssnitt**: Visa fil- eller mappinnehållet i resursgränssnittet.
-
 
 >[!NOTE]
 >
@@ -810,7 +815,7 @@ De olika alternativen på Alternativ-menyn förklaras nedan:
   > - Om en fil är låst eller utcheckad av en användare och du håller muspekaren över låsikonen visas den användare \(namn\) som har låst filen.
   > - När du checkar in en fil som innehåller ändringar som inte har sparats uppmanas du att spara ändringarna. Om du inte sparar ändringarna checkas bara filen in.
 
-- **Förhandsgranska**: Få en snabb förhandsgranskning av filen \(.dita/.xml\) utan att öppna den.
+- **Förhandsgranska**: Få en snabb förhandsvisning av filen (.dita, .xml, audio, video eller image) utan att öppna den. Du kan ändra storlek på förhandsgranskningsfönstret. Om innehållet innehåller `<xref>` eller `<conref>`kan du markera den för att öppna den på en ny flik. Filens titel visas i fönstret. Om det inte finns någon titel visas filnamnet. Stäng **Förhandsgranska** kan du antingen välja stängningsikonen eller klicka var som helst utanför rutan.
 
   ![](images/quick-preview_cs.png){width="800" align="left"}
 
@@ -1011,7 +1016,7 @@ Du kan utföra följande åtgärder på Alternativ-menyn:
   > - Om en fil är låst eller utcheckad av en användare och du håller muspekaren över låsikonen visas den användare \(namn\) som har låst filen.
   > - När du checkar in en fil uppmanas du att spara ändringarna. Om du inte sparar ändringarna checkas bara filen in.
 
-- **Förhandsgranska**: Få en snabb förhandsgranskning av filen \(.dita/.xml\) utan att öppna den.
+- **Förhandsgranska**: Få en snabb förhandsvisning av filen (.dita, .xml, audio, video eller image) utan att öppna den. Du kan ändra storlek på förhandsgranskningsfönstret. Om innehållet innehåller `<xref>` eller `<conref>`kan du markera den för att öppna den på en ny flik.  Filens titel visas i fönstret. Om det inte finns någon titel visas filnamnet. Stäng **Förhandsgranska** kan du antingen välja stängningsikonen eller klicka var som helst utanför rutan.
 - **Kopiera**: Du kan välja mellan följande alternativ:
    - **Kopiera UUID**: Kopiera UUID för den valda filen till Urklipp.
    - **Kopiera bana**: Kopiera hela sökvägen för den markerade filen till Urklipp.
@@ -1134,9 +1139,12 @@ Använd någon av följande metoder om du vill infoga innehåll från panelen Å
 
   >[!NOTE]
   >
-  > Obs! **Förhandsgranska** Du kan även välja det här alternativet på snabbmenyn, där du snabbt kan förhandsgranska elementet innan du infogar det.
+  > Markera en fil och välj sedan **Förhandsgranska** från **Alternativ** om du vill förhandsgranska filen utan att öppna den. Du kan också förhandsgranska referenserna i ett ämne. Referens-ID:t visas i fönstret.
+  >
+  > The **Förhandsgranska** finns även i **Alternativ** -menyn för ett element, vilket ger dig en snabb förhandsvisning av elementet innan du infogar det.
 
 - Dra och släpp det återanvändbara innehållsobjektet från panelen till önskad plats i dokumentet.
+
 
 
 **Ordlista** -  ![](images/glossary.svg)
@@ -1272,87 +1280,138 @@ I följande exempel visas hur du använder ämnesschemat i AEM.
 
    ![](images/subject-scheme-apply.png){width="650" align="left"}
 
-   **Hantera hierarkiska definitioner av ämnesdefinitioner och uppräkningar**
+**Hantera hierarkiska definitioner av ämnesdefinitioner och uppräkningar**
 
-   Förutom att hantera uppräkningarna och ämnesdefinitionerna som finns på samma karta, innehåller AEM stödlinjer även funktionen som definierar uppräkningar och ämnesdefinitioner i två separata kartor. Du kan definiera ämnesdefinitionen i en karta och uppräkningsdefinitionerna i en annan karta och sedan lägga till kartreferensen. I följande XML-kod skapas ämnesdefinitioner och uppräkningsdefinitioner i två separata kartor.
+Förutom att hantera uppräkningarna och ämnesdefinitionerna som finns på samma karta, innehåller AEM stödlinjer även funktionen som definierar uppräkningar och ämnesdefinitioner i två separata kartor. Du kan definiera en eller flera ämnesdefinitioner i en karta och uppräkningsdefinitionerna i en annan karta och sedan lägga till kartreferensen. I följande XML-kod skapas ämnesdefinitioner och uppräkningsdefinitioner i två separata kartor.
 
-   Ämnesdefinitionerna definieras i `subject_scheme_map_1.ditamap`
-
-
-   ```XML
-   <?xml version="1.0" encoding="UTF-8"?> 
-   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
-   <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
-   <title>subject_scheme_map_1</title> 
-   <subjectdef keys="os" navtitle="Operating system"> 
-   <subjectdef keys="linux" navtitle="Linux"> 
-   <subjectdef keys="redhat" navtitle="RedHat Linux"/> 
-   <subjectdef keys="suse" navtitle="SuSE Linux"/> 
-   </subjectdef> 
-   <subjectdef keys="windows" navtitle="Windows"/> 
-   <subjectdef keys="zos" navtitle="z/OS"/> 
-   </subjectdef> 
-   </subjectScheme>  
-   ```
-
-   Uppräkningsdefinitionen finns i subject_scheme_map_2.ditamap
-
-   ```XML
-   <?xml version="1.0" encoding="UTF-8"?> 
-   <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
-   <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
-   <title>subject_scheme_map_2</title> 
-   <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
-   </mapref> 
-   <enumerationdef> 
-   <attributedef name="platform"> 
-   </attributedef> 
-   <subjectdef keyref="os"> 
-   </subjectdef> 
-   </enumerationdef> 
-   </subjectScheme>  
-   ```
-
-   Här definieras ämnesdefinitioner i `subject_scheme_map_1.ditamap`  medan uppräkningsdef finns i `subject_scheme_map_2.ditamap`. Referensen till `subject_scheme_map_1.ditamap` läggs också till i `subject_scheme_map_2.ditamap`.
-
-   >[!NOTE]
-   >
-   > Som `subject_scheme_map_1.ditamap` och `subject_scheme_map_2.ditamap` är refererade till varandra och därför är ämnesscheman lösta.
-
-   Referenserna för ämnesuppräkning löses i följande prioritetsordning:
-
-   1. Samma karta
-   1. Refererad karta
+Ämnesdefinitionerna definieras i `subject_scheme_map_1.ditamap`
 
 
-   Referenserna löses inte om uppräkningen inte hittas i samma karta och den refererade kartan.
+```XML
+  <?xml version="1.0" encoding="UTF-8"?> 
+    <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+    <subjectScheme id="subject-scheme.ditamap_f0bfda58-377b-446f-bf49-e31bc87792b3"> 
+
+    <title>subject_scheme_map_1</title> 
+    
+    <subjectdef keys="os" navtitle="Operating system">
+        <subjectdef keys="linux" navtitle="Linux">
+        <subjectdef keys="redhat" navtitle="RedHat Linux">
+        </subjectdef>
+        <subjectdef keys="suse" navtitle="SuSE Linux">
+        </subjectdef>
+        </subjectdef>
+        <subjectdef keys="windows" navtitle="Windows">
+        </subjectdef>
+        <subjectdef keys="zos" navtitle="z/OS">
+        </subjectdef>
+        </subjectdef>
+        <subjectdef keys="deliveryTargetValues">
+        <subjectdef keys="print">
+        </subjectdef>
+        <subjectdef keys="online">
+        </subjectdef>
+    </subjectdef>
+    <subjectdef keys="mobile" navtitle="Mobile">
+        <subjectdef keys="android" navtitle="Android">
+        </subjectdef>
+        <subjectdef keys="ios" navtitle="iOS">
+    </subjectdef>
+    </subjectdef>
+    <subjectdef keys="cloud" navtitle="Cloud">
+        <subjectdef keys="aws" navtitle="Amazon Web Services">
+        </subjectdef>
+        <subjectdef keys="azure" navtitle="Microsoft Azure">
+        </subjectdef>
+        <subjectdef keys="gcp" navtitle="Google Cloud Platform">
+        </subjectdef>
+    </subjectdef>
+    </subjectScheme>
+```
+
+Uppräkningsdefinitionen finns i subject_scheme_map_2.ditamap.
+
+```XML
+    ?xml version="1.0" encoding="UTF-8"?> 
+        <!DOCTYPE subjectScheme PUBLIC "-//OASIS//DTD DITA Subject Scheme Map//EN" "../dtd/libs/fmdita/dita_resources/DITA-1.3/dtd/subjectScheme/dtd/subjectScheme.dtd"> 
+        <subjectScheme id="subject-scheme.ditamap_17c433d9-0558-44d4-826e-3a3373a4c5ae"> 
+        <title>subject_scheme_map_2</title> 
+        <mapref format="ditamap" href="subject_scheme_map_1.ditamap" type="subjectScheme"> 
+        </mapref> 
+        <enumerationdef>
+        <attributedef name="platform">
+        </attributedef>
+        <subjectdef keyref="mobile">
+        </subjectdef>
+        <subjectdef keyref="cloud">
+        </subjectdef>
+        </enumerationdef>
+        </subjectScheme>
+```
+
+Här definieras ämnesdefinitioner i `subject_scheme_map_1.ditamap`  medan uppräkningsdef finns i `subject_scheme_map_2.ditamap`. Referensen till `subject_scheme_map_1.ditamap` läggs också till i `subject_scheme_map_2.ditamap`.
+
+>[!NOTE]
+>
+> Som `subject_scheme_map_1.ditamap` och `subject_scheme_map_2.ditamap` är refererade till varandra och därför är ämnesscheman lösta.
+
+Referenserna för ämnesuppräkning löses i följande prioritetsordning:
+
+1. Samma karta
+1. Refererad karta
 
 
-   **Listrutan Attribut**
+Referenserna löses inte om uppräkningen inte hittas i samma karta och den refererade kartan.
 
-   Du kan också ändra värdet för ämnesschemat med hjälp av listrutan Attribut på panelen Innehållsegenskaper i redigeringsvyn. Om du vill ändra värdet väljer du ett värde i listrutan Attribut.
 
-   ![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
 
-   Du kan också använda värden för ett attribut genom att välja flera värden i listrutan.
 
-   **Källvy**
+**Begränsa värdena till ett visst element**
 
-   Du kan också ändra värdena från attributets listruta i källvyn. I källvyn kan du inte heller lägga till felaktiga värden.
+Du kan också begränsa villkoren till vissa element i ett ämne. Använd `<elementdef>` -taggen för att definiera elementet och `<attributedef>` -tagg för att definiera det villkor som kan tillämpas på elementet.  Om du inte lägger till `<elementdef>` -taggen kan du använda villkoren för alla element.
+Använd till exempel följande uppräkning för att begränsa `@platform` attributet till `<shortdesc>` -element.  De andra villkoren är synliga för alla element.
 
-   ![](images/subject-scheme-code-error.png){width="550" align="left"}
+```XML
+<enumerationdef>
+    <elementdef name="shortdesc">
+    </elementdef>
+    <attributedef name="platform">
+    </attributedef>
+    <subjectdef keyref="deliveryTargetValues">
+    </subjectdef>
+    <subjectdef keyref="os">
+    </subjectdef>
+  </enumerationdef>
+```
 
-   **Visa och använd ämnesschemat från villkorspanelen**
+</details>
 
-   Du kan också visa och använda ämnesschemat från villkorspanelen.
 
-   Om du vill visa ämnesschemat från villkorspanelen måste systemadministratören välja alternativet **Visa Ämnesschema på panelen Villkor** under fliken Villkor i redigeringsinställningarna. Mer information finns i [Fliken Villkor](#id21BMNE0602V).
+**Listrutan Attribut**
 
-   På villkorspanelen visas den platta lodräta strukturen för ämnesdefinitionerna i ämnesschemat.
+Du kan också ändra värdet för ämnesschemat med hjälp av listrutan Attribut på panelen Innehållsegenskaper i redigeringsvyn. Om du vill ändra värdet väljer du ett värde i listrutan Attribut.
 
-   ![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
+![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
 
-   Du kan lägga till villkor i innehållet genom att dra och släppa det önskade villkoret i innehållet. Villkorsinnehållet markeras med den färg som är definierad för villkoret.
+Du kan också använda värden för ett attribut genom att välja flera värden i listrutan.
+
+**Källvy**
+
+Du kan också ändra värdena från attributets listruta i källvyn. I källvyn kan du inte heller lägga till felaktiga värden.
+
+![](images/subject-scheme-code-error.png){width="550" align="left"}
+
+**Visa och använd ämnesschemat från villkorspanelen**
+
+Du kan också visa och använda ämnesschemat från villkorspanelen.
+
+Om du vill visa ämnesschemat från villkorspanelen måste systemadministratören välja alternativet **Visa Ämnesschema på panelen Villkor** under fliken Villkor i redigeringsinställningarna. Mer information finns i [Fliken Villkor](#id21BMNE0602V).
+
+På villkorspanelen visas den platta lodräta strukturen för ämnesdefinitionerna i ämnesschemat.
+
+![](images/subject-scheme-condtions-panel.png){width="300" align="left"}
+
+Du kan lägga till villkor i innehållet genom att dra och släppa det önskade villkoret i innehållet. Villkorsinnehållet markeras med den färg som är definierad för villkoret.
 
 **Fragment** -  ![](images/insert-snippet-icon.svg)
 

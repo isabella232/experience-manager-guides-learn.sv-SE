@@ -2,9 +2,9 @@
 title: Skapa kartor baserade på anpassade mallar
 description: Lär dig hur du skapar kartor baserade på anpassade mallar
 exl-id: 02513148-3876-4549-962a-9984f619030f
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: ca96cafa214d2dd03a9933024a195ec4995ee4dc
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,25 @@ Med AEM Guides kan du skapa anpassade kartor och ämnen från mappen Dita-templa
 >
 > Alla resurser som bara ska refereras och behållas över måste hållas utanför mallmappen.
 
+
+Du kan skapa mappnings- och ämnesmallar på följande sätt:
+1. Mallrutan i [Vänster panel](./web-editor-features.md#left-panel-id2051ea0m0hs)
+1. [Mallar i resursgränssnitt](#templates-assets-ui)
+1. [Alternativ-menyn](#templates-in-assets-ui)
+
+### Mallar i resursgränssnitt {#templates-assets-ui}
+
 **Ämnesmall**
 
 Så här skapar du en ämnesmall:
 
-1. I **Resurser, användargränssnitt** navigera till mappen Dita-templates.
+1. I **Resursgränssnitt** navigera till mappen Dita-templates.
 
    ![](images/dita-templates.png){width="800" align="left"}
 
 1. Klicka **ämnen** mapp att öppna.Klicka på **Skapa \> DITA-mall**.
-1. Välj **Ämne** och sedan klicka **Nästa.**
-1. Ange ämnesmallen på sidan Egenskaper **Titel**.
+1. På sidan för utkast väljer du **Ämne** och sedan klicka **Nästa.**
+1. På sidan Egenskaper anger du ämnesmallen **Titel**.
 1. Ange filen **Namn**
 
    >[!NOTE]
@@ -45,19 +53,19 @@ Så här skapar du en ämnesmall:
    > Filnamnet måste ha filtillägget .dita.
 
 1. \(Valfritt\) Lägg till en beskrivning.
-1. Klicka **Skapa**. Meddelandet som skapar ämnesmallen visas. Du kan sedan öppna ämnesmallen och redigera den.
+1. Klicka **Skapa**. Meddelandet Ämnesmallen som skapas visas. Du kan sedan öppna ämnesmallen och redigera den.
 
 **Kartmall**
 
 Så här skapar du en mappningsmall:
 
-1. I **Resurser, användargränssnitt** navigera till mappen Dita-templates.
+1. I **Resursgränssnitt** navigera till mappen Dita-templates.
 1. Klicka **kartor** för att öppna den.
 1. Klicka **Skapa DITA-mall \>.**
 
    ![](images/create-dita-template.png){width="300" align="left"}
 
-1. Välj **Karta** och klicka **Nästa**.
+1. På sidan för utkast väljer du **Karta** och klicka **Nästa**.
 1. Ange kartmallen på sidan Egenskaper **Titel**.
 1. Ange filen **Namn**.
 
@@ -66,6 +74,35 @@ Så här skapar du en mappningsmall:
    > Filnamnet måste ha filtillägget .ditamap.
 
 1. (Valfritt\) Lägg till en beskrivning.Klicka på **Skapa**. Meddelandet som du skapade med kartmallen visas. Du kan sedan öppna mappningsmallen och redigera den. Du kan lägga till referenser för ämnesmallarna, mappningsmallarna och andra resurser i mappningsmallen.
+
+### Alternativ-menyn {#options-menu}
+
+Så här skapar du en karta eller ämnesmall:
+
+1. Välj **Karta** eller **Ämne** i den aktuella mallmappen. Till exempel, mappen `dita-templates`.
+1. Från **Alternativ** meny, välja **Skapa kartmall** eller **Skapa ämnesmall**.
+
+   The **Skapa ny mappningsmall** eller **Skapa ny ämnesmall** öppnas.
+1. Ange den nya mallens rubrik och namn.
+1. Välj den typ av mall som du vill skapa från **Mall** listruta.
+
+Meddelandet som du skapade med kartmallen visas. Du kan lägga till mallen i din globala profil eller mappnivåprofil. Den nya mallen visas sedan i processen för att skapa avsnitt eller kartor och du kan skapa kartor eller ämnen med hjälp av den.
+
+
+Administratören kan också skapa en mapp och konfigurera den så att den blir den mapp där du kan skapa och spara mallarna.
+
+Lär dig hur du konfigurerar en anpassad sökväg till en DITA-mallmapp baserat på konfigurationen:
+<details>
+    <summary> Cloud Services </summary>
+
+Lär dig hur [konfigurera anpassad sökväg till DITA-mallmapp](../install-guide/conf-template-tags-custom-dita-topic-template.md#configure-custom-dita-template-folder-path-id191lcf0095z) i Cloud Servicens installations- och konfigureringshandbok.
+</details>
+
+<details>
+    <summary> Lokal programvara</summary>
+
+Lär dig hur [konfigurera anpassad sökväg till DITA-mallmapp](../cs-install-guide/conf-template-tags-custom-dita-topic-template.md#configure-custom-dita-template-folder-path-id191lcf0095z) i Installations- och konfigureringshandboken på plats.
+</details>
 
 ## Skicka den titel som definieras i mallarna
 
@@ -111,6 +148,9 @@ Exempel
 </title>
 ```
 
+
+
+
 ## Använd kartmallen för att skapa nya kartor
 
 >[!NOTE]
@@ -132,18 +172,18 @@ Så här skapar du en karta med hjälp av den anpassade mappningsmallen:
 1. Klicka **Skapa**. Det meddelande som kartan skapade visas.
 
 
-Kartan genererar alla resurser som refereras till inuti mallmappen. En del typer av tillgångar som refereras i en karta kan vara följande:
+Kartan genererar alla resurser som refereras till inuti mallmappen. En del typer av tillgångar som refereras till på en karta kan vara följande:
 
 - Om kartan innehåller referensen till en ämnesmall skapas en kopia av den i mappen, i samma hierarki som i ämnesmappen i `dita-templates` mapp.
 - Om kartan innehåller referensen till en mappningsmall skapas en kopia av den i mappen, i samma hierarki som i mappningsmappen i `dita-templates` mapp.
 - Om kartan innehåller den generiska referensen till ett ämne eller en karta utanför `dita-templates/topics` eller `dita-templates/maps` mapp, det är bara samma som refereras och ingen kopia skapas.
 
-   >[!NOTE]
-   >
-   > `dita-templates/topics` och `dita-templates/maps` är standardsökvägarna i stödlinjerna och kan konfigureras.
+  >[!NOTE]
+  >
+  > `dita-templates/topics` och `dita-templates/maps` är standardsökvägarna i stödlinjerna och kan konfigureras.
 
 
-   Om det finns en ämnesmallnyckeldefinition inuti mappningsmallen skapas en ny nyckel \(därför nytt ämne\) som refereras till på kartan.
+  Om det finns en ämnesmallnyckeldefinition inuti mappningsmallen skapas en ny nyckel \(därför nytt ämne\) som refereras till på kartan.
 
 - Om en annan karta eller ett annat ämne skapas på samma nivå i mappen läggs namnen på de nyskapade resurserna till med 0,1,2 och så vidare. Du kan välja att öppna kartan för redigering eller spara kartfilen i databasen.
 

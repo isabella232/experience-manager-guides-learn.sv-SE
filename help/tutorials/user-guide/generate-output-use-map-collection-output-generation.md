@@ -1,10 +1,10 @@
 ---
 title: Använd kartsamling för generering av utdata
-description: Lär dig hur du använder kartsamling för att generera utdata
+description: Lär dig använda kartsamling för att generera utdata
 exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: 22f88ae4097a6067ed65a963ad6765f6f8c24f36
+source-git-commit: 2e39580aa8417641d8b2ac7eab4ba4805cb68f0f
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -52,15 +52,15 @@ Så här skapar du en kartsamling och lägger till DITA-kartor i samlingen:
 Följande filtreringsalternativ och mappningsinformation visas på samlingssidan:
 
 - **Filter:** I den senaste rälen visas följande filter:
-   - **Ändrad**: Du kan välja Ja eller Nej. Om du väljer ja visas endast de ändrade DITA-kartorna i tabellen Kartor och förinställningar.
+   - **Ändrad**: Välj Ja eller Nej. Om du väljer ja visas endast de ändrade DITA-kartorna i tabellen Kartor och förinställningar.
    - **Förinställning**: Välj en förinställning som du vill filtrera ut kartfilerna för. Om du till exempel väljer *AEM* förinställning visas bara de kartor som har *AEM* förinställning för utdata konfigurerad för dem.
    - **Språk**: Du kan välja någon av de tillgängliga språkkoderna och endast visa det valda språket i tabellen Kartor och förinställningar.
-- **Kartor och förinställningar** tabell: Tabellen Kartor och Förinställningar innehåller information i följande kolumner:
+- **Kartor och förinställningar** tabell: Tabellen Kartor och förinställningar innehåller information i följande kolumner:
    - **Karta**: Visar DITA-kartfilens namn.
    - **Språk**: Visar språket på DITA-kartan.
-   - **Förinställning**: Visar den förinställda utdatatyp som är konfigurerad på kartfilen.
+   - **Förinställning**: Visar förinställningstypen för utdata som är konfigurerad på kartfilen.
    - **Ändrad**: Anger om DITA-kartan uppdateras efter den senaste publikationen. Baserat på den här informationen kan du bestämma om du vill publicera om utdata för den här DITA-kartan eller inte.
-   - **Senast genererad**: Visar datum och tid för senaste genererade utdata.
+   - **Senast genererad**: Visar datum och tid för den senaste genererade utdata.
 
 ## Konfigurera och generera utdata med en kartsamling
 
@@ -79,7 +79,13 @@ Så här konfigurerar och genererar du utdata med en kartsamling:
      >  
      > Som standard är alla nya förinställningar inaktiverade.
 
-   - Du kan välja **Aktivera/inaktivera alla förinställningar för mappprofiler** för en DITA-karta för att markera alla mappprofiler för den på en gång.
+1. Du kan aktivera förinställningarna för en DITA-karta på följande sätt:
+
+   - Aktivera alla enskilda förinställningar.
+   - Aktivera **Alla förinställningar** för en DITA-karta för att välja alla förinställningar på en gång. Det här alternativet är inaktiverat som standard.
+   - Aktivera **Förinställningar för mappprofiler** för en DITA-karta för att välja alla förinställningar för mappprofilen. Det här alternativet är inaktiverat som standard.
+     ![redigera en kartsamling i molntjänster](images/edit-map-collection-cs.png){width="800" align="left"}
+
 
 
 1. Gör något av följande:
