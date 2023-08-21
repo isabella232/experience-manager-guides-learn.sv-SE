@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 49b1876f2e9ac653ced74bddb03a585c5154b8b6
+source-git-commit: 7ec353bcb943e70e0c40a2c494eaa4729f31880e
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1456'
 ht-degree: 3%
 
 ---
@@ -198,6 +198,9 @@ ht-degree: 3%
          + [Användaradministration och -säkerhet](./install-guide/user-admin-sec.md)
       + Migrering av innehåll {#content-migration}
          + [Migrering av icke-UID till UUID-innehåll](./install-guide/migrate-uuid-non-uuid.md)
+         + Migreringsprocess {#migration-process}
+            + [Migrera icke-UID-innehåll med versioner](./install-guide/migrate-non-uuid-uuid-with-versions.md)
+            + [Migrera icke-UID-innehåll utan versioner](./install-guide/migrate-non-uuid-uuid-without-versions.md)
          + [Migrera befintligt innehåll](./install-guide/migrate-content.md)
          + [Överför befintligt DITA-innehåll](./install-guide/migrate-content-upload-existing-dita-content.md)
          + [Migrera icke-DITA-innehåll](./install-guide/migrate-content-non-dita.md)
