@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 08c1f1a8df5fdbaa0d8f27d2752028d0ee2ed538
+source-git-commit: 18ec7e1b19cd6404b86f965be96caa88a0a067fe
 workflow-type: tm+mt
-source-wordcount: '3672'
+source-wordcount: '3934'
 ht-degree: 0%
 
 ---
@@ -107,25 +107,36 @@ Så här skapar du en formatmall:
 
 ### Skapa ett nytt format {#create-style}
 
-Som standard innehåller CSS-filerna format för rubriker, stycken, tecken, hyperlänkar, bilder, tabeller, div, sidor och andra format. Du kan åsidosätta standardformatet eller skapa ett nytt format.
+Som standard innehåller CSS-filerna som finns i mallen format för rubriker, stycken, tecken, hyperlänkar, bilder, tabeller, div, sidor och andra format. Du kan åsidosätta standardformatet eller skapa ett nytt format.
 
-Vanligtvis skapar du ett nytt format när du vill koppla ett anpassat format för ett DITA-element. För att sådana anpassade format ska fungera måste du se till att du kopplar formatets klassnamn till DITA-elementets outputClass-attribut.
+
+Du kan skapa ett nytt format och använda det i mallens sidlayout eller använda ett anpassat format för ett DITA-element. Om du vill använda dessa anpassade format på DITA-elementet måste du se till att formatets klassnamn är detsamma som DITA-elementets namn eller `outputclass` -attribut.  Till exempel: `<div>` i DITA styrs av `.div {}` i CSS eller `outputclass` -attribut. Om du använder `<div outputclass="my-div">` i DITA styrs den av `.div {}` eller `.my-div {}` i CSS.
+
 
 
 Så här skapar du ett nytt format:
-1. Högerklicka på ett format och välj Nytt format på snabbmenyn.
+1. Expandera den vänstra sidlisten och dubbelklicka på mallen som du vill skapa formatet i.
+1. Expandera **Formatmallar** -avsnitt. Den öppnar **Stilar** som innehåller alla formateringsalternativ.
+1. Välj ikonen + om du vill lägga till ett nytt format.
 
-   Dialogrutan Lägg till format öppnas.
+   **Lägg till format** öppnas.
 
-   <img src="assets/add-style.png" alt="Lägg till nytt format" width="300"/>
-1. I **Tagg** väljer du ett märkord som du vill skapa ett nytt format för.
-1. Ange en **Klass** namn.
 
-   Klassnamnet måste associeras med taggens outputClass-attribut i källinnehållet.
-1. Välj en **Pseudo-klass** för bättre formatering av elementet.
+   <img src="assets/add-style.png" alt="Lägg till nytt format" width="500"/>
+
+1. Ange en **Klass** namn. Om du vill använda ett format på DITA-elementet kontrollerar du att formatets klassnamn är detsamma som DITA-elementets namn eller `outputclass` -attribut.
+1. I **Tagg** väljer du ett märkord som du vill skapa ett nytt format för (valfritt).
+
+
+1. Välj en **Pseudo-klass** om du vill formatera ett element. Med en pseudoklass kan du definiera ett speciellt läge för elementet. Använd till exempel pseudoklassen för att formatera ett element när du håller muspekaren över det eller när du fokuserar över det. Du kan också välja flera pseudoklasser. Du kan till exempel använda pseudoklassen `a::visited {color: blue;}` för att utforma besökta länkar.
+
+1. Lägg till väljaren för det nya formatet. The **Väljare** I kan du lägga till anpassade väljare förutom kombinationen Klass, Tagg och Pseudo-klass. Du kan till exempel skapa `table a.link` format för alla hyperlänkar i en tabell.
+
+   Mer information om CSS-taggar finns i [Se grammatik i CSS-format](https://www.w3.org/TR/CSS21/syndata.html#characters).
+
 1. Klicka **Klar**.
 
-   Ett nytt format skapas och läggs till under basformatet.
+   Ett nytt format skapas och läggs till i formatlistan.
 
 ### Anpassa ett fördefinierat eller nytt format {#customize-style}
 
@@ -143,17 +154,26 @@ Följ stegen nedan för att anpassa en stil:
 
    Då öppnas formatmallen för redigering och formatlistan visas på formatpanelen.
 
-   <img src="assets/customize-style.png" alt="Anpassa stil" width="450">
+   <img src="assets/customize-style.png" alt="Anpassa stil" width="800">
 
-1. Om du vill anpassa ett format dubbelklickar du på det eller klickar på >-ikonen före ett format för att visa och anpassa det med formatredigeraren.
+1. Om du vill anpassa ett format markerar du det för att visa och anpassa det med stilredigeraren.
 
-Mer information om hur du arbetar med de vanligaste formaten finns i [Arbeta med vanliga innehållsformat](stylesheet.md).
+
+### Egenskaper för format
+
+I mittpanelen kan du redigera egenskaperna, men det kan vara svårt att få en ögonblicksbild av vilka värden som finns.  The **Egenskaper** I visas alla attribut och värden för formatet.
+
+På mittpanelen kan du redigera de vanligaste egenskaperna, men inte alla de egenskaper som CSS stöder. I **Egenskaper** kan du redigera alla egenskaper som CSS har stöd för och förhandsgranska dem. Du behöver inte växla till källvyn för att redigera några egenskaper.
+
+
+Läs mer om hur du använder formateditorn för att [Arbeta med vanliga innehållsformat](stylesheet.md).
 
 ## Arbeta med resurser {#work-with-resources}
 
 Detta är en behållare för alla resurser som används för att utforma en mall. Du kan tänka dig det som en mapp som innehåller resurser som bakgrundsbilder, anpassade teckensnitt, logotyper med mera. När du lägger till en resurs i mallen överförs den eller checkas in i resursmappen. Du kan sedan använda dessa resurser för att anpassa eller utforma dina PDF-mallar.
 
 Följ stegen nedan för att lägga till en resursfil i resursmappen:
+
 1. Håll muspekaren över fliken Resursmapp, klicka på (alternativikonen) ... och välj Importera.
 
    Dialogrutan Överför resurser öppnas.

@@ -1,9 +1,9 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
 description: Lär dig hur du infogar ett innehållsavdrag från datakällan
-source-git-commit: 0f1c9d545dfc6dc53742c6f8d89cd48d33de2681
+source-git-commit: af5ec027ea093a28ba2a2ffd0ca3895546ed6e76
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,18 @@ Välj en datakälla om du vill visa generatorerna för innehållsavdrag och ämn
 
 ![](images/data-sources-list-view.png){width="300" align="left"}
 
+*Lista över anslutna datakällor.*
 
 ### Panelvy   ![](images/data-sources-tile-view-icon.svg)
 
 ![](images/data-sources-tile-view.png){width="300" align="left"}
 
+*Visa de anslutna datakällorna som rutor.*
+
 Du kan använda data från datakällor på två sätt:
 - Infoga ett innehållsavdrag
 - Skapa ett ämne
+
 
 
 ## Infoga ett innehållssfragment från datakällan
@@ -53,6 +57,7 @@ Utför följande steg för att skapa ett innehållskfragment med hjälp av gener
 1. Välj en datakälla om du vill visa de innehållsfragmentgeneratorer som är tillgängliga för den valda datakällan.
 
    ![](images/code-snippet-generator.png){width="300" align="left"}
+   *På panelen Datakällor visas de tillgängliga generatorerna för innehållsfragment.*
 
 1. Välj **Lägg till** om du vill lägga till en ny generator för innehållsfragment. The **Lägg till generator för innehållsfragment** panelen öppnas.
 
@@ -75,6 +80,8 @@ Till exempel:
 
    1. I källvyn visas data i DITA-källvyn.
       ![](images/add-content-snippet-generator.png){width="800" align="left"}
+      *Lägg till en generator för innehållsfragment. Visa data i käll- eller förhandsgranskningsläge.*
+
 1. Om du vill spara resultatet av frågan anger du namnet på generatorn och klickar sedan på **LÄGG TILL**.   En ny generator för innehållsfragment läggs till i listan.
 
    >[!NOTE]
@@ -102,6 +109,7 @@ Du kan också använda **Infoga frågesfragment** ![](images/data-source-icon.sv
 
 ![](images/insert-content-snippet.png){width="800" align="left"}
 
+*Redigera och infoga ett datafragment.*
 
 ## Skapa ett ämne med ämnesgeneratorn
 
@@ -118,6 +126,9 @@ Så här skapar du ett ämne med ämnesgeneratorn:
 1. Välj en datakälla om du vill visa generatorerna för innehållsavdrag och ämnesgeneratorerna som är tillgängliga för den valda datakällan.
 
    ![](images/data-sources.png){width="300" align="left"}
+
+   *Lägg till en ämnesgenerator för en ansluten datakälla.*
+
 1. Välj **Lägg till** ![](images/Add_icon.svg) och markera **Ämnesgenerator** i listrutan för att lägga till en ny ämnesgenerator. The **Lägg till ämnesgenerator** panelen öppnas.
 
 
@@ -128,13 +139,14 @@ Så här skapar du ett ämne med ämnesgeneratorn:
 
    ![](images/topic-generator-fetch-configuration.png){width="300" align="left"}
 
+   *Lägg till datafrågan, datamappningsmallen och rotnodinformationen för ämnesgeneratorn och ge den ett unikt namn på panelen Hämta konfiguration.*
 
    1. Ange frågan i dialogrutan **Datafråga** textruta.
    1. Välj den mall som mappar med datakällan från **Datamappningsmall** nedrullningsbar meny.
 
-   >[!NOTE]
-   >
-   > Om administratören har konfigurerat anpassade mallar visas även dessa mallar i listrutan (baserat på mallsökvägskonfigurationerna som din administratör har konfigurerat). Du kan till exempel skapa en ämnesmall som innehåller en ordnad lista, tabeller, stycken eller andra DITA-element.
+      >[!NOTE]
+      >
+      > Om administratören har konfigurerat anpassade mallar visas även dessa mallar i listrutan (baserat på mallsökvägskonfigurationerna som din administratör har konfigurerat). Du kan till exempel skapa en ämnesmall som innehåller en ordnad lista, tabeller, stycken eller andra DITA-element.
 
    1. Ange **Rotnod**. Det här är noden där du vill komma åt dina data. Ämnesgeneratorn skapar sedan varje ämne på den nivå som definieras i rotnoden. Du kan till exempel lägga till&quot;issues&quot; som rotnod i Jira. Om en fråga returnerar 13 utgåvor får du alltså 13 ämnen, ett avsnitt för varje utgåva.
 
@@ -148,6 +160,8 @@ Så här skapar du ett ämne med ämnesgeneratorn:
    **Utdatakonfiguration**
 
    ![](images/topic-generator-output-configuration.png){width="300" align="left"}
+
+   *Ange utdatasökväg och information om ämnesnamngivningskonvention på panelen Utdatakonfiguration. Skapa en DITA-karta och ge den ett namn.*
 
    1. Ange **Utdatasökväg** information där du vill spara dina ämnen.
    1. I **Ämnesnamnkonvention** kan du ange ett värde eller en variabel med taggar för hastighet. De nya ämnena kommer att följa konventionen. Du kan t.ex. ange `$key` för att skapa ämnen baserat på Jira-tangenter.
@@ -166,7 +180,7 @@ Så här skapar du ett ämne med ämnesgeneratorn:
 
    ![](images/topic-generator-metadata.png){width="300" align="left"}
 
-
+   *Lägg till metadataegenskaperna på panelen Metadata för att skicka till ämnena.*
 
 1. Ange generatorns namn och klicka på **Spara** för att spara frågeresultaten. En ny ämnesgenerator läggs till i listan.
 
@@ -175,6 +189,8 @@ Så här skapar du ett ämne med ämnesgeneratorn:
 
 
    ![](images/edit-topic-generator.png){width="650" align="left"}
+
+   *Generera nya ämnen från en befintlig ämnesgenerator.*
 
    >[!NOTE]
    >
@@ -192,6 +208,8 @@ Högerklicka på en ämnesgenerator för att öppna **Alternativ**. Med alternat
   >Om ämnet redan finns kan du antingen skriva över informationen i ämnet eller spara den som en ny version.
 
   ![](images/generate-topic-options.png)
+
+  *Generera ett ämne. Om filen redan finns sparar du den som en ny version eller skriver över den.*
 
 - **Redigera**: Använd det här alternativet om du vill ändra och spara ämnesgeneratorn.
 - **Ta bort**: Använd det här alternativet om du vill ta bort den valda ämnesgeneratorn.

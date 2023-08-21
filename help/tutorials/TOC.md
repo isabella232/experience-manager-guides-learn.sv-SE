@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 33c4a7b452049ab130f7bcdf9e8a90ecead32170
+source-git-commit: 49b1876f2e9ac653ced74bddb03a585c5154b8b6
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1444'
 ht-degree: 3%
 
 ---
@@ -158,6 +158,7 @@ ht-degree: 3%
          + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
       + [Hantera publiceringsuppgifter med Publish Dashboard](./user-guide/generate-output-publish-dashboard.md)
       + [Grundläggande felsökning](./user-guide/generate-output-basic-troubleshooting.md)
+      + [Publicera till ett innehållsfragment](./user-guide/publish-content-fragment.md)
       + Massaktivering av innehåll {#bulk-activation}
          + [Massaktivering av publicerat innehåll](./user-guide/conf-bulk-activation.md)
          + [Skapa en gruppaktiveringskarta](./user-guide/conf-bulk-activation-create-map-collection.md)
@@ -255,6 +256,7 @@ ht-degree: 3%
                + [Använd JavaScript för att arbeta med innehåll eller stil](./native-pdf/use-javascript-content-style.md)
                + [Använda anpassade format i fotnoter](./native-pdf/footnote-number-style.md)
             + [Konfigurera JVM-flaggor för Native PDF Publishing](./native-pdf/configure-jvm-flags.md)
+         + [Skapa en mappning mellan ett ämne och ett innehållsfragment](./install-guide/conf-content-fragment-mapping.md)
       + Arbeta med anpassade arbetsflöden {#custom-workflow}
          + [Konfigurera och anpassa arbetsflöden](./install-guide/customize-workflows.md)
       + Arbeta med översättningskonfigurationer {#translate-config}
