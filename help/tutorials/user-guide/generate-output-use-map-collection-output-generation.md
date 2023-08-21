@@ -2,7 +2,7 @@
 title: Använd kartsamling för generering av utdata
 description: Lär dig använda kartsamling för att generera utdata
 exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: 2e39580aa8417641d8b2ac7eab4ba4805cb68f0f
+source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Så här skapar du en kartsamling och lägger till DITA-kartor i samlingen:
 
    ![](images/access-map-collection-left-rail.png){width="350" align="left"}
 
-1. Ange en titel för kartsamlingen.
+1. Ange en rubrik för din kartsamling.
 1. Klicka **Skapa**.
 
    Ett meddelande om att det lyckades visas när kartsamlingen skapades.

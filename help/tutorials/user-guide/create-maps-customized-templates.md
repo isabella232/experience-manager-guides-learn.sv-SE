@@ -2,7 +2,7 @@
 title: Skapa kartor baserade på anpassade mallar
 description: Lär dig hur du skapar kartor baserade på anpassade mallar
 exl-id: 02513148-3876-4549-962a-9984f619030f
-source-git-commit: ca96cafa214d2dd03a9933024a195ec4995ee4dc
+source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
 workflow-type: tm+mt
 source-wordcount: '1084'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Så här skapar du en mappningsmall:
 
 1. I **Resursgränssnitt** navigera till mappen Dita-templates.
 1. Klicka **kartor** för att öppna den.
-1. Klicka **Skapa DITA-mall \>.**
+1. Klicka **Skapa** > **DITA-mall.**
 
    ![](images/create-dita-template.png){width="300" align="left"}
 

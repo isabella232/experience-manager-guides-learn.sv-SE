@@ -2,9 +2,9 @@
 title: Bekanta dig med Web Editors funktioner
 description: Lär dig hur du känner till Web Editor-funktionerna
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 48845ffcc530baad6689c8bca8847c57bbe9bf5d
+source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
 workflow-type: tm+mt
-source-wordcount: '15744'
+source-wordcount: '15745'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Följande underavsnitt beskriver de olika avsnitten i Web Editor.
 
 ## Huvudverktygsfältet {#id2051EA0G05Z}
 
-Huvudverktygsfältet finns längst upp i Web Editor och innehåller funktioner på filnivå och olika redigeringslägen som är tillgängliga i Web Editor. De funktioner som finns i det övre verktygsfältet förklaras på följande sätt:
+Huvudverktygsfältet finns längst upp i Web Editor och innehåller funktioner på filnivå och olika redigeringslägen som är tillgängliga i Web Editor. De funktioner som är tillgängliga i det övre verktygsfältet förklaras på följande sätt:
 
 **Spara alla** - ![](images/SaveFloppy_icon.svg)
 
