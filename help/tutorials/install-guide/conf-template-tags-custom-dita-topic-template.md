@@ -2,7 +2,7 @@
 title: Konfigurera anpassad ämnesmall för DITA
 description: Lär dig hur du konfigurerar en anpassad ämnesmall för DITA
 exl-id: f79165ef-5118-4574-815d-c4ecb2f7d58b
-source-git-commit: 20980cd289a306fc73146ec3550ae31f15e91591
+source-git-commit: ecd5c315da5d450f29ee5d44cb19bc3546a19d1c
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%
@@ -45,7 +45,9 @@ I AEM Guides kan du konfigurera en mapp för lagring av dina anpassade DITA-kart
 
 `/content/dam/dita-templates/`
 
-Om du vill hantera ämne- och mappningsmallfiler finns det dedikerade mappar för att lagra ämne- och mappmallar. Som standard lagras alla ämnesmallar under `/content/dam/dita-templates/topics` mapp. Alla mappningsmallar lagras under `/content/dam/dita-templates/maps` mapp.
+Om du vill hantera ämne- och mappningsmallfiler finns det dedikerade mappar för att lagra ämne- och mappmallar. Som standard lagras alla ämnesmallar under `/content/dam/dita-templates/topics`
+
+mapp. Alla mappningsmallar lagras under `/content/dam/dita-templates/maps` mapp.
 
 Som administratör kan du välja att skapa anpassade mappnings- eller ämnesmallar i standardmappen eller skapa en egen mapp där du kan lagra egna mallar. Om du tänker använda standardmappen kan du hoppa över den här processen.
 

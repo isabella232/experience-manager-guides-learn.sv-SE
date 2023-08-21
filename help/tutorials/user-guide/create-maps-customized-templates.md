@@ -2,9 +2,9 @@
 title: Skapa kartor baserade på anpassade mallar
 description: Lär dig hur du skapar kartor baserade på anpassade mallar
 exl-id: 02513148-3876-4549-962a-9984f619030f
-source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
+source-git-commit: be1a61d9475185da594b382c1daf361d3fe60b08
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,6 @@ Med AEM Guides kan du skapa anpassade kartor och ämnen från mappen Dita-templa
 >[!NOTE]
 >
 > Alla resurser som bara ska refereras och behållas över måste hållas utanför mallmappen.
-
-
-Du kan skapa mappnings- och ämnesmallar på följande sätt:
-1. Mallrutan i [Vänster panel](./web-editor-features.md#left-panel-id2051ea0m0hs)
-1. [Mallar i resursgränssnitt](#templates-assets-ui)
-1. [Alternativ-menyn](#templates-in-assets-ui)
-
-### Mallar i resursgränssnitt {#templates-assets-ui}
 
 **Ämnesmall**
 
@@ -74,35 +66,6 @@ Så här skapar du en mappningsmall:
    > Filnamnet måste ha filtillägget .ditamap.
 
 1. (Valfritt\) Lägg till en beskrivning.Klicka på **Skapa**. Meddelandet som du skapade med kartmallen visas. Du kan sedan öppna mappningsmallen och redigera den. Du kan lägga till referenser för ämnesmallarna, mappningsmallarna och andra resurser i mappningsmallen.
-
-### Alternativ-menyn {#options-menu}
-
-Så här skapar du en karta eller ämnesmall:
-
-1. Välj **Karta** eller **Ämne** i den aktuella mallmappen. Till exempel, mappen `dita-templates`.
-1. Från **Alternativ** meny, välja **Skapa kartmall** eller **Skapa ämnesmall**.
-
-   The **Skapa ny mappningsmall** eller **Skapa ny ämnesmall** öppnas.
-1. Ange den nya mallens rubrik och namn.
-1. Välj den typ av mall som du vill skapa från **Mall** listruta.
-
-Meddelandet som du skapade med kartmallen visas. Du kan lägga till mallen i din globala profil eller mappnivåprofil. Den nya mallen visas sedan i processen för att skapa avsnitt eller kartor och du kan skapa kartor eller ämnen med hjälp av den.
-
-
-Administratören kan också skapa en mapp och konfigurera den så att den blir den mapp där du kan skapa och spara mallarna.
-
-Lär dig hur du konfigurerar en anpassad sökväg till en DITA-mallmapp baserat på konfigurationen:
-<details>
-    <summary> Cloud Services </summary>
-
-Lär dig hur [konfigurera anpassad sökväg till DITA-mallmapp](../install-guide/conf-template-tags-custom-dita-topic-template.md#configure-custom-dita-template-folder-path-id191lcf0095z) i Cloud Servicens installations- och konfigureringshandbok.
-</details>
-
-<details>
-    <summary> Lokal programvara</summary>
-
-Lär dig hur [konfigurera anpassad sökväg till DITA-mallmapp](../cs-install-guide/conf-template-tags-custom-dita-topic-template.md#configure-custom-dita-template-folder-path-id191lcf0095z) i Installations- och konfigureringshandboken på plats.
-</details>
 
 ## Skicka den titel som definieras i mallarna
 
@@ -147,9 +110,6 @@ Exempel
     </sub>
 </title>
 ```
-
-
-
 
 ## Använd kartmallen för att skapa nya kartor
 

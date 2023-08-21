@@ -2,9 +2,9 @@
 title: Använd kartsamling för generering av utdata
 description: Lär dig använda kartsamling för att generera utdata
 exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: 3ae28dc4266d418e5730e2036c8eee2a804dc847
+source-git-commit: be1a61d9475185da594b382c1daf361d3fe60b08
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -79,13 +79,7 @@ Så här konfigurerar och genererar du utdata med en kartsamling:
      >  
      > Som standard är alla nya förinställningar inaktiverade.
 
-1. Du kan aktivera förinställningarna för en DITA-karta på följande sätt:
-
-   - Aktivera alla enskilda förinställningar.
-   - Aktivera **Alla förinställningar** för en DITA-karta för att välja alla förinställningar på en gång. Det här alternativet är inaktiverat som standard.
-   - Aktivera **Förinställningar för mappprofiler** för en DITA-karta för att välja alla förinställningar för mappprofilen. Det här alternativet är inaktiverat som standard.
-     ![redigera en kartsamling i molntjänster](images/edit-map-collection-cs.png){width="800" align="left"}
-
+   - Du kan välja **Aktivera/inaktivera alla förinställningar för mappprofiler** för en DITA-karta för att markera alla mappprofiler för den på en gång.
 
 
 1. Gör något av följande:
