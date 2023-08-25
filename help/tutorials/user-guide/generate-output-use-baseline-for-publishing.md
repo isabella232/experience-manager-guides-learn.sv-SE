@@ -2,9 +2,9 @@
 title: Arbeta med baslinje
 description: Lär dig hur du arbetar med baslinjen
 exl-id: dcafab53-c388-48c3-9455-e4251cdda17d
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8e2e2c60f223b3967fad10372abee3192016c4ef
 workflow-type: tm+mt
-source-wordcount: '1917'
+source-wordcount: '1936'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ På samma sätt är det valfritt att markera en baslinje för att översätta in
 
 >[!TIP]
 >
-> Se *Baslinje* i guiden Bästa praxis om att arbeta med baslinjer.
+> Se *Baslinje* i guiden Bästa metoder för att arbeta med baslinjer.
 
-Administratören kan konfigurera fliken Baslinje på kartkontrollpanelen. Mer information finns i *Fliken Konfigurera baslinje på DITA-kartkontrollpanelen* i installations- och konfigureringshandboken.
+Administratören kan konfigurera fliken Baslinje på kartkontrollpanelen. Mer information finns i *Konfigurera fliken Baslinje på DITA-kartkontrollpanelen* i installations- och konfigureringshandboken.
 
 Du kommer åt baslinjefunktionen genom att utföra följande steg:
 
@@ -42,41 +42,21 @@ Du kan skapa en baslinje med en specifik version av ämnen och refererat innehå
 Så här skapar du en baslinje:
 
 1. På sidan Baslinjer klickar du på **Skapa**.
-1. Ange ett namn för baslinjen i **Baslinjenamn**.
+1. Ange ett namn för baslinjen i **Originalnamn**.
+   ![skapa en baslinje](images/create-baseline.png){width="800" align="left"}
 1. I **Ange version baserad på** väljer du något av följande alternativ:
 
    - **Etikett**: Välj det här alternativet om du vill välja ämnen enligt den etikett som används på dem. Ange en etikett för att filtrera listan baserat på den angivna strängen. I den filtrerade listan kan du välja en etikett för att välja ämnen och andra resurser med den angivna etiketten.
+
    När du väljer **Etikett**, får du också ytterligare ett alternativ för att använda den senaste versionen av ämnen som inte har den angivna etiketten. Om du inte markerar det här alternativet och det finns ämnen eller mediefiler som inte har den angivna etiketten, kommer baslinjen inte att kunna skapas. Mer information om hur du lägger till etiketter finns i [Använd etiketter](web-editor-use-label.md#).
 
    - **Version on** &lt;*tidsstämpel*\>: Hämtar ämnesversionen som angivet datum och angiven tid. Observera att den tidpunkt som du anger här motsvarar tidszonen för AEM. Om servern befinner sig i en annan tidszon hämtas ämnen enligt serverns tidszon och inte enligt den lokala tidszonen.
 
    När du har markerat en etikett eller version som den är, markeras alla refererade ämnen och mediefiler på kartan därefter. Det här valet av ämnen visas inte i användargränssnittet, men sparas i serverdelen.
 
-1. Om du vill använda en annan version för ett eller flera ämnen kan du göra det genom att manuellt markera de ämnena. Klicka **Sök ämne** väljer du det ämne som du vill använda en annan version för. I listrutan Välj en version för det valda ämnet väljer du en version av ämnet som du vill använda i baslinjen och klickar på **OK**.
-
-   ![](images/baseline-select-version-drop-down.png){width="800" align="left"}
-
-   Informationen om ämnet och den valda versionen lagras i serverdelen. Du kan upprepa det här steget om du vill ändra den valda versionen för flera ämnen.
-
-1. Klicka på **Bläddra bland alla ämnen** om du vill läsa in alla ämnen och mediefiler som refereras från DITA-kartan. UUID för ämnen och mediefiler visas även under ämnesrubriken eller \(media\)-filnamnet.
-
    >[!NOTE]
    >
-   > Om du har en mycket stor uppsättning filer på DITA-kartan, med kapslade kartor och ämnen, kan det ta ett tag att läsa in alla filer om du klickar på Bläddra bland alla avsnitt.
-
-   Innehållet i kartan visas i tre avsnitt: kartfilen, innehållet \(ämnesreferenser\) och referensinnehållet \(kapslade ämnen, kartor och andra resurser\). När du har allt refererat innehåll tillgängligt kan du välja den version av ämnet som du vill använda i baslinjen.
-
-   The **Version** i den nedrullningsbara listan visas tillgängliga versioner av avsnitten eller det refererade innehållet. För det refererade innehållet kan du välja en version automatiskt.
-
-   Om du väljer **Välj automatiskt** för det refererade innehållet väljs automatiskt den version av det refererade innehållet som motsvarar den version av innehållet som det refereras till i. Låt oss till exempel säga att ett ämne A har en referens till en bild B. När version 1.5 av avsnitt A skapades var version 1.2 i databasen. Nu när en baslinje skapas med version 1.5 av ämnet A med bild B inställd på **Välj automatiskt** väljer systemet automatiskt version 1.2 av bild B.
-
-   Om du skapar en baslinje med hjälp av etiketterna **Välj automatiskt** används på versionen av allt refererat innehåll.
-
-   Om det refererade innehållet eller resurserna \(ämne, undermappar, bilder eller videoklipp\) inte har versionsnumret \(t.ex. nyligen överfört innehåll\), skapas en version för sådana filer när du skapar en baslinje. Om filerna har en ny version skapas dock ingen inkrementell version för dessa filer. Det här beteendet styrs av inställningen för att skapa automatiskt, som är aktiverad som standard. Detta krävs också för översättning av innehåll där alla filer förväntas ha en version i översättningsprocessen.
-
-   >[!NOTE]
-   >
-   > Om du vill ange en annan version för en viss resurs kan du göra det genom att välja önskad version från **Version** nedrullningsbar lista.
+   >Det rekommenderas att inte använda **Bläddra bland alla ämnen** när du skapar en baslinje.
 
 1. Klicka **Spara**.
 
@@ -90,9 +70,9 @@ Du kan visa innehållet i en befintlig baslinje genom att klicka på fliken Basl
 
 - **Version**: Visar vilken version av resursen som är tillgänglig på baslinjen.
 
-- **Datum och tid för version**: Visar datum och tid när resursen skapades för den valda versionen.
+- **Datum och tid för version**: Visar datum och tid då resursen skapades för den valda versionen.
 
-- **Senaste**: Anger om den senaste versionen av resursen används i baslinjen.
+- **Senaste**: Visar om den senaste versionen av resursen används i baslinjen.
 
 - **Överordnad karta**: Om kartfilen innehåller undermappar innehåller den här kolumnen namnet på den karta som ett ämne refereras till i.
 
@@ -108,6 +88,31 @@ Utför följande steg för att redigera en befintlig baslinje:
 
 1. Markera baslinjen och klicka på **Redigera**.
 1. Gör önskade ändringar i baslinjen. Du kan ändra namn och version för ämnet eller det refererade innehållet.
+1. Om du vill använda en annan version för ett eller flera ämnen kan du göra det genom att manuellt markera de ämnena. Klicka **Bläddra i ämne** väljer du det ämne som du vill använda en annan version för. I listrutan Välj en version för det valda ämnet väljer du en version av ämnet som du vill använda i baslinjen och klickar på **OK**.
+
+   ![](images/baseline-select-version-drop-down.png){width="800" align="left"}
+
+   Informationen om ämnet och den valda versionen lagras i serverdelen. Du kan upprepa det här steget om du vill ändra den valda versionen för flera ämnen.
+
+1. Om du vill läsa in alla ämnen och mediefiler som refereras från DITA-kartan klickar du på **Bläddra bland alla ämnen** länk. UUID för ämnen och mediefiler visas också under ämnesrubriken eller filnamnet \(media\).
+
+   >[!NOTE]
+   >
+   > Om du har en mycket stor uppsättning filer på DITA-kartan, med kapslade kartor och ämnen, kan det ta ett tag att läsa in alla filer om du klickar på Bläddra bland alla avsnitt.
+
+   Innehållet i kartan visas i tre avsnitt: kartfilen, innehållet \(ämnesreferenser\) och referensinnehållet \(kapslade ämnen, kartor och andra resurser\). När du har allt refererat innehåll tillgängligt kan du välja den version av ämnet som du vill använda i baslinjen.
+
+   The **Version** i den nedrullningsbara listan visas tillgängliga versioner av avsnitten eller det refererade innehållet. För det refererade innehållet kan du välja en version automatiskt.
+
+   Om du väljer **Välj automatiskt** för det refererade innehållet väljs automatiskt den version av det refererade innehållet som motsvarar den version av innehållet som det refereras till i. Låt oss till exempel säga att ett ämne A har en referens till en bild B. När version 1.5 av avsnitt A skapades var version 1.2 i databasen. Nu när en baslinje skapas med version 1.5 av ämnet A med bild B inställd på **Välj automatiskt** väljer systemet automatiskt version 1.2 av bild B.
+
+   Om du skapar en baslinje med etiketterna **Välj automatiskt** används på versionen av allt refererat innehåll.
+
+   Om det refererade innehållet eller resurserna \(ämne, undermappar, bilder eller videoklipp\) inte har versionsnumret \(t.ex. nyligen överfört innehåll\), skapas en version för sådana filer när du skapar en baslinje. Om filerna har en ny version skapas dock ingen inkrementell version för dessa filer. Det här beteendet styrs av inställningen för att skapa automatiskt, som är aktiverad som standard. Detta krävs också för översättning av innehåll där alla filer förväntas ha en version i översättningsprocessen.
+
+   >[!NOTE]
+   >
+   > Om du vill ange en annan version för en viss resurs kan du göra det genom att välja önskad version från **Version** listruta.
 1. Klicka **Spara**.
 
 **Duplicera baslinjer**
@@ -143,7 +148,7 @@ Utför följande steg för att lägga till en etikett i flera ämnen och referer
    - Klicka **Lägg till**.
 Den angivna etiketten läggs till på DITA-kartan och de ämnen och innehåll som refereras.
 
-      ![](images/label-added-baseline-uuid.png){width="650" align="left"}
+     ![](images/label-added-baseline-uuid.png){width="650" align="left"}
 
 
 ## Exportera översatt originalplan {#id196SE600GHS}
