@@ -4,9 +4,9 @@ description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager
 hide: true
 hidefromtoc: true
 exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
-source-git-commit: a77f93ddc14b6beb440eaa314eebe53fd00265d7
+source-git-commit: 7fbc6d22fd2f93b7b5bf3233f7ebdd0cb020dda2
 workflow-type: tm+mt
-source-wordcount: '5952'
+source-wordcount: '6038'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ När du har hämtat och installerat plugin-programmet måste du konfigurera föl
 
 - **Inställningar för webbautentisering**: Inställningar för SSO-autentisering i plugin-programmet för AEM guider.
 - **Allmänna inställningar**: Anslutningsinställningar för plugin-programmet, till exempel AEM server-URL, inloggningsinformation osv.
-- **Inställningar för anpassning av profileringsattribut**: Den här konfigurationen krävs för profileringsattributscheman för dokumentationsuppsättningarna.
+- **Inställningar för anpassning av profilattribut och filnamn i korsreferenser**: Den här konfigurationen krävs för profileringsattributscheman för dokumentationsuppsättningarna.
 
 ### Inställningar för webbautentisering
 
@@ -236,11 +236,11 @@ Utför följande steg för att konfigurera anslutningsinställningarna i Syrgas-
    - **Automatisk utcheckning av fil när den öppnas**: Om det här alternativet är markerat checkas den ut automatiskt när du dubbelklickar på en fil och öppnas för redigering. Om filen redan är utcheckad öppnas den helt enkelt för redigering. Om det här alternativet inte är markerat öppnas en fil som du inte har ett lås i skrivskyddat läge när du öppnar den.
 1. Klicka **OK**.
 
-### Inställningar för anpassning av profileringsattribut {#id1827K0D0OHT}
+### Inställningar för anpassning av profilattribut och filnamn i korsreferenser {#id1827K0D0OHT}
 
-Du måste konfigurera inställningarna i Sygen XML Author för att använda profileringsattributet som är kopplat till DITA-avsnitten i AEM.
+Du måste konfigurera inställningarna i Sygen XML Author för att använda profileringsattributet som är kopplat till DITA-avsnitten i AEM. Du måste också konfigurera inställningen för att visa filnamn i stället för GUID i korsreferenserna.
 
-Utför följande steg för att konfigurera profileringsattribut:
+Utför följande steg för att konfigurera profileringsattribut och korsreferenser:
 
 1. I Syrgas XML Author klickar du på **Alternativ** \> **Inställningar**.
 1. I **Dokumenttypsassociation** flik, välja **DITA** och klicka sedan på **Utöka**.
@@ -257,6 +257,11 @@ Utför följande steg för att konfigurera profileringsattribut:
 På följande skärmbild visas den konfigurerade **Tillägg** för DITA-ämnen:
 
      ![Konfigurerat tillägg för DITA-avsnitt](images/dita-topic-extension-tab.png){width="650" align="left"}
+
+   - Klicka **Välj** bredvid **Tillägg** och väljer LinkResolverExtensionBundle - com.adobe.o2.framework.extn i **Klass** lista. Klicka **OK**.
+
+     ![Konfigurerat tillägg för DITA-avsnitt](images/dita-map-extenstion-link-resolve.png) {width="650" align="left"}
+
 
 1. Klicka **OK** i alla dialogrutor för att spara ändringarna.
 
@@ -496,6 +501,7 @@ Följande punkter måste beaktas när innehåll flyttas eller kopieras från dit
 
 - När du checkar ut innehåll från AEM databas och gör ändringar i det lokala systemet, kontrollerar du att filnamnet inte ändras när du överför filen.
 
+- När du infogar en referens i DITA Maps Manager visas filens namn och inte UUID:t. Om titeln inte finns visas filnamnet.
 
 ### Lägg till eller ta bort favoriter {#id195HC04405P}
 

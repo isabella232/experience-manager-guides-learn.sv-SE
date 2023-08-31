@@ -1,9 +1,9 @@
 ---
 title: Publicera ett ämne till ett innehållsfragment
 description: Lär dig hur du publicerar ett ämne till ett innehållsfragment.
-source-git-commit: 6cd7d2ec76f90a192dbcd0ef552789d42c23a4fb
+source-git-commit: dd677257d94015d888705e4b6a43ae877e58be4b
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,22 @@ Lägg till exempel `/conf/we-retail` i molnkonfigurationen. Den här konfigurati
    * **Modell**: Välj den innehållsfragmentmodell som du vill använda för att skapa ditt innehållsfragment. Modellerna hämtas från den mapp som du har konfigurerat i molntjänsterna.
    * **Mappning**: Välj en mappning i listrutan. Den väljer mappningarna från *contentFragmentMapping.json* -fil.
 
-     >[!NOTE]
-     >
-     >Administratören kan lägga till mappningarna i *contentFragmentMapping.json* -fil.  Läs mer om hur [skapa en mappning mellan ett ämne och ett innehållsfragment](../install-guide/conf-content-fragment-mapping.md) in *Installations- och konfigureringshandbok på plats*.
 
 
+     Beroende på din konfiguration kan administratören lägga till mappningarna i *contentFragmentMapping.json* -fil.
+
+     <details>
+        <summary>Cloud Services</summary>
+
+     Läs mer om hur [skapa en mappning mellan ett ämne och ett innehållsfragment](../cs-install-guide/conf-content-fragment-mapping-cs.md) i Cloud Servicens installations- och konfigureringshandbok.
+     </details>
+
+     <details>
+        <summary> Lokal programvara</summary>
+
+     Läs mer om hur [skapa en mappning mellan ett ämne och ett innehållsfragment](../install-guide/conf-content-fragment-mapping.md) i Installations- och konfigureringshandboken på plats.
+
+     </details>
    * Välj **Skriv över** om ditt innehållsfragment redan finns och du vill skriva över det. AEM Guides visar ett fel om du inte markerar kryssrutan och ditt innehållsfragment redan finns.
 1. Klicka **Skapa** för att publicera innehållsfragmentet.
 1. Du kan visa innehållsfragmenten för ett ämne under **Fragment** i **Filegenskaper**.

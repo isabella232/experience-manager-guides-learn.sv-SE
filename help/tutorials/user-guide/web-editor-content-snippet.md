@@ -1,9 +1,9 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
 description: Lär dig hur du infogar ett innehållsavdrag från datakällan
-source-git-commit: af5ec027ea093a28ba2a2ffd0ca3895546ed6e76
+source-git-commit: 71a64a35d065da10783d8e1a035ea1c4728e35f4
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1723'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,22 @@ A **datakälla** är ett system där du lagrar och hanterar data för din organi
 
 ## Panelen Datakällor
 
-Välj **Datakällor** ![](images/data-source-icon.svg) i den vänstra panelen för att visa de anslutna datakällorna. Panelen Datakällor öppnas och visar alla anslutna datakällor. Mer information finns i [Konfigurera en datakällanslutning](../install-guide/conf-data-source-connector.md).
+Välj **Datakällor** ![](images/data-source-icon.svg) i den vänstra panelen för att visa de anslutna datakällorna. Panelen Datakällor öppnas och visar alla anslutna datakällor.
+
+Beroende på din konfiguration kan administratören konfigurera en datakällanslutning:
+
+<details>
+<summary> Cloud Services </summary>
+
+Lär dig hur [konfigurera en datakällanslutning](../cs-install-guide/conf-data-source-connector.md) i Cloud Servicens installations- och konfigureringshandbok.
+</details>
+
+<details>    
+<summary>  Lokal programvara </summary>
+
+Lär dig hur [konfigurera en datakällanslutning](../install-guide/conf-data-source-connector.md)  i Installations- och konfigureringshandboken på plats.
+</details>
+
 
 >[!NOTE]
 >

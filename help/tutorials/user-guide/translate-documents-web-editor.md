@@ -2,9 +2,9 @@
 title: Översätta dokument från Web Editor
 description: Lär dig hur du översätter dokument från Web Editor
 exl-id: 02fc2b51-5b9a-4ad6-9e2e-726ab7602514
-source-git-commit: 7df3024578ad289d9c6e0ab8b93f9fc6b9ff0bfe
+source-git-commit: 15ba984275155489d7ac3878d4b1307a6cd076c6
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
@@ -55,11 +55,9 @@ Innan du utför stegen i den här proceduren måste du se till att du har skapat
    **Använd den senaste versionen som den**: Välj om du vill filtrera ämnesversionen utifrån datum och tid när de skapades. När du väljer ett datum och en tid visas endast den senaste versionen av filerna som skapades på eller före det valda datumet och tiden.
 
 1. Klicka **Använd**. En lista med information om ämnen och associerade resurser visas.
-1. Markera de ämnen som du vill skicka för översättning.
+1. Markera de ämnen som du vill skicka för översättning. Du kan också använda alternativen för ämnesfiltrering för följande kolumner:
 
-   Du kan även använda följande alternativ för ämnesfiltrering:
-
-   - **Titel**: Källfilens namn
+   - **Titel**: Källfilens namn.  Håll pekaren över källfilens namn för att visa målfilens eller den översatta filens namn.
    - **Filnamn**: Källfilens namn
    - **Filtyp**: Källfilens typ. De tillgängliga alternativen är Karta, Ämne och Bild.
    - **Referenstyp**: Direkta eller indirekta referenser

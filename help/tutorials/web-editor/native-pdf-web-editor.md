@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: c11a9d2153dd2971a133ecd40325266b1d6e236c
+source-git-commit: 70801ab0e9465cea7568c7d8e67fcc7f41bae8ab
 workflow-type: tm+mt
-source-wordcount: '3071'
+source-wordcount: '3083'
 ht-degree: 0%
 
 ---
@@ -159,7 +159,7 @@ Använd följande alternativ för att ange avancerade inställningar för att sa
 | **Använd fullständig komprimering för att optimera PDF** | Välj det här alternativet om du vill komprimera/minska storleken på ett stort PDF. Kom ihåg att om du komprimerar PDF kan filkvaliteten försämras. |
 | **Använd bildkomprimering för att optimera PDF** | Markera det här alternativet om du vill komprimera/minska storleken på de bilder som används i PDF. Kom ihåg att bildkvaliteten kan försämras om du komprimerar en bild. |
 | **Använd anpassad upplösning (pixlar per tum)** | Det är sidans visningsupplösning i pixlar per tum. Ange ett önskat värde i fältet som visas när det här alternativet är markerat. Standardvärdet är 96 pixlar per tum. Ange ett högre värde om du vill passa in mer innehåll på en tum och tvärtom om du anger ett lägre värde. |
-| **Visa vattenstämpel** | Välj det här alternativet om du vill återge MathML-ekvationer i innehållet. I annat fall ignoreras ekvationerna. |
+| **Visa vattenstämpel** | Välj det här alternativet om du vill lägga en vattenstämpel ovanpå dina utdata. Du kan ange en ny textsträng i textrutan med en teckenplacering som du vill. |
 | **Aktivera MathML-ekvationer** | Välj det här alternativet om du vill återge MathML-ekvationer i innehållet. Ekvationerna ignoreras annars som standard. |
 | **PDF-överensstämmelse** | Det är den standard som du tänker spara PDF för att säkerställa att den är kompatibel. Välj i listrutan om du vill välja i listan över tillgängliga PDF-standarder. Mer information om vilka standarder som stöds finns i [Om PDF-standarder](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
 | **Hämta temporära filer** | Markera det här alternativet om du vill hämta de mellanliggande HTML-filer som skapas när utdata för PDF skapas. Du kan hämta de tillfälliga filerna senare när du har genererat utdata. |

@@ -1,7 +1,7 @@
 ---
 title: Översätta innehåll
 description: Lär dig hur du översätter innehåll
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 4d54c52b8771b0c5a40018cfec3a6586029af2fb
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -13,27 +13,27 @@ ht-degree: 0%
 
 Automatisera översättning av sidinnehåll, resurser och användargenererat innehåll för att skapa och underhålla flerspråkiga webbplatser. Om du vill automatisera arbetsflöden för översättning integrerar du översättare med AEM och skapar projekt för översättning av innehåll till flera språk. AEM har stöd för arbetsflöden för översättning mellan människor och datorer.
 
-- Översättning: Innehållet skickas till översättningsleverantören och översätts av professionella översättare. När det är klart returneras det översatta innehållet och importeras till AEM. När översättningsleverantören är integrerad med AEM utbyts innehåll automatiskt mellan AEM och översättningsleverantören
+- Översättning till människor: Innehållet skickas till din översättningsleverantör och översätts av professionella översättare. När det är klart returneras det översatta innehållet och importeras till AEM. När översättningsleverantören är integrerad med AEM utbyts innehåll automatiskt mellan AEM och översättningsleverantören
 
-- Maskinöversättning: Maskinöversättningstjänsten översätter ditt innehåll omedelbart
+- Maskinöversättning: Maskinöversättningstjänsten översätter omedelbart ditt innehåll
 
 
 Översättning av innehåll omfattar följande steg:
 
 1. AEM [översättningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/integration-framework.html?lang=en) och skapa konfigurationer för ramverk för översättningsintegrering.
 
-1. Koppla sidorna på ditt språk till översättningstjänsten och ramverkskonfigurationerna.
+1. Koppla sidorna i din språkinställning till översättningstjänsten och ramverkskonfigurationerna.
 
 1. Identifiera typen av [innehåll att översätta](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/rules.html?lang=en).
 
-1. [Förbered innehållet för översättning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/preparation.html?lang=en) genom att skapa det överordnad språket och skapa rotsidorna för språkkopior.
+1. [Förbered innehållet för översättning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/preparation.html?lang=en) genom att skapa språkinställningarna och skapa rotsidorna för språkkopior.
 
 1. Skapa [översättningsprojekt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=en) för att samla det innehåll som ska översättas och förbereda översättningsprocessen.
 
 1. Använd översättningsprojekt för att [hantera innehållsöversättning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/managing-projects.html?lang=en) -processen.
 
 
-När översättningstjänstleverantören inte tillhandahåller någon koppling till AEM stöder AEM manuell export och import av översatt innehåll i XML-format.
+När översättningstjänstleverantören inte tillhandahåller någon koppling till integrering med AEM stöder AEM manuell export och import av översatt innehåll i XML-format.
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ Så här döljer du översättningsfliken på DITA-kartkontrollpanelen:
 
    | PID | Egenskapsnyckel | Egenskapsvärde |
    |---|------------|--------------|
-   | `com.adobe.fmdita.config.ConfigManager` | `hide.tabs.translation` | Boolean \( true/ false\).<br> **Standardvärde**: `true` |
+   | `com.adobe.fmdita.config.ConfigManager` | `tabs.translation` | Boolean \( true/ false\).<br> **Standardvärde**: `true` |
 
    >[!NOTE]
    >

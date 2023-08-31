@@ -2,9 +2,9 @@
 title: Använd variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn
 description: Lär dig hur du använder variabler för att ange alternativen Målsökväg, Platsnamn eller Filnamn
 exl-id: e8d5b7c7-4f80-4ab6-9ad1-308bf0d4cf74
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: cf45be23a6369de1e510b7e8ee9cd1a2b61721e3
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ I följande tabell visas de variabler som stöds i paketet:
 | `${language_code}` | Använder språkkoden där kartfilen finns för att skapa målsökvägen. | **DITA-mappningsfilnamn**:<br>`SampleDita.ditamap`<br><br>**Sökväg till DITA-mappningsfil**:<br>`/content/dam/projects/AEM-Guides/en/user-guide/`<br><br>**Målsökväg** konfigurerad som:<br>`/content/output/sites/${language_code}`<br><br>**Slutlig utdataplats**:<br>`/content/output/sites/en/SampleDita.html` |
 | `${map_parentpath}` | Använder den fullständiga sökvägen för kartfilen för att skapa målsökvägen.<br><br>**Anteckning**:Den här variabeln kan inte användas för att ange AEM platsnamn eller filnamn i PDF. | **DITA-mappningsfilnamn**:<br>`SampleDita.ditamap`<br><br>**Sökväg till DITA-mappningsfil**:<br>`/content/dam/projects/AEM-Guides/en/user-guide`/<br><br>**Målsökväg** konfigurerad som:<br>`/content/output/sites/${map_parentpath}`<br><br>**Slutlig utdataplats**:<br>`/content/output/sites/content/dam/projects/AEM-Guides/en/user-guide/SampleDita.html` |
 | `${path_after_langfolder}` | Mappningsfilens sökväg används efter språkmappen för att skapa målsökvägen.<br><br>**Anteckning**: Den här variabeln kan inte användas för att ange AEM platsnamn eller filnamn i PDF. | **DITA-mappningsfilnamn**:<br>`SampleDita.ditamap`<br><br>**Sökväg till DITA-mappningsfil**:<br>`/content/dam/projects/AEM-Guides/en/user-guide/`<br><br>**Målsökväg** konfigurerad som:<br>`/content/output/sites/${path\_after\_langfolder}`<br><br>**Slutlig utdataplats**:<br>`/content/output/sites/user-guide/SampleDita.html` |
+| `${system_date}` | Använder det aktuella serverdatumet för att skapa målsökvägen. | **DITA-mappningsfilnamn**: <br> `SampleDita.ditamap` <br><br> **Sökväg till DITA-mappningsfil:** <br> `/content/dam/projects/AEM-Guides/en/user-guide/` <br><br> **Målsökväg** konfigurerad som: <br> `/content/output/sites/${system_date}` <br> <br> **Slutlig utdataplats:** <br> /`content/output/sites/08252023/SampleDita.html` |
+| `${system_time}` | Använder den aktuella servertiden för att skapa målsökvägen. | **DITA-mappningsfilens namn:** <br>`SampleDita.ditamap` <br> <br> **Sökväg till DITA-mappningsfil:** <br>`/content/dam/projects/AEM-Guides/en/user-guide/` <br><Br>**Målsökväg** konfigurerad som: <br> `/content/output/sites/${system_time}`<br><br>**Slutlig utdataplats:**<br>`/content/output/sites/055612/SampleDita.html` |
 
 Dessutom kan du använda metadata som definierats för DITA-kartan eller bokmappsfilen som variabler. Metadata finns under `/jcr:content/metadata` noden i DITA-kartan eller bokmappningsfilen. En av metadataegenskaperna som definieras i `/jcr:content/metadata` noden är `dc:title`. Du kan ange `${dc:title}` och titelvärdet används i det slutliga resultatet.
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)

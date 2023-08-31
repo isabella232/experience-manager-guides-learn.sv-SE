@@ -1,7 +1,7 @@
 ---
 title: Anpassa och konfigurera publiceringsfunktionen för PDF
 description: Lär dig hur du anpassar och konfigurerar de olika komponenterna i funktionen PDF.
-source-git-commit: 1757b29820cb45970657b46b54ae99d6099fbc84
+source-git-commit: 7bee42be8975ee25254e185edee67778ff3e1294
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%
@@ -30,3 +30,4 @@ Mer information finns i:
    * [Lägga till ett eget bokmärke i utdata från PDF](../native-pdf/add-custom-bookmark.md)
    * [Använd JavaScript för att arbeta med innehåll eller stil](../native-pdf/use-javascript-content-style.md)
    * [Använda anpassade format i fotnoter](../native-pdf/footnote-number-style.md)
+

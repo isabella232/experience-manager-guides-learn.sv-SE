@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 7ec353bcb943e70e0c40a2c494eaa4729f31880e
+source-git-commit: ca40b77f58b57599353d91cd7ce3002670729322
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1479'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,9 @@ ht-degree: 3%
       + Cloud Services {#cloud-release-notes}
          + [Distributionsanvisningar](./release-info/deploy-xml-on-aemaacs.md)
          + 2023 års utgåvor {#2023-releases}
+            + Septemberversionen {#2309-release}
+               + [Nyheter](./release-info/whats-new-2023.9.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.9.0.md)
             + juliversion {#2307-release}
                + [Nyheter](./release-info/whats-new-2023.7.0.md)
                + [Versionsinformation](./release-info/release-notes-2023.7.0.md)
@@ -155,7 +158,7 @@ ht-degree: 3%
       + [Använd kartsamling för generering av utdata](./user-guide/generate-output-use-map-collection-output-generation.md)
       + Använda publiceringsfunktionen i PDF {#web-editor}
          + [Publish PDF output](./web-editor/native-pdf-web-editor.md)
-         + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
+      + [Konfigurera ytterligare specialtecken](./web-editor/configure-additional-special-characters.md)
       + [Hantera publiceringsuppgifter med Publish Dashboard](./user-guide/generate-output-publish-dashboard.md)
       + [Grundläggande felsökning](./user-guide/generate-output-basic-troubleshooting.md)
       + [Publicera till ett innehållsfragment](./user-guide/publish-content-fragment.md)
@@ -258,7 +261,7 @@ ht-degree: 3%
                + [Lägga till ett eget bokmärke i utdata från PDF](./native-pdf/add-custom-bookmark.md)
                + [Använd JavaScript för att arbeta med innehåll eller stil](./native-pdf/use-javascript-content-style.md)
                + [Använda anpassade format i fotnoter](./native-pdf/footnote-number-style.md)
-            + [Konfigurera JVM-flaggor för Native PDF Publishing](./native-pdf/configure-jvm-flags.md)
+         + [Konfigurera JVM-flaggor för Native PDF Publishing](./native-pdf/configure-jvm-flags.md)
          + [Skapa en mappning mellan ett ämne och ett innehållsfragment](./install-guide/conf-content-fragment-mapping.md)
       + Arbeta med anpassade arbetsflöden {#custom-workflow}
          + [Konfigurera och anpassa arbetsflöden](./install-guide/customize-workflows.md)
@@ -324,6 +327,8 @@ ht-degree: 3%
       + Arbeta med inställningar för utdatagenerering {#output-gen-config-cs}
          + [Konfigurera inställningar för utdatagenerering](./cs-install-guide/conf-output-generation.md)
          + [PDF Publishing](./cs-install-guide/native-pdf-publishing.md)
+         + [Konfigurera nodprocess för Native PDF Publishing](./native-pdf/configure-node-options.md)
+         + [Skapa en mappning mellan ett ämne och ett innehållsfragment](./cs-install-guide/conf-content-fragment-mapping-cs.md)
       + Arbeta med anpassade arbetsflöden {#custom-workflow-cs}
          + [Konfigurera och anpassa arbetsflöden](./cs-install-guide/customize-workflows.md)
       + Arbeta med översättningskonfigurationer {#translate-config-cs}
