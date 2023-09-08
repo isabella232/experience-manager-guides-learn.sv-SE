@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 18ec7e1b19cd6404b86f965be96caa88a0a067fe
+source-git-commit: 90cd3c53fd8da0b987c99950dd37d405bea12c6e
 workflow-type: tm+mt
-source-wordcount: '3934'
+source-wordcount: '4160'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,14 @@ Information om hur du använder rubriknivåer för innehållsförteckningens str
   >
   >Om du är CSS-utvecklare kan du definiera ledarformatet direkt i CSS-filen också.
 
-* **Använd fortsättningsmarkör för register**: Välj det här alternativet om du vill definiera markörer för långa tabeller som sprids över flera sidor. <!--For more information on using table continuation markers, see Use table continuation markers.-->
+* **Använd fortsättningsmarkör för register**: Välj det här alternativet om du vill definiera markörer för långa tabeller som sprids över flera sidor.
+Du kan definiera texten som ska visas före och efter brytningen. En tabell bryts till exempel på sidan 5 och du definierar `<Continued on page %page-num%>` for **Text före brytning**.  Texten visas&quot;Fortsättning på sidan 6&quot; längst ned på sidan 5.
+
+  Använd språkvariabler för att definiera fortsättningsmarkörtexten före och efter brytningen. Beroende på vilket språk du väljer hämtas det lokaliserade värdet automatiskt i utdata från PDF. Du kan till exempel publicera `Continued on page %page-num%` som en text på engelska och `Fortsetzung auf Seite %page-num%` på tyska.
+
+  Hovring <img src="./assets/info-details.svg" alt= "informationsikon" width="25"> nära alternativet om du vill visa mer information om det.
+
+<!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 ### Sidlayouter {#page-layouts}
 
@@ -357,11 +364,11 @@ Konfigurera utskriftsinställningarna för att tilldela skrivarmärken, välja f
 
 ### Korsreferenser {#cross-references}
 
-Använd fliken Korsreferens för att definiera hur korsreferenserna ska publiceras i PDF. Du kan formatera korsreferenserna för ämnesrubrik, tabeller, figurer och mycket annat.
+Använd **Korsreferens** för att definiera hur korsreferenserna ska publiceras i PDF. Du kan formatera korsreferenserna för ämnesrubrik, tabeller, figurer och mycket annat.
 
 Du kan också använda variabler för att definiera en korsreferens.  När du använder en variabel hämtas dess värde från egenskaperna. Du kan använda en enda eller en kombination av variabler för att definiera en korsreferens. Du kan också använda en kombination av en sträng och en variabel.
 
-Du kan till exempel använda Visa information på {chapter}. Om kapitelnamnet är &quot;Allmänna inställningar&quot; är korsreferensen i utdata &quot;Se information om Allmänna inställningar&quot;.
+Du kan till exempel använda `View details on {chapter}`. Om kapitelnamnet är &quot;Allmänna inställningar&quot; är korsreferensen i utdata &quot;Se information om Allmänna inställningar&quot;.
 
 AEM innehåller följande variabler:
 
@@ -381,8 +388,25 @@ AEM innehåller följande variabler:
   >Du kan skapa automatiska nummerformat för bildtext- och bildtexttaggar.
 
 
+#### Språkvariabler i korsreferenser
+
+Du kan också använda språkvariabler för att definiera lokaliserade korsreferenser. Beroende på vilket språk du väljer hämtas det lokaliserade värdet automatiskt i utdata från PDF.
+
+Du kan till exempel lägga till en språkvariabel,&quot;reference-label&quot;, och definiera värdena på engelska och tyska.
+
+* Engelska -&quot;Visa på sidan {page}&quot;
+* Tyska -&quot;Einzelheiten finden Sie auf der Seite {page}&quot;
 
 
+När du lägger till `${lng:<variable name>}` till avsnittet Stycke innehåller korsreferenserna i styckena i utdata den lokaliserade texten och sidnumret.\
+På följande skärmbilder visas korsreferenserna &quot;Visa på sidan 1&quot; på engelska och &quot;Einzelheiten finden Sie auf der Seite 1&quot; på tyska.
 
+<img src="./assets/english-output-corss-reference.png" alt="Engelska utdata för en korsreferens i en pragrah" width ="800">
+
+*En korsreferens i ett stycke när den publiceras på engelska.*
+
+<img src="./assets/german-output-corss-reference.png" alt="Tyska utdata av en korsreferens i en pragrah" width ="800">
+
+*En korsreferens inom ett stycke när den publiceras på tyska.*
 
 <!--For more information, see *Format cross-references*.-->

@@ -1,9 +1,9 @@
 ---
 title: PDF | Stöd för språkvariabler
 description: Använda språkvariabler i utdata- och utdatamallar för PDF
-source-git-commit: 3e922ef7ed9af200aa8fcfb0cbe4489cf059e335
+source-git-commit: 6de4b4666d804c678674faa6fe1a54ef9b9dbbe0
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -19,25 +19,27 @@ Du kan använda språkvariabler för att definiera en lokaliserad version av kö
 
 Du kan till exempel ha följande sätt att presentera etiketten: `Note` i utdata från PDF:
 
-- Engelska: Anteckning
+- Engelska: Note
 
 - Franska: Remarque
 
 - Tyska: Hinweis
 
-<img src="./assets/language-variable-output.png" width="550">
+<img alt= "utdata till dokumentet som innehåller språkvariabler" src="./assets/language-variable-output.png" width="550">
+
+*Ett exempelmeddelande på engelska, franska och tyska.*
 
 >[!NOTE]
 >
-> Om värdet för en variabel inte definieras i ett visst språk väljs strängen som en reservfunktion i AEM stödlinjer.
+> Om värdet för en variabel inte definieras i ett visst språk väljs strängen som en reservfunktion av språket i användargränssnittet (programmets användargränssnitt) i AEM.
 >
 > Om du inte har definierat värdet på gränssnittets språk söker den efter engelska (`en_us`), annars väljer den engelska(`en`) och visas på samma sätt i utdata från PDF.
 
-### Typer av språkvariabler
+## Typer av språkvariabler
 
-AEM har stöd för två typer av variabler: Program- och användarvariabler.
+AEM har stöd för två typer av variabler: program- och användarvariabler.
 
-#### Programvariabler
+### Programvariabler
 
 AEM innehåller en uppsättning fördefinierade eller färdiga programvariabler. Du kan använda de här fördefinierade variablerna för att lägga till information om ett dokument som är specifikt för AEM stödlinjer. Till exempel `chapter-number` om den finns med på en sida visar kapitelnumret som sidan tillhör. The `author-label` variabeln visar namnet på dokumentets författare.
 
@@ -46,7 +48,7 @@ AEM innehåller en uppsättning fördefinierade eller färdiga programvariabler.
 > Du kan åsidosätta värdet för en programvariabel.
 
 
-#### Användarvariabler
+### Användarvariabler
 
 Du kan också skapa nya språkvariabler. Du kan t.ex. skapa en användarvariabel, Publisher, för etiketten för utgivaren av dokumentet.
 
@@ -54,20 +56,22 @@ Du kan också skapa nya språkvariabler. Du kan t.ex. skapa en användarvariabel
 >
 >  Du bör ha administratörsbehörighet för att skapa användarvariabler och redigera programvariabler.
 
-<img src="./assets/add-language-variables.png" width="550">
+<img alt="fönster för språkvariabler" src="./assets/add-language-variables.png" width="550">
 
-### Lägg till en ny språkvariabel
+*Lägg till och visa språkvariablerna för ett valt språk.*
+
+## Lägg till en ny språkvariabel
 
 1. Gå till fliken Utdata i Web Editor.
-1. Välj **Språkvariabler** <img src="./assets/language-variables.svg" width="25"> i den vänstra panelen.
-1. Välj **Redigera** för att öppna **Språkvariabler** -fönstret. Programmet och användarvariablerna som finns i det valda språket visas i alfabetisk ordning. Värdena visas enligt det valda språket. Om du t.ex. väljer franska visas&quot;Tips&quot; som&quot;Konsol&quot;.
+1. Välj **Språkvariabler** <img src="./assets/language-variables.svg" width="25"> till vänster.
+1. Välj **Redigera** för att öppna **Språkvariabler** -fönstret. Programmet och användarvariablerna som finns i det valda språket visas i alfabetisk ordning. Värdena visas enligt det valda språket. Om du t.ex. väljer det franska språket visas&quot;Tips&quot; som&quot;Konsol&quot;.
 1. Från **Språk** väljer du det språk som du vill redigera en variabel på.
 
    >[!NOTE]
    >
    > Om du inte visar de önskade språken aktiverar du det önskade språket på menyn **Inställningar för språkvariabel**. Välj inställningar <img src="./assets/settings-icon.svg" width="25">  för att öppna **Inställningar för språkvariabler** -dialogrutan.
 
-1. Ange variabelnamnet i dialogrutan **Namn** kolumnen och dess värde i **Värde** kolumn.
+1. Ange variabelnamnet i dialogrutan **Namn** -kolumnen och dess värde i **Värde** kolumn.
 
    >[!NOTE]
    >
@@ -79,11 +83,52 @@ Du kan också skapa nya språkvariabler. Du kan t.ex. skapa en användarvariabel
 >
 > Om du inte markerar **Lägg till språkvariabel**, skapas inte variabeln och läggs till i listan
 
+## Exportera och importera språkvariabler
+
+Stödlinjer för Experience Manager har stöd för att exportera och importera språkvariabler som finns i det valda språket. Du kan enkelt exportera alla språkvariabler tillsammans med de definierade värdena. Detta inkluderar både program- och användarvariabler. Använd den exporterade filen för att göra önskade ändringar av värdena eller för att översätta dem till andra språk.
+
+Du kan också importera XML-filen som innehåller språkvariablerna. Stödlinjer i Experience Manager importerar bara de språkvariabler som redan har definierats, inklusive både program- och användarvariabler. Inga variabler som inte redan är definierade importeras.
+
+### Exportera språkvariabler
+
+Om du vill exportera språkvariablerna för ett språk väljer du språket i listrutan och väljer **Exportera** <img src="./assets/language-variable-export-icon.svg" alt="exportikon" width="25">.
+En XML-fil med formatet skapas `language_variable_<ln>` där `<ln>` är koden för det valda språket. Till exempel: `language_variable_en.xml` för engelska och `language_variable_fr.xml` för franska.
+
+>[!NOTE]
+> 
+>Om det finns ändringar i språkvariablerna som inte har sparats kan du inte exportera dem. Spara ändringarna för att visa de aktiverade **Exportera** <img src="./assets/language-variable-export-icon.svg" alt="importikon" width="25"> -ikon.
+
+### Importera språkvariabler
+
+Så här importerar du språkvariabler:
+
+1. Välj ett språk i listrutan och välj **Importera** <img src="./assets/language-variable-import-icon.svg" width="25">.
+2. Bläddra och välj XML-koden som innehåller språkvariablerna. Exempel: language_variable_en.xml.
+Du kan importera XML-filer i följande format:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<variables>    
+<variable id="note-important">Important: </variable>    
+<variable id="note-caution">Avertir: </variable>    
+<variable id="image-with-text">Text and image &lt;img src=&quot;/content/dam/assets/images/image_with_text.png&quot; /&gt; </variable> 
+</variables> 
+```
+
+Variablerna med samma ID importeras när du har importerat filen. Värdena för variablerna i det valda språket uppdateras med värdena i XML-filen.  Ett meddelande om antalet variabler som har uppdaterats visas.
+
+>[!NOTE]
+> 
+><ul><li>Om filen inte är en XML-fil, eller om filen innehåller ett felaktigt format som inte överensstämmer med språkvariablerna, visas ett felmeddelande om att det har uppstått ett problem med XML-filen. 
+&gt;<li>Om filen inte innehåller några variabler med samma ID visar du en varning om att det inte finns någon matchande språkvariabel i den importerade filen.
+
 ### Alternativ för en språkvariabel
 
 Håll pekaren över variabeln för att visa **Alternativ** meny för den.
 
-<img width="550" src="./assets/language-variable-user-options.png">
+<img width="550" alt="alternativmeny för språkvariabler" src="./assets/language-variable-user-options.png">
+
+*Använd **Alternativ**om du vill ta bort, förhandsvisa eller duplicera en språkvariabel.*
 
 Du kan förhandsgranska både program- och användarvariabler. Om du vill visa hur variabelns värde visas i utdata väljer du **Förhandsgranska** från **Alternativ** den markerade variabelns meny.
 Du kan också välja att **Ta bort** eller **Duplicera** användarvariablerna. Om du tar bort en variabel från ett språk tas den automatiskt bort från alla språk.
@@ -96,10 +141,12 @@ Du kan också redigera värdena för en programvariabel. Senare kan du återstä
 
 Du bör lägga till språkvariabler i dina lokaliserade dokument. Du kan infoga dessa språkvariabler i sidlayouten som visas på olika sidor i dina lokaliserade dokument. Du kan till exempel lägga till språkvariabeln för `author-name` som visas i sidlayoutens sidhuvudsområde (eller andra delar som sidfoten eller brödtexten).
 
-<img src="./assets/language-variable-page-layout.png" width="550">
 
-På följande skärmbild visas författaren och varumärkesnamnet som finns i utdata från PDF som genererats för det franska språket.
 
+<img alt="sidlayout för en PDF" src="./assets/language-variable-page-layout.png" width="550">
+
+
+*Författaren och det varumärke som är lokaliserat i utdata från PDF som genererats för det franska språket.*
 
 Infoga en språkvariabel som `copyright-label` i sidhuvudsområdet utför du följande steg:
 
@@ -118,9 +165,11 @@ Infoga en språkvariabel som `copyright-label` i sidhuvudsområdet utför du fö
    > Du kan också ange söksträngen i textrutan. Variabelnamnen som innehåller den angivna strängen filtreras och visas i listan.
    > Den valda språkvariabeln infogas i sidhuvudsområdet.
 
-På följande skärmbild visas värdet för `copyright-label` läggs till i sidhuvudsområdet.
 
-<img src="./assets/language-variable-header.png" width="550">
+
+<img alt="infoga variabel i sidhuvudsområdet" src="./assets/language-variable-header.png" width="550">
+
+*The `copyright-label` läggs till i sidhuvudsområdet.*
 
 ### Använd innehållsformat på språkvariabler
 
@@ -134,7 +183,7 @@ Förutom det värde du tilldelar en språkvariabel kan du även använda HTML-ta
   Värde för tamil:
   `<span data-field="page-number" data-format="tamil">1</span>`
 
-På samma sätt kan du lägga till språkvariabler och formatera andra fält som listas i funktionen Infoga fält i sidlayouterna. Mer information om hur du lägger till fält finns i [Lägg till fält och metadata](../native-pdf/design-page-layout.md#add-fields-metadata).
+På samma sätt kan du lägga till språkvariabler och formatera andra fält som listas i funktionen Infoga fält i sidlayouterna. Mer information om hur du lägger till fält finns i [Lägga till fält och metadata](../native-pdf/design-page-layout.md#add-fields-metadata).
 
 - Du kan också lägga till lokaliserade bilder i värdena. Du kan till exempel lägga till en bildikon på kapitelnummerspråket och få lokaliserade bilder av ikonen i utdata från PDF.
 
@@ -166,9 +215,13 @@ h1:before {
 
 På följande skärmbilder visas strängarna på tyska och japanska PDF.
 
-<img src="./assets/localize-chapter-german.png" width="550">
+<img alt=" japansk utskrift med språkvariabel" src="./assets/localize-chapter-german.png" width="550">
 
-<img src="./assets/localize-chapter-japanese.png" width="550">
+
+
+<img alt="Tyska utdata med språkvariabel" src="./assets/localize-chapter-japanese.png" width="550">
+
+
 
 ### Formatera prefixen
 

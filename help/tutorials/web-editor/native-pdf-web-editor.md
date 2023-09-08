@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Generera utdata för PDF i Adobe Experience Manager Guides as a Cloud Service
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 70801ab0e9465cea7568c7d8e67fcc7f41bae8ab
+source-git-commit: 85075a51d141afa451c22f7a29d21fc7ae391d49
 workflow-type: tm+mt
-source-wordcount: '3083'
+source-wordcount: '3211'
 ht-degree: 0%
 
 ---
@@ -120,9 +120,13 @@ Om du vill använda en variabel måste du definiera den i `${<variable>}` format
 En av metadataegenskaperna som definieras i`jcr:content/metadata` noden är
 `dc:title`. Du kan ange `${dc:title}`och titelvärdet används i det slutliga resultatet.
 
-Du kan använda en enskild variabel eller en kombination av variabler för att definiera metadata. Till exempel, `${dc:title} ${dc:docstate}`.
+Du kan använda en enskild variabel eller en kombination av variabler för att definiera metadata. Till exempel, `${dc:title} ${dc:docstate}`. Du kan också använda kombinationen av en variabel och en sträng.  Till exempel, `View ${dc:title} in ${dc:language}`.
 
-Du kan också använda kombinationen av en variabel och en sträng.  Till exempel, `View ${dc:title} in ${dc:language}`.
+Använd språkvariabler för att definiera det lokaliserade värdet för metadataegenskaper. Beroende på vilket språk du väljer hämtas det lokaliserade värdet automatiskt i utdata från PDF. Du kan till exempel skriva ut&quot;Författare&quot; som metadatavärde på engelska och&quot;Autorin&quot; på tyska.
+
+Format: `${lng:<variable name>}`. Till exempel: `${lng:author-label}` där `author-label` är en språkvariabel.
+
+Hovring <img src="./assets/info-details.svg" alt= "informationsikon" width="25"> nära alternativet om du vill visa mer information om det.
 
 
 **Layout**
@@ -159,7 +163,7 @@ Använd följande alternativ för att ange avancerade inställningar för att sa
 | **Använd fullständig komprimering för att optimera PDF** | Välj det här alternativet om du vill komprimera/minska storleken på ett stort PDF. Kom ihåg att om du komprimerar PDF kan filkvaliteten försämras. |
 | **Använd bildkomprimering för att optimera PDF** | Markera det här alternativet om du vill komprimera/minska storleken på de bilder som används i PDF. Kom ihåg att bildkvaliteten kan försämras om du komprimerar en bild. |
 | **Använd anpassad upplösning (pixlar per tum)** | Det är sidans visningsupplösning i pixlar per tum. Ange ett önskat värde i fältet som visas när det här alternativet är markerat. Standardvärdet är 96 pixlar per tum. Ange ett högre värde om du vill passa in mer innehåll på en tum och tvärtom om du anger ett lägre värde. |
-| **Visa vattenstämpel** | Välj det här alternativet om du vill lägga en vattenstämpel ovanpå dina utdata. Du kan ange en ny textsträng i textrutan med en teckenplacering som du vill. |
+| **Visa vattenstämpel** | Välj det här alternativet om du vill lägga en vattenstämpel ovanpå dina utdata. Du kan ange en ny textsträng i textrutan med en teckenplacering som du vill. <br><br>Använd statisk text eller språkvariabler för att publicera den lokaliserade versionen av vattenstämpeln.  Beroende på vilket språk du väljer hämtas det lokaliserade värdet automatiskt i utdata från PDF. Du kan t.ex. skriva ut&quot;Utgivare&quot; som en vattenstämpel på engelska och&quot;Autentisering&quot; på franska.  <br> Format: `${lng:<variable name>}`. Till exempel: `$ {lng:publisher-label}` där `publisher-label` är en språkvariabel. <br> Hovring <img src="./assets/info-details.svg" alt= "informationsikon" width="25"> nära alternativet om du vill visa mer information om det. |
 | **Aktivera MathML-ekvationer** | Välj det här alternativet om du vill återge MathML-ekvationer i innehållet. Ekvationerna ignoreras annars som standard. |
 | **PDF-överensstämmelse** | Det är den standard som du tänker spara PDF för att säkerställa att den är kompatibel. Välj i listrutan om du vill välja i listan över tillgängliga PDF-standarder. Mer information om vilka standarder som stöds finns i [Om PDF-standarder](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
 | **Hämta temporära filer** | Markera det här alternativet om du vill hämta de mellanliggande HTML-filer som skapas när utdata för PDF skapas. Du kan hämta de tillfälliga filerna senare när du har genererat utdata. |

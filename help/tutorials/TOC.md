@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: ca40b77f58b57599353d91cd7ce3002670729322
+source-git-commit: 0a1e03989ff75146c88eb10569e57954bdedbee5
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1569'
 ht-degree: 3%
 
 ---
@@ -336,6 +336,22 @@ ht-degree: 3%
       + Arbeta med AEM Assets-sökning {#aem-asset-search-cs}
          + [Konfigurera sökning i AEM Assets UI](./cs-install-guide/conf-dita-search.md)
       + [Bilaga](./cs-install-guide/appendix.md)
++ API-referens {#api-reference}
+   + [Introduktion](./api-reference/introduction.md)
+   + [REST API:er för utdatahantering](./api-reference/output-management.md)
+   + [REST API för arbete med DITA-kartor](./api-reference/dita-map-management.md)
+   + [REST API för att registrera en datakällkoppling](./api-reference/data-source-connector.md)
+   + [REST API för att arbeta med villkorsattribut](./api-reference/conditional-attribute.md)
+   + [REST API:er för konverteringsarbetsflöde](./api-reference/convert-to-dita.md)
+   + [REST API för att skapa och aktivera paket](./api-reference/create-activate-package.md)
+   + [Java-baserat API som fungerar med utdatagenerering](./api-reference/generate-output.md)
+   + [Java-baserade API:er för DITA-kartor](./api-reference/dita-map-management-java.md)
+   + [Java-baserade API:er för konverteringsarbetsflöde](./api-reference/convert-to-dita-java.md)
+   + [Java-baserade API:er som fungerar med baslinje och etiketter](./api-reference/create-baseline-label-java.md)
+   + [Java-baserat API för att arbeta med mappprofiler](./api-reference/folder-profile-java.md)
+   + [Java-baserat API för att skapa och aktivera paket](./api-reference/create-activate-package-java.md)
+   + [Händelsehanterare efter bearbetning](./api-reference/post-process-event.md)
+   + [Händelsehanterare för konverteringsprocess](./api-reference/conversion-complete-event.md)
 + Knowledge Base {#knowledge-base}
    + Expertsession {#expert-session}
       + [Översikt över expertsessioner](./knowledge-base/expert-sessions/expert-session.md)
