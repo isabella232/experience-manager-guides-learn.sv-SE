@@ -1,25 +1,25 @@
 ---
 title: Tekniska krav
 description: Lär dig de tekniska kraven för AEM
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+exl-id: 980a2c8b-d1ea-4644-8452-4a3e4b304b51
+source-git-commit: b53f76c2f0234c1ef6c65d954311e3f8c980ffe2
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
 
 ---
 
-
 # Tekniska krav {#id213BCG003XA}
 
-Kontrollera att datorn uppfyller följande tekniska krav innan du installerar AEM Guides 4.0.2:
+Kontrollera att datorn uppfyller följande tekniska krav innan du installerar AEM Guides 4.3:
 
 **Adobe Experience Manager**
 
-- Version 6.5 Service Pack 12, 11, 10 eller 9
+- Version 6.5 Service Pack 18, 17, 16, 15 eller 14
 
 >[!IMPORTANT]
 >
-> För AEM av webbplatsens utdata måste AEM publiceringsinstans ha Service Pack 12, 11, 10 eller 9.
+> För AEM av webbplatsens utdata måste AEM publiceringsinstans ha Service Pack 18, 17, 16, 15 eller 14.
 
 **Operativsystem**
 
@@ -41,4 +41,3 @@ Kontrollera att datorn uppfyller följande tekniska krav innan du installerar AE
 
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

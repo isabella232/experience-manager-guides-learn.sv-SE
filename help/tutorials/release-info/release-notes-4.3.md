@@ -1,7 +1,7 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides 4.3.0
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till 4.3.0-utgåvor av Adobe Experience Manager Guides
-source-git-commit: 7581085859785c5b8b597ecfeb7dbe58c7c9e2bc
+source-git-commit: b53f76c2f0234c1ef6c65d954311e3f8c980ffe2
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 4%
@@ -40,10 +40,10 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds i 
 ### Adobe Experience Manager
 
 **4.3.0 Ej UUID**
-Version 6.5 Service Pack 17, 16, 15 eller 14
+Version 6.5 Service Pack 18, 17, 16, 15 eller 14
 
 **4.3.0 UUID**
-Version 6.5 Service Pack 17, 16, 15 eller 14
+Version 6.5 Service Pack 18, 17, 16, 15 eller 14
 
 Mer information finns i *Tekniska krav* i guiden Installera och konfigurera Adobe Experience Manager Guides.
 
