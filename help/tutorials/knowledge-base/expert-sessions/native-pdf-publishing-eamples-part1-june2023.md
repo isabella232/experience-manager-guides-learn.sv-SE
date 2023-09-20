@@ -1,9 +1,10 @@
 ---
 title: Publicering i PDF - Exempel på lärande (del 1)
 description: Med inbyggda PDF-publiceringsmotorn kan du styra dokumentets innehållslayout samtidigt som du kan ändra önskade avsnitt efter behov med hjälp av lättuppdaterat CSS, HTML och JavaScript.
-source-git-commit: c004267eab4dfaea10565b535b875c716c162343
+exl-id: e6fcb2cb-4dfe-4aa7-8c84-f11759898c41
+source-git-commit: 63c2103c18b2a6da450247b1ee6b676a00d5a510
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ Med inbyggda PDF-publiceringsmotorn kan du styra dokumentets innehållslayout sa
 
 ## Sessionsöversikt
 
-Under det här seminariet får du lära dig att använda funktionerna för Native PDF-publicering med hjälp av några exempel.
+Under det här seminariet får du lära dig att använda funktionerna för Native PDF-publicering.
 
 ## Sessionsregistrering
 
@@ -39,25 +40,24 @@ Under den här sessionen får du veta mer om Native PDF:
 
 ## Relaterade resurser
 
-- **Inställningssteg för PDF** - [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/knowledge-base/kb-articles/publishing/configuring-aem-environment-for-native-pdf-publishing.html?lang=en)
+- **Installationssteg för PDF** - [Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/knowledge-base/kb-articles/publishing/configuring-aem-environment-for-native-pdf-publishing.html?lang=en)
 
 - **Funktionell översikt över Native PDF publishing** - [på Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/knowledge-base/expert-session/native-pdf-publishing-essentials-feb23.html?lang=en)
 
-- **Dokumenterade användningsfall** - [på Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/configuring/config-native-pdf-publish/content-styles/stylesheet.html?lang=en)
+- **Dokumenterade användningsfall** - [på Experience League](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/install-guide/on-prem-ig/output-gen-config/config-native-pdf-publish/content-styles/stylesheet.html?lang=en)
 
-- **Community-forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Community Forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Funktionerna som visas under den här sessionen finns i följande versioner av AEM.
 > - On-prem 4.2 eller senare
-> - Cloud Services 2303 och senare
-
+> - Cloud Service 2303 och senare
 
 ## Nästa expertsession
 
-- **Ämne** - TBD
-- **Schemalagd den** - 20 juli 2023
+- **Ämne** - Inbyggd PDF-publicering&quot;Hands on lab - BYOS&quot; - Interaktiv inlärning
+- **Schemalagd den** - 7 september 2023
 
 ## Kontakta oss
 
