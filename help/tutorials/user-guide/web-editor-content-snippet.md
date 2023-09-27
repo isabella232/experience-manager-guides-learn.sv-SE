@@ -1,9 +1,9 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
-description: Lär dig hur du infogar ett innehållsavdrag från datakällan
-source-git-commit: 71a64a35d065da10783d8e1a035ea1c4728e35f4
+description: Använd data från datakällan i AEM. Lär dig hur du infogar ett innehållsavdrag från datakällan. Skapa ett ämne med ämnesgeneratorn.
+source-git-commit: 87aef92535b7204503cd4ed1da838b43b1133b04
 workflow-type: tm+mt
-source-wordcount: '1723'
+source-wordcount: '2028'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,11 @@ Beroende på din konfiguration kan administratören konfigurera en datakällansl
 <details>
 <summary> Cloud Services </summary>
 
-Lär dig hur [konfigurera en datakällanslutning](../cs-install-guide/conf-data-source-connector.md) i Cloud Servicens installations- och konfigureringshandbok.
+
+- Om du använder versionen från oktober 2023 eller senare kan du lära dig hur [konfigurera en datakällanslutning med verktygen](../cs-install-guide/conf-data-source-connector-tools.md) i Cloud Servicens installations- och konfigureringshandbok.
+
+- Om du använder versionen från juli 2023 eller september 2023 ska du lära dig hur [konfigurera en datakällanslutning](../cs-install-guide/conf-data-source-connector.md) i Cloud Servicens installations- och konfigureringshandbok.
+
 </details>
 
 <details>    
@@ -83,6 +87,8 @@ De färdiga mallarna för den valda datakällan visas i listrutan. Du kan till e
    >[!NOTE]
    >  
    > Om administratören har konfigurerat anpassade mallar visas även dessa mallar i listrutan (baserat på mallsökvägskonfigurationerna som din administratör har konfigurerat).
+   >   
+   >Du kan också använda snabbhetsverktygen i mallarna. Läs mer om hur [använd snabbverktyg](#use-velocity-tools).
 
 1. Klicka **Hämta** för att hämta data från datakällan och tillämpa mallen på data som är resultat av SQL-frågan.
 
@@ -215,21 +221,58 @@ Så här skapar du ett ämne med ämnesgeneratorn:
 
 Högerklicka på en ämnesgenerator för att öppna **Alternativ**. Med alternativen kan du utföra följande åtgärder:
 
-- **Förhandsgranska**: Använd det här alternativet om du vill öppna en ruta och visa en liten del av hur data visas i utdata.
-- **Generera innehåll**: Det här alternativet genererar ämnen för den valda ämnesgeneratorn. Du kan också använda det här alternativet för att uppdatera befintliga ämnen. Den ansluter till datakällan och hämtar uppdaterade data.
-
+- **Generera**: Det här alternativet genererar ämnen för den valda ämnesgeneratorn. Du kan också använda det här alternativet för att uppdatera befintliga ämnen. Den ansluter till datakällan och hämtar uppdaterade data. När du genererar innehållet är det här alternativet inaktiverat och du kan visa en inläsare.
   >[!NOTE]
   >
   >Om ämnet redan finns kan du antingen skriva över informationen i ämnet eller spara den som en ny version.
 
   ![](images/generate-topic-options.png)
 
-  *Generera ett ämne. Om filen redan finns sparar du den som en ny version eller skriver över den.*
+  *Generera ett ämne och om filen redan finns sparar du den som en ny version eller skriver över den.*
+- **Visa logg**: Välj det här alternativet om du vill visa loggfilen för innehållsgenerering. Loggfilen öppnas på en ny flik. Du kan visa fel, varningar, informationsmeddelanden och undantag i loggfilen. Det här alternativet aktiveras om du har genererat innehållet för den valda ämnesgeneratorn.
 
-- **Redigera**: Använd det här alternativet om du vill ändra och spara ämnesgeneratorn.
-- **Ta bort**: Använd det här alternativet om du vill ta bort den valda ämnesgeneratorn.
+- **Förhandsgranska**: Använd det här alternativet om du vill öppna en ruta och visa en liten del av hur data visas i utdata.
+
+
+
+- **Redigera**: Använd det här alternativet om du vill ändra och spara ämnesgeneratorn. Det här alternativet är inaktiverat när du genererar innehållet.
+- **Ta bort**: Använd det här alternativet om du vill ta bort den valda ämnesgeneratorn. Det här alternativet är inaktiverat när du genererar innehållet.
 - **Duplicera**: Det här alternativet skapar en dubblett eller en kopia av den valda ämnesgeneratorn. Dupliceringen skapas med ett suffix (som `topic-sample_1`) som standard.
 
+
+
+## Använd snabbhetsverktygen i datakällmallarna {#use-velocity-tools}
+
+Experience Manager-mallar har också stöd för snabbhetsverktygen (version 2.0). Med de här verktygen kan du använda olika funktioner för data som du hämtar från datakällorna. Läs mer om hur du använder [Snabbhetsverktyg](https://velocity.apache.org/tools/2.0/generic.html) och de funktioner du kan använda.
+
+Utför följande steg om du vill använda ett snabbverktyg i en mall:
+1. Redigera en snabbmeddelandemall i webbredigeraren.
+1. Lägga till ett verktyg och dess funktion i `<tool.function>` format. Till exempel:
+   - Om du vill generera ett slumpmässigt tal med hjälp av matematiska verktyg använder du `$mathTool.random`.
+   - Om du vill generera summan av tal med matematiska verktyg använder du `$mathTool.add(num1, num2)`.
+1. Använd mallen för att skapa ett innehållskuvert eller ämne.
+1. När du har tillämpat mallen på data kan du visa data i förhandsvisningen eller i DITA-källvyn.
+
+
+
+
+Du kan använda följande verktyg i hastighetsmallarna för att tillämpa olika funktioner på data som du hämtar från kopplingen: -`$alternatorTool`
+- `$classTool`
+- `$contextTool`
+- `$conversionTool`
+- `$dateTool`
+- `$comparisonDateTool`
+- `$displayTool`
+- `$escapeTool`
+- `$fieldTool`
+- `$loopTool`
+- `$linkTool`
+- `$listTool`
+- `$mathTool`
+- `$numberTool`
+- `$renderTool`
+- `$resourceTool`
+- `$sortTool`
 
 
 
