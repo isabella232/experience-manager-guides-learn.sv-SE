@@ -1,10 +1,10 @@
 ---
 title: Bästa tillvägagångssätt för innehållsöversättning
-description: Lär dig hur du bäst hanterar översättning av innehåll
+description: Lär dig de bästa sätten att översätta innehåll i AEM. Lär dig hur du konfigurerar översättningstjänsten, skapar ett nytt översättningsprojekt och startar översättningsjobbet.
 exl-id: 4eff0f27-b3d1-4c6e-af88-bcb3f6d96990
-source-git-commit: d87a2e054310e3421dcbf347232a420638823b93
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -37,9 +37,9 @@ Utför följande steg för att konfigurera den mänskliga översättningstjänst
 
 1. Välj källspråksmappen i resursgränssnittet.
 
-1. Öppna mappegenskaperna och gå till **Cloud Services** -fliken.
+1. Öppna mappegenskaperna och gå till **Cloud Service** -fliken.
 
-1. I **Cloud Services** konfigurerar du översättningstjänsten som du vill använda.
+1. I **Cloud Service** konfigurerar du översättningstjänsten som du vill använda.
 
    Du kan konfigurera maskinbaserad eller mänsklig översättning.
 
@@ -82,11 +82,11 @@ Så här skapar du ett översättningsprojekt:
 
    >[!NOTE]
    >
-   > Klicka på **Klar** på panelen Filter om du vill filtrera ämnen baserat på dina val.
+   > När du har använt det önskade filtret klickar du på **Klar** på panelen Filter om du vill filtrera ämnen baserat på dina val.
 
-   - **Översättningsstatus**: Välj om du vill filtrera ämnen baserat på deras översättningsstatus. De tillgängliga alternativen är: Slut på synkronisering, saknad kopia, pågående och synkroniserad.
+   - **Översättningsstatus**: Välj om du vill filtrera ämnen baserat på deras översättningsstatus. De tillgängliga alternativen är: Osynkroniserad, Kopia saknas, Pågår och Synkroniserad.
    - **Sök**: Ange en eller flera söktermer i ämnesrubrikerna.
-   - **Källtyp**: Välj om du vill filtrera ämnen baserat på deras filtyper. De tillgängliga alternativen är: Alla, DITA, DITA Map, Resource.
+   - **Källtyp**: Välj om du vill filtrera ämnen baserat på deras filtyper. De tillgängliga alternativen är: Alla, DITA, DITA Map, Resurs.
    - **Källversionen ändrad efter**: Välj om du vill filtrera ämnen baserat på ändringsdatum och -tid. Alla ämnen som ändrats efter det angivna datumet och tiden visas i listan.
    - **Baslinje**: Klicka på Använd baslinje och välj en baslinje som skapats på kartan. Alla filer som ingår i den valda baslinjen visas på översättningssidan. Du kan välja önskade filer från baslinjen och fortsätta med översättningsprocessen. När innehållet har översatts kan du exportera den översatta baslinjen. Mer information om hur du exporterar den översatta baslinjen finns i [Exportera översatt originalplan](generate-output-use-baseline-for-publishing.md#id196SE600GHS).
 1. Klicka **Skapa/uppdatera språkkopior** längst ned på panelen Filter.
@@ -110,7 +110,7 @@ Så här skapar du ett översättningsprojekt:
 På fliken Översättning finns följande avsnitt:
 
 - **Sammanfattning**: Visar antalet refererade ämnen och källspråk tillsammans med koden.
-- **Detaljer**: Visar ämnesrubrik, typ av ämne, språkkod för ämnet, källspråk, version av källämnet, etikett som lagts till i ämnet och översättningsstatus.
+- **Information**: Visar ämnestitel, typ av ämne, språkkod för ämnet, källspråk, version av källämnet, etikett som lagts till i ämnet och översättningsstatus.
 
 
 

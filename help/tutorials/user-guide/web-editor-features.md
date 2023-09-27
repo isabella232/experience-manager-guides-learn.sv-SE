@@ -1,10 +1,10 @@
 ---
 title: Bekanta dig med Web Editors funktioner
-description: Lär dig hur du känner till Web Editor-funktionerna
+description: Upptäck funktionerna i webbredigeraren i AEM. Lär dig webbredigerarens gränssnitt, inklusive huvudverktygsfältet, det sekundära verktygsfältet, den vänstra panelen, området för innehållsredigering och den högra panelen.
 exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: 9196d7b1094149f06067c153b9c02c2cd20c18af
+source-git-commit: a209e46e41055348402292e20c229890cd0c01cf
 workflow-type: tm+mt
-source-wordcount: '15744'
+source-wordcount: '16066'
 ht-degree: 0%
 
 ---
@@ -741,9 +741,7 @@ Listan med filtrerade filer som innehåller den sökta texten visas. På skärmb
 
 **Alternativ-menyn**
 
-Förutom att öppna filer från den vänstra panelen kan du även utföra många åtgärder med hjälp av
-
-Menyn Alternativ finns i databasvyn. Du kan se olika alternativ beroende på om du väljer en mapp, ämnesfil eller mediefil.
+Förutom att öppna filer från den vänstra panelen kan du även utföra många åtgärder via Alternativ-menyn i databasvyn. Du kan se olika alternativ beroende på om du väljer en mapp, ämnesfil eller mediefil.
 
 **Alternativ för en mapp**
 
@@ -801,7 +799,7 @@ Du kan se olika alternativ på Alternativ-menyn beroende på om du väljer en me
 - Egenskaper
 - Visa i resursgränssnitt
 
-![](images/options-menu-repo-view-file-level.png){width="550" align="left"}
+![alternativmeny för en fil i databasvyn](images/options-menu-repo-view-file-level.png){width="550" align="left"}
 
 De olika alternativen på Alternativ-menyn förklaras nedan:
 
@@ -896,7 +894,18 @@ De olika alternativen på Alternativ-menyn förklaras nedan:
 
 - **Open Map Dashboard**: Om den valda filen är en DITA-karta öppnas kartkontrollpanelen.
 
+- **Redigera i syrgas**: Välj det här alternativet om du vill redigera den markerade filen i syrgasanslutningens plugin. Filen öppnas för redigering.
+
+  >[!NOTE]
+  >
+  >Kontakta kundgruppen för att aktivera den här funktionen i miljön. Detta är inte aktiverat som en del av det färdiga stödet. Mer information finns i [Konfigurera alternativet för redigering i syrgas](../cs-install-guide/conf-edit-in-oxygen.md) i installations- och konfigureringshandboken.
+
+
 - **Visa i resursgränssnitt**: Använd det här om du vill visa en förhandsgranskning av en .dita/.xml-fil i resursgränssnittet. Om det är en .ditamap/.bookmap-fil visas alla ämnesfiler på kartan i en enda enhetlig sida-för-sida-vy.
+
+- **Hämta som PDF**: Använd alternativet för att generera utdata från PDF och hämta dem.
+
+- **Publicera som**: Använd alternativet för att publicera ett ämne eller elementen i ett ämne till ett innehållsfragment.
 
 - **Snabbgenerering**: Generera utdata för den valda filen. Utdata kan bara genereras för filer som är en del av en förinställning. Mer information finns i [Artikelbaserad publicering från webbredigeraren](web-editor-article-publishing.md#id218CK0U019I).
 
@@ -995,9 +1004,25 @@ Du kan utföra följande åtgärder på Alternativ-menyn i kartfilen:
 - **Open Map Dashboard**: Öppna kartkontrollpanelen.
 
 - **Visa i resursgränssnitt**: Använd det här om du vill visa en förhandsgranskning av kartfilen i resursgränssnittet. I den här vyn visas alla ämnesfiler på kartan i en enhetlig sida vid sida-vy.
+- **Ladda ned karta**: Välj det här alternativet för att öppna **Ladda ned karta** -dialogrutan.
+I **Ladda ned karta** kan du välja följande alternativ:
+   - **Använd baslinje**: Välj det här alternativet om du vill visa en lista över baslinjer som skapats för DITA-kartan. Om du vill hämta kartfilen och dess innehåll baserat på en viss baslinje väljer du Baslinje i listrutan. Mer information om hur du arbetar med baslinjer finns i [arbeta med baslinje](./generate-output-use-baseline-for-publishing.md).
+   - **Förenkla filhierarki**: Välj det här alternativet om du vill spara alla refererade ämnen och mediefiler i en enda mapp.
 
-- **Snabbgenerering**: Generera utdata för den markerade karfilen. Utdata kan bara genereras för filer som är en del av en förinställning. Mer information finns i [Artikelbaserad publicering från webbredigeraren](web-editor-article-publishing.md#id218CK0U019I).
+  Du kan även hämta kartfilen utan att välja något alternativ. I så fall hämtas de senast beständiga versionerna av de ämnen och mediefiler som refereras.
+
+  När du har klickat på **Ladda ned** är begäran om hämtning av karta köad. Du får ett meddelande om att kartan är klar att hämtas. Om hämtningen misslyckas får du ett meddelande om att hämtningen av kartan misslyckades
+
+  Du kommer åt nedladdningslänken från AEM meddelandeinkorg. Välj det genererade kartmeddelandet i Inkorgen för att hämta kartan i ZIP-format.
+
+  >[!NOTE]
+  >
+  >  Som standard finns de hämtade kartorna kvar i fem dagar i Inkorgen för AEM.
+
+- **Generera utdata**: Generera utdata för den markerade karfilen. Utdata kan bara genereras för filer som är en del av en förinställning. Mer information finns i [Artikelbaserad publicering från webbredigeraren](web-editor-article-publishing.md#id218CK0U019I).
 - **Stäng**: Stänger kartfilen.
+
+
 
 På följande skärmbild visas Alternativ-menyn för en fil i DITA-kartvyn:
 

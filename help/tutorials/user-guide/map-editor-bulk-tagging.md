@@ -1,17 +1,17 @@
 ---
 title: Masstaggning av DITA-innehåll
-description: Lär dig hur du gruppvis taggar DITA-innehåll
+description: Använd bulktaggning av innehåll i AEM för att förbättra identifieringen av DITA-innehåll. Lär dig hur du använder, tar bort, visar eller döljer gruppmärkord i ett eller flera ämnen.
 exl-id: 0e855575-e62f-4dc7-869c-7fd3ec61ffdb
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
 
 # Masstaggning av DITA-innehåll {#id179SG0TN05Z}
 
-Med taggar kan du gruppera eller klassificera innehåll i innehållsdatabasen och även i publicerade utdata. Om du har använt taggar på innehållet kan du enkelt hitta relaterade ämnen i en DITA-karta som kan hjälpa dig att skapa innehåll. Med publicerade utdata kan slutanvändarna hitta rätt innehåll snabbare med rätt taggar på plats.
+Med taggar kan du gruppera eller klassificera innehåll i innehållsdatabasen och även i publicerade utdata. Om du har använt taggar på innehållet kan du enkelt hitta relaterade ämnen i en DITA-karta som kan hjälpa dig att skapa innehåll. Med publicerade utdata kommer slutanvändarna att kunna hitta rätt innehåll snabbare med rätt taggar på plats.
 
 Med AEM Guides kan du tagga DITA-innehåll med några klick. Du kan använda funktionen för bulktaggning för att tillämpa flera taggar på flera ämnen, en DITA-karta eller på en underkarta. Du kan också lägga till märkord i ett enskilt ämne. Taggning är den inbyggda funktionen i AEM. Du hittar mer information om hur du skapar och hanterar taggar i [Administrera taggar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/tags.html?lang=en) i AEM.
 
@@ -78,7 +78,7 @@ Gör så här för att använda taggar på ett enskilt ämne:
 
 ## Ta bort taggar
 
-Du kan ändra taggningsinformationen för alla DITA-avsnitt beroende på dina affärsbehov. Du kan enkelt ta bort alla taggar samtidigt eller bara de taggar som inte är giltiga i ämnet.
+Du kan ändra taggningsinformationen för alla DITA-avsnitt beroende på vilka behov ditt företag har. Du kan enkelt ta bort alla taggar samtidigt eller bara de taggar som inte är giltiga i ämnet.
 
 Utför följande steg för att ta bort alla taggar från ett eller flera ämnen:
 
@@ -98,7 +98,7 @@ Utför följande steg för att ta bort alla taggar från ett eller flera ämnen:
    >
    > Om ikonen Ta bort taggar inte visas kontrollerar du att du inte har aktiverat funktionen Dölj taggar.
 
-1. I dialogrutan Bekräfta borttagning klickar du på **OK** om du vill ta bort taggar från de markerade ämnena.
+1. Klicka på **OK** om du vill ta bort taggar från de markerade ämnena.
 
 
 ## Visa eller dölj taggar

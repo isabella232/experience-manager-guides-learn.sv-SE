@@ -1,10 +1,10 @@
 ---
 title: DITA-kartrapport från Web Editor
-description: Lär dig DITA-kartrapport från Web Editor
+description: Generera DITA-kartrapporter från webbredigeraren i AEM. Lär dig hur du genererar en CSV-fil för en ämneslista, multimedierapporter, metadata och brutna länkar.
 exl-id: b1011cec-6374-4026-bf1c-54a1981c760e
-source-git-commit: 5670b4a8f34916c7ff415680c5ddcfab6e9618e6
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '2351'
+source-wordcount: '2367'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Du kan skapa en ämnesrapport genom att utföra följande steg:
 
    ![](images/web-editor-topiclist-panel.png){width="800" align="left"}
 
-1. Från **Filter** Panelen du kan filtrera ämnen baserat på **Referenstyp** \(direkt eller indirekt\), **Dokumenttillstånd** \(aktuell status för dina ämnen. Om dina ämnen till exempel är i läget Redigera, Under granskning eller Granskad visas de här alternativen) eller **Upphovsman** av ämnet.
+1. Från **Filter** Panelen som du kan filtrera ämnen baserat på **Referenstyp** \(direkt eller indirekt\), **Dokumenttillstånd** \(aktuell status för dina ämnen. Om dina ämnen till exempel är i läget Redigera, Under granskning eller Granskad visas de här alternativen) eller **Upphovsman** av ämnet.
 
 1. Du kan också använda följande alternativ för ämnesfiltrering för att välja att visa följande kolumner i listan:
 
@@ -39,7 +39,6 @@ Du kan skapa en ämnesrapport genom att utföra följande steg:
    - **Dokumenttillstånd** Ämnets aktuella tillstånd.
    - **Upphovsman** Användaren som arbetade sist med ämnet.
    - **Överordnad karta** Listan med alla kartor där ämnet refereras direkt.
-
    >[!NOTE]
    >
    > Klicka **Uppdatera** om du vill få en ny lista med ämnen och visa ändringar i kartfilen eller om en referens i ämnesfilen uppdateras.
@@ -60,22 +59,22 @@ Så här visar du metadata för referenserna i den aktuella DITA-kartan:
 
    ![](images/web-editor-metadata-panel.png){width="800" align="left"}
 
-1. Från **Filter** kan du filtrera ämnen baserat på **Dokumenttillstånd** \(aktuell status för dina ämnen. Om dina ämnen till exempel är i redigeringsläge, granskningsläge eller granskningsläge, visas de här avsnitten\), **Referenser** \(direkt eller indirekt\), **Filtyp** \(Karta, Ämne och Bild\) för referensen.
+1. Från **Filter** kan du filtrera ämnen baserat på **Dokumenttillstånd** \(aktuell status för dina ämnen. Om dina ämnen till exempel är i redigeringsläge, granskningsläge eller granskningsläge, visas de här avsnitten\), **Referenser** \(direkt eller indirekt\), **Filtyp** \(Karta, ämne och bild\) för referensen.
 1. Du kan även välja att bara visa **Filer utan taggar** eller också väljer du särskilda taggar i **Taggar** för att visa de filer som är associerade med dem.
    1. Du kan också använda följande alternativ för ämnesfiltrering för att välja att visa följande kolumner i metadatalistan:
       - **Titel** \(markerat som standard\) Titeln på den refererade filen anges på DITA-kartan. Du kan klicka på filen för att redigera den.Du kan också klicka på och spela upp en ljud- eller videofil i Web Editor. Du kan ändra volymen eller vyn för videon. På snabbmenyn har du också möjlighet att hämta, ändra uppspelningshastighet eller visa bild-i-bild.
 
-         >[!NOTE]
-         >
-         > En utcheckningsikon visas också nära titeln på en utcheckad fil. Du kan hålla muspekaren över ikonen för att visa namnet på användaren.
+        >[!NOTE]
+        >
+        > En utcheckningsikon visas också nära titeln på en utcheckad fil. Du kan hålla muspekaren över ikonen för att visa namnet på användaren.
 
       - **Filnamn** Filens namn.
-      - **Filplats** Filens fullständiga sökväg.
+      - **Filplats** Den fullständiga sökvägen till filen.
       - **Taggar** \(markerat som standard\) Taggar som används i filen.
 
-         >[!NOTE]
-         >
-         > Som standard kan du visa två taggar för en fil. Om du vill visa fler taggar klickar du på **Visa fler**. Klicka **Visa mindre** för att dra ihop listan igen.
+        >[!NOTE]
+        >
+        > Som standard kan du visa två taggar för en fil. Om du vill visa fler taggar klickar du på **Visa fler**. Klicka **Visa mindre** för att dra ihop listan igen.
 
       - **Referenstyp** Typ av referens - direkt eller indirekt
       - **Dokumenttillstånd** \(markerat som standard\) Referensfilens aktuella läge.
@@ -102,11 +101,11 @@ Så här visar du metadata för referenserna i den aktuella DITA-kartan:
    > De vanliga taggarna som används för alla markerade ämnen visas.
 
 1. Välj ett nytt dokumentläge om du vill ändra dokumentläget för alla markerade referenser. I listrutan visas det vanliga möjliga läget för alla valda ämnen. Om det aktuella läget för dina ämnen till exempel är Under granskning kan du visa läget Utkast, Godkänd eller Granskad.
-1. Klicka **Uppdatera** för att uppdatera metadata. Ett bekräftelsemeddelande visas för metadatan, oavsett om de har uppdaterats eller inte. Du kan även klicka **Hämta rapport** om du vill hämta metadata-CSV-filen från bekräftelsedialogrutan. Den här CSV-filen innehåller information om uppdateringsstatus för de valda referenserna.
+1. Klicka **Uppdatera** för att uppdatera metadata. Ett bekräftelsemeddelande visas för metadatan, oavsett om de har uppdaterats eller inte. Du kan även klicka **Ladda ned rapport** om du vill hämta metadata-CSV-filen från bekräftelsedialogrutan. Den här CSV-filen innehåller information om uppdateringsstatus för de valda referenserna.
 
 ## Generera en multimedierapport
 
-The **Multimedia** rapporten innehåller detaljerad information om de multimedia som används på kartan, till exempel titel, typ \(ljud, video och bilder\), filer som multimedia används i och referenstyp för de filer som de har använts i. Du kan också visa UUID och platsen för multimedia i databasen. Du kan skapa en rapport om multimedia genom att utföra följande steg:
+The **Multimedia** rapporten innehåller detaljerad information om de multimedia som används på kartan, t.ex. titel, typ \(ljud, video och bilder\), filer som multimedia används i och referenstyp för de filer som de har använts i. Du kan också visa UUID och platsen för multimedia i databasen. Du kan skapa en rapport om multimedia genom att utföra följande steg:
 
 1. I **Databas** öppnar du DITA-schemafilen i Kartvyn.
 1. Klicka på **Hantera** -fliken.
@@ -115,17 +114,17 @@ The **Multimedia** rapporten innehåller detaljerad information om de multimedia
 
    - När du beställer **Multimedia**, visas multimedias***namn i den första kolumnen och sedan visas namnen på alla referenser i vilka de har använts i en annan kolumn på samma rad. På följande skärmbild visas multimedia WarmCoolForC.gif i den första kolumnen och tre referenser som den används i visas i den tredje kolumnen på samma rad.
 
-      ![](images/multimedia-report-file-order.png){width="650" align="left"}
+     ![](images/multimedia-report-file-order.png){width="650" align="left"}
 
-   - Om du beställer av **Används i** -kolumnen visas den omformade vyn där namnen på de referenser i vilka multimedia har använts listas i den första kolumnen medan multimedianamnen listas i en annan kolumn på separata rader. På följande skärmbild visas namnen på tre referenser \(Justera platstemperaturen, Ändra visning av platstemperatur och besättningsområde\) i den första kolumnen och multimediafilen WarmCoolForC.gif visas i den tredje kolumnen på tre separata rader.
+   - Om du beställer av **Används i** -kolumnen visas den omformade vyn där namnen på de referenser i vilka multimedia har använts listas i den första kolumnen medan multimedienamnen listas i en annan kolumn på separata rader. På följande skärmbild visas namnen på tre referenser \(Justera platstemperaturen, Ändra visning av platstemperatur och besättningsområde\) i den första kolumnen och multimediafilen WarmCoolForC.gif visas i den tredje kolumnen på tre separata rader.
 
-      ![](images/multimedia-report-used-in-order.png){width="650" align="left"}
+     ![](images/multimedia-report-used-in-order.png){width="650" align="left"}
 
 1. Du kan filtrera multimedia baserat på **Multimediatyp** och **Referenstyp**. Listan med multimediefiler visas baserat på dina val i listrutan. Du kan t.ex. välja att bara visa ljudreferenserna på DITA-kartan, och en fil visar bara de ljudreferenser som används i den.
 
    >[!NOTE]
    >
-   > Beroende på vilken typ av multimedia som används på kartan visas bild, video och ljud i **Multimediatyp** och Direkt eller Indirekt finns i **Referenstyp** listruta.
+   > Beroende på vilken typ av multimedia som används på kartan visas bild, video och ljud i **Multimediatyp** och Direkt eller Indirekt finns i **Referenstyp** nedrullningsbar meny.
 
 1. Du kan också använda följande filtreringsalternativ för att välja att visa följande kolumner i listan:
 
@@ -135,10 +134,9 @@ The **Multimedia** rapporten innehåller detaljerad information om de multimedia
    - **Multimediatyp** \(markerat som standard\) Multimedietyp. De tillgängliga alternativen är Ljud, Video eller Bild.
    - **Används i** \(markerat som standard\) De referenser som multimedia har använts i. Du kan klicka på referensen för att redigera den.
    - **Referenstyp** \(markerat som standard\) Referenstypen - direkt eller indirekt.
-
    >[!NOTE]
    >
-   > Klicka **Uppdatera** om du vill få en ny lista över multimedia och visa alla ändringar i kartfilen eller om några multimedia på din DITA-karta har uppdaterats.
+   > Klicka **Uppdatera** om du vill få en ny lista över multimedia och visa alla ändringar i kartfilen eller om några multimedia på din DITA-karta uppdateras.
 
 1. Du kan också klicka på och spela upp en ljud- eller videofil i Web Editor. Du kan ändra volymen eller vyn för videon. På snabbmenyn har du också möjlighet att hämta, ändra uppspelningshastighet eller visa bild-i-bild.
 
@@ -155,16 +153,16 @@ Du kan visa rapporten för brutna länkar genom att utföra följande steg:
 1. I **Databas** öppnar du DITA-schemafilen i Kartvyn.
 1. Klicka på **Hantera** -fliken.
 1. Dubbelklicka **Brutna länkar** till vänster. Listan med brutna länkar eller referenser i DITA-kartan visas.
-1. Från **Filter** kan du ordna listan efter länkar eller efter namnen som används i referenser.
+1. Från **Filter** kan du sortera listan efter länkar eller efter namnen som används i referenser.
 
    - När du beställer efter **Bruten länk**, visas sökvägarna för de brutna länkarna i den första kolumnen och sedan visas namnen på alla referenser i vilka de har använts i en annan kolumn på separata rader. Om samma brutna länk används i flera filer visas de på en rad och visas som grupperade eller underrader. På följande skärmbild visas tre brutna länkar i den första kolumnen och den referens som de används i: `TestMap.ditamap` visas i den tredje kolumnen på tre separata rader.
    ![](images/broken-link-report.png){width="800" align="left"}
 
-   - Om du beställer via **Används i** -kolumnen visas den omformade vyn där namnen på referenserna där de brutna länkarna har använts listas i den första kolumnen medan de brutna länkarna listas i en annan kolumn på samma rad. I följande skärmbild visas referensen (i vilken den brutna länken används) `TestMap.ditamap` i den första kolumnen och de brutna länkarna visas i den tredje kolumnen på samma rad.
+   - Om du beställer via **Används i** -kolumnen visas den omformade vyn där namnen på referenserna där de brutna länkarna har använts listas i den första kolumnen medan de brutna länkarna listas i en annan kolumn på samma rad. I följande skärmbild visas referensen (i vilken den brutna länken används) `TestMap.ditamap` i första kolumnen och de brutna länkarna visas i tredje kolumnen på samma rad.
    ![](images/broken-link-filter-usedin.png){width="800" align="left"}
 1. Du kan filtrera brutna länkar baserat på **Filtyp** och **Länktyp**. Listan med brutna länkar visas baserat på ditt val i listrutan. Du kan t.ex. välja att bara visa innehållsreferenserna på DITA-kartan, och en fil visar bara de innehållsreferenser som används i den.
 
-   Beroende på vilken typ av referenser som används i kartan visas filreferens, nyckelreferens, innehållsreferens, innehållsnyckelreferens, bildreferens och multimediefilsreferens i **Länktyp** och **DITA-ämne** eller **DITA-karta** visas i **Filtyp** listruta.
+   Beroende på vilken typ av referenser som används i kartan visas filreferens, nyckelreferens, innehållsreferens, innehållsnyckelreferens, bildreferens och multimediefilsreferens i **Länktyp** nedrullningsbara menyer, och **DITA-ämne** eller **DITA-karta** finns listade i **Filtyp** nedrullningsbar meny.
 1. Du kan också använda följande filtreringsalternativ för att välja att visa följande kolumner i listan:
 
    - **Bruten länk** (markerat som standard) Sökvägen till den brutna länken anges i DITA-kartan.
@@ -175,7 +173,7 @@ Du kan visa rapporten för brutna länkar genom att utföra följande steg:
 
    - **Filtyp** (markerat som standard) Referenstypen - DITA-schema eller DITA-ämne.
 Klicka **Uppdatera** om du vill få en ny lista över brutna länkar och visa ändringar i kartfilen eller om någon bruten länk i DITA-kartan uppdateras.
-1. Du kan klicka på **Åtgärda länk** ikon (![](images/fix-broken-link.svg)) för att åtgärda den brutna länken.
+1. Klicka på **Åtgärda länk** ikon (![](images/fix-broken-link.svg)) för att åtgärda den brutna länken.
 
    >[!NOTE]
    >

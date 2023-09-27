@@ -4,9 +4,9 @@ description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager
 hide: true
 hidefromtoc: true
 exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
-source-git-commit: 7fbc6d22fd2f93b7b5bf3233f7ebdd0cb020dda2
+source-git-commit: 23c1dfb405643bd9f5906807dddc4fff3f2e8535
 workflow-type: tm+mt
-source-wordcount: '6038'
+source-wordcount: '6120'
 ht-degree: 0%
 
 ---
@@ -377,7 +377,12 @@ Om du vill använda de redigeringsprogram som är tillgängliga AEM stödlinjern
 
 När du checkar ut en fil lagras den lokalt på datorn och låses för redigering i AEM. Så här checkar du ut en fil:
 
-1. Högerklicka på en fil på panelen AEM stödlinjer.
+1. Du kan checka ut dina filer på något av följande sätt:
+   - Högerklicka på en fil på panelen AEM stödlinjer.
+   - Högerklicka på kartfliken på panelen DITA Maps Manager.
+   - Högerklicka på en fil på DITA Maps Manager-panelen.
+   - Högerklicka på filfliken när du öppnar en karta eller ett ämne i Redigeraren.
+
 1. Välj något av följande alternativ:
    - **Checka ut:** Checkar ut en fil AEM databasen och gör den tillgänglig för redigering.
    - **Checka ut med beroenden**: Checkar ut en fil med dess direkta referenser. Du kan göra ändringar på överordnade och underordnade sidor med det här alternativet. Syrgas-plugin för AEM stödlinjer har stöd för att checka ut en nivå av beroende. Karta A refererar till exempel till ämne A och ämne A refererar till ämne B. Om du checkar ut karta A checkas ämne A ut oavsett nivå i TOC-hierarkin. Ämne B kommer dock inte att checkas ut eftersom det inte är direkt länkat från A-karta.
@@ -403,7 +408,13 @@ När du checkar in en fil lagras den lokala kopian från systemet i AEM och fill
 
 1. Spara filen genom att klicka på **Fil** \> **Spara**.
 
-1. Högerklicka på en utcheckad fil och välj mellan följande två alternativ:
+1. Högerklicka på en utcheckad fil eller karta på någon av följande platser:
+   - AEM stödlinjer, panel
+   - Panelen DITA Maps Manager
+   - Filfliken när du öppnar en karta eller ett ämne i Redigeraren.
+   - Fliken Karta i DITA Maps Manager-panelen.
+
+1. Välj mellan följande två alternativ:
 
    - **Checka in**: Checkar in den valda filen från ditt lokala system i AEM.
    - **Checka in med beroende:** Om du har checkat ut en fil tillsammans med dess underordnade filer, använder du det här alternativet för att checka in alla beroende filer i en enda åtgärd. När du väljer det här alternativet visas dialogrutan Checka in med alla beroende filer. Klicka på OK om du vill checka in alla filer samtidigt.

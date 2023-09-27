@@ -1,10 +1,10 @@
 ---
 title: Skapa ämnen
-description: Lär dig hur du skapar ämnen
+description: Lär dig att skapa typer av DITA-ämnen med hjälp av anpassade mallar i AEM.
 exl-id: 336bbbff-f268-40be-ad3a-9c72923be71b
-source-git-commit: e69665f3c4a0db10365719ac671cbd3ac0c455ec
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Så här skapar du ett ämne:
 
 1. I resursgränssnittet navigerar du till den plats där du vill skapa ämnet.
 
-1. Om du vill skapa ett nytt ämne klickar du på **Skapa** \> **DITA-ämne**.
+1. Skapa ett nytt ämne genom att klicka på **Skapa** \> **DITA-ämne**.
 
 1. Välj den typ av DITA-dokument som du vill skapa på sidan DesignPrint och klicka på **Nästa**.
 

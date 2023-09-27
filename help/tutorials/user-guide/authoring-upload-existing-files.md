@@ -1,17 +1,17 @@
 ---
 title: Överför filer
-description: Lär dig hur du överför filer
+description: Lär dig hur du överför filer till AEM och hanterar fel. Lär dig konsolens användargränssnitt, AEM datorprogram, massinhämtning av resurser och använd FrameMaker för massöverföring.
 exl-id: d6a73953-94dd-4fa5-b09c-5e4c77fead62
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 # Överför filer {#id176FF000JUI}
 
-Det är mest troligt att du har en databas med befintligt DITA-innehåll som du vill använda med AEM stödlinjer. För sådant befintligt innehåll kan du använda någon av följande metoder för att massöverföra ditt innehåll till AEM.
+Det är mest troligt att du har en databas med befintligt DITA-innehåll som du vill använda med AEM stödlinjer. För sådant befintligt innehåll kan du använda någon av följande metoder för att massöverföra ditt innehåll till AEM:
 
 >[!IMPORTANT]
 >
@@ -31,7 +31,7 @@ Om du har storskalig migrering och ibland massimporteringar använder du Resursi
 
 ## Använd FrameMaker för massöverföring
 
-Adobe FrameMaker har en kraftfull AEM som gör det enkelt att ladda upp befintliga DITA-dokument och andra FrameMaker-dokument \(`.book` och `.fm`\) till AEM. Du kan använda olika funktioner för filöverföring, till exempel för att överföra en fil, överföra en hel mapp med eller utan beroenden \(som innehållsreferenser, korsreferenser och bilder\).
+Adobe FrameMaker har en kraftfull AEM som gör det enkelt att ladda upp befintliga DITA-dokument och andra FrameMaker \(`.book` och `.fm`\) till AEM. Du kan använda olika funktioner för filöverföring, till exempel för att överföra en fil, överföra en hel mapp med eller utan beroenden \(som innehållsreferenser, korsreferenser och bilder\).
 
 Mer information om hur du använder massöverföring i FrameMaker finns i avsnittet *Skapa en CRX-mapp och överför filer* i användarhandboken för FrameMaker.
 

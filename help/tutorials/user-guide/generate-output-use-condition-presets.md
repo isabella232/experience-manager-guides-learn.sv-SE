@@ -1,10 +1,10 @@
 ---
 title: Använda förinställningar för villkor
-description: Lär dig hur du använder villkorsförinställningar
+description: Lär dig hur du använder förinställda villkor i AEM. Lär dig att skapa, redigera, kopiera och ta bort förinställningar för villkor i AEM.
 exl-id: cd8f8196-ba03-4a4b-9ce8-2651de4e5cc2
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Så här skapar du en villkorsförinställning:
 1. Klicka **Förinställningar för villkor** i DITA-mappningskonsolen.
 1. Klicka **Skapa** -knappen.
 1. Ange ett namn för förinställningen i **Namnvillkor**.
-1. Välj någon av följande standardåtgärder från **Ange standardåtgärd till** nedrullningsbar meny:
+1. Välj någon av följande standardåtgärder från **Ange standardåtgärd till** nedrullningsbar lista:
 
    - Inkludera
    - Exkludera

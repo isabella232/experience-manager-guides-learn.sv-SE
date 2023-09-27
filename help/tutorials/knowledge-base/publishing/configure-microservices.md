@@ -2,9 +2,9 @@
 title: Konfigurera ny mikrotjänstbaserad publicering för AEM Guides as a Cloud Service
 description: Lär dig hur du konfigurerar ny mikrotjänstbaserad publicering för AEM.
 exl-id: 92e3091d-6337-4dc6-9609-12b1503684cd
-source-git-commit: 92b087c4cb115f0966d20b6b1d9d26839c6e39b7
+source-git-commit: aa71a2b8ff5f83365ff2f3562bb2b77061a3da8e
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ För varje publiceringsbegäran AEM Guides as a Cloud Service körs en separat b
 
 >[!NOTE]
 >
-> Microservice-baserad publicering i AEM Guides har stöd för PDF (både Native- och DITA-OT-baserade), HTML5 och anpassade utdatapunkter.
+> Microservice-baserad publicering i AEM Guides har stöd för PDF (både Native- och DITA-OT-baserade), HTML5, JSON och CUSTOM-baserade utdatapresentationer.
 
 Eftersom den nya molnpubliceringstjänsten skyddas av Adobe IMS JWT-baserad autentisering bör kunderna följa stegen nedan för att integrera sina miljöer med Adobe säkra tokenbaserade autentiseringsarbetsflöden och börja använda den nya molnbaserade, skalbara publiceringslösningen.
 
@@ -34,7 +34,7 @@ Så här skapar du IMS-konfigurationer i Adobe Developer Console:
 
    <img src="assets/projects-tab.png" alt="fliken Projekt" width="500">
 
-1. Om du vill skapa ett nytt tomt projekt väljer du **Tomt projekt** från **Skapa nytt projekt** listruta.
+1. Om du vill skapa ett nytt tomt projekt väljer du **Tomt projekt** från **Skapa nytt projekt** nedrullningsbar meny.
 
    <img src="assets/create-new-project.png" alt="skapa nytt projekt" width="500">
 
@@ -44,7 +44,7 @@ Så här skapar du IMS-konfigurationer i Adobe Developer Console:
 
    <img src="assets/io-management-api.png" alt="iohantering" width="500">
 
-1. Skapa ett nytt privat/offentligt nyckelpar när du lägger till API:t. Den privata nyckeln hämtas automatiskt till ditt system.
+1. Skapa ett nytt nyckelpar för privat/offentlig nyckel när du lägger till API:t. Då hämtas den privata nyckeln automatiskt till ditt system.
 
    <img src="assets/generate-key-pair.png" alt="generera nyckelpar" width="500">
 
@@ -56,7 +56,7 @@ Så här skapar du IMS-konfigurationer i Adobe Developer Console:
 
    <img src="assets/project-overview.png" alt="projektöversikt" width="500">
 
-1. Klicka **Hämta** överst för att hämta JSON-tjänsten.
+1. Klicka **Ladda ned** överst för att hämta JSON-tjänsten.
 
    <img src="assets/download-json.png" alt="ladda ned json" width="500">
 

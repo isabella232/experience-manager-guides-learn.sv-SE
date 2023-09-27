@@ -1,10 +1,10 @@
 ---
 title: Skapa ett DITA-projekt
-description: Lär dig hur du skapar ett DITA-projekt
+description: Skapa ett DITA-projekt med hjälp av en mall i AEM. Lär dig hur du använder ett DITA-projekt för att initiera granskningarna.
 exl-id: 6dc88ac4-249a-4da2-9787-a58370e281ca
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 AEM Guides innehåller en DITA-projektmall som du kan använda för att skapa och hantera granskningsåtgärder.
 
-Du kan skapa ett DITA-projekt och sedan använda det för att starta granskningarna. Med ett projekt kan du definiera en deadline och styra de uppgifter och den tid som krävs för att slutföra den granskningsuppgift som du har skapat projektet för.
+Du kan skapa ett DITA-projekt och sedan använda det för att starta granskningarna. Med ett projekt kan du definiera en deadline och styra de uppgifter och den tid som krävs för att slutföra den granskningsåtgärd som du har skapat projektet för.
 
 Du kan lägga till teammedlemmar i ett projekt som sedan kan tilldelas olika roller - Författare, Granskare och Utgivare.
 
@@ -48,7 +48,8 @@ Så här skapar du ett DITA-projekt:
    - Du kan också välja en miniatyrbild för projektet.
 
    - Som standard blir du projektägare. Så här lägger du till fler användare i det här projektet:
-   1. Ange eller välj en användare på **Användare** nedrullningsbar lista.
+
+   1. Ange eller välj en användare på menyn **Användare** listruta.
 
    1. Välj en användartyp - Författare, Granskare eller Utgivare.
 
@@ -61,11 +62,10 @@ Så här skapar du ett DITA-projekt:
       >[!NOTE]
       >
       >Om du använder AEM Guides version 3.5 eller tidigare visas ett alternativ för att välja en DITA-kartfil för att lösa nyckelreferenser för ämnesredigering, förhandsgranskning och granskningsarbetsflöden. I 3.6 och senare versioner kan du ange rotkartan via webbredigeraren. Mer information finns i [Användarinställningar](web-editor-features.md#id2087G0P40SB) i webbredigeraren. Ett annat sätt att ställa in rotkartan är att konfigurera den på global nivå eller på mappnivå. Mer information finns i *Konfigurera globala profiler eller profiler på mappnivå* i installations- och konfigureringshandboken.
+
    Information i **Avancerat** tab:
 
    - Ange ett namn för projektet. Det här namnet används för att skapa URL:en för det här projektet.
-
-
 
 1. Klicka **Skapa**.
 

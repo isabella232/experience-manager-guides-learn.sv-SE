@@ -1,9 +1,9 @@
 ---
 title: Publicera ett ämne till ett innehållsfragment
-description: Lär dig hur du publicerar ett ämne till ett innehållsfragment.
-source-git-commit: dd677257d94015d888705e4b6a43ae877e58be4b
+description: Publicera ett ämne eller elementen i ett ämne till ett innehållsfragment i AEM.  Lär dig hur du visar innehållsfragment för ett ämne och publicerar dem på nytt.
+source-git-commit: 6143bdcb4c8a9e1f35ea752cf1be142ab98a716b
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Skapa och hantera baslinjer från Web Editor
-description: Lär dig hur du skapar och hanterar baslinjer i Web Editor
+description: Skapa och hantera baslinjer från webbredigeraren i AEM. Lär dig hur du skapar baslinjer baserat på etiketter och tillämpar filter på baslinjerna.
 exl-id: 9e390489-16f5-4f9a-a821-5150a66c2ed4
-source-git-commit: 906b1db461d343568b43195113dbc37ef5f88341
+source-git-commit: 361c605bdf02fb3b8754c6596a70e86a00acb3db
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
@@ -78,21 +78,28 @@ Du kan hantera befintliga baslinjer med hjälp av de olika funktionerna på kont
 
 - Du kan söka efter en befintlig baslinje med textrutan på panelen Baslinje. Använd **Använd filter** om du vill visa alla baslinjer eller visa baslinjer med status Slutfört, Pågående eller Misslyckat när de skapas.
 - Använd **Uppdatera** på panelen Baslinje om du vill kontrollera om det finns alla baslinjer och visa en ny lista med baslinjer för DITA-kartan som öppnas i Kartvyn.
-- Du kan visa eller redigera innehållet i en befintlig baslinje genom att dubbelklicka på baslinjen i listan på panelen Baslinje. Baslinjeredigeringsfönstret i mitten visar DITA-kartfilen, kartans innehåll eller ämnen samt det refererade innehållet.
+- Du kan visa eller redigera innehållet i en befintlig statisk baslinje genom att dubbelklicka på baslinjen i listan på panelen Baslinje. Baslinjeredigeringsfönstret i mitten visar DITA-kartfilen, kartans innehåll eller ämnen samt det refererade innehållet.
 
 
-![](images/baseline-options.png){width="550" align="left"}
+  ![alternativ för en baslinje](images/baseline-options.png){width="800" align="left"}
 
 Du kan även utföra följande åtgärder på baslinjen på Alternativ-menyn:
 
-- **Redigera**, **Duplicera,** eller **Ta bort** en befintlig baslinje.
-- Lägg till, ta bort eller ändra befintliga etiketter från **Hantera etiketter** alternativ. Om administratören har konfigurerat fördefinierade etiketter visas dessa i listrutan Lägg till etikett. Mer information om hur du lägger till etiketter finns i [Använd etiketter](web-editor-use-label.md#).
+- **Redigera**, **Duplicera,** **Byt namn**, eller **Ta bort** en befintlig baslinje.
+
+  >[!NOTE]
+  >
+  >Redigeringsåtgärden för statiska baslinjer rekommenderas bara för ett litet antal referensändringar. Redigeringsåtgärden rekommenderas inte för att ändra versionen av DITA-huvudkartan eftersom alla referenser måste beräknas om. Detta kan orsaka ett baslinjeuppdateringsfel för stora DITA-kartor. För större DITA-scheman kan du skapa en ny baslinje eller redigera egenskaperna för baslinjen.
+  >
+  >Redigera om det är en dynamisk baslinje kan du redigera egenskaperna för baslinjen eftersom referenserna för dynamiska baslinjer genereras vid körning med hjälp av etiketterna.
+
+- Lägg till, ta bort eller ändra befintliga etiketter från **Hantera etiketter** för statiska baslinjer. Om administratören har konfigurerat fördefinierade etiketter visas dessa i listrutan Lägg till etikett. Mer information om hur du lägger till etiketter finns i [Använd etiketter](web-editor-use-label.md#).
 
   >[!NOTE]
   >
   > Processen att lägga till eller ta bort etiketter sker asynkront, så du kan fortsätta arbeta med andra filer i Web Editor. När etiketten har lagts till eller tagits bort visas ett popup-meddelande som bekräftar att etiketten har lagts till eller tagits bort, och du får även ett inkorgsmeddelande om detta.
 
-- **Redigera egenskaper** av en befintlig baslinje som du har angett när du skapade baslinjen.
+- **Redigera egenskaper** av en befintlig statisk baslinje som du har angett när du skapade baslinjen.
 - Exportera ögonblicksbilden av en baslinje i en CSV-fil med **Exportera baslinje** alternativ.
 
 **Baslinjefilter**

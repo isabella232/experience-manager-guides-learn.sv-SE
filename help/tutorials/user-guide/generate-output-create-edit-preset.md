@@ -1,17 +1,17 @@
 ---
 title: Skapa, redigera, duplicera eller ta bort en förinställning för utdata
-description: Lär dig hur du skapar, redigerar, duplicerar eller tar bort en förinställning för utdata
+description: Lär dig hur du skapar, redigerar, duplicerar och tar bort en anpassad förinställning AEM stödlinjer.
 exl-id: 6ed4f028-da96-4383-9d5c-06b94d6661c0
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Skapa, redigera, duplicera eller ta bort en förinställning för utdata {#id205BEH0K09Z}
 
-## Skapa en anpassad förinställning
+## Skapa en anpassad förinställning för utdata
 
 Så här skapar du en anpassad förinställning för utdata:
 
@@ -70,7 +70,7 @@ Så här tar du bort en befintlig förinställning:
 
 1. Klicka på Ta bort förinställning.
 
-1. Klicka på Ta bort på bekräftelsemeddelandet.
+1. Klicka på Ta bort på bekräftelserutan.
 
    Förinställningen tas bort från listan Utdataförinställningar.
 

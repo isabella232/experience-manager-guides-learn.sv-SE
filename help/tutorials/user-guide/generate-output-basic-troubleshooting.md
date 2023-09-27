@@ -1,10 +1,10 @@
 ---
 title: Grundläggande felsökning
-description: Lär dig grundläggande felsökning
+description: Lös problem med grundläggande felsökning i AEM. Lär dig att visa, kopiera och kontrollera loggfilen i en textredigerare och åtgärda JSP-kompileringsfel.
 exl-id: b5ab2618-6f11-4aaa-8471-09521f8bb512
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Utför följande steg för att visa och kontrollera loggfilen för generering av
    ![](images/log-file.png){width="800" align="left"}
 
 1. Använd följande filter för att markera texten i loggfilen:
-   - Allvarligt: Markerar de allvarliga felen i loggfilen med rosa färg.
+   - Allvarligt: markerar de allvarliga felen i loggfilen med rosa färg.
    - Fel: Markerar felen i loggfilen med orange färg.
    - Varning: Markerar varningarna i loggfilen med lila färg.
    - Info: Markerar informationsmeddelanden i loggfilen med blå färg.
@@ -61,11 +61,11 @@ Så här kopierar och kontrollerar du loggfilen för generering av utdata i en t
 
    - *DITA-mappningsfilrelaterat fel*: Om ett fel påträffas i DITA-kartfilen eller i någon annan fil som finns i DITA-kartan innehåller loggfilen strängen &quot;BUILD FAILED&quot;. Du kan kontrollera informationen i loggfilen för att hitta den felaktiga filen och åtgärda problemet.
 
-   I följande exempelavsnitt av loggfilen visas `BUILD FAILED` tillsammans med orsaken till felet.
+   I följande exempelavsnitt av loggfilen visas `BUILD FAILED` meddelandet tillsammans med orsaken till felet.
 
    ![](images/dita-error-in-log-file.png){width="650" align="left"}
 
-   - *AEM Guides-relaterat fel*: Den andra typen av fel som du kan identifiera i loggfilen har att göra med själva AEM. I det här fallet tolkas DITA-mappningsfilen, men utdatagenereringsprocessen misslyckas på grund av ett internt fel i AEM. För sådana fel måste du be om hjälp från det tekniska supportteamet.
+   - *AEM Guides-relaterat fel*: Den andra typen av fel som du kan identifiera i loggfilen är relaterat till själva AEM. I det här fallet tolkas DITA-mappningsfilen, men utdatagenereringsprocessen misslyckas på grund av ett internt fel i AEM. För sådana fel måste du be om hjälp från det tekniska supportteamet.
 
    I följande exempelavsnitt av loggfilen visas `BUILD SUCCESSFUL` meddelande, följt av ett annat tekniskt fel.
 

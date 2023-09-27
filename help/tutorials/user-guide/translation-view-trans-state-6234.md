@@ -1,10 +1,10 @@
 ---
 title: Visa översättningsstatus
-description: Lär dig hur du visar översättningsstatus
+description: Lär dig hur du visar översättningsstatus och översatta språkkopior för varje ämne i en DITA-karta i AEM.
 exl-id: 2662d86e-5ebd-4f41-a1e9-5bf4c96ffce2
-source-git-commit: d87a2e054310e3421dcbf347232a420638823b93
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,6 @@ Utför följande steg för att visa översättningsstatusen för en DITA-karta:
 
    >[!NOTE]
    >
-   > Du kan filtrera innehållet ytterligare baserat på översättningsstatus \(som Saknad kopia, Pågår eller Synkroniserad saknas), källtyp \(som Alla, DITA, DITA-karta eller Resurs\), ändringsdatum. Du kan också ange nyckelord för att söka efter specifika ämnen.
+   > Du kan filtrera innehållet ytterligare baserat på översättningsstatus \(som Saknad kopia, Pågår eller In-sync\), källtyp \(som Alla, DITA, DITA-karta eller Resurs\), ändringsdatum. Du kan också ange nyckelord för att söka efter specifika ämnen.
 
 **Överordnat ämne:**[&#x200B;Översätta innehåll](translation.md)

@@ -1,23 +1,23 @@
 ---
 title: Om Adobe Experience Manager Guides
-description: Lär dig hur du använder Adobe Experience Manager Guides as a Cloud Service
+description: Läs mer om Adobe Experience Manager Guides, en DITA-baserad lösning för innehållshantering i enterpriseklass. Lär dig AEM Guides.
 exl-id: c55429d9-ce2a-4dbf-b780-377b1372b828
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 0a50a6bd2ae2d2efea50f8ff4d70f614870f5899
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
 # Om Adobe Experience Manager Guides {#id1645E0A50MY}
 
-Adobe Experience Manager Guides \(kallas *AEM stödlinjer* senare i den här guiden är en kraftfull innehållshanteringslösning för komponenter i enterpriseklass \(CCMS\). Det finns i två versioner - lokal och molntjänst. Det möjliggör inbyggt DITA-stöd i Adobe Experience Manager, vilket gör det möjligt för AEM att hantera DITA-baserad framtagning och leverans av innehåll. Det gör det möjligt för skribenter att skapa innehåll med en lättanvänd inbyggd webbredigerare.
+Adobe Experience Manager Guides \(kallas *AEM stödlinjer* senare i den här guiden är en kraftfull innehållshanteringslösning \(CCMS\) för större företag. Det finns i två versioner - lokal och molntjänst. Det möjliggör inbyggt DITA-stöd i Adobe Experience Manager, vilket gör det möjligt för AEM att hantera DITA-baserad framtagning och leverans av innehåll. Det gör det möjligt för skribenter att skapa innehåll med en lättanvänd inbyggd webbredigerare.
 
 AEM Guides innehåller alla centrala CCMS-funktioner, som redigering, samarbete, granskning, översättning, sökning, rapporter och metadatahantering för DITA-innehåll, vilket gör att skribenterna kan göra mer på kortare tid genom effektiv återanvändning av innehåll och kraftfulla arbetsflöden. Dessutom kan man med ett enda klick skapa DITA-baserade utdata för de vanligaste formaten - Adobe Experience Manager Sites, PDF, HTML 5, EPUB och skräddarsydda utdata via DITA-OT.
 
 Med AEM Guides kan företag leverera sömlösa och personaliserade upplevelser till slutanvändare och säkerställa enhetlighet och enhetlighet i pre- och post-sales-innehåll. Det är enkelt att få fullständig kontroll över innehållets integritet. Dessutom minskar lokaliseringstiden och kostnaderna avsevärt.
 
-## Fördelar i korthet
+## I korthet
 
 - Enhetlig innehållsupplevelse för- och efterinköp för slutanvändare
 

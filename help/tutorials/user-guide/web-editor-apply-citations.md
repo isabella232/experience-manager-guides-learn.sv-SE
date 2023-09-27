@@ -1,9 +1,9 @@
 ---
 title: Lägga till och hantera citat i ditt innehåll
-description: Lär dig hur du implementerar referenser genom att lägga till och tillämpa citat i ditt innehåll.
-source-git-commit: 85eb0228908134080f3f1e2644f3f7c37b8d7497
+description: Lägg till och hantera citat i AEM. Lär dig hur du använder, importerar, filtrerar, söker, ändrar format för citat, redigerar, förhandsgranskar, infogar, tar bort och genererar innehållsutdata med citationer.
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1877'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Citat är referenser till den informationskälla som har lagts till i innehålle
 I AEM kan du lägga till och importera citat och använda dem i ditt innehåll. Du kan lägga till dessa citat från alla typer av böcker, webbplatser och journaler.
 
 
-AEM hjälper dig att redigera, förhandsgranska och sortera dina citat. När du har lagt till dina citat i innehållet kan du generera utdata med PDF. Du kan också lägga till litteraturförtecknings- eller referenssidan i utdata från PDF.
+AEM hjälper dig att redigera, förhandsgranska och sortera dina citat. När du har lagt till dina citat i innehållet kan du generera utdata med hjälp av PDF. Du kan också lägga till litteraturförtecknings- eller referenssidan i utdata från PDF.
 
 AEM Guides har stöd för många olika typer av citationer, som Modern Language Association (MLA), American Psychological Association (APA), Chicago, Institute for Electrical and Electronics Engineers (IEEE) och American Heart Association (AHA). Rekommendationen är att använda dem tydligt och konsekvent.
 

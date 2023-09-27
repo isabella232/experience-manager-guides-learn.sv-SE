@@ -1,10 +1,10 @@
 ---
 title: Arbeta med syre
-description: Lär dig hur du arbetar med syre
+description: Läs om stödet för redigering och publicering av innehåll i AEM Guides.
 exl-id: 9fc690a6-fee3-4315-ad86-256cedb7b7d6
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '80'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ Du kan producera utdata i PDF, ePub, HTML och många andra format med samma käl
 
 *Kontakta kundgruppen för att aktivera den här funktionen i miljön. Detta är inte aktiverat som en del av det färdiga stödet.*
 
-**Överordnat ämne:**[ Skapa innehåll med skrivbordsverktyg](author-desktop-tools.md)
+**Överordnat ämne:**[ Skapa innehåll med hjälp av skrivbordsverktyg](author-desktop-tools.md)

@@ -1,10 +1,10 @@
 ---
 title: Arbeta med den grundläggande kartredigeraren
-description: Lär dig hur du arbetar med den grundläggande kartredigeraren
+description: Lär dig hur du arbetar med den grundläggande redigeringsprogrammet för kartor i AEM. Lär dig funktionerna i den grundläggande kartredigeraren på mappnivå och ämnesnivå. Skapa och redigera relationstabeller i en DITA-karta.
 exl-id: 85194806-db3f-442b-a551-540d148d26ec
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ I huvudverktygsfältet i redigeraren för grundläggande kartor kan du utföra f
 
 ![](images/ditamap-toolbar-actions.png){width="800" align="left"}
 
-**S: Sök**
+**A: Sök**
 
 Du kan söka efter och ta med de ämnen som behövs från DAM. Om du klickar på den här ikonen visas dialogrutan Sök:
 
@@ -104,7 +104,7 @@ I **Standardläge** Om du klickar på en ämneslänk visas förhandsgranskningen
 
 **G: Kartegenskaper**
 
-Visa dialogrutan Kartegenskaper där du kan ange attribut och metadatainformation för kartan. Om du vill lägga till ett attribut klickar du på **Lägg till** längst ned till vänster i dialogrutan för att få fram **Attribut** nedrullningsbar lista. Välj det attribut du vill lägga till i listan. Om det markerade attributet har fördefinierade värden som anges i DTD:n visas dessa värden i en ny listruta. Du kan välja önskat värde i listrutan. Om det inte finns något fördefinierat värde visas en textruta där du kan ange ett värde för det valda attributet.
+Visa dialogrutan Kartegenskaper där du kan ange attribut och metadatainformation för kartan. Om du vill lägga till ett attribut klickar du på **Lägg till** längst ned till vänster i dialogrutan för att få fram **Attribut** listruta. Välj det attribut du vill lägga till i listan. Om det markerade attributet har fördefinierade värden som anges i DTD:n visas dessa värden i en ny listruta. Du kan välja önskat värde i listrutan. Om det inte finns något fördefinierat värde visas en textruta där du kan ange ett värde för det valda attributet.
 
 ![](images/map-properties.png){width="300" align="left"}
 
@@ -114,7 +114,7 @@ När du placerar muspekaren över ett ämne eller en undermappsfil i redigeraren
 
 ![](images/ditamap-actions.png){width="650" align="left"}
 
-**S: Flytta åt vänster eller Flytta åt höger**
+**A: Flytta åt vänster eller Flytta åt höger**
 
 Klicka på vänster- eller högerpilsikonerna för att flytta ämnet åt vänster eller höger. Om du flyttar ett ämne på ett sådant sätt blir det ett underordnat \(kapslat\) eller syskon \(ta bort kapsling\) med avseende på ämnet ovan.
 
@@ -149,7 +149,7 @@ Utför följande steg när du vill arbeta med relationstabeller i redigeraren f�
    >
    > På fliken Ämnen kan du hämta kartfilen med tillhörande beroenden. Mer information finns i [Exportera en DITA-kartfil](authoring-download-assets.md#id218UBA00IXA).
 
-1. Klicka på **Redigera**.
+1. Klicka på i huvudverktygsfältet **Redigera**.
 
    Kartfilen öppnas i den grundläggande kartredigeraren.
 
@@ -186,6 +186,6 @@ Om du vill ta bort ett ämne från tabellen klickar du på kryssikonen bredvid �
 
 **Ta bort relationstabellen**
 
-Om du vill ta bort relationstabellen klickar du var som helst utanför relationstabellen och klickar på Ta bort.
+Om du vill ta bort relationstabellen klickar du utanför relationstabellen och klickar på Ta bort.
 
 **Överordnat ämne:**[ Arbeta med kartredigeraren](map-editor.md)

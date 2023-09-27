@@ -1,10 +1,10 @@
 ---
 title: Hantera publiceringsuppgifter med Publish Dashboard
-description: Lär dig hur du hanterar publiceringsuppgifter med hjälp av Publish Dashboard
+description: Hantera publiceringsuppgifter med Publish Dashboard i AEM Guides. Lär dig hur du kommer åt kontrollpanelen för publicering och avbryter en publiceringsåtgärd.
 exl-id: 5ede608d-f905-44b7-9147-ab678ad68ee7
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Kontrollpanelen för publicering innehåller följande information:
 
 - **Filnamn** - Filnamnet på DITA-kartan.
 
-- **Förinställning för utdata** - Namnet på den förinställning som används för att generera utdata.
+- **Utdatainställning** - Namnet på den förinställning som används för att generera utdata.
 
 - **Initierad av** - Användarnamn för den användare som initierade publiceringsaktiviteten.
 
@@ -35,9 +35,9 @@ Kontrollpanelen för publicering innehåller följande information:
 
 Den vänstra panelen på kontrollpanelen Publicera innehåller följande filtreringsalternativ:
 
-- **Förinställning för utdata** - Välj en eller flera förinställningar som du vill visa de aktuella publiceringsåtgärderna för. På följande skärmbild filtreras publiceringsaktiviteterna så att de endast visar de uppgifter som använder AEM webbplatsens utdataförinställning:
+- **Utdatainställning** - Välj en eller flera förinställningar som du vill visa de aktuella publiceringsåtgärderna för. På följande skärmbild filtreras publiceringsaktiviteterna så att de endast visar de uppgifter som använder AEM webbplatsens utdataförinställning:
 
-   ![](images/publish-dashboard-preset-filter.png){width="800" align="left"}
+  ![](images/publish-dashboard-preset-filter.png){width="800" align="left"}
 
 - **Initierad av** - Välj ett användarnamn i listan för att visa de publiceringsåtgärder som har initierats av den valda användaren.
 

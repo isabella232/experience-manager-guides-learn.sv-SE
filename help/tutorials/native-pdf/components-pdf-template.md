@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 90cd3c53fd8da0b987c99950dd37d405bea12c6e
+source-git-commit: 5abcc887a24d838caabdf9a34a84ebc851ed4cbf
 workflow-type: tm+mt
-source-wordcount: '4160'
+source-wordcount: '4376'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ I mittpanelen kan du redigera egenskaperna, men det kan vara svårt att få en �
 På mittpanelen kan du redigera de vanligaste egenskaperna, men inte alla de egenskaper som CSS stöder. I **Egenskaper** kan du redigera alla egenskaper som CSS har stöd för och förhandsgranska dem. Du behöver inte växla till källvyn för att redigera några egenskaper.
 
 
-Läs mer om hur du använder formateditorn för att [Arbeta med vanliga innehållsformat](stylesheet.md).
+Läs mer om hur du använder formateditorn för att [arbeta med vanliga innehållsformat](stylesheet.md).
 
 ## Arbeta med resurser {#work-with-resources}
 
@@ -219,6 +219,7 @@ Ange de grundläggande konfigurationsinställningarna för att starta ett kapite
 
   Här ser du att det första kapitlet Avancerade PDF-inställningar inte får något sidnummer, som det har kapslade eller underordnade avsnitt. Ett sidnummer om det tilldelas till Bilaga och Rättslig information eftersom de är fristående ämnen utan något underordnat ämne.
 
+* **Visa inte kapitelnummer i innehållsförteckningen** : Välj det här alternativet om du vill visa kapitelnamnen utan kapitelnumren i innehållsförteckningen.   Som standard visas kapitelnumren i innehållsförteckningen för dina PDF-utdata.
 * **Ledarformat**: Använd listrutan för att välja prickade, heldragna eller mellanslag för att koppla rubriknivåer till motsvarande sidnummer.
 Information om hur du använder rubriknivåer för innehållsförteckningens struktur och format finns i [Lägga till en kapitelinnehållsförteckning](design-page-layout.md#add-chapter-toc).
 
@@ -232,8 +233,14 @@ Du kan definiera texten som ska visas före och efter brytningen. En tabell bryt
   Använd språkvariabler för att definiera fortsättningsmarkörtexten före och efter brytningen. Beroende på vilket språk du väljer hämtas det lokaliserade värdet automatiskt i utdata från PDF. Du kan till exempel publicera `Continued on page %page-num%` som en text på engelska och `Fortsetzung auf Seite %page-num%` på tyska.
 
   Hovring <img src="./assets/info-details.svg" alt= "informationsikon" width="25"> nära alternativet om du vill visa mer information om det.
+* **Länka ordlistetermer till ordbokssidan**: Välj det här alternativet om du vill visa ordlistorna som hyperlänkar i innehållet och länka dem till termerna på ordlistan. Det gör att läsarna snabbt kan se definitionen av en term som definierats i ordlistan.
 
-<!--For more information on using table continuation markers, see Use table continuation markers.-->
+  Om du vill konvertera ordlistan till hyperlänkar måste du:
+   * Aktivera **Ordlista** i **Sidordning** för en DITA-karta.
+   * Lägg till ordlistan på sidan Bakåt Matcha sidor för en bokkarta.
+
+  Om du inte aktiverar ordbokssidan konverteras inte de ordlistliga termerna i innehållet till hyperlänkar i utdata från PDF.
+  <!--For more information on using table continuation markers, see Use table continuation markers.-->
 
 ### Sidlayouter {#page-layouts}
 
@@ -256,7 +263,13 @@ Följande inställningar är tillgängliga under avsnittet Sidlayout:
 
 * **Figurförteckning och förteckning över tabeller**: Du kan också ange sidlayout för figurer och tabeller. Den valda layouten används på alla figurer och tabeller.
 
-* **Index och ordlista**: Om du har utformat en indexsidlayout kan du mappa den till alternativet Index. Om du har en ordlistepalett kopplar du den till alternativet Ordlista.
+* **Index**: Om du har utformat en indexsidlayout kan du mappa den till alternativet Index. Med formatmallarna kan du formatera olika indexelement i utdata från PDF. Använda indexformat `.idx-header`, `.idx-footer`, `.idx-body`, `.idx-title`, `.idx-keyword-group`, `.idx-unit`,  `.idx-keyword`, `.idx-name`, `.idx-link` och `.idx-child` om du vill anpassa formaten för indexelementen.
+
+* **Ordlista**: Om du har en ordlista mappas den till alternativet Ordlista.  Termerna i ordlistan för dina PDF-utdata sorteras alltid i alfabetisk ordning.
+
+  Med formatmallarna kan du formatera olika ordlisteelement i utdata från PDF. Använda ordlisteformat `.glo-header`, `.glo-footer`, `.glo-body`, `.glo-title`, `.glo-unit`, `.glo-link`och `.glo-term` om du vill anpassa formaten för ordlistans element.
+
+  Läs mer om hur du använder formateditorn för att [arbeta med vanliga innehållsformat](stylesheet.md).
 
 * **Sidor med inledande och bakre innehåll**: Dessa sidlayouter definierar formatet för framsidan eller baksidan av boken. Om du har utformat layouten på framsidan kan du mappa den till **Front Matter Pages** alternativ. När du väljer layouten på framsidan i listrutan används layouten på alla ämnen som finns på framsidan.
 
@@ -290,7 +303,7 @@ Du kan visa eller dölja följande avsnitt i PDF och även ordna i vilken ordnin
 
   Om du inte vill visa ett visst avsnitt i utdata för PDF kan du dölja det genom att stänga av växlingsknappen.
 
-  Du kan också ange i vilken ordning de olika avsnitten ska skapas i PDF. Om du vill ändra standardordningen för de här avsnitten markerar du de prickade strecken för att dra och släppa avsnitten på önskad plats.
+  Du kan också ange i vilken ordning de olika avsnitten ska genereras i PDF. Om du vill ändra standardordningen för de här avsnitten markerar du de prickade strecken för att dra och släppa avsnitten på önskad plats.
 
   >[!NOTE]
   >
@@ -298,7 +311,7 @@ Du kan visa eller dölja följande avsnitt i PDF och även ordna i vilken ordnin
 
 
 .
-**Kapitel och ämnen** layout är alltid aktiverat och **Ordlista** layout är alltid inaktiverat som standard. Du kan inte växla dem.
+**Kapitel och ämnen** layout är alltid aktiverat som standard. Du kan inte växla den.
 
 **Sammanfoga sidor**
 

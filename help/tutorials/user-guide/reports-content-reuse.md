@@ -1,10 +1,10 @@
 ---
 title: Återanvänd innehåll - rapport
-description: Lär dig hur man återanvänder innehåll
+description: Lär dig hur du visar rapporten för återanvändning av innehåll i AEM. Generera rapporten för att hitta procentsatsen för återanvändning av innehåll.
 exl-id: 658ae0fd-9032-4480-b9e4-fe4fec261e72
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,11 @@ Utför följande steg för att visa rapporten för återanvändning av innehåll
 
    - **Rapportsammanfattning:**
 
-      Visar en lista över genomsnittlig återanvändning av innehåll, som beräknas som Instansen för återanvändning av innehåll/totalt ämnesantal. Den här rapporten tar hänsyn till alla direkta innehållsreferenser på första nivån och ämnesreferenser för beräkning. Instanserna för återanvändning av innehåll beräknas som summan av värdena i fältet Antal gånger som återanvänds. Det ämne som återanvänds mest finns också med i rapportsammanfattningen. Om du klickar på ämneslänken i det mest återanvända ämnet öppnas ämnesens förhandsgranskning.
+     Visar en lista över genomsnittlig återanvändning av innehåll, som beräknas som Instansen för återanvändning av innehåll/totalt ämnesantal. Den här rapporten tar hänsyn till alla direkta innehållsreferenser på första nivån och ämnesreferenser för beräkning. Instanserna för återanvändning av innehåll beräknas som summan av värdena i fältet Antal gånger som återanvänds. Det ämne som återanvänds mest finns också med i rapportsammanfattningen. Om du klickar på ämneslänken i det mest återanvända ämnet öppnas ämnesens förhandsgranskning.
 
    - **Information:**
 
-      Avsnittet Detaljer innehåller följande kolumner:
+     Avsnittet Detaljer innehåller följande kolumner:
 
       - **Titel**: Ämnets namn. Om du klickar på ämneslänken öppnas ämnesförhandsgranskningen.
 

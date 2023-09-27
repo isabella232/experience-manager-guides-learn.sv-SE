@@ -1,10 +1,10 @@
 ---
 title: Statusrapport för konvertering
-description: Lär dig hur du konverterar statusrapport
+description: Konvertera dokument i olika format till DITA i AEM. Lär dig hur du lägger till filter och visar en konverteringsstatusrapport.
 exl-id: 41887af2-404f-41d7-b54c-ec49797200f0
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -29,23 +29,23 @@ Följ de här stegen för att visa rapporten om konverteringsstatus:
 
    - **Filter:**
 
-      Du kan filtrera rapportdata baserat på filtyp och konverteringsstatus. I filtypen kan du välja att visa rapportdata för Word-dokument, dokument av typen strukturerad HTML, XML och DocBook. I Status kan du välja att visa rapportdata för aktiviteter som har körts utan fel, misslyckats, aktiverats eller placerats i kö.
+     Du kan filtrera rapportdata baserat på filtyp och konverteringsstatus. I filtypen kan du välja att visa rapportdata för Word-dokument, dokument av typen strukturerad HTML, XML och DocBook. I Status kan du välja att visa rapportdata för aktiviteter som har körts utan fel, misslyckats, aktiverats eller placerats i kö.
 
-      På följande skärmbild visas rapportdata för konverteringsåtgärder som har statusen Misslyckad, Aktiv och Köad.
+     På följande skärmbild visas rapportdata för konverteringsåtgärder som har statusen Misslyckad, Aktiv och Köad.
 
-      ![](images/conversion-report-failed-active-queued.png){width="800" align="left"}
+     ![](images/conversion-report-failed-active-queued.png){width="800" align="left"}
 
    - **Rapportdata:**
 
-      Rapportdata innehåller följande kolumner:
+     Rapportdata innehåller följande kolumner:
 
-      - **Filnamn**: Namnet på källfilen som konverteringsprocessen kördes på. När du klickar på länken Filnamn kommer du till källdokumentets plats.
+      - **Filnamn**: Namnet på källfilen som konverteringen kördes på. När du klickar på länken Filnamn kommer du till källdokumentets plats.
 
       - **Filtyp**: Typ av källdokument, som kan vara Word, strukturerad HTML, XML och DocBook.
 
       - **Tillagd av**: Namnet på den användare som utförde konverteringsåtgärden.
 
-      - **Tillagt den**: Datum när uppgiften kördes. Loggfilen hämtas när du klickar på länken Tillagt den.
+      - **Tillagt den**: Det datum då uppgiften kördes. Loggfilen hämtas när du klickar på länken Tillagt den.
 
       - **Bana**: Källdokumentets fullständiga sökväg.
 

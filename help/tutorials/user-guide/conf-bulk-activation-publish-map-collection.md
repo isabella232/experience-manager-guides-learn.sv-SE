@@ -1,10 +1,10 @@
 ---
 title: Aktivera utdata
-description: Lär dig hur du aktiverar utdata
+description: Aktivera utdata för DITA-kartor i AEM. Lär dig hur du aktiverar ditt innehåll på publiceringsinstansen.
 exl-id: a3b6cfed-813e-433c-891f-bb0715e7b94a
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,7 @@ När du har skapat en kartsamling för massaktivering är nästa steg att aktive
 
    - Om du vill aktivera utdata för markerade kartor markerar du karfilerna och klickar på **Snabbpublicering**.
    - Om du vill aktivera utdata för alla DITA-kartor med deras konfigurerade förinställningar markerar du kryssrutan bredvid kartan \(kolumn\) och klickar sedan på **Snabbpublicering.**
-
-      ![](images/bulk-activation-collection-quick-publish.png){width="650" align="left"}
+     ![](images/bulk-activation-collection-quick-publish.png){width="650" align="left"}
 
 
 När utdata har aktiverats för de markerade kartfilerna uppdateras kolumnen Publicerat med aktuellt datum och aktuell tid.

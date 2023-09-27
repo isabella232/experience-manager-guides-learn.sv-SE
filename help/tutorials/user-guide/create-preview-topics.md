@@ -1,10 +1,10 @@
 ---
 title: Skapa och förhandsgranska ämnen
-description: Lär dig hur du skapar och förhandsgranskar ämnen
+description: Lär dig hur du skapar och förhandsgranskar DITA-ämnen från resursgränssnittet i AEM.
 exl-id: a33daf94-fa7b-40e7-bebe-8ae64399da48
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---

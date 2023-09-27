@@ -1,10 +1,10 @@
 ---
 title: Granska ämnen och kartor
-description: Lär dig hur du granskar ämnen och kartor
+description: Granska effektivt ämnen och kartor i AEM för smidig utvärdering av innehåll. Lär dig funktionerna för författare och granskare i AEM.
 exl-id: 26860f5d-d744-49b4-8483-4e0f3798af93
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -44,12 +44,12 @@ Tillgängliga funktioner för *granskare*:
 - Lär dig enkelt vilken version av ämnet du granskar.
 - Få ett meddelande när en uppgift har tilldelats dem för granskning.
 - Se skillnaderna mellan äldre och nyare versioner av ämnen som delas för granskning.
-- Se kommentarer från andra granskare eller svar på kommentarer från författaren i realtid.
+- Se kommentarer från andra granskare eller svar från författaren i realtid.
 - Kommentarer ges i äldre versioner av ämnet.
 
 >[!NOTE]
 >
-> Se *Granska* i Best practices guide om hur du skapar granskningsåtgärder.
+> Se *Granska* i guiden Best practices om hur du skapar granskningsåtgärder.
 
 - **[Skapa ett DITA-projekt](authoring-create-dita-project.md)**
 

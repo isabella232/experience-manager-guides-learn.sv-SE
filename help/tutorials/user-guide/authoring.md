@@ -1,10 +1,10 @@
 ---
 title: Hantera innehåll
-description: Lär dig hantera innehåll
+description: Hantera innehåll och identifiera dina roller och behörigheter i AEM. Lär dig de viktigaste begreppen för innehållshantering och att arbeta med globala profiler eller profiler på mappnivå.
 exl-id: d2fa31a7-a8ce-4d17-bd4e-0f51ea751dca
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Mer information om hur du skapar versioner eller återgår till en viss version 
 
 **Inbyggd DITA-hantering**
 
-AEM stödlinjer bibehåller strukturen i dina DITA-filer, men AEM kan också hantera DITA internt med hjälp av elementmappning för att mappa DITA-elementen till AEM. Den inbyggda DITA-hanteringen används i funktioner som ämnesförhandsgranskning, AEM Sites-publicering och granskningsarbetsflöden.
+AEM stödlinjer bibehåller strukturen i dina DITA-filer, men AEM kan också hantera DITA internt med hjälp av elementmappning för att mappa DITA-elementen till AEM komponenter. Den inbyggda DITA-hanteringen används i funktioner som ämnesförhandsgranskning, AEM Sites-publicering och granskningsarbetsflöden.
 
 ## Identifiera din roll och dina behörigheter {#id181TF0K0MHT}
 
@@ -50,7 +50,7 @@ I följande tabell visas olika uppgifter och grupper som kan utföra dessa uppgi
 | Skapa DITA-ämne | Ja |   | Ja |
 | Skapa DITA-karta | Ja |   | Ja |
 | Kartsamlingar | Ja |   | Ja |
-| Skapa granskningsuppgift | Ja |   | Ja |
+| Skapa granskningsaktivitet | Ja |   | Ja |
 | Granska ämne[1](#fntarg_1) | Ja | Ja | Ja |
 | Nyckelupplösning | Ja |   | Ja |
 | Checka ut/Checka in | Ja |   | Ja |
@@ -72,14 +72,14 @@ I följande tabell visas olika uppgifter och grupper som kan utföra dessa uppgi
 | **Tillgängliga funktioner i DITA-kartkonsolen \(fliken Utdata\)** |
 | Visa genererade utdata | Ja |   | Ja |
 | **Tillgängliga funktioner i DITA-kartkonsolen \(fliken Ämnen\)** |
-| Skapa granskningsuppgift | Ja |   | Ja |
+| Skapa granskningsaktivitet | Ja |   | Ja |
 | Redigera | Ja |   | Ja |
 | **Tillgängliga funktioner i DITA-kartkonsolen \(fliken Baslinjer\)** |
 | Skapa |   |   | Ja |
 | Redigera |   |   | Ja |
 | Duplicera |   |   | Ja |
 | Ta bort |   |   | Ja |
-| DITA-kartkonsol \(fliken Rapporter\) | Ja |   | Ja |
+| DITA map console \(Reports tab\) | Ja |   | Ja |
 | **Tillgängliga funktioner i DITA-kartkonsolen \(Villkorsförinställningar\)** |
 | Skapa/redigera villkorsförinställning |   |   | Ja |
 

@@ -1,10 +1,10 @@
 ---
 title: Massaktivering av publicerat innehåll
-description: Lär dig hur du aktiverar publicerat innehåll gruppvis
+description: Läs om massaktivering av publicerat innehåll. Läs om fördelarna med massaktivering i AEM.
 exl-id: 66c454bb-f09e-442f-b863-60ee249a0e08
-source-git-commit: c4f383984501525527136773ce7ef556170e8ad3
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Skapa förinställningar från Web Editor
-description: Lär dig hur du skapar förinställningar för utdata från Web Editor
+description: Skapa förinställningar från webbredigeraren. Lär dig hur du redigerar, byter namn på, duplicerar och tar bort en förinställning AEM stödlinjer.
 exl-id: 7fde0057-06a5-428e-a91b-9e9386a56270
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Följ de här stegen för att skapa förinställningar för DITA-kartan:
 
 1. Ange följande konfigurationsinformation.
 
-   1. Välj önskade alternativ i dialogrutan **Allmänt** -fliken. Du kan välja att skapa en förinställning för utdata med eller utan villkor. Du kan också använda en DITVAL-fil. Med AEM kan du även välja en baslinje för publicering av en specifik version av DITA-kartan.
+   1. Välj önskade alternativ i dialogrutan **Allmänt** -fliken. Du kan välja att skapa en förinställning med eller utan villkor. Du kan också använda en DITVAL-fil. Med AEM kan du även välja en baslinje för publicering av en specifik version av DITA-kartan.
    1. Ange AEM platsinformation i dialogrutan **AEM** -fliken. **Plats** I visas en lista med de AEM Sites som finns i din AEM. **Kategori**, **Avsnittsmall** och **Artikelmall** är de strukturella komponenter som används för att ordna utdatafilens utseende och känsla. Dessa är fördefinierade i AEM platsmall.
 
       >[!NOTE]

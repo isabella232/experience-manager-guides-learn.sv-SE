@@ -1,10 +1,10 @@
 ---
 title: Andra funktioner i Web Editor
-description: Lär dig hur du använder andra funktioner i Web Editor
+description: Utforska andra funktioner i webbredigeraren i AEM. Lär dig hur du använder de här funktionerna för att förbättra redigeringen i AEM.
 exl-id: dea19372-8a15-4b5d-aea4-47dc914d779e
-source-git-commit: dd744a8e5b7d60a0e5b4d0ad8f9201950e3ae1ce
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '2131'
+source-wordcount: '2144'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Om du vill visa AEM egenskapssida för den markerade filen väljer du **Egenskap
 
 **Upp, Ned, Vänster eller Höger**
 
-Som standard kan du visa ett avsnitt i taget i Web Editor. Det kan finnas tillfällen då du vill se två eller flera ämnen samtidigt. Genom att dela redigerarens skärm kan du visa flera ämnen samtidigt. Om du till exempel har två ämnen - A och B öppnade i redigeraren. Högerklicka på ämne B och välj **Dela \> uppåt** delar upp redigeringsfönstret i två delar. Ämne B visas i den övre halvan och ämne A visas i den nedre halvan. På samma sätt kan du dela skärmen vågrätt genom att markera **Dela \> vänster** eller **Dela \> höger**. I följande skärmbild av Web Editor visas ämnen som delas vågrätt och lodrätt. I varje delning kan du ha olika vyer. På följande skärmbild är skärm 1 i källvyläge, skärm 2 har två dokument öppna i redigeringsläge och skärm 3 är i förhandsgranskningsläge. Du kan flytta dokument från en skärm till en annan genom att dra filfliken och släppa den på skärmen där du vill placera den. På samma sätt kan du ändra ordning på filflikarna genom att dra och flytta dem enligt dina önskemål.
+Som standard kan du visa ett avsnitt i taget i Web Editor. Det kan finnas tillfällen då du vill se två eller flera ämnen samtidigt. Genom att dela redigerarens skärm kan du visa flera ämnen samtidigt. Om du till exempel har två ämnen - A och B öppnade i redigeraren. Högerklicka på ämne B och välj **Dela \> uppåt** delar upp redigeringsfönstret i två delar. Ämne B visas i den övre halvan och ämne A visas i den nedre halvan. På samma sätt kan du dela skärmen vågrätt genom att markera **Dela \> vänster** eller **Dela \> höger**. I följande skärmbild av Web Editor visas ämnen som delas vågrätt och lodrätt. I varje delning kan du ha olika vyer. På följande skärmbild är skärm 1 i källvyläge, skärm 2 har två dokument öppna i redigeringsläge och skärm 3 är i förhandsgranskningsläge. Du kan flytta dokument från en skärm till en annan genom att dra filfliken och släppa den på skärmen där du vill placera den. På samma sätt kan du ändra ordning på filflikarna genom att dra och flytta dem som du vill.
 
 ![](images/split-editor.png){width="800" align="left"}
 

@@ -1,7 +1,7 @@
 ---
 title: Konfigurera en datakällanslutning
 description: Lär dig hur du konfigurerar en datakällanslutning
-source-git-commit: 2e7f9fb0a5932cc6fa5852ba8d9b9bf13ab12aed
+source-git-commit: fc142d8a6e907fac1321dfd5c2cb9615d523709d
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -274,7 +274,7 @@ Andra fält anpassas baserat på den config-klass som valts för att köra anslu
 
 Överför filen till någon plats i AEM Assets.
 
-Till exempel,  `/var/dxml/konnect/jira.json`
+Till exempel,  `/content/dam/jira.json`
 
 ## Skapa konfiguration med REST API
 

@@ -1,10 +1,10 @@
 ---
 title: Arbeta med metadata i AEM
-description: Lär dig hur du arbetar med metadata i AEM
+description: Lär dig hur du skapar resurser och lägger till metadata med Adobe Experience Manager Assets. Hantera metadata från AEM.
 exl-id: 78b80f19-d8c0-448e-960f-ec4bb5844a3f
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

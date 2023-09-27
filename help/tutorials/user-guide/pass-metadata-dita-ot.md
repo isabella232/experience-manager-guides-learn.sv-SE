@@ -1,10 +1,10 @@
 ---
 title: Skicka metadata till utdata med DITA-OT
-description: Lär dig hur du skickar metadata till utdata med DITA-OT
+description: Lär dig hur du skickar metadata till utdata med DITA-OT-publicering i AEM.
 exl-id: 637895e5-aece-4827-a32e-f2ae3e3704ef
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Metadata är ytterligare information om utdata. I AEM kan du skicka vidare befin
 
 Utför följande steg för att skicka metadata till utdata med DITA-OT-publicering:
 
-1. I **Resurser, användargränssnitt** navigera till och klicka på den DITA-kartfil för vilken du vill skicka metadata till DITA-OT.
+1. I **Resursgränssnitt** navigera till och klicka på den DITA-kartfil för vilken du vill skicka metadata till DITA-OT.
 1. Markera och redigera en förinställning som du vill skicka metadatafälten till. Välj t.ex. förinställningen PDF.
 1. Välj **DITA-OT** under Generera &lt;output> Använda alternativet i den valda förinställningen för utdata.
 
@@ -33,7 +33,7 @@ Utför följande steg för att skicka metadata till utdata med DITA-OT-publiceri
 
    Information om hur du skickar en anpassad egenskap som du redan har definierat värdena för finns i [Använd AEM metadata i DITA-OT PDF-utdata](https://experienceleaguecommunities.adobe.com/t5/xml-documentation-discussions/use-aem-metadata-in-dita-ot-pdf-output/td-p/411880).
 
-1. Från **Egenskaper** väljer du önskade anpassade egenskaper och standardegenskaper. Välj till exempel `author`, `dc:title`och `dc:description`. Dessa är standard `metadata/properties` som skapas när vi skapar en fil. De valda egenskaperna visas under listrutan.
+1. Från **Egenskaper** väljer du önskade anpassade egenskaper och standardegenskaper. Välj till exempel `author`, `dc:title`och `dc:description`. Det här är standarden `metadata/properties` som skapas när vi skapar en fil. De valda egenskaperna visas under listrutan.
 
    ![](images/selected-metadata-properties.png){width="300" align="left"}
 

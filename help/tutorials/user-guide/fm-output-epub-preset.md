@@ -1,15 +1,15 @@
 ---
-title: ePub
-description: EPUB
+title: EPUB
+description: Generera och konfigurera EPUB output för FrameMaker-dokument i AEM Guides.
 exl-id: 5c9d4b78-94bd-46b7-891e-33d7df596ca3
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-# ePub {#id205BB0V0PQZ}
+# EPUB {#id205BB0V0PQZ}
 
 Följande alternativ är tillgängliga för EPUB-utdata:
 
@@ -25,4 +25,4 @@ Följande alternativ är tillgängliga för EPUB-utdata:
 | Målsökväg | Den sökväg i AEM där EPUB-utdata lagras. |
 | Kör arbetsflöde efter generering | När du väljer det här alternativet visas en ny arbetsflödeslista som innehåller alla arbetsflöden som är konfigurerade i AEM. Du måste välja ett arbetsflöde som du vill köra när arbetsflödet för generering av utdata har slutförts. |
 
-**Överordnat ämne:**[ Generera utdata från FrameMaker-dokument](fm-output-generatation.md)
+**Överordnat ämne:**[ Generera utdata av FrameMaker dokument](fm-output-generatation.md)

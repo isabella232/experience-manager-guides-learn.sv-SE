@@ -1,10 +1,10 @@
 ---
 title: Arbeta med baslinje
-description: Lär dig hur du arbetar med baslinjen
+description: Lär dig hur du använder baslinjer i AEM. Lär dig hur du skapar, visar innehåll, redigerar, duplicerar, tar bort, lägger till etiketter och exporterar översatta baslinjer.
 exl-id: dcafab53-c388-48c3-9455-e4251cdda17d
-source-git-commit: 8e2e2c60f223b3967fad10372abee3192016c4ef
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1936'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---

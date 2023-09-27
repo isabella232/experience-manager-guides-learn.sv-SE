@@ -1,10 +1,10 @@
 ---
 title: Dokumenttillstånd
-description: Lär dig hur du använder dokumentläget
+description: Lär dig vilka typer av dokumentlägen som finns i AEM. Lär dig hur du ändrar eller visar dokumentläget och använder dokumentläget i DDLC.
 exl-id: 6ab85a63-02d2-4802-a6b8-99e6551a567b
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Du kan också ändra dokumentläget manuellt för ett eller flera dokument. Om d
 Så här ändrar du ett dokuments status:
 
 1. I resursgränssnittet markerar du ett eller flera dokument som du vill ändra dokumenttillståndet för.
-1. Klicka på **Egenskaper**.
+1. Klicka på i huvudverktygsfältet **Egenskaper**.
 1. Välj det nya läget på menyn **Dokumenttillstånd** nedrullningsbar meny. Du kan bara markera de dokumentlägen som är tillåtna i avsnittet Tillståndsövergång i dokumentlägesprofilen.
 
    >[!NOTE]
@@ -65,7 +65,7 @@ Så här använder du funktionen för dokumentgodkännande:
 
 1. Öppna det dokument som du vill markera för godkännande i Web Editor.
 
-1. Klicka på **Markera som godkänd**![](images/mark_approve_icon.svg) ikon.
+1. Klicka på **Markera som godkänd**![](images/mark_approve_icon.svg)-ikon.
 
 1. Om dokumentet är i ett läge som ska markeras som godkänt visas följande dialogruta:
 
@@ -92,7 +92,7 @@ Så här använder du funktionen för dokumentgodkännande:
 
 När ett dokument har markerats som godkänt går det inte längre att redigera. Om du vill använda dokumentet till nästa version måste du skicka tillbaka det till *Utkast* tillstånd. Så här ändrar du dokumentstatus för ett godkänt dokument tillbaka till *Utkast* utför du följande steg:
 
-1. I ett godkänt dokument klickar du på **Starta en ny release** Ikon ![](images/approved-restart-draft-mode-icon.svg).
+1. Klicka på **Starta en ny release** Ikon ![](images/approved-restart-draft-mode-icon.svg).
 
    Meddelandet Starta ny release visas.
 

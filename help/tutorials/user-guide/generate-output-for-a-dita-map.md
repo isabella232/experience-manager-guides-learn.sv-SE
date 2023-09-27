@@ -1,10 +1,10 @@
 ---
 title: Generera utdata för en DITA-karta från kartkonsolen
-description: Lär dig hur du genererar utdata för en DITA-karta från kartkonsolen
+description: Generera utdata för en DITA-karta från kartkonsolen i AEM. Lär dig mer om inkrementell generering av utdata och hur du visar status, avbryter och tar bort en utdataåtgärd.
 exl-id: 98afbdd2-56d7-44b0-ad2a-25e9143c88f3
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Utför följande steg för att generera utdata för en DITA-karta:
    >
    > Om du genererar AEM platsutdata används den struktur som definierats i `.ditamap` för att skapa AEM platsstruktur.
 
-1. Klicka på ikonen Generera för att starta genereringsprocessen.
+1. Klicka på ikonen Generera för att starta genereringsprocessen för utdata.
 
 
 Du kan visa aktuell status för begäran om generering av utdata genom att klicka på Utdata. Mer information finns i [Visa status för utdatagenereringsaktiviteten](#viewing_output_history)
@@ -101,21 +101,21 @@ Utför följande steg för att visa kön för generering av utdata:
 
    - **Utdata i kö:**
 
-      Visar utdata som väntar på att skapas eller som håller på att genereras. De köade eller pågående uppgifterna visas med en blå färgikon före förinställningens namn. Du kan också hitta den inställning eller förinställning för generering av utdata som används för uppgiften som står i kö, typ, användare som initierade uppgiften, tid sedan uppgiften placerades i kö samt aktuell status.
+     Visar utdata som väntar på att skapas eller som håller på att genereras. De köade eller pågående uppgifterna visas med en blå färgikon före förinställningens namn. Du kan också hitta den inställning eller förinställning för generering av utdata som används för uppgiften som står i kö, typ, användare som initierade uppgiften, tid sedan uppgiften placerades i kö samt aktuell status.
 
-      Klicka på länken för att komma åt **Publish Dashboard** och visa aktuell körningsstatus. En lista över alla aktiva publiceringsåtgärder finns på Publish Dashboard. The **Utdata i kö** och **Publish Dashboard**-länken visas bara när det finns utdata som antingen väntar på att genereras eller som håller på att genereras. De visas inte när utdataåtgärderna har slutförts.Mer information om Publish Dashboard finns i [Hantera publiceringsuppgifter med Publish Dashboard](generate-output-publish-dashboard.md#).
+     Klicka på länken för att komma åt **Publish Dashboard** och visa aktuell körningsstatus. En lista över alla aktiva publiceringsåtgärder finns på Publish Dashboard. The **Utdata i kö** och **Publish Dashboard**-länken visas bara när det finns utdata som antingen väntar på att genereras eller som håller på att genereras. De visas inte när utdataåtgärderna har slutförts.Mer information om Publish Dashboard finns i [Hantera publiceringsuppgifter med Publish Dashboard](generate-output-publish-dashboard.md#).
 
    - **Genererade utdata**
 
-      Visar en lista över utdataaktiviteter som har slutförts. Informationen som visas här liknar den i avsnittet Utdata i kö med några skillnader. Du har en ny uppsättning information i form av ikoner för utdataresultat och tiden för generering av utdata.
+     Visar en lista över utdataaktiviteter som har slutförts. Informationen som visas här liknar den i avsnittet Utdata i kö med några skillnader. Du har en ny uppsättning information i form av ikoner för utdataresultat och tiden för generering av utdata.
 
-      I den här listan kan du ha uppgifter som har utförts, uppgifter som har utförts med meddelande eller misslyckade uppgifter. De slutförda åtgärderna visas med en grön färgikon, uppgifterna med ett meddelande har en orange färgikon och de misslyckade åtgärderna visas med en röd färgikon.
+     I den här listan kan du ha uppgifter som har körts, uppgifter som har körts med meddelande eller misslyckade uppgifter. De slutförda åtgärderna visas med en grön färgikon, uppgifterna med ett meddelande har en orange färgikon och de misslyckade åtgärderna visas med en röd färgikon.
 
-      Publiceringsprocessen skapar en loggfil, \(logs.txt\), som du kommer åt genom att klicka på länken i kolumnen Genererad vid. För uppgifter som har misslyckats eller innehåller meddelanden kan du kontrollera loggfilen, som förklaras i avsnittet [Visa och kontrollera loggfilen](generate-output-basic-troubleshooting.md#id1822G0P0CHS).
+     Publiceringsprocessen skapar en loggfil, \(logs.txt\), som du kommer åt genom att klicka på länken i kolumnen Genererad vid. För uppgifter som har misslyckats eller innehåller meddelanden kan du kontrollera loggfilen, som förklaras i avsnittet [Visa och kontrollera loggfilen](generate-output-basic-troubleshooting.md#id1822G0P0CHS).
 
-      >[!NOTE]
-      >
-      > När du klickar på en länk till det genererade PDF-utdata blir du ombedd att hämta PDF. Detta är standardbeteendet i AEM 6.5 och 6.4.
+     >[!NOTE]
+     >
+     > När du klickar på en länk till det genererade PDF-utdata blir du ombedd att hämta PDF. Detta är standardbeteendet i AEM 6.5 och 6.4.
 
 
 ## Avbryt en utdatagenereringsaktivitet {#id2061H100T5Z}
@@ -130,7 +130,7 @@ Utför följande steg för att avbryta en utdatagenereringsaktivitet från DITA-
 
 1. Håll pekaren över en uppgift som du vill avbryta i listan Köade utdata.
 
-1. Klicka på *Avbryt det här jobbet* ikon.
+1. Klicka på *Avbryt det här jobbet* -ikon.
 
    ![](images/cancel-publish-task-map-console.png){width="800" align="left"}
 
@@ -140,7 +140,7 @@ Utför följande steg för att avbryta en utdatagenereringsaktivitet från DITA-
 
    Om aktiviteten inte har startats ännu körs kommandot cancel för uppgiften. För en uppgift som avbryts ställs statusen in på Avbryta.
 
-   När uppgiften har avbrutits flyttas den till **Genererade utdata** lista med **Avbruten** status. När du hovrar över den avbrutna uppgiften visas namnet på den användare som avbrutit uppgiften. På följande skärmbild visas *HTML5* aktiviteten har avbrutits.
+   När aktiviteten har avbrutits flyttas den till **Genererade utdata** lista med **Avbruten** status. När du hovrar över den avbrutna uppgiften visas namnet på den användare som avbrutit uppgiften. På följande skärmbild visas *HTML5* aktiviteten avbryts.
 
    ![](images/cancelled-output-task.png){width="800" align="left"}
 

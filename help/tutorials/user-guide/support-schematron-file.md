@@ -1,10 +1,10 @@
 ---
 title: Stöd för Schematron-filer
-description: Lär dig hur du validerar dina ämnen med bildtext
+description: Lär dig hur du importerar och validerar ett DITA-ämne, använder assert-rapportsatser för att kontrollera regler, använder regex-uttryck och definierar abstrakta mönster i Schematron-filer i AEM.
 exl-id: e5912fa1-af26-42f4-b5e5-a6d2afd45bc8
-source-git-commit: f6794078e760565f5934faf63a7cbfb919acce90
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ En assert-programsats genererar ett meddelande när en test-programsats utvärde
   </sch:rule>
 ```
 
-När du validerar dina DITA-ämnen med Schematron får du ett meddelande om ämnen där titeln inte är fet.
+När du validerar dina DITA-ämnen med Schematron får du ett meddelande om de ämnen där titeln inte är fet.
 
-### Rapportutdrag
+### Rapport
 
 En rapportprogramsats genererar ett meddelande när en testprogramsats utvärderas till true. Om du till exempel vill att den korta beskrivningen ska innehålla högst 150 tecken kan du definiera en rapportsats för att kontrollera ämnen där den korta beskrivningen innehåller mer än 150 tecken.
 När du validerar dina DITA-ämnen med Schematron får du en fullständig rapport över reglerna där rapportsatsen utvärderas till true. Du får därför ett meddelande om de ämnen där den korta beskrivningen innehåller fler än 150 tecken.

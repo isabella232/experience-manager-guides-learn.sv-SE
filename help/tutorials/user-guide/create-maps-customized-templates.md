@@ -1,10 +1,10 @@
 ---
 title: Skapa kartor baserade på anpassade mallar
-description: Lär dig hur du skapar kartor baserade på anpassade mallar
+description: Lär dig att skapa en egen mall, använda dem för att skapa nya kartfiler och skicka den definierade titeln till en DITA-karta i AEM.
 exl-id: 02513148-3876-4549-962a-9984f619030f
-source-git-commit: 9196d7b1094149f06067c153b9c02c2cd20c18af
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---

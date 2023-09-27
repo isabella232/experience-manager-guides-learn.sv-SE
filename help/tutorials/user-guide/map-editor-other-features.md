@@ -1,10 +1,10 @@
 ---
 title: Andra funktioner i kartredigerarna
-description: Lär dig hur du använder andra funktioner i kartredigerarna
+description: Upptäck några vanliga funktioner i de grundläggande och avancerade kartredigeringsprogrammen. Lär dig hur du löser nyckelreferenser i kartredigeraren.
 exl-id: ed6f42f6-b95e-4c4d-a648-6f29641a3488
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---

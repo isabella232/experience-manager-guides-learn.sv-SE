@@ -1,10 +1,10 @@
 ---
 title: Hämta filer
-description: Lär dig hur du hämtar filer
+description: Lär dig hur du hämtar filer från DITA-kartkonsolen i AEM och exporterar en DITA-kartfil AEM databasen.
 exl-id: 3b588256-da30-4a98-be5c-fa36cfa8a80b
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -25,28 +25,28 @@ Följ de här stegen för att hämta en DITA-kartfil tillsammans med de beroende
 
 1. Välj **Ämnen** om du vill visa en lista med ämnen som är tillgängliga på DITA-kartan.
 
-1. Klicka på **Hämta karta**.
+1. Klicka på i huvudverktygsfältet **Ladda ned karta**.
 
    Dialogrutan Hämta karta visas.
 
    ![](images/download-map.png){width="300" align="left"}
 
-1. Klicka **Hämta**. I dialogrutan Hämta karta kan du välja följande alternativ:
+1. Klicka **Ladda ned**. I dialogrutan Hämta karta kan du välja följande alternativ:
 
    - **Använd baslinje**: Välj det här alternativet om du vill visa en lista över baslinjer som skapats för DITA-kartan. Om du vill hämta kartfilen och dess innehåll baserat på en viss baslinje väljer du Baslinje i listrutan. Mer information om hur du arbetar med baslinjer finns i [Arbeta med baslinje](generate-output-use-baseline-for-publishing.md#).
    - **Förenkla filhierarki**: Välj det här alternativet om du vill spara alla refererade ämnen och mediefiler i en enda mapp.
-
    >[!NOTE]
    >
    > Du kan även hämta kartfilen utan att välja något alternativ. I så fall hämtas den senaste beständiga versionen av de ämnen och mediefiler som refereras.
 
-1. När du har klickat på **Hämta** är begäran om hämtning av karta köad. Du får följande meddelande när kartan är klar att hämtas.
+1. När du har klickat på **Ladda ned** är begäran om hämtning av karta köad. Du får följande meddelande när kartan är klar att hämtas.
 
    ![](images/download-map-prompt.png){width="550" align="left"}
 
-   - Klicka **Hämta** om du vill hämta mappningsfilen i zip-format.
+   - Klicka **Ladda ned** om du vill hämta mappningsfilen i zip-format.
 
    - Klicka **Hämta senare** om du vill hämta kartfilen vid ett senare tillfälle. Du kommer åt nedladdningslänken via AEM. Klicka på det genererade kartmeddelandet i Inkorgen för att hämta kartan i ZIP-format.
+
    >[!NOTE]
    >
    > Som standard finns de hämtade kartorna kvar i fem dagar i Inkorgen för AEM.

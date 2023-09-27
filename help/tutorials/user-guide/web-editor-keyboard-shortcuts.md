@@ -1,10 +1,10 @@
 ---
 title: Kortkommandon i Web Editor
-description: Lär dig hur du använder kortkommandon i Web Editor
+description: Upptäck tidsbesparande kortkommandon i webbredigeraren AEM guider.
 exl-id: e8be4c83-a236-43c1-b778-c3da92537174
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Det finns många åtgärder i Web Editor som du kan utföra med hjälp av kortko
 | Flytta ut från ett kapslat element och gå till det överordnade elementet i vänster riktning, annars går du till föregående jämställda element | ***Alt***+**Vänster *Pil* |
 | Flytta ut från ett kapslat element och gå till det överordnade elementet i rätt riktning, annars går du till nästa element på samma nivå | ***Alt***+*Högerpil* |
 | Indrag av XML automatiskt i källvyn | *Ctrl*+***Alt***+***L*** |
-| Dela det aktuella elementet | **Retur** |
+| Dela aktuellt element | **Retur** |
 | Kopiera markerad text | ***Ctrl***+**C** |
 | Klistra in | ***Ctrl***+**V** |
 | Öppna dialogrutan Skriv ut | ***Ctrl***+**P** |

@@ -1,10 +1,10 @@
 ---
 title: Generering av utdata
-description: Lär dig generera utdata
+description: Generera material AEM sajten, PDF, HTML 5, EPUB, anpassad och JSON via DITA-OT-plugins, PDF och FMPS AEM Guides.
 exl-id: 32fc32f8-16b1-4c3c-a6e2-abfb8fba9e66
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 AEM Guides har inbyggda publiceringsfunktioner för att generera utdata i en mängd olika standardformat. Med den aktuella versionen av AEM Guides kan du generera utdata i de vanligaste formaten - AEM Site, PDF, HTML5, EPUB, JSON och anpassade utdata via DITA-OT, Native PDF-publicering och FMPS.
 
-Som utgivare kan du generera flera utdata med bara några klick. Du kan generera utdata för en hel DITA-karta eller så kan du selektivt publicera endast ett fåtal ämnen som du har uppdaterat. Du kan också använda publiceringsfunktionen för baslinje för att selektivt publicera en specifik version av DITA-kartan eller ditt DITA-avsnitt.
+Som utgivare kan du generera flera utdatafiler med bara några klick. Du kan generera utdata för en hel DITA-karta eller så kan du selektivt publicera endast ett fåtal ämnen som du har uppdaterat. Du kan också använda publiceringsfunktionen Baslinje för att selektivt publicera en specifik version av DITA-kartan eller -avsnittet.
 
 >[!NOTE]
 >

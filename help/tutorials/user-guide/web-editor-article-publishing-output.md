@@ -1,10 +1,10 @@
 ---
 title: Generera utdata från panelen Databas
-description: Lär dig hur du genererar utdata från panelen Databas
+description: Generera utdata från databaspanelen eller panelen Kartvy i AEM. Lär dig publicera ett ämne som används på en eller flera DITA-kartor eller generera utdata för flera ämnen.
 exl-id: 3dea81c3-1e57-4f14-9afe-6b075bd410e0
-source-git-commit: 3bca42f0954afc2362ab24f369e698113324dbc3
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Du kan också använda de förinställningar för utdata som du har skapat för 
 
 - Använd **Snabbgenerering** på panelen Databas eller Kartvy för att generera utdata för det valda ämnet eller hela DITA-kartan.
 
-   >[!NOTE]
-   >
-   > Du kan även komma åt **Snabbgenerering** från panelen Favoriter eller sökpanelen.
+  >[!NOTE]
+  >
+  > Du kan även komma åt **Snabbgenerering** från panelen Favoriter eller sökpanelen.
 
 - Använd **Generera utdata** på panelen Kartvy för att generera utdata för de valda ämnena.
 
@@ -42,14 +42,14 @@ Utför följande steg för att generera utdata för ett eller flera ämnen på d
 1. Du ser status för genereringsprocessen för utdata.
 
    - **Ämnen**: Visar de valda avsnitten som utdata genereras för.
-   - **Förinställning**: Visar de förinställningar som innehåller de valda avsnitten.
-   - **Karta**: Visar DITA-kartor som innehåller det markerade ämnet.
+   - **Förinställning**: Visar förinställningarna som innehåller de valda avsnitten.
+   - **Karta**: Visar en lista över DITA-kartor som innehåller det markerade ämnet.
    - **Status**: Visar publiceringsstatus för varje ämne.
 Om du vill visa utdata för du muspekaren över avsnittet och klickar på Visa utdata.
-      ![](images/output-multiple-maps_cs.png){width="800" align="left"}
+     ![](images/output-multiple-maps_cs.png){width="800" align="left"}
 
 
-## Generera utdata för en DITA-karta från Web Editor
+## Generera utdata för en DITA-karta från webbredigeraren
 
 Utför följande steg för att generera utdata för hela DITA-kartan:
 

@@ -1,10 +1,10 @@
 ---
 title: Översätt ändrade ämnen
-description: Lär dig hur du översätter ändrade ämnen
+description: Lär dig hur du översätter ett ändrat ämne på nytt i AEM.
 exl-id: 48b868c3-27ec-4641-b40d-17a641be7497
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ Utför följande steg för att skicka ett ändrat ämne för omöversättning:
 
 1. Klicka i kryssrutan för att markera de ämnen som du vill skicka för omöversättning.
 
-   När du väljer ett osynkroniserat datum visas **Skapa/uppdatera språkkopior** visas på referenspanelen och **Stäng status för ej synkroniserad** ovanför **Filter** ikon.
+   När du väljer ett osynkroniserat datum visas **Skapa/uppdatera språkkopior** visas på referenspanelen och **Stäng status för ej synkroniserad** knappen ovanför **Filter** -ikon.
 
    Du kan använda **Stäng ur synkronisering** om du vill åsidosätta statusen Inaktuell för ämnena på DITA-kartan. Om du till exempel har gjort vissa ändringar i den engelska versionen av ämnet som inte behöver översättas kan du använda den här knappen och ändra statusen Inaktuell för det markerade ämnet.
 
    >[!NOTE]
    >
-   > Om du klickar på **Stäng status för ej synkroniserad** anger det att ämnesstatusen är Uppdaterad för de valda inaktuella ämnena.
+   > Klicka på **Stäng status för ej synkroniserad** anger det att ämnesstatusen är Uppdaterad för de markerade inaktuella ämnena.
 
 1. Klicka **Uppdatera språkkopior** och konfigurera översättningsjobbet.
 
@@ -53,7 +53,7 @@ Utför följande steg för att skicka ett ändrat ämne för omöversättning:
 
    ![](images/incremental-job.PNG){width="300" align="left"}
 
-1. Klicka på pilen på översättningsjobbkortet och välj **Starta** från listan. Ett meddelande meddelar att jobbet har startats.
+1. Starta översättningen genom att klicka på pilen på översättningsjobbkortet och välja **Starta** från listan. Ett meddelande meddelar att jobbet har startats.
 
    Du kan även visa statusen för det ämne som översätts när du klickar på ellipsen längst ned på översättningsjobbkortet.
 
@@ -68,6 +68,7 @@ Utför följande steg för att skicka ett ändrat ämne för omöversättning:
    - Klicka **Acceptera översättning** om du tror att ändringarna har översatts korrekt. Ett bekräftelsemeddelande visas.
 
    - Klicka **Avvisa översättning** om du tror att jobbet behöver göras om. Ett meddelande om avvisning visas.
+
    >[!NOTE]
    >
    > Det är viktigt att acceptera eller avvisa den översatta resursen, annars stannar filen kvar på den tillfälliga platsen och kopieras inte till DAM.

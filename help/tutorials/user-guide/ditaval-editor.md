@@ -1,13 +1,13 @@
 ---
 title: Använd DITAVAL-redigerare
-description: Lär dig använda DITAVAL-redigeraren
-source-git-commit: c6eceb8ea3ce41f12ea1f689dc8aeab2b4ba3d9c
+description: Lär dig hur du skapar och redigerar DITAVAL-filer med DIVATAL Editor AEM Guides. Ta reda på hur DITAVAL-redigeraren stöder DITAVAL-filer i skribent- och källvyer.
+exl-id: 53dc9a61-aa07-4fb0-a442-ac845433c8f5
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
-
 
 # DITAVAL editor {#ditaval-editor}
 
@@ -68,7 +68,7 @@ Utför följande steg för att redigera en DITAVAL-fil:
 
    ![](images/ditaval-all-props.png)
 
-1. När du är klar med redigeringen av DITAVAL-filen klickar du på **Spara**.
+1. När du har redigerat DITAVAL-filen klickar du på **Spara**.
 
    >[!NOTE]
    >
@@ -79,13 +79,12 @@ Utför följande steg för att redigera en DITAVAL-fil:
 
 AEM Guides DITAVAL-redigerare har stöd för att visa DITAVAL-filer i två olika lägen eller vyer:
 
-**Upphovsman**: Detta är ett typiskt exempel på vad du ser i vyn What You Get \(WYSISYG\) i DITAVAL-redigeraren. Du kan lägga till eller ta bort egenskaper med det enkla användargränssnittet, som visar egenskaperna, dess värden och åtgärder i listrutan. I redigeringsvyn har du möjlighet att infoga en enskild egenskap och infoga alla egenskaper med ett enda klick.
+**Upphovsman**: Detta är ett typiskt exempel på vad du ser i vyn What You Get \(WYSISYG\) i DITAVAL-redigeraren. Du kan lägga till eller ta bort egenskaper med det enkla användargränssnittet, som visar egenskaperna, dess värden och åtgärder i listrutan. I redigeringsvyn kan du infoga en enskild egenskap och infoga alla egenskaper med ett enda klick.
 
 Du kan också hitta den version av DITAVAL-filen som du arbetar med genom att hålla pekaren över filnamnet.
 
-**Källa**: I källvyn visas den underliggande XML-koden som utgör DITAVAL-filen. Förutom att göra vanliga textredigeringar i den här vyn kan en författare även lägga till eller redigera egenskaper med den smarta katalogen.
+**Källa**: Källvyn visar den underliggande XML-koden som utgör DITAVAL-filen. Förutom att göra vanliga textredigeringar i den här vyn kan en författare även lägga till eller redigera egenskaper med den smarta katalogen.
 
 Om du vill anropa den smarta katalogen placerar du markören i slutet av en egenskapsdefinition och skriver &quot;&lt;&quot;. Redigeraren visar en lista över alla giltiga XML-element som du kan infoga på den platsen.
 
 ![](images/ditaval-source-view.png)
-

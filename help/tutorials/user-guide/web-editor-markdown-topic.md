@@ -1,17 +1,17 @@
 ---
 title: Skapa markeringsdokument
-description: Lär dig hur du skapar markeringsdokument
+description: Skapa markeringsdokument från webbredigeraren. Lär dig hur du skapar, redigerar och förhandsvisar ett markeringsämne i AEM.
 exl-id: ad20ca0b-a01d-4e72-8e3e-1d6feb41e52a
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
 # Skapa markeringsdokument från webbredigeraren {#id223MIE0B079}
 
-Markering är ett lättviktigt markeringsspråk som du kan använda för att lägga till formateringselement i vanliga textdokument. AEM Guides innehåller funktioner för att skapa, redigera och förhandsgranska ett markeringsämne \(.md\) från Web Editor. Du kan också överföra befintliga Markdown-dokument och redigera dem i webbredigeraren.
+Markering är ett lättviktigt markeringsspråk som du kan använda för att lägga till formateringselement i vanliga textdokument. AEM Guides innehåller funktioner för att skapa, redigera och förhandsgranska ett markeringsämne \(.md\) från webbredigeraren. Du kan också överföra befintliga Markdown-dokument och redigera dem i webbredigeraren.
 
 ## Skapa ett markeringsämne
 
@@ -45,7 +45,7 @@ Följ de här stegen för att skapa ett markeringsämne från webbredigeraren:
    Ämnet öppnas i källäge.
 
 1. Uppdatera innehållet i Markdown-avsnittet.
-1. Klicka **Förhandsgranska** överst till höger för att förhandsgranska ämnet.
+1. Klicka **Förhandsgranska** i det övre högra hörnet för att förhandsgranska ämnet.
 
    >[!NOTE]
    >

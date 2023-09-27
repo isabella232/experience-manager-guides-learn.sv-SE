@@ -1,10 +1,10 @@
 ---
 title: Starta Web Editor
-description: Lär dig hur du startar Web Editor
+description: Lär dig hur du startar webbredigeraren från AEM navigeringssida, AEM Assets-gränssnitt och DITA-kartkonsol i AEM.
 exl-id: f02f9612-7aaa-42ea-bad3-c44d23b5d034
-source-git-commit: dce7b1c97f8f7f79b313b08ca0489e8e50b633ec
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Du kan starta Web Editor från följande platser:
 
-- [AEM](#id2056BG00RZJ)
+- [AEM navigeringssida](#id2056BG00RZJ)
 - [AEM Assets UI](#id2056BG0307U)
 - [DITA map console](#id2056BG090BF)
 
 I följande avsnitt beskrivs hur du kommer åt och startar webbredigeraren från olika platser.
 
-## AEM {#id2056BG00RZJ}
+## AEM navigeringssida {#id2056BG00RZJ}
 
 När du loggar in AEM visas navigeringssidan:
 
@@ -37,20 +37,20 @@ När du har startat webbredigeraren utan att välja någon fil visas en tom webb
 
 
 
-   <details>
+  <details>
 
-   <summary> Cloud Services </summary>
+  <summary> Cloud Services </summary>
 
-   Om du använder Cloud Services klickar du på **Stäng** för att gå tillbaka till AEM.
-   </details>
+  Om du använder Cloud Service klickar du på **Stäng** för att gå tillbaka till AEM.
+  </details>
 
-   <details>
+  <details>
 
-   <summary> Lokal programvara</summary>
+  <summary> Lokal programvara</summary>
 
-   Om du använder AEM Guides On-Local Software (4.2.1 och senare) klickar du på **Stäng** till höger om du vill gå tillbaka till den aktuella filsökvägen i resursgränssnittet.
+  Om du använder AEM Guides On-Local Software (4.2.1 och senare) klickar du på **Stäng** till höger om du vill gå tillbaka till den aktuella filsökvägen i resursgränssnittet.
 
-   </details>
+  </details>
 
 ## AEM Assets UI {#id2056BG0307U}
 

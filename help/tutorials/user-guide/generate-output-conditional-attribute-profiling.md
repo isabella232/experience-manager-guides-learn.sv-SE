@@ -1,10 +1,10 @@
 ---
 title: Profilering av villkorliga attribut
-description: Lär dig hur du använder villkorlig attributprofilering
+description: Lär dig hur du skapar villkorsstyrda attribut i AEM. Använd villkorsstyrda attribut i mappen och globala profiler för att anpassa innehållet.
 exl-id: 31b0ffe6-44e7-459d-a8df-a64ec868768c
-source-git-commit: c74badebbcb4733fb9caa79c646b1d1e5c8bfe8e
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Så här definierar du villkorliga attribut:
 1. Klicka **Spara** för att spara ändringarna.
 
 
-The `platform` -attributet lagras i systemet. När en författare bestämmer sig för att använda `platform` i ett DITA-ämne i en mapp ser de värdena på fliken Egenskaper i Web Editor.
+The `platform` -attributet lagras i systemet. När en författare beslutar att använda `platform` i ett DITA-ämne i en mapp ser de värdena på fliken Egenskaper i Web Editor.
 
 ![](images/properties-tab.png){width="350" align="left"}
 

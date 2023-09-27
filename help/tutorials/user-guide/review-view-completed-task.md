@@ -1,15 +1,15 @@
 ---
-title: Visa en slutförd granskningsuppgift
-description: Lär dig hur du visar en slutförd granskningsuppgift
+title: Visa en slutförd granskningsaktivitet
+description: Lär dig hur du visar en slutförd granskningsuppgift som granskare eller författare i AEM.
 exl-id: 37f10fc3-e4ca-4e73-a887-65c7e9496f5e
-source-git-commit: 8823669fd29e8a40a41f9ca5d654b38fbea8e2fa
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-# Visa en slutförd granskningsuppgift
+# Visa en slutförd granskningsaktivitet
 
 Du kan slutföra granskningsåtgärder för de projekt som du är författare till (eller initierare). När en granskningsuppgift är klar kan du och alla granskare öppna den i skrivskyddat läge.
 

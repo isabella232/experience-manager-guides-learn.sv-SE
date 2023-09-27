@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 8ee493dbcdf68b83a55a65945febfa52c56ef09e
+source-git-commit: 40666d63314fa94f4ddf9b23341671994274c7e2
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1597'
 ht-degree: 3%
 
 ---
@@ -20,6 +20,9 @@ ht-degree: 3%
       + Cloud Services {#cloud-release-notes}
          + [Distributionsanvisningar](./release-info/deploy-xml-on-aemaacs.md)
          + 2023 års utgåvor {#2023-releases}
+            + Oktober-versionen {#2310-release}
+               + [Nyheter](./release-info/whats-new-2023.10.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.10.0.md)
             + Septemberversionen {#2309-release}
                + [Nyheter](./release-info/whats-new-2023.9.0.md)
                + [Versionsinformation](./release-info/release-notes-2023.9.0.md)
@@ -241,6 +244,7 @@ ht-degree: 3%
          + [Konfigurera en datakällanslutning](./install-guide/conf-data-source-connector.md)
          + [Ange avancerad kartredigerare som standard](./install-guide/conf-map-editor.md)
          + [Inkludera @navtitle-attribut som standard](./install-guide/auto-add-navtitle.md)
+         + [Konfigurera alternativet för redigering i syrgas](./cs-install-guide/conf-edit-in-oxygen.md)
       + Arbeta med globala profiler och mappprofiler {#global-folder-profiles}
          + [Konfigurera globala profiler eller profiler på mappnivå](./install-guide/conf-folder-level.md)
       + Konfigurera versioner {#version-mgt}
@@ -318,6 +322,7 @@ ht-degree: 3%
          + [Konfigurera generering av PDF för ett enskilt ämne](./cs-install-guide/conf-pdf-generation-dita-ot.md)
          + [Konfigurera översättningsfunktionen i webbredigeraren](./cs-install-guide/conf-translation-web-editor.md)
          + [Konfigurera en datakällanslutning](./cs-install-guide/conf-data-source-connector.md)
+         + [Konfigurera en datakällanslutning med verktyg](./cs-install-guide/conf-data-source-connector-tools.md)
          + [Ange avancerad kartredigerare som standard](./cs-install-guide/conf-map-editor.md)
          + [Inkludera @navtitle-attribut som standard](./cs-install-guide/auto-add-navtitle.md)
       + Arbeta med globala profiler och mappprofiler {#global-folder-profiles-cs}

@@ -1,10 +1,10 @@
 ---
 title: Redigera en gruppaktiveringskarta
-description: Lär dig hur du redigerar en gruppaktiveringskarta
+description: Använd den grupppublicerade kontrollpanelen AEM guider. Lär dig hur du redigerar en gruppaktiveringskarta genom att lägga till eller ta bort kartfiler.
 exl-id: 110eba52-c886-4148-aff9-9c4e1d3d85bd
-source-git-commit: 25641f5c3207d98228d406e3b553c06d2bad1e10
+source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: Cloud Publishing Microservice Architecture and Performance
 description: Förstå hur den nya mikrotjänsten möjliggör skalbar publicering på AEMaaCS.
 exl-id: 963d8912-be10-4d79-8ddd-12481c0ae682
-source-git-commit: 4185c31ae45c7b6fd0d394a15fbca0753d5e0463
+source-git-commit: aa71a2b8ff5f83365ff2f3562bb2b77061a3da8e
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ I den här artikeln får du information om arkitekturen och prestandanalen i den
 
 >[!NOTE]
 >
-> Microservice-baserad publicering i AEM Guides har stöd för PDF (både Native- och DITA-OT-baserade), HTML5 och anpassade utdatapunkter.
+> Microservice-baserad publicering i AEM Guides har stöd för PDF (både Native- och DITA-OT-baserade), HTML5, JSON och CUSTOM-baserade utdatapresentationer.
 
 ## Problem med befintliga publiceringsarbetsflöden i molnet
 
@@ -25,11 +25,11 @@ Om du inte använder den nya tjänsten sker all publicering på samma Kubernetes
 
 Resursbegränsningen var den främsta anledningen att komma på en dedikerad tjänst som gör att vi kan köra flera samtidiga och stora publiceringsarbetsbelastningar i molnet.
 
-## Introduktion till den nya arkitekturen
+## Introduktion till ny arkitektur
 
 Tjänsten använder Adobe branschledande molnlösningar som App Builder, IO Eventing, IMS för att skapa ett serverlöst erbjudande. Dessa tjänster bygger i sig på de allmänt vedertagna branschstandarderna Kubernetes och Docker.
 
-Varje begäran till den nya publiceringsmikrotjänsten körs i en isolerad dockningsbehållare som endast kör en publiceringsbegäran åt gången. Flera nya behållare skapas automatiskt om nya publiceringsbegäranden tas emot. Denna konfiguration med en enda behållare per begäran gör att mikrotjänsten kan leverera bästa prestanda till kunderna utan att medföra några säkerhetsrisker. Behållarna tas bort när publiceringen är klar och frigör därmed oanvända resurser.
+Varje begäran till den nya publiceringsmikrotjänsten körs i en isolerad dockningsbehållare som endast kör en publiceringsbegäran åt gången. Flera nya behållare skapas automatiskt om nya publiceringsbegäranden tas emot. Denna enda behållare per begäran-konfiguration gör att mikrotjänsten kan leverera bästa prestanda till kunderna utan att medföra några säkerhetsrisker. Behållarna tas bort när publiceringen är klar och frigör därmed oanvända resurser.
 
 All kommunikation skyddas av Adobe IMS med JWT-baserad autentisering och auktorisering och körs via HTTPS.
 

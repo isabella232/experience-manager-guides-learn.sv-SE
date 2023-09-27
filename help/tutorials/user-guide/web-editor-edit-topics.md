@@ -1,10 +1,10 @@
 ---
 title: Redigera ämnen i Web Editor
-description: Lär dig hur du redigerar ämnen i Web Editor
+description: Lär dig redigera ämnen i webbredigeraren. Lär dig olika redigeringsfunktioner för att ändra ämnesfilerna i AEM.
 exl-id: 9950df78-09bd-433a-891d-0d689bb0c2e4
-source-git-commit: 8073716bccacbe8d6a158b44d5106b083e3a5dcd
+source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ Webbredigeraren innehåller en rad redigeringsfunktioner som du kan använda fö
    >
    > Du kan också välja vilken ikon som ska visas i verktygsfältet genom att konfigurera `ui_config.json` filen finns på - `/etc/designs/fmdita/clientlibs/xmleditor/`. Kontakta systemadministratören om du vill ha mer information om hur du anpassar funktioner.
 
-1. När du är klar med redigeringen av dokumentet klickar du på **Spara**.
+1. När du har redigerat dokumentet klickar du **Spara**.
 
    >[!NOTE]
    >
    > Om du inte vill spara ändringarna i AEM databas klickar du på **Stäng** och klicka sedan på **Stäng utan att spara** i dialogrutan Osparade ändringar.
 
    **Uppdatera webbläsaren när filerna redigeras**
-AEM har stöd för att uppdatera webbläsaren medan du redigerar innehållet i webbredigeraren. Med den här funktionen kan du fortsätta redigera innehåll om ett programfel uppstår under arbetet. Om du trycker på Uppdatera i webbläsaren medan en eller flera filer med osparade ändringar öppnas för redigering, får du ett varningsmeddelande om att de osparade ändringarna kan gå förlorade. Du får ett alternativ för att avbryta uppdateringsåtgärden och spara filerna för att bevara ändringarna.
+AEM har stöd för att uppdatera webbläsaren medan du redigerar innehållet i webbredigeraren. Med den här funktionen kan du fortsätta redigera innehåll om ett programfel skulle uppstå när du arbetar. Om du trycker på Uppdatera i webbläsaren medan en eller flera filer med osparade ändringar öppnas för redigering, får du ett varningsmeddelande om att de osparade ändringarna kan gå förlorade. Du får ett alternativ för att avbryta uppdateringsåtgärden och spara filerna för att bevara ändringarna.
 
    Även när du uppdaterar webbläsaren behålls vyerna till vänster och till höger i webbredigeraren. Det aktiva ämnet på databaspanelen öppnas till exempel igen. Kartpanelen behålls tillsammans med den tidigare öppnade kartan.
 
@@ -42,7 +42,7 @@ AEM har stöd för att uppdatera webbläsaren medan du redigerar innehållet i w
 
    Den högra panelen öppnas också igen och visar samma vy som före uppdateringen.
 
-   **Indikator för arbetskopia**
+   **Arbetskopia**
 AEM innehåller en indikator för arbetskopiering som visar om den aktuella \(arbetskopia\) av filen är synkroniserad med den sparade versionen eller inte. Om du har gjort ändringar i den aktuella kopian och inte har sparat filen, visas ett \*-märke tillsammans med titeln på ämnesfliken. Den här indikatorn fungerar som en påminnelse om att spara ändringarna och försvinner när du sparar filen.
 
    ![](images/working-copy-text-update-indicator.png){width="550" align="left"}
