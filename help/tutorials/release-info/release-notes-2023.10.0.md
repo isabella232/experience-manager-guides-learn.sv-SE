@@ -1,10 +1,11 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides, oktober 2023-versionen
 description: Läs om felkorrigeringarna och hur du uppgraderar till oktober 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 4ce9024579aeaa97e6e35ac777ee3c14f0061aa6
+exl-id: fb1b74d7-25f2-4a20-9248-44dfdabf553d
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 2%
+source-wordcount: '1017'
+ht-degree: 1%
 
 ---
 
@@ -159,8 +160,9 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 - Nya översättningsprojekt skapas i stället för att nya jobb läggs till i de valda befintliga översättningsprojekten.  (10214)
 
+## Känt fel
 
+Adobe har identifierat följande kända fel i oktober 2023-versionen.
 
-
-
+- Återpublicering av innehållsfragment misslyckas.
 

@@ -1,13 +1,13 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
 description: Använd data från datakällan i AEM. Lär dig hur du infogar ett innehållsavdrag från datakällan. Skapa ett ämne med ämnesgeneratorn.
-source-git-commit: 87aef92535b7204503cd4ed1da838b43b1133b04
+exl-id: 9d60499c-49b4-4793-b3ec-5c99b34338e0
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
-
 
 # Använd data från datakällan
 
@@ -23,7 +23,7 @@ Beroende på din konfiguration kan administratören konfigurera en datakällansl
 <summary> Cloud Services </summary>
 
 
-- Om du använder versionen från oktober 2023 eller senare kan du lära dig hur [konfigurera en datakällanslutning med verktygen](../cs-install-guide/conf-data-source-connector-tools.md) i Cloud Servicens installations- och konfigureringshandbok.
+- Om du använder versionen från oktober 2023 eller senare kan du lära dig hur [konfigurera en datakällanslutning från användargränssnittet](../cs-install-guide/conf-data-source-connector-tools.md) i Cloud Servicens installations- och konfigureringshandbok.
 
 - Om du använder versionen från juli 2023 eller september 2023 ska du lära dig hur [konfigurera en datakällanslutning](../cs-install-guide/conf-data-source-connector.md) i Cloud Servicens installations- och konfigureringshandbok.
 
@@ -273,6 +273,3 @@ Du kan använda följande verktyg i hastighetsmallarna för att tillämpa olika 
 - `$renderTool`
 - `$resourceTool`
 - `$sortTool`
-
-
-

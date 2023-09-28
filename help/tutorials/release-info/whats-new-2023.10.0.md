@@ -1,9 +1,10 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides, oktober 2023-versionen
 description: Läs om de nya och förbättrade funktionerna i oktober 2023-versionen av Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 87aef92535b7204503cd4ed1da838b43b1133b04
+exl-id: 583bc9fe-1e61-4727-869b-0dbc19625f70
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -15,11 +16,11 @@ I den här artikeln beskrivs de nya och förbättrade funktionerna i versionen f
 Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](release-notes-2023.10.0.md).
 
 
-## Konfigurera en datakällanslutning med verktygen
+## Konfigurera en datakällanslutning från användargränssnittet
 
 Nu finns det en **Datakällor** som hjälper dig att konfigurera färdiga anslutningar för datakällor. Du kan enkelt skapa kopplingar för databaserna JIRA, SQL (MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MariaDB, H2DB), Adobe Commerce och Elasticsearch.
 
-Du kan också enkelt redigera, återansluta, duplicera eller ta bort en datakällkoppling. Lär dig hur [konfigurera en datakällanslutning med verktygen](../cs-install-guide/conf-data-source-connector-tools.md).
+Du kan också enkelt redigera, återansluta, duplicera eller ta bort en datakällkoppling. Lär dig hur [enkelt konfigurera en datakällanslutning från användargränssnittet](../cs-install-guide/conf-data-source-connector-tools.md).
 
 ![datakällanslutningar som listas på datakällpanelen](assets/data-sources-create-window.png){width="550" align="left"}
 
@@ -65,4 +66,3 @@ Mer information finns i **Kartvy** funktionsbeskrivning i [Vänster panel](../us
 Nu kan du välja en fil i webbredigeraren och sedan välja att redigera filen i plugin-programmet för syreanslutning i Experience Manager. Det här alternativet är inte aktiverat som en del av det färdiga stödet.
 
 Mer information finns i **Alternativ för en fil** funktionsbeskrivning i [Vänster panel](../user-guide/web-editor-features.md#id2051EA0M0HS) -avsnitt.
-

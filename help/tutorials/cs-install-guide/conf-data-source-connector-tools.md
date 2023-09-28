@@ -1,15 +1,17 @@
 ---
 title: Konfigurera en datakällanslutning med verktyg
 description: Lär dig hur du konfigurerar en datakällanslutning med verktygen.
-source-git-commit: 87e907a1fbc27c9b3f8db5e4ab3c78143b03001e
+exl-id: b73ceb8d-caf0-4752-a6d9-07985cdf741e
+source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 
-# Konfigurera en datakällanslutning med verktygen
+
+# Konfigurera en datakällanslutning från användargränssnittet
 
 Experience Manager Guides har **Datakällor** som hjälper dig att konfigurera färdiga anslutningar för datakällor. Du kan konfigurera anslutningar för databaserna JIRA, SQL (MySQL, PostgreSQL, Microsoft SQL Server, SQLite, MariaDB, H2DB), Adobe Commerce och Elasticsearch.
 
@@ -74,7 +76,3 @@ Du kan visa ett fel om det finns en koppling med samma namn.
 
 
 När du har konfigurerat datakällan visas anslutningen under **Panelen Datakällor** i webbredigeraren. Sedan kan du ansluta till datakällan och infoga ett innehållskuvert i dina ämnen. Mer information finns i [Infoga ett innehållssfragment från datakällan](../user-guide/web-editor-content-snippet.md).
-
-
-
-
