@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 40666d63314fa94f4ddf9b23341671994274c7e2
+source-git-commit: ebc63f6320f512987846b9d359014faf4772c5a7
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1612'
 ht-degree: 3%
 
 ---
@@ -54,8 +54,10 @@ ht-degree: 3%
       + Lokalt/Managed Services {#on-prem-release-notes}
          + 4.3.0 Release {#43-release}
             + Nyheter {#43-whats-new}
+               + [4.3.1 Nyheter](./release-info/whats-new-4.3.1-release.md)
                + [4.3.0 Nyheter](./release-info/whats-new-4.3-release.md)
             + Versionsinformation {#43-release-notes}
+               + [4.3.1 Versionsinformation](./release-info/release-notes-4.3.1.md)
                + [4.3.0 Versionsinformation](./release-info/release-notes-4.3.md)
          + 4.2 Utgåva {#42-release}
             + Nyheter {#42-whats-new}
@@ -242,6 +244,7 @@ ht-degree: 3%
          + [Konfigurera antalet LimitReads för en fråga](./install-guide/conf-query-limitreads.md)
          + [Installera paket för artikelbaserad publicering](./install-guide/configure-article-based-publishing.md)
          + [Konfigurera en datakällanslutning](./install-guide/conf-data-source-connector.md)
+         + [Konfigurera en datakällanslutning från användargränssnittet](./install-guide/conf-data-source-connector-tools.md)
          + [Ange avancerad kartredigerare som standard](./install-guide/conf-map-editor.md)
          + [Inkludera @navtitle-attribut som standard](./install-guide/auto-add-navtitle.md)
          + [Konfigurera alternativet för redigering i syrgas](./cs-install-guide/conf-edit-in-oxygen.md)
@@ -322,7 +325,7 @@ ht-degree: 3%
          + [Konfigurera generering av PDF för ett enskilt ämne](./cs-install-guide/conf-pdf-generation-dita-ot.md)
          + [Konfigurera översättningsfunktionen i webbredigeraren](./cs-install-guide/conf-translation-web-editor.md)
          + [Konfigurera en datakällanslutning](./cs-install-guide/conf-data-source-connector.md)
-         + [Konfigurera en datakällanslutning med verktyg](./cs-install-guide/conf-data-source-connector-tools.md)
+         + [Konfigurera en datakällanslutning från användargränssnittet](./cs-install-guide/conf-data-source-connector-tools.md)
          + [Ange avancerad kartredigerare som standard](./cs-install-guide/conf-map-editor.md)
          + [Inkludera @navtitle-attribut som standard](./cs-install-guide/auto-add-navtitle.md)
       + Arbeta med globala profiler och mappprofiler {#global-folder-profiles-cs}

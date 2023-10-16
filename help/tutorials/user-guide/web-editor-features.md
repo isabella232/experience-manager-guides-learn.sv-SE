@@ -1,10 +1,10 @@
 ---
 title: Bekanta dig med Web Editors funktioner
 description: Upptäck funktionerna i webbredigeraren i AEM. Lär dig webbredigerarens gränssnitt, inklusive huvudverktygsfältet, det sekundära verktygsfältet, den vänstra panelen, området för innehållsredigering och den högra panelen.
-exl-id: 38b378ff-da24-4560-a17f-a2c547aea1b8
-source-git-commit: a209e46e41055348402292e20c229890cd0c01cf
+exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
+source-git-commit: f7a0140a274a83dfeb6a1ba70ae9c09297d1754c
 workflow-type: tm+mt
-source-wordcount: '16066'
+source-wordcount: '16500'
 ht-degree: 0%
 
 ---
@@ -141,17 +141,62 @@ I skärmbilden nedan visas endast 3 av 4 konfigurerade element från den föreg�
 
 - **Attributlista**: På liknande sätt som Elements-listan kan du styra listan med attribut och deras visningsnamn som ska visas i attributlistan för ett element. På följande skärmbild har bara tre attribut konfigurerats för att visas i ett elements attributlista:
 
-![](images/editor-setting-attributes-list.png){width="650" align="left"}
+  ![](images/editor-setting-attributes-list.png){width="650" align="left"}
 
-När du försöker lägga till ett attribut i ett element med den här inställningen visas bara listan med attribut som konfigurerats i listan.
+  När du försöker lägga till ett attribut i ett element med den här inställningen visas bara listan med attribut som konfigurerats i listan.
 
-![](images/editor-setting-add-attributes-list.png-to-element.PNG){width="300" align="left"}
+  ![](images/editor-setting-add-attributes-list.png-to-element.PNG){width="300" align="left"}
+
+- **Publicera profil**: Detta innehåller de publiceringsprofiler som kan användas för att publicera kunskapsbasutdata. Du kan skapa en ny profil för en vald konsumenttyp. Till exempel Salesforce.
+
+   - **Krav för att skapa en Salesforce-publiceringsprofil**
+
+      - Skapa en ansluten app för Salesforce. Mer information finns i [Aktivera OAuth-inställningar för API-integrering](https://help.salesforce.com/s/articleView?id=sf.connected_app_create_api_integration.htm&amp;type=5).
+
+      - När du konfigurerar den anslutna appen ska du se till följande:
+
+         - Ange återanropet.
+
+           `URL: http://: <server name>:<port>/bin/dxml/thirdparty/callback/salesforce`
+
+         - Välj följande OAuth-scope:
+            - Fullständig åtkomst (fullständig)
+            - Välj Hantera användardata via API (api)
+
+  När appen har konfigurerats tillhandahåller Salesforce en **Konsumentnyckel** och **Konsumenthemlighet**.
+
+  Dessa kan användas för att skapa Salesforce-publiceringsprofilen.
+  ![profiler i redigeringsinställningarna](./images/create-profile-editor-settings.png){width="300" align="left"}
+
+
+
+- Om du vill skapa en publiceringsprofil kan du välja en kunskapsbas som Salesforce från **Servertyp** nedrullningsbar meny. Ange ett profilnamn. I **Webbplats-URL** ange den konsumentwebbplats som du vill använda för publicering av utdata och sedan lägga till **Konsumentnyckel** och **Konsumenthemlighet** tillhandahålls av konsumentwebbplatsen som Salesforce. Logga sedan in på den nya profilen.
+
+  >[!NOTE]
+  >
+  >Om du vill konfigurera en proxy för Salesforce i Experience Manager-guider använder du Apache HTTP Components Proxy Configuration i AEM. Lär dig hur [konfigurera proxy för AEM Länkkontroll](https://helpx.adobe.com/experience-manager/kb/How-to-configure-proxy-for-the-AEM-Link-Checker-AEM.html).
+
+
+  När du har loggat in kan du välja publiceringsprofilen i förinställningarna för en DITA-karta och använda för att generera utdata för valda artiklar. Mer information finns i [Artikelbaserad publicering från webbredigeraren](../install-guide/configure-article-based-publishing.md) i installations- och konfigureringshandboken.
+
+- **Validering**: Den här fliken innehåller alternativ för att konfigurera schematranvalideringar i webbredigeraren. Du kan aktivera följande funktioner:
+
+   - **Kör valideringskontrollen innan filen sparas**: Välj det här alternativet om du vill köra Schematron-valideringar med de valda Schematron-filerna innan du sparar. Du kan lägga till en schemafil genom att klicka på plusikonen (+). De valda schematrons-filerna visas.
+
+     >[!NOTE]
+     >De markerade schematrons-filerna behålls för den valda mappprofilen.
+
+     ![Validering i redigeringsinställningar](./images/editor-setting-validation.png){width="300" align="left"}
+Detta förhindrar att användarna sparar filer som bryter en regel som definierats i de valda Schematron-filerna. Om detta inte är markerat kommer filen inte att valideras innan ändringarna sparas.
+
+   - **Tillåt alla användare att lägga till schematron-filer på valideringspanelen**: Välj det här alternativet om du vill tillåta användare att lägga till schemafiler på valideringspanelen i Web Editor. Detta gör att användarna kan lägga till Schematron-filer och sedan validera ämnena mot Schematron-filen. Om detta inte är markerat **Lägg till schemaradfil** knappen är inte tillgänglig för användarna i **Valideringspanelen** i Web Editor.
+
 
 - **Visa attribut**: Precis som attributlistan kan du styra listan med attribut som ska visas i attributlistan för ett element. Som standard är fyra **Visa attribut** — målgrupp, plattform, produkt och props har konfigurerats för att visas i ett elements attributlista. Du kan också lägga till ett visningsattribut med **Lägg till** överst. Du kan även ta bort alla visningsattribut med **Ta bort** -ikon.
 
-De attribut som är definierade för ett element visas i layoutvyn och dispositionsvyn.
+  De attribut som är definierade för ett element visas i layoutvyn och dispositionsvyn.
 
-![](images/editor-settings-display-attributes.png){width="550" align="left"}
+  ![](images/editor-settings-display-attributes.png){width="550" align="left"}
 
 - **Översättning**: Den här fliken innehåller ett alternativ för att sprida källetiketterna till målversionen.
 

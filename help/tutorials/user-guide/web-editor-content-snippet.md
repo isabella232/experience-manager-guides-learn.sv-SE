@@ -1,10 +1,10 @@
 ---
 title: Infoga ett innehållssfragment från datakällan
 description: Använd data från datakällan i AEM. Lär dig hur du infogar ett innehållsavdrag från datakällan. Skapa ett ämne med ämnesgeneratorn.
-exl-id: 9d60499c-49b4-4793-b3ec-5c99b34338e0
-source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
+exl-id: fbd5eff2-451b-49d6-ba77-6eb271e94349
+source-git-commit: f7a0140a274a83dfeb6a1ba70ae9c09297d1754c
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2060'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,9 @@ Beroende på din konfiguration kan administratören konfigurera en datakällansl
 <details>    
 <summary>  Lokal programvara </summary>
 
-Lär dig hur [konfigurera en datakällanslutning](../install-guide/conf-data-source-connector.md)  i Installations- och konfigureringshandboken på plats.
+- Om du använder version 4.3.1 eller senare bör du lära dig hur [konfigurera en datakällanslutning från användargränssnittet](../cs-install-guide/conf-data-source-connector-tools.md) i Installations- och konfigureringshandboken på plats.
+
+- Om du använder version 4.3 ska du lära dig hur [konfigurera en datakällanslutning](../cs-install-guide/conf-data-source-connector.md) i Installations- och konfigureringshandboken på plats.
 </details>
 
 
