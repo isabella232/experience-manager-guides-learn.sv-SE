@@ -1,13 +1,13 @@
 ---
 title: Introduktion
 description: Introduktion till API-referenshandboken för AEM
-source-git-commit: 4dcd90422f02f3b45aa74137fe58609962b09b49
+exl-id: d8ee9cf7-1d67-4b4a-aa80-64e893a99463
+source-git-commit: 112085153aaf246289bd8f91657c95e986df482e
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 0%
 
 ---
-
 
 # Introduktion {#id1761C0007W7}
 
@@ -175,7 +175,7 @@ Utför följande steg för att konfigurera och använda JAR för tjänstens API 
    <repository>
       <id>fmdita-public</id>
       <name>fmdita-public</name>
-      <url>https://repo.xmldocumentation.com/repository/fmdita-public</url>
+      <url>https://repo.aem-guides.com/repository/fmdita-public</url>
    </repository>
    ```
 
@@ -228,4 +228,3 @@ Nedan följer en lista över andra användbara resurser i AEM, som finns på sid
 - Installations- och konfigureringshandbok
 - Snabbstartsguide
 - [Hjälparkivsida](https://helpx.adobe.com/xml-documentation-for-experience-manager/archive.html) \(använd äldre versionsdokumentation\)
-
