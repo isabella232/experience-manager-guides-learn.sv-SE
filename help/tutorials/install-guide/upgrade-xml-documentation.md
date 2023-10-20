@@ -2,7 +2,7 @@
 title: Uppgradera Adobe Experience Manager-guider
 description: Lär dig hur du uppgraderar Adobe Experience Manager-guider
 exl-id: f058b39f-7408-4874-942b-693e133886cf
-source-git-commit: 9a4f230d6724bcb5d8fc7036048ca13fd7bc52bc
+source-git-commit: 6078cb1856ba45524e46165d546daf4109e9b2b2
 workflow-type: tm+mt
 source-wordcount: '4349'
 ht-degree: 0%
@@ -526,7 +526,7 @@ Utför följande steg för att efterbearbeta befintligt innehåll och använda d
 
 ## Uppgradera till version 4.3.1 {#upgrade-version-4-3-1}
 
-Uppgradering till version 4.3.1 beror på den aktuella versionen av stödlinjerna för Experience Manager. Om du använder version 4.3, 4.2 eller 4.2.1 kan du uppgradera direkt till version 4.3.1.
+Uppgradering till version 4.3.1 beror på den aktuella versionen av stödlinjerna för Experience Manager. Om du använder version 4.3.0, 4.2 eller 4.2.1 kan du uppgradera direkt till version 4.3.1.
 
 >[!NOTE]
 >
