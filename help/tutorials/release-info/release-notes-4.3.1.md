@@ -1,41 +1,41 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides 4.3.1
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till 4.3.1-utgåvor av Adobe Experience Manager Guides
-source-git-commit: a8f36d020422d9d83ca47e2246dc42278f2c7963
+source-git-commit: eb22fe5d4872b0e5c6594869193799fd9e64d95d
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1216'
 ht-degree: 4%
 
 ---
 
 # 4.3.1-utgåvan av Adobe Experience Manager Guides (oktober 2023)
 
-Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som har korrigerats i version 4.3.1 av Adobe Experience Manager Guides (senare kallat *AEM stödlinjer*).
+Den här versionsinformationen innehåller uppgraderingsinstruktioner, kompatibilitetsmatris och problem som har korrigerats i version 4.3.1 av Adobe Experience Manager Guides (senare kallat *Stödlinjer för Experience Manager*).
 
 Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i version 4.3.1 av Adobe Experience Manager Guides](./whats-new-4.3.1-release.md).
 
-## Uppgradera till version 4.3.1 av AEM
+## Uppgradera till version 4.3.1 av Experience Manager Guides
 
 
-Du kan enkelt uppgradera din nuvarande version av AEM till version 4.3.1. Innan du uppgraderar till version 4.3.1 av AEM Guides måste du tänka på följande: Du kan uppgradera din nuvarande version av AEM Guides till version 4.3.1
+Du kan enkelt uppgradera din nuvarande version av Guides till version 4.3.1. Innan du uppgraderar till version 4.3.1 av handboken för Experience Manager måste du tänka på följande: Du kan uppgradera din nuvarande version av handboken för Experience Manager till version 4.3.1
 
-- Om du använder version 4.2 eller 4.2.x kan du uppgradera direkt till version 4.3.1.
-- Om du använder version 4.1 eller 4.1.x måste du uppgradera till version 4.2 eller 4.2.x innan du uppgraderar till version 4.3.1.
+
+- Om du använder version 4.3.0, 4.2 eller 4.2.1 kan du uppgradera direkt till version 4.3.1.
+- Om du använder version 4.1 eller 4.1.x måste du uppgradera till version 4.3.0, 4.2 eller 4.2.x innan du uppgraderar till version 4.3.1.
 - Om du använder version 4.0 måste du uppgradera till version 4.2 innan du uppgraderar till version 4.3.1.
 - Om du använder version 3.8.5 måste du uppgradera till version 4.0 innan du uppgraderar till version 4.2.
-- Om du har en version som är äldre än 3.8.5, se avsnittet om AEM i den produktspecifika installationshandboken.
-
+- Om du har en tidigare version än 3.8.5 kan du läsa mer i avsnittet Upgrade Experience Manager Guides i den produktspecifika installationsguiden.
 
 
 >[!NOTE]
 >
->Du måste installera AEM Service Pack innan du uppgraderar AEM Guides version.
+>Du måste installera AEM Service Pack innan du uppgraderar Experience Manager Guides-versionen.
 
 Mer information finns i [Uppgraderingsinstruktioner](../install-guide/upgrade-xml-documentation.md).
 
 ## Kompatibilitetsmatris
 
-I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds i AEM 4.3.1.
+I det här avsnittet listas kompatibilitetsmatrisen för de program som stöds i version 4.3.1 av Experience Manager Guides.
 
 ### Adobe Experience Manager
 
@@ -71,7 +71,7 @@ Mer information finns i *Tekniska krav* i guiden Installera och konfigurera Adob
 
 | Komponentpaketets namn | Komponentversion | Mallversion |
 |---|---|---|
-| AEM Guides Components Content Package for Cloud Service | dxml-components.all-1.2.2 | aem-site-template-dxml.all-1.0.15 |
+| Innehållspaket för komponenter i Experience Manager-stödlinjer för Cloud Service | dxml-components.all-1.2.2 | aem-site-template-dxml.all-1.0.15 |
 
 ## Åtgärdade problem
 

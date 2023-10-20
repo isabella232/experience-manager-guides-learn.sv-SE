@@ -1,22 +1,22 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides 4.3.1
 description: Läs om de nya och förbättrade funktionerna i 4.3.1-utgåvorna av Adobe Experience Manager Guides
-source-git-commit: 5c51ff7f52624c6403e5486e099d1262f324e523
+source-git-commit: a865630527045574ef5a96622537e767eacd9fc2
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1119'
 ht-degree: 0%
 
 ---
 
 # Nyheter i version 4.3.1 av Adobe Experience Manager Guides (oktober 2023)
 
-I den här artikeln beskrivs de nya och förbättrade funktionerna i version 4.3.1 av Adobe Experience Manager Guides (senare kallat *AEM stödlinjer*).
+I den här artikeln beskrivs de nya och förbättrade funktionerna i version 4.3.1 av Adobe Experience Manager Guides (senare kallat *Stödlinjer för Experience Manager*).
 
 Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](./release-notes-4.3.1.md).
 
 ## Ansluta till en datakälla och infoga ämnen
 
-Stödlinjerna i Experience Manager har färdiga kopplingar som hjälper dig att ansluta till datakällor, vilket gör AEM stödlinjer till ett verkligt innehållsnav. Detta ger dig en fördel av att spara tid och arbete som annars skulle ha ägnats åt manuell datainmatning eller replikering.
+Stödlinjerna för Experience Manager har färdiga kopplingar som hjälper dig att ansluta till datakällor, vilket gör Experience Manager-stödlinjerna till ett verkligt innehållsnav. Detta ger dig en fördel av att spara tid och arbete som annars skulle ha ägnats åt manuell datainmatning eller replikering.
 
 Tillsammans med de befintliga färdiga anslutningarna som JIRA och SQL (MySQL, PostgreSQL, SQL Server, SQLite) kan administratören även konfigurera anslutningarna för databaserna MariaDB, H2DB, Adobe Commerce och Elasticsearch. De kan även lägga till andra kopplingar genom att utöka standardgränssnitten.
 
