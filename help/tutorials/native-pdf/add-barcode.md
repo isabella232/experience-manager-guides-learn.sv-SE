@@ -1,7 +1,7 @@
 ---
 title: Publiceringsfunktion för PDF | Lägg till streckkod
 description: Lär dig hur du lägger till streckkoder.
-source-git-commit: 6cea7a92eed8f7b1d4a0763baae65ccccd71790e
+source-git-commit: 31225583f45337b209f325174176b9a4199db648
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Lägg till ett resurs-ID-element på DITA-kartan. Resurs-ID fungerar som huvudin
 
 Du kan också redigera resurs-ID:t i redigeringsläget.
 
-<img src="./assets/barcode-map.png" alt="Exempelutdata med streckkod" width="700">
+<img src="./assets/barcode-map.png" alt="Exempelutdata med streckkod" width="700" border="2px solid blue">
 
 
 ### Lägga till en streckkodsplatshållare i mallhuvudet
@@ -82,30 +82,30 @@ I följande skärmbild visas en exempelstreckkod i utdata från PDF.
 
 | Typ | CSS-attribut | Ytterligare attribut |
 | ------------------------------- | ----------------------- | -------------------------- |
-| QR-kod | qrcode |  |
-| PDF417 | pdf417 |  |
-| DataMatrix | data-matrix |  |
-| Aztec-kod | aztec-code |  |
-| Stödrastermatris | grid-matrix |  |
-| Maxicode | maxicode-läge-4 |  |
-| Micro QR | microqr |  |
-| Kod ett | code-one |  |
-| Kodablock F | codablockf |  |
-| GS1 Databar Limited | databar-begränsad |  |
-| GS1-databasens omnidirectional | databar, enkelriktad |  |
-| EAN-13 | ean-13 |  |
+| QR-kod | qrcode |                            |
+| PDF417 | pdf417 |                            |
+| DataMatrix | data-matrix |                            |
+| Aztec Code | aztec-code |                            |
+| Stödrastermatris | grid-matrix |                            |
+| Maxicode | maxicode-läge-4 |                            |
+| Micro QR | microqr |                            |
+| Kod ett | code-one |                            |
+| Kodablock F | codablockf |                            |
+| GS1 Databar Limited | databar-begränsad |                            |
+| GS1-databasens omnidirectional | databar, omnidirectional |                            |
+| EAN-13 | ean-13 |                            |
 | GS1-128 (EAN-128) | code128 | -ro-barcode-encoding: gs1; |
-| ITF-14 | itf14 |  |
-| UPC-A | upc-a |  |
-| Kod 128 | code128 |  |
-| Varvad 2 av 5 | code2of5 interleaved |  |
-| POSTNET | postnet |  |
-| Dutch Post Kixcode | kixcode |  |
-| Korea Post | Korea-post |  |
-| Deutsche Post Leitcode | dp-leitcode |  |
-| Australien | auspost |  |
-| Logmars | logmars |  |
-| Farmakood | farmakologi |  |
-| USPS OneCode (Intelligent Mail) | usps-onecode |  |
+| ITF-14 | itf14 |                            |
+| UPC-A | upc-a |                            |
+| Kod 128 | code128 |                            |
+| Varvad 2 av 5 | code2of5 interleaved |                            |
+| POSTNET | postnet |                            |
+| Dutch Post Kixcode | kixcode |                            |
+| Korea Post | Korea-post |                            |
+| Deutsche Post Leitcode | dp-leitcode |                            |
+| Australien | auspost |                            |
+| Logmars | logmars |                            |
+| Farmakood | farmakologi |                            |
+| USPS OneCode (Intelligent Mail) | usps-onecode |                            |
 
 
