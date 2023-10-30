@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 5abcc887a24d838caabdf9a34a84ebc851ed4cbf
+source-git-commit: 7fe45a2bb55e9cb72518edd3cb2aa81b99612613
 workflow-type: tm+mt
-source-wordcount: '4376'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -414,11 +414,11 @@ Du kan till exempel lägga till en språkvariabel,&quot;reference-label&quot;, o
 När du lägger till `${lng:<variable name>}` till avsnittet Stycke innehåller korsreferenserna i styckena i utdata den lokaliserade texten och sidnumret.\
 På följande skärmbilder visas korsreferenserna &quot;Visa på sidan 1&quot; på engelska och &quot;Einzelheiten finden Sie auf der Seite 1&quot; på tyska.
 
-<img src="./assets/english-output-corss-reference.png" alt="Engelska utdata för en korsreferens i en pragrah" width ="800">
+<img src="./assets/english-output-corss-reference.png" alt="Engelska utdata för en korsreferens i en pragrah" width ="800" border="2px solid blue">
 
 *En korsreferens i ett stycke när den publiceras på engelska.*
 
-<img src="./assets/german-output-corss-reference.png" alt="Tyska utdata av en korsreferens i en pragrah" width ="800">
+<img src="./assets/german-output-corss-reference.png" alt="Tyska utdata av en korsreferens i en pragrah" width ="800" border="2px solid blue">
 
 *En korsreferens inom ett stycke när den publiceras på tyska.*
 
