@@ -2,9 +2,9 @@
 title: Skapa och anpassa inbyggda PDF-mallar
 description: Lär dig hur du skapar och anpassar mallar för inbyggda PDF.
 exl-id: 7660da8e-8a1e-4493-b99b-9b5de9a7483f
-source-git-commit: 49fa930483f48cafd057002ee26c9499ce967c60
+source-git-commit: da6ada7329aa338849de86ebfda94587bbc4ab54
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -13,22 +13,31 @@ ht-degree: 0%
 
 En mall ger en konsekvent innehållslayout och innehållsstruktur. När mallarna är fördefinierade kan du undvika att arbeta om formateringsproblem som uppstår för varje nytt projekt eller uppdateringar. Med mallar kan du utforma sidlayouter, formatera innehåll och använda olika inställningar för att anpassa PDF.
 
-Utvecklare kan använda förinställningarna för PDF för att generera utdata, men de kan skapa egna mallar. Det finns exempelmallar som levereras ut ur kartongen och som kan anpassas ytterligare eller dupliceras av utvecklarna enligt deras organisatoriska krav.
+## Mallar för fabriksinstallationer och anpassade PDF
+
+Det finns några färdiga mallar som utvecklarna kan använda som grundmallar för att skapa anpassade mallar efter organisationens behov.
+
 
 
 ## Skapa en ny PDF-mall {#create-pdf-template}
 
-Du kan skapa anpassade PDF-mallar med särskilda sidlayouter och definiera formatering för sidlayoutskomponenter (som innehållsförteckning, index, ordlista) eller DITA-komponenter (som rubrik, stycke, lista) med hjälp av formatmallar. Du kan skapa en ny mall från grunden eller skapa den med en exempelmall.
+Du kan skapa anpassade PDF-mallar med särskilda sidlayouter och definiera formatering för sidlayoutskomponenter (som innehållsförteckning, index, ordlista) eller DITA-komponenter (som rubrik, stycke, lista) med hjälp av formatmallar.
 
 Så här skapar du en ny PDF-mall:
 1. Gå till webbredigeraren **Utdata** -fliken.
-1. Expandera den vänstra sidlisten och välj **Mallar**.
+1. Välj **Mallar** <img src="./assets/template.svg" alt= "mallikon" width="25"> till vänster.
 <img src="assets/create-pdf-template.png" alt="Skapa PDF-mall" width="400">
-1. I panelen **Mallar** väljer du ikonen **+** bredvid **Mallar** och väljer **PDF-mall**.
-1. Ange ett namn för mallen i dialogrutan **Ny mall**.
-1. Klicka på **Klar**.
+1. I fönstret **Mallar** väljer du ikonen **+** bredvid **Mallar** och väljer **PDF-mall**.
+1. I dialogrutan **Ny PDF-mall** väljer du en standardmall som du vill använda som bas för att skapa den anpassade mallen. Du kan också använda sökrutan för att söka efter en mall.
+1. Ange en rubrik för mallen.
 
-Den nya mallen skapas och läggs till i *Mallar* -panelen.
+>[!NOTE]
+>
+>  Du kan också förhandsgranska en miniatyrbild för mallen när du skapar och duplicerar en mall. Redigera eller ta bort miniatyrbilden med [**Egenskaper**](#properties-option) i **Alternativ** -menyn när du har skapat mallen.
+
+1. Klicka **Skapa**.
+
+   Den nya mallen skapas och läggs till i **Mallar** -panelen.
 
 ## Duplicera en PDF-mall {#duplicate-pdf-template}
 
@@ -36,37 +45,83 @@ Om du vill skapa en ny mall med samma sidlayout och formatering som en befintlig
 
 Så här duplicerar du en befintlig PDF-mall:
 1. Gå till webbredigeraren **Utdata** -fliken.
-1. Expandera den vänstra sidlisten och välj **Mallar**.
+1. Välj **Mallar** <img src="./assets/template.svg" alt= "mallikon" width="25"> till vänster. Då öppnas **Mallar** -fönstret.
+1. Håll pekaren över mallen som du vill duplicera och markera **...** *Alternativ* ikon och välj **Duplicera** på snabbmenyn.
 
-   Mallpanelen öppnas.
-1. Håll pekaren över mallen som du vill duplicera och välj (*Alternativ* ikon) **...** och välja **Duplicera** på snabbmenyn.
+   Då öppnas **Duplicera PDF-mall** -dialogrutan.
 
-   Dialogrutan Duplicera mall öppnas.\
-   <img src="assets/duplicate-template.png" alt="Mallen Duplicera PDF" width="250">
-1. Ange ett namn för teamplet.
+   <img src="assets/duplicate-template.png" alt="Mallen Duplicera PDF" width="350">
 
-   The **Namn** fältet är förifyllt som en kopia av samma namn som källmallen.
+   *Välj en mall som du vill duplicera, förhandsvisa miniatyrbilden och uppdatera titeln i dialogrutan **Duplicera PDF-mall**-dialogrutan.*
 
-1. Om du vill ange ett önskat namn tar du bort det förifyllda namnet och anger ett namn.
-1. Klicka **Klar**.
+1. Ange en rubrik för mallen.
 
-   En dubblettmall skapas och läggs till under Mallar.
+   The **Titel** fältet är förifyllt som en kopia av samma titel som källmallen. Du kommer att visa ett felmeddelande om mallen med samma namn finns.
+
+
+
+1. Om du vill ange en önskad titel tar du bort den förifyllda titeln och anger en titel.
+1. Klicka **Duplicera**.
+
+   En dubblettmall skapas och läggs till under **Mallar**.
+
+## Andra åtgärder för mallarna
+
+Du kan även utföra följande åtgärder på mallarna från **Alternativ** meny:
+
+<img src="assets/PDF-template-options.png" alt="Mallen Duplicera PDF" width="350">
+
+### Ta bort
+
+Välj alternativet Ta bort om du vill ta bort den markerade mallen. Välj sedan Ja på bekräftelsemeddelandet.
+Förinställningen tas bort från **Mallar**.
+
+### Egenskaper{#properties-option}
+
+Välj det här alternativet om du vill visa och redigera mallens egenskaper. Du kan förhandsgranska mallens befintliga miniatyrbild. Du kan också redigera eller ta bort miniatyrbilden. Du kan också ändra mallens rubrik och beskrivning.
+
+### Visa i resursgränssnitt
+
+Välj det här alternativet om du vill visa mallen i resursgränssnittet. När mallens rotplats öppnas kan du visa alla resurser i mallen.
+
+När du har skapat den anpassade mallen kan du välja den bland sidlayouterna i PDF-förinställningen.
+Lär dig hur [publicera PDF](https://experienceleague.adobe.com/docs/experience-manager-guides-learn/tutorials/user-guide/output-gen/web-editor/native-pdf-web-editor.html?lang=en).
+
+>[!NOTE]
+>
+>Om mappen har en konfigurerad mappprofil visas endast de PDF-mallar som är konfigurerade i mappprofilen.
+
+Beroende på din konfiguration kan administratören konfigurera mallarna:
+
+<details>
+<summary> Cloud Services </summary>
+
+Mer information om hur du konfigurerar globala profiler och profiler på mappnivå finns i [Konfigurera mallar](../cs-install-guide/conf-folder-level.md#id1889D0IL0Y4) i installations- och konfigurationshandboken för Cloud Service.
+
+</details>
+
+<details>    
+<summary>  Lokal programvara </summary>
+
+Mer information om hur du konfigurerar globala profiler och profiler på mappnivå finns i [Konfigurera redigeringsmallar](../install-guide/conf-folder-level.md#create-custom-authoring-template-id1917d0eg0hj) i installations- och konfigureringshandboken på plats.
+
+</details>
 
 ## Anpassa en PDF-mall {#customize-pdf-template}
 
 Du kan anpassa mallar genom att justera mallkomponenterna och använda formatformat med hjälp av formatmallar.
 
 Så här anpassar du en PDF-mall:
-1. Gå till fliken Utdata i Web Editor.
-1. Expandera den vänstra sidlisten och välj Mallar.
+1. Gå till webbredigeraren **Utdata** -fliken.
+1. Expandera den vänstra sidlisten och välj **Mallar**.
 
-   Mallpanelen öppnas.
+   Då öppnas **Mallar** -panelen.
 1. Gör något av följande om du vill visa komponenterna i en mall:
 
    * Välj >-ikonen bredvid en mall eller dubbelklicka på mallnamnet.
-   * Håll muspekaren över en mall och välj ... (alternativikonen). Välj sedan Redigera på snabbmenyn.
+   * Håll pekaren över en mall och välj ... (**Alternativ** ikon) och välj **Redigera** på snabbmenyn.
 
-     Som standard öppnas inställningspanelen i mallredigeraren.
+     Som standard öppnas **Inställningar** i mallredigeraren.
    <img src="assets/customize-pdf-template.png" alt="Anpassa PDF Teamplte" width="350">
 
    >[!NOTE]
@@ -75,7 +130,7 @@ Så här anpassar du en PDF-mall:
    >
    > `/libs/fmdita/pdf`
 
-   De olika mallkomponenterna som du kan anpassa är kategoriserade i följande avsnitt:
+   De olika mallkomponenter du kan anpassa är kategoriserade under följande avsnitt:
    * Sidlayouter: Ett vanligt PDF innehåller olika sidor, t.ex. ett försättsblad eller en titelsida, innehållsförteckning, kapitel, index, citat med mera. I delen Sidlayouter kan du designa utseendet på olika sidor som skulle utgöra PDF. Mer information finns i [Sidlayouter](../native-pdf/components-pdf-template.md#page-layouts).
 
      Förutom utseendet kan du även definiera placeringen av sidelement som sidhuvud, sidfot och innehållsområden på en sida. Mer information om hur du anpassar en sidas layout finns i [Skapa och anpassa sidlayouter](components-pdf-template.md#create-customize-page-layout).
@@ -90,4 +145,9 @@ Mer information om hur du använder inställningar finns i [Avancerade PDF-inst�
 1. Om du vill anpassa en mallkomponent dubbelklickar du på en mallkomponent eller väljer ikonen > före den.
 
    Du kan till exempel dubbelklicka *Sidlayouter* eller välj *>* ikon före *Sidlayouter* för att visa tillgängliga sidlayouter.
+
+   >[!NOTE]
+   >
+   >Du kan även uppdatera en miniatyrbild och mallbeskrivningen med hjälp av [**Egenskaper**](#properties-option) i **Alternativ** -menyn.
+
 1. När du har gjort önskade ändringar väljer du *Spara alla* (eller `Ctrl+S`).

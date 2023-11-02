@@ -1,10 +1,10 @@
 ---
 title: Redigera ämnen i Web Editor
 description: Lär dig redigera ämnen i webbredigeraren. Lär dig olika redigeringsfunktioner för att ändra ämnesfilerna i AEM.
-exl-id: 9950df78-09bd-433a-891d-0d689bb0c2e4
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+exl-id: 8da37a81-e8c3-434f-b3f4-4723d87c2ade
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Webbredigeraren innehåller en rad redigeringsfunktioner som du kan använda fö
    > Om du inte vill spara ändringarna i AEM databas klickar du på **Stäng** och klicka sedan på **Stäng utan att spara** i dialogrutan Osparade ändringar.
 
    **Uppdatera webbläsaren när filerna redigeras**
-AEM har stöd för att uppdatera webbläsaren medan du redigerar innehållet i webbredigeraren. Med den här funktionen kan du fortsätta redigera innehåll om ett programfel skulle uppstå när du arbetar. Om du trycker på Uppdatera i webbläsaren medan en eller flera filer med osparade ändringar öppnas för redigering, får du ett varningsmeddelande om att de osparade ändringarna kan gå förlorade. Du får ett alternativ för att avbryta uppdateringsåtgärden och spara filerna för att bevara ändringarna.
+Guiderna i Experience Manager har stöd för att uppdatera webbläsaren medan du redigerar innehåll i Web Editor. Med den här funktionen kan du fortsätta redigera innehåll om ett programfel skulle uppstå när du arbetar. Om du trycker på Uppdatera i webbläsaren medan en eller flera filer med osparade ändringar öppnas för redigering, får du ett varningsmeddelande om att de osparade ändringarna kan gå förlorade. Du får ett alternativ för att avbryta uppdateringsåtgärden och spara filerna för att bevara ändringarna.
 
-   Även när du uppdaterar webbläsaren behålls vyerna till vänster och till höger i webbredigeraren. Det aktiva ämnet på databaspanelen öppnas till exempel igen. Kartpanelen behålls tillsammans med den tidigare öppnade kartan.
+   Även när du uppdaterar webbläsaren behålls vyerna till vänster och till höger i webbredigeraren. Stödlinjerna i Experience Manager återställer det senast sparade läget för de filer som öppnats i webbredigeraren när du uppdaterar webbläsaren. De filer som öppnas i databaspanelen öppnas till exempel igen. Kartpanelen behålls tillsammans med den tidigare öppnade kartan.
 
    Det aktiva ämnet eller DITA-kartan öppnas på nytt i området för innehållsredigering.
 

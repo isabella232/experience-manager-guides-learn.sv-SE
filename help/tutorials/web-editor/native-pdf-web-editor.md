@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Lär dig hur du använder publicering i PDF, skapar och genererar en förinställning för utdata i PDF, hämtar tillfälliga filer efter att utdata från PDF samt använder språkvariabler i AEM.
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 4c10f2387208477bd2ba27188e8aeaa6f3a4a661
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3264'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Används för att ange sidlayouter och ange alternativ för sidvisning för utda
 
 | Inställning | Beskrivning |
 | --- | --- |
-| **PDF-mall** | PDF-mallar har en tydlig struktur för att definiera sidlayouter, formatera innehåll och tillämpa olika inställningar på utdata från PDF. Välj en mall i listrutan PDF. |
+| **PDF-mall** | PDF-mallar har en tydlig struktur för att definiera sidlayouter, formatera innehåll och tillämpa olika inställningar på utdata från PDF. Välj en mall i listrutan PDF. <br> Du kan också välja **Bläddra i mall** <img src="./assets/browse-templates-icon.svg"  alt= "bläddra bland mallar, ikon" width="25">  för att välja en mall. I **Välj PDF-mall** kan du även förhandsvisa miniatyrbilden och visa den valda mallens rubrik och beskrivning. |
 | **Sidvisning** | Använd sidvisningen för sidvyn som visar hur PDF visas när den öppnas. Välj en önskad vy i listrutan Sidvisning. <br><ul><li> **Standard**  Visar som standardinställningen för PDF-visningsprogrammet på en användares dator.  <br> <li> **Enkelsidig vy** Visar en sida i taget.   <br> <li> **Enkelsidig rullning** Visar en sida i en kontinuerlig lodrät kolumn.  <br> <li> **Dubbelsidig vy** Visar tvåsidigt uppslag sida vid sida. .<br> <li> **Dubbelsidig rullning** Visar tvåsidigt uppslag sida vid sida med kontinuerlig rullning. </ul> |
 | **Zooma** | Välj det här alternativet om du vill ändra storlek på sidvyn som visar hur PDF visas när den öppnas.  <br><ul><li> **Standard** Visas enligt standardinställningen för PDF-visningsprogrammet på användarens dator    <br> <li> **100 %** Gör att sidan visas i sin faktiska storlek.     <br> <li> **Anpassa till sida** Sidbredden och sidhöjden anpassas till dokumentrutan. .<br> <li> **Anpassa sidbredd** Gör att sidans bredd fyller ut dokumentfönstrets bredd.  <br> <li> **Anpassa sidhöjd** Gör att sidans höjd fyller ut dokumentrutans höjd. </ul> |
 

@@ -1,10 +1,10 @@
 ---
 title: Andra funktioner i Web Editor
 description: Utforska andra funktioner i webbredigeraren i AEM. Lär dig hur du använder de här funktionerna för att förbättra redigeringen i AEM.
-exl-id: dea19372-8a15-4b5d-aea4-47dc914d779e
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+exl-id: 1833b1e3-c7f1-4f2c-be35-235b65ba2f36
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2136'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ Förutom snabbmenyn för den synliga sökvägen kan du även öppna dialogrutan 
 
 **Dela upp ett element**
 
-- Om du tar bort ett element kan du ta bort elementtaggen från den markerade texten och sammanfoga den med det överordnade elementet. Om du till exempel har en `p` element i en `note` -element kan du bryta upp `p` element som du vill sammanfoga texten direkt i `note` -element. Alternativet Dela upp element finns på snabbmenyn för ämnesraden. Om du vill dela upp ett element markerar du elementet från ämnesraden, högerklickar på elementet för att öppna snabbmenyn och väljer sedan Bryt ned element för att ta bort elementet och sammanfoga elementets text med dess överordnade element.
+- Om du tar bort ett element kan du ta bort elementtaggen från den markerade texten och sammanfoga den med det överordnade elementet. Om du till exempel har en `p` element i en `note` -element kan du bryta upp `p` element som du vill sammanfoga texten direkt i `note` -element. The **Dela upp element** är tillgängligt på snabbmenyn för ämnesraden. Om du vill dela upp ett element högerklickar du på elementet för att öppna snabbmenyn och väljer sedan **Dela upp element** om du vill ta bort elementet och sammanfoga elementets text med dess överordnade element.
 
 **Bevara radbrytningar och indrag**
 

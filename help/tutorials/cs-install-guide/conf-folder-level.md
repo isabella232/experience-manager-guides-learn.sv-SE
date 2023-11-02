@@ -1,13 +1,13 @@
 ---
 title: Konfigurera globala profiler eller profiler på mappnivå
 description: Lär dig hur du konfigurerar globala profiler eller profiler på mappnivå
-source-git-commit: 6f4ab3baf0c0dd333035c3a7d131bd151b17de45
+exl-id: 19f63d67-89ef-4c5e-bc9a-cf40dd8d7979
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '3962'
+source-wordcount: '3961'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera globala profiler eller profiler på mappnivå {#id181AH2003PF}
 
@@ -25,7 +25,7 @@ Med hjälp av panelen Mappprofiler i inställningarna för stödlinjer kan du ko
 
 - **Villkorliga attribut**: Använd den här fliken om du vill konfigurera villkorliga attribut på global nivå eller på mappnivå. Ett villkorsattribut är en kombination av attributnamnet och värdet, och du kan också definiera en etikett för det. Du kan använda DITA-standardattributen eller dina egna anpassade attribut. De villkorliga attribut som du definierar på global nivå är tillgängliga för alla användare i alla projekt. Om du har definierat villkorliga attribut på mappnivå sammanfogas de med de globalt definierade villkorliga attributen.
 
-- **Redigeringsmall**: Använd den här fliken för att konfigurera mallarna som författarna ska använda för att skapa DITA-innehåll. Följande ämnesmallar är tillgängliga:
+- **Mallar**: Använd den här fliken för att konfigurera mallarna som författarna ska använda för att skapa eller publicera DITA-innehåll. Följande ämnesmallar är tillgängliga:
 
    - Ordlista
 
@@ -53,7 +53,7 @@ Med hjälp av panelen Mappprofiler i inställningarna för stödlinjer kan du ko
 
    - Bookmap
 
-- **Utdatainställning**: På samma sätt som för redigeringsmallar finns det fem förkonfigurerade utdatainställningar:
+- **Utdatainställning**: På samma sätt som mallar finns det fem förkonfigurerade utdatainställningar:
 
    - AEM
 
@@ -75,9 +75,9 @@ Med hjälp av panelen Mappprofiler i inställningarna för stödlinjer kan du ko
    - Versionsetiketter för XML-innehåll
    - Rootmap \(endast på mappnivå\)
 
-Du kan konfigurera både den globala profilen och profilen på mappnivå. I en mappnivåprofil kan du definiera de mappar som inställningarna ska gälla för. Dessa inställningar omfattar villkorsattribut, redigeringsmallar, förinställningar för utdata och inställningar för XML-redigeraren. De villkorliga förinställningarna, redigeringsmallarna och XML-redigerarkonfigurationerna görs sedan tillgängliga för författare som arbetar i de konfigurerade mapparna. Utgivare får på samma sätt tillgång till de konfigurerade förinställningarna som definierats i de konfigurerade mapparna.
+Du kan konfigurera både den globala profilen och profilen på mappnivå. I en mappnivåprofil kan du definiera de mappar som inställningarna ska gälla för. De här inställningarna innehåller villkorsattribut, mallar, förinställningar för utdata och inställningar för XML-redigeraren. De villkorliga förinställningarna, mallarna och XML-redigeringskonfigurationerna görs sedan tillgängliga för författare som arbetar i de konfigurerade mapparna. Utgivare får på samma sätt tillgång till de konfigurerade förinställningarna som definierats i de konfigurerade mapparna.
 
-En profil på mappnivå åsidosätter inställningarna som konfigurerats i den globala profilen. Om en mapp har en mappnivåprofil visar den med andra ord redigeringsmallarna, utdatamallarna och inställningarna för XML-redigeraren som är konfigurerade i motsvarande mappprofil. Den visar inte inställningarna som konfigurerats i den globala profilen. Detta gäller dock inte villkorsattributen. Om du har villkorsattribut sammanfogas de på global nivå och på mappnivå.
+En profil på mappnivå åsidosätter inställningarna som konfigurerats i den globala profilen. Om en mapp har en mappnivåprofil visar den med andra ord mallarna, utdatamallarna och inställningarna för XML-redigeraren som är konfigurerade i motsvarande mappprofil. Den visar inte inställningarna som konfigurerats i den globala profilen. Detta gäller dock inte villkorsattributen. Om du har villkorsattribut sammanfogas de på global nivå och på mappnivå.
 
 I följande avsnitt beskrivs hur du konfigurerar globala profiler och profiler på mappnivå.
 
@@ -99,7 +99,7 @@ Så här konfigurerar du den globala profilen:
 
 1. Konfigurera **Villkorliga attribut**, se [Konfigurera villkorliga attribut för globala profiler eller profiler på mappnivå](#id1889D0I305Z).
 
-1. Konfigurera **Redigeringsmall**, se [Konfigurera redigeringsmallar](#id1889D0IL0Y4).
+1. Konfigurera **Mallar**, se [Konfigurera redigeringsmallar](#id1889D0IL0Y4).
 
 1. Konfigurera **Förinställningar för utdata**, se [Konfigurera förinställningar för utdata](#id18AGD0IH0Y4).
 
@@ -144,7 +144,7 @@ Så här konfigurerar du en profil på mappnivå:
 
    >[!NOTE]
    >
-   > Användare som du lägger till här har administratörsbehörighet för att uppdatera villkorsattributen, redigeringsmallen och förinställningarna för utdata som är konfigurerade för den här mappprofilen.
+   > Användare som du lägger till här har administratörsbehörighet för att uppdatera villkorsattributen, mallen och utdatainställningarna som är konfigurerade för den här mappprofilen.
 
 1. Om du vill lägga till en mapp klickar du på ikonen Bläddra i mappsökvägen och navigerar till och väljer en mapp. Klicka sedan på Lägg till för att lägga till mappen i profilen.
 
@@ -161,11 +161,11 @@ Så här konfigurerar du en profil på mappnivå:
 1. När du har lagt till alla nödvändiga mappar och användare i mappprofilen klickar du på **Spara**.
 
 
-Nu kan du konfigurera villkorsattribut, redigeringsmallar, utdatainställningar och XML-redigeraren.
+Nu kan du konfigurera villkorsattribut, mallar, förinställningar för utdata och XML-redigeraren.
 
 >[!IMPORTANT]
 >
-> När du skapar en mappprofil innehåller den som standard inga redigeringsmallar. Du måste lägga till de nödvändiga redigeringsmallarna i mappprofilen för att göra dem tillgängliga för författarna.
+> När du skapar en mappprofil innehåller den som standard inga mallar. Du måste lägga till de nödvändiga mallarna i mappprofilen för att göra dem tillgängliga för författarna.
 
 ## Konfigurera villkorliga attribut för globala profiler eller profiler på mappnivå {#id1889D0I305Z}
 
@@ -225,13 +225,13 @@ Om du använder ett anpassat attribut måste det vara ett giltigt DITA-attribut 
 1. Lägg till anpassade attribut i den globala profilen eller mappnivåprofilen.
 
 
-## Konfigurera redigeringsmallar {#id1889D0IL0Y4}
+## Konfigurera mallar {#id1889D0IL0Y4}
 
-AEM Guides innehåller 7 färdiga mallar och 2 DITA-mallar. Du kan välja att bara ha ett fåtal mallar tillgängliga för författarna. Om du använder en anpassad mall kan samma mall konfigureras och göras tillgänglig för redigering. Du använder fliken Redigeringsmall i konfigurationen Mappprofiler för att lägga till eller ta bort ämne- eller mappmallar från globala profiler eller mappnivåprofiler.
+AEM Guides innehåller 7 användningsklara ämnesmallar, 2 DITA-kartmallar och 3 PDF-mallar. Du kan välja att endast ha ett fåtal mallar tillgängliga för författare och utgivare. Om du använder en anpassad mall kan samma mall konfigureras och göras tillgänglig för redigering och publicering. Du använder **Mallar** i mappprofilskonfigurationen om du vill lägga till eller ta bort ämne-, map- eller PDF-mallar från globala profiler eller mappnivåprofiler.
 
-Även innan du konfigurerar teman- eller mappmallarna på global nivå eller mappnivå kan du definiera en plats där du kan spara dina anpassade redigeringsmallar. Information om hur du konfigurerar en anpassad plats för att lagra redigeringsmallar finns i [Konfigurera anpassad sökväg till DITA-mallmapp](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z).
+Även innan du konfigurerar mallar för avsnitt, kartor eller PDF på global nivå eller på mappnivå kan du definiera en plats där du kan lagra dina anpassade mallar. Information om hur du konfigurerar en anpassad plats för lagring av mallar finns i [Konfigurera anpassad sökväg till DITA-mallmapp](conf-template-tags-custom-dita-topic-template.md#id191LCF0095Z).
 
-Gör så här för att lägga till ämne- eller mappmallar i en mappprofil:
+Utför följande steg för att lägga till mallar för avsnitt, kartor eller PDF i en mappprofil:
 
 1. Logga in på Adobe Experience Manager som administratör eller som användare med administratörsbehörighet för en mappnivåprofil.
 
@@ -243,26 +243,26 @@ Gör så här för att lägga till ämne- eller mappmallar i en mappprofil:
 
    >[!NOTE]
    >
-   > Du kan välja att konfigurera redigeringsmallen i den globala profilen eller en profil på mappnivå.
+   > Du kan välja att konfigurera en mall i den globala profilen eller en profil på mappnivå.
 
-1. På profilsidan klickar du på **Redigeringsmall** -fliken.
+1. På profilsidan klickar du på **Mallar** -fliken.
 1. Klicka **Redigera**.
 
-   Du kan lägga till mallar för avsnitt och kartor genom att söka från standardplatsen eller söka efter den.
+   Du kan lägga till mallar för ämnen, kartor och PDF genom att söka på standardplatsen eller söka efter den.
 
    >[!NOTE]
    >
-   > Som standard lagras alla redigeringsmallar i mappen /content/dam/dita-templates. The `dita-templates` mappen innehåller `topics` och `maps` undermappar för att lagra ämne- och mappningsmallar. Du kan lägga till dina egna mallar \(.dita,.xml eller .ditamapfiles\) i standardmallmapparna. När du har lagt till mallen i standardmappen kan du lägga till dem i den globala profilen eller mappprofilen. Mer information om hur du skapar egna mallar med Web Editor finns i [Skapa en anpassad redigeringsmall](#id1917D0EG0HJ).
+   > Som standard lagras alla mallar i mappen /content/dam/dita-templates. The `dita-templates` mappen innehåller `topics`, `maps`och `PDF` undermappar för att lagra teman, kartor och mallar i PDF. Du kan lägga till dina egna mallar \(.dita,.xml eller .ditamapfiles\) i standardmallmapparna. När du har lagt till mallen i standardmappen kan du lägga till dem i den globala profilen eller mappprofilen. Mer information om hur du skapar egna mallar med Web Editor finns i [Skapa en anpassad redigeringsmall](#id1917D0EG0HJ).
 
-   ![](assets/search-author-temp.png)
+   ![](assets/search-author-temp.png){width="800" align="left"}
 
-1. Lägg till önskade avsnitt och mappningsmallar i din profil.
+1. Lägg till önskade mallar för avsnitt, kartor och PDF i din profil.
 
    Gör något av följande om du vill lägga till en mall:
 
    - Välj **Sök eller typ** och ange eller markera namnet på en mall i listrutan. Listrutan består av alla standardmallar och alla nya mallar som du har skapat.
 
-     ![](assets/default-template-list.png)
+     ![](assets/default-template-list.png){width="800" align="left"}
 
    - Klicka **Bläddra** och välj en mall från DAM.
 
@@ -270,7 +270,7 @@ Gör så här för att lägga till ämne- eller mappmallar i en mappprofil:
 
    De valda mallarna läggs till i malllistan.
 
-   ![](assets/author-templ-added-list.png)
+   ![](assets/author-templ-added-list.png){width="800" align="left"}
 
    >[!NOTE]
    >
@@ -475,4 +475,3 @@ I ovanstående exempel är &quot;label1&quot; identifieraren för etikettsekvens
 **Rootmap**
 
 Om dina författare arbetar med en viss rotkarta kan du bläddra till och välja den rotkartan här. Observera att du bara kan definiera rotmappen för en profil på mappnivå.
-

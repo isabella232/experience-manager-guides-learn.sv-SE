@@ -1,10 +1,10 @@
 ---
 title: Skapa och hantera baslinjer från Web Editor
 description: Skapa och hantera baslinjer från webbredigeraren i AEM. Lär dig hur du skapar baslinjer baserat på etiketter och tillämpar filter på baslinjerna.
-exl-id: 9e390489-16f5-4f9a-a821-5150a66c2ed4
-source-git-commit: 361c605bdf02fb3b8754c6596a70e86a00acb3db
+exl-id: 14f87bdd-3042-46f9-853e-e9ded81b10ed
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1447'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Du kan även utföra följande åtgärder på baslinjen på Alternativ-menyn:
   > Processen att lägga till eller ta bort etiketter sker asynkront, så du kan fortsätta arbeta med andra filer i Web Editor. När etiketten har lagts till eller tagits bort visas ett popup-meddelande som bekräftar att etiketten har lagts till eller tagits bort, och du får även ett inkorgsmeddelande om detta.
 
 - **Redigera egenskaper** av en befintlig statisk baslinje som du har angett när du skapade baslinjen.
-- Exportera ögonblicksbilden av en baslinje i en CSV-fil med **Exportera baslinje** alternativ.
+- Exportera ögonblicksbilden av en baslinje i en Microsoft Excel-fil med **Exportera baslinje** alternativ.
 
 **Baslinjefilter**
 

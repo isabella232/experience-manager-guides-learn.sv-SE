@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 7fe45a2bb55e9cb72518edd3cb2aa81b99612613
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4859'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ Du kan definiera texten som ska visas före och efter brytningen. En tabell bryt
 * **Länka ordlistetermer till ordbokssidan**: Välj det här alternativet om du vill visa ordlistorna som hyperlänkar i innehållet och länka dem till termerna på ordlistan. Det gör att läsarna snabbt kan se definitionen av en term som definierats i ordlistan.
 
   Om du vill konvertera ordlistan till hyperlänkar måste du:
-   * Aktivera **Ordlista** i **Sidordning** för en DITA-karta.
+   * Aktivera **Ordlista** i **Layoutordning** för en DITA-karta.
    * Lägg till ordlistan på sidan Bakåt Matcha sidor för en bokkarta.
 
   Om du inte aktiverar ordbokssidan konverteras inte de ordlistliga termerna i innehållet till hyperlänkar i utdata från PDF.
@@ -265,7 +265,11 @@ Följande inställningar är tillgängliga under avsnittet Sidlayout:
 
 * **Index**: Om du har utformat en indexsidlayout kan du mappa den till alternativet Index. Med formatmallarna kan du formatera olika indexelement i utdata från PDF. Använda indexformat `.idx-header`, `.idx-footer`, `.idx-body`, `.idx-title`, `.idx-keyword-group`, `.idx-unit`,  `.idx-keyword`, `.idx-name`, `.idx-link` och `.idx-child` om du vill anpassa formaten för indexelementen.
 
-* **Ordlista**: Om du har en ordlista mappas den till alternativet Ordlista.  Termerna i ordlistan för dina PDF-utdata sorteras alltid i alfabetisk ordning.
+* **Ordlista**: Om du har en ordlista mappas den till alternativet Ordlista.
+
+  Termerna i ordlistan för dina PDF-utdata sorteras alltid i alfabetisk ordning.
+
+  Du kan också lägga till taggen `sort-as` om du vill definiera en sorteringsnyckel för ordlistorna. Stödlinjerna i Experience Manager använder sedan sorteringsnyckeln för att sortera de ordlistor som ersätter de ordlistor som används. Om du inte har definierat sorteringsnyckeln används ordlistetermer för sortering. Du kan till exempel lägga till taggen `sort-as` till `glossterm` och ange värdet till `A` för termen &quot;USB&quot; (till exempel `<glossterm>USB<sort-as>A</sort-as></glossterm>`). På samma sätt kan du lägga till `sort-as` tagga och ange dess värde som `B` för termen &quot;Pen Drive&quot;. När du sorterar de här ordlistorna används sorteringsnyckeln `A` för ordlistan visas &quot;USB&quot; före sorteringsnyckeln `B` i ordlistan &quot;Pen Drive&quot;. I utdata från PDF kommer &quot;USB&quot; före &quot;Pen Drive&quot; på ordlistan.
 
   Med formatmallarna kan du formatera olika ordlisteelement i utdata från PDF. Använda ordlisteformat `.glo-header`, `.glo-footer`, `.glo-body`, `.glo-title`, `.glo-unit`, `.glo-link`och `.glo-term` om du vill anpassa formaten för ordlistans element.
 
@@ -285,7 +289,7 @@ Följande inställningar är tillgängliga under avsnittet Sidlayout:
 
 Mer information om sidlayouter finns i [Designa en sidlayout](design-page-layout.md).
 
-### Sidordning {#page-order}
+### Layoutordning {#page-order}
 
 Du kan visa eller dölja följande avsnitt i PDF och även ordna i vilken ordning de ska visas i det slutliga PDF-resultatet:
 
@@ -299,7 +303,7 @@ Du kan visa eller dölja följande avsnitt i PDF och även ordna i vilken ordnin
 * Ordlista
 * Citat
 
-  <img src="assets/page-order-advance-settings.png" alt="Sidordning" width="550">
+  <img src="assets/page-order-advance-settings.png" alt="Layoutordning" width="550">
 
   Om du inte vill visa ett visst avsnitt i utdata för PDF kan du dölja det genom att stänga av växlingsknappen.
 
@@ -350,6 +354,43 @@ Du kan även utföra följande åtgärder:
 * Du kan också lägga till en anpassad layout flera gånger och ordna dem. Det gör att du kan publicera statiskt innehåll i enlighet med detta.
 
   Du kan till exempel använda en anpassad layout för att publicera en statisk varning flera gånger i PDF-utdata.
+
+
+
+### Sidorganisation
+
+Sidorna i ett PDF-dokument publiceras vanligtvis enligt det innehåll som är organiserat i DITA-kartan eller bokmappsfilen. Du kan också ändra ordningen på sidorna i PDF-dokumentet. Du kan till exempel skriva ut ett flersidigt dokument som ett häfte. När du sorterar, viker och häftar arken blir resultatet en enda bok med rätt sidordning.  Sedan kan du läsa det publicerade häftet som en bok.
+
+<img src="assets/template-page-organization.png" alt="Sidorganisation" width="550">
+
+
+Följande inställningar är tillgängliga under **Sidorganisation** avsnitt:
+
+#### Sidordning
+
+Välj en sidordning som bestämmer sidordningen i PDF-dokumentet. Du kan välja följande alternativ i listrutan:
+
+* **Standard**: Standardordningen för sidorna enligt källfilen.
+* **Udda sidor först**: Alla udda sidor flyttas före alla jämna sidor.
+* **Jämna sidor först**: Alla jämna sidor flyttas före alla udda sidor.
+* **Invertera**: Sidordningen inverteras.
+* **Häfte**: Alla sidor ordnas som i ett häfte.
+* **Häfte från höger till vänster**: Alla sidor är i häftesordning från höger till vänster.
+* **Egen**: Definiera en anpassad sidordning i stället för en fördefinierad ordning.
+   * &quot;a..b&quot; - Alla på varandra följande sidor från a till b.
+   * &quot;a,b,c&quot; - Ny sidordning a, b, c.
+   * &quot;a*b&quot; - Sidan a upprepas b gånger.
+   * &quot;-a&quot; - Negativa sidnummer räknas bakåt från den sista sidan och kan kombineras med andra anpassade ordningsnummer.
+   * &quot;X&quot; - Alla sidor i dokumentet. Samma resultat som &quot;1..-1&quot;.
+
+Du kan t.ex. skapa en anpassad ordning som &quot;2,3,5*2,7.10,-1,-2.
+Den angivna sidordningen resulterar i att PDF har följande sidnummer från det ursprungliga dokumentet, förutsatt att det har totalt 25 sidor: 2, 3, 5, 5, 7, 8, 9, 10, 25, 24.
+
+#### Konfigurera mer än en sida per ark
+
+Välj det här alternativet om du vill publicera flera sidor på ett enda pappersark.  Markera sedan antalet rader och kolumner och publicera sidorna som ett rutnät på ett enda ark. Du kan till exempel publicera sidorna som ett rutnät med 2 rader och 4 kolumner.
+
+Definiera målarkets storlek och den orientering i vilken du vill publicera kalkylbladet. Du kan också ange marginal- och utfyllnadsegenskaperna för bladet.
 
 
 

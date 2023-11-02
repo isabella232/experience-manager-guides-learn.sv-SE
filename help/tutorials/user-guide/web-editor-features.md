@@ -2,9 +2,9 @@
 title: Bekanta dig med Web Editors funktioner
 description: Upptäck funktionerna i webbredigeraren i AEM. Lär dig webbredigerarens gränssnitt, inklusive huvudverktygsfältet, det sekundära verktygsfältet, den vänstra panelen, området för innehållsredigering och den högra panelen.
 exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
-source-git-commit: f7a0140a274a83dfeb6a1ba70ae9c09297d1754c
+source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
 workflow-type: tm+mt
-source-wordcount: '16500'
+source-wordcount: '17079'
 ht-degree: 0%
 
 ---
@@ -212,6 +212,12 @@ Användarinställningarna är tillgängliga för alla författare. Med hjälp av
 ![](images/user_preference_editor.PNG){width="550" align="left"}
 
 - **Använd enhetstema**: Markera den här kryssrutan om du vill att AEM stödlinjer automatiskt ska växla mellan ljusa och mörka teman baserat på temat på enheten.
+
+- **Visa filer efter**: Välj standardmetod för att visa filerna i Web Editor. Du kan visa fillistan efter filnamnen eller filnamnen från de olika panelerna i **Upphovsman** vy.
+  >[!NOTE]
+  >
+  > Som standard visas filerna som titlar i webbredigeraren.
+
 - **Tema**: Du kan välja bland temana Ljus, Ljusast, Mörk eller Mörkast för redigeraren. När det gäller det ljusaste temat använder verktygsfälten och panelerna en ljusare grå bakgrund. När det gäller ljustemat använder verktygsfälten och panelerna ljusgrå bakgrund. När det gäller det mörkaste temat använder verktygsfälten och panelerna en mörkare svart bakgrund. När det gäller mörkt tema använder verktygsfälten och panelerna svart färgbakgrund. I alla teman visas området för innehållsredigering med vit färgbakgrund.
 
 - **Mappprofiler**: Mappprofilen styr olika konfigurationer av villkorsattribut, redigeringsmallar, utdatainställningar och Web Editor-konfigurationer. Den globala profilen visas som standard. Om administratören dessutom har konfigurerat mappprofiler i systemet visas även dessa mappprofiler i listan Mappprofiler.
@@ -713,6 +719,10 @@ Den vänstra panelen ger dig tillgång till följande funktioner:
 **Favoriter** -  ![](images/favorite-collections.svg)
 
 Om du arbetar med en uppsättning filer eller mappar kan du lägga till dem i din favoritlista för att snabbt komma åt dem. I favoritlistan visas en lista med dokument som du har lagt till och andra offentliga favoritdokument från andra användare.
+Som standard kan du visa filerna efter namn. När du för muspekaren över en fil kan du visa filens namn och sökväg som ett verktygstips.
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa fillistan efter filnamn i Web Editor. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
 
 Om du vill skapa en favoritlista eller -samling klickar du på plusikonen bredvid panelen Favoriter för att visa loggen för Ny samling:
 
@@ -753,7 +763,12 @@ Du kan även utföra många åtgärder med Alternativ-menyn som är tillgänglig
 
 **Databasvy** - ![](images/Repository_icon.svg)
 
-När du klickar på ikonen Databasvy visas en lista med filer och mappar som är tillgängliga i DAM.
+När du klickar på ikonen Databasvy visas en lista med filer och mappar som är tillgängliga i DAM. Som standard kan du visa filerna efter namn. När du för muspekaren över en fil kan du visa filens namn och filnamnet som ett verktygstips.
+
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa fillistan efter filnamn i Web Editor. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
+
 
 75 filer läses in samtidigt. Varje gång du klickar **Läs mer**... 75 filer läses in och knappen visas inte när alla filer har listats. Gruppinläsningen är effektiv och du kan komma åt filerna snabbare än att läsa in alla filer som finns i en mapp.
 
@@ -1013,7 +1028,15 @@ Ange en **Titel** för mappen, som konverteras automatiskt till mappnamnet. Sök
 
 **Kartvy** -  ![](images/map-view-icon.svg)
 
-När du klickar på ikonen Kartvy visas en lista med ämnen i kartfilen. Om du inte har öppnat någon kartfil visas kartvyn som tom. Om du dubbelklickar på en kartfil öppnas kartfilen i den här vyn. Du kan dubbelklicka på en fil på kartan för att öppna den i Web Editor. När du öppnar en karta i kartvyn visas den aktuella kartans titel i mitten av huvudverktygsfältet. Om titeln är för lång visas en ellips och du kan också hovra över titeln för att se den fullständiga titeln i verktygstipset. Om du har redigeringsbehörighet för kartfilerna kan du även redigera filerna. Mer information om hur du öppnar och redigerar ett avsnitt via DITA-kartan finns i [Redigera ämnen via DITA-kartan](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+När du klickar på ikonen Kartvy visas en lista med ämnen i kartfilen. Om du inte har öppnat någon kartfil visas kartvyn som tom. Om du dubbelklickar på en kartfil öppnas kartfilen i den här vyn. Du kan dubbelklicka på en fil på kartan för att öppna den i Web Editor.
+
+Som standard kan du visa filerna efter namn. När du för muspekaren över en fil kan du visa filens namn och sökväg som ett verktygstips.
+>[!NOTE]
+>
+>Som administratör kan du även välja att visa filnamnet på den överordnade kartan som är öppen i kartvyn. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
+
+
+När du öppnar en karta i kartvyn visas den aktuella kartans titel i mitten av huvudverktygsfältet. Om titeln är för lång visas en ellips och du kan också hovra över titeln för att se den fullständiga titeln i verktygstipset. Om du har redigeringsbehörighet för kartfilerna kan du även redigera filerna. Mer information om hur du öppnar och redigerar ett avsnitt via DITA-kartan finns i [Redigera ämnen via DITA-kartan](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
 
 Du kan utföra följande åtgärder på Alternativ-menyn i kartfilen:
 
@@ -1177,6 +1200,11 @@ Du kan söka efter en sträng i elementet om den visas på panelen Dispositionsv
 En av huvudfunktionerna i DITA är möjligheten att återanvända innehåll. Panelen Återanvändbart innehåll kan lagra dina DITA-filer från vilken du vanligtvis infogar återanvändbart innehåll. När du har lagt till DITA-filerna finns de kvar i panelen Återanvändbart innehåll mellan sessionerna. Det innebär att du inte behöver lägga till dina DITA-filer igen för att komma åt dem senare.
 
 Du kan helt enkelt dra och släppa återanvändbart innehåll från panelen till det aktuella ämnet så infogas det enkelt och snabbt. Du kan också förhandsgranska innehållet innan du infogar det i dokumentet.
+
+Som standard kan du visa filerna efter namn. När du för muspekaren över en fil kan du visa filens namn och sökväg som ett verktygstips.
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa fillistan efter filnamn i Web Editor. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
 
 Om du vill lägga till en DITA-fil på panelen Återanvändbart innehåll använder du någon av följande metoder:
 
@@ -1527,6 +1555,12 @@ Mallpanelen är bara tillgänglig för administratörer. Med den här panelen ka
 
 ![](images/templates-panel_cs.png){width="550" align="left"}
 
+Som standard kan du visa filerna efter namn. När du för muspekaren över en mall kan du visa filens namn och filnamnet som ett verktygstips.
+
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa fillistan i Web Editor. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
+
 Om du vill skapa en mall klickar du på ikonen + bredvid Mallar och väljer en mall som du vill skapa. Om du väljer **Ämnesmall** visas dialogrutan Skapa ny ämnesmall:
 
 ![](images/create-new-topic-template.PNG){width="400" align="left"}
@@ -1544,7 +1578,12 @@ Med Alternativ-menyn på en befintlig mall kan du välja att **Redigera** eller 
 **Granska** -  ![](images/active-review-tasklist-icon.svg)
 
 AEM innehåller en funktion för att visa alla granskningsuppgifter i dina projekt. Du kan visa alla granskningsprojekt och de aktiva granskningsåtgärderna i granskningsprojekten, som du är en del av från **Granska** -panelen.  Du kan sedan öppna granskningsåtgärderna och visa kommentarerna från olika granskare.
-Granskningspanelen visar granskningsåtgärderna. Som författare kan du adressera kommentarerna i ett ämne med hjälp av webbredigeraren.
+Granskningspanelen visar granskningsåtgärderna. Som standard kan du visa filerna efter namn. När du för muspekaren över en fil kan du visa filens namn och sökväg som ett verktygstips.
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa fillistan efter filnamn i Web Editor. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
+
+Som författare kan du adressera kommentarerna i ett ämne med hjälp av webbredigeraren.
 
 
 Så här visar du granskningskommentarerna i de aktiva granskningsuppgifterna som finns i dina projekt:
@@ -1581,6 +1620,11 @@ Så här visar du granskningskommentarerna i de aktiva granskningsuppgifterna so
 Ikonen Sök och ersätt finns längst ned på den vänstra panelen. På panelen Sök och ersätt kan du söka efter och ersätta text mellan filer på en karta eller i en mapp i databasen. Du kan söka och ersätta i alla avsnitt av en karta samt i ämnen som finns i undermappningarna på kartan.
 
 ![](images/map-find-replace.png){width="800" align="left"}
+
+Som standard kan du visa filerna efter namn. När du för muspekaren över en fil kan du visa filens namn och sökväg som ett verktygstips.
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa listan med filnamn i Web Editor. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
 
 Utför följande steg om du vill söka och ersätta globalt:
 
@@ -1665,7 +1709,14 @@ Du kan också använda **Sök på karta** från **Alternativ** menyn för en kar
 
 ## Innehållsredigeringsområde {#id2051EB000UI}
 
-Innehållsredigeringsområdet är där innehållet i ditt ämne eller din karta visas. Du gör alla innehållsredigeringar i det här området. Det ger en WYSIWYG-vy över det innehåll du redigerar. Du kan ha flera ämnen öppna samtidigt, som visas på respektive flik. Under filens flik finns elementets bredd vid den aktuella markörpositionen. I det övre högra hörnet av området för innehållsredigering visas versionsnumret för det aktuella ämnet.
+Innehållsredigeringsområdet är där innehållet i ditt ämne eller din karta visas. Du gör alla innehållsredigeringar i det här området. Det ger en WYSIWYG-vy över det innehåll du redigerar. Du kan ha flera ämnen öppna samtidigt, som visas på respektive flik.
+
+Som standard kan du visa filnamnen på flikarna. När du för muspekaren över en fil kan du visa filens namn och sökväg som ett verktygstips.
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa fillistan efter filnamn på flikarna. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
+
+Under filens flik finns elementets bredd vid den aktuella markörpositionen. I det övre högra hörnet av området för innehållsredigering visas versionsnumret för det aktuella ämnet.
 
 ![](images/content-editing-area.png){width="650" align="left"}
 
@@ -1720,7 +1771,10 @@ I avsnittet Referenser får du tillgång till följande funktioner:
 - **Används i**: I referenslistan listas de dokument där den aktuella filen refereras eller används.
 - **Utgående länkar:** Utgående länkar visar de dokument som det aktuella dokumentet refererar till.
 
-Håll muspekaren över filens referens och hämta filens sökväg och UUID i verktygstipset.
+Som standard kan du visa filerna efter namn. När du för muspekaren över en fil kan du visa filens namn och sökväg som ett verktygstips.
+>[!NOTE]
+>
+> Som administratör kan du även välja att visa fillistan efter filnamn i Web Editor. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
 
 **Obs!** Alla Använd in- och utgående referenser är hyperlänkade till dokumenten. Du kan enkelt öppna och redigera länkade dokument.
 
