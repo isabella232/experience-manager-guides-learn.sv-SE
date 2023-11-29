@@ -2,9 +2,9 @@
 title: PDF | Generering av utdata från PDF
 description: Lär dig hur du använder publicering i PDF, skapar och genererar en förinställning för utdata i PDF, hämtar tillfälliga filer efter att utdata från PDF samt använder språkvariabler i AEM.
 exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 4c10f2387208477bd2ba27188e8aeaa6f3a4a661
+source-git-commit: 1305c960df98553edbd1fb65c8f6e8da7c232087
 workflow-type: tm+mt
-source-wordcount: '3264'
+source-wordcount: '3327'
 ht-degree: 0%
 
 ---
@@ -165,8 +165,9 @@ Använd följande alternativ för att ange avancerade inställningar för att sa
 | **Använd anpassad upplösning (pixlar per tum)** | Det är sidans visningsupplösning i pixlar per tum. Ange ett önskat värde i fältet som visas när det här alternativet är markerat. Standardvärdet är 96 pixlar per tum. Ange ett högre värde om du vill passa in mer innehåll på en tum och tvärtom om du anger ett lägre värde. |
 | **Visa vattenstämpel** | Välj det här alternativet om du vill lägga en vattenstämpel ovanpå dina utdata. Du kan ange en ny textsträng i textrutan med en teckenplacering som du vill. <br><br>Använd statisk text eller språkvariabler för att publicera den lokaliserade versionen av vattenstämpeln.  Beroende på vilket språk du väljer hämtas det lokaliserade värdet automatiskt i utdata från PDF. Du kan t.ex. skriva ut&quot;Utgivare&quot; som en vattenstämpel på engelska och&quot;Autentisering&quot; på franska.  <br> Format: `${lng:<variable name>}`. Till exempel: `$ {lng:publisher-label}` där `publisher-label` är en språkvariabel. <br> Hovring <img src="./assets/info-details.svg" alt= "informationsikon" width="25"> nära alternativet om du vill visa mer information om det. |
 | **Aktivera MathML-ekvationer** | Välj det här alternativet om du vill återge MathML-ekvationer i innehållet. Ekvationerna ignoreras annars som standard. |
-| **PDF-överensstämmelse** | Det är den standard som du tänker spara PDF för att säkerställa att den är kompatibel. Välj i listrutan om du vill välja i listan över tillgängliga PDF-standarder. Mer information om vilka standarder som stöds finns i [Om PDF-standarder](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
 | **Hämta temporära filer** | Markera det här alternativet om du vill hämta de mellanliggande HTML-filer som skapas när utdata för PDF skapas. Du kan hämta de tillfälliga filerna senare när du har genererat utdata. |
+| **PDF-överensstämmelse** | Det är den standard som du tänker spara PDF för att säkerställa att den är kompatibel. Välj i listrutan om du vill välja i listan över tillgängliga PDF-standarder. Mer information om vilka standarder som stöds finns i [Om PDF-standarder](https://helpx.adobe.com/acrobat/using/pdf-conversion-settings.html#about_pdf_x_pdf_e_and_pdf_a_standards). |
+| **Filegenskaper** | Välj de egenskaper som du vill bearbeta som metadata. I listrutan visas både de anpassade egenskaperna och standardegenskaperna. Dessa egenskaper ställs in från sidan Egenskaper i DITA-kartan eller bokmappningsfilen. När de har angetts kopieras även dessa egenskaper till avsnitten på kartan. De valda metadataegenskaperna skickas till utdata som genereras med Native-PDF. |
 
 ## Generera utdata för PDF {#generate-pdf-output}
 

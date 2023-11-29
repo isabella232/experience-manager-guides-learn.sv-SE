@@ -1,10 +1,10 @@
 ---
 title: Hantera förinställningar för utdata för global profil och mappprofil
 description: Lär dig hur du skapar, redigerar, byter namn på, duplicerar och tar bort förinställningar för utdata i global profil och mappprofil som administrativa användare i AEM.
-exl-id: 40ea464c-16c8-4c95-9c0e-61b6bad95272
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+exl-id: 549c9fe2-77f8-423c-8b3e-b43e56055732
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Så här skapar du en förinställning för globala profiler och mappprofiler:
    - Namn
    - Mål \(för kunskapsbasförinställning\)
 1. Välj **Lägg till i mappprofil** om du vill skapa en förinställning för den relaterade mappprofilen och sedan klicka på **Lägg till**. Förinställningen skapas och visas under **Utdata** -fliken för alla relaterade kartor. \( ![](images/global-preset-icon.svg)\) visas en förinställning på mappprofilnivå.
-1. Ange konfigurationsinformationen.
+1. Ange konfigurationsinformationen. Mer information om förinställningar för utdata finns i [Förinställningar för utdata](./generate-output-understand-presets.md).
 
    >[!NOTE]
    >

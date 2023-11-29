@@ -2,9 +2,9 @@
 title: Konfigurera inställningar för utdatagenerering
 description: Lär dig hur du konfigurerar inställningar för generering av utdata
 exl-id: b5cf4f6c-dc56-428e-a514-6c9f879ac03d
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '5340'
+source-wordcount: '5496'
 ht-degree: 0%
 
 ---
@@ -140,6 +140,23 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 | PID | Egenskapsnyckel | Egenskapsvärde |
 |---|------------|--------------|
 | `com.adobe.fmdita.config.ConfigManager` | `aemsite.pagetitle` | Boolean \(true/false\). Om du vill generera utdata med sidrubriken ställer du in egenskapen på true. Som standard används filnamnet.<br> **Standardvärde**: false |
+
+### Konfigurera URL:en för AEM som ska använda dokumenttiteln
+
+Du kan använda dokumenttitlarna i URL:en för AEM platsutdata. Om filnamnet inte finns eller innehåller alla specialtecken kan du konfigurera systemet så att specialtecknen ersätts med en avgränsare i URL:en för AEM. Du kan också konfigurera det så att det ersätter dem med namnet på det första underordnade ämnet.
+
+
+Så här konfigurerar du sidnamnen:
+
+1. Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-additional-config-override.md#) för att skapa konfigurationsfilen.
+1. Ange följande (egenskap) information i konfigurationsfilen för att konfigurera sidnamnen för avsnitten.
+
+| PID | Egenskapsnyckel | Egenskapsvärde |
+|---|------------|--------------|
+| `com.adobe.fmdita.common.SanitizeNodeName` | `nodename.systemDefinedPageName` | Boolean (`true/false`). **Standardvärde**: `false` |
+
+Om *@navtitle* in `<topichead>` har alla specialtecken och du anger `aemsite.pagetitle` egenskapen är true, och som standard används en avgränsare. Om du anger `nodename.systemDefinedPageName` om egenskapen är true visas det första underordnade ämnets namn.
+
 
 ### Konfigurera filnamnssaneringsregler för att skapa ämnen och publicera AEM webbplatsutdata {#id2164D0KD0XA}
 

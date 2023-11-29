@@ -2,9 +2,9 @@
 title: Skapa och anpassa inbyggda PDF-mallar
 description: Lär dig hur du skapar och anpassar mallar för inbyggda PDF.
 exl-id: 7660da8e-8a1e-4493-b99b-9b5de9a7483f
-source-git-commit: da6ada7329aa338849de86ebfda94587bbc4ab54
+source-git-commit: 9e806ae9a06eb77441e47413981f27f6e69bd2f9
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,10 @@ Så här anpassar du en PDF-mall:
      Förutom utseendet kan du även definiera placeringen av sidelement som sidhuvud, sidfot och innehållsområden på en sida. Mer information om hur du anpassar en sidas layout finns i [Skapa och anpassa sidlayouter](components-pdf-template.md#create-customize-page-layout).
 
    * Formatmallar: Med inställningarna i avsnittet Formatmallar kan du anpassa utseende och känsla för sidlayoutskomponenter som innehållsförteckning, index, ordlista, citat och mycket annat. Dessutom kan du anpassa formaten för DITA-innehållet, till exempel rubriker, stycken, listor och annat. Mer information om hur du använder formatmallar finns i [Anpassa PDF med formatmallar](components-pdf-template.md#stylesheet-customization).
-   * Resurser: Lagra resursfiler som du behöver för att anpassa eller utforma PDF-mallar. Resurser som logotyper, anpassade teckensnitt, bakgrundsbilder med mera lagras i Resurser. Mer information om hur du använder resurser finns i [Arbeta med resurser](components-pdf-template.md#work-with-resources).
+   * Resurser: Lagra resursfiler som du behöver för att anpassa eller utforma PDF-mallar. Resurser som logotyper, anpassade teckensnitt, bakgrundsbilder med mera lagras i Resurser.
+Du kan också använda resurser som finns på någon annan plats i databasen. Du behöver inte skapa dubblettresurser för varje mall, och du kan behålla dem i en delad mapp och använda dem i alla mallar i PDF.
+
+     Mer information om hur du använder resurser finns i [Arbeta med resurser](components-pdf-template.md#work-with-resources).
    * Inställningar: Konfigurera utdatainställningarna för att skapa en PDF med hjälp av mallen. I det här avsnittet kan du definiera mallmappning för olika sidor på en PDF, startsida för kapitel, utskriftsmärken, citat och mycket annat.
 Du kan också ordna i vilken ordning de ska visas i den slutliga utskriften för PDF.
 Mer information om hur du använder inställningar finns i [Avancerade PDF-inställningar](components-pdf-template.md#advanced-pdf-settings).

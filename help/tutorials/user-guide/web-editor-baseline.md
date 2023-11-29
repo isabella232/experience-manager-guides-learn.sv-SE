@@ -2,9 +2,9 @@
 title: Skapa och hantera baslinjer från Web Editor
 description: Skapa och hantera baslinjer från webbredigeraren i AEM. Lär dig hur du skapar baslinjer baserat på etiketter och tillämpar filter på baslinjerna.
 exl-id: 14f87bdd-3042-46f9-853e-e9ded81b10ed
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Du kan skapa en baslinje i Web Editor genom att utföra följande steg:
 1. Öppna DITA-schemafilen i Kartvyn på databaspanelen.
 1. Klicka på **Hantera** -fliken. The **Baslinje** På panelen visas baslinjerna för DITA-kartan.
 
-   ![](images/baseline-manage.png){width="800" align="left"}
+   ![Baslinjepanelen](images/baseline-manage.png){width="800" align="left"}
 
 1. På **Baslinje** klickar du på +-ikonen längst upp till höger. Du kan skapa en baslinje med en specifik version av ämnen och refererat innehåll som är tillgängligt på ett visst datum och en viss tid, eller med en etikett definierad för en version av ämnen.
 1. Ange ett namn för baslinjen i **Originalnamn**.
@@ -56,7 +56,7 @@ Du kan skapa en baslinje i Web Editor genom att utföra följande steg:
 
    Baslinjer som baseras på etiketter uppdateras dynamiskt. Om du genererar en baslinje, hämtar en baslinje eller skapar ett översättningsprojekt med hjälp av en baslinje, hämtas filerna dynamiskt baserat på de uppdaterade etiketterna. Om du till exempel har använt version 1.2 av ett ämne med Label Release 1.0 för baslinjen och senare uppdaterat version 1.5 med Label Release 1.0, uppdateras baslinjen dynamiskt och version 1.5 används.
 
-   ![](images/dynamic-baseline.png){width="550" align="left"}
+   ![Skapa en baslinje](images/dynamic-baseline.png){width="550" align="left"}
 
    - **Markera etiketter**: Om det finns etiketter för ämnena visas etiketterna i **Markera etiketter** nedrullningsbar meny. Du kan välja etiketten/etiketterna i listan. De etiketter som är markerade först får högre prioritet än de som väljs senare.
 
@@ -83,7 +83,9 @@ Du kan hantera befintliga baslinjer med hjälp av de olika funktionerna på kont
 
   ![alternativ för en baslinje](images/baseline-options.png){width="800" align="left"}
 
-Du kan även utföra följande åtgärder på baslinjen på Alternativ-menyn:
+
+
+  Du kan även utföra följande åtgärder på baslinjen på Alternativ-menyn:
 
 - **Redigera**, **Duplicera,** **Byt namn**, eller **Ta bort** en befintlig baslinje.
 
@@ -106,7 +108,7 @@ Du kan även utföra följande åtgärder på baslinjen på Alternativ-menyn:
 
 Använda ikonen Filter i **Baslinjefilter** kan du använda filter på baslinjen som öppnas i redigeringsfönstret för baslinjen:
 
-![](images/baseline-filter.png){width="350" align="left"}
+![basfilter](images/baseline-filter.png){width="300" align="left"}
 
 - Filtrera filerna baserat på filnamn eller filplats.
 - Filtrera filerna baserat på värdena för olika kolumner som filtyp, referenstyp och så vidare.

@@ -1,10 +1,10 @@
 ---
 title: Förinställningar för utdata
 description: Förinställningarna för utdata AEM stödlinjer. Skapa förinställningar för utdata från webbredigeraren och kartkontrollpanelen för AEM, PDF, HTML 5, EPUB, anpassade format och JSON-format.
-exl-id: ff4dedbb-47c4-40c7-950c-51f70d5d4b1b
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: 8eaf0765-8b66-47d6-9c40-888495baa711
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '208'
 ht-degree: 0%
 
 ---
@@ -34,5 +34,6 @@ I följande avsnitt beskrivs de alternativ som är tillgängliga för de utdataf
 
 - **[JSON](generate-output-json.md)**
 
+Som administratör kan du med hjälp av guider i Experience Manager skapa och hantera utdatapresentationer för globala profiler och mappprofiler. Mer information finns i [Hantera förinställningar för utdata för global profil och mappprofil](./web-editor-manage-output-presets.md).
 
 **Överordnat ämne:**[ Generering av utdata](generate-output.md)

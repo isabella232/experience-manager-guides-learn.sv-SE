@@ -1,10 +1,10 @@
 ---
 title: Arbeta med den avancerade kartredigeraren
 description: Lär dig hur du arbetar med den avancerade kartredigeraren i AEM. Lär dig funktionerna i den avancerade kartredigeraren. Redigera ämnen via en DITA-karta och använd layoutvyn, författarvyn och förhandsgranskningsläget.
-exl-id: 4f48d489-d13e-4285-8870-373f0324f5f6
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: e58e3705-2c3b-48cc-b2c8-2596e9751c85
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '3701'
+source-wordcount: '3707'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Utför följande steg för att skapa kartfilen med hjälp av den avancerade kart
 
    Ämnet läggs till på kartan.
 
-   ![](images/map-editor-add-topic.png){width="800" align="left"}
+   ![kartredigerare lägga till ämne](images/map-editor-add-topic.png){width="800" align="left"}
 
 1. Om du vill lägga till efterföljande ämnen eller en undermappning drar och släpper du ämnet eller undermappningen till önskad plats på kartan.
 
@@ -231,7 +231,7 @@ Panelen Innehållsegenskaper innehåller information om vilken typ av ämne som 
 
 - **Andra attribut** Om administratören har skapat en profil för attribut får du dessa attribut tillsammans med deras konfigurerade värden. Med innehållsegenskapspanelen kan du välja dessa attribut och tilldela dem till relevant innehåll i ditt ämne. Du kan också tilldela attribut som konfigurerats av administratören under **Visa attribut** i redigeringsinställningarna. De attribut som är definierade för ett element visas i layoutvyn och dispositionsvyn. Detta hjälper dig att snabbt få en överblick över alla ämnen i en karta för vilka ett visst attribut har definierats. Alla ämnen som har plattformsattributet definierat som Android.
 
-  ![](images/layout-inline-attributes.png){width="650" align="left"}
+  ![layoutvy](images/layout-inline-attributes.png){width="650" align="left"}
 
 
   Mer information finns i *Visa attribut* inom *Inställningar för Redigeraren* funktionsbeskrivning i [Vänster panel](web-editor-features.md#id2051EA0M0HS) -avsnitt.

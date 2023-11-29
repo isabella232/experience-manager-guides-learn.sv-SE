@@ -2,9 +2,9 @@
 title: Publiceringsfunktion för PDF | Komponenter i en PDF-mall
 description: Lär dig de olika komponenterna i en PDF-mall och hur du anpassar och konfigurerar dem.
 exl-id: 0ddb3b81-42ca-4a66-be7d-051a5175d53a
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '4859'
+source-wordcount: '4947'
 ht-degree: 0%
 
 ---
@@ -420,6 +420,10 @@ Konfigurera utskriftsinställningarna för att tilldela skrivarmärken, välja f
 
 Använd **Korsreferens** för att definiera hur korsreferenserna ska publiceras i PDF. Du kan formatera korsreferenserna för ämnesrubrik, tabeller, figurer och mycket annat.
 
+>[!NOTE]
+>
+> Om du har definierat länktexten när du infogar korsreferensen, prioriteras den framför korsreferensformatet som har definierats i mallen för PDF.
+
 Du kan också använda variabler för att definiera en korsreferens.  När du använder en variabel hämtas dess värde från egenskaperna. Du kan använda en enda eller en kombination av variabler för att definiera en korsreferens. Du kan också använda en kombination av en sträng och en variabel.
 
 Du kan till exempel använda `View details on {chapter}`. Om kapitelnamnet är &quot;Allmänna inställningar&quot; är korsreferensen i utdata &quot;Se information om Allmänna inställningar&quot;.
@@ -441,6 +445,22 @@ AEM innehåller följande variabler:
   >
   >Du kan skapa automatiska nummerformat för bildtext- och bildtexttaggar.
 
+#### Standardkorsreferensformat
+
+Om du låter textfältet vara tomt och du inte har definierat länktexten när du infogar en korsreferens, läggs följande variabler till i Experience Manager-stödlinjerna för respektive korsreferens:
+
+* **Titel**: `{title}`
+* **Beskrivning**: `{description}`
+* **Stycke**: `{bookmarkText}`
+* **Bokmärke**: `{bookmarkText}`
+* **Figur**: `{captionText}`
+* **Tabell**: `{captionText}`
+
+Prioritetsordningen för korsreferenser är:
+* Länktext i korsreferenserna
+* Korsreferensformat som definieras i mallen för ursprungliga PDF
+* Standardkorsreferensformat
+
 
 #### Språkvariabler i korsreferenser
 
@@ -455,11 +475,12 @@ Du kan till exempel lägga till en språkvariabel,&quot;reference-label&quot;, o
 När du lägger till `${lng:<variable name>}` till avsnittet Stycke innehåller korsreferenserna i styckena i utdata den lokaliserade texten och sidnumret.\
 På följande skärmbilder visas korsreferenserna &quot;Visa på sidan 1&quot; på engelska och &quot;Einzelheiten finden Sie auf der Seite 1&quot; på tyska.
 
-<img src="./assets/english-output-corss-reference.png" alt="Engelska utdata för en korsreferens i en pragrah" width ="800" border="2px solid blue">
+<img src="./assets/english-output-corss-reference.png" alt="Engelska utdata för en korsreferens i en pragrah" width ="800" border="2px">
 
 *En korsreferens i ett stycke när den publiceras på engelska.*
 
-<img src="./assets/german-output-corss-reference.png" alt="Tyska utdata av en korsreferens i en pragrah" width ="800" border="2px solid blue">
+<img src="./assets/german-output-corss-reference.png" alt="Tyska utdata av en korsreferens i en pragrah" width ="800" border="2px">
+
 
 *En korsreferens inom ett stycke när den publiceras på tyska.*
 

@@ -2,9 +2,9 @@
 title: Kortkommandon i Web Editor
 description: Upptäck tidsbesparande kortkommandon i webbredigeraren AEM guider.
 exl-id: d843c5a9-04f8-44f2-9bf5-60cb4ed7fa38
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,9 @@ Det finns många åtgärder i Web Editor som du kan utföra med hjälp av kortko
 | Använd fet stil på markerad text | ***Ctrl***+***B*** | ***Kommando***+***B*** |
 | Använd kursiv stil på markerad text | ***Ctrl***+***I*** | ***Kommando***+***I*** |
 | Använd understrykning på markerad text | ***Ctrl***+***U*** | ***Kommando***+***U*** |
+| Fokus på den vänstra panelen | **Ctrl***+**Skift**+***1*** | ***Kommando***+**Skift**+***1*** |
+| Fokus på den högra panelen | **Ctrl***+**Skift**+***2*** | ***Kommando***+**Skift**+***2*** |
+| Fokusera på den aktuella redigeraren | **Ctrl***+**Skift**+***0*** | ***Kommando***+**Skift**+***0*** |
 | Spara dokumentet i författar- eller källvyn | ***Ctrl***+**Skift**+***S*** | ***Kommando***+**Skift**+***S*** |
 | Spara alla öppna dokument i redigerings- eller källvyn | ***Ctrl***+***S*** | ***Kommando***+***S*** |
 | Visa dialogrutan Infoga element | ***Alt***+***Retur*** | ***Alternativ***+***Retur*** |

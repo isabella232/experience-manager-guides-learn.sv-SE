@@ -2,9 +2,9 @@
 title: Bekanta dig med Web Editors funktioner
 description: Upptäck funktionerna i webbredigeraren i AEM. Lär dig webbredigerarens gränssnitt, inklusive huvudverktygsfältet, det sekundära verktygsfältet, den vänstra panelen, området för innehållsredigering och den högra panelen.
 exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '17079'
+source-wordcount: '17231'
 ht-degree: 0%
 
 ---
@@ -302,7 +302,12 @@ Med tabellens snabbmeny kan du:
 - Generera ID
 
 
-Du kan också definiera attribut för flera celler, hela rader eller kolumner i en tabell. Om du till exempel vill justera tabellcellen drar och markerar du önskad cell. Egenskapen i panelen Innehållsegenskaper \(till höger\) **Typ** ändringar i **Flera poster**. I avsnittet Andra attribut väljer du `@valign` attribut från attributlistrutan. Välj den textjustering du vill använda i de markerade tabellcellerna i den nedrullningsbara listan med värden.
+Du kan också definiera attribut för flera celler, hela rader eller kolumner i en tabell. Om du till exempel vill justera tabellcellen drar och markerar du önskad cell. Egenskapen i panelen Innehållsegenskaper (till höger) **Typ** ändringar i **Flera poster**.
+
+1. I **Attribut** avsnitt, klicka **+Lägg till**.
+1. Välj `@valign` attribut från **Attribut** listruta.
+1. Välj den textjustering du vill använda på de markerade tabellcellerna i listrutan Värde.
+1. Klicka **Lägg till.**
 
 ![](images/align-table-cell_cs.png){width="800" align="left"}
 
@@ -329,7 +334,7 @@ I fältet Källa visas UUID för den infogade bildfilen. Du kan hitta hela sökv
 
 Du kan ändra storlek på en bild genom att ange ett värde för höjd eller bredd för bildfilen. Bildens proportioner bibehålls automatiskt. Om du vill kan du även välja att inte behålla bildfilens proportioner genom att klicka på låsikonen \(i Behåll proportioner\) och ange värden för höjd och bredd.
 
-Du kan också ange placeringsinställningen för bilden som Textbunden eller Bryt. Om du väljer att använda alternativet Brytningsplacering kan du sedan välja var bilden ska justeras \(Vänster, Centrera eller Höger\).
+Du kan också ange placeringsinställningen för bilden som Textbunden eller Bryt. Om du väljer att använda alternativet Brytningsplacering kan du sedan välja var bilden ska justeras (vänster, mitten eller höger).
 
 Du kan också lägga till andra egenskaper för en bildfil genom att välja de nödvändiga egenskaperna i dialogrutan **Attribut** fält.
 
@@ -778,7 +783,7 @@ Du kan också klicka på och spela upp en ljud- eller videofil i Web Editor. Du 
 
 
 
-Om du dubbelklickar på en kartfil öppnas den i **Kartvy**. Mer information finns i **Kartvy** funktionsbeskrivning i [Vänster panel](web-editor-features.md#id2051EA0M0HS) -avsnitt. Om du dubbelklickar på en ämnesfil öppnas den i [Innehållsredigeringsområde](#id2051EB000UI). Du kan navigera och öppna en fil direkt i webbredigeraren, vilket sparar tid och ökar produktiviteten.
+Markera en karta och tryck på Enter eller dubbelklicka för att öppna den i dialogrutan **Kartvy**. Mer information finns i **Kartvy** funktionsbeskrivning i [Vänster panel](web-editor-features.md#id2051EA0M0HS) -avsnitt. Markera ett ämne och tryck på Enter eller dubbelklicka för att öppna det i dialogrutan [Innehållsredigeringsområde](#id2051EB000UI). Du kan navigera och öppna en fil direkt i webbredigeraren, vilket sparar tid och ökar produktiviteten.
 
 **Filtersökning**
 
@@ -1036,7 +1041,14 @@ Som standard kan du visa filerna efter namn. När du för muspekaren över en fi
 >Som administratör kan du även välja att visa filnamnet på den överordnade kartan som är öppen i kartvyn. Välj **Filnamn** alternativ för **Visa filer efter** avsnitt i **Användarinställningar** ![](images/user_preference_editor_icon.svg).
 
 
-När du öppnar en karta i kartvyn visas den aktuella kartans titel i mitten av huvudverktygsfältet. Om titeln är för lång visas en ellips och du kan också hovra över titeln för att se den fullständiga titeln i verktygstipset. Om du har redigeringsbehörighet för kartfilerna kan du även redigera filerna. Mer information om hur du öppnar och redigerar ett avsnitt via DITA-kartan finns i [Redigera ämnen via DITA-kartan](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+När du öppnar en karta i kartvyn visas den aktuella kartans titel i mitten av huvudverktygsfältet. Om titeln är för lång visas en ellips och du kan också hovra över titeln för att se den fullständiga titeln i verktygstipset.
+
+När du definierar nyckelattribut för ämnet eller mappningsreferenserna kan du visa titeln, motsvarande ikon och nyckeln i den vänstra panelen. Tangenten visas som `keys=<key-name>`.
+
+![tangenter i kartvyn](images/view-key-title-map-view.png){width="300" align="left"}
+
+Om du har redigeringsbehörighet för kartfilerna kan du även redigera filerna. Mer information om hur du öppnar och redigerar ett avsnitt via DITA-kartan finns i [Redigera ämnen via DITA-kartan](map-editor-advanced-map-editor.md#id17ACJ0F0FHS).
+
 
 Du kan utföra följande åtgärder på Alternativ-menyn i kartfilen:
 
@@ -1163,7 +1175,7 @@ I dispositionsvyn finns följande funktioner:
 
   ![](images/drop-element-outline-view_cs.png){width="300" align="left"}
 
-- The **Alternativ** i *Dispositionsvy* I kan du utföra allmänna åtgärder som Klipp ut, Kopiera, Ta bort, Generera ID, Infoga element före eller efter det aktuella elementet, Byta namn på eller ersätta ett element, Bryt ned ett element och skapa ett utdrag av det markerade elementet.
+- The **Alternativ** i *Dispositionsvy* gör att du kan utföra allmänna åtgärder som Klipp ut, Kopiera, Ta bort, Generera ID, Infoga element före eller efter det aktuella elementet, Byta namn på eller ersätta ett element, Radbryta ett element, Bryt ned ett element och skapa ett utdrag ur det markerade elementet.
 
 >[!NOTE]
 >
@@ -1487,9 +1499,16 @@ Använd till exempel följande uppräkning för att begränsa `@platform` attrib
 
 **Listrutan Attribut**
 
-Du kan också ändra värdet för ämnesschemat med hjälp av listrutan Attribut på panelen Innehållsegenskaper i redigeringsvyn. Om du vill ändra värdet väljer du ett värde i listrutan Attribut.
+Du kan också ändra värdet på ämnesschemat med **Attribut** listruta från **Innehållsegenskaper** på panelen **Upphovsman** vy.
+![](images/subject-scheme-attribute-dropdown.png){width="200" align="left"}
+Gör så här för att ändra värdet:
 
-![](images/subject-scheme-attribute-dropdown.png){width="300" align="left"}
+1. Välj ett attribut på menyn **Attribut** nedrullningsbar meny.
+1. Välj **Redigera** ![edit-icon](images/edit_pencil_icon.svg).
+1. Välj önskat värde på menyn **Värde** nedrullningsbar meny.
+1. Klicka **Uppdatera**.
+
+
 
 Du kan också använda värden för ett attribut genom att välja flera värden i listrutan.
 
@@ -1732,7 +1751,22 @@ Den högra panelen ger dig tillgång till följande funktioner:
 
 **Innehållsegenskaper** -  ![](images/content-properties-icon.svg)
 
-Du kommer åt funktionen Innehållsegenskaper genom att klicka på ikonen Innehållsegenskaper i den högra panelen. Panelen Innehållsegenskaper innehåller information om vilken typ av element som är markerat i dokumentet och dess attribut. Du kan också lägga till attribut genom att markera attributet i listrutan och ange ett attributvärde.
+Du kommer åt funktionen Innehållsegenskaper genom att klicka på ikonen Innehållsegenskaper i den högra panelen. Panelen Innehållsegenskaper innehåller information om vilken typ av element som är markerat i dokumentet och dess attribut.
+Du kan enkelt lägga till, redigera eller ta bort attribut.
+
+1. Klicka **+ Lägg till**.
+
+   ![attribut i innehållsegenskaper](images/properties-tab-attributes_cs.png){width="300" align="left"}
+
+1. I **Attribut** Välj attributet i listrutan och ange ett attributvärde.  Klicka sedan på **Lägg till**.
+
+   ![attributpanel med flera attribut ](images/attributes-multiple-properties.png){width="300" align="left"}
+
+1. Om du vill redigera attributet håller du pekaren över det och väljer **Redigera** ![edit-icon](images/edit_pencil_icon.svg).
+   ![redigera attribut](images/edit-attributes-content-properties.png){width="300" align="left"}
+
+1. Om du vill ta bort attributet håller du pekaren över det och väljer **Ta bort** ![delete-icon](images/Delete_icon.svg).
+
 
 >[!NOTE]
 >
@@ -1740,7 +1774,7 @@ Du kommer åt funktionen Innehållsegenskaper genom att klicka på ikonen Inneh�
 
 Om administratören har skapat en profil för attribut får du dessa attribut tillsammans med deras konfigurerade värden. Med innehållsegenskapspanelen kan du välja dessa attribut och tilldela dem till relevant innehåll i ditt ämne. På så sätt kan du också skapa villkorsstyrt innehåll som sedan kan användas för att skapa villkorsstyrda utdata. Mer information om hur du skapar utdata med hjälp av villkorliga förinställningar finns i [Använda förinställningar för villkor](generate-output-use-condition-presets.md#).
 
-![](images/properties-tab-attributes_cs.png){width="300" align="left"}
+
 
 **Filegenskaper** -  ![](images/topic-properties-icon.svg)
 
@@ -1750,11 +1784,12 @@ Visa egenskaperna för den markerade filen genom att klicka på ikonen Filegensk
 
 I avsnittet Allmänt får du tillgång till följande funktioner:
 
-![](images/file-properties-general.png){width="300" align="left"}
+![file-properties](images/file-properties-general.png){width="300" align="left"}
 
 - **Namn**: Visar filnamnet för det markerade ämnet. Filnamnet är hyperlänkat till egenskapssidan för den markerade filen.
 - **ID**: Visar ID:t för det markerade ämnet.
-- **Metadatataggar**: Detta är metataggar för ämnet. De anges från taggfältet på egenskapssidan.
+- **Taggar**: Detta är metataggar för ämnet. De anges från taggfältet på egenskapssidan. Du kan skriva eller välja dem i listrutan.  Taggarna visas under listrutan. Om du vill ta bort en tagg markerar du kryssikonen bredvid taggen.
+- **Redigera fler egenskaper**: Du kan redigera fler egenskaper på sidan för filegenskaper.
 - **Språk**: Visar språket för ämnet. Den ställs in från språkfältet på egenskapssidan.
 - **Skapad den**: Visar datum och tid då ämnet skapades.
 - **Utcheckad av**: Visar användaren som checkade ut ämnet.

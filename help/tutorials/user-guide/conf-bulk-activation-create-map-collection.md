@@ -1,10 +1,10 @@
 ---
 title: Skapa en gruppaktiveringskarta
 description: Lär dig hur du skapar en gruppaktiveringskarta i AEM.
-exl-id: 7d17fb37-9486-4a3b-a421-08e279c95b6c
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: ea0bd465-a2d9-488f-83e9-62b336233eb1
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Fliken Kartor och förinställningar innehåller information i följande kolumne
   > Den lilla ![](images/global-preset-icon.svg) anger en förinställning på mappprofilnivå.
 - **Ändrad**: Anger om DITA-kartan uppdateras efter den senaste publikationen. Baserat på den här informationen kan du bestämma om du vill aktivera utdata för den här DITA-kartan eller inte.
 - **Genererad**: Visar datum och tid för den senaste genererade utdata.
-- **Publicerad**: Visar datum och tid för det senaste publicerade \(eller aktiverade\) resultatet. Om du klickar på länken visas sidan Aktiveringsresultat med information om rotsökvägen där innehållet aktiveras.
+- **Publicerad**: Visar datum och tid för det senaste publicerade (eller aktiverade) resultatet. Om du markerar länken visas **Aktiveringsresultat** visas, som innehåller loggarna med information om rotsökvägen där innehållet är aktiverat.
 
 
 Följande filteralternativ är tillgängliga på den vänstra panelen:

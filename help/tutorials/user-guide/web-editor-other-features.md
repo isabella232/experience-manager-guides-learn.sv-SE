@@ -2,9 +2,9 @@
 title: Andra funktioner i Web Editor
 description: Utforska andra funktioner i webbredigeraren i AEM. Lär dig hur du använder de här funktionerna för att förbättra redigeringen i AEM.
 exl-id: 1833b1e3-c7f1-4f2c-be35-235b65ba2f36
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
@@ -187,6 +187,15 @@ Förutom snabbmenyn för den synliga sökvägen kan du även öppna dialogrutan 
 
 - Du kommer åt dialogrutan Byt namn på element genom att öppna Alternativ-menyn för ett element på panelen Kontur.
 
+
+
+**Radbryta ett element**
+
+- När du kapslar ett element kan du lägga till en elementtagg i den markerade texten. Du kan radbryta texten till vilket underordnat element som helst enligt DITA-standarder. Om du till exempel har text under en `note` -element kan du kapsla in texten i `p` -element.
+
+  The **Radbryt element** är tillgängligt på snabbmenyn för ämnesraden. Om du vill kapsla in ett element högerklickar du på elementet och öppnar snabbmenyn. Välj elementet från **Radbryt element** -dialogrutan. Texten visas i det nya elementet.
+
+  Du kan också markera texten eller elementet i innehållet och sedan markera **Radbryt element**  på snabbmenyn.
 
 **Dela upp ett element**
 

@@ -1,10 +1,10 @@
 ---
 title: Använd kartsamling för generering av utdata
 description: Lär dig skapa och ta bort en kartsamling och lägga till eller ta bort en DITA-karta. Konfigurera, generera och avbryta en utdatagenereringsaktivitet från en kartsamling i AEM.
-exl-id: 32e3af6c-9670-42cc-8dbe-9f99fbc60adf
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+exl-id: 41152fa4-f739-44d2-9ccd-74072f53e31b
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Så här skapar du en kartsamling och lägger till DITA-kartor i samlingen:
 
    DITA-kartfilerna läggs till i din kartsamling.
 
-   ![](images/maps_presets_62_63.png){width="800" align="left"}
+   ![kartsamlingens kontrollpanel](./images/map-collection-dashboard.png){width="800" align="left"}
 
 Följande filtreringsalternativ och mappningsinformation visas på samlingssidan:
 
@@ -57,8 +57,10 @@ Följande filtreringsalternativ och mappningsinformation visas på samlingssidan
    - **Språk**: Du kan välja någon av de tillgängliga språkkoderna och endast visa det valda språket i tabellen Kartor och förinställningar.
 - **Kartor och förinställningar** tabell: Tabellen Kartor och förinställningar innehåller information i följande kolumner:
    - **Karta**: Visar DITA-kartfilens namn.
+   - **Filnamn**: Visar filnamnet på DITA-kartan.
    - **Språk**: Visar språket på DITA-kartan.
    - **Förinställning**: Visar förinställningstypen för utdata som är konfigurerad på kartfilen.
+   - **Baslinje**: Visar den baslinje som används av förinställningen för utdata.  Om ingen baslinje används visas ett bindestreck &#39;-&#39;
    - **Ändrad**: Anger om DITA-kartan uppdateras efter den senaste publikationen. Baserat på den här informationen kan du bestämma om du vill publicera om utdata för den här DITA-kartan eller inte.
    - **Senast genererad**: Visar datum och tid för den senaste genererade utdata.
 
@@ -92,9 +94,36 @@ Så här konfigurerar och genererar du utdata med en kartsamling:
 
    - Om du vill generera utdata för markerade kartor markerar du karfilerna och klickar på **Generera markerade**.
    - Om du vill generera utdata för alla DITA-kartor med deras konfigurerade förinställningar klickar du på **Generera alla**.
+
    >[!IMPORTANT]
    >
    > Om en utdatagenereringsprocess för en förinställning eller ett DITA-schema finns i kön eller pågår kan du inte initiera en annan utdatagenereringsåtgärd för samma förinställning eller karta.
+
+## Konfigurera metadataegenskaperna
+
+I kartsamlingen kan du konfigurera flera metadataegenskaper för DITA-kartorna. Välj **Konfigurera metadata**  för att öppna **Resursmetadata** sida. På **Resursmetadata** visas alla kartor som finns i samlingen till vänster.
+
+![konfigurera metadata](images/map-collection-asset-metadata.png){width="800" align="left"}
+
+Utför följande steg för att konfigurera metadataegenskaperna:
+
+1. Du kan välja de kartor som du vill uppdatera metadata för. Som standard är alla DITA-kartor markerade.
+
+1. När du har valt DITA-kartor kan du visa egenskaper som metadata, schemaaktivering (de), referenser, dokumenttillstånd med mera.
+
+1. Uppdatera metadataegenskaperna.
+
+1. Klicka **Spara och stäng** överst för att spara uppdateringarna.
+1. (Valfritt) När du uppdaterar taggarna kan du även välja Lägg till i **Spara och stäng** för att lägga till de nya taggarna i den befintliga listan.
+1. Klicka **Skicka** från **Spara och stäng** nedrullningsbar meny.
+Metadataegenskaperna uppdateras för de DITA-kartor som du väljer gruppvis i kartsamlingen.
+
+>[!NOTE]
+> 
+>För **Dokumenttillstånd** kan du bara välja de dokumentlägen som är tillåtna för alla markerade DITA-kartor. Om du vill veta mer kan du visa [**Dokumenttillstånd**](./web-editor-document-states.md).
+
+Metadataegenskaperna är synkroniserade med filegenskaperna. När du har uppdaterat dem kan du visa dem på **Filegenskaper** i webbredigeraren.
+
 
 
 ## Ta bort en kartsamling eller en DITA-karta från kartsamlingen
@@ -102,7 +131,7 @@ Så här konfigurerar och genererar du utdata med en kartsamling:
 - Om du vill ta bort en kartsamling markerar du samlingen på sidan Kartsamling och klickar på **Ta bort**.
 - Om du vill ta bort en DITA-karta från en kartsamling öppnar du Kartsamlingen i redigeringsläge, markerar DITA-kartfilen och klickar på **Ta bort från samling**.
 
-  Detta tar även bort alla förinställningar eller språkområden som är kopplade till DITA-kartan från kartsamlingen.
+Detta tar även bort alla förinställningar eller språkområden som är kopplade till DITA-kartan från kartsamlingen.
 
 
 ## Avbryt en utdatagenereringsaktivitet från en kartsamling

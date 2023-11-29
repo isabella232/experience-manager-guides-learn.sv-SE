@@ -2,9 +2,9 @@
 user-guide-title: Självstudiekurser om AEM Guides
 user-guide-description: Läs vår samling av självstudiekurser om handböcker om Adobe Experience Manager.
 breadcrumb-title: Självstudiekurser om AEM Guides
-source-git-commit: 3da096cd419b63a5a68e4ee8dc39ceaa5f58d7de
+source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1633'
 ht-degree: 3%
 
 ---
@@ -20,30 +20,33 @@ ht-degree: 3%
       + Cloud Services {#cloud-release-notes}
          + [Distributionsanvisningar](./release-info/deploy-xml-on-aemaacs.md)
          + 2023 års utgåvor {#2023-releases}
-         + Novemberversion {#2311-release}
-            + [Nyheter](./release-info/whats-new-2023.11.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.11.0.md)
-         + Oktober-versionen {#2310-release}
-            + [Nyheter](./release-info/whats-new-2023.10.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.10.0.md)
-         + Septemberversionen {#2309-release}
-            + [Nyheter](./release-info/whats-new-2023.9.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.9.0.md)
-         + juliversion {#2307-release}
-            + [Nyheter](./release-info/whats-new-2023.7.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.7.0.md)
-         + Juniversion {#2306-release}
-            + [Nyheter](./release-info/whats-new-2023.6.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.6.0.md)
-         + April-utgåvan {#2304-release}
-            + [Nyheter](./release-info/whats-new-2023.4.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.4.0.md)
-         + Marsutgåva {#2303-release}
-            + [Nyheter](./release-info/whats-new-2023.3.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.3.0.md)
-         + Februariversion {#2302-release}
-            + [Nyheter](./release-info/whats-new-2023.2.0.md)
-            + [Versionsinformation](./release-info/release-notes-2023.2.0.md)
+            + December-utgåvan {#2312-release}
+               + [Nyheter](./release-info/whats-new-2023.12.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.12.0.md)
+            + Novemberversion {#2311-release}
+               + [Nyheter](./release-info/whats-new-2023.11.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.11.0.md)
+            + Oktober-versionen {#2310-release}
+               + [Nyheter](./release-info/whats-new-2023.10.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.10.0.md)
+            + Septemberversionen {#2309-release}
+               + [Nyheter](./release-info/whats-new-2023.9.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.9.0.md)
+            + juliversion {#2307-release}
+               + [Nyheter](./release-info/whats-new-2023.7.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.7.0.md)
+            + Juniversion {#2306-release}
+               + [Nyheter](./release-info/whats-new-2023.6.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.6.0.md)
+            + April-utgåvan {#2304-release}
+               + [Nyheter](./release-info/whats-new-2023.4.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.4.0.md)
+            + Marsutgåva {#2303-release}
+               + [Nyheter](./release-info/whats-new-2023.3.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.3.0.md)
+            + Februariversion {#2302-release}
+               + [Nyheter](./release-info/whats-new-2023.2.0.md)
+               + [Versionsinformation](./release-info/release-notes-2023.2.0.md)
          + 2022 års utgåvor {#2022-releases}
             + [Versionsinformation, november](./release-info/release-notes-2022.11.0.md)
             + [Versionsinformation, oktober](./release-info/release-notes-2022.10.0.md)
@@ -362,7 +365,9 @@ ht-degree: 3%
    + [Java-baserat API för att arbeta med mappprofiler](./api-reference/folder-profile-java.md)
    + [Java-baserat API för att skapa och aktivera paket](./api-reference/create-activate-package-java.md)
    + [Händelsehanterare efter bearbetning](./api-reference/post-process-event.md)
+   + [Händelsehanterare för slutförd gruppaktivering](./api-reference/bulk-activation-complete-event.md)
    + [Händelsehanterare för konverteringsprocess](./api-reference/conversion-complete-event.md)
+
 + Knowledge Base {#knowledge-base}
    + Expertsession {#expert-session}
       + [Översikt över expertsessioner](./knowledge-base/expert-sessions/expert-session.md)
