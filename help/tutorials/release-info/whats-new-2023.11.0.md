@@ -1,9 +1,10 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides, november 2023-versionen
 description: Läs om de nya och förbättrade funktionerna i november 2023-utgåvan av Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 6cc5299f8f4566e38c5a8c96e17fadd915f6e206
+exl-id: 83c04e01-92f1-41b0-8866-a202f4106b51
+source-git-commit: 57ff1a3b6ceb9debc8e29065fd37cab21adc1b96
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -43,6 +44,7 @@ Mer information finns i [Avancerade PDF-inställningar](../native-pdf/components
 ### Förbättrad resurshantering för mallar i Native PDF
 
 Experience Manager Guides har nu förbättrat resurshanteringen för mallar för inbyggda PDF. Nu kan du dela och återanvända resurser, som bilder, CSS-filer och teckensnittsfiler, i flera olika PDF-mallar. I och med den här förbättringen är det mycket enklare att hantera resurser för en stor uppsättning mallar. Du behöver inte skapa dubblettresurser för varje mall, och du kan behålla dem i en delad mapp och använda dem i alla mallar i PDF.
+Mer information finns i [PDF-mall](../native-pdf/pdf-template.md).
 
 ## Förbättringar i Web Editor
 
@@ -64,6 +66,8 @@ Du kan definiera villkorsattribut i dina DITA-avsnitt. Använd sedan villkorsatt
 
 ![Förinställda villkor på fliken Hantera i webbredigeraren ](assets/web-editor-manage-condition-presets.png){width="550" align="left"}
 
+Mer information finns i [Använda förinställningar för villkor](../user-guide/generate-output-use-condition-presets.md).
+
 ### Återställ filflikar när webbläsaren uppdateras
 
 Stödlinjer i Experience Manager återställer läget för de öppna filflikarna i webbredigeraren när du uppdaterar webbläsaren. Mer information finns i **Uppdatera webbläsaren när filerna redigeras** avsnitt under [Redigera ämnen i Web Editor](../user-guide/web-editor-edit-topics.md).
@@ -78,4 +82,3 @@ Mer information finns i **Dela upp ett element** från [andra funktioner i Web E
 Nu kan du använda kortkommandon för att flytta markören i webbredigeraren med hjälp av stödlinjerna i Experience Manager. Du kan använda kortkommandona för att snabbt flytta ett ord åt vänster eller höger. Du kan också gå till början eller slutet av raden med hjälp av kortkommandona.
 Nu kan du också använda kortkommandon för att flytta markören till början av nästa element eller till slutet av föregående element.
 Läs mer om [kortkommandon i Web Editor](../user-guide/web-editor-keyboard-shortcuts.md).
-
