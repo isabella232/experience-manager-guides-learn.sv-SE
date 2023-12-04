@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides, december 2023-versionen
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till december 2023-utgåvan av Adobe Experience Manager Guides as a Cloud Service.
-source-git-commit: 9fcc8faec4631d710dbdfd7e4f8567069d0ba120
+source-git-commit: b4bbed1de8fc2d8ef81332445a5c96161be508d4
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 2%
+source-wordcount: '1319'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i 
 Uppgradera din nuvarande konfiguration av Experience Manager Guides as a Cloud Service genom att utföra följande steg:
 
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2023.12.0.15.
+2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2023.12.0.16.
 3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till december 2023-utgåvan av Experience Manager Guides as a Cloud Service.
 
 ## Steg för att aktivera utlösaren för ett skript via en serverlet
@@ -90,7 +90,7 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 1. Kör en POST-begäran till servern (med korrekt autentisering) - `http://<server:port>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika sökvägar för kartorna för att indexera dem. Som standard indexeras alla kartor|| Till exempel: `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
 
-1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
+1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel: `http://<server:port>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port>/bin/guides/map-find/indexing?jobId={jobId}`(Till exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
 
@@ -122,7 +122,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | Experience Manager Guides as a Cloud Release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.12.0 | 3.3-uuid.5 | 3.3-uuid.5 | 2.3 | 2.3 |
+| 2023.12.0 | 3.3-uuid.5 | 3.3-uuid.5 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -140,25 +140,25 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 ### Redigering
 
-- The **Titel** på webbredigeringsfliken trunkeras efter en punkt (.) tecken. (14372)
+- The **Titel** på webbredigeringsfliken trunkeras efter en punkt (.) tecken. 14372
 - Felmeddelanden för duplicerade mappningsnamn i resursgränssnittet uppdateras inte. (14320)
-- Ett fel inträffar i logiken för att skapa versioner när resurser dras och släpps. (14291)
-- Återanvändbart innehåll hoppar över element-ID:n. (14213)
+- Ett fel inträffar i logiken för att skapa versioner när resurser dras och släpps. 14291
+- Återanvändbart innehåll hoppar över element-ID:n. 14213
 - Inställningskontrollen som ska döljas **Språkvariabler** panel under **Utdata** -fliken saknas. (14194)
-- Webbredigeraren genererar programfel när en ny referens eller ett nytt ämne läggs till med ett specialiserat schema i layoutvyn. (14094)
-- En ankarlänk till `<dlentry>` eller `<dt>` länktexten visas inte. (13543)
-- The **Favoriter** det går inte att läsa in samlingen i Web Editor. (13495)
-- Citat visar länkar som inte går att klicka på när de skapas med ett unikt ID med blanksteg. (13447)
-- I **Layout** vy för en bokkarta, använda **Flytta åt höger** om du vill göra ett markerat kapitel till ett delelement fungerar inte. (12567)
+- Webbredigeraren genererar programfel när en ny referens eller ett nytt ämne läggs till med ett specialiserat schema i layoutvyn. 14094
+- En ankarlänk till `<dlentry>` eller `<dt>` länktexten visas inte. 13543
+- The **Favoriter** det går inte att läsa in samlingen i Web Editor. 13495
+- Citat visar länkar som inte går att klicka på när de skapas med ett unikt ID med blanksteg. 13447
+- I **Layout** vy för en bokkarta, använda **Flytta åt höger** om du vill göra ett markerat kapitel till ett delelement fungerar inte. 12567
 - XML Editors förhandsgranskningsfönster är trunkerat i Google Chrome- och Microsoft Edge-webbläsare. (10755)
-- Webbredigeraren saknar möjlighet att kapsla in ett element inuti de överordnade elementen. (8791)
+- Webbredigeraren saknar möjlighet att kapsla in ett element inuti de överordnade elementen. 8791
 
 ### Publicering
 
 - Fmdita-komponenter har en hårdkodad sökväg med `delegator.jsp`, som förhindrar övertäckning av AEM Sites-komponenter. (13993)
 - Den taggade vyn av PDF-reaktorn i Native PDF fungerar inte som förväntat. (13622)
-- Vid publicering av AEM påträffas ett problem vid implementering i datalagret för stora kartor med scope-peer-länkar. (13531)
-- Det går inte att aktivera en webbplats med kontrollpanelen Experience Manager Guides Bulk Publication. (13439)
+- Vid publicering av AEM påträffas ett problem vid implementering i datalagret för stora kartor med scope-peer-länkar. 13531
+- Det går inte att aktivera en webbplats med kontrollpanelen Experience Manager Guides Bulk Publication. 13439
 - Elementetiketternas lokalisering fungerar inte korrekt i AEM Sites-utdata. (12144)
 - Saknas **diaval** i förinställningar för utdata på mappprofilnivå som har skapats via webbredigerarens användargränssnitt. (11903)
 
@@ -168,13 +168,13 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 ### Översättning
 
-- The **Acceptera/avvisa** visas felaktigt för automatiskt godkänd mänsklig översättning. (14318)
-- Internationaliseringsproblem (i18n) inträffar under omvandlingen av icke-engelska DITA-filer till AEM sidor. (14286)
+- The **Acceptera/avvisa** visas felaktigt för automatiskt godkänd mänsklig översättning. 14318
+- Internationaliseringsproblem (i18n) inträffar under omvandlingen av icke-engelska DITA-filer till AEM sidor. 14286
 - Översatt innehåll kan inte synkroniseras från temporära översättningsprojekt, och översättningsguiden för DITA XML-redigeraren visar felaktigt **Pågår** status för godkända jobb. (9938)
 
 ### Tillgänglighet
 
-- Det går inte att navigera i arbetsytans användargränssnitt eftersom fokus blir svällt i ämnesredigeraren. (13517)
+- Det går inte att navigera i arbetsytans användargränssnitt eftersom fokus blir svällt i ämnesredigeraren. 13517
 
 ## Känt fel
 
