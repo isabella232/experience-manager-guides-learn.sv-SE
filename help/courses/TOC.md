@@ -1,20 +1,20 @@
 ---
-user-guide-title: Videor om användarhandböcker om Adobe Experience Manager
+user-guide-title: Adobe Experience Manager Guides - självstudiekurser
 user-guide-description: En samling videor om användarhandböcker om Adobe Experience Manager.
 breadcrumb-title: Videor om användarhandböcker för AEM
-source-git-commit: 7d5e4616c0f36c696549e9e08a1b5c137f36a66c
+source-git-commit: 6a35536d55bec04d69d1c296b75b55f034f70186
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 14%
+source-wordcount: '125'
+ht-degree: 9%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Guides] {#videos}
+# [!DNL Adobe Experience Manager Guides] självstudier {#videos}
 
 + [[!DNL AEM Guides] Videor](overview.md)
 + Komma igång med [!DNL AEM Guides] {#getting-started}
-   + [Kursöversikt](./course-1/overview.md)
+   + [Komma igång - översikt](./course-1/overview.md)
    + [Förstå AEM användargränssnitt](./course-1/understanding-the-aem-user-interface.md)
    + [Skapa och strukturera innehåll](./course-1/creating-and-structuring-content.md)
    + [Arbeta med bilder](./course-1/working-with-images.md)
@@ -25,7 +25,7 @@ ht-degree: 14%
    + [Publicera standardutdata](./course-1/publishing-default-output.md)
    + [Omslag](./course-1/recap.md)
 + Generera utdata med [!DNL AEM Guides] {#output-generation}
-   + [Översikt](./course-2/overview.md)
+   + [Översikt över utdatagenerering](./course-2/overview.md)
    + [Om kartkontrollpanelen](./course-2/introduction-to-the-map-dashboard.md)
    + [Arbeta med rapporter](./course-2/working-with-reports.md)
    + [Skapa och publicera med baslinjer](./course-2/creating-and-publishing-with-baselines.md)
@@ -35,11 +35,11 @@ ht-degree: 14%
    + [Masspublicering](./course-2/bulk-publishing.md)
    + [Omslag](./course-2/recap.md)
 + Redigering med [!DNL AEM Guides] Redigerare {#advanced-user-guide}
-   + [Introduktion/översikt](./course-3/overview.md)
+   + [Redigeringsöversikt](./course-3/overview.md)
    + [Användarinställningar, redigeringsinställningar och redigeringsverktygsfält](./course-3/user-settings-preferences-toolbars.md)
    + [Mappprofiler](./course-3/folder-profiles.md)
    + [Konfiguration av redigerare](./course-3/editor-configuration.md)
-   + [Paneler](./course-3/panels.md)
+   + [Panel](./course-3/panels.md)
    + [Dispositionsvy](./course-3/outline-view.md)
    + [Korsreferenser och länkar](./course-3/cross-references-and-links.md)
    + [Återanvändning av innehåll](./course-3/content-reuse.md)
