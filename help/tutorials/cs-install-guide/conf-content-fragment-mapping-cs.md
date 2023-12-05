@@ -1,13 +1,12 @@
 ---
 title: Konfigurera den JSON-baserade mappningen mellan ett ämne och en innehållsfragmentmodell.
 description: Lär dig hur du konfigurerar den JSON-baserade mappningen mellan ett ämne och en innehållsfragmentmodell.
-source-git-commit: dd677257d94015d888705e4b6a43ae877e58be4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # Skapa en mappning mellan ett ämne och ett innehållsfragment
 

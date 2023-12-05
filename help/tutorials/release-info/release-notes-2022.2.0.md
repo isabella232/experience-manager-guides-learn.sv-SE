@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation för [!DNL AEM Guides], februari 2022-utgåvan
 description: Februariversion av [!DNL Adobe Experience Manager Guides] as a Cloud Service
-exl-id: eb7ff475-bb5b-4d32-b291-024147fbfed1
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 2%
+source-wordcount: '974'
+ht-degree: 0%
 
 ---
 
@@ -15,19 +14,19 @@ ht-degree: 2%
 
 Uppgradera din nuvarande [!DNL Adobe Experience Manager Guides] as a Cloud Service (kallas senare [!DNL AEM Guides] as a Cloud Service) konfigurera genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö du vill uppgradera.
-1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.2.114.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2022.2.114.
 1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till februari-versionen av [!DNL AEM Guides] as a Cloud Service.
 
 ## Kompatibilitetsmatris
 
-I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av [!DNL AEM Guides] as a Cloud Service februari 2022-utgåvan.
+I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av [!DNL AEM Guides] as a Cloud Service februari 2022.
 
 ### FrameMaker och FrameMaker Publishing Server
 
 | FMPS | FrameMaker |
 | --- | --- |
 | Inte kompatibel | 2020 uppdatering 4 och senare |
-|  |  |
+| | |
 
 
 ### Syrgasanslutning
@@ -88,34 +87,34 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 ### Artikelbaserad publicering
 
-* Artikelbaserad publicering publicerar inte artiklar baserat på den valda baslinjen. (8771)
-* DITAVAL-filer respekteras inte vid artikelbaserad publicering. (8770)
-* Det går inte att göra artikelbaserad publicering för Salesforce-profil när posttypen är Vanliga frågor och artikelfältets innehåll är Fråga. (8448)
-* Det går inte att göra artikelbaserad publicering för Salesforce-profilen när posttypen är Manuell. (8447)
+* Artikelbaserad publicering publicerar inte artiklar baserat på den valda baslinjen. 8771
+* DITAVAL-filer respekteras inte vid artikelbaserad publicering. 8770
+* Det går inte att göra artikelbaserad publicering för Salesforce-profil när posttypen är Vanliga frågor och artikelfältets innehåll är Fråga. 8448
+* Det går inte att göra artikelbaserad publicering för Salesforce-profilen när posttypen är Manuell. 8447
 
 ### Web Editor
 
-* Det går inte att dra och släppa ett villkor i DITA-ämnen. (8761)
-* Attribut saknas när du lägger till ett kapitel i bokmappen med dra och släpp från favoritvyn. (8746)
+* Det går inte att dra och släppa ett villkor i DITA-avsnitt. 8761
+* Attribut saknas när du lägger till ett kapitel i bokmappen med dra och släpp från favoritvyn. 8746
 * Om du redigerar egenskaperna för en bild (höjd, bredd) uppstår ett programfel. (8722)
 * Brutna länkar visas inte på dispositionspanelen i källvyn. (8590)
 * XML-redigeraren tar bort newline-taggen i kodblocket. (8522)
-* Ordlista visas som en anteckning när en ordlista har skapats. (8384)
-* xref kan inte infogas även på giltiga platser. (8354)
-* Elementlistan (Alt+Retur) visas nedtonad i det mörka/mörkaste temat. (7913)
+* Ordlista visas som en anteckning när en ordlista har skapats. 8384
+* xref kan inte infogas även på giltiga platser. 8354
+* Elementlistan (Alt+Retur) visas nedtonad i det mörka/mörkaste temat. 7913
 * Listan med mappningsmallar i **Skapa** option( ellipsis menu) of the Repository panel is not as per the **Mappprofil** i Användarinställningar. (5918)
-* Element-ID:n genereras inte automatiskt för element som läggs till från funktionen Återanvänd innehåll i huvudverktygsfältet. (5826)
+* Element-ID:n genereras inte automatiskt för element som läggs till från funktionen Återanvänd innehåll i huvudverktygsfältet. 5826
 
-### Resurser, användargränssnitt
+### Resursgränssnitt
 
-* Bildredigeringen fungerar inte som förväntat på molnservern. (8768)
-* I panelen för versionshistorik visas en felaktig tidsstämpel i det aktuella versionsavsnittet och informationen ändras. (8765)
-* DITAVAL-filöverföring på molnservern misslyckas när AEM datorverktyg används. (8707)
-* Den andra administratörsanvändaren kan inte läggas till som den första administratörsanvändaren i en mapp. (8430)
-* Icke-unika egenskaper för en resurs kopieras inte när resursen kopieras och klistras in. (8241)
+* Bildredigeringen fungerar inte som förväntat på molnservern. 8768
+* I panelen för versionshistorik visas en felaktig tidsstämpel i det aktuella versionsavsnittet och informationen ändras. 8765
+* DITAVAL-filöverföring på molnservern misslyckas när AEM datorverktyg används. 8707
+* Den andra administratörsanvändaren kan inte läggas till som den första administratörsanvändaren i en mapp. 8430
+* Icke-unika egenskaper för en resurs kopieras inte när resursen kopieras och klistras in. 8241
 
 ### Användbarhetsändringar
 
-* Om ett användarnamn är långt visas inte ikonerna för att acceptera/avvisa på panelen Granska i Web Editor tydligt. (8793)
-* I **Sök och ersätt** visas en oönskad ikon vid mushovringaren i resultatavsnittet. (8775)
-* Anpassad ikon väljs inte från egenskapen och i stället visas standardikonen för rapporter som genereras med knappen Generera rapport. (8573)
+* Om ett användarnamn är långt visas inte ikonerna för att acceptera/avvisa på panelen Granska i Web Editor tydligt. 8793
+* I **Sök och ersätt** visas en oönskad ikon vid mushovringaren i resultatavsnittet. 8775
+* Anpassad ikon väljs inte från egenskapen och i stället visas standardikonen för rapporter som genereras med knappen Generera rapport. 8573

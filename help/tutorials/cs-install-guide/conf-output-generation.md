@@ -1,10 +1,9 @@
 ---
 title: Konfigurera inställningar för utdatagenerering
 description: Lär dig hur du konfigurerar inställningar för generering av utdata
-exl-id: b5cf4f6c-dc56-428e-a514-6c9f879ac03d
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '5496'
+source-wordcount: '5470'
 ht-degree: 0%
 
 ---

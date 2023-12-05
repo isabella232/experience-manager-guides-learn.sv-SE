@@ -1,13 +1,12 @@
 ---
 title: Lägga till och hantera citat i ditt innehåll
 description: Lägg till och hantera citat i AEM. Lär dig hur du använder, importerar, filtrerar, söker, ändrar format för citat, redigerar, förhandsgranskar, infogar, tar bort och genererar innehållsutdata med citationer.
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1887'
 ht-degree: 0%
 
 ---
-
 
 # Lägga till och hantera citat i ditt innehåll
 
@@ -114,7 +113,7 @@ Välj **Filter** ![](images/filter-search-icon.svg) -ikonen bredvid sökfältet 
 
 * **Journal**: Den visar en lista med citat som hämtats från journaler.
 
-### Sökning
+### Sök
 
 Sök i källtexten efter ditt innehåll.
 

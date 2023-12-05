@@ -1,10 +1,9 @@
 ---
 title: Hämta filer
 description: Lär dig hur du hämtar filer från DITA-kartkonsolen i AEM och exporterar en DITA-kartfil AEM databasen.
-exl-id: 3b588256-da30-4a98-be5c-fa36cfa8a80b
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---

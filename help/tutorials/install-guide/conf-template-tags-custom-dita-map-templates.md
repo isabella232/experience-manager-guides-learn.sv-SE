@@ -1,8 +1,7 @@
 ---
 title: Konfigurera anpassad DITA-mappningsmall
-description: Lär dig hur du konfigurerar en anpassad DITA-mappningsmall
-exl-id: 2ad0fc50-97fd-437e-94cc-db5f51f3bc3f
-source-git-commit: 0dea2f1d17e7d9b12d07b459a10a00c1dd7460a5
+description: Lär dig konfigurera en anpassad DITA-mappningsmall
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%
@@ -11,7 +10,7 @@ ht-degree: 0%
 
 # Konfigurera anpassad DITA-mappningsmall {#id1774F04F05Z}
 
-AEM Guides innehåller två färdiga mallar för kartor - DITA-karta och Bookmap. Du kan skapa kartor baserade på dessa mallar; Du kan också definiera egna mappningsmallar som sedan kan användas för att skapa nya kartor.
+AEM Guides innehåller två färdiga mallar för kartor - DITA-karta och Bookmap. Du kan skapa kartor som baseras på dessa mallar eller definiera egna mappningsmallar som sedan kan användas för att skapa nya kartor.
 
 Följ de här stegen för att lägga till egna mappningsmallar:
 

@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, mars 2023-utgåvan
 description: Mars-utgåvan av Adobe Experience Manager Guides as a Cloud Service
-exl-id: c62a65fb-b52d-455d-b42c-f0b19b4d5f63
-source-git-commit: f419281cdecb570f9e5c7ce5cd4c831cae349e11
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 1%
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +18,8 @@ Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i 
 
 Uppgradera din nuvarande AEM Guides as a Cloud Service genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.3.242.
-3. Genomför ändringarna och kör Cloud Servicens i pipeline för att uppgradera till mars 2023-utgåvan av AEM Guides as a Cloud Service.
+2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2023.3.242.
+3. Genomför ändringarna och kör Cloud Servicen i pipeline för att uppgradera till mars 2023-utgåvan av AEM Guides as a Cloud Service.
 
 ## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM för as a Cloud Service stödlinjer)
 
@@ -50,7 +49,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.03.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
+| 2023.03.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2,3 | 2,3 |
 |  |  |  |  |
 
 ## Åtgärdade problem
@@ -61,10 +60,10 @@ De buggar som har åtgärdats i olika områden listas nedan:
 * JSON-utdata | Mappa metadata med egenskapsvärde som `"value in spaces and double quotes"` leder till ett publiceringsfel. (11438)
 * Det går inte att infoga multimediefiler för ljud och video i YouTube-format med **Infoga multimedia** -ikon. (11320)
 * Valideringsfel uppstår när en karta skapas med mallen som har ett specialiserat rubrikelement. (11212)
-* PDF | fotnot i tabellrubrik leder till fet och centrerad text i motsvarande sidfot i PDF-utdata. (10610)
+* PDF | fotnot i tabellrubrik leder till fet och centrerad text i motsvarande sidfot i PDF-utdata. 10610
 >[!NOTE]
 >
->Om du vill spegla ändringen i PDF tar du bort mappen PDF som finns i /content/dam/dita-templates och uppgraderar sedan till den senaste versionen. (10610)
+>Om du vill spegla ändringen i PDF tar du bort mappen PDF som finns i /content/dam/dita-templates och uppgraderar sedan till den senaste versionen. 10610
 
 ### Känt problem med tillfälliga lösningar
 

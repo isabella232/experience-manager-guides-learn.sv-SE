@@ -1,10 +1,9 @@
 ---
 title: Guides Publishing Benchmarks on AEMaaCS
 description: Förstå systembegränsningar för publicering på AEM Cloud.
-exl-id: cc6e38b9-6276-4147-beda-93f66368e15d
-source-git-commit: 06a55ef933f9e7941cef2337212a830413a478af
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '234'
 ht-degree: 4%
 
 ---
@@ -21,8 +20,8 @@ Om du vill konfigurera den nya publiceringstjänsten för valfri AEM molnmiljö,
 ## Körningsmiljö
 
     AEM: 2023.5.11983.20230511T173830Z
-    Lägg till stödlinje i utgåva: 2023.6.0
-    AEM: AEM Guides OOTB-mall
+    Guide Add On Release: 2023.6.0
+    AEM platsmall: AEM guider OOTB-mall
     DITA-OT-version: 3.5.4
     Typ av publiceringsarbetsflöde: Dela publiceringsarbetsflöde
     Utdata som stöds av mikrotjänsten: PDF, PDF (Dita-OT)

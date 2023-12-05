@@ -1,13 +1,12 @@
 ---
 title: Java-baserat API som fungerar med utdatagenerering
 description: Lär dig mer om det Java-baserade API:t för att arbeta med generering av utdata
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '160'
 ht-degree: 0%
 
 ---
-
 
 # Java-baserat API som fungerar med utdatagenerering {#id175UB30E05Z}
 
@@ -48,4 +47,3 @@ throws GuidesApiException
 **Parametrar**: |Namn|Typ|Beskrivning| |—|—|—| |`session`|javax.jcr.Session|En giltig JCR-session.| |``sourcePath``|String|Sökväg \(i den AEM databasen\) för den DITA-mappningsfil som utdata ska skapas för.| |``outputName``|String|Namnet på den förinställning som ska användas för att generera utdata. Du kan ange flera förinställningar med hjälp av en pipe \(&quot;\|&quot;\)-avgränsare, till exempel `aemsite\|pdfoutput`.|
 
 **Undantag**: Throws ``javax.jcr.RepositoryException``, `java.io.IOException`och `java.lang.Exception`.
-

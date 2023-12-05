@@ -1,13 +1,12 @@
 ---
 title: Recommendations för prestandaoptimering
 description: Lär dig Recommendations för prestandaoptimering
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
-
 
 # Recommendations för prestandaoptimering {#id213BD0JG0XA}
 
@@ -23,4 +22,3 @@ Tänk på följande för prestandaoptimering:
 
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

@@ -1,13 +1,12 @@
 ---
 title: Anpassa verktygsfältet
 description: Lär dig hur du anpassar verktygsfältet
-source-git-commit: 7306c1c3fbf37c049f9de1b2b492bb9b8906b065
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
-
 
 # Anpassa verktygsfältet {#id172FB00L0V6}
 
@@ -32,7 +31,7 @@ Gör så här för att lägga till en funktion i Web Editor-verktygsfältet:
 1. Välj **Stödlinjer** i listan med verktyg och klicka på **Mappprofiler**.
 1. Klicka på **Global profil** platta.
 1. Välj **Konfiguration av XML-redigerare** och klicka **Redigera** ikonen längst upp
-1. Klicka på **Hämta** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
+1. Klicka på **Ladda ned** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
 1. I `ui_config.json` lägger du till definitionen av den nya funktionen i verktygsfältsavsnittet. Spara filen och överför den.
 
    Vanligtvis kan du skapa en ny verktygsfältsknappgrupp och lägga till en eller flera knappar i den. Du kan också lägga till en ny verktygsfältsknapp i en befintlig verktygsfältgrupp. Följande information krävs för att skapa en ny verktygsfältgrupp:
@@ -41,17 +40,17 @@ Gör så här för att lägga till en funktion i Web Editor-verktygsfältet:
 
    **extraclass**: Namnet på klassen eller klasserna avgränsade med blanksteg.
 
-   **objekt**: Ange definitionen för alla grupper i verktygsfältet. Varje grupp kan innehålla en eller flera verktygsfältsikoner. Om du vill definiera ikoner i en verktygsfältgrupp måste du definiera `type` i `items`och ange värdet till `buttonGroup`. Ange ett eller flera klassnamn i `extraclass` -egenskap. Ange funktionsnamnet i `label` -egenskap. Följande utdrag från `ui_config.json` filen visar definitionen för huvudverktygsfältets block, följt av `buttonGroup` definition:
+   **objekt**: Ange definitionen för alla grupper i verktygsfältet. Varje grupp kan innehålla en eller flera verktygsfältsikoner. Om du vill definiera ikoner i en verktygsfältgrupp måste du definiera `type` -attribut i `items`och ange värdet till `buttonGroup`. Ange ett eller flera klassnamn i `extraclass` -egenskap. Ange funktionsnamnet i dialogrutan `label` -egenskap. Följande utdrag från `ui_config.json` filen visar definitionen för huvudverktygsfältets block, följt av `buttonGroup` definition:
 
        &quot;
        &quot;toolbar&quot;: {
        &quot;type&quot;: &quot;blockGroup&quot;,
-       extraclass:
+       extraklass:
        &quot;verktygsfältsoperationer&quot;,
        &quot;items&quot;: [
        {
        &quot;type&quot;: &quot;buttonGroup&quot;,
-       extraclass: &quot;left-controls&quot;,
+       &quot;extraclass&quot;: &quot;left-controls&quot;,
        &quot;label&quot;: &quot;Left Controls&quot;,
        &quot;items&quot;: [
        &quot;
@@ -100,7 +99,7 @@ Gör så här för att lägga till en funktion i Web Editor-verktygsfältet:
    "icon": "alert","variant": "quiet","title": "About AEM Guides","show": "true","on-click": "user.alert"
    ```
 
-1. Skapa en *clientlib* och lägg till JavaScript i den här mappen.
+1. Skapa en *clientlib* och lägg till ditt JavaScript i den här mappen.
 
 1. Uppdatera kategoriegenskapen för *clientlib* genom att tilldela den värdet *apps.fmdita.xml\_editor.page\_overrides*.
 
@@ -109,7 +108,7 @@ Gör så här för att lägga till en funktion i Web Editor-verktygsfältet:
 
 ## Ta bort en funktion från verktygsfältet
 
-Ibland kanske du inte vill ge alla funktioner som är tillgängliga i Web Editor. Då kan du ta bort den oönskade funktionen från Web Editors verktygsfält.
+Ibland kanske du inte vill ge alla funktioner som är tillgängliga i Web Editor, och då kan du ta bort den oönskade funktionen från Web Editor.
 
 Så här tar du bort oönskade funktioner från verktygsfältet:
 
@@ -119,13 +118,13 @@ Så här tar du bort oönskade funktioner från verktygsfältet:
 1. Välj **Stödlinjer** i listan med verktyg och klicka på **Mappprofiler**.
 1. Klicka på **Global profil** platta.
 1. Välj **Konfiguration av XML-redigerare** och klicka **Redigera** ikonen längst upp
-1. Klicka på **Hämta** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
+1. Klicka på **Ladda ned** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
 
    The `ui_config.json` filen har tre avsnitt:
 
    1. **verktygsfält**: Det här avsnittet innehåller en definition av alla funktioner som är tillgängliga i redigerarens verktygsfält, t.ex. Infoga/ta bort numrerad lista, Stäng, Spara, Kommentarer med mera.
 
-   1. **genvägar**: I det här avsnittet finns en definition av kortkommandon för en viss funktion i redigeraren.
+   1. **genvägar**: Det här avsnittet innehåller definitionen av kortkommandon som tilldelats en viss funktion i redigeraren.
 
    1. **mallar**: Det här avsnittet innehåller den fördefinierade strukturen för DITA-element som du kan använda i ditt dokument. Som standard innehåller mallavsnittet malldefinitioner för ett stycke-, enkel tabell-, tabell- och body-element. Du kan skapa en malldefinition för vilket element som helst genom att lägga till en giltig XML-struktur för det önskade elementet. Om du till exempel vill lägga till en `p` element med alla nya `li` -element i en lista kan du lägga till följande kod i slutet av mallavsnittet för att uppnå detta:
 
@@ -139,4 +138,3 @@ Så här tar du bort oönskade funktioner från verktygsfältet:
 
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

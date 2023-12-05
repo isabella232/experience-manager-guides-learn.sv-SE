@@ -1,13 +1,12 @@
 ---
 title: Installera paket för artikelbaserad publicering
 description: Lär dig hur du installerar paket för artikelbaserad publicering
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
 
 ---
-
 
 # Installera paket för artikelbaserad publicering {#id21BNL02052Z}
 
@@ -19,4 +18,3 @@ Om du vill aktivera artikelbaserad publicering hämtar och installerar du följa
 - Komponentpaket för artikelbaserad publicering
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

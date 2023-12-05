@@ -1,13 +1,12 @@
 ---
 title: PDF | Stöd för språkvariabler
 description: Använda språkvariabler i utdata- och utdatamallar för PDF
-source-git-commit: 6de4b4666d804c678674faa6fe1a54ef9b9dbbe0
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1589'
 ht-degree: 0%
 
 ---
-
 
 # Stöd för språkvariabler
 
@@ -233,6 +232,3 @@ Med CSS-format kan du även formatera prefixen. Du kan till exempel formatera et
 color: red;
 } 
 ```
-
-
-

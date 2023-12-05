@@ -1,13 +1,12 @@
 ---
 title: Avinstallera AEM
 description: Lär dig hur du avinstallerar AEM
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%
 
 ---
-
 
 # Avinstallera AEM {#id21BHG0C0SXA}
 
@@ -24,7 +23,7 @@ Så här avinstallerar du AEM stödlinjer:
 1. Sök efter paketet com.adobe.fmdita.
 1. Klicka på paketet för att expandera det.
 1. Klicka **Mer** för att öppna listrutan.
-1. Klicka **Avinstallera** och väntar på att avinstallationen ska slutföras.
+1. Klicka **Avinstallera** och vänta tills avinstallationen är klar.
 1. Om du inte längre behöver det här paketet klickar du på **Ta bort** efter avinstallation av paketet.
 
 ## Efter avinstallation
@@ -44,7 +43,6 @@ Så här rensar du de återstående filerna efter avinstallationen:
    ```
 
 1. Klicka **Ogiltig cache**.
-1. Rensa webbläsarens cacheminne.
+1. Rensa webbläsarens cache.
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

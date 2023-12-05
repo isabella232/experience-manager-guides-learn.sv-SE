@@ -1,13 +1,12 @@
 ---
 title: Inkludera @navtitle-attribut som standard
 description: Lär dig hur du inkluderar @navtitle-attribut som standard
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
-
 
 # Inkludera @navtitle-attribut som standard {#id2115BC0J0XA}
 
@@ -19,7 +18,7 @@ Inkludera `@navtitle` som standard i referensfilens egenskaper utför du följan
 
 1. Hämta filen ui\_config.json.
 
-   Du kan göra den här ändringen på global nivå eller på en mappnivåprofil. Beroende på var du vill göra den här ändringen måste du hämta respektive ui\_config.json-fil. Mer information om hur du hämtar filen ui\_config.json finns i [Konfigurera och anpassa XML Web Editor](conf-folder-level.md#id2065G300O5Z).
+   Du kan göra ändringen på global nivå eller på en mappnivåprofil. Beroende på var du vill göra den här ändringen måste du hämta respektive ui\_config.json-fil. Mer information om hur du hämtar filen ui\_config.json finns i [Konfigurera och anpassa XML Web Editor](conf-folder-level.md#id2065G300O5Z).
 
 1. Sök efter `ditaAttributes` definition.
 
@@ -45,4 +44,3 @@ Inkludera `@navtitle` som standard i referensfilens egenskaper utför du följan
 
 
 Med den här konfigurationen kommer alla referensfiler som du lägger till på en karta att innehålla `@navtitle` som standard.
-

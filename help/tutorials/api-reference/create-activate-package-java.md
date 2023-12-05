@@ -1,13 +1,12 @@
 ---
 title: Java-baserat API för att skapa och aktivera paket
 description: Läs mer om det Java-baserade API:t för att skapa och aktivera paket
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
-
 
 # Java-baserat API för att skapa och aktivera paket {#id175UB30E05Z}
 
@@ -90,4 +89,3 @@ Exempelfrågan för JSON består av följande regler:
 - Endast PNG-, JPG- och GIF-bilder under /content/dam/nested path inkluderas i paketet.
 - Alla noder under /content/output/sites/archy\_ditamap inkluderas i paketet.
 - Banorna i `fileReference` för noder under /content/output/sites/hierarki\_ditamap ingår i paketet.
-

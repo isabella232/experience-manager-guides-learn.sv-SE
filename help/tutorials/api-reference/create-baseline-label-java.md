@@ -1,13 +1,12 @@
 ---
 title: Java-baserade API:er som fungerar med baslinje och etiketter
 description: Lär dig mer om Java-baserade API:er som fungerar med baslinjer och etiketter
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
-
 
 # Java-baserade API:er som fungerar med baslinje och etiketter {#id175UB30E05Z}
 
@@ -109,4 +108,3 @@ String label) throws GuidesApiException
 **Returnerar**: Kartan med *nyckel:värde* par av `path:deletedlabels` för alla filer i baslinjen.
 
 **Undantag**: Throws ``RepositoryException`, `VersionException`, `Exception``.
-

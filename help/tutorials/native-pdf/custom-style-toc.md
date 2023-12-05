@@ -1,19 +1,18 @@
 ---
 title: Publiceringsfunktion för PDF | Använd egen stil på innehållsförteckningsposter och ämnesinnehåll
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-exl-id: f65c9683-a1fc-432a-854b-83e8f39d7dae
-source-git-commit: e2349fc14143e5e49f8672ef1bfa48984df3b1c7
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
-# Använd egen stil på innehållsförteckningsposter och ämnesinnehåll
+# Tillämpa egna format på innehållsförteckningsposter och ämnesinnehåll
 
 Ibland kanske du vill använda en egen formatering för innehållsförteckningsposterna eller ett visst ämne. Detta kan uppnås genom att associera en `outputclass` attributet med `<topicref>` -element på din DITA-karta. Om du vill använda ett anpassat format för ett helt ämne kan du även göra det genom att utöka attributets formatdefinition i CSS.
 
-Låt oss ta ett exempel på ett nytt ämne som du vill skicka för granskning. Du måste lägga till en `outputclass` attributet till `<topicref>` -elementet i DITA-kartan och definiera sedan en anpassad formatering för det i CSS.
+Låt oss ta ett exempel på ett nytt ämne som du vill skicka för granskning. För att det uppdaterade ämnet ska bli lätt att identifiera måste du lägga till en `outputclass` attributet till `<topicref>` -elementet i DITA-kartan och definiera sedan en anpassad formatering för det i CSS.
 
 I följande exempel *Flyghistorik* har tilldelats ett `outputclass` attribut med värdet för `new-topic`.
 
@@ -58,7 +57,7 @@ Om du vill att innehållsförteckningsposten och ämnesrubriken ska ha olika for
 ...
 ```
 
-Slutligen kan du också använda format på hela innehållet i ämnet. Därför måste du lägga till ett suffix`-content`till klassnamnet. I följande exempel har ett ändringsfält lagts till för hela innehållet i ämnet:
+Slutligen kan du också använda format på hela innehållet i ämnet. Därför måste du lägga till ett suffix`-content`&quot; till klassnamnet. I följande exempel har ett ändringsfält lagts till för hela innehållet i ämnet:
 
 ```css
 ...
@@ -69,6 +68,6 @@ Slutligen kan du också använda format på hela innehållet i ämnet. Därför 
 ...
 ```
 
-Med formatattributen ovan läggs ett ändringsfält till till vänster om *Flyghistorik* enligt nedan:
+Med formatattributen ovan läggs ett ändringsfält till till vänster om *Flyghistorik* ämne, enligt nedan:
 
 <img src="./assets/pdf-output-topic-content.jpg" width="500">

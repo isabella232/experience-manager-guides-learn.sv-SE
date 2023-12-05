@@ -1,13 +1,12 @@
 ---
 title: Ange avancerad kartredigerare som standard
 description: Lär dig hur du anger den avancerade kartredigeraren som standard
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
-
 
 # Ange avancerad kartredigerare som standard {#id181AI0003PN}
 
@@ -27,8 +26,6 @@ Utför följande steg för att göra den avancerade kartredigeraren till standar
 
 1. Sök efter och klicka på **com.adobe.fmdita.xmleditor.config.XmlEditorConfig** paket.
 
-1. Välj **Dölj snabbredigeraren för kartor** alternativ.
+1. Välj **Dölj snabbredigeraren** alternativ.
 
    När det här alternativet är markerat visas inte länken för redigeringsprogrammet för grundläggande kartor någonstans i användargränssnittet. Som standard öppnas kartfiler i Avancerad kartredigerare.
-
-

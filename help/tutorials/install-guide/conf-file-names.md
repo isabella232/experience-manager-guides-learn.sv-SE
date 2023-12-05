@@ -1,13 +1,12 @@
 ---
 title: Konfigurera filnamn
 description: Lär dig hur du konfigurerar filnamn
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera filnamn {#id214BD010GXA}
 
@@ -18,5 +17,3 @@ Det här avsnittet innehåller information om hur du arbetar med filnamn för DI
 - **[Konfigurera Regx för giltiga filnamnstecken](conf-file-names-valid-regx.md)**
 
 - **[Konfigurera giltiga filnamn för AEM](conf-file-names-valid-regx-aem-site-output.md)**
-
-

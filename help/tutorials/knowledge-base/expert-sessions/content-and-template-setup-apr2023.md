@@ -1,9 +1,9 @@
 ---
 title: Innehåll och mallar
 description: Läs mer om hur du ställer in innehåll och mallar i AEM.
-source-git-commit: 87c92776f417aba49096b447baf81916dea5d57f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Den mängd innehåll som du hanterar i ett system, för olika typer av dokument 
 ## Sessionsöversikt
 
 Under denna session gick vi i stort sett igenom följande:
-- olika aspekter av innehållsinställningarna (kategorisering, klassificering, metadata),
+- olika aspekter av innehållsinställningen (kategorisering, klassificering, metadata),
 - konfigurera innehållsmallar (ämnesmallar, mappningsmallar, fragment)
 
 
@@ -52,19 +52,18 @@ Under den här sessionen får du veta mer om följande:
 
 - **Användarhandbok** - [Skapa innehåll](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Freports-intro.html)
 
-- **Community-forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Community Forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Funktionerna som visas under den här sessionen finns i följande versioner av AEM.
 > - Lokalt: 4.2 eller senare
-> - Cloud Services: 2303 eller senare
-
+> - Cloud Service: 2303 eller senare
 
 
 ## Nästa expertsession
 
-- **Ämne** - Publicering i PDF - Exempel på inlärning (del 1)
+- **Ämne** - Publicering i PDF - Exempel på lärande (del 1)
 - **Schemalagd den** - 1 juni 2023
 
 

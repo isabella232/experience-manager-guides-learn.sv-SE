@@ -1,17 +1,16 @@
 ---
 title: Konfigurera Dispatcher
 description: Lär dig konfigurera Dispatcher
-source-git-commit: 9fe396dcfd2e3570ec386c958d7d4efdb4d608e5
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '302'
 ht-degree: 3%
 
 ---
 
-
 # Konfigurera Dispatcher {#id213BCM0M05U}
 
-Om du tänker använda en Dispatcher på AEM Author-instansen tillsammans med AEM Guides måste du utföra följande ytterligare konfigurationer för att slutföra installationen:
+Om du tänker använda en Dispatcher på AEM Author-instans tillsammans med AEM Guides måste du utföra följande ytterligare konfigurationer för att slutföra konfigurationen:
 
 >[!NOTE]
 >
@@ -46,7 +45,7 @@ Så här uppdaterar du filen mime.types:
 
 1. Kontrollera sökvägen till filen mime.types.
 
-1. Öppna filen mime.types och sök efter text/html. Standardmappningen för &quot; text/html&quot; är:
+1. Öppna filen mime.types och sök efter text/html. Standardmappningen för text/html är:
 
    `text/html html htm`
 
@@ -69,7 +68,7 @@ När du använder en Dispatcher med AEM Guides och din Author-instans har en dis
 /xxxx {/type "allow" /method "POST" /url "/home/users/*/preferences"}
 ```
 
-- Kontrollera att URL-mönstret /libs/cq/security/userinfo.json inte cachas av författardispatchern, så lägg till en regel \(som nedan\) i author\_dispatcher.any
+- Kontrollera att URL-mönstret /libs/cq/security/userinfo.json inte cachas av författardispatchern, så lägg till en regel \(som nedan\) i författaren\_dispatcher.any
 
 ```json
 /xxxx {
@@ -79,4 +78,3 @@ När du använder en Dispatcher med AEM Guides och din Author-instans har en dis
 ```
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

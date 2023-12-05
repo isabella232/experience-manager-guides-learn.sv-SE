@@ -1,15 +1,12 @@
 ---
 title: Konvertera icke-UID-innehåll med versioner till UUID-innehåll
 description: Lär dig hur du migrerar icke-UID-innehåll med versioner.
-source-git-commit: 33cdc1b14db0d123c01bbc719c2833ce0df4c9d9
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
-
-
-
 
 # Migrera icke-UID-innehåll med versioner
 

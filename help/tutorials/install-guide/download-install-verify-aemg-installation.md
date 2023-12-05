@@ -1,19 +1,18 @@
 ---
 title: Verifiera installation av AEM
 description: Lär dig hur du verifierar installationen av AEM Guides
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
 
-
 # Verifiera installation av AEM {#id213BD030FBE}
 
 När du har installerat AEM Guides måste du kontrollera om installationen lyckades eller inte. Verifiera installationsprocessen genom att utföra följande steg:
 
-1. Logga in i AEM och gå till sidan AEM Web Console Bundles. Standardwebbadressen för att få åtkomst till paketsidan är:
+1. Logga in i AEM och gå till sidan AEM Web Console Bundles. Standardwebbadressen för åtkomst till paketsidan är:
 
    ```http
    http://<server name>:<port>/system/console/bundles
@@ -33,4 +32,3 @@ När du har installerat AEM Guides måste du kontrollera om installationen lycka
 > Det finns ett antal rekommendationer för prestandaoptimering som du kan tänka dig för att förbättra systemets prestanda. Se [Recommendations för prestandaoptimering](download-install-recommend-perf-optimiz.md#) för mer information.
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

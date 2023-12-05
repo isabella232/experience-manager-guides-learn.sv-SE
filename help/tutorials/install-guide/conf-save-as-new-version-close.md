@@ -1,17 +1,16 @@
 ---
 title: Konfigurera uppmaningen att spara som en ny version vid stängning
 description: Lär dig hur du konfigurerar uppmaningen att spara som en ny version vid stängning
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
 
 ---
 
-
 # Konfigurera uppmaningen att spara som en ny version vid stängning {#id222HBI00XXA}
 
-När användaren försöker stänga en fil som är öppnad i Web Editor med **Stäng** på filens flik eller **Stäng** på Alternativ-menyn visas en dialogruta om filen innehåller data som inte har sparats eller en version som inte har sparats. Användaren uppmanas att spara filen som en ny version om versionen inte sparas.
+När användaren försöker stänga en fil som är öppnad i Web Editor med **Stäng** på fliken eller **Stäng** på Alternativ-menyn visas en dialogruta om filen innehåller osparade data eller en osparad version. Användaren uppmanas att spara filen som en ny version om versionen inte sparas.
 
 The **Spara som ny version** kryssrutan är inte aktiverad som standard och du måste aktivera den från configMgr. Följ de här stegen för att aktivera alternativet som standard i Web Editor:
 
@@ -35,4 +34,3 @@ När det här alternativet är markerat visas **Spara som ny version** är marke
 Mer information finns i *Stäng filer och spara scenarier* i den as a Cloud Service guiden Använda Adobe Experience Manager Guides.
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

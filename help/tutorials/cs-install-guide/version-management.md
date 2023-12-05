@@ -1,13 +1,12 @@
 ---
 title: Versionshantering
 description: Lär dig hantera versioner
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1498'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
-
 
 # Versionshantering {#id181GB000XY4}
 
@@ -39,7 +38,7 @@ Aktivera **Skapa ny version för överförd fil** utför du följande steg:
 
 ## Konfigurera inställningar som tillåter redigering av utcheckade filer
 
-Med AEM Guides Web Editor kan du skapa och uppdatera DITA-avsnitt. Du kan konfigurera Web Editor så att endast de dokument som har checkats ut från databasen kan redigeras. Detta säkerställer att ingen annan skribent av misstag skriver över ett ämne som har öppnats för redigering av en annan skribent. När ett ämne öppnas för redigering kan författaren checka in filen när filen stängs.
+Med AEM Guides Web Editor kan du skapa och uppdatera DITA-avsnitt. Du kan konfigurera Web Editor så att endast de dokument som har checkats ut från databasen kan redigeras. Detta säkerställer att ingen annan skrivare av misstag skriver över ett ämne som har öppnats för redigering av en annan författare. När ett ämne öppnas för redigering kan författaren checka in filen när filen stängs.
 
 En annan viktig regel är att se till att filer som har checkats ut checkas in i systemet igen. Detta förhindrar att användare av misstag stänger filerna utan att checka in dem igen.
 
@@ -135,7 +134,7 @@ Den version av en DITA-fil som uppfyller något av de angivna villkoren bevaras 
 
 Utför följande steg för att rensa de äldre versionerna:
 
-1. Ange följande information om de filer du vill rensa:
+1. Ange följande information om de filer som du vill rensa:
 
    ![](assets/preview-purge-report.png)
 
@@ -157,16 +156,15 @@ Utför följande steg för att rensa de äldre versionerna:
    Rapporten för versionsrensning genereras.
 
 1. Ladda ned versionsrensningsrapport och kontrollera vilka filer och versioner som ska rensas.
-1. Du kan välja att **Avbryt tömning** eller **Starta tömning**.
+1. Du kan **Avbryt tömning** eller **Starta tömning**.
 
    ![](assets/download-purge-report.png)
 
    Tömningsstatusen visas.
 
-   Klicka **Hämta versionsrensningsrapport** för att visa de rensade versionerna. Den här rapporten innehåller rensningsstatus för alla versioner tillsammans med orsaker till varför en viss version kvarstod eller varför den rensades.
+   Klicka **Ladda ned versionsrensningsrapport** om du vill visa de rensade versionerna. Den här rapporten innehåller rensningsstatus för alla versioner tillsammans med orsaker till varför en viss version kvarstod eller varför den rensades.
 
 
 >[!NOTE]
 >
 > Rapporten hämtas på följande plats: `/var/dxml/versionpurge`
-

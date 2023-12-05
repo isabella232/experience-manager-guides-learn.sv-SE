@@ -1,10 +1,9 @@
 ---
 title: Migrering av icke-UID till UUID-innehåll
 description: Lär dig hur du migrerar icke-UID till UUID-innehåll
-exl-id: 093b380e-9a8b-4e60-aeaa-3458e8c257f2
-source-git-commit: 4c7ab9800b8a42f947aaae560457a3f6022c2976
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '55'
+source-wordcount: '57'
 ht-degree: 0%
 
 ---
@@ -22,6 +21,3 @@ Du kan migrera icke-UID-innehåll till UUID.
 
 * [**Migrera innehåll med versioner**](./migrate-non-uuid-uuid-with-versions.md)
 * [**Migrera innehåll utan versioner**](./migrate-non-uuid-uuid-without-versions.md)
-
-
-

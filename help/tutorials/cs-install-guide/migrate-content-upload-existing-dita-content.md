@@ -1,13 +1,12 @@
 ---
 title: Överför befintligt DITA-innehåll
-description: Lär dig hur du överför befintligt DITA-innehåll
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+description: Lär dig överföra befintligt DITA-innehåll
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
-
 
 # Överför befintligt DITA-innehåll {#id176FF000JUI}
 
@@ -41,7 +40,7 @@ Ange följande parametrar för att skapa en mapp:
 
 - `jcr:primaryType=sling:Folder`: Ange den här parametern *as* för att skapa en mapptypresurs.
 
-- `<server folder path>`: Fullständig mappsökväg med namnet på den nya mappen som du vill skapa i AEM. Om du till exempel anger sökvägen som `http://192.168.1.1:4502/content/dam/projects/AEM-Guides`och sedan mappen `AEM-Guides` skapas i `projects` i DAM.
+- `<server folder path>`: Fullständig mappsökväg inklusive namnet på den nya mappen som du vill skapa i AEM. Om du till exempel anger sökvägen som `http://192.168.1.1:4502/content/dam/projects/AEM-Guides`och sedan mappen `AEM-Guides` skapas i `projects` i DAM.
 
 
 **Överföra en fil**
@@ -56,7 +55,7 @@ Ange följande parametrar för att överföra en fil:
 
 - `<username>:<passowrd>`: Ange användarnamn och lösenord för att komma åt AEM. Den här användaren måste ha skrivbehörighet för `server folder path`.
 
-- ``local file path``: Fullständig filsökväg på det lokala system som du vill överföra.
+- ``local file path``: Fullständig sökväg till filen på det lokala system som du vill överföra.
 
 - `<server folder path>`: Fullständig mappsökväg på den AEM servern där du vill överföra filen.
 
@@ -73,10 +72,9 @@ Ange följande parametrar för att lägga till metadatainformation:
 
 - `<username>:<passowrd>`: Ange användarnamn och lösenord för att komma åt AEM. Den här användaren måste ha skrivbehörighet för ``metadata node path``.
 
-- ``-F<attribute name>=<value>``: The `<attribute name>` är namnet på metadataattributet, till exempel `audience` och `<value>` kan `internal`. Du kan ange flera attributnamnvärdespar avgränsade med blanksteg.
+- ``-F<attribute name>=<value>``: `<attribute name>` är namnet på metadataattributet, till exempel `audience` och `<value>` kan `internal`. Du kan ange flera attributnamnvärdespar avgränsade med blanksteg.
 
-- `<metadata node path>`: Fullständig mappsökväg med filnamnet och dess metadatanod. Om du till exempel anger sökvägen som `http://192.168.1.1:4502/content/dam/projects/AEM-Guides/intro.xml/jcr:content/metadata`och den angivna metadatainformationen är `intro.xml` -fil.
+- `<metadata node path>`: Fullständig mappsökväg med filnamnet och dess metadatanod. Om du till exempel anger sökvägen som `http://192.168.1.1:4502/content/dam/projects/AEM-Guides/intro.xml/jcr:content/metadata`, anges den angivna metadatainformationen på `intro.xml` -fil.
 
 
 **Överordnat ämne:**[ Migrera befintligt innehåll](migrate-content.md)
-

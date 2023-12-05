@@ -1,10 +1,9 @@
 ---
 title: Publiceringsfunktion för PDF | Arbeta med vanliga innehållsformat
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-exl-id: 42ba7347-d81d-45d9-9627-8d164e4f9539
-source-git-commit: 2fde719ced7d94af382a13e31af1c04591c8a258
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3496'
+source-wordcount: '3525'
 ht-degree: 0%
 
 ---
@@ -96,34 +95,49 @@ Egenskaperna för formatet h1 visas på egenskapspanelen tillsammans med förhan
 
    * **Infoga tecken**: Om du vill lägga till ett specialtecken i formatet klickar du på Infoga tecken (<img src="./assets/insert-chars.png" width="25">). Markera det tecken du vill lägga till i formatformatet och klicka på Infoga. Det finns olika typer av specialtecken som du kan välja i listrutan Välj kategori. Välj till exempel högerpekande dubbelt vinkelcitattecken i kategorin Interpunktion.
 
-      <img src="./assets/insert-special-chars.png" width="400">
+     <img src="./assets/insert-special-chars.png" width="400">
 
 
    * **Starta numrering från**: Om du vill att numreringen ska börja från ett visst nummer anger du det värdet. Behåll till exempel standardvärdet 1.
 
    * **Indrag**: Om du vill dra in rubriken måste du ange värdet för Indrag. Ange det till exempel till 0 px.
 
-      >[!NOTE]
-      >
-      >Du kan ange värdet i pixlar, pt (punkter), rem, em, % (procent) eller in (tum).
+     >[!NOTE]
+     >
+     >Du kan ange värdet i pixlar, pt (punkter), rem, em, % (procent) eller in (tum).
 
    * **Prefixbredd**: Det här är området som upptas av det automatiska nummerformatet. Den ställs automatiskt in på en storlek som enkelt kan anpassas till det valda formatformatet. Om du vill öka storleken kan du ersätta standardvärdet.
 
-      När du anger det här värdet manuellt kan du prova att ändra de andra egenskaperna som påverkar bredden. Ändra till exempel teckenstorlek, format med prefix (kapitel) eller suffix (:) och ange det maximala värdet i *Starta numrering från* och de olika teckensnittsegenskaperna för den optimala storleken.
+     När du anger det här värdet manuellt kan du prova att ändra de andra egenskaperna som påverkar bredden. Ändra till exempel teckenstorlek, format med prefix (kapitel) eller suffix (:) och ange det maximala värdet i *Starta numrering från* och de olika teckensnittsegenskaperna för den optimala storleken.
 
-      Behåll till exempel standardvärdet.
+     Behåll till exempel standardvärdet.
 
    * **Mellanrum**: Ange det vågräta och lodräta avståndet. Behåll till exempel standardvärdena.
 
-      Med ovanstående anpassningar anpassas formatet så som visas nedan:
+     Med ovanstående anpassningar anpassas formatet så som visas nedan:
 
-      <img src="./assets/h1-style-custmization.png" width="500">
+     <img src="./assets/h1-style-custmization.png" width="500">
 
    * **Använd formatering på**: Egenskaperna under kategorin Autonom hjälper dig att definiera numreringsformatet. Om du vill anpassa numreringsformatet ytterligare eller innehållet i rubrikformatet kan du välja Numrering eller Stycke i det här fältet. Om du väljer Numrering tillämpas alla ändringar av kategorierna Teckensnitt, Kant, Layout och andra endast på numreringsformatet i rubriken. Om du väljer Stycke används dock ändringarna på rubrikinnehållet och inte på numreringsformatet.
 
    Använd följande inställningar för att generera utdata som visas på följande skärmbild:
 
-   |**Rubrikformat**|**Egenskap**|**Värde**|**Ytterligare kommentarer**| | :- | :- | :- | :- | |h1|Style|Decimal|De här egenskaperna finns under kategorin Autonum | ||Format|`Capter <x>:`|| ||Prefixbredd|160 px|| ||Teckensnitt > Textjustering|Vänster|Kontrollera att Använd formatering för är inställt på Numrering| |h2|Format|Decimal|De här egenskaperna finns under kategorin Autonum | ||Format|`Section <x>:`|| ||Prefixbredd|125 px|| ||Teckensnitt > Textjustering|Vänster|Kontrollera att Använd formatering för är inställt på Numrering| |h3|Format|Decimal|De här egenskaperna finns under kategorin Autonum | ||Infoga nivå|2|| ||Format|`Section <2>.<x>:`|| ||Prefixbredd|125 px|| ||Teckensnitt > Textjustering|Vänster|Kontrollera att Använd formatering för är inställt på Numrering| ||
+   | **Rubrikformat** | **Egenskap** | **Värde** | **Ytterligare kommentarer** |
+   | :- | :- | :- | :- |
+   | h1 | Stil | Decimal | Dessa egenskaper tillhör kategorin Autonom |
+   |  | Format | `Capter <x>:` |  |
+   |  | Prefixbredd | 160 px |  |
+   |  | Teckensnitt > Textjustering | Vänster | Kontrollera att Använd formatering på är inställt på Numrering |
+   | h2 | Stil | Decimal | Dessa egenskaper tillhör kategorin Autonom |
+   |  | Format | `Section <x>:` |  |
+   |  | Prefixbredd | 125 px |  |
+   |  | Teckensnitt > Textjustering | Vänster | Kontrollera att Använd formatering på är inställt på Numrering |
+   | h3 | Stil | Decimal | Dessa egenskaper tillhör kategorin Autonom |
+   |  | Infoga nivå | 2 |  |
+   |  | Format | `Section <2>.<x>:` |  |
+   |  | Prefixbredd | 125 px |  |
+   |  | Teckensnitt > Textjustering | Vänster | Kontrollera att Använd formatering på är inställt på Numrering |
+   |  |
 
    <img src="./assets/auto-number-output.png" width="500">
 
@@ -140,6 +154,7 @@ I följande exempel skapar vi en anfangsstil:
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
+   >
    Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Styckeformat**.
@@ -156,7 +171,7 @@ I följande exempel skapar vi en anfangsstil:
 
    * **Teckensnitt**: Ange önskat teckensnitt för den första bokstaven i stycket. Du kan till exempel ställa in teckensnittsfamiljen till kursiv, teckenbredden till 500, teckenstorleken till 30 pt och välja en teckensnittsfärg.
 
-   * **Layout**: Ange lodrät justering för texten runt anfangsformatet. Vi ställer till exempel in Lodrät justering till Underkant.
+   * **Layout**: Ange lodrät justering för texten runt anfangsformatet. Vi ställer t.ex. in Lodrät justering till Underkant.
 
 Som `p` -taggen är kopplad till `<p>` i DITA behöver du inte lägga till det här formatet explicit med attributet outputClass. Var du än befinner dig i ditt innehåll `<p>` används anfangsformatet automatiskt. På följande skärmbild har kapitelrubriker, korta beskrivningar och definitionslistelement inte formaterats med anfangsformatet. Endast styckeformatet formateras med anfangsformatet:
 
@@ -170,11 +185,12 @@ Med teckenformat kan du skapa format för formatering av tecken och ord i inneh�
 
 Formatering av infogade tecken eller ord i ett stycke är ett mycket vanligt format. Det krävs två åtgärder för att skapa ett infogat format: först skapar du ett nytt format i formatmallen och sedan tillämpar du formatet i innehållet med `outputclass` -attribut.
 
-I följande exempel skapar vi ett infogat teckenformat:
+I följande exempel skapar vi ett textbundet teckenformat:
 
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
+   >
    Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Teckenformat**.
@@ -193,8 +209,9 @@ I följande exempel skapar vi ett infogat teckenformat:
 
    * **Teckensnitt**: Alla teckensnittsrelaterade egenskaper kan anpassas i det här avsnittet. Som standard medföljer vissa teckensnitt. Du kan välja önskat teckensnitt för teckenformatet. Ange till exempel teckensnittsfamiljen som *Serif,* och markera *Fet* och *Kursiv* i egenskapen Teckensnittsformat. Du kan också anpassa andra teckensnittsegenskaper som Teckenbredd (som fet, ljusare), Textdekoration (som understrykning, överstrykning), Teckenstorlek, Teckenfärg, Textjustering med mera.
 
-      >[!NOTE]
-      Du kan också lägga till teckensnitt i mallen, som lagras i avsnittet Resurser i mallen. Mer information om hur du lägger till teckensnitt och arbetar med resurser finns i [Arbeta med resurser](components-pdf-template.md#work-with-resources).
+     >[!NOTE]
+     >
+     Du kan också lägga till teckensnitt i mallen, som lagras i avsnittet Resurser i mallen. Mer information om hur du lägger till teckensnitt och arbetar med resurser finns i [Arbeta med resurser](components-pdf-template.md#work-with-resources).
 
    * **Layout**: Du kan ange layoutrelaterade egenskaper som höjd och bredd, marginal, utfyllnad, justering med mera.
 
@@ -217,6 +234,7 @@ I följande exempel anpassar vi det numrerade eller ordnade listformatet:
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
+   >
    Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** listan, expandera **Listformat**.
@@ -235,37 +253,37 @@ I följande exempel anpassar vi det numrerade eller ordnade listformatet:
 
    Följande egenskaper är tillgängliga som standard:
 
-   * **Nivå**: Som standard finns det sex nivåer med numrerade listor. Den nivå du väljer i den här listrutan styr formatändringen på den valda nivån och alla efterföljande nivåer. Om du t.ex. väljer nivå 4, ställs alla formatändringar du gör in på nivåerna 4, 5 och 6.
+   * **Nivå**: Som standard finns det 6 nivåer med numrerade listor. Den nivå du väljer i den här listrutan styr formatändringen på den valda nivån och alla efterföljande nivåer. Om du t.ex. väljer nivå 4, ställs alla formatändringar du gör in på nivåerna 4, 5 och 6.
 
    * **Listformatstyp**: Det finns ett antal listnumreringsformat som du kan välja mellan. Listan innehåller språkspecifika och generiska numreringsformat som används för att skapa en numrerad lista. Vissa listformat är arabiska, kambodjanska, devanagari, etiopisk, hangul, hebreiska, japanska, koreanska, enkel kinesiska, urdu med flera.
 
    Dessutom kan du arbeta med följande avancerade formateringsegenskaper:
 
-   * **Nummerformat**: Standardformatet är `<x>`, där `x` värdet ersätts med det numreringsformat som du valde i egenskapen Listformattyp. Om du till exempel har valt `decimal` (1) och sedan värdet för `x` stega automatiskt efter varje förekomst av listelementet och blir 2, 3 osv. Du kan också lägga till egen text i fältet för att formatera listformatet. Om du till exempel vill att alla listformat på första nivån ska ha suffixet &quot;`)`&quot;, måste du ange det här fältet som listformat på första nivån som &quot;`<x>)`&quot;.
+   * **Nummerformat**: Standardformatet är `<x>`, där `x` värdet ersätts med det numreringsformat som du valde i egenskapen Listformattyp. Om du till exempel har valt `decimal` (1) och sedan värdet för `x` stega automatiskt efter varje förekomst av listelementet och blir som 2, 3 osv. Du kan också lägga till egen text i fältet för att formatera listformatet. Om du till exempel vill att alla listformat på första nivån ska ha suffixet &quot;`)`&quot;, måste du ange det här fältet som listformat på första nivån som &quot;`<x>)`&quot;.
 
    * **Infoga tecken**: Om du vill lägga till ett specialtecken i nummerformatet klickar du på Infoga tecken (<img src="./assets/insert-chars.png" width="25">). Markera det tecken du vill lägga till i formatformatet och klicka på Infoga. Det finns olika typer av specialtecken som du kan välja i listrutan Välj kategori.
 
    * **Infoga nivå**: Du kan inkludera talet från någon av de föregående nivåerna i talformatet. Om du till exempel vill inkludera nummerformatet från 5 på 6:e nivån i talformatet väljer du 5 i listrutan Infoga nivå. Observera att listrutan Infoga nivå endast visar siffrorna för föregående nivåer och inte för följande nivå. När du till exempel är på nivå 3 visas bara nivåerna 1 och 2 i listan Infoga nivå.
 
-      <img src="./assets/list-insert-level.png" width="400">
+     <img src="./assets/list-insert-level.png" width="400">
 
-      Du kan också ändra nummerformatet för att visa listvärdena efter behov. Om du t.ex. använder ett kapslat nummerformat för nivå 3 kan du formatera det som &quot;`<2>.<x>))`&quot;. Här visas listnummer 2, följt av en punkt, följt av listnummer 3 och sedan två hakparenteser, som `2.3))`.
+     Du kan också ändra nummerformatet för att visa listvärdena efter behov. Om du t.ex. använder ett kapslat nummerformat för nivå 3 kan du formatera det som &quot;`<2>.<x>))`&quot;. Här visas listnummer 2, följt av en punkt, följt av listnummer 3 och sedan två hakparenteser, som `2.3))`.
 
    * **Indrag**: Om du vill dra in listan måste du ange värdet för Indrag. Alla ändringar i indraget kan granskas på panelen Förhandsgranska och justeras.
 
-      >[!NOTE]
-      Du kan ange värdet i pixlar, pt (punkter), rem, em, % (procent) eller in (tum).
+     >[!NOTE]
+     >
+     Du kan ange värdet i pixlar, pt (punkter), rem, em, % (procent) eller in (tum).
 
    * **Prefixbredd**: Det här är det område som upptas av nummerformatet. Den ställs automatiskt in på en storlek som lätt kan anpassas till det valda formatet. Om du vill öka storleken kan du ersätta standardvärdet.
 
-      När du anger det här värdet manuellt kan du prova att ändra de andra egenskaperna som påverkar bredden. Du kan till exempel ändra teckensnittsstorlek, format med prefix eller suffix och de olika teckensnittsegenskaperna så att den optimala storleken visas.
+     När du anger det här värdet manuellt kan du prova att ändra de andra egenskaperna som påverkar bredden. Du kan till exempel ändra teckensnittsstorlek, format med prefix eller suffix och de olika teckensnittsegenskaperna så att den optimala storleken visas.
 
    * **Mellanrum**: Ange det vågräta avståndet mellan listnummerformatet och innehållet. Det lodräta avståndet styr mellanrummet mellan de två listobjekten.
 
-      I följande skärmbild visas den anpassade sorterade listan för varje nivå:
+     I följande skärmbild visas den anpassade sorterade listan för varje nivå:
 
-      <img src="./assets/list-number-format-final.png" width="500">
-
+     <img src="./assets/list-number-format-final.png" width="500">
 
 ## Arbeta med tabellformat {#table-styles}
 
@@ -276,6 +294,7 @@ I följande exempel ser vi hur du skapar ett tabellformat och de olika tabellfor
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
+   >
    Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** högerklicka på **Tabellformat** och välja **Nytt format**.
@@ -290,25 +309,27 @@ I följande exempel ser vi hur du skapar ett tabellformat och de olika tabellfor
 
    * **Använd formatering på**: Du kan välja att formatera hela tabellen, udda/jämna rader eller kolumner, eller första/sista raden eller kolumnen.
 
-      >[!NOTE]
-      Följande inställningar är tillgängliga under **Allmänt** sektion när **Använd formatering på** är inställd på **Hela tabellen**.
+     >[!NOTE]
+     >
+     Följande inställningar är tillgängliga under **Allmänt** sektion när **Använd formatering på** är inställd på **Hela tabellen**.
 
    * **Figursättning**: Välj hur text ska radbrytas runt tabellen. Detta är användbart när tabellen finns i ett annat blocknivåelement och tabellen måste återges tillsammans med annat innehåll i blockelementet. Radbrytningsalternativen är *vänster* eller *höger* justerad, eller *ingen*.
 
    * **Dölj kantlinje**: Välj utseende på tabellkanten. Om du markerar komprimering ritas bara en kantlinje mellan tabellcellerna. För olika format visas emellertid kantlinjen runt varje cell med ytterligare utfyllnad.
 
-      <img src="./assets/table-style-collapse-separate.png" width="500">
+     <img src="./assets/table-style-collapse-separate.png" width="500">
 
    * **Kantavstånd**: Den här inställningen är bara tillgänglig när kryssrutan Komprimera är inställd på Separat. Med den här inställningen kan du ange det lodräta och vågräta avståndet mellan cellkanterna.
 
-      <img src="./assets/table-border-spacing.png" width="500">
+     <img src="./assets/table-border-spacing.png" width="500">
 
-      >[!NOTE]
-      Följande inställningar är tillgängliga under **Cell** sektion när **Använd formatering på** är inställd på **Hela tabellen**.
+     >[!NOTE]
+     >
+     Följande inställningar är tillgängliga under **Cell** sektion när **Använd formatering på** är inställd på **Hela tabellen**.
 
    * **Utfyllnad**: Ange utfyllnaden mellan tabellceller. Du kan ange olika utfyllnadsvärden för de övre, nedre, vänstra och högra sidorna.
 
-   * **Lodrät justering**: Ange den lodräta justeringen för cellinnehåll. Tillgängliga alternativ är: Överkant, Mitten och Nederkant.
+   * **Lodrät justering**: Ange lodrät justering för cellinnehåll. Tillgängliga alternativ är: Överkant, Mitten och Nederkant.
 
    * **Kantsida, stil, färg, bredd, radie:** Ange kantrelaterade egenskaper. Du kan välja att bara ha kantlinjer på vissa sidor, som vänster eller höger. I kantlinjeformatet visas tillgängliga kantlinjeformat som Heldragen, Streckad, Dubbel rad med mera. Ange kantfärgen med färgpaletten. Du kan ange kantbredden i px, pt, rem, em, % och i enheter. Radien definierar kurvan för att skapa runda hörn.
 
@@ -329,6 +350,7 @@ I följande exempel skapar vi ett nytt fönsternamn (`wintitle`):
 1. Öppna den formatmall du vill använda för redigering.
 
    >[!NOTE]
+   >
    Se [Anpassa ett fördefinierat eller nytt format](components-pdf-template.md#customize-style) för att öppna en formatmall för anpassning eller redigering.
 
 1. I **Stilar** lista, expandera **Andra format**.

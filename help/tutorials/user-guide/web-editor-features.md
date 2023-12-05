@@ -1,10 +1,9 @@
 ---
 title: Bekanta dig med Web Editors funktioner
 description: Upptäck funktionerna i webbredigeraren i AEM. Lär dig webbredigerarens gränssnitt, inklusive huvudverktygsfältet, det sekundära verktygsfältet, den vänstra panelen, området för innehållsredigering och den högra panelen.
-exl-id: 340cf72e-e44d-4df2-8312-50d00ac651b7
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '17231'
+source-wordcount: '17222'
 ht-degree: 0%
 
 ---
@@ -911,7 +910,7 @@ De olika alternativen på Alternativ-menyn förklaras nedan:
   > Om administratören har gett dig behörighet för en mapp är det bara **Byt namn** eller **Flytta till** visas.
 
   <details>
-    <summary> Cloud Services </summary>
+    <summary> Cloud Service </summary>
 
   Om du byter namn på eller flyttar en fil bryts inte befintliga referenser från eller till filen, eftersom varje fil har ett unikt UUID.
   </details>

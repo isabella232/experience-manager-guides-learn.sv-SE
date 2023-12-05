@@ -1,10 +1,9 @@
 ---
 title: Skapa och anpassa inbyggda PDF-mallar
 description: Lär dig hur du skapar och anpassar mallar för inbyggda PDF.
-exl-id: 7660da8e-8a1e-4493-b99b-9b5de9a7483f
-source-git-commit: 9e806ae9a06eb77441e47413981f27f6e69bd2f9
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -94,7 +93,7 @@ Lär dig hur [publicera PDF](https://experienceleague.adobe.com/docs/experience-
 Beroende på din konfiguration kan administratören konfigurera mallarna:
 
 <details>
-<summary> Cloud Services </summary>
+<summary> Cloud Service </summary>
 
 Mer information om hur du konfigurerar globala profiler och profiler på mappnivå finns i [Konfigurera mallar](../cs-install-guide/conf-folder-level.md#id1889D0IL0Y4) i installations- och konfigurationshandboken för Cloud Service.
 

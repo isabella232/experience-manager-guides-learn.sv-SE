@@ -1,13 +1,12 @@
 ---
 title: Konfigurera textfilter
 description: Lär dig hur du konfigurerar textfilter
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera textfilter {#id21BPD0FK0XA}
 
@@ -27,7 +26,7 @@ Så här konfigurerar du textfiltren:
 1. Klicka på **Global profil** platta.
 1. Klicka på **Konfiguration av XML-redigerare**.
 1. Klicka på **Redigera** överst.
-1. Klicka på **Hämta** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
+1. Klicka på **Ladda ned** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
    1. Konfigurera filtren i filen. Du kan också lägga till egna filter enligt exemplet nedan:
 
       Följande kodutdrag visar hur du lägger till filtreringsalternativ, DITA-filer, icke-DITA, DITA-element och utcheckade av filer. Den innehåller även ett anpassat filter -Tags.
@@ -78,4 +77,3 @@ Så här konfigurerar du textfiltren:
 De konfigurerade filtren är tillgängliga på filterpanelen.
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

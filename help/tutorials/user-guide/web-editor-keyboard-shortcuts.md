@@ -1,10 +1,9 @@
 ---
 title: Kortkommandon i Web Editor
 description: Upptäck tidsbesparande kortkommandon i webbredigeraren AEM guider.
-exl-id: d843c5a9-04f8-44f2-9bf5-60cb4ed7fa38
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---

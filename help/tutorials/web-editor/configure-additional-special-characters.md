@@ -3,10 +3,9 @@ title: Konfigurera ytterligare specialtecken i verktygsfältet i Web Editor
 description: Lär dig hur du konfigurerar ytterligare specialtecken i webbredigeraren AEM stödlinjer.
 feature: Web Editor
 role: User
-exl-id: 0fbc05a5-a6b0-4f6b-bbc4-8fca03581d90
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---

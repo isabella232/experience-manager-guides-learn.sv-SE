@@ -1,10 +1,9 @@
 ---
 title: Stöd för Schematron i webbredigeraren
 description: Arbeta med Schematron i webbredigeraren
-exl-id: 3e61432f-d81e-446e-b0ad-560f5b9fa91a
-source-git-commit: f3c8ec973d3a6369d6135a33f61584c8bf7d083d
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -18,7 +17,7 @@ Förutom stöd för DITA-regler stöder webbredigeraren även validering av inne
 
 &quot;*Schematron*&quot; är ett regelbaserat valideringsspråk som används för att definiera tester för en XML-fil. Du kan importera schemafilerna och redigera dem i Web Editor. Med hjälp av en &quot;Schematron&quot;-fil kan du definiera vissa regler och sedan validera dem för ett DITA-ämne eller en karta. Schematronreglerna kan säkerställa konsekvens i XML-strukturen genom att införa begränsningar som definieras som regler. Dessa begränsningar drivs av små och medelstora företag som äger innehållets kvalitet och enhetlighet.
 
-    OBS! Webbredigeraren stöder ISO-schema.
+    Obs! Webbredigeraren har stöd för ISO-schemat.
 
 
 ## Att veta hur &quot;Schematron&quot; fungerar i webbredigeraren
@@ -45,7 +44,7 @@ Ja, som författare/användare när du skapar innehåll kan du använda panelen 
 ![Kör validering](../../../assets/authoring/schematron-rightpanel-validation-runsch.png)
 
 
-### Regler som stöds
+### Reglerna stöds
 
 Den aktuella versionen av AEM stöder validering med enbart kontrollbaserade regler. (se [tillgång kontra rapport](https://schematron.com/document/205.html)) Alla regler som baseras på &quot;Rapporter&quot; stöds inte ännu.
 
@@ -56,45 +55,45 @@ Den aktuella versionen av AEM stöder validering med enbart kontrollbaserade reg
 
 - Kontrollera om en länk är extern och om den har omfånget &quot;external&quot;
 
-   ```
-   <sch:pattern>
-       <sch:rule context="xref[contains(@href, 'http') or contains(@href, 'https')]">
-           <sch:assert test="@scope = 'external' and @format = 'html'">
-               All external xref links must be with scope='external' and format='html'
-           </sch:assert>
-       </sch:rule>
-   </sch:pattern>
-   ```
+  ```
+  <sch:pattern>
+      <sch:rule context="xref[contains(@href, 'http') or contains(@href, 'https')]">
+          <sch:assert test="@scope = 'external' and @format = 'html'">
+              All external xref links must be with scope='external' and format='html'
+          </sch:assert>
+      </sch:rule>
+  </sch:pattern>
+  ```
 
 - Kontrollera om det finns minst en &quot;topicref&quot; i en karta eller minst en &quot;li&quot; under en &quot;ul&quot;
 
-   ```
-   <sch:pattern>
-       <sch:rule context="map">
-           <sch:assert test="count(topicref) > 0">
-               There should be atleast one topicref in map
-           </sch:assert>
-       </sch:rule>
-   
-       <sch:rule context="ul">
-           <sch:assert test="count(li) > 1" >
-               A list must have more than one item.
-           </sch:assert>
-       </sch:rule>
-   </sch:pattern>
-   ```
+  ```
+  <sch:pattern>
+      <sch:rule context="map">
+          <sch:assert test="count(topicref) > 0">
+              There should be atleast one topicref in map
+          </sch:assert>
+      </sch:rule>
+  
+      <sch:rule context="ul">
+          <sch:assert test="count(li) > 1" >
+              A list must have more than one item.
+          </sch:assert>
+      </sch:rule>
+  </sch:pattern>
+  ```
 
 - Elementet &quot;indexterm&quot; ska alltid finnas i en &quot;prolog&quot;
 
-   ```
-   <sch:pattern>
-       <sch:rule context="*[contains(@class, ' topic/indexterm ')]">
-           <sch:assert test="ancestor::node()/local-name() = 'prolog'">
-               The indexterm element should be in a prolog.
-           </sch:assert>
-       </sch:rule>
-   </sch:pattern>
-   ```
+  ```
+  <sch:pattern>
+      <sch:rule context="*[contains(@class, ' topic/indexterm ')]">
+          <sch:assert test="ancestor::node()/local-name() = 'prolog'">
+              The indexterm element should be in a prolog.
+          </sch:assert>
+      </sch:rule>
+  </sch:pattern>
+  ```
 
 #### Resurser
 

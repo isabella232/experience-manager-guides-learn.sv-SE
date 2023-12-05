@@ -1,13 +1,12 @@
 ---
 title: REST API för att arbeta med villkorsattribut
 description: Läs mer om REST API för att arbeta med villkorsattribut
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
-
 
 # REST API för att arbeta med villkorsattribut {#id175UB30E05Z}
 
@@ -40,4 +39,3 @@ http://*&lt;aem-guides-server>*: *&lt;port-number>*/bin/fmdita/folderprofiles
 
 **Svarsvärden**:\
 Returnerar ett HTTP 200 \(Slutförd\)-svar.
-

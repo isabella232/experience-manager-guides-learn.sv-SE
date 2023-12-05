@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides, oktober 2023-versionen
 description: Läs om felkorrigeringarna och hur du uppgraderar till oktober 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-exl-id: fb1b74d7-25f2-4a20-9248-44dfdabf553d
-source-git-commit: e8503e1441b7bc365d37c76ab9cf7b5f50374f10
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 1%
+source-wordcount: '1045'
+ht-degree: 0%
 
 ---
 
@@ -90,7 +89,7 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 1. Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika banor för mappningarna för att indexera dem. Som standard indexeras alla mappningar \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
-1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
+1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel: `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
 
@@ -113,7 +112,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.10.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2.3 | 2.3 |
+| 2023.10.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -130,33 +129,33 @@ De buggar som har åtgärdats i olika områden listas nedan:
 ### Redigering
 
 - Eftermiddagstid anges inte i **Datum** för att skapa baslinjer. (12712)
-- Det går inte att klistra in JSON-koden i `<codeblock>` i Web Editor. (12326)
-- Versionsändringar som inte har sparats och indikatorerna för dem visas inte för stora filer. (11784)
+- Det går inte att klistra in JSON-koden i `<codeblock>` i Web Editor. 12326
+- Versionsändringar som inte har sparats och indikatorerna för dem visas inte för stora filer. 11784
 - När du redigerar på koreanska ändras det första tecknet till standardvärdet. (10049)
 
 
 ### Publicering
 
-- PDF | Ordningen på ämnena är inte fast när utdata från PDF skapas. (13157)
+- PDF | Ordningen på ämnena är inte fast när utdata från PDF skapas. 13157
 - Inbyggd PDF| Det finns ingen standardformattagg för `<p>`-element. (12559)
 - PDF | Infogade format som används i innehållsområdet används inte för ämnen som skrivs framför och under. (13510)
-- The `DeliveryTarget` attribut sprids inte när AEM genereras.  (13132)
+- The `DeliveryTarget` attribut sprids inte när AEM genereras.  13132
 - The **Publicera** arbetsflödet fastnar när AEM genereras för innehåll med vissa fel. (12000)
 
 ### Förvaltning
 
-- Versionshistorik visas inte även om `dc:format` egenskapen finns inte för en resurs. (10463)
+- Versionshistorik visas inte även om `dc:format` egenskapen finns inte för en resurs. 10463
 
 
 ### Granska
 
-- Granskningen av ett ämne visar felaktiga kommentarer. (13453)
+- Granskningen av ett ämne visar felaktiga kommentarer. 13453
 
 
 
 ### Översättning
 
-- Baslinjen exporterad från **Översättning** Kontrollpanelen misslyckas och öppnas inte på målspråket. (13466)
+- Baslinjen exporterad från **Översättning** Kontrollpanelen misslyckas och öppnas inte på målspråket. 13466)
 
 - Nya översättningsprojekt skapas i stället för att nya jobb läggs till i de valda befintliga översättningsprojekten.  (10214)
 
@@ -165,4 +164,3 @@ De buggar som har åtgärdats i olika områden listas nedan:
 Adobe har identifierat följande kända fel i oktober 2023-versionen.
 
 - Återpublicering av innehållsfragment misslyckas.
-

@@ -1,13 +1,12 @@
 ---
 title: Öppna DITA-avsnitt eller DITA-kartfiler på samma flik
 description: Lär dig hur du öppnar DITA-avsnitt eller kartfiler på samma flik
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
 
 ---
-
 
 # Öppna DITA-avsnitt eller DITA-kartfiler på samma flik {#id223HI0P202H}
 
@@ -42,4 +41,3 @@ Den här inställningen påverkar följande platser där du kan komma åt ämne-
 
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

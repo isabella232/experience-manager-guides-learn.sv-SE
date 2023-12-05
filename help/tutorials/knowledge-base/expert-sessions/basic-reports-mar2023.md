@@ -1,10 +1,9 @@
 ---
 title: Rapporter i AEM
 description: Ta reda på vilka rapporter som finns tillgängliga i AEM för att hjälpa användarna att förbättra innehållskvaliteten.
-exl-id: f0d761ff-efea-452c-bb8e-865f34a182fc
-source-git-commit: 7871a54f3181fd114e24e0e10cfc15351cefd761
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -53,14 +52,13 @@ Under den här sessionen får du veta mer om följande:
 
 - **Användarhandbok** - [Skapa innehåll](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Freports-intro.html)
 
-- **Community-forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Community Forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Funktionerna som visas under den här sessionen finns i följande versioner av AEM.
 > - Lokalt: 4.2 eller senare
-> - Cloud Services: 2302 eller senare
-
+> - Cloud Service: 2302 eller senare
 
 
 ## Nästa expertsession

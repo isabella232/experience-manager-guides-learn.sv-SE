@@ -1,10 +1,9 @@
 ---
 title: AEM stödlinjer
 description: Senaste AEM och AEM versioner
-exl-id: 780697a9-bdc6-40c2-b258-64639fe30f88
-source-git-commit: 8e18fa8c6c022c4101efb40b5033cd6ee81c3a21
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---

@@ -1,13 +1,12 @@
 ---
 title: Java-baserat API för att arbeta med mappprofiler
 description: Lär dig mer om det Java-baserade API:t för att arbeta med mappprofiler
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
-
 
 # Java-baserat API för att arbeta med mappprofiler {#id175UB30E05Z}
 
@@ -62,4 +61,3 @@ Session session) throws GuidesApiException
 - Om API:t anropas via obehörig användarsession, till exempel den användare som inte är administratör för den angivna mappprofilen.
 
 [1](#fnsrc_1) The `attributeNames`, `values`och `labels` vid samma index i en matrislista måste motsvara samma post.
-

@@ -1,10 +1,9 @@
 ---
 title: Skicka metadata till utdata med DITA-OT
 description: Lär dig hur du skickar metadata till utdata med DITA-OT-publicering i AEM.
-exl-id: 637895e5-aece-4827-a32e-f2ae3e3704ef
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---

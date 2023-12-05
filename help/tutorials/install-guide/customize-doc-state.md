@@ -1,13 +1,12 @@
 ---
 title: Konfigurera dokumentlägen
-description: Lär dig hur du konfigurerar dokumentlägen
-source-git-commit: cf1b9812cb6bb00319eb8fe23162d3830c82b1b1
+description: Lär dig hur du konfigurerar dokumenttillstånd
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '1131'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera dokumentlägen {#id181GB0400UI}
 
@@ -45,12 +44,13 @@ Så här skapar du dokumentlägen med hjälp av Mappprofil:
    - Ange den sökväg där du vill använda den nya profilen.
    - Ange dokumentets lägen i dialogrutan **Tillåtna lägen** under **Lägen**. Standarddokumentlägena är Utkast, Redigera, Under granskning, Godkänd och Klar.-
 
-      Klicka på **Lägg till** om du vill lägga till ett dokumentläge.
+     Klicka på **Lägg till** om du vill lägga till ett dokumentläge.
 
       - Klicka på ikonen Ta bort om du vill ta bort ett dokumentläge.
-      >[!NOTE]
-      >
-      > Ta inte bort ett dokumentläge om dokumenten fortfarande är i det läget. Om du tar bort ett dokumentläge kan du inte ändra dokumenttillståndet för sådana dokument såvida du inte tillhör *administratör* användargrupp.
+
+     >[!NOTE]
+     >
+     > Ta inte bort ett dokumentläge om dokumenten fortfarande är i det läget. Om du tar bort ett dokumentläge kan du inte ändra dokumenttillståndet för sådana dokument såvida du inte tillhör *administratör* användargrupp.
 
    - Ange startstatus för dokumentet i **Startläge**.
    - Ange slutstatus för dokumentet i **Slutläge**.
@@ -61,11 +61,10 @@ Så här skapar du dokumentlägen med hjälp av Mappprofil:
       - Klicka på **Lägg till** om du vill lägga till en lägesövergång.
 
       - Klicka på ikonen Ta bort om du vill ta bort en lägesövergång.
-      >[!NOTE]
-      >
-      > Ta inte bort en lägesövergång om dokumenten fortfarande är i `From` tillstånd. Om du tar bort en lägesövergång kan du inte ändra dokumenttillståndet för sådana dokument såvida du inte tillhör *administratör* användargrupp.
 
-
+     >[!NOTE]
+     >
+     > Ta inte bort en lägesövergång om dokumenten fortfarande är i `From` tillstånd. Om du tar bort en lägesövergång kan du inte ändra dokumenttillståndet för sådana dokument såvida du inte tillhör *administratör* användargrupp.
 
 1. Klicka **Klar**.
 
@@ -82,7 +81,7 @@ Så här skapar du en kopia av en dokumenttillståndsprofil:
    Sidan Tillstånd för resurser visas.
 
 1. Markera den dokumenttillståndsprofil som du vill duplicera och klicka på **Duplicera profil**.
-1. Gör nödvändiga ändringar och klicka **Klar**.
+1. Gör nödvändiga ändringar och klicka på **Klar**.
 
 ## Ta bort ett dokumentläge eller en lägesövergång
 
@@ -138,9 +137,9 @@ Utför följande steg för att automatisera ändringen av dokumentets tillstånd
    - Markera kryssrutan Avancerat för hanterare.
    - Ange namnet på dokumentläget i dialogrutan **Argument** textruta.
 
-      >[!NOTE]
-      >
-      > Se till att du anger rätt dokumenttillstånd i textrutan Argument. Om du anger fel namn ställs dokumentet in på fel dokumentläge.
+     >[!NOTE]
+     >
+     > Se till att du anger rätt dokumenttillstånd i textrutan Argument. Om du anger fel namn ställs dokumentet in på fel dokumentläge.
 
 1. Klicka **Spara** för att spara arbetsflödet.
 
@@ -158,7 +157,7 @@ AEM Guides ger ett arbetsflöde för dokumentgodkännande som hjälper dig att s
 
    `/apps/fmdita/xmleditor/ui_config.json`
 
-1. Navigera till och öppna `ui_config.json` i `apps` nod för redigering.
+1. Navigera till och öppna `ui_config.json` i `apps` för redigering.
 
 1. I `ui_config.json` fil, aktivera arbetsflödesfunktionen för godkännande genom att ändra *funktioner* enligt nedan:
 
@@ -168,5 +167,3 @@ AEM Guides ger ett arbetsflöde för dokumentgodkännande som hjälper dig att s
       "approvalWorkflow":  true 
    }
    ```
-
-

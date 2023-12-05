@@ -1,10 +1,9 @@
 ---
 title: Masstaggning av DITA-innehåll
 description: Använd bulktaggning av innehåll i AEM för att förbättra identifieringen av DITA-innehåll. Lär dig hur du använder, tar bort, visar eller döljer gruppmärkord i ett eller flera ämnen.
-exl-id: 0e855575-e62f-4dc7-869c-7fd3ec61ffdb
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---

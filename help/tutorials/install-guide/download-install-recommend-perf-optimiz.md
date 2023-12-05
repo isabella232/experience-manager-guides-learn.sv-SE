@@ -1,13 +1,12 @@
 ---
 title: Recommendations för prestandaoptimering
 description: Lär dig Recommendations för prestandaoptimering
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
-
 
 # Recommendations för prestandaoptimering {#id213BD0JG0XA}
 
@@ -46,7 +45,7 @@ Den här ändringen förhindrar att /var/dxml-noden indexeras och lagras i segme
 **Vad är förändringen?**
 Parametrarna för JVM-start bör justeras noggrant baserat på infrastrukturen och diskstorleken. Vi rekommenderar att du kontaktar Adobe Support för att få hjälp med att komma åt den idealiska konfigurationen. Du kan dock själv prova följande konfigurationer:
 
-- Ställ in JVM-stackstorleken på minst 1/4 av det totala tillgängliga minnet. Använda parametern `-Xmx<size>` för att ange stackminnesstorleken. Ange värdet för -`Xms` är lika med `-Xmx`.
+- Ställ in JVM-stackstorleken på minst 1/4 av det totala tillgängliga minnet. Använda parametern `-Xmx<size>` för att ange stackminnesstorleken. Ange värdet för -`Xms` motsvarar `-Xmx`.
 
 - Aktivera `-XX:+HeapDumpOnOutOfMemoryError` och ange sökvägen för `-XX:HeapDumpPath=</path/to/folder``>`.
 
@@ -98,7 +97,7 @@ Detta kan göras vid körning via Felix Console eller via koddistribution.
 **Resultat av den här ändringen**
 Ändringen säkerställer att inga resurser allokeras för publiceringsåtgärderna på en författarinstans som körs. Detta gör att systemresurserna är tillgängliga även för författare, vilket ger en bättre användarupplevelse.
 
-## Konfigurera gruppstorlek för noder för generering AEM platsutdata \(Obligatoriskt, beroende på användningsfall\)
+## Konfigurera gruppstorlek för noder för generering AEM platsutdata \(obligatoriskt, beroende på användningsfall\)
 
 **vad är förändringen?**
 Den här ändringen krävs om du genererar AEM Sites-utdata.
@@ -116,7 +115,7 @@ Ett ökat antal **Begränsa AEM webbplatssidor i heap** -egenskapen optimerar pr
 **Vad är förändringen?**
 Den här ändringen krävs om du överför DITA-innehåll gruppvis.
 
-Ange **Bokför processtrådar** egenskap under `com.adobe.fmdita.config.ConfigManager` till `1`.
+Ange **Bokför Threads** egenskap under `com.adobe.fmdita.config.ConfigManager` till `1`.
 
 **När ska jag konfigurera?**
 Detta kan göras vid körning.
@@ -125,4 +124,3 @@ Detta kan göras vid körning.
 Den här ändringen minskar efterbearbetningstiden vid massöverföring av DITA-filer.
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

@@ -1,10 +1,9 @@
 ---
 title: Använd DITAVAL-redigerare
 description: Lär dig hur du skapar och redigerar DITAVAL-filer med DIVATAL Editor AEM Guides. Ta reda på hur DITAVAL-redigeraren stöder DITAVAL-filer i skribent- och källvyer.
-exl-id: 53dc9a61-aa07-4fb0-a442-ac845433c8f5
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---

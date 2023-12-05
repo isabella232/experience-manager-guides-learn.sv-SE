@@ -1,13 +1,12 @@
 ---
 title: Versionshantering
 description: Läs om hur versionshantering fungerar
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1662'
 ht-degree: 0%
 
 ---
-
 
 # Versionshantering {#id181GB000XY4}
 
@@ -46,11 +45,11 @@ Så här skapar du en ny version av den överförda filen:
 
 >[!NOTE]
 >
-> Du kan överföra filer i grupper om 70 eller mindre om du aktiverar egenskapen **Skapa ny version för överförd fil** \(create.ver.new.content\) och använd **Resurser, användargränssnitt** för att överföra resurser i grupp.
+> Du kan överföra filer i grupper om 70 eller mindre om du aktiverar egenskapen **Skapa ny version för överförd fil** \(create.ver.new.content\) och använd **Resursgränssnitt** för att överföra resurser i grupp.
 
 ## Konfigurera inställningar som tillåter redigering av utcheckade filer
 
-Med AEM Guides Web Editor kan du skapa och uppdatera DITA-avsnitt. Du kan konfigurera Web Editor så att endast de dokument som har checkats ut från databasen kan redigeras. Detta säkerställer att ingen annan skribent av misstag skriver över ett ämne som har öppnats för redigering av en annan skribent. När ett ämne öppnas för redigering kan författaren checka in filen när filen stängs.
+Med AEM Guides Web Editor kan du skapa och uppdatera DITA-avsnitt. Du kan konfigurera Web Editor så att endast de dokument som har checkats ut från databasen kan redigeras. Detta säkerställer att ingen annan skrivare av misstag skriver över ett ämne som har öppnats för redigering av en annan författare. När ett ämne öppnas för redigering kan författaren checka in filen när filen stängs.
 
 En annan viktig regel är att se till att filer som har checkats ut checkas in i systemet igen. Detta förhindrar att användare av misstag stänger filerna utan att checka in dem igen.
 
@@ -176,11 +175,11 @@ Så här definierar du vem som kan ta bort en fil som innehåller referenser ell
 
    - allow\_unsafe\_delete\_for\_all: Ge alla användare behörighet att ta bort filer. Om filen innehåller referenser eller refereras av andra filer kan du även ta bort sådana filer. Innan du tar bort filen visas ett meddelande med referenserna, du kan avbryta borttagningsåtgärden, ta bort referenserna och slutligen ta bort filen. Du kan också framtvinga borttagning av filen utan att ta bort referenserna.
 
-      ![](assets/allow_unsafe_delete-force-delete.PNG){width="550" align="left"}
+     ![](assets/allow_unsafe_delete-force-delete.PNG){width="550" align="left"}
 
    - allow\_unsafe\_delete\_for\_delete\_assets\_group: En administratör eller en användare som tillhör *delete-assets* grupp kan ta bort filer. Om någon annan användare försöker ta bort filer med referenser, kommer de inte att kunna ta bort sådana filer förrän alla referenser tas bort. Följande skärmbild visas när en användare som inte har behörighet försöker ta bort filer.
 
-      ![](assets/allow_unsafe_delete_for_delete_assets_group.PNG){width="550" align="left"}
+     ![](assets/allow_unsafe_delete_for_delete_assets_group.PNG){width="550" align="left"}
 
    - block\_unsafe\_delete\_for\_all: Tillåt inte alla användare \(inklusive administratörer\) att ta bort filer förrän referenser till och från filen\(erna\) tas bort.
 
@@ -205,7 +204,7 @@ Den version av en DITA-fil som uppfyller något av de angivna villkoren bevaras 
 
 Utför följande steg för att rensa de äldre versionerna:
 
-1. Ange följande information om de filer du vill rensa:
+1. Ange följande information om de filer som du vill rensa:
 
    ![](assets/preview-purge-report.png){width="350" align="left"}
 
@@ -214,9 +213,9 @@ Utför följande steg för att rensa de äldre versionerna:
 - **Behåll versioner som skapats inom tidsintervallet \(i dagar\)**: Ange högsta ålder för en version i dagar. Versioner som är äldre än det angivna antalet dagar kan rensas om andra rensningsvillkor uppfylls. Om vi till exempel anger 100 kvalificeras alla versioner som skapats före 100 dagar att rensas om andra rensningsvillkor uppfylls.
 - **Bana**: Välj sökvägen till filen eller mappen vars filer du vill rensa.
 
-   >[!NOTE]
-   >
-   > Du kan bara rensa DITA-filer.
+  >[!NOTE]
+  >
+  > Du kan bara rensa DITA-filer.
 
 1. Klicka **Förhandsgranska rensningsrapport**.
 
@@ -227,16 +226,15 @@ Utför följande steg för att rensa de äldre versionerna:
    Rapporten för versionsrensning genereras.
 
 1. Ladda ned versionsrensningsrapport och kontrollera vilka filer och versioner som ska rensas.
-1. Du kan välja att **Avbryt tömning** eller **Starta tömning**.
+1. Du kan **Avbryt tömning** eller **Starta tömning**.
 
    ![](assets/download-purge-report.png){width="350" align="left"}
 
    Tömningsstatusen visas.
 
-   Klicka **Hämta versionsrensningsrapport** för att visa de rensade versionerna. Den här rapporten innehåller rensningsstatus för alla versioner tillsammans med orsaker till varför en viss version kvarstod eller varför den rensades.
+   Klicka **Ladda ned versionsrensningsrapport** om du vill visa de rensade versionerna. Den här rapporten innehåller rensningsstatus för alla versioner tillsammans med orsaker till varför en viss version kvarstod eller varför den rensades.
 
 
 >[!NOTE]
 >
 > Rapporten hämtas på följande plats: /var/dxml/versionpurge
-

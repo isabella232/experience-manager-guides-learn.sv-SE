@@ -1,13 +1,12 @@
 ---
 title: Konfigurera autosparande av filer i Web Editor
-description: Lär dig hur du konfigurerar automatisk filsparning i Web Editor
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+description: Lär dig hur du konfigurerar autosparande av filer i Web Editor
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera autosparande av filer i Web Editor {#id199CC0J0M5Z}
 
@@ -33,4 +32,3 @@ Funktionen för att spara automatiskt är inte aktiverad som standard och du må
 
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

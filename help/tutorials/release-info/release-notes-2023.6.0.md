@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade problem i Adobe Experience Manager Guides, juni 2023-versionen
 description: Läs om felkorrigeringarna och hur du uppgraderar till juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-exl-id: ea0ff27a-9c3a-49d7-b94a-d1b9d9e85dcf
-source-git-commit: 4359d857f3662ae29a55420c0fafc4a244258389
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 2%
+source-wordcount: '1170'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +19,7 @@ Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i 
 Uppgradera din nuvarande AEM Guides as a Cloud Service genom att utföra följande steg:
 
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.6.297.
+2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2023.6.297.
 3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till versionen från juni 2023 av AEM Guides as a Cloud Service.
 
 ## Steg för att aktivera utlösaren för ett skript via en serverlet
@@ -88,7 +87,7 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 1. Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika banor för mappningarna för att indexera dem. Som standard indexeras alla mappningar \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
-1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
+1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel: `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
 
@@ -111,7 +110,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.06.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
+| 2023.06.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -123,18 +122,18 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 - Navigeringsrubriken tas bort från content33 vid växling från layoutvyn till författaren eller källvyn. (12174)
 - Ibland inträffar programfel när du klickar på en DITA-karta. (11842)
-- Web Editor | Fast mellanslag läggs till i XML-redigeraren när du redigerar ett ämne. (11786)
+- Web Editor | Fast mellanslag läggs till i XML-redigeraren när du redigerar ett ämne. 11786
 - Resursgränssnitt | I listvyn går det inte att sammanfoga de överlagrade kolumnerna. (11528)
 - Keyref är inte löst i kartvyn. (11490)
 - Den övre menyn visas inte när du navigerar i XML-redigeraren. (10868)
-- `conref` in ph-tagg | Den visade bläddringsdialogrutan är felaktig. (9481)
+- `conref` in ph-tagg | Den visade bläddringsdialogrutan är felaktig. 9481
 - Lokala länkar till andra element kan inte lösas i Web Editor. (8790)
 - Funktionen Matches() fungerar inte i funktionen Schematron. (11224)
 
 
 ### Förvaltning
 
-- Fliken Rapporter i webbredigerarens användargränssnitt visar inte ämneslistan med gamla DITA-kartor som skapats före uppgraderingen till 4.2. (11708)
+- Fliken Rapporter i webbredigerarens användargränssnitt visar inte ämneslistan med gamla DITA-kartor som skapats före uppgraderingen till 4.2. 11708
 
 - Knappfunktionen Överför filer i resursgränssnittet i version 4.2. (11633)
 
@@ -145,7 +144,7 @@ De buggar som har åtgärdats i olika områden listas nedan:
 - JSON-utdata | Mappa metadata med egenskapsvärde som `"value in spaces and double quotes"` leder till ett publiceringsfel. (11933)
 - Web Editor | Det går inte att markera utdatasökväg och -mall i AEM förinställning. (11530)
 - PDF | Anpassade attribut sprids inte till motorn för temporära HTML eller PDF. (DXML-12005)
-- PDF | Java OutOfMemoryError inträffar vid publicering av stort innehåll. (11789)
+- PDF | Java OutOfMemoryError inträffar vid publicering av stort innehåll. 11789
 - JSON-utdata | De `fmUuid` -egenskapen i jcr:content-noden i JSON skiljer sig från&quot;id&quot; i JSON. (11564)
 - JSON-utdata | Om det finns en karta och ett ämne med samma filnamn tas JSON bort för kartan. (11524)
 - PDF | Xref skriver ut innehållet i href-ämnesrubriken i stället för Xref-etiketten. (11322)

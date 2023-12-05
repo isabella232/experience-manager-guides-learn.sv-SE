@@ -1,13 +1,12 @@
 ---
 title: Anpassa Web Editor
-description: Lär dig hur du anpassar webbredigeraren
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+description: Lär dig hur du anpassar Web Editor
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%
 
 ---
-
 
 # Anpassa Web Editor {#id181AI0003PN}
 
@@ -40,5 +39,3 @@ AEM Guides innehåller en kraftfull Web Editor med vilken dina författare kan s
 - [Konfigurera antalet LimitReads för en fråga](conf-query-limitreads.md)
 
 - [Installera paket för artikelbaserad publicering](configure-article-based-publishing.md)
-
-

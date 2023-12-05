@@ -1,13 +1,12 @@
 ---
 title: Konfigurera visning av UUID-baserade länkar
 description: Lär dig hur du konfigurerar visning av UUID-baserade länkar
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera visning av UUID-baserade länkar {#id2035G20M0QN}
 
@@ -20,4 +19,3 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 | `com.adobe.fmdita.xmleditor.config.XmlEditorConfig` | `xmleditor.uuid` | Boolean \(true/false\). Om du vill visa den relativa sökvägen för det länkade innehållet anger du egenskapen till false. <br> **Standardvärde**: true |
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

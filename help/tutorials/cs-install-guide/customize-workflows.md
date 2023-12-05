@@ -1,13 +1,12 @@
 ---
 title: Konfigurera och anpassa arbetsflöden
-description: Lär dig hur du konfigurerar och anpassar arbetsflöden
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+description: Lär dig konfigurera och anpassa arbetsflöden
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1362'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera och anpassa arbetsflöden {#id181AI0OJ0RO}
 
@@ -28,13 +27,13 @@ Alla organisationers skribenter arbetar på ett specifikt sätt för att uppfyll
 
 Med AEM kan du anpassa standardarbetsflödet för granskning. Du kan använda följande fyra anpassade granskningsrelaterade processer tillsammans med dina andra arbetsflöden för redigering och publicering.
 
-- **Skapa granskning**: I den här processen förbereds de metadata som krävs för att skapa en granskningsåtgärd. Den tilldelar till exempel granskarna granskningsbehörighet, ställer in status för de ämnen som ska granskas, ställer in tidslinjer för granskningen med mera. Av de fyra processerna är detta den enda obligatoriska processen som måste ingå i ditt anpassade arbetsflöde. I ditt arbetsflöde kan du välja att inkludera eller exkludera de andra tre processerna.
+- **Skapa granskning**: Den här processen förbereder de metadata som krävs för att skapa en granskningsåtgärd. Den tilldelar till exempel granskarna granskningsbehörighet, ställer in status för de ämnen som ska granskas, ställer in tidslinjer för granskningen med mera. Av de fyra processerna är detta den enda obligatoriska processen som måste ingå i ditt anpassade arbetsflöde. I ditt arbetsflöde kan du välja att inkludera eller exkludera de andra tre processerna.
 
-- **Tilldela granskningsuppgift**: Den här processen skapar granskningsaktiviteten och skickar uppgiftsmeddelandet till initieraren och granskarna.
+- **Tilldela granskningsaktivitet**: Den här processen skapar granskningsaktiviteten och skickar uppgiftsmeddelandet till initieraren och granskarna.
 
 - **Skicka e-post för granskning**: Den här processen skickar e-postmeddelandet till initieraren och granskarna.
 
-- **Schemalägg jobb för att stänga granskning**: Denna process ser till att granskningsprocessen slutförs när tidsgränsen nås.
+- **Schemalägg jobb för att stänga granskning**: Den här processen säkerställer att granskningsprocessen slutförs när tidsgränsen nås.
 
 
 När du skapar ett anpassat granskningsarbetsflöde är den första uppgiften att ange de metadata som behövs för att skapa granskningsprocessen. Om du vill göra det kan du skapa ett ECMA-skript. Ett exempel på ECMA-skript som tilldelar metadata ges nedan:
@@ -61,7 +60,7 @@ Du kan skapa det här skriptet i `/etc/workflows/scripts` nod. I följande tabel
 | `initiator` | Sträng | Användar-ID för den användare som initierar granskningsaktiviteten. |
 | `operation` | Sträng | Ett statiskt värde anges som `AEM_REVIEW`. |
 | `orgTopics` | Sträng | Sökväg till de ämnen som delas för granskning. Ange flera ämnen avgränsade med kommatecken. |
-| `payloadJson` | JSON-objekt | Ange följande värden: -   `base`: sökvägen till den överordnade mappen som innehåller ämnet som skickats för granskning. <br> -   `asset`: sökvägen till det ämne som skickats för granskning. <br> -   `referrer`: lämna det tomt. |
+| `payloadJson` | JSON-objekt | Ange följande värden: -   `base`: sökväg till den överordnade mappen som innehåller ämnet som skickats för granskning. <br> -   `asset`: sökväg till ämnet som skickats för granskning. <br> -   `referrer`: lämna det tomt. |
 | `deadline` | Sträng | Ange tiden i `yyyy-MM-dd'T'HH:mm:ss.SSSXXX` format. |
 | `title` | Sträng | Ange en rubrik för granskningsaktiviteten. |
 | `description` | Sträng | Ange en beskrivning för granskningsaktiviteten. |
@@ -153,4 +152,3 @@ generatedPath;
 ```
 
 När du har skapat skriptet anropar du det anpassade skriptet i arbetsflödet. Beroende på dina behov kan du sedan anropa de andra arbetsflödesprocesserna. När du har utformat ditt arbetsflöde kan du ringa *Slutför postgenerering* som det sista steget i arbetsflödet. The *Slutför postgenerering* steg säkerställer att status för utdatagenereringsaktiviteten uppdateras till *Slutförd* när processen för generering av utdata har slutförts. När du har skapat ett anpassat arbetsflöde för postutdata kan du konfigurera det med alla förinställningar för utdatagenerering. Välj önskat arbetsflöde i *Kör arbetsflöde efter generering* egenskapen för den förinställning som krävs. När du kör en utdatagenereringsuppgift med den konfigurerade förinställningen ändras aktivitetsstatusen \(på fliken Utdata\) till *Efterbearbetning*.
-

@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, aprilversion 2022
 description: aprilversion av Adobe Experience Manager Guides as a Cloud Service
-exl-id: c735ba24-a803-454b-8723-57dacf90061b
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 2%
+source-wordcount: '809'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 2%
 
 Uppgradera din nuvarande [!DNL Adobe Experience Manager Guides] as a Cloud Service (kallas senare *[!DNL AEM Guides]as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö du vill uppgradera.
-1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.4.133.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2022.4.133.
 1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till aprilversionen av [!DNL AEM Guides] as a Cloud Service.
 
 ## Kompatibilitetsmatris
@@ -27,7 +26,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 | FMPS | FrameMaker |
 | --- | --- |
 | Inte kompatibel | 2020 uppdatering 4 och senare |
-|  |  |
+| | |
 
 
 ### Syrgasanslutning
@@ -80,21 +79,21 @@ De buggar som har åtgärdats i olika områden listas nedan:
 * Nya etiketter visas inte automatiskt i listrutan Lägg till/ta bort etikett, utan en uppdatering av baslinjen krävs. (9249)
 * Det går inte att redigera baslinjetiteln om en baslinje har skapats med etikettvillkor. (9171)
 * Publiceringsjobb som använder en baslinje fastnar i vänteläge om baslinjestatusen ändras till &quot;misslyckades&quot;. (9194)
-* Om du tar bort etiketter i direkta referenser tas även etiketterna bort från indirekta referenser. (9257)
-* Om du söker medan du skriver uppstår oönskade sökningar i databasvyn. (9307)
-* Problem uppstår när ett nyckelord används i titeln för fliken. (9318)
-* Baslinjen kan inte användas när en etikett med blanksteg läggs till. (9362)
-* AEM visar inte ordlisteelement korrekt. (8936)
+* Om du tar bort etiketter i direkta referenser tas även etiketterna bort från indirekta referenser. 9257
+* Om du söker medan du skriver uppstår oönskade sökningar i databasvyn. 9307
+* Problem uppstår när ett nyckelord används i titeln för fliken. 9318
+* Baslinjen kan inte användas när en etikett med blanksteg läggs till. 9362
+* AEM visar inte ordlisteanvändningselementet korrekt. 8936
 * Konsolfel inträffar när **Utdata** i Web Editor. (8715)
-* Felmeddelandet som visas när en manuell posttyp publiceras via Salesforce är inte intuitivt. (8952)
+* Felmeddelandet som visas när en manuell posttyp publiceras via Salesforce är inte intuitivt. 8952
 * Validera med villkorsattribut öppnas inte direkt, utan användaren måste öppna filen igen för att kunna se valideringarna. (9300)
 * Det går inte att ta bort metadata när en DITA-karta har publicerats med metadata.  (9178)
-* Översättningspanelen visas även när DITA-kartan öppnas i kartredigeraren. (9053)
+* Översättningspanelen visas även när DITA-kartan öppnas i kartredigeraren. 9053
 * Anpassad DTD som definieras av användaren har inte högre prioritet än standard-DITA DTD som är inbäddad i DITA-OT. (9104)
-* I funktionen Native PDF misslyckas överföringen i mallarna för filer som inte är DITA eller bilder. (9070)
+* I funktionen Native PDF misslyckas överföringen i mallarna för filer som inte är DITA eller bilder. 9070)
 * Auktoriseringsmekanismen kör två frågor i stället för en, i vissa specialscenarier. (9221)
-* Publicering av AEM webbplatsutdata misslyckas när anpassad DTD används. (9243)
-* Fotnoter som kan användas som referenser rullar inte till fotnotsavsnittet i AEM. (9234)
+* Publicering av AEM webbplatsutdata misslyckas när anpassad DTD används. 9243
+* Fotnoter som kan användas som referenser rullar inte till fotnotsavsnittet i AEM. 9234
 
 ## Kända fel
 

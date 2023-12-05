@@ -1,13 +1,12 @@
 ---
 title: Anpassa AEM standardordlista
 description: Lär dig hur du anpassar AEM standardordlista
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
-
 
 # Anpassa AEM standardordlista {#id209SD8000WU}
 
@@ -30,7 +29,6 @@ Följ de här stegen för att skapa din egen ordlista som läggs till AEM ordlis
    Genomför ändringarna och kör Cloud Manager \(CI/CD\)-pipeline för att distribuera konfigurationsändringar.
 
 
-Författare måste starta om sin Web Editor-session för att den anpassade ordlistan ska uppdateras i AEM.
+Författare måste starta om sin Web Editor-session för att den anpassade ordlistan ska uppdateras i AEM ordlista.
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

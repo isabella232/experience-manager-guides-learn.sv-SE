@@ -1,8 +1,7 @@
 ---
 title: Tilldela om granskningsuppgift med meddelande
 description: Tilldela om en granskningsuppgift med hjälp av meddelanden AEM guider. Lär dig hur du omtilldelar en granskaraktivitet från inkorgsmeddelandet.
-exl-id: d20865a8-2c30-4bd7-8594-64e0ccdb665a
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%

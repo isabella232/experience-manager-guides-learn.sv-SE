@@ -3,8 +3,7 @@ title: Uteslut stycken i ett ämne från översättning
 description: Exkludera stycken i ett ämne från översättning
 feature: Translation
 role: User
-exl-id: 21e41bb4-52f3-4352-92d9-4a60f636de99
-source-git-commit: 6ae539eff23b1fd5f1d74878b03cf6dd5b20a57d
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 0%

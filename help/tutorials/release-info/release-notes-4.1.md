@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides 4.1
 description: Senaste utgåvan av Adobe Experience Manager Guides
-exl-id: c70b3bbc-3332-4626-bc30-641034f8fd06
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3532'
-ht-degree: 3%
+source-wordcount: '3644'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +28,7 @@ Mer information finns i [Uppgraderingsinstruktioner](assets/Adobe-Experience-Man
 
 I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av AEM 4.1.3.
 
-### Adobe Experience Manager
+### ADOBE EXPERIENCE MANAGER
 
 **Ej UID**
 Version 6.5 Service Pack 13, 12, 11 eller 10
@@ -45,8 +44,8 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 | Frigör | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
 | --- | --- | --- | --- | --- |
 | 4.1.3 (ej UUID) | 2020.2 eller senare* | 2019 | 2020.3 eller senare | 2019.8 (senaste uppdateringen) |
-| 4.1.3 (UUID) | 2020.2 eller senare* | Inte kompatibel | 2020.4 eller senare | Inte kompatibel |
-|  |  |  |  |
+| 4.1.3 (UID) | 2020.2 eller senare* | Inte kompatibel | 2020.4 eller senare | Inte kompatibel |
+| | | | |
 
 *Originalplan och villkor skapade i AEM stöds i FMPS-versioner från och med 2020.2.
 
@@ -54,9 +53,9 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 
 | Frigör | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- |--- |--- |
-| 4.1.3 (ej UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
-| 4.1.3 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
-|  |  |  |
+| 4.1.3 (ej UUID) | 2,0 | 2,0 | 1,6 | 1,6 |
+| 4.1.3 (UID) | 2,7 | 2,7 | 2,3 | 2,3 |
+|  |  |   |
 
 
 ## Åtgärdade problem
@@ -72,7 +71,7 @@ Felet som har åtgärdats listas nedan:
 
 I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av AEM 4.1.2.
 
-### Adobe Experience Manager
+### ADOBE EXPERIENCE MANAGER
 
 **Ej UID**
 Version 6.5 Service Pack 13, 12, 11 eller 10
@@ -88,8 +87,8 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 | Frigör | FMPS 2020 | FMPS 2019 | Fm 2020 | Fm 2019 |
 | --- | --- | --- | --- | --- |
 | 4.1.2 (ej UUID) | 2020.2 eller senare* | 2019 | 2020.3 eller senare | 2019.8 (senaste uppdateringen) |
-| 4.1.2 (UUID) | 2020.2 eller senare* | Inte kompatibel | 2020.4 eller senare | Inte kompatibel |
-|  |  |  |  |
+| 4.1.2 (UID) | 2020.2 eller senare* | Inte kompatibel | 2020.4 eller senare | Inte kompatibel |
+| | | | |
 
 *Originalplan och villkor skapade i AEM stöds i FMPS-versioner från och med 2020.2.
 
@@ -97,9 +96,9 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 
 | Frigör | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- |--- |--- |
-| 4.1.2 (ej UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
-| 4.1.2 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
-|  |  |  |
+| 4.1.2 (ej UUID) | 2,0 | 2,0 | 1,6 | 1,6 |
+| 4.1.2 (UID) | 2,7 | 2,7 | 2,3 | 2,3 |
+|  |  |   |
 
 
 ## Åtgärdade problem
@@ -108,16 +107,16 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 * När du väljer alla mappprofiler visas en osynlig mappprofil (som är felaktig). (10393)
 * När du skapar baslinjen väljs inte den senaste versionen, när användarens tidszon skiljer sig från serverns tidszon. (10336)
-* Kortkommandot Ctrl+F öppnar inte webbläsarsökningen modal på Resurskonsolen efter installationen av AEM Guides 4.1. (10339)
+* Kortkommandot Ctrl+F öppnar inte webbläsarsökningen modal på Resurskonsolen efter installationen av AEM 4.1. (10339)
 * Fel vid skapande av baslinje inträffar för det ämne som har referensen till en mapp. (10383)
 * Fliken Utdatainställningar visar ibland en tom skärm och i vissa fall visas icke-redigerbara förinställningar. (10390)
-* Hantering av nyckelrutor leder till undantag och fel. (10449)
+* Hantering av nyckelrutor leder till undantag och fel. 10449)
 
 ### Kända problem med lösningar
 
 * Baslinje som exporteras under översättning läses inte in på baslinjefliken i redigeraren.
 
-   **Tillfällig lösning**: Använd baslinjefliken på DITA-kartkontrollpanelen.
+  **Tillfällig lösning**: Använd baslinjefliken på DITA-kartkontrollpanelen.
 
 ## 4.1 | Versionsinformation
 
@@ -127,7 +126,7 @@ Den här versionsinformationen innehåller uppgraderingsinstruktioner, nya funkt
 
 I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds i AEM 4.1.
 
-### Adobe Experience Manager
+### ADOBE EXPERIENCE MANAGER
 
 **Ej UID**
 Version 6.5 Service Pack 13, 12, 10 eller 11
@@ -146,7 +145,7 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 | --- | --- | --- | --- | --- |
 | 4.1 (ej UUID) | 2020.2 eller senare* | 2019 | 2020.3 eller senare | 2019.8 (senaste uppdateringen) |
 | 4.1 (UUID) | 2020.2 eller senare* | Inte kompatibel | 2020.4 eller senare | Inte kompatibel |
-|  |  |  |  |
+| | | | |
 
 *Originalplan och villkor skapade i AEM stöds i FMPS-versioner från och med 2020.2.
 
@@ -154,8 +153,8 @@ Mer information finns i avsnittet Tekniska krav i guiden Installera och konfigur
 
 | Frigör | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- |--- |--- |
-| 4.1 (ej UUID) | 2.0 | 2.0 | 1.6 | 1.6 |
-| 4.1 (UUID) | 2.7 | 2.7 | 2.3 | 2.3 |
+| 4.1 (ej UUID) | 2,0 | 2,0 | 1,6 | 1,6 |
+| 4.1 (UUID) | 2,7 | 2,7 | 2,3 | 2,3 |
 |  |  |  |
 
 
@@ -212,7 +211,7 @@ Webbredigeraren hjälper dig att hantera dina versioner. Nu kan du även se vers
 
 Följande förbättringar är nu tillgängliga vid uppdatering av webbläsaren i Web Editor:
 
-* Nu har du stöd för att uppdatera webbläsaren medan du redigerar innehållet i webbredigeraren. Om du trycker på ikonen för uppdatering av webbläsaren när en eller flera filer med osparade ändringar öppnas för redigering, uppmanas du att spara filerna eller avbryta uppdateringsåtgärden.
+* Nu har du stöd för att uppdatera webbläsaren medan du redigerar innehållet i Web Editor. Om du trycker på ikonen för uppdatering av webbläsaren när en eller flera filer med osparade ändringar öppnas för redigering, uppmanas du att spara filerna eller avbryta uppdateringsåtgärden.
 
 * Även när du uppdaterar webbläsaren behålls vyerna från den vänstra panelen och den högra panelen.
 
@@ -248,8 +247,7 @@ Mer information finns i *Stäng filer och spara scenarier* i guiden Använda Ado
 ![infoga nyckelord](assets/insert-keyword.png)
 
 * **Stöd för markeringsdokument**
-Markering är ett lättviktigt markeringsspråk som du kan använda för att lägga till formateringselement i vanliga textdokument. Med Web Editor kan du använda Markdown-dokument (.md) tillsammans med DITA-dokument. Du kan enkelt skapa och förhandsgranska ett markeringsdokument i Web Editor och även lägga till det i kartfilen via DITA-kartredigeraren.  Mer information finns i 
-*Skapa markeringsdokument från webbredigeraren* i Använda guiden för Adobe Experience Manager-stödlinjer.
+Markering är ett lättviktigt markeringsspråk som du kan använda för att lägga till formateringselement i vanliga textdokument. Med Web Editor kan du använda Markdown-dokument (.md) tillsammans med DITA-dokument. Du kan enkelt skapa och förhandsgranska ett markeringsdokument i Web Editor och även lägga till det i kartfilen via DITA-kartredigeraren.  Mer information finns i *Skapa markeringsdokument från webbredigeraren* i Använda guiden för Adobe Experience Manager-stödlinjer.
 
 ![supportmarkering](assets/create-markdown-dita-topic.png)
 
@@ -264,7 +262,7 @@ Om en användare aktiverar taggvyn från Web Editor är den fortfarande aktivera
 
 AEM 4.1 innehåller baslinjefunktionen som är integrerad i Web Editor. Nu kan du skapa baslinjer från Web Editor och använda dem för att publicera eller översätta ämnen från olika versioner.
 
-**Anteckning**: Uppdatera den senaste versionen för uppgraderat system **ui_config.json** för mappprofil.
+**Anteckning**: För uppgraderade system, uppdatera **ui_config.json** för mappprofil.
 
 Använd den här funktionen om du vill skapa en baslinje med en specifik version av de ämnen som är tillgängliga ett visst datum och en viss tid. Du får även API-stöd för att skapa eller uppdatera en baslinje med en etikett som definierats för en ämnesversion.
 
@@ -278,13 +276,12 @@ Prestandan för skapandet av baslinjen har förbättrats ytterligare. Processen 
 
 Obs! Fliken Baslinje på kartkontrollpanelen är dold som standard. Administratören kan aktivera fliken Baslinje på kartkontrollpanelen.
 
-* Baslinjeparametern i API:erna för att hämta karta använder nu baslinjens rubrik för att hämta versionsinnehållet.
+* Baslinjeparametern i API:erna för nedladdning av karta använder nu baslinjens rubrik för att hämta versionsinnehållet.
 
 ### Förbättrad översättningsprocess
 
 * **Möjlighet att skapa ett omfångsöversättningsprojekt**
-Om du bara behöver skapa omfånget för ett projekt som ska översättas kan du välja 
-**Skapa ett nytt omfångsöversättningsprojekt**. Kopiorna skickas inte för översättning och den ursprungliga översättningsstatusen för filerna behålls.
+Om du bara behöver skapa omfånget för ett projekt som ska översättas kan du välja **Skapa ett nytt omfångsöversättningsprojekt**. Kopiorna skickas inte för översättning och den ursprungliga översättningsstatusen för filerna behålls.
 
 ![omfångsöversättningsprojekt](assets/scoping-translation-project.png)
 
@@ -316,7 +313,7 @@ När du väljer att hämta DITA-kartan köas begäran och du får ett meddelande
 ### Andra funktionsförbättringar
 
 * AEM Guides har nu stöd för Oxygen XML Author version 24.1.
-* Baslinjeparametern i API:erna för att hämta karta använder nu baslinjens rubrik för att hämta versionsinnehållet.
+* Baslinjeparametern i API:erna för nedladdning av karta använder nu baslinjens rubrik för att hämta versionsinnehållet.
 
 ### Inaktuell funktion
 
@@ -326,81 +323,81 @@ AEM Guides stöder inte längre generering av DITA-utdataformat för FrameMaker-
 
 De buggar som har åtgärdats i olika områden listas nedan:
 
-* Redigeringsstöd finns inte som alternativ för filsökvägsbaserad referens för publicering. (8076)
-* DITA Add on package förhindrar DAM-dubblettidentifiering av resurser. (8417)
+* Redigeringsstöd är inte tillgängligt som alternativ för filsökvägsbaserad referens för publicering. 8076
+* DITA Add on package förhindrar DAM-dubblettidentifiering av resurser. 8417
 * Efter incheckning av ett dokument från Syrgas till AEM ersätts japanskt innehåll i dokumentet med frågetecken (???). (9124)
 * Det går inte att uppdatera utcheckade filer vid loggning med webbautentisering i Syrgas. (9179)
 * Filen checkas inte ut när den öppnas i syrgas. (9192)
-* Efter incheckning av ett dokument från Syrgas till AEM ersätts japanskt innehåll i dokumentet med frågetecken (???). (9276)
-* Webbautentisering fungerar inte i syre. (9296)
-* Återuppladdningen misslyckas i syre när filen/filerna redan finns i AEM på samma plats. (9328)
-* Det går inte att synkronisera innehåll mellan AEM och det lokala systemet. (9439)
-* ID genereras inte automatiskt för element som lagts till med **Infoga återanvändbart innehåll** från det sekundära verktygsfältet. (5826)
-* Ingen bekräftelsedialogruta visas när du överför en bild med samma namn som en befintlig fil via redigeraren. (6011)
-* Ett hårt blanksteg är inte tillgängligt i teckenlastpallen. (7523)
-* Elementlistan (Alt+Retur) visas nedtonad i det mörka/mörkaste temat. (7913)
+* Efter incheckning av ett dokument från Syrgas till AEM ersätts japanskt innehåll i dokumentet med frågetecken (???). 9276
+* Webbautentisering fungerar inte i syre. 9296
+* Återuppladdningen misslyckas i syre när filen/filerna redan finns i AEM på samma plats. 9328
+* Det går inte att synkronisera innehåll mellan AEM och det lokala systemet. 9439
+* ID genereras inte automatiskt för element som lagts till med **Infoga återanvändbart innehåll** från det sekundära verktygsfältet. 5826
+* Ingen bekräftelsedialogruta visas när en bild med samma namn som en befintlig fil överförs via redigeraren. (6011)
+* Ett hårt blanksteg är inte tillgängligt i teckenlastpallen. 7523
+* Elementlistan (Alt+Retur) visas nedtonad i det mörka/mörkaste temat. 7913
 * Versionen uppdateras inte när ändringen av ett ämne sparas i verktygsfältet på panelen Karta. (8228)
-* xref kan inte infogas även på giltiga platser. (8354)
-* getversionlabels-åtgärden har begränsningar och ger inte förväntad prestanda. (8513)
-* Problem uppstår med bekräftelsedialogrutan när en låst eller redigerad fil som inte är öppen i redigeraren stängs. (8692)
-* Ett fel inträffar när en användare läggs till som administratör i mappprofilen när användar-ID:t är numeriskt. (8908)
-* Översättningspanelen visas även när DITA-kartan öppnas i kartredigeraren. (9053)
+* xref kan inte infogas även på giltiga platser. 8354
+* getversionlabels-åtgärden har begränsningar och ger inte förväntad prestanda. 8513
+* Problem uppstår med bekräftelsedialogrutan när en låst eller redigerad fil som inte är öppen i redigeraren stängs. 8692
+* Ett fel inträffar när en användare läggs till som administratör i mappprofilen när användar-ID:t är numeriskt. 8908
+* Översättningspanelen visas även när DITA-kartan öppnas i kartredigeraren. 9053
 * Språkkoden visas inte med språket på översättningspanelen. (9108)
 * Flikarna Översättning och Baslinje visas en tid på kontrollpanelen Karta. (9146)
-* När översättningen är klar skapas ytterligare en version för den översatta resursen. (9310)
-* Godkänd översättning kan inte integreras med målspråket när målspråkskoden innehåller fem tecken som `fr_ca`. (9357)
-* Översatt innehåll bryts när målspråkskoden som skapas omnämns som `fr-fr, `, `en-us`. (9527)
-* När en DITA-karta som ligger utanför mappen language läses in loggas ett undantag i backend-objektet.(9543)
-* Det går inte att skapa DITA-filen med den anpassade DITA-mallen från redigeraren. (7262)
-* DITA-kartan förloras när en UUID DITA-karta publiceras via FMPS. (7278)
-* AEM stödlinjer kopierar inte de icke-unika egenskaperna för en resurs när en resurs kopieras och klistras in. (8241)
-* DITA-kartfilens namn konverteras inte till gemener när det skapas. (8383)
-* Beskrivningen av granskningsaktiviteten visas inte i det e-postmeddelande som skickas när en ny granskningsaktivitet tilldelas. (8507)
-* Hämta mappnings-API | Temporära mappar rensas inte om hämtningsprocessfel skulle försvinna. (8523)
-* `columnpreview.jsp` är beroende av SP.  (8543)
-* Utdatafält med status Väntar eller Körning rensas inte på kontrollpanelen Publicera.  (8569)
-* Standardikonen väljs när en rapport genereras med knappen Generera, även när ikonegenskapen är definierad. (8573)
-* Problem uppstår under granskningsprocessen när du uppgraderar från 3.8.X till 4.0. (8788)
-* Om ett användarnamn är långt visas inte ikonerna för att acceptera/avvisa på panelen Granska i Web Editor tydligt. (8793)
-* Referensträdet bryts när ett ämne har tagits bort och en flyttningsåtgärd har utförts. (8804)
+* När översättningen är klar skapas ytterligare en version för den översatta resursen. 9310
+* Godkänd översättning kan inte integreras med målspråket när målspråkskoden innehåller fem tecken som `fr_ca`. 9357
+* Översatt innehåll bryts när målspråkskoden som skapas omnämns som `fr-fr, `, `en-us`. 9527
+* När en DITA-karta som ligger utanför mappen language läses in loggas ett undantag i backend-objektet.9543
+* Det går inte att skapa DITA-filen med den anpassade DITA-mallen från redigeraren. 7262
+* DITA-kartan förloras när en UUID DITA-karta publiceras via FMPS. 7278
+* AEM stödlinjer kopierar inte en resurs icke-unika egenskaper när en resurs kopieras och klistras in. 8241
+* DITA-kartfilens namn konverteras inte till gemener när det skapas. 8383
+* Beskrivningen av granskningsaktiviteten visas inte i det e-postmeddelande som skickas när en ny granskningsaktivitet tilldelas. 8507
+* Hämta mappnings-API | Temporära mappar rensas inte bort om hämtningsprocessfel skulle försvinna. 8523
+* `columnpreview.jsp` är beroende av SP.  8543
+* Utdatafält med status Väntar eller Körning rensas inte på kontrollpanelen Publicera.  8569
+* Standardikonen väljs när en rapport genereras med knappen Generera, även när ikonegenskapen är definierad. 8573
+* Problem uppstår under granskningsprocessen när du uppgraderar från 3.8.X till 4.0. 8788
+* Om ett användarnamn är långt visas inte ikonerna för att acceptera/avvisa på panelen Granska i Web Editor tydligt. 8793
+* Referensträdet bryts när ett ämne har tagits bort och en flyttningsåtgärd har utförts. 8804
 * Anpassad DTD som definieras av användaren har inte högre prioritet än standard-DITA DTD som är inbäddad i DITA-OT. (9104)
-* Markeringens position är felaktig i vyn Sida vid sida. (9305)
-* Fotnoter som kan användas som referenser rullar inte till fotnotsavsnittet i AEM. (9061)
-* Fotnoternas ordning är felaktig i AEM. (9327)
-* Nyligen skapade DITA-resurser checkas alltid ut av en annan användare. (9387)
-* Fel loggas alltid när nytt innehåll skapas. (9388)
+* Markeringens position är felaktig i vyn Sida vid sida. 9305
+* Fotnoter som kan användas som referenser rullar inte till fotnotsavsnittet i AEM. 9061
+* Fotnoternas ordning är felaktig i AEM. 9327
+* Nyligen skapade DITA-resurser checkas alltid ut av en annan användare. 9387
+* Fel loggas alltid när nytt innehåll skapas. 9388
 * Den tredje skärmen i processen för att skapa granskningsåtgärder visar inte listan med ordlistor. (4558)
-* Felaktiga UUID-referenser som tilldelats vid överföring av flera filer från FrameMaker/Syre Connector. (8269)
-* E-postmeddelanden skickas inte när en granskningsuppgift omtilldelas i Inkorgen. (8376)
-* Den andra administratörsanvändaren kan inte läggas till som den första administratörsanvändaren i en mapp. (8430)
-* **Använd etiketter** visas inte etiketter i listrutan. (8455)
-* Om du använder baslinjepublicering med bilden som conref i avsnittet publiceras inte bilden i utdata. (8564)
-* Funktionen för rensning av utdata fungerar inte om det finns ett stort antal noder för historik över utgående utdata. (8568)
-* I panelen för versionshistorik visas en felaktig tidsstämpel i det aktuella versionsavsnittet och informationen ändras. (8765)
-* Baslinjen har inte uppdaterats baserat på den etikett som definierats. (8799)
-* Ett fel inträffar när filer vars överordnade mapp har specialtecken i filnamnet öppnas i Syrgas (med **Redigera i syrgas** ). (8918)
+* Felaktiga UUID-referenser som tilldelats vid överföring av flera filer från FrameMaker-/syrekopplingen. 8269
+* E-postmeddelanden skickas inte när en granskningsuppgift omtilldelas i Inkorgen. 8376
+* Den andra administratörsanvändaren kan inte läggas till som den första administratörsanvändaren i en mapp. 8430
+* **Använd etiketter** på fliken Baslinje visas inte etiketter i listrutan. 8455
+* Om du använder baslinjepublicering med bilden som conref i avsnittet publiceras inte bilden i utdata. 8564
+* Funktionen för rensning av utdata fungerar inte om det finns ett stort antal noder för historik över utgående utdata. 8568
+* I panelen för versionshistorik visas en felaktig tidsstämpel i det aktuella versionsavsnittet och informationen ändras. 8765
+* Baslinjen har inte uppdaterats baserat på den etikett som definierats. 8799
+* Ett fel inträffar när filer vars överordnade mapp har specialtecken i filnamnet öppnas i Syrgas (med **Redigera i syrgas** -knapp). (8918)
 * Det går inte att överföra filer från Syrgas till AEM. (9157)
-* Hämta kartan med baslinjen fungerar inte om innehållet flyttas till en annan mapp. (9331)
-* Syrgas checkar ut en felaktig version av ett ämne efter en versionsåterställning i AEM. (9411)
-* Om du söker på panelen Databas och dialogrutan för att bläddra i utseendefiler låses skärmen när innehållet är stort. (9432)
-* Om inställningen **Skapa ny version för överförd fil** är PÅ, skapas en ny version när du återställer och sparar en fryst nod. (9473)
-* Felaktiga tidsstämpelskillnader visas i resursgränssnittet när en filversion återställs. (9480)
-* Filerna checkas ut automatiskt när de återställs till valfri version. (9482)
-* Låsikonen visas i databasvyn även när filen har checkats in från redigeraren.  (5756)
-* Det går inte att lägga till förgrundselement, bakgrundselement i en bokmapp med hjälp av redigerarens redigeringsvy. (7652)
-* Förhandsvisningsläget stöder inte `deliveryTarget` villkorsstyrt bearbetningsattribut i DITA. (7685)
-* När du öppnar ett ordlisteämne i XML-redigeraren måste AEM spara det även om det inte har ändrats. (8105)
-* Dialogrutan Infoga referenser öppnas när du lägger till subjekten på en karta med hjälp av användargränssnittet. (8212)
-* Återanvänd innehållspanelen kraschar vid sökning efter specialtecken `[` eller `*` .(8279)
-* Vid redigering av Glossentry visas innehållet i webbredigeraren som en anteckning. (8384)
+* Hämta kartan med baslinjen fungerar inte om innehållet flyttas till en annan mapp. 9331
+* Syrgas kontrollerar en felaktig version av ett ämne efter en versionsåterställning i AEM. 9411
+* Om du söker på panelen Databas och dialogrutan för att bläddra i utseendet på utseendet låses skärmen när innehållet är stort. 9432
+* Om inställningen **Skapa ny version för överförd fil** är PÅ, skapas en ny version när du återställer och sparar en fryst nod. 9473
+* Felaktiga tidsstämpelskillnader visas i resursgränssnittet när en filversion återställs. 9480)
+* Filerna checkas ut automatiskt när de återställs till valfri version. 9482
+* Låsikonen visas i databasvyn även när filen har checkats in från redigeraren.  5756
+* Det går inte att lägga till förgrundselement, bakgrundselement i en bokmapp med hjälp av redigerarens redigeringsvy. 7652
+* Förhandsvisningsläget stöder inte `deliveryTarget` villkorsstyrt bearbetningsattribut i DITA. 7685
+* När du öppnar ett ordlisteämne i XML-redigeraren måste AEM spara det även om det inte har ändrats. 8105
+* Dialogrutan Infoga referenser öppnas när du lägger till subjekten på en karta med hjälp av användargränssnittet. 8212
+* Återanvänd innehållspanelen kraschar vid sökning efter specialtecken `[` eller `*` .8279
+* Vid redigering av Glossentry visas innehållet i webbredigeraren som en anteckning. 8384
 * XML-redigeraren tar bort radmatningar i kodlås. (8522)
-* Om du växlar mellan käll- och författarläge markeras ämnet som smutsigt och innehållet måste sparas igen.(8524)
-* Det går inte att stänga ett olåst ämne. (8545)
-* Det finns inget alternativ för att välja kunskapsbassökvägen i artikelbaserade publiceringsförinställningar. (8636)
-* Attribut saknas när du lägger till ett kapitel i bokmappen med dra och släpp från favoritvyn. (8746)
+* Om du växlar mellan käll- och författarläge markeras ämnet som smutsigt och innehållet måste sparas igen.8524
+* Det går inte att stänga ett olåst ämne. 8545
+* Det finns inget alternativ för att välja kunskapsbassökvägen i artikelbaserade publiceringsförinställningar. 8636
+* Attribut saknas när du lägger till ett kapitel i bokmappen med dra och släpp från favoritvyn. 8746
 * Dialogrutan Infoga nyckelord saknar sökfunktion och nyckelorden visas inte i sorterad ordning. (9094)
-* Om du gör en sökning i XML-redigeraren fryser sidan. (9452)
-* Platser saknas i AEM förinställningar på fliken Utdata. (9567)
-* SVG-bilder som inte återges korrekt i redigeringslägena i XML-redigeraren. (9426)
-* Baslinjen respekteras inte vid publicering via Salesforce. (8953)
-* Det finns inte möjlighet att rensa rotkartan från användarinställningarna. (8534)
+* Om du gör en sökning i XML-redigeraren fryser sidan. 9452
+* Platser saknas i AEM förinställningar på fliken Utdata. 9567
+* SVG-bilder som inte återges korrekt i redigeringsläge i XML-redigeraren. 9426
+* Baslinjen respekteras inte vid publicering via Salesforce. 8953
+* Det finns inte möjlighet att rensa rotkartan från användarinställningarna. 8534

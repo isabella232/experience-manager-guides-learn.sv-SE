@@ -1,13 +1,12 @@
 ---
 title: Konfigurera anpassad ämnesmall för DITA
 description: Lär dig hur du konfigurerar en anpassad ämnesmall för DITA
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera anpassad ämnesmall för DITA {#id16A7G0O02TD}
 
@@ -59,7 +58,6 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 
 | PID | Egenskapsnyckel | Egenskapsvärde |
 |---|------------|--------------|
-| `com.adobe.fmdita.config.ConfigManager` | `topic.templates` | Ange en plats där du vill lagra anpassade mallar.<br> Om den angivna platsen finns i DAM kopieras alla standardmallar för kartor och ämnen till den mappen. Om platsen inte finns skapas mappen med alla standardmallar för mappningar och ämnen. |
+| `com.adobe.fmdita.config.ConfigManager` | `topic.templates` | Ange en plats där du vill lagra anpassade mallar.<br> Om den angivna platsen finns i DAM kopieras alla standardmallar för kartor och ämnen till den mappen. Om platsen inte finns, skapas mappen med alla standardmallar för kartor och ämnen. |
 
 **Överordnat ämne:**[ Konfigurera ämne- och mappningsmallar](conf-template-tags.md)
-

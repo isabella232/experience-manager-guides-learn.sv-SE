@@ -1,13 +1,12 @@
 ---
 title: Konfigurera sökning i AEM Assets UI
-description: Lär dig hur du konfigurerar sökning efter AEM Assets-gränssnitt
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+description: Lär dig hur du konfigurerar sökning efter AEM Assets-användargränssnitt
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera sökning i AEM Assets UI {#id192SC800MY4}
 
@@ -46,7 +45,7 @@ Gör följande för att lägga till en sökkomponent för DITA-innehåll i AEM A
 
 1. Klicka **Klar** för att spara ändringarna.
 
-   När du öppnar alternativet Filter i resursgränssnittet får du sökfilteralternativet för DITA-element.
+   När du öppnar alternativet Filter i resursgränssnittet får du sökfilteralternativet DITA-element.
 
    ![](assets/search-filter-asset-console.png){width="350" align="left"}
 
@@ -72,7 +71,7 @@ Gör följande för att lägga till UUID-baserad sökkomponent i AEM Assets UI:
    - **Egenskapsnamn**: jcr:content/fmUuid
 1. Klicka **Klar** för att spara ändringarna.
 
-   När du öppnar alternativet Filter i resursgränssnittet får du tillgång till alternativet UIS-baserad sökfiltrering.
+   När du öppnar alternativet Filter i resursgränssnittet får du det UIS-baserade sökfilteralternativet.
 
 
 ## Ge behörigheter till användare {#id192SF0G0RUI}
@@ -108,7 +107,7 @@ Den valda användaren eller användargruppen har nu åtkomst till funktionen fö
 
 ## Lägg till anpassade element eller attribut i sökningen {#id192SF0G10YK}
 
-För att DITA-sökningen ska fungera krävs viss förbearbetning av DITA-innehållet. Detta förbearbetningssteg extraherar selektivt innehåll från enskilda DITA-kartor och -ämnen så att det kan indexeras för snabbare sökning. Internt anropas den här processen *Serialisering*. Serialisering av DITA-filer sker under överföring av innehåll eller kan även utföras on-demand. Den använder en konfigurationsfil för att avgöra hur mycket innehåll från varje DITA-fil som ska indexeras. Standardplatsen för serialiseringsfilen är:
+För att DITA-sökningen ska fungera krävs viss förbearbetning av DITA-innehållet. Detta förbearbetningssteg extraherar selektivt innehåll från enskilda DITA-kartor och -ämnen så att det kan indexeras för snabbare sökning. Internt anropas processen *Serialisering*. Serialisering av DITA-filer sker under överföring av innehåll eller kan även utföras on-demand. Den använder en konfigurationsfil för att avgöra hur mycket innehåll från varje DITA-fil som ska indexeras. Standardplatsen för serialiseringsfilen är:
 
 /libs/fmdita/config/serializationconfig.xml
 
@@ -118,7 +117,7 @@ Med standardsökkonfigurationen kan du söka efter alla element och attribut i D
 >
 > Om du vill använda standardsökkonfigurationen i `prolog` kan du hoppa över den här processen.
 
-Den här filen innehåller två huvudavsnitt - attributuppsättning och regeluppsättning. Nedan visas ett utdrag av regeluppsättningsavsnittet:
+Filen innehåller två huvudavsnitt - attributuppsättning och regeluppsättning. Nedan visas ett utdrag av regeluppsättningsavsnittet:
 
 ```XML
 <ruleset filetypes="xml dita"><!-- Element rules --><rule xpath="//[contains(@class, 'topic/topic')]/[contains(@class, 'topic/prolog')]//*[not(*)]" text="yes" attributeset="all-attrs" /><!-- Attribute rules --><rule xpath="//[contains(@class, 'topic/topic')]/[contains(@class, 'topic/prolog')]///@[local-name() != 'class']" /></ruleset>
@@ -133,7 +132,7 @@ I avsnittet Regeluppsättning kan du ange:
 
 En regel består av följande:
 
-xpath : Det här är XPath-frågan som hämtar elementen eller attributen från DITA-filer. Standardkonfigurationen för elementregeln hämtar alla `prolog` -element. Och standardkonfigurationen för attributregeln hämtar alla attribut för `prolog` -element. Du kan ange en XPath-fråga för att serialisera de element eller attribut som du vill söka efter.
+xpath : Det här är XPath-frågan som hämtar element eller attribut från DITA-filer. Standardkonfigurationen för elementregeln hämtar alla `prolog` -element. Och standardkonfigurationen för attributregeln hämtar alla attribut för `prolog` -element. Du kan ange en XPath-fråga för att serialisera de element eller attribut som du vill söka efter.
 
     XPath-frågan innehåller dokumenttypens klassnamn. Klassen &quot;topic/topic&quot; används för ämnet DITA-dokument. Om du vill skapa en regel för andra DITA-dokument måste du använda följande klassnamn:
     
@@ -147,11 +146,11 @@ xpath : Det här är XPath-frågan som hämtar elementen eller attributen från 
 
 text: Om du vill söka efter texten i det angivna elementet anger du yes-värdet. Om du anger nej som värde serialiseras bara attributen i elementet. Attributen som du vill söka efter måste anges i attributuppsättningsavsnittet.
 
-attributuppsättning: Ange ID:t för den attributuppsättning som du vill associera med den här regeln. Värdet all-attributes är ett specialfall som anger att alla attribut för den här regeln måste serialiseras.
+attributuppsättning : Ange ID:t för den attributuppsättning som du vill associera med den här regeln. Värdet all-attributes är ett specialfall som anger att alla attribut för den här regeln måste serialiseras.
 
 En attributuppsättning innehåller en lista med attribut som du vill söka efter i DITA-innehåll. Attributuppsättningen innehåller följande:
 
-id: En unik identifierare för attributuppsättningen. Detta ID anges i attributuppsättningsparametern för en regeluppsättning.
+id : En unik identifierare för attributuppsättningen. Detta ID anges i attributuppsättningsparametern för en regeluppsättning.
 
 attribute : En lista med attribut som du vill söka efter. För varje attribut måste du skapa en enskild post i `attribute` -element.
 
@@ -218,7 +217,7 @@ Utför följande steg för att köra arbetsflödet för metadataextrahering:
 
 1. Om du vill extrahera metadata från en enskild fil och dess beroenden klickar du på **Välj en fil** och bläddra efter en fil.
 
-1. Om du vill extrahera metadata från flera filer i en mapp klickar du på **Välj mapp** , bläddra och välj önskad mapp. Klicka på **Lägg till** om du vill lägga till mappen i listan med serialiseringsåtgärder.
+1. Om du vill hämta metadata från flera filer i en mapp klickar du på **Välj mapp** , bläddra och välj önskad mapp. Klicka på **Lägg till** om du vill lägga till mappen i listan med serialiseringsåtgärder.
 
    >[!NOTE]
    >
@@ -231,7 +230,7 @@ Utför följande steg för att köra arbetsflödet för metadataextrahering:
 
 ## Uteslut temporära filer från sökresultat {#id197AHI0035Z}
 
-Som standard utförs sökningen i hela AEM. Det kan finnas platser som du vill utesluta från sökningen. När du till exempel initierar arbetsflödet för översättning av innehåll blir de ogodkända filerna kvar i en temporär mapp. När du utför sökningen returneras filer från den här tillfälliga platsen också i sökresultaten.
+Som standard utförs sökningen i hela AEM. Det kan finnas platser som du vill utesluta från sökningen. När du till exempel initierar arbetsflödet för översättning av innehåll blir de ogodkända filerna kvar i en tillfällig mapp. När du utför sökningen returneras filer från den här tillfälliga platsen också i sökresultaten.
 
 Om du inte vill att AEM stödlinjer ska söka efter den tillfälliga platsen för översättningsmappen, måste du lägga till en tillfällig mappsökväg i exkluderingslistan.
 
@@ -262,5 +261,3 @@ Utför följande steg för att exkludera den tillfälliga översättningsmappen 
    | Egenskapsnamn | Typ | Värde |
    |-------------|----|-----|
    | excludePaths | Sträng\[\] | Lägg till följande värden i den här egenskapen: <br><ul><li>/var/dxml</li><li>/content/dam/projects/translation\_output</li></ul> |
-
-

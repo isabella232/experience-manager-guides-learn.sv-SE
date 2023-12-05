@@ -1,13 +1,12 @@
 ---
 title: Publicera ett ämne till ett innehållsfragment
 description: Publicera ett ämne eller elementen i ett ämne till ett innehållsfragment i AEM.  Lär dig hur du visar innehållsfragment för ett ämne och publicerar dem på nytt.
-source-git-commit: 6143bdcb4c8a9e1f35ea752cf1be142ab98a716b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
-
 
 # Publicera till ett innehållsfragment
 
@@ -41,7 +40,7 @@ Lägg till exempel `/conf/we-retail` i molnkonfigurationen. Den här konfigurati
      Beroende på din konfiguration kan administratören lägga till mappningarna i *contentFragmentMapping.json* -fil.
 
      <details>
-        <summary>Cloud Services</summary>
+        <summary>Cloud Service</summary>
 
      Läs mer om hur [skapa en mappning mellan ett ämne och ett innehållsfragment](../cs-install-guide/conf-content-fragment-mapping-cs.md) i Cloud Servicens installations- och konfigureringshandbok.
      </details>
@@ -65,4 +64,3 @@ Du kan även publicera om innehållsfragmentet för att uppdatera innehållsfrag
 
 
 När du har publicerat innehållsfragmenten kan du även använda dem på valfri AEM.
-

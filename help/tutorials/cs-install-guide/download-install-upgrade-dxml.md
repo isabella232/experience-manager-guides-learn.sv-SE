@@ -1,13 +1,12 @@
 ---
 title: AEM
 description: Lär dig hur du uppgraderar AEM
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
-
 
 # AEM {#id213BD050YPH}
 
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 1. Uppdatera dox/dox.installer/pom.xml.
 
-1. Uppdatera värdet för variabeln dox.version till versionsinformationen som tillhandahålls av Adobe.
+1. Uppdatera värdet för dox.version-variabeln till versionsinformationen som tillhandahålls av Adobe.
 
 1. Genomför ändringarna och kör Cloud Manager-pipeline för att distribuera det uppgraderade paketet.
 
@@ -29,4 +28,3 @@ ht-degree: 0%
 När uppgraderingen är klar måste alla användare rensa webbläsarens cache innan de kan använda den uppgraderade versionen av AEM.
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

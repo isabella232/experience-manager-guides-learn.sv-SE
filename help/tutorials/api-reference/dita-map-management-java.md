@@ -1,13 +1,12 @@
 ---
 title: Java-baserade API:er för DITA-kartor
 description: Lär dig mer om Java-baserade API:er för DITA-kartor
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
-
 
 # Java-baserade API:er för DITA-kartor {#id175UB30E05Z}
 
@@ -154,4 +153,3 @@ public static List
 **Parametrar**: |Namn|Typ|Beskrivning| |—|—|—| |`rootNode`|javax.jcr.Node|Rotnoden som alla beroenden ska hämtas för.|
 
 **Returnerar**: En nodlista som innehåller rotnodens alla beroenden.
-

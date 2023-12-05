@@ -1,10 +1,9 @@
 ---
 title: Översätta innehåll
 description: Lär dig hur du översätter innehåll till flera språk.
-exl-id: c8dacbdc-4b0b-44ca-82d4-889cd83741ff
-source-git-commit: 3d12389dbd7458a74bb9b9ec488e83bf39c8c9bf
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -42,14 +41,13 @@ Under den här sessionen får du lära dig mer om följande:
 
 - **Användarhandbok** - [Översätta innehåll](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map%2Ftranslation.html)
 
-- **Community-forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions)
+- **Community Forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions)
 
 >[!NOTE]
 >
 > Funktionerna som visas under den här sessionen finns i följande versioner av AEM.
 > - On-prem 4.1 eller senare
-> - Cloud Services 2207 eller senare
-
+> - Cloud Service 2207 eller senare
 
 ## Kontakta oss
 

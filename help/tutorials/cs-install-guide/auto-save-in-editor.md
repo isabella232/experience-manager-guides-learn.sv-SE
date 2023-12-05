@@ -1,13 +1,12 @@
 ---
 title: Konfigurera autosparande av filer i Web Editor
-description: Lär dig hur du konfigurerar automatisk filsparning i Web Editor
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+description: Lär dig hur du konfigurerar autosparande av filer i Web Editor
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera autosparande av filer i Web Editor {#id199CC0J0M5Z}
 
@@ -23,4 +22,3 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 | `xmleditor.autosaveinterval` | Ange tidsintervallet i sekunder för att aktivera funktionen för autosparande. |
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

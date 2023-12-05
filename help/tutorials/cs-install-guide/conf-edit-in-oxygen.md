@@ -1,13 +1,12 @@
 ---
 title: Konfigurera alternativet för redigering i syrgas
 description: Lär dig hur du konfigurerar alternativet att redigera i plugin-programmet för syreanslutning.
-source-git-commit: a209e46e41055348402292e20c229890cd0c01cf
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera alternativet för redigering i syrgas
 
@@ -26,4 +25,3 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 > Den här konfigurationen är inaktiverad som standard och alternativet är inte tillgängligt i Web Editor.
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

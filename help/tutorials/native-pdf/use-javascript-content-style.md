@@ -1,8 +1,7 @@
 ---
 title: Publiceringsfunktion för PDF | Använd JavaScript för att arbeta med innehåll eller format
 description: Lär dig hur du skapar formatmallar och skapar format för ditt innehåll.
-exl-id: 2f301f6a-0d1c-4194-84c2-0fddaef8d3ec
-source-git-commit: 99ca14a816630f5f0ec1dc72ba77994ffa71dff6
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -11,8 +10,8 @@ ht-degree: 0%
 
 # Använd JavaScript för att arbeta med innehåll eller stil
 
-Med funktionen för publicering i PDF kan du köra JavaScript för att ändra innehåll eller format som används på innehåll innan PDF skapas. Med den här funktionen får du fullständig kontroll över hur det slutliga resultatet genereras. Du kan till exempel lägga till juridisk information till utdata från PDF, som finns i andra PDF. Med JavaScript kan du lägga till juridisk information när PDF har skapats för basinnehållet, men innan PDF skapas.\
-För att JavaScript-körning ska fungera får du följande callback-funktioner i Native PDF-publiceringsfunktionen:
+Med funktionen för publicering i PDF kan du köra JavaScript för att ändra innehåll eller format som används på innehåll innan PDF skapas. Med den här funktionen får du fullständig kontroll över hur det slutliga resultatet genereras. Du kan till exempel lägga till juridisk information till utdata från PDF, som finns i andra PDF. Med JavaScript kan du lägga till juridisk information när PDF har skapats för basinnehållet, men innan det slutliga PDF skapas.\
+För att JavaScript-körning ska fungera får du följande callback-funktioner med funktionen Native PDF:
 
 * `window.pdfLayout.onBeforeCreateTOC(callback)`: Den här återanropsfunktionen körs innan innehållsförteckningen genereras.
 * `window.pdfLayout.onBeforePagination(callback)`: Den här återanropsfunktionen körs efter att innehållsförteckningen har genererats, men innan sidbrytningar läggs till i PDF.
@@ -70,7 +69,7 @@ De utdata som skapas med den här koden och mallen visar figurtiteln nedanför b
 
 <img src="./assets/fig-title-below-image.png" width="500">
 
-## Lägga till en vattenstämpel i utdata från PDF för utkast till dokument {#watermark-draft-document}
+## Lägga till en vattenstämpel i PDF för utkast till dokument {#watermark-draft-document}
 
 Du kan också använda JavaScript för att lägga till villkorliga vattenstämplar. Dessa vattenstämplar läggs till i dokumentet när det definierade villkoret är uppfyllt.\
 Du kan t.ex. skapa en JavaScript-fil med följande kod för att skapa en vattenstämpel i PDF som visar dokumentet som ännu inte har godkänts. Den här vattenstämpeln visas inte om du genererar PDF för dokumentet i dokumentet Godkänt.

@@ -1,10 +1,9 @@
 ---
 title: Starta Web Editor
 description: Lär dig hur du startar webbredigeraren från AEM navigeringssida, AEM Assets-gränssnitt och DITA-kartkonsol i AEM.
-exl-id: f02f9612-7aaa-42ea-bad3-c44d23b5d034
-source-git-commit: 3cc7a9bf91881ed09173077be7d7fc7705295e4b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -39,7 +38,7 @@ När du har startat webbredigeraren utan att välja någon fil visas en tom webb
 
   <details>
 
-  <summary> Cloud Services </summary>
+  <summary> Cloud Service </summary>
 
   Om du använder Cloud Service klickar du på **Stäng** för att gå tillbaka till AEM.
   </details>

@@ -1,13 +1,12 @@
 ---
 title: Bilaga
 description: Lär dig förbereda InDesign-dokument för migrering
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2866'
+source-wordcount: '2852'
 ht-degree: 0%
 
 ---
-
 
 # Bilaga {#id195AD0L60Y4}
 
@@ -21,12 +20,12 @@ Du kan köra de angivna skripten för att validera referenserna. Dessa skript ka
 
 - `/bin/fmdita/validatebtree?operation=validate` - rapporterar eventuella brutna innehållsreferenser, men korrigerar dem inte.
 
-- `/bin/fmdita/validatebtree?operation=patch` - visar brutna innehållsreferenser och korrigeringar eller korrigerar dem.
+- `/bin/fmdita/validatebtree?operation=patch` - visar brutna innehållsreferenser och korrigerar dem.
 
 
 **Validera skript**
 
-Följ de här stegen för att kontrollera referenserna med det valideringsskript som finns i produktpaketet:
+Gör så här för att kontrollera referenserna med det valideringsskript som finns i produktpaketet:
 
 1. Kör valideringsskriptet \[`/bin/fmdita/validatebtree?operation=validate`\] för att kontrollera om det finns några nya brutna referenser.
 1. Om valideringsskriptet rapporterar fel kan du åtgärda det med hjälp av korrigeringsskriptet.
@@ -40,7 +39,7 @@ Följ de här stegen för att kontrollera referenserna med det valideringsskript
 
 Utför följande steg för att korrigera eventuella brutna referenser med hjälp av det korrigeringsskript som finns i produktpaketet:
 
-1. Kör korrigeringsskriptet `[/bin/fmdita/validatebtree?operation=patch]` för att korrigera de brutna referenserna. Skriptkörningen tar några minuter och skriver ut loggarna medan den fortsätter. När exekveringen är klar skrivs den ut`Done`&quot; i slutet.
+1. Kör korrigeringsskriptet `[/bin/fmdita/validatebtree?operation=patch]` för att korrigera brutna referenser. Skriptkörningen tar några minuter och skriver ut loggarna medan den fortsätter. När exekveringen är klar skrivs den ut`Done`&quot; i slutet.
 
 >[!NOTE]
 >
@@ -62,23 +61,23 @@ Den skapade loggfilen registrerar all information som är relaterad till skriptk
 
 ## Förbered InDesign-filer för konvertering {#id195DBF0045Z}
 
-InDesign ger författarna en mängd funktioner för att skapa tilltalande och komplexa dokument. Det innebär ofta att de olika delarna av ett dokument placeras visuellt på sidan, men att inget försök görs att skapa något flöde mellan dessa textramar. När *läsordning*&#39; of the text frames is not defined, the IDML file will contain stories that may not follow any purpose order. Slutresultatet blir ett eller flera DITA-avsnitt med stycken, tabeller och bilder i slumpmässig ordning.
+InDesign ger författarna en mängd funktioner för att skapa attraktiva och komplexa dokument. Det innebär ofta att de olika delarna av ett dokument placeras visuellt på sidan, men att inget försök görs att skapa något flöde mellan dessa textramar. När *läsordning*&#39; of the text frames is not defined, the IDML file will contain stories that may not follow any purpose order. Slutresultatet blir ett eller flera DITA-avsnitt med stycken, tabeller och bilder i slumpmässig ordning.
 
-Även om det går att redigera DITA-innehållet i en vettig ordning i en DITA-redigerare är det mycket enklare att åtgärda InDesign-filen innan du skapar IDML-filen. Detta kan du göra utan att ändra utseendet på källdokumentet. Det har också fördelen att göra källdokumentet tillgängligt genom att rätt definiera läsordningen.
+Även om det går att redigera DITA-innehåll i en vettig ordning i en DITA-redigerare är det mycket enklare att åtgärda InDesignen innan du skapar IDML-filen. Detta kan du göra utan att ändra utseendet på källdokumentet. Det har också fördelen att göra källdokumentet tillgängligt genom att rätt definiera läsordningen.
 
 ***Koppla textramar***
 
-InDesign använder termen *&#39;threading&#39;* för att länka en ram till en annan. Mer information om att koppla textramar finns i *[Koppla text](https://helpx.adobe.com/in/indesign/using/threading-text.html)* i dokumentationen för InDesign.
+InDesignen använder termen *&#39;threading&#39;* för att länka en ram till en annan. Mer information om att koppla textramar finns i *[Koppla text](https://helpx.adobe.com/in/indesign/using/threading-text.html)* i InDesignens dokumentation.
 
 ***Överlappande bildrutor***
 
-I vissa InDesign-dokument används icke-kopplade överlappande ramar av layoutskäl. Det kan vara mycket svårt att sammanfoga det här innehållet i huvudtråden. Det bästa alternativet kan vara att redigera resultatet i DITA-miljön.
+I vissa InDesigner används icke-kopplade överlappande bildrutor av layoutskäl. Det kan vara mycket svårt att sammanfoga det här innehållet i huvudtråden. Det bästa alternativet kan vara att redigera resultatet i DITA-miljön.
 
-***InDesign stories***
+***InDesigner***
 
-Varje kopplat innehållsflöde i ett InDesign-dokument kallas för *artikel*&#39;. För bästa resultat bör du begränsa antalet artiklar. Det finns dock vissa delar av dokumentet som kanske inte behövs i DITA-utdata. Sidfötter behövs till exempel sällan, men de kan visas mitt i ett avsnitt om de inte hanteras försiktigt.
+Varje kopplat innehållsflöde i ett InDesign-dokument kallas *artikel*&#39;. För bästa resultat rekommenderar vi att du begränsar antalet artiklar. Det finns dock vissa delar av dokumentet som kanske inte behövs i DITA-utdata. Sidfötter behövs till exempel sällan, men de kan visas mitt i ett avsnitt om de inte hanteras försiktigt.
 
-Det enklaste sättet att exkludera text som inte behövs i dokumentet är att ge den ett särskilt sätt *Stycketagg* som bara används för det oönskade innehållet. I stället för att återanvända en *\[Allmänt stycke\]* för sidfoten, skapa en dedikerad *Sidfot* -tagg. I filen MapStyle anger du sedan bara *Sidfot* stycken som ska tas bort så här:
+Det enklaste sättet att exkludera text som inte behövs i dokumentet är att ge den ett särskilt sätt *Stycke* som bara används för det oönskade innehållet. I stället för att återanvända en *\[Allmänt stycke\]* för sidfoten, skapa en dedikerad *Sidfot* -tagg. I filen MapStyle anger du sedan bara *Sidfot* stycken som ska tas bort så här:
 
 ```
 <paraRule style="Footer" local="0" refactor="drop">
@@ -92,7 +91,7 @@ Det är viktigt att källdokumentet har minst ett styckeformat eller -element so
 
 ***Flera DITA-dokumenttyper***
 
-Om en del av *Rubrik1* stycken måste konverteras till olika DITA-dokumenttyper och sedan duplicera styckeformatet i InDesign. Ge dessa format ett enkelt namn som *Rubrik1\_genAktivitet* eller *Rubrik1\_felsökning* i tillämpliga fall. Konfigurera sedan filen mapStyle enligt nedan:
+Om en del av *Rubrik1* stycken måste konverteras till olika DITA-dokumenttyper och sedan dupliceras styckeformatet i InDesign. Ge dessa format ett enkelt namn som *Rubrik1\_genAktivitet* eller *Rubrik1\_felsökning* i tillämpliga fall. Konfigurera sedan filen mapStyle enligt nedan:
 
 ```
 <doctypes>
@@ -108,23 +107,23 @@ Om en del av *Rubrik1* stycken måste konverteras till olika DITA-dokumenttyper 
 </doctypes>
 ```
 
-***Strukturerade InDesign-dokument***
+***Dokument med strukturerad InDesign***
 
-InDesign har ett löst förhållande till XML. Även om ett dokument kan innehålla en DTD för XML och huvudartikeln kan vara giltig mot DTD-filen, går det också att skapa hybriddokument där en del av innehållet är XML, men ingen DTD inkluderas. Detta är de oönskade fallen vid en lyckad konvertering till DITA. Om ett dokument innehåller XML-delar kan du försöka spara utdata i XML-format och se om resultaten är godtagbara. Annars kommer DITA-innehållet också att innehålla ogiltigt innehåll eller misslyckas helt.
+InDesignen har ett löst förhållande till XML. Även om ett dokument kan innehålla en DTD för XML och huvudartikeln kan vara giltig mot DTD-filen, går det också att skapa hybriddokument där en del av innehållet är XML, men inget DTD-dokument inkluderas. Detta är de oönskade fallen vid en lyckad konvertering till DITA. Om ett dokument innehåller XML-delar kan du försöka spara utdata i XML-format och se om resultaten är godtagbara. Annars kommer DITA-innehållet också att innehålla ogiltigt innehåll eller misslyckas helt.
 
 ***Tabellformatering***
 
-Konverteringen från tabellformateringsregler för InDesign till motsvarande tabellformatering i DITA är en komplex process. Detta beror på de omfattande formateringsfunktioner som finns i källfilerna jämfört med de grundläggande alternativen i Oasis \(CALS\)-tabellmodellen som används i DITA. Lodrät och vågrät textjustering tillhandahålls och ger liknande resultat även om Justerad text alltid justeras enligt textriktningen, medan InDesign tillåter Vänsterjusterad och Högerjusterad.
+Konverteringen från tabellformateringsregler för InDesign till motsvarande tabellformatering i DITA är en komplex process. Detta beror på de omfattande formateringsfunktioner som finns i källfilerna jämfört med de grundläggande alternativen i Oasis \(CALS\)-tabellmodellen som används i DITA. Lodrät och vågrät textjustering tillhandahålls och ger liknande resultat, även om Justerad text alltid justeras enligt textriktningen, medan InDesign tillåter Vänsterjusterad och Högerjusterad.
 
-InDesign-hantering av kolumn- och radavgränsare är nu mer kapabelt än Oasis-tabellens grundläggande alternativ. InDesign har fyra cellkanter - Kantlinjetyp \(heldragen eller mönster\), Kantbredd, Kantfärg, Kantfärgton, Kantmellanrumsfärg och Kantmellanrumston. Alla dessa måste mappas nedåt till kantlinjer till höger och nederst i varje cell \(entry element\) där de enda alternativen är 0 eller 1 - dölj kantlinjen eller visa kantlinjen.
+InDesignens hantering av kolumn- och radavgränsare är nu ännu mer användbar än tabellmodellens grundläggande alternativ i Oasis. InDesign har fyra cellkanter - Kantlinjetyp \(heldragen eller mönster\), Kantbredd, Kantfärg, Kantfärg, Kantmellanrumsfärg och Kantmellanrumston. Alla dessa måste mappas nedåt till kantlinjer till höger och nederst i varje cell \(entry element\) där de enda alternativen är 0 eller 1 - dölj kantlinjen eller visa kantlinjen.
 
-Kantlinjaler i InDesign kan tillämpas på följande nivåer:
+Kantlinjering i InDesign kan användas på följande nivåer:
 
 - Tabellformat
 - Cellformat
 - Lokala åsidosättningar i varje cell
 
-Vid konverteringen från InDesign till DITA tillämpas gränsvärdet enligt följande:
+InDesignen till DITA-konverteringsprocessen tillämpar kantlinjalen enligt följande:
 
 - Tabellformat kopplas till `colspec/@colsep` för lodräta regler. Vågräta linjer mappas till `row/@rowsep` -attribut. I båda fallen skapas inte attributet om kantlinjen inte är definierad.
 - Cellformat kopplas till `entry/@colsep` och `entry/@rowsep` attribut. Dessa värden åsidosätter alla härledda kanter i tabellformat.
@@ -132,13 +131,13 @@ Vid konverteringen från InDesign till DITA tillämpas gränsvärdet enligt föl
 
 ***Alternerande mönster***
 
-Med tabellformat i InDesign kan stapel- och cellinjer följa ett alternerande mönster. Den här funktionen stöds för konvertering, men resultatet blir bara tydligt när en mönstergrupp mappas till reglaget \(1\) och den andra mönstergruppen mappar till att dölja reglaget \(0\).
+Med tabellformat för InDesigner kan stapel- och cellinjer följa ett alternerande mönster. Den här funktionen stöds för konvertering, men resultatet blir bara tydligt när en mönstergrupp mappas till reglaget \(1\) och den andra mönstergruppen mappar till att dölja reglaget \(0\).
 
 ## Förbered mappningsfilen för InDesign till DITA-migrering {#id194AF0003HT}
 
-För korrekt DITA-konvertering krävs en mappningsfil som matchar innehållet i källdokumentet. För ostrukturerade InDesign-dokument innebär detta att alla tillgängliga styckeformat och teckenformat måste kopplas. För XML-strukturerade InDesign-dokument måste alla element i tillhörande DTD mappas.
+För korrekt DITA-konvertering krävs en mappningsfil som matchar innehållet i källdokumentet. För dokument med ostrukturerad InDesign innebär detta att alla tillgängliga styckeformat och teckenformat måste kopplas. För dokument med XML-strukturerad InDesign måste alla element i tillhörande DTD mappas.
 
-Mappningsfilerna för ostrukturerade och strukturerade InDesign-dokument är olika. Detta beror på de mer komplexa bearbetningskrav som ställs för att konvertera ostrukturerat källinnehåll till DITA.
+Mappningsfilerna för ostrukturerade och strukturerade InDesigner är olika. Detta beror på de mer komplexa bearbetningskrav som ställs för att konvertera ostrukturerat källinnehåll till DITA.
 
 Nedan visas ett exempel på mappningsfilen:
 
@@ -237,11 +236,11 @@ The `doctypeParaRule` -element är obligatoriskt. Detta ger konverteringsprocess
 </paraRule>
 ```
 
-I ovanstående exempel finns två `paraRule` element för `@style` = &quot;Rubrik1&quot;. Skapa en motsvarighet `doctypeParaRule` -element med `@mapToDoctype` attributet är obligatoriskt.
+I exemplet ovan finns två `paraRule` element för `@style` = &quot;Rubrik1&quot;. Skapa en motsvarighet `doctypeParaRule` -element med `@mapToDoctype` attributet har angetts som obligatoriskt.
 
 Attributen som används i `doctypeParaRule` förklaras nedan:
 
-- `@style`: Namnet på ett format i InDesign-källdokumentet.
+- `@style`: Namnet på ett format i källdokumentet för InDesign.
 - `@local`: Se [\#id194CG0V005Z](#id194CG0V005Z).
 - `@mapToDoctype`: Namnet på en DITA-ämnestyp från en numrerad lista med alla giltiga `doctypes`.
 
@@ -257,7 +256,7 @@ Attributen som används i `wrap` förklaras nedan:
 
 - `@element`: Ett plustecken efter ett elementnamn visar att alla intilliggande element med samma namn kommer att kapslas in i elementet som namnges i `@wrapper`-attribut.
 - `@wrapper`: Namnet på figursättningselementet.
-- `@context`: Ger ett sätt att ytterligare förfina hur ett visst element radbryts. I följande exempel visas ett sätt att mappa en serie med `li` element i antingen en ordnad lista `ol` eller en osorterad lista `ul` enligt `@context` värdet \(kontexten definieras på `paraRule` element\):
+- `@context`: Innehåller ett sätt att ytterligare förfina hur ett visst element radbryts. I följande exempel visas ett sätt att mappa en serie `li` element i antingen en ordnad lista `ol` eller en osorterad lista `ul` enligt `@context` värdet \(kontexten definieras på `paraRule` element\):
 
   ```
   <wrap elements="li+" context="number" wrapper="ol">
@@ -271,7 +270,7 @@ Attributen som används i `wrap` förklaras nedan:
 
 I följande exempel visas hur du skapar en `fig` element från `title` och `image` element:
 
-- `@elements`: Elementen som anges och avgränsas med kommatecken radbryts i elementet som namnges i `@wrapper` -attribut. På grund av det vanliga sättet att ta med bildtitlar under bilden kommer titeln att vara `title` element omedelbart efter `image`.
+- `@elements`: Elementen som anges och avgränsas med kommatecken radbryts i elementet som namnges i `@wrapper` -attribut. På grund av det vanliga sättet att ta med bildtitlar under bilden blir titeln `title` element omedelbart efter `image`.
 
   Följande radbrytningsregel:
 
@@ -298,11 +297,11 @@ I följande exempel visas hur du skapar en `fig` element från `title` och `imag
   ```
 
 - `@wrapper`: Namnet på figursättningselementet.
-- `@context`: Ger ett sätt att ytterligare förfina hur ett visst element bryts \(sammanhanget definieras på `paraRule` element\).
+- `@context`: Innehåller ett sätt att ytterligare förfina hur ett visst element bryts \(sammanhanget definieras på `paraRule` element\).
 
 I följande exempel visas hur du flyttar en `title` till en `table`:
 
-- `@elements`: The `title` element som finns omedelbart före eller omedelbart efter `table` kommer att kapslas in i elementet som namnges i `@wrapper` -attribut. Ett XPath-liknande predikat kan identifiera positionen för title-elementet som `[before]` eller `[after]`.
+- `@elements`: `title` element som finns omedelbart före eller omedelbart efter `table` kommer att kapslas in i elementet som namnges i `@wrapper` -attribut. Ett XPath-liknande predikat kan identifiera positionen för title-elementet som `[before]` eller `[after]`.
 
   Exempel: Följande radbrytningsregel:
 
@@ -334,7 +333,7 @@ I följande exempel visas hur du flyttar en `title` till en `table`:
 
 - `@wrapper`: Namnet på figursättningselementet.
 
-- `@context`: Ger ett sätt att ytterligare förfina hur ett visst element bryts \(sammanhanget definieras på `paraRule` element\).
+- `@context`: Innehåller ett sätt att ytterligare förfina hur ett visst element bryts \(sammanhanget definieras på `paraRule` element\).
 
 
 **Regler för styckeformat**
@@ -343,25 +342,25 @@ The `paragraphStyleRule` beskrivs nedan:
 
 ** `paraRule` element**
 
-The `paraRule` -element är obligatoriskt. Detta anger mappningsreglerna för alla styckeformat. I ett InDesign-dokument finns all text i en understruktur till styckeformat, även stycken utan format namnges `\[No paragraph style\]`. De här hakparenteserna anger ett inbyggt InDesign-formatnamn.
+The `paraRule` -element är obligatoriskt. Detta anger mappningsreglerna för alla styckeformat. I ett textdokument finns all InDesign i en understruktur till styckeformatmallar, även stycken utan format namnges `\[No paragraph style\]`. Hakparenteserna anger ett inbyggt namn på InDesignen.
 
 >[!NOTE]
 >
-> Hakparenteserna indikerar ett inbyggt InDesign-formatnamn.
+> Hakparenteserna anger ett inbyggt namn på InDesignen.
 
 Attributen som används i `paraRule` förklaras nedan:
 
-- `@style`: Namnet på ett format i InDesign-källdokumentet.
+- `@style`: Namnet på ett format i källdokumentet för InDesign.
 - `@local`: Se [\#id194CG0V005Z](#id194CG0V005Z).
 - `@mapTo`: Namnet på ett DITA-målelement.
 
-- `@context`: Det här attributet används för att länka till ett specifikt **bryt** -regel när mer än ett radbrytningsalternativ är tillgängligt. Exempel: den `li` -element kan kapslas i antingen en `ol`, eller en `ul` -element. Om du vill identifiera de olika listtyperna kan du använda ett specifikt formatnamn eller `@local` som kan visa följande:
-   - `local="p[-|-|-|-|-|b|-|-]"` Där &#39;`b`&#39; i fält 6 anger ett punktlisteobjekt. I det här fallet `@context` till`bullet`&#39;.
-   - `local="p[-|-|-|-|-|n|-|-]"` Där &#39;`n`&#39; i fält 6 anger ett numrerat listobjekt. I det här fallet `@context` till`number`&#39;.
+- `@context`: Det här attributet används för att länka till ett specifikt **bryt** -regel när mer än ett radbrytningsalternativ är tillgängligt. Exempel: `li` -element kan kapslas i antingen en `ol`, eller en `ul` -element. Om du vill identifiera de olika listtyperna kan du använda ett specifikt formatnamn eller `@local` som kan visa följande:
+   - `local="p[-|-|-|-|-|b|-|-]"` Där &#39;`b`&#39; i fält 6 anger ett punktlisteobjekt. I det här fallet `@context` till &#39;`bullet`&#39;.
+   - `local="p[-|-|-|-|-|n|-|-]"` Där &#39;`n`&#39; i fält 6 anger ett numrerat listobjekt. I det här fallet `@context` till &#39;`number`&#39;.
 
 - `@commentOut`: Det här attributet aktiverar kapsling av målelementet i XML-kommentarer så att informationen inte går förlorad utan kan hanteras manuellt av användaren. Detta är användbart om källinnehållet inte kan tvingas att följa DITA-strukturregler.
 
-- `@refactor`: Det här valfria attributet har två värden:
+- `@refactor`: Det här valfria attributet kan ha två värden:
 
 - `unwrap`: Det matchande elementet tas bort samtidigt som innehållet behålls.
 
@@ -380,14 +379,14 @@ The `charRule` beskrivs nedan:
 
 Detta är ett valfritt element.
 
-Detta är mappningsreglerna för alla teckenformat. I ett InDesign-dokument finns all text i underordnade element till teckenformat.
+Detta är mappningsreglerna för alla teckenformat. I ett textdokument finns all InDesign i underordnade element till teckenformat.
 
 Attributen som används i `charRule` förklaras nedan:
 
-- `@style`: Namnet på ett format i InDesign-källdokumentet.
+- `@style`: Namnet på ett format i källdokumentet för InDesign.
 - `@local`: Se [\#id194CG0V005Z](#id194CG0V005Z).
 - `@mapTo`: Namnet på ett DITA-målelement.
-- `@refactor`: Det här valfria attributet har två värden:
+- `@refactor`: Det här valfria attributet kan ha två värden:
    - `unwrap`: Det matchande elementet tas bort samtidigt som innehållet behålls.
 
    - `drop`: Det matchande elementet och allt dess innehåll tas bort.
@@ -428,7 +427,7 @@ Attributen som används i `attributeRules` förklaras nedan:
 
 **Lokala formateringskoder**
 
-I alla InDesign-dokument kan du använda flera hundra olika formatåsidosättningar för styckeformat och teckenformat. De flesta av dessa egenskaper har ingen användbar roll i konverteringsprocessen. Vi har dock identifierat en viktig uppsättning formateringsfunktioner som påverkar dokumentets semantik och som måste påverka konverteringsprocessen.
+I alla slags InDesigner kan det finnas flera hundra olika formatåsidosättningar för styckeformat och teckenformat. De flesta av dessa egenskaper har ingen användbar roll i konverteringsprocessen. Vi har dock identifierat en viktig uppsättning formateringsfunktioner som påverkar dokumentets semantik och som måste påverka konverteringsprocessen.
 
 The `@local` attribut anges som ett särskilt avgränsat format där åtta fält anges tillsammans med ett prefix som visar typen av formateringsåsidosättning. Formateringskodfälten visas nedan:
 
@@ -438,7 +437,7 @@ The `@local` attribut anges som ett särskilt avgränsat format där åtta fält
 - **Teckenposition** för upphöjd eller nedsänkt text.
 - **Under** för understreck.
 - **Genomstrykning** för genomstrykning.
-- **Listkod** för att identifiera listtyp som punktlistor eller numrerade - används inte alltid av InDesign.
+- **Listkod** för att identifiera listtyp som punktlistor eller numrerade - används inte alltid som InDesign.
 - **Punktkod** listar alla definierade punkttyper i dokumentet.
 - **Nummerkod** visar alla definierade numreringsformat i dokumentet.
 
@@ -466,24 +465,22 @@ Den här listan innehåller alla [\#id194CGC00SHS](#id194CGC00SHS)-element.
 
 **`elementRule`element**
 
-The `elementRule` -element är obligatoriskt. Detta är mappningsreglerna för alla källelement. Ett InDesign-dokument innehåller ostrukturerade formatelement, men dessa ignoreras för strukturerat innehåll såvida inte &#39;***hybridläge*** Bearbetning är aktiverat.
+The `elementRule` -element är obligatoriskt. Detta är mappningsreglerna för alla källelement. Ett dokument innehåller ostrukturerade formatelement, men de ignoreras för strukturerat innehåll såvida inte &#39;***hybridläge*** Bearbetning är aktiverat.
 
 Attributen som används i `elementRule` förklaras nedan:
 
-- `@elementName`: Namnet på ett element i InDesign-källdokumentet.
+- `@elementName`: Namnet på ett element i källdokumentet för InDesign.
 
 - `@local`: Se [\#id194CG0V005Z](#id194CG0V005Z). \(Endast användbart för hybrid-dokument\).
 
 - `@mapTo`: Namnet på ett DITA-målelement.
 
-- `@refactor`: Det här valfria attributet har två värden:
+- `@refactor`: Det här valfria attributet kan ha två värden:
 
    - `unwrap`: Det matchande elementet tas bort samtidigt som innehållet behålls.
 
    - `drop`: Det matchande elementet och allt dess innehåll tas bort.
 
-- `@context`: Det här attributet används för att länka till en viss radbrytningsregel när mer än ett radbrytningsalternativ är tillgängligt. Exempel: den `li` -element kan kapslas i antingen en `ol`, eller en `ul` -element.
+- `@context`: Det här attributet används för att länka till en viss radbrytningsregel när mer än ett radbrytningsalternativ är tillgängligt. Exempel: `li` -element kan kapslas i antingen en `ol`, eller en `ul` -element.
 
 - `@commentOut`: Det här attributet aktiverar kapsling av målelementet i XML-kommentarer så att informationen inte går förlorad utan kan hanteras manuellt av användaren. Detta är användbart om källinnehållet inte kan tvingas att följa DITA-strukturregler.
-
-

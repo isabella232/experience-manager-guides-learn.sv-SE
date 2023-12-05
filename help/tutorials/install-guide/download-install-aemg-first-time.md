@@ -1,13 +1,12 @@
 ---
 title: Hämta och installera AEM för första gången
 description: Lär dig hur du hämtar och installerar AEM för första gången
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
-
 
 # Hämta och installera AEM för första gången {#id213BCL00KEV}
 
@@ -31,7 +30,7 @@ Så här hämtar och installerar du AEM Guides för första gången på en dator
 
 1. Om du vill överföra AEM stödlinjer klickar du på **Överför paket**.
 
-1. I dialogrutan Överför paket går du till AEM Guides som du laddade ned i steg 1 och klickar på **OK**.
+1. I dialogrutan Överför paket går du till filen AEM stödlinjer som du laddade ned i steg 1 och klickar på **OK**.
 
    Paketet överförs till din AEM.
 
@@ -49,4 +48,3 @@ Så här hämtar och installerar du AEM Guides för första gången på en dator
 > Utför installationsproceduren på alla instanser av AEM servrar i installationen.
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

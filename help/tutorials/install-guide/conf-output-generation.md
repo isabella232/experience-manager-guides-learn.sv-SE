@@ -1,9 +1,9 @@
 ---
 title: Konfigurera inställningar för utdatagenerering
 description: Lär dig hur du konfigurerar inställningar för generering av utdata
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '5761'
+source-wordcount: '5762'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 AEM Guides innehåller många konfigurationsalternativ som du kan använda för att anpassa genereringsprocessen för utdata. I det här avsnittet beskrivs alla konfigurationer och anpassningar som kan hjälpa dig att skapa utdata.
 
-## Konfigurera fliken Baslinje på DITA-kartkontrollpanelen {#id223MD0D0YRM}
+## Konfigurera fliken Baslinje på kontrollpanelen för DITA-kartor {#id223MD0D0YRM}
 
 Du kan konfigurera och dölja fliken Baslinje som finns på kartkontrollpanelen.
 
@@ -39,11 +39,11 @@ The **Dölj fliken Baslinje** är inte aktiverat som standard och du måste akti
 
 ## Konfigurera FrameMaker Publishing Server {#id1678G0Z0TN6}
 
-Du kan använda FrameMaker Publishing Server \(FMPS\) för att generera utdata för DITA-innehåll. Om du konfigurerar FMPS kan du generera utdata i flera format som stöds av FMPS.
+Du kan använda FrameMakra Publishing Servern \(FMPS\) för att generera utdata för DITA-innehåll. Om du konfigurerar FMPS kan du generera utdata i flera format som stöds av FMPS.
 
 >[!NOTE]
 >
-> Om du vill generera utdata med FMPS måste du ha FMPS-servern konfigurerad. Installations- och konfigurationsinformation finns i användarhandboken för FrameMaker Publishing Server.
+> Om du vill generera utdata med FMPS måste du ha FMPS-servern konfigurerad. Installations- och konfigurationsinformation finns i FrameMakra Publishing Serverns användarhandbok.
 
 Om du vill konfigurera AEM stödlinjer så att de använder FMPS uppdaterar du följande egenskaper i `com.adobe.fmdita.config.ConfigManager` i webbkonsolen.
 
@@ -53,13 +53,13 @@ Om du vill konfigurera AEM stödlinjer så att de använder FMPS uppdaterar du f
 
 | Egenskap | Beskrivning |
 |--------|-----------|
-| Inloggningsdomän för FrameMaker Publishing Server | Ange domännamnet eller namnet på arbetsgruppen där FrameMaker Publishing Server finns. Baserat på FMPS-versionen anger du domännamnet som:-   **FMPS 2020**: IP-adress som 192.168.1.101 <br>- **FMPS 2019 och tidigare**: IP-adress eller domännamn |
-| FrameMaker Publishing Server URL | Ange URL:en för FrameMaker Publishing Server. Baserat på FMPS-versionen anger du URL:en för FMPS enligt följande:<br>- **FMPS 2020**: `http://<fmps_ip>:<port>` \(http://192.168.1.101:7000\) <br> - **FMPS 2019 och tidigare**: `http://<fmps_ip>:<port>/fmserver/v1/` |
-| FMPS-version | Ange versionsnumret för FrameMaker Publishing Server. Baserat på FMPS-versionen anger du versionsinformationen som: <br>- **FMPS 2020**: 2020 <br> - **FMPS 2019 och tidigare**: 2019 eller 2017 |
-| Användarnamn och lösenord för FrameMaker Publishing Server | Ange användarnamn och lösenord för att komma åt FrameMaker Publishing Server. |
-| FMPS-timeout | \(*Valfritt*\) Ange tiden \(i sekunder\) för vilken AEM väntar på ett svar från FrameMaker Publishing Server. Om inget svar tas emot under den angivna tiden avbryts publiceringsaktiviteten och aktiviteten flaggas som misslyckad. <br> Standardvärde: 300 sekunder \(5 minuter\) |
-| Extern AEM-URL | *\(Valfritt\)* Den AEM URL där FrameMaker Publishing Server placerar de genererade utdatafilerna. Till exempel, `http://<server-name>:<port>/`. |
-| AEM administratörens användarnamn och lösenord | *\(Valfritt\)* Användarnamn och lösenord för en administratör för AEM. Det används av FrameMaker Publishing Server för att kommunicera med AEM. |
+| Inloggningsdomän för FrameMaker Publishing Server | Ange domännamnet eller arbetsgruppsnamnet där FrameMakra Publishing Servern finns. Baserat på FMPS-versionen anger du domännamnet som:-   **FMPS 2020**: IP-adress som 192.168.1.101 <br>- **FMPS 2019 och tidigare**: IP-adress eller domännamn |
+| FrameMaker Publishing Servers-URL | Ange FrameMakra Publishing Serverns URL. Baserat på FMPS-versionen anger du URL:en för FMPS enligt följande:<br>- **FMPS 2020**: `http://<fmps_ip>:<port>` \(http://192.168.1.101:7000\) <br> - **FMPS 2019 och tidigare**: `http://<fmps_ip>:<port>/fmserver/v1/` |
+| FMPS-version | Ange FrameMakra Publishing Serverns versionsnummer. Baserat på FMPS-versionen anger du versionsinformationen som: <br>- **FMPS 2020**: 2020 <br> - **FMPS 2019 och tidigare**: 2019 eller 2017 |
+| Användarnamn och lösenord för FrameMaker Publishing Server | Ange användarnamn och lösenord för att komma åt FrameMakra Publishing Servern. |
+| FMPS-timeout | \(*Valfritt*\) Ange tiden \(i sekunder\) för vilken AEM väntar på ett svar från FrameMakra Publishing Servern. Om inget svar tas emot under den angivna tiden avbryts publiceringsaktiviteten och aktiviteten flaggas som misslyckad. <br> Standardvärde: 300 sekunder \(5 minuter\) |
+| Extern AEM-URL | *\(Valfritt\)* Den AEM URL där FrameMakra Publishing Servern ska placera de genererade utdatafilerna. Till exempel: `http://<server-name>:<port>/`. |
+| AEM administratörens användarnamn och lösenord | *\(Valfritt\)* Användarnamn och lösenord för en administratör för AEM. Detta används som FrameMaker Publishing Server för att kommunicera med AEM. |
 | Timeout för väntan på körning av FMPS-aktivitet | Den här inställningen gäller endast för FMPS 2020. Ange tiden \(i sekunder\) efter vilken FMPS slutar vänta på att den här processen ska köras. |
 
 ## Konfigurera blandad publicering på en befintlig AEM {#id1691I0V0MGR}
@@ -68,7 +68,7 @@ Om du har en AEM webbplats som innehåller DITA-innehåll kan du konfigurera din
 
 ![](assets/publish-in-aem-site.png){width="300" align="left"}
 
-De återstående noderna på sidan redigeras direkt från AEM. Om du konfigurerar publiceringsinställningen för att publicera DITA-innehåll på en fördefinierad plats, säkerställs att inget av ditt befintliga icke-DITA-innehåll ändras i publiceringsprocessen för AEM.
+De återstående noderna på sidan redigeras direkt från AEM. Om du konfigurerar publiceringsinställningen så att DITA-innehåll publiceras på en fördefinierad plats, säkerställs att inget av ditt befintliga icke-DITA-innehåll ändras i publiceringsprocessen för AEM.
 
 Du måste göra följande konfigurationer på din befintliga webbplats för att tillåta publicering av DITA-innehåll till en fördefinierad nod:
 
@@ -114,21 +114,21 @@ Utför följande steg för att lägga till de nödvändiga noderna på din befin
 1. Lägg till `topicContentNode` och `topicHeadNode` noder med samma namn som du angav i platsens mallkonfigurationer.
 
 
-## Anpassa AEM {#id166TG0B30WR}
+## Anpassa AEM webbplatsutdata {#id166TG0B30WR}
 
-AEM har stöd för att skapa utdata i följande format:
+AEM har stöd för att skapa utdatafiler i följande format:
 
 - AEM
 
 - PDF
 
 - HTML5
-- ePub
+- EPUB
 - Anpassade utdata via DITA-OT
 
 För AEM platsutdata kan du tilldela olika designmallar med olika utdatauppgifter. Dessa designmallar kan återge DITA-innehållet i olika layouter. Du kan till exempel ange olika designmallar för interna och externa målgrupper.
 
-Du kan också använda anpassade DITA Open Toolkit-plugin-program \(DITA-OT\) med AEM Guides. Du kan överföra dessa anpassade DITA-OT-plugin-program för att generera utdata från PDF på ett visst sätt.
+Du kan också använda anpassade DITA Open Toolkit-plugin-program \(DITA-OT\) med AEM. Du kan överföra dessa anpassade DITA-OT-plugin-program för att generera utdata från PDF på ett visst sätt.
 
 >[!TIP]
 >
@@ -146,7 +146,7 @@ Utför följande steg för att ange en egen designmall som ska användas för at
 
 1. Logga in AEM och öppna läget CRXDE Lite.
 
-1. Navigera till standarddesignmallsnoden. Platsen för standarddesignmallsnoden är:
+1. Navigera till standarddesignmallsnoden. Standarddesignmallsnodens plats är:
 
    `/libs/fmdita/config/templates/`
 
@@ -156,7 +156,7 @@ Utför följande steg för att ange en egen designmall som ska användas för at
    >
    > Skapa en kopia av standarddesignmallarna från `libs` mapp till `apps` och gör ändringar i `apps` mapp. Du måste också göra ändringar i mallarna som refereras från standardmallnoden. De refererade mallarna placeras under `/libs/fmdita/templates/default/cqtemplates` nod. Skapa en kopia av de refererade mallarna i `apps` innan du gör några ändringar.
 
-1. Klicka på *standard* i *mallar* för att komma åt dess egenskaper.
+1. Klicka på *standard* -komponenten i *mallar* för att komma åt dess egenskaper.
 
    Egenskaper för designmallar AEM stödlinjer beskrivs i följande tabell.
 
@@ -172,7 +172,7 @@ Utför följande steg för att ange en egen designmall som ska användas för at
    | `pdfPathProp` | Egenskapsnamnet för lagring av PDF-sökvägen, om generering av ämnet PDF är aktiverat. |
    | `pdfTypeProp` | Egenskapsnamnet för lagring av PDF-genereringens typ. För närvarande innehåller den här egenskapen alltid&quot;Ämne&quot;. |
    | `searchPathProp` | Egenskapsnamnet för lagring av söksidans sökväg, om mallen innehåller en söksida. |
-   | `siteTitleProp` | Egenskapsnamnet för lagring av titeln för webbplatsen som publiceras. Den här titeln är vanligtvis densamma som titeln på kartan som publiceras. |
+   | `siteTitleProp` | Egenskapsnamnet för lagring av titeln på den webbplats som publiceras. Den här titeln är vanligtvis densamma som titeln på kartan som publiceras. |
    | `sourcePathProp` | Egenskapsnamnet för lagring av sökvägen till källans DITA-ämne för den aktuella sidan. |
    | `tocPathProp` | Egenskapsnamnet för lagring av sökvägen till TOC-roten för den publicerade webbplatsen. |
 
@@ -187,7 +187,7 @@ Mer information finns i [Skapa din första Adobe Experience Manager 6.3-webbplat
 
 När du genererar AEM webbplatsutdata spelar det sätt på vilket URL:er genereras en viktig roll för att ditt innehåll ska kunna identifieras. Om du använder UUID-baserade filnamn är det inte sökvänligt att generera URL:er baserade på UUID för dina filer. Som administratör eller utgivare kan du styra hur du vill generera URL:er för AEM webbplatsutdata. AEM Guides ger dig en konfiguration genom vilken du kan välja att generera URL:er AEM platsutdata med hjälp av filens namn i stället för UUID-baserade filnamn. Som standard är det här alternativet aktiverat för UUID-baserade filsystem. Detta innebar att när du genererade utdata AEM platsen för UUID-baserade filsystem, används filens namn för att generera URL:er och inte UUID:n för filerna.
 
-När du genererar AEM webbplatsutdata spelar det sätt på vilket URL:er genereras en viktig roll för att ditt innehåll ska kunna identifieras. Om det inte finns UUID-baserade filsystem genereras AEM platsutdata med filnamnen och inte filens titlar. Som administratör eller utgivare kan du styra hur du vill generera URL:er för AEM webbplatsutdata. AEM Guides ger dig en konfiguration genom vilken du kan välja att generera URL:er AEM webbplatsens utdata med hjälp av filens rubrik i stället för filnamnen. Som standard är det här alternativet inaktiverat. Detta innebar att när du genererade AEM Site-utdata används filnamnen för att generera URL:er och inte filens titel. Du kan välja att generera URL:er baserat på filens namn genom att aktivera det här alternativet.
+När du genererar AEM webbplatsutdata spelar det sätt på vilket URL:er genereras en viktig roll för att ditt innehåll ska kunna identifieras. Om det inte finns UUID-baserade filsystem genereras AEM platsutdata med filnamnen och inte filens titlar. Som administratör eller utgivare kan du styra hur du vill generera URL:er för AEM webbplatsutdata. AEM Guides ger dig en konfiguration där du kan välja att generera URL:er AEM webbplatsens utdata med hjälp av filens namn i stället för filnamnen. Som standard är det här alternativet inaktiverat. Detta innebar att när du genererade AEM Site-utdata används filnamnen för att generera URL:er och inte filens titel. Du kan välja att generera URL:er baserat på filens titlar genom att aktivera det här alternativet.
 
 >[!NOTE]
 >
@@ -322,11 +322,11 @@ När du nu genererar AEM Site-utdata är noderna i `p` -elementet förenklas och
 
 På samma sätt som du anger vilken nod som ska förenklas AEM platsutdata kan du även ange ett element som du vill utesluta från den här konfigurationen. Om du till exempel vill lägga samman noder vid `body` -element, men du vill inte ha något `table` element inuti `body` för att förenkla kan du lägga till egenskapen exclude i `table` -elementets definition.
 
-Exkludera `table` från förenkling, lägg till följande egenskap i `table` elementets definition:
+Exkludera `table` -element från förenkling, lägg till följande egenskap i `table` elementets definition:
 
 `<preventancestorflattening>true|false</preventancestorflattening>`
 
-### Konfigurera versionshantering för borttagna sidor i AEM webbplatsutdata
+### Konfigurera versionshantering för borttagna sidor AEM webbplatsutdata
 
 När du genererar AEM webbplatsutdata med **Ta bort och** Skapa ****som har valts för inställningen Befintliga utdatasidor skapas en version för sidan som tas bort. Du kan konfigurera systemet så att det inte längre skapas en version innan du tar bort den.
 
@@ -354,7 +354,7 @@ Utför följande steg för att stoppa skapandet av en version för den sida/de s
 
 AEM Guides är ett sätt att skicka anpassade metadata när utdata publiceras med DITA-OT. Som administratör och utgivare måste du utföra följande uppgifter för att konfigurera och använda anpassade metadata i publicerade utdata:
 
-- Som administratör lägger du till de metadata som krävs i systemet så att de blir tillgängliga på sidan Egenskaper på DITA-kartan.
+- Som administratör lägger du till nödvändiga metadata i systemet så att de blir tillgängliga på sidan Egenskaper på DITA-kartan.
 
 - Som administratör lägger du till anpassade metadata i metadatalistan så att den visas i DITA-kartkonsolen.
 
@@ -417,7 +417,7 @@ Därefter måste du göra anpassade metadata tillgängliga i DITA-kartkonsolen. 
 1. Klicka **Spara alla**.
 
 
-Nu visas anpassade metadata i DITA-kartkonsolens **Egenskaper** nedrullningsbar lista.
+Nu visas anpassade metadata i DITA-kartkonsolens **Egenskaper** listruta.
 
 Som utgivare måste du slutligen inkludera anpassade metadata i publicerade utdata. Så här bearbetar du anpassade metadata när du genererar utdata:
 
@@ -433,7 +433,7 @@ Som utgivare måste du slutligen inkludera anpassade metadata i publicerade utda
 
 1. Klicka på DITA-kartfilen för att öppna DITA-kartkonsolen.
 
-1. I **Förinställningar för utdata** väljer du den förinställning du vill använda för att generera utdata.
+1. I **Förinställningar för utdata** väljer du den förinställning som du vill använda för att generera utdata.
 
 1. Klicka **Redigera**.
 
@@ -446,7 +446,7 @@ De valda egenskaperna/metadata skickas vidare till publiceringsprocessen och bli
 
 ## Anpassa DITA-elementmappning med AEM {#id1679J600HEL}
 
-DITA-element AEM stödlinjer mappas till motsvarande AEM. AEM Guides använder den här mappningen i arbetsflöden, till exempel publicering och granskning, för att konvertera DITA-element till en motsvarande AEM. Mappningen definieras i `elementmapping.xml` -fil, som du kommer åt i läget CRXDE Lite. Öppna följande URL i läget CRXDE Lite:
+DITA-element AEM stödlinjer mappas till motsvarande AEM. AEM Guides använder den här mappningen i arbetsflöden, till exempel publicering och granskning, för att konvertera DITA-element till en motsvarande AEM. Mappningen definieras i `elementmapping.xml` -fil, som du kommer åt i läget CRXDE Lite. Gå till följande URL i läget CRXDE Lite:
 
 `/libs/fmdita/config/elementmapping.xml`
 
@@ -506,11 +506,11 @@ En översikt på hög nivå över `elementmapping.xml` strukturen förklaras ned
 
    `type` använder följande värden:
 
-   - SAMMANSATTA: element till komponent *mappningen fortsätter för underordnade element* också.
+   - COMPOSITE: element till komponent *mappningen fortsätter för underordnade element* också.
 
-   - FRISTÅENDE: underordnade element för det aktuella elementet är *inte mappas vidare*.
+   - STANDALONE: underordnade element till det aktuella elementet är *inte mappas vidare*.
 
-   I exemplet ovan, om `<title>` -element har underordnade element, de mappas inte till någon annan komponent. Komponenten för `<title>` -elementet ansvarar för att återge alla underordnade element inuti `<title>` -element.
+   I exemplet ovan, om `<title>` -element har underordnade element, de mappas inte till någon annan komponent. komponenten för `<title>` -elementet ansvarar för att återge alla underordnade element inuti `<title>` -element.
 
 1. Om det finns flera komponenter som är mappade till ett enskilt DITA-element väljs den bästa matchningen för elementet. För att välja den bästa matchningskomponenten övervägs domän- och strukturexSpecialisering för DITA-element.
 
@@ -533,7 +533,7 @@ En översikt på hög nivå över `elementmapping.xml` strukturen förklaras ned
    </ditaelement>
    ```
 
-   Ovanstående elementmappning anger att textinnehållet i `<title>` -elementet sparas som värdet för en egenskap med namnet `jcr:title` på utdatanoden.
+   Ovanstående elementmappning anger att textinnehållet i `<title>` -elementet sparas som ett värde för en egenskap med namnet `jcr:title` på utdatanoden.
 
 1. `xmlprop` kan användas för att serialisera hela XML för ett givet element till en nodegenskap. Komponenten kan sedan läsa den här nodegenskapen och göra anpassad återgivning. Till exempel:
 
@@ -564,7 +564,7 @@ En översikt på hög nivå över `elementmapping.xml` strukturen förklaras ned
 
    Hur den här upplösningen sker bestäms utifrån värdet på `rel` attribut i attributmappning.
 
-   - If `rel=source`, och sedan värdet för `href` löses med avseende på DITA-källfilen som bearbetas. Värdet för `href` är löst och placerad i värdet för `fileReference` -egenskap.
+   - If `rel=source`, och sedan värdet för `href` har lösts med avseende på DITA-källfilen som bearbetas. Värdet för `href` är löst och placerad i värdet för `fileReference` -egenskap.
 
    - If `rel=target`, och sedan värdet för `href` har lösts med avseende på rotpubliceringsplatsen. Värdet för `href` är löst och placerad i värdet för `fileReference` -egenskap.
 
@@ -601,9 +601,9 @@ I följande tabell beskrivs elementen i DITA-elementschemat:
 |-------|-----------|
 | `<ditaelement>` | Den översta noden för varje mappningselement. |
 | `<class>` | Klassattributet för det DITA-målelement som du skriver komponenten för. <br>Klassattributet för DITA-ämnet är till exempel: <br>`topic/topic` |
-| `<componentpath>` | CRXDE-sökvägen för den mappade AEM. |
+| `<componentpath>` | CRXDE-sökvägen för den mappade AEM-komponenten. |
 | `<type>` | Möjliga värden: <br>- **SAMMANSATTA**: Bearbeta även underordnade element <br>- **FRISTÅENDE**: Hoppar över bearbetning av underordnade element |
-| `<attributeprop>` | Används för att mappa serialiserade DITA-attribut och -värden till AEM noder som egenskap. Om du till exempel har `<note type="Caution">` -elementet och komponenten som mappas för det här elementet har `<attributeprop>attr_t</ attributeprop>`, serialiseras nodens attribut och värde till `attr_t` egenskap för motsvarande AEM nod \( `attr_t->type="caution"`\). |
+| `<attributeprop>` | Används för att mappa serialiserade DITA-attribut och -värden till AEM noder som egenskap. Om du har `<note type="Caution">` -elementet och komponenten som mappas för det här elementet har `<attributeprop>attr_t</ attributeprop>`, sedan serialiseras nodens attribut och värde till `attr_t` egenskap för motsvarande AEM nod \( `attr_t->type="caution"`\). |
 | `<textprop>propname_t</textprop>` | Spara `getTextContent()` output till egenskap definierad av `propname_t.` **Obs!**  Det här är en optimerad egenskap. |
 | `<xmlprop>propname_x </xmlprop>` | Spara serialiserad XML för den här noden till egenskap som definierats av `propname_x.` **Obs!** Det här är en optimerad egenskap. |
 | `<xpath>` | Om XPath-elementet anges i elementmappningen ska XPath-villkoret också uppfyllas tillsammans med elementnamnet och klassen för att komponentmappningen ska användas. |
@@ -611,7 +611,7 @@ I följande tabell beskrivs elementen i DITA-elementschemat:
 | `<wrapelement>` | Det HTML-element som innehållet ska radbrytas i. |
 | `<wrapclass>` | Elementvärdet för egenskapen `wrapclass.` |
 | `<attributemap>` | Behållarnod som innehåller en eller flera `<attribute>` noder. |
-| `<attribute from="attrname" to="propname" ispath="true|false" rel="source|target" />` | Kopplar DITA-attributen till AEM egenskaper:<br>- **`from`**: DITA-attributnamn<br>- **`to`**: AEM komponentens egenskapsnamn <br>- **`ispath`**: Om attributet är ett sökvägsvärde \(till exempel: *image*\)<br>- **`rel`**: Om sökvägen är källan eller målet <br>**Obs!** If `attrname` börjar med `%`och sedan mappa `attrname minus '%'` att beskära `propname`&#39;. |
+| `<attribute from="attrname" to="propname" ispath="true|false" rel="source|target" />` | Kopplar DITA-attributen till AEM egenskaper:<br>- **`from`**: DITA-attributnamn<br>- **`to`**: AEM egenskapsnamn för komponent <br>- **`ispath`**: Om attributet är ett sökvägsvärde \(till exempel: *image*\)<br>- **`rel`**: Om sökvägen är källan eller målet <br>**Obs!** If `attrname` börjar med `%`och sedan mappa `attrname minus '%'` att beskära `propname`&#39;. |
 
 **Ytterligare information**
 
@@ -619,7 +619,7 @@ I följande tabell beskrivs elementen i DITA-elementschemat:
 
 - I `elementmapping.xml` -filen finns det många mappningsposter som refererar till komponenten fmdita/components/dita/wrapper. Wrapper är en generisk komponent som återger relativt enkla DITA-konstruktioner med hjälp av egenskaper på webbplatsnoden för att generera relevant HTML. Den använder `wrapelement` för att generera omslutande taggar och delegerar den underordnade återgivningen till motsvarande komponenter. Detta är användbart om du bara vill ha en behållarkomponent. I stället för att skapa en ny komponent som återger en viss behållartagg som `div` eller `p`kan du använda komponenten Wrapper med `wrapelement` och `wrapclass` -egenskaper för att uppnå samma effekt.
 
-- Du bör inte spara stora mängder text i JCR-egenskaper för strängar. Beräkningen av den optimerade egenskapstypen i utdatagenereringen säkerställer att stort textinnehåll inte sparas som strängtyp. Om innehåll som är större än ett visst tröskelvärde behöver sparas, ändras egenskapstypen till binär. Som standard är det här tröskelvärdet konfigurerat till 512 byte, men det kan ändras i Configuration Manager \(*com.adobe.fmdita.config.ConfigManager*\) genom att ändra **Spara som binärt tröskelvärde** inställning.
+- Du bör inte spara stora mängder text i JCR-egenskaper för strängar. Beräkningen av den optimerade egenskapstypen i utdatagenereringen säkerställer att stort textinnehåll inte sparas som strängtyp. Om innehåll som är större än ett visst tröskelvärde behöver sparas, ändras egenskapstypen till binär. Som standard är tröskelvärdet 512 byte, men kan ändras i Configuration Manager \(*com.adobe.fmdita.config.ConfigManager*\) genom att **Spara som binärt tröskelvärde** inställning.
 
 - Om du tänker åsidosätta vissa \(och inte alla\) av elementmappningarna behöver du inte replikera hela `elementmapping.xml` -fil. Du måste skapa en ny XML-mappningsfil och definiera endast de element som du åsidosätter.
 
@@ -634,7 +634,7 @@ AEM Guides ger dig flexibilitet att utöka funktionerna i DITA-kartkonsolen. Om 
 >
 > Direktändringar av sidkomponenter rekommenderas inte eftersom de skrivs över i nya versioner av produkten.
 
-AEM stödlinjer innehåller `apps.fmdita.dashboard-extn` -kategori för anpassning av kartkonsol. När kartkonsolen läses in skapas de funktioner som finns under `apps.fmdita.dashboard-extn` körs och läses in.
+AEM stödlinjer innehåller `apps.fmdita.dashboard-extn` -kategori för anpassning av kartkonsol. När kartkonsolen läses in skapas de funktioner som `apps.fmdita.dashboard-extn` körs och läses in.
 
 >[!NOTE]
 >
@@ -648,7 +648,7 @@ Med AEM Guides kan du konfigurera vilken bildåtergivning som ska användas när
 
 >[!NOTE]
 >
-> Vi rekommenderar att du skapar en kopia av `renditionmap.xml` i `apps` mapp för alla anpassningar.
+> Du bör skapa en kopia av `renditionmap.xml` i `apps` mapp för alla anpassningar.
 
 ```XML
 <renditionmap>
@@ -664,7 +664,7 @@ Med AEM Guides kan du konfigurera vilken bildåtergivning som ska användas när
 </renditionmap>
 ```
 
-The `mimetype` -elementet anger filformatets MIME-typ. The `rendition output` -element anger typ av utdataformat och namnet på återgivningen \(t.ex. `cq5dam.web.1280.1280.jpeg`\) som ska användas för publicering av angivna utdata. Du kan ange bildåtergivningarna som ska användas för alla utdataformat som stöds - AEMSITE, PDF, HTML 5, EPUB och ANPASSAD.
+The `mimetype` -elementet anger filformatets MIME-typ. The `rendition output` -element anger typ av utdataformat och namnet på återgivningen \(till exempel `cq5dam.web.1280.1280.jpeg`\) som ska användas för publicering av angivna utdata. Du kan ange bildåtergivningarna som ska användas för alla utdataformat som stöds - AEMSITE, PDF, HTML 5, EPUB och ANPASSAD.
 
 Om den angivna återgivningen inte finns söker AEM publiceringsprocessen först efter webbåtergivningen av den angivna bilden. Om inte ens webbåtergivningen hittas används den ursprungliga återgivningen av bilden.
 
@@ -726,4 +726,3 @@ Du kan ändra det maximala antalet genererade utdata som visas på fliken Utdata
 Med AEM Guides kan du konfigurera poolstorleken för utdatagenereringsprocesser som styr antalet processer för generering av utdata som körs samtidigt. Som standard är processpoolens storlek inställd på antalet processorkärnor som är tillgängliga i systemet plus ett. Du kan ändra värdet till 1 om du vill ha sekventiell publicering. I det här fallet körs den första publiceringsaktiviteten och nästa publiceringsåtgärd lagras i publiceringskön.
 
 Om du vill ändra storleken på bearbetningspoolen för utdatagenerering uppdaterar du **Storlek på genereringspool** i `com.adobe.fmdita.publish.manager.PublishThreadManagerImpl` paket.
-

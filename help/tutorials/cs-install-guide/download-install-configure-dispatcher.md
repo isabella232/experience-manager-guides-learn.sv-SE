@@ -1,13 +1,12 @@
 ---
 title: Konfigurera Dispatcher
 description: Lär dig konfigurera Dispatcher
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '105'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 13%
 
 ---
-
 
 # Konfigurera Dispatcher {#id213BCM0M05U}
 
@@ -21,4 +20,3 @@ Dispatcher är Adobe Experience Managers verktyg för cachelagring och/eller bel
 > AEM som molntjänst stöder inte dispatcher för författarinstansen.
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

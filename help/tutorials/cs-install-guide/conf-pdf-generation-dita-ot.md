@@ -1,13 +1,12 @@
 ---
 title: Konfigurera generering av PDF för ett enskilt ämne
 description: Lär dig hur du konfigurerar generering av enskilda ämnen i PDF
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera generering av PDF för ett enskilt ämne {#id22ADC70M0XA}
 
@@ -25,7 +24,7 @@ Så här aktiverar du den gamla PDF-genereringen via DITA-OT i läget för ämne
 1. Välj **Stödlinjer** i listan med verktyg och klicka på **Mappprofiler**.
 1. Klicka på **Global profil** platta.
 1. Välj **Konfiguration av XML-redigerare** och klicka **Redigera** ikonen längst upp
-1. Klicka på **Hämta** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
+1. Klicka på **Ladda ned** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
 1. I `ui_config.json` -fil, hitta följande konfiguration:
 
    ```
@@ -57,4 +56,3 @@ Så här aktiverar du den gamla PDF-genereringen via DITA-OT i läget för ämne
 När du har utfört stegen ovan och väljer samma mappprofil i Användarinställningar i Web Editor visas alternativet för generering av PDF i ett ämnes förhandsgranskningsläge.
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

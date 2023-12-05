@@ -3,14 +3,12 @@ title: Syrgas-plugin för Adobe Experience Manager Guides
 description: Lär dig hur du använder Syre Plugin för Adobe Experience Manager Guides för att skapa och hantera ditt innehåll.
 hide: true
 hidefromtoc: true
-exl-id: 2db9a34e-2efa-47ad-ba6b-02afc5197669
-source-git-commit: 23c1dfb405643bd9f5906807dddc4fff3f2e8535
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '6120'
+source-wordcount: '6101'
 ht-degree: 0%
 
 ---
-
 
 # Syrgas-plugin för Adobe Experience Manager Guides {#id1645H6010Q5}
 
@@ -749,5 +747,3 @@ Lösning: Utför följande steg för att konfigurera loggarna för Syrgas och Jx
 
 
 Med föregående steg aktiveras loggarna och du kan använda dem för att felsöka problemen.
-
-

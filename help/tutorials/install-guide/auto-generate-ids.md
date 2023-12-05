@@ -1,13 +1,12 @@
 ---
 title: Generera element-ID automatiskt
 description: Lär dig generera element-ID automatiskt
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # Generera element-ID automatiskt {#id20CIL40016I}
 
@@ -35,7 +34,7 @@ Utför följande steg för att konfigurera element så att de har ett autogenere
 
 1. I **Mönster för att generera ID:n** anger du ett mönster för att generera ett ID.
 
-   Standardvärdet för det här fältet är inställt på `${elementName}_${id}`. The `${elementName}` värdet ersätts med elementets namn. The `${id}` variabeln genererar sekventiellt nummer för elementet. Om du till exempel tilldelar styckeelementet ett automatiskt genererat ID:n får det första stycket i avsnittet eller dokumentet ett ID som p\_1, nästa stycke får p\_2 osv. I ett annat dokument startar dock ID-genereringsprocessen om. Det innebär att i ett annat dokument kan ID:n som p\_1 och p\_2 tilldelas styckeelement.
+   Standardvärdet för det här fältet är `${elementName}_${id}`. The `${elementName}` värdet ersätts med elementets namn. The `${id}` variabeln genererar sekventiellt nummer för elementet. Om du till exempel tilldelar styckeelementet ett automatiskt genererat ID:n får det första stycket i avsnittet eller dokumentet ett ID som p\_1, nästa stycke får p\_2 osv. I ett annat dokument startar dock ID-genereringsprocessen om. Det innebär att i ett annat dokument kan ID:n som p\_1 och p\_2 tilldelas styckeelement.
 
    Om dokumentet redan innehåller ID:n i det angivna mönstret tilldelas dessa ID:n inte till nya element i den automatiska genereringsprocessen.
 
@@ -43,4 +42,3 @@ Utför följande steg för att konfigurera element så att de har ett autogenere
 
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

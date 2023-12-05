@@ -1,13 +1,12 @@
 ---
 title: Hämta och installera
 description: Lär dig hur du hämtar och installerar
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 0%
 
 ---
-
 
 # Hämta och installera {#id1645E0O04MK}
 
@@ -30,5 +29,3 @@ Innan du börjar hämta och installera måste du se till att datorn uppfyller de
 - **[Avinstallera AEM](download-install-unistall-aemg.md)**
 
 - **[Recommendations för prestandaoptimering](download-install-recommend-perf-optimiz.md)**
-
-

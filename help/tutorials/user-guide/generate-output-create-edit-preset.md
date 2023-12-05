@@ -1,8 +1,7 @@
 ---
 title: Skapa, redigera, duplicera eller ta bort en förinställning för utdata
 description: Lär dig hur du skapar, redigerar, duplicerar och tar bort en anpassad förinställning AEM stödlinjer.
-exl-id: 6ed4f028-da96-4383-9d5c-06b94d6661c0
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

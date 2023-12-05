@@ -1,13 +1,12 @@
 ---
 title: REST API:er för utdatahantering
 description: Läs mer om REST API:er för utdatahantering
-source-git-commit: 4dcd90422f02f3b45aa74137fe58609962b09b49
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1175'
 ht-degree: 0%
 
 ---
-
 
 # REST API:er för utdatahantering {#id175UB30E05Z}
 
@@ -134,4 +133,3 @@ En POST som tar bort en förinställning.
 **Parametrar**: |Namn|Typ|Obligatorisk|Beskrivning| |—|—|—|—| |`:operation`|String|Yes|Namnet på den åtgärd som anropas. Värdet för den här parametern är `deleteoutput`.<br> **Obs!** Värdet är inte skiftlägeskänsligt.| |`sourcePath`|String|Yes|Absolut sökväg för DITA-mappningsfilen.| |`outputName`|Sträng|Ja|Namnet på den förinställning som ska tas bort.|
 
 **Svarsvärden**: Returnerar ett HTTP 200-svar \(Klart\).
-

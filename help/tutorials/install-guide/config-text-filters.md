@@ -1,13 +1,12 @@
 ---
 title: Konfigurera textfilter
 description: Lär dig hur du konfigurerar textfilter
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera textfilter {#id21BPD0FK0XA}
 
@@ -100,4 +99,3 @@ Så här konfigurerar du textfiltren:
 De konfigurerade filtren är tillgängliga på filterpanelen.
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

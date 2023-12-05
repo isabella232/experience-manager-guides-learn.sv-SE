@@ -2,17 +2,16 @@
 title: Arbeta med tangenter
 description: Så här skapar du nycklar som ska användas i hela organisationens innehåll
 role: Admin
-exl-id: b8e3a6d2-ea82-4fdb-bd16-3f4b6594af52
-source-git-commit: c8feab55ed3b8e7b36ec46b21f63155766627e40
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
 
 # Skapa nycklar
 
-Organisationer bör använda nycklar i de fall där de har viss återanvändbar och vanlig text, som produktnamn eller produkttonhöjd, som används på många ställen men som ofta ändras. Om du använder tangenter för sådan återanvändbar text kan du överföra en uppdatering på flera ställen genom att göra ändringen på en enda plats, t.ex. i nyckelvärdet.
+Organisationer bör använda nycklar i de fall där de har viss återanvändbar och vanlig text, som produktnamn eller produkttoning, som används på många ställen men som ofta ändras. Om du använder tangenter för sådan återanvändbar text kan du överföra en uppdatering på flera ställen genom att göra ändringen på en enda plats, t.ex. i nyckelvärdet.
 
 ## Steg 1: Skapa en global karta för att lagra nycklar
 
@@ -38,7 +37,7 @@ Skapa en karta och lägg till [!UICONTROL keyref] -element.
 
 Här har du definierat två definitioner, som visas ovan, som en [!UICONTROL keyref] as _AEM_ för _Adobe Experience Manager_ text.
 
-## Steg 2: Lägg till den här kartan i publikationskartan
+## Steg 2: Lägg till kartan i publikationskartan
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -56,8 +55,8 @@ Här har du definierat två definitioner, som visas ovan, som en [!UICONTROL key
 
 + Redigera ämnet och lägg till nyckelvärdet med [!UICONTROL keyref].
 + Som framgår av skärmbilden visas ett litet fönster där du kan välja nyckelord. Detta visas när du lägger till nyckelordselementet.
-   ![Infoga element](assets/insert_element.png)
-   ![Nyckelreferens](assets/key_ref.png)
+  ![Infoga element](assets/insert_element.png)
+  ![Nyckelreferens](assets/key_ref.png)
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>

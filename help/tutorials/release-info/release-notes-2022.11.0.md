@@ -1,11 +1,10 @@
 ---
-title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, november 2022-utgåvan
+title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, november 2022-versionen
 description: Novemberversionen av Adobe Experience Manager Guides as a Cloud Service
-exl-id: 9f329ec1-dd74-47cc-8567-3fadd962584a
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1372'
-ht-degree: 1%
+source-wordcount: '1384'
+ht-degree: 0%
 
 ---
 
@@ -15,19 +14,18 @@ ht-degree: 1%
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.11.198.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2022.11.198.
 1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till Novemberversionen av AEM Guides as a Cloud Service.
 
-## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM stödlinjer as a Cloud Service)
+## Steg för att indexera det befintliga innehållet (endast om du använder en version som är tidigare än september-versionen av AEM för as a Cloud Service stödlinjer)
 
 Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappningsnivå:
 
-* Kör en serverbegäran (med korrekt autentisering) - `http://<server:port>/bin/guides/map-find/indexing`.
+* Kör en POST-begäran till servern (med korrekt autentisering) - `http://<server:port>/bin/guides/map-find/indexing`.
 (Valfritt: Du kan skicka specifika sökvägar för mappningarna för att indexera dem. Som standard indexeras alla mappningar || Exempel: `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
 
 * API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port>/bin/guides/map-find/indexing?jobId={jobId}`
-(Exempel: http://&lt;
-_localhost:8080_>/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678)
+(Exempel: http://&lt;_localhost:8080_>/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678)
 
 * När jobbet är klart kommer ovanstående GET-förfrågan att svara och ange om några kartor misslyckades. De korrekt indexerade mappningarna kan bekräftas från serverloggarna.
 
@@ -40,7 +38,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 | FMPS | FrameMaker |
 | --- | --- |
 | Inte kompatibel | 2020 uppdatering 4 och senare |
-|  |  |
+| | |
 
 *Originalplan och villkor skapade i AEM stöds i FMPS-versioner från och med 2020.2.
 
@@ -48,7 +46,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2022.11.0 | 2.7.13 | 2.7.13 | 2.3 | 2.3 |
+| 2022.11.0 | 2.7.13 | 2.7.13 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -59,7 +57,7 @@ AEM Guides as a Cloud Service innehåller förbättringar och nya funktioner i n
 
 ### Ta bort filer från databaspanelen
 
-Nu kan du enkelt ta bort filer (en fil i taget) från **Alternativ** menyn för den valda filen från databaspanelen.
+Nu kan du enkelt ta bort filer (en fil i taget) från **Alternativ** den valda filens meny från databaspanelen.
 <img src="assets/repository-delete-file.png" alt="Ta bort från databas" width="500">
 
 En bekräftelse visas innan filen tas bort. Om det inte finns någon referens till filen från någon annan fil tas den bort och ett meddelande om att åtgärden lyckades visas.
@@ -135,19 +133,19 @@ De buggar som har åtgärdats i olika områden listas nedan:
 * PDF | Infogat format används för att generera taggar i stället för klassnamn.  (10498)
 * Webbredigeraren läser in tomma sidor ibland. (10678)
 * Publicering i PDF misslyckas om vi skapar en förinställning genom att duplicera en befintlig förinställning. (10584)
-* **Visa logg** fungerar inte när genereringen av PDF misslyckas för en förinställning. (10576)
+* **Visa logg** fungerar inte när PDF inte kan generera en förinställning. (10576)
 * Anteckning inuti en paragraf som är en konref visas inte i förhandsvisningen. (10559)
 * Hela listan tas bort om du placerar backstegstangenten i slutet av ett listobjekt. (10540)
 * Om du använder en inbyggd PDF-export `<indexterm>` är inte kapslade i indexet. (10521)
-* **Automatiskt indrag** i verktygsfältet saknas i källvyn. (10448)
-* Det första tecknet i ett listobjekt försvinner när listan redigeras. (10447)
+* **Automatiskt indrag** i verktygsfältet saknas i källvyn. 10448
+* Det första tecknet i ett listobjekt försvinner när listan redigeras. 10447
 * Flera popup-fönster visas om någon DITA-resursversion ändras och sparas i redigeringsfönstret för baslinjen. (10399)
-* Programfel inträffar när användaren klickar **Redigera** när du har valt alla förinställningar för utdata på snabbgenereringspanelen. (10388)
+* Programfel inträffar när användaren klickar **Redigera** när du har valt alla förinställningar för utdata på panelen Snabbgenerering. (10388)
 * Anpassade metadata för DITA-avsnittet behålls inte när en inklistringsåtgärd för kopiering utförs från resursgränssnittet. (10367)
 * Efterbearbetning blockeras för hela språkmappen vars resurser finns i ett aktivt översättningsprojekt. (10332)
 * Fliken Mall i XML-redigeraren är inte synlig för mappprofiladministratörer. (10266)
 * Navigeringsproblem uppstår i Web Editor efter 4.0-uppgraderingen. (10159)
 * SVG-filer visas inte i förhandsgranskningsläget. (10010)
-* Om fliken Utdata i redigeraren innehåller fler förinställningar kan avsnittet med förinställningar inte rullas och alla förinställningar visas inte. (9787)
-* **Redigera** och **Anteckna** alternativen för en bild fungerar inte korrekt i kolumnvyn. (8758)
-* Peer-länken är inte löst och visas som en normal text i genererade utdata. (7774)
+* Om fliken Utdata i redigeraren innehåller fler förinställningar kan avsnittet med förinställningar inte rullas och alla förinställningar visas inte. 9787
+* **Redigera** och **Anteckna** alternativen för en bild fungerar inte korrekt i kolumnvyn. 8758
+* Peer-länken är inte löst och visas som en normal text i genererade utdata. 7774

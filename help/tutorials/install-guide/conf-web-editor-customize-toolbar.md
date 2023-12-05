@@ -1,13 +1,12 @@
 ---
 title: Anpassa verktygsfältet
 description: Lär dig hur du anpassar verktygsfältet
-source-git-commit: ef2e99db8c298d34af5777baa48886a55ac32590
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 0%
 
 ---
-
 
 # Anpassa verktygsfältet {#id172FB00L0V6}
 
@@ -38,30 +37,30 @@ Gör så här för att lägga till en funktion i Web Editor-verktygsfältet:
 
    `/apps/fmdita/xmleditor/ui_config.json`
 
-1. Navigera till och öppna `ui_config.json` i `apps` nod för redigering.
+1. Navigera till och öppna `ui_config.json` i `apps` för redigering.
 
 1. I `ui_config.json` lägger du till definitionen av den nya funktionen i verktygsfältsavsnittet. Vanligtvis kan du skapa en ny verktygsfältsknappgrupp och lägga till en eller flera knappar i den. Du kan också lägga till en ny verktygsfältsknapp i en befintlig verktygsfältgrupp. Följande information krävs för att skapa en ny verktygsfältgrupp:
 
    - **type:**Ange `blockGroup` som `type` värde. Detta värde anger att du skapar en blockgrupp som skulle innehålla en eller flera verktygsfältsgrupper.
 
-   - **extraclass:** Namnet på klassen eller klasserna avgränsade med blanksteg.
+   - **extraklass:** Namnet på klassen eller klasserna avgränsade med blanksteg.
 
-   - **objekt:** Ange definitionen för alla grupper i verktygsfältet. Varje grupp kan innehålla en eller flera verktygsfältsikoner. Om du vill definiera ikoner i en verktygsfältgrupp måste du definiera `type` i `items`och ange värdet till `buttonGroup`. Ange ett eller flera klassnamn i `extraclass` -egenskap. Ange funktionsnamnet i `label` -egenskap. Följande utdrag från `ui_config.json` filen visar definitionen för huvudverktygsfältets block, följt av `buttonGroup` definition:
+   - **objekt:** Ange definitionen för alla grupper i verktygsfältet. Varje grupp kan innehålla en eller flera verktygsfältsikoner. Om du vill definiera ikoner i en verktygsfältgrupp måste du definiera `type` -attribut i `items`och ange värdet till `buttonGroup`. Ange ett eller flera klassnamn i `extraclass` -egenskap. Ange funktionsnamnet i dialogrutan `label` -egenskap. Följande utdrag från `ui_config.json` filen visar definitionen för huvudverktygsfältets block, följt av `buttonGroup` definition:
 
-      ```json
-      "toolbar": {    
-        "type": "blockGroup",    
-        "extraclass": 
-        "toolbar operations",    
-          "items": [      
-            {        
-              "type": "buttonGroup",        
-              "extraclass": "left-controls",        
-              "label": "Left Controls",        
-              "items": [
-      ```
+     ```json
+     "toolbar": {    
+       "type": "blockGroup",    
+       "extraclass": 
+       "toolbar operations",    
+         "items": [      
+           {        
+             "type": "buttonGroup",        
+             "extraclass": "left-controls",        
+             "label": "Left Controls",        
+             "items": [
+     ```
 
-      I `items` -samling måste du ange definitionen för en eller flera verktygsfältsikoner.
+     I `items` -samling måste du ange definitionen för en eller flera verktygsfältsikoner.
 Du måste definiera följande egenskaper för att lägga till en verktygsfältsikon:
 
    - **typ:** Ange `button` som `type` värde. Detta värde anger att du lägger till en verktygsfältsknapp.
@@ -74,15 +73,15 @@ Du måste definiera följande egenskaper för att lägga till en verktygsfältsi
 
    - **on-click:** Ange det kommandonamn som är definierat för funktionen i JavaScript-filen. Om kommandot kräver indataparametrar anger du kommandonamnet som:
 
-      ```JavaScript
-      "on-click": {"name": "AUTHOR_INSERT_ELEMENT", "args": "simpletable"}
-      ```
+     ```JavaScript
+     "on-click": {"name": "AUTHOR_INSERT_ELEMENT", "args": "simpletable"}
+     ```
 
    - **visa eller dölja:** Om du definierar `show` anger sedan de lägen som ikonen ska visas i. Möjliga värden är - `@isAuthorMode`, `@isSourceMode`, `@isPreviewMode`, `true` \(visas i alla lägen\), eller `false` \(dölj i alla lägen\).
 
    I stället för `show`kan du också definiera `hide` -egenskap. Möjliga värden är desamma som i `show` -egenskapen med den enda skillnaden att ikonen inte visas för det angivna läget.
 
-1. Skapa en *clientlib* och lägg till JavaScript i den här mappen.
+1. Skapa en *clientlib* och lägg till ditt JavaScript i den här mappen.
 
 1. Uppdatera kategoriegenskapen för *clientlib* genom att tilldela den värdet *apps.fmdita.xml\_editor.page\_overrides*.
 
@@ -201,13 +200,13 @@ Lägg till funktionen i filen ui\_config.json som:
 
 ## Ta bort en funktion från verktygsfältet
 
-Ibland kanske du inte vill ge alla funktioner som är tillgängliga i Web Editor. Då kan du ta bort den oönskade funktionen från Web Editors verktygsfält.
+Ibland kanske du inte vill ge alla funktioner som är tillgängliga i Web Editor, och då kan du ta bort den oönskade funktionen från Web Editor.
 
 Så här tar du bort oönskade funktioner från verktygsfältet:
 
 1. Logga in AEM och öppna läget CRXDE Lite.
 
-1. Navigera till standardkonfigurationsfilen som finns på följande plats:
+1. Navigera till standardkonfigurationsfilen på följande plats:
 
    `/libs/fmdita/clientlibs/clientlibs/xmleditor/ui_config.json`
 
@@ -215,7 +214,7 @@ Så här tar du bort oönskade funktioner från verktygsfältet:
 
    `/apps/fmdita/xmleditor/ui_config.json`
 
-1. Navigera till och öppna `ui_config.json` i `apps` nod för redigering.
+1. Navigera till och öppna `ui_config.json` i `apps` för redigering.
 The `ui_config.json` filen har tre avsnitt:
 
 - **verktygsfält:**   Det här avsnittet innehåller en definition av alla funktioner som är tillgängliga i redigerarens verktygsfält, t.ex. Infoga/ta bort numrerad lista, Stäng, Spara, Kommentarer med mera.
@@ -234,4 +233,3 @@ The `ui_config.json` filen har tre avsnitt:
 
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

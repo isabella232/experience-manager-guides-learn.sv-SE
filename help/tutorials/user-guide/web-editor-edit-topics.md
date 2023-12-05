@@ -1,8 +1,7 @@
 ---
 title: Redigera ämnen i Web Editor
 description: Lär dig redigera ämnen i webbredigeraren. Lär dig olika redigeringsfunktioner för att ändra ämnesfilerna i AEM.
-exl-id: 8da37a81-e8c3-434f-b3f4-4723d87c2ade
-source-git-commit: 22d364d28859e6aa3ae147a72b736669f56788b3
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%

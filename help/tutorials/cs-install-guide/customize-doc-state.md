@@ -1,13 +1,12 @@
 ---
 title: Konfigurera dokumentlägen
-description: Lär dig hur du konfigurerar dokumentlägen
-source-git-commit: e3b2fc8c96ce535bb91e7bce935720aa389a917a
+description: Lär dig hur du konfigurerar dokumenttillstånd
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera dokumentlägen {#id181GB0400UI}
 
@@ -82,7 +81,7 @@ Så här skapar du en kopia av en dokumenttillståndsprofil:
    Sidan Tillstånd för resurser visas.
 
 1. Markera den dokumenttillståndsprofil som du vill duplicera och klicka på **Duplicera profil**.
-1. Gör nödvändiga ändringar och klicka **Klar**.
+1. Gör nödvändiga ändringar och klicka på **Klar**.
 
 ## Ta bort ett dokumentläge eller en lägesövergång
 
@@ -124,7 +123,7 @@ Om du inte vill ändra dokumentens tillstånd manuellt kan du skapa ett arbetsfl
 1. Klicka på länken Adobe Experience Manager överst och välj **verktyg**.
 1. Välj **Arbetsflöde** i listan över verktyg.
 
-1. Klicka på **Modeller** platta.
+1. Klicka på **Models** platta.
 
 1. Välj arbetsflöde, till exempel Granska ämnen.
 
@@ -134,7 +133,7 @@ Om du inte vill ändra dokumentens tillstånd manuellt kan du skapa ett arbetsfl
 
 1. Klicka **Redigera** \(övre högra\).
 
-1. Öppna **Steg** webbläsare, använda **Växla sidopanel**, längst till vänster i det övre verktygsfältet
+1. Öppna **Steg** webbläsare; använda **Växla sidopanel**, längst till vänster i det övre verktygsfältet
 
 1. Dra lämpliga steg till önskad plats i modellen.
 
@@ -167,7 +166,7 @@ AEM Guides ger ett arbetsflöde för dokumentgodkännande som hjälper dig att s
 1. Välj **Stödlinjer** i listan med verktyg och klicka på **Mappprofiler**.
 1. Klicka på **Global profil** platta.
 1. Välj **Konfiguration av XML-redigerare** och klicka **Redigera** ikonen längst upp
-1. Klicka på **Hämta** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
+1. Klicka på **Ladda ned** om du vill hämta filen ui\_config.json på ditt lokala system. Du kan sedan göra ändringar i filen och sedan överföra samma fil.
 1. I `ui_config.json` fil, aktivera arbetsflödesfunktionen för godkännande genom att ändra *funktioner* enligt nedan:
 
    ```
@@ -178,4 +177,3 @@ AEM Guides ger ett arbetsflöde för dokumentgodkännande som hjälper dig att s
    ```
 
 1. Spara filen och överför den.
-

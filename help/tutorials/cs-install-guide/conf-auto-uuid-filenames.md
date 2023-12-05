@@ -1,13 +1,12 @@
 ---
 title: Konfigurera automatiska filnamn baserat på UUID
-description: Lär dig hur du konfigurerar automatiska filnamn baserat på UUID
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+description: Lär dig konfigurera automatiska filnamn baserat på UUID
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera automatiska filnamn baserat på UUID {#id205QG070D5Z}
 
@@ -24,4 +23,3 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 > När det här alternativet är aktiverat kan författare inte ange filnamnet när de skapar ett nytt ämne eller en ny mappningsfil. Du kan skapa ett nytt ämne eller en ny mappfil från resursgränssnittet och webbredigeraren.
 
 **Överordnat ämne:**[ Konfigurera filnamn](conf-file-names.md)
-

@@ -1,13 +1,12 @@
 ---
 title: Verifiera installation av AEM
 description: Lär dig hur du verifierar installationen av AEM Guides
-source-git-commit: 6051181e243cf71919901093c1b5590f21832545
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
-
 
 # Verifiera installation av AEM {#id213BD030FBE}
 
@@ -27,4 +26,3 @@ När du har installerat AEM Guides måste du kontrollera om installationen lycka
 
 
 **Överordnat ämne:**[ Hämta och installera](download-install.md)
-

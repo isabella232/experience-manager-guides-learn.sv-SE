@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade problem i Adobe Experience Manager Guides, november 2023-versionen
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till november 2023-utgåvan av Adobe Experience Manager Guides as a Cloud Service
-exl-id: 80839890-075f-4187-a167-444c73215496
-source-git-commit: e8a912b0f8bc690fceade0b54bb36057a727ab33
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1640'
-ht-degree: 2%
+source-wordcount: '1673'
+ht-degree: 0%
 
 ---
 
@@ -91,7 +90,7 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 1. Kör en POST-begäran till servern (med korrekt autentisering) - `http://<server:port>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika sökvägar för mappningarna för att indexera dem. Som standard indexeras alla mappningar || Till exempel: `https://<Server:port>/bin/guides/map-find/indexing?paths=<map_path_in_repository>`)
 
-1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
+1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel: `http://<server:port>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port>/bin/guides/map-find/indexing?jobId={jobId}`(Till exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`)
 
@@ -123,7 +122,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | Experience Manager Guides as a Cloud Release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.11.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2.3 | 2.3 |
+| 2023.11.0 | 3.2-uuid 5 | 3.2-uuid 5 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -141,58 +140,58 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 ### Redigering
 
-- Avstånd efter konref `<ph>` -elementet försvinner när avsnittet sparas. (13642)
-- Programfel inträffar när DITA-filer sparas innan efterbearbetningen är klar. (13571)
-- Om titeln på ett ämne innehåller ett snedstreck `/`visas bara de bokstäver som kommer efter. (13455)
-- Förhandsvisningen av bilden försvinner inte när du har visat förhandsvisningen i redigeraren. (13454)
+- Avstånd efter konref `<ph>` -elementet försvinner när avsnittet sparas. 13642
+- Programfel inträffar när DITA-filer sparas innan efterbearbetningen är klar. 13571
+- Om titeln på ett ämne innehåller ett snedstreck `/`visas bara de bokstäver som kommer efter. 13455
+- Förhandsvisningen av bilden försvinner inte när du har visat förhandsvisningen i redigeraren. 13454
 - Popup-fönstret Infoga nyckelord visas inte när rotmappsdefinierade nycklar används i andra ämnen. (12950)
-- Stängningsikoner visas inte när mycket stora bilder förhandsvisas på panelen Versionshistorik. (12867)
-- Det går inte att ändra tidszonen för **Version skapad den** kolumnen för baslinjer. (12711)
-- The **Tidigare versioner** i resursgränssnittet visas en felaktig tidsstämpel för **Aktuell** fält. (12624)
+- Stängningsikoner visas inte när mycket stora bilder förhandsvisas på panelen Versionshistorik. 12867
+- Det går inte att ändra tidszonen för **Version skapad den** kolumnen för baslinjer. 12711
+- The **Tidigare versioner** i resursgränssnittet visas en felaktig tidsstämpel för **Aktuell** fält. 12624
 - Om du skapar en DITA-fil från en mall med ett filnamn som börjar med numeriska tecken resulterar det i ett namnutrymmesfel. (12188)
 - I webbredigeraren **Nyckelreferenser** öppnas när du infogar `varname` -tagg. (10940)
 - Zip-filer känns inte igen i Web Editor och du kan inte dra och släppa dem. (12709)
 - Innehållet med vissa attribut som används på det markeras inte i redigerings- eller förhandsgranskningsläge. (11063)
 - När du stänger ett ämne efter att du har redigerat det omdirigeras du till AEM hemsida i stället för att gå tillbaka till mappvyn. (13306)
-- Efterbearbetningen av filer som har kopierats och klistrats in i molntjänsterna fördröjs. (12457)
+- Efterbearbetningen av filer som har kopierats och klistrats in i molntjänsterna fördröjs. 12457
 - Rotmappsinställningen finns kvar i Web Editor även om användaren inte uttryckligen har angett den i användarinställningarna. (11551)
 
 
 ### Publicering
 
 - Publicera som innehållsfragmentfunktion fungerar inte för filer som listas i sökresultaten. (14090)
-- Vid ursprunglig PDF-publicering kräver bakgrundsfärgen i mallayouten en sidomladdning när du återgår till `None`. (13621)
+- Vid ursprunglig PDF-publicering kräver bakgrundsfärgen i mallayouten en sidomladdning när du återgår till `None`. 13621
 - Problem vid implementering av datastore för en stor DITA-karta med scope-peer-länkar AEM Site publishing. (13530)
 - I Native PDF-publicering äventyras tillgängligheten eftersom bilder i sidhuvud och sidfot inte visar alternativ text. (12829)
 - Det går inte att duplicera sidlayout i PDF utan att lägga till något tillägg automatiskt. (12534)
 - När du genererar utdata från PDF med Native PDF-publicering kommer filnamnet att trunkeras efter en viss period. (13620)
-- Felaktiga ikoner och verktygstips visas för  **Redigera innehåll** i verktygsfältet Sidlayouter i mallarna som används för publicering i Native PDF. (13492)
+- Felaktiga ikoner och verktygstips visas för  **Redigera innehåll** i verktygsfältet Sidlayouter i mallarna som används för publicering i Native PDF. 13492
 - Anpassade metadata är inte tillgängliga i det slutliga resultatet. (12116)
 - fmdita rewriter står i konflikt med användarens omskrivarkonfiguration och leder till att långa URL-adresser visas i stället för länkarna. (12076)
 - I AEM platsförinställning kan du välja att **Generera olika PDF för varje ämne** inte fungerar. (11555)
 - Inbyggd PDF-publicering saknar stöd för CMYK-färgmodellskonvertering. (10754)
-- Dynamiska baslinjeanrop använder namnet i stället för titeln, vilket leder till att det inte går att exportera DITA-mappnings-API. (14268)
+- Dynamiska baslinjeanrop använder namnet i stället för titeln, vilket leder till att det inte går att exportera DITA-mappnings-API. 14268
 
 ### Förvaltning
 
 - Innehållsreferensen bryts vid kopiering och inklistring av DITA-filer med självreferenslänkar utan GUID. (13540)
-- Baslinjen i Web Editor visar titeln för den föregående versionen i stället för den valda versionen av DITA-filen. (13444)
+- Baslinjen i Web Editor visar titeln för den föregående versionen i stället för den valda versionen av DITA-filen. 13444)
 - The **Rapporter** i webbredigerarens användargränssnitt kan inte visa ämneslistan för gamla DITA-kartor som skapats före Juli 2023-uppgraderingen av Experience Manager Guides as a Cloud Service. (11852)
 - Villkorsförinställningar för stora DITA-kartor skapas inte. (10936)
-- En självreferenslänk visas under listan med brutna länkar i rapporter. (13539)
+- En självreferenslänk visas under listan med brutna länkar i rapporter. 13539
 
 ### Granska
 
 - Granskningspanelerna sida vid sida i den tidigare och den aktuella versionen i webbredigeraren är inte korrekta i oktober 2023-versionen av as a Cloud Service för Experience Manager-stödlinjer. (14156)
-- Anpassning av e-postmallar för **Granska** arbetsflödet fungerar inte med att täcka över noderna. (13954)
-- The **Stäng** på sidan Granska i Experience Manager-guiderna tar användarna till AEM hemsida. (13535)
-- Brutna tecken visas när fragment skapas på koreanska. (13489)
-- Det går inte att klicka på koreanska bilagor på Experience Manager Guides Review-skärmen. (13436)
+- Anpassning av e-postmallar för **Granska** arbetsflödet fungerar inte med att täcka över noderna. 13954
+- The **Stäng** på sidan Granska i Experience Manager-guiderna tar användarna till AEM hemsida. 13535
+- Brutna tecken visas när fragment skapas på koreanska. 13489
+- Det går inte att klicka på koreanska bilagor på Experience Manager Guides Review-skärmen. 13436
 - Karttitel klipps av på skärmen för granskning och samarbete, utan möjlighet att visa hela titeln. (13012)
 
 ### Översättning
 
-- Godkänn automatiskt fungerar inte ibland, och undantag uppstår om ett felaktigt värde är aktiverat **Översättningsstatus**. (13607)
+- Godkänn automatiskt fungerar inte ibland, och undantag uppstår om ett felaktigt värde är aktiverat **Översättningsstatus**. 13607
 - Baslinjen som exporteras från översättningsinstrumentpanelen misslyckas och öppnas inte på målspråket. (12993)
 
 ## Känt fel

@@ -1,13 +1,12 @@
 ---
 title: Konfigurera visning av UUID-baserade länkar
 description: Lär dig hur du konfigurerar visning av UUID-baserade länkar
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera visning av UUID-baserade länkar {#id2035G20M0QN}
 
@@ -33,4 +32,3 @@ Utför följande steg för att visa den relativa sökvägen eller UUID för det 
 
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

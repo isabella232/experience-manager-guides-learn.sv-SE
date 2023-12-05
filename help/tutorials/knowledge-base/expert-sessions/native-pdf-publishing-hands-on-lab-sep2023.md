@@ -1,10 +1,9 @@
 ---
 title: Inbyggd PDF-publicering"Hands on lab - BYOS" - Interaktiv inlärning
 description: Denna 'Hands-on Lab - BYOS'-session erbjuder en djupgående undersökning av Native PDF publishing. Utforska olika användningsexempel, utnyttja viktiga funktioner och samarbeta direkt med experter på Adobe för att ta itu med just era problemuttalanden och krav.
-exl-id: 55c276d8-8611-4050-be5f-7f9854f94228
-source-git-commit: befe892ce4c9a6643593469bdc7fdd808ceb0c31
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---

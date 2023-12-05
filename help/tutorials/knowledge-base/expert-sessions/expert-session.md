@@ -1,10 +1,9 @@
 ---
 title: Översikt över expertsessioner
 description: Landningssida för expertsession.
-exl-id: 8a4bac35-95c0-4348-90c0-3e6e5ca9de59
-source-git-commit: a23ede21ab8060f629be0466d127d9c1f01f9b5d
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -13,7 +12,7 @@ ht-degree: 0%
 
 Våra månatliga expertsessioner är utformade för att hjälpa våra kunder och partners att få värdefulla insikter i AEM. Varje session fokuserar på viktiga funktioner eller uppdateringar i AEM guider, där vårt expertteam vägleder dig genom InDesign och Out.
 
-Under dessa sessioner kommer våra experter att diskutera ingående funktioner, funktioner och fördelar med vår produkt och dela med dig av praktiska tips och bästa metoder som hjälper dig att få ut så mycket som möjligt av den. Oavsett om du är nybörjare eller erfaren proffs får du med dessa sessioner den information du behöver för att maximera användningen av AEM.
+Under dessa sessioner kommer våra experter att diskutera ingående funktioner, funktioner och fördelar med vår produkt och dela med dig av praktiska tips och bästa metoder som hjälper dig att få ut så mycket som möjligt av den. Oavsett om du är ny användare eller ett erfaret proffs får du med dessa sessioner den information du behöver för att maximera användningen av AEM.
 
 Vi förstår att din tid är värdefull och det är därför vi har gjort dessa expertsessioner enkla och tillgängliga för dig. Du kan registrera dig för den kommande sessionen genom att gå till [forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/ct-p/aem-xml-documentation) eller via det e-postmeddelande som har skickats till dig.
 

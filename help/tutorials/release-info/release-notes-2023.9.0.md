@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides, versionen från september 2023
 description: Läs om felkorrigeringarna och hur du uppgraderar till september 2023-utgåvan av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 3f79dfbc747b3d2efc05608d05df6ba45e53d877
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1458'
-ht-degree: 2%
+source-wordcount: '1486'
+ht-degree: 0%
 
 ---
 
@@ -89,7 +89,7 @@ Utför följande steg för att indexera det befintliga innehållet och använd d
 
 1. Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika banor för mappningarna för att indexera dem. Som standard indexeras alla mappningar \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
-1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
+1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel: `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
 
@@ -112,7 +112,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.09.0 | 3.1-uuid 17 | 3.1-uuid 17 | 2.3 | 2.3 |
+| 2023.09.0 | 3.1-uuid 17 | 3.1-uuid 17 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -129,37 +129,37 @@ De buggar som har åtgärdats i olika områden listas nedan:
 ### Redigering
 
 - Ämnesfilen är inte olåst i Web Editor, även om alternativet Lås upp fil och alternativet Spara inte är markerat. (12558)
-- Det går inte att checka ut en fil i webbredigeraren, trots att du har valt alternativet NEJ för att ignorera ändringarna före incheckning. (12557)
+- Det går inte att checka ut en fil i webbredigeraren, trots att du har valt alternativet NEJ för att ignorera ändringarna före incheckning. 12557
 - Verktygstipsen för filikonerna Lås och lås upp i huvudverktygsfältet i Web Editor är inte konsekventa med de ikoner som visas i databasvyn.(12555)
 - Alternativet Avbryt utcheckning och Lås upp visas för en fil i Web Editor som ännu inte är utcheckad i Kartvyn. (12556)
-- Det går inte att markera PDF-resurserna i de befintliga topicref-länkarna. (12477).
-- I databasvyn kan du inte dra ämnen eller bilder efter att du har använt funktionerna Sök/Filter. (12396)
+- Det går inte att markera PDF-resurserna i de befintliga topicref-länkarna. (12477)
+- I databasvyn kan du inte dra ämnen eller bilder efter att du har använt funktionerna Sök/Filter. 12396)
 - Sökresultaten inaktiveras på panelen Sök och ersätt när du har öppnat en sökad fil. (12142)
 - Siffertangenten&quot;8&quot; på sidotangentbordet fungerar inte i redigeraren AEM stödlinjer. (12106)
 
-- Prefixet dupliceras i förhandsgranskningsläget i Web Editor. (13133)
-- `Choicetable` rader visas inte eller kan inte markeras. (12616)
-- Webbredigeraren genererar valideringsfel i specifika scenarier när du skapar ett ämne med ett anpassat schema. (12576)
+- Prefixet dupliceras i förhandsgranskningsläget i Web Editor. 13133
+- `Choicetable` rader visas inte eller kan inte markeras. 12616
+- Webbredigeraren genererar valideringsfel i specifika scenarier när du skapar ett ämne med ett anpassat schema. 12576
 - Mallreferenser för dynamiska ämnen skapar inte någon kopia i innehållsmappen när en karta från mappningsmallen skapas. (12150)
 - Sökrutan i DITA-kartor har ingen stängningsknapp. (11867)
 - När du sparar långa filer i Web Editor `DirtyChecker` genererar ett undantag med en lång stackspårning och fyller i loggfilerna. (11860)
-- För att skapa DITA-avsnitt krävs behörigheten Ta bort på motsvarande mappnod, men kartan kan skapas med skrivbehörighet. (11706)
+- För att skapa DITA-avsnitt krävs behörigheten Ta bort på motsvarande mappnod, men kartan kan skapas med skrivbehörighet. 11706
 - I webbredigeraren visas en felaktig titel när det finns ett snedstreck. (10949)
 
 
 ### Förvaltning
 
 - Fältet &quot;title&quot; i DITA-mappningens metadataegenskaper skrivs över av `<title>` kartelementet. (10702)
-- Innehållsreferens är bruten kopiering och inklistring av DITA-filer när ämnets ID inte är detsamma som GUID. (12614)
+- Innehållsreferens är bruten kopiering och inklistring av DITA-filer när ämnets ID inte är detsamma som GUID. 12614
 - I dynamiska baslinjer hämtas inte listan med etiketter från de direkta referenserna för arbetskopian av en DITA-karta. (11917)
 
 ### Publicering
 
 - Publiceringen misslyckas när namnet på en förinställning för inbyggda PDF ändras. (12564)
-- När du duplicerar en inbyggd PDF-mall dupliceras den till standardmallplatsen i stället för den angivna anpassade mallplatsen. (12563)
+- När du duplicerar en inbyggd PDF-mall dupliceras den till standardmallplatsen i stället för den angivna anpassade mallplatsen. 12563
 
-- PDF | Om du tar med flera xrefs, utvidgas texten utanför kolumnbredden. (13004)
-- PDF | När ämnet och titeln har samma ID leder det till en felaktig generering av PDF-utdata. (12644)
+- PDF | Om du tar med flera xrefs, utvidgas texten utanför kolumnbredden. 13004
+- PDF | När ämnet och titeln har samma ID leder det till en felaktig generering av PDF-utdata. 12644
 - PDF | Lägga till en utdataklass till en överordnad `<topicref>` -elementet i en DITA-karta och använder en anpassad stil på klassen Output. Formateringen används på element i ämnesbrödtexten, inklusive avsnittsrubriker.(12166)
 - Inkrementell publicering fungerar inte om en DITA-karta har flera diavalrefs. (12117)
 - AEM | När du skapar en karta med nyckelord som pekar på ett ämne som en variabel och lägger till processing-role=resource-only skapas en del oväntade sidor. (12099)
@@ -167,16 +167,12 @@ De buggar som har åtgärdats i olika områden listas nedan:
 - AEM Sites | DITA-kartan med topichad i navigeringsrubriken (med tecken som inte stöds) leder till felaktiga sidadresser. (11978)
 - PDF | Problem inträffar med stöd för topichead/topicmeta/navtitle i Frontmatter och Backmatter. (11969)
 - PDF | Det tar tid att generera PDF för stora dokument. (11955)
-- PDF | Om du byter namn på en förinställning genereras ett NullPointerException-fel när du genererar utdata i PDF. (11889)
+- PDF | Om du byter namn på en förinställning genereras ett NullPointerException-fel när du genererar utdata i PDF. 11889
 - The `<conref>` -innehåll visas inte i utdata från PDF. (11131)
-- Ett extra blanksteg läggs till i `<div>` element vid växling mellan redigeringsvyn för författare och källa i sidlayoutredigeraren. (10750)
-- Innehållet som replikeras i AEM Cloud Manager visas inte i Publish-instansen. (9564)
+- Ett extra blanksteg läggs till i `<div>` element vid växling mellan redigeringsvyn för författare och källa i sidlayoutredigeraren. 10750)
+- Innehållet som replikeras i AEM Cloud Manager visas inte i Publish-instansen. 9564
 
 ### Översättning
 
 - Processen att exportera en namnändrad baslinje för en översättning misslyckas. (12993)
 - Den översatta filens namn visas i stället för källfilens namn. (11630)
-
-
-
-

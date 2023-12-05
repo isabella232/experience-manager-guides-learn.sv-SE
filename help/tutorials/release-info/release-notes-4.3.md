@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides 4.3.0
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till 4.3.0-utgåvor av Adobe Experience Manager Guides
-source-git-commit: b53f76c2f0234c1ef6c65d954311e3f8c980ffe2
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 4%
+source-wordcount: '1086'
+ht-degree: 0%
 
 ---
 
@@ -61,8 +61,8 @@ Mer information finns i *Tekniska krav* i guiden Installera och konfigurera Adob
 
 | Frigör | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- |--- |--- |
-| 4.3.0 (ej UUID) | 2.3-regular-5 | 2.3-regular-5 | 1.6 | 1.6 |
-| 4.3.0 (UID) | 3.0-uuid-4 | 3.0-uuid-3 | 2.3 | 2.3 |
+| 4.3.0 (ej UUID) | 2.3-regular-5 | 2.3-regular-5 | 1,6 | 1,6 |
+| 4.3.0 (UID) | 3.0-uuid-4 | 3.0-uuid-3 | 2,3 | 2,3 |
 |  |  |   |
 
 ## Åtgärdade problem
@@ -72,24 +72,24 @@ De buggar som har åtgärdats i olika områden listas nedan:
 ### Redigering
 
 - Ämnesfilen är inte olåst i Web Editor, även om alternativet Lås upp fil och alternativet Spara inte är markerat. (12558)
-- Det går inte att checka ut en fil i webbredigeraren, trots att du har valt alternativet NEJ för att ignorera ändringarna före incheckning. (12557)
+- Det går inte att checka ut en fil i webbredigeraren, trots att du har valt alternativet NEJ för att ignorera ändringarna före incheckning. 12557
 - Verktygstipsen för filikonerna Lås och lås upp i huvudverktygsfältet i Web Editor är inte konsekventa med de ikoner som visas i databasvyn.(12555)
 - Alternativet Avbryt utcheckning och Lås upp visas för en fil i Web Editor som ännu inte är utcheckad i Kartvyn. (12556)
-- Det går inte att markera PDF-resurserna i de befintliga topicref-länkarna. (12477).
-- När du sammanfogar och delar i tabeller genererar AEM 4.2 ytterligare tabellceller. (11793)
-- I databasvyn kan du inte dra ämnen eller bilder efter att du har använt funktionerna Sök/Filter. (12396)
+- Det går inte att markera PDF-resurserna i de befintliga topicref-länkarna. (12477)
+- När du sammanfogar och delar i tabeller genererar AEM 4.2 ytterligare tabellceller. 11793
+- I databasvyn kan du inte dra ämnen eller bilder efter att du har använt funktionerna Sök/Filter. 12396)
 - Sökresultaten inaktiveras på panelen Sök och ersätt när du har öppnat en sökad fil. (12142)
 - Siffertangenten&quot;8&quot; på sidotangentbordet fungerar inte i redigeraren AEM stödlinjer. (12106)
-- Textbundna attribut/visningsattribut visas inte i layoutvyn i Web Editor. (12498)
+- Textbundna attribut/visningsattribut visas inte i layoutvyn i Web Editor. 12498
 - Konfigurationen för det globala profilanvändargränssnittet matchar inte mappprofilen. (11970)
 - Innehållsreferenser bryts när DITA-filer kopieras och klistras in. (11959)
-- Det går inte att redigera innehållsfragment i kolumnvyn med AEM stödlinjer installerade. (7342)
+- Det går inte att redigera innehållsfragment i kolumnvyn med AEM stödlinjer installerade. 7342
 - Innehållet förloras när en unwrapped xref finns under en underordnad elementtagg. (12532)
 - Arbetsflödet för godkännande fungerar inte när dokumentläget ändras till slutläge från filegenskaperna på den högra panelen. (11026)
 - Resursgränssnitt | I listvyn går det inte att sammanfoga de överlagrade kolumnerna. (11528)
 - Keyref är inte löst i kartvyn. (11490)
 - Den övre menyn visas inte när du navigerar i XML-redigeraren. (10868)
-- `conref` in ph-tagg | Den visade bläddringsdialogrutan är felaktig. (9481)
+- `conref` in ph-tagg | Den visade bläddringsdialogrutan är felaktig. 9481
 - Lokala länkar till andra element kan inte lösas i Web Editor. (8790)
 - Funktionen Matches() fungerar inte i funktionen Schematron. (11224)
 
@@ -98,7 +98,7 @@ De buggar som har åtgärdats i olika områden listas nedan:
 ### Förvaltning
 
 - Fältet &quot;title&quot; i DITA-mappningens metadataegenskaper skrivs över av `<title>` kartelementet. (10702)
-- När du försöker öppna eller uppdatera versionen av ämnen i baslinjen körs inläsaren &quot;Hämtning av information från servern&quot; oavbrutet.(12478)
+- När du försöker öppna eller uppdatera versionen av ämnen i baslinjen körs inläsaren &quot;Hämtning av information från servern&quot; oavbrutet.12478
 
 
 ### Granska
@@ -108,11 +108,11 @@ De buggar som har åtgärdats i olika områden listas nedan:
 ### Publicering
 
 - Publiceringen misslyckas när namnet på en förinställning för inbyggda PDF ändras. (12564)
-- När du duplicerar en inbyggd PDF-mall dupliceras den till standardmallplatsen i stället för den angivna anpassade mallplatsen. (12563)
-- PDF | Språkmetadata kan inte anges i det genererade PDF för att uppfylla kraven i WCAG 2.0. (12407)
+- När du duplicerar en inbyggd PDF-mall dupliceras den till standardmallplatsen i stället för den angivna anpassade mallplatsen. 12563
+- PDF | Språkmetadata kan inte anges i det genererade PDF för att uppfylla kraven i WCAG 2.0. 12407
 - Publicering till AEM misslyckas när temporära filer från pod som kan ha uppdaterats eller startats om läses. (12113)
 - PDF | Anpassade attribut sprids inte till motorn för temporära HTML eller PDF. (DXML-12005)
-- PDF | Java OutOfMemoryError inträffar vid publicering av stort innehåll. (11789)
+- PDF | Java OutOfMemoryError inträffar vid publicering av stort innehåll. 11789
 - PDF | Xref skriver ut innehållet i href-ämnesrubriken i stället för Xref-etiketten. (11322)
 - PDF | Det går inte att spara mallinställningarna för PDF. (10751)
 - PDF | Texten sträcker sig utanför kolumnbredden och inkluderar flera xrefs. (10876)

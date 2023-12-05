@@ -1,13 +1,12 @@
 ---
 title: Översätta innehåll
 description: Lär dig hur du översätter innehåll
-source-git-commit: 4d54c52b8771b0c5a40018cfec3a6586029af2fb
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
-
 
 # Översätta innehåll {#id181GB0400UI}
 
@@ -82,4 +81,3 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 | PID | Egenskapsnyckel | Egenskapsvärde |
 |---|------------|--------------|
 | `com.adobe.fmdita.config.ConfigManager` | `postprocess.temporary.langcopies` | Boolean: <br> - Om du inte vill köra efterbearbetningen av de temporära filerna ska du *Inaktivera* \( false\) **Post-process language copies** alternativ.<br> - Om du vill köra efterbearbetningen av de temporära filerna ska du *Aktivera* \( true\) **Post-process language copies** alternativ.<br> **Standardvärde**: false |
-

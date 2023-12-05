@@ -1,13 +1,12 @@
 ---
 title: REST API för arbete med DITA-kartor
 description: Läs mer om REST API för DITA-kartor
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 
 ---
-
 
 # REST API för arbete med DITA-kartor {#id175UB30E05Z}
 
@@ -43,4 +42,3 @@ En GET-metod som hämtar exportstatus för en DITA-karta med alla dess beroenden
 |Namn|Typ|Obligatorisk|Beskrivning| |—|—|—|—| |`jobId`|String|Ja|Jobb-ID som hämtades när exportjobbet initierades.|
 
 **Svarsvärden**: |Element|Beskrivning| |—|—| |`status`|Exportjobbets status. Möjliga alternativ är: STARTAD, MISSLYCKAD, INPROGRESS, LYCKAD, SAKNAD, BORTTAGEN| |`jobId`|Jobbets unika ID. Kan användas senare för att fråga efter status.| |`errorMessage`|Felmeddelandet för jobbet vid fel \(om statusen är MISSLYCKAD, SAKNAS eller DELETED\).| |`filePath`|Filsökvägen för ZIP. Den visas endast när jobbet har slutförts och statusen har LYCKATS. Detta kan användas för att hämta ZIP-filen.|
-

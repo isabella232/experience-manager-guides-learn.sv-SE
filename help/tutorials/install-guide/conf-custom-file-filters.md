@@ -1,13 +1,12 @@
 ---
 title: Konfigurera filter för filbläddringsdialogrutan
 description: Lär dig hur du konfigurerar filter för filbläddringsdialogrutan
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera filter för filbläddringsdialogrutan {#id20CIL7009GN}
 
@@ -25,7 +24,7 @@ Gör så här för att lägga till egna filfiltreringsalternativ i dialogrutan f
 
    `/apps/fmdita/xmleditor/ui_config.json`
 
-1. Navigera till och öppna `ui_config.json` i `apps` nod för redigering.
+1. Navigera till och öppna `ui_config.json` i `apps` för redigering.
 
 1. I `ui_config.json` lägger du till definitionen av de filter som du vill lägga till.
 
@@ -65,5 +64,3 @@ Gör så här för att lägga till egna filfiltreringsalternativ i dialogrutan f
    När du startar dialogrutan för filbläddring visas de filteralternativ som är konfigurerade i filen ui\_config.json.
 
    ![](assets/file-browse-custom-filters.png){width="300" align="left"}
-
-

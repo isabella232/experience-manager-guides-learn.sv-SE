@@ -1,10 +1,9 @@
 ---
 title: Lägg till en ny anpassad åtgärdsknapp i webbredigeringsverktygsfältet
 description: Lär dig hur du lägger till en ny anpassad knapp i webbredigeringsverktygsfältet och anropar javascript för att anpassa funktionen.
-exl-id: 118c4545-9eda-4e1e-a224-843767e49b5b
-source-git-commit: ed3adf0cf8006c76461de34c6a2a4ba38d8b3406
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -18,7 +17,7 @@ Om du lägger till en åtgärdsknapp i en webbredigerare utför du följande ste
 - Registrera knappens klickningshändelse i webbadministratören så att användaren kan utföra en åtgärd när han/hon klickar på den
 
 
-## Implementera genom att ta ett exempel
+## Implementera med ett exempel
 
 Låt oss förstå detta med ett exempel där en författare vill lägga till en Jira-referens till ett avsnitt i ämnesprolog. Prolog-avsnittet med inbäddat Jira reference-id kan se ut så här:
 
@@ -43,7 +42,7 @@ som sedan ska lägga till &quot;change-request-id&quot; i prologgen:
 
 ### Lägg till knappen i webbredigeraren genom att konfigurera den i *ui_config.json*
 
-Använd mappprofilerna för att kontrollera *ui_config.json* under fliken Konfiguration i XML-redigeraren och lägg till JSON för knappkonfiguration i önskat avsnitt i verktygsfältsgruppen
+Använd mappprofilerna för att kontrollera *ui_config.json* under fliken Konfiguration i XML-redigeraren och lägg till JSON för knappkonfiguration i önskat avsnitt i gruppen&quot;verktygsfält&quot;
 
 ```
 {
@@ -60,11 +59,11 @@ Använd mappprofilerna för att kontrollera *ui_config.json* under fliken Konfig
 
 ### Hantera on-click-händelsen för den nya knappen
 
-    OBS! Steg som anges nedan är tillgängliga som paket som bifogas detta inlägg
+    Obs! Steg som nämns nedan är tillgängliga som paket som bifogas i det här inlägget
 
 
 - När du har sparat mappprofilen skapar du en&quot;cq:ClientLibraryFolder&quot; under en projektkatalog (kan finnas under */apps*) och lägg till egenskaper enligt skärmbilden nedan:
-   ![Klientbiblioteksinställningar för webbeditor](../../../assets/authoring/webeditor-add-customtoolbarbutton-clientlibrarysettings.png)
+  ![Klientbiblioteksinställningar för webbeditor](../../../assets/authoring/webeditor-add-customtoolbarbutton-clientlibrarysettings.png)
 
 ```
 This example uses "coralui3" library to show a dialog as it is used in the Javascript sample we presented.

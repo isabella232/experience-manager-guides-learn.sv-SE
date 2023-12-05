@@ -1,7 +1,7 @@
 ---
 title: Konfigurera rubrik för ikonerna för att checka in och checka ut
 description: Lär dig hur du konfigurerar titeln för ikoner för in- och utcheckning
-source-git-commit: bb4b875864b31197437a944ded5862bbf937bc29
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 0%
@@ -29,4 +29,3 @@ I AEM kan du konfigurera titeln för ikonerna Checka in och Checka ut i webbredi
    ```
 
 1. Spara filen och överför den.
-

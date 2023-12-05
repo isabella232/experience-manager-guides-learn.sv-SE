@@ -1,10 +1,10 @@
 ---
 title: Versionsinformation | Uppgraderingsinstruktioner och åtgärdade fel i Adobe Experience Manager Guides, juli 2023-versionen
 description: Lär dig mer om felkorrigeringarna och hur du uppgraderar till juli 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 6061d35b86790e24c6f55e4ccac5dbb40c43aae8
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 1%
+source-wordcount: '926'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Mer information om de nya funktionerna och förbättringarna finns i [Nyheter i 
 Uppgradera din nuvarande AEM Guides as a Cloud Service genom att utföra följande steg:
 
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2023.7.0.314.
+2. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2023.7.0.314.
 3. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till juli 2023-utgåvan av AEM Guides as a Cloud Service.
 
 ## Steg för att aktivera utlösaren för ett skript via en serverlet
@@ -63,19 +63,19 @@ http://<aem_domain>/var/dxml/executor-locks/translation-map-upgrade/168319003288
 
 Utför följande steg för att efterbearbeta befintligt innehåll och använda den nya brutna länkrapporten:
 
-1. (Valfritt) Uppdatera `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` till ett större värde (vilket värde som helst som är större än antalet resurser, till exempel 200 000) och sedan distribuera om.
+1. (Valfritt) Om det finns fler än 100 000 dita-filer i systemet uppdaterar du `queryLimitReads` under `org.apache.jackrabbit.oak.query.QueryEngineSettingsService` till ett större värde (vilket värde som helst som är större än antalet resurser, till exempel 200 000) och sedan distribuera om.
 
    - Använd instruktionerna i *Konfigurationsåsidosättningar* i Installera och konfigurera Adobe Experience Manager Guides as a Cloud Service för att skapa konfigurationsfilen.
    - Ange följande (egenskap) information i konfigurationsfilen för att konfigurera alternativet queryLimitReads:
 
      | PID | Egenskapsnyckel | Egenskapsvärde |
      |---|---|---|
-     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Värde: Standardvärde 20000: 100000 |
+     | org.apache.jackrabbit.oak.query.QueryEngineSettingsService | queryLimitReads | Värde: 200000 Standardvärde: 100000 |
 
-1. Kör en serverbegäran (med korrekt autentisering) - `http://<server:port>//bin/guides/reports/upgrade`.
+1. Kör en POST-begäran till servern (med korrekt autentisering) - `http://<server:port>//bin/guides/reports/upgrade`.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port>/bin/guides/reports/upgrade?jobId= {jobId}`
-(Exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
+(Till exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42_678`)
 
 1. När jobbet är klart svarar den tidigare GETEN med framgång. Om jobbet misslyckas av någon anledning kan fel ses från serverloggarna.
 
@@ -87,9 +87,9 @@ Utför följande steg för att efterbearbeta befintligt innehåll och använda d
 
 Utför följande steg för att indexera det befintliga innehållet och använd den nya sök- och ersätt-texten på mappnivå och ämneslista på fliken Rapporter:
 
-1. Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika sökvägar för kartorna för indexering, som standard indexeras alla kartor \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
+1. Kör en POST till servern \(med korrekt autentisering\) - `http://<server:port\>/bin/guides/map-find/indexing`. (Valfritt: Du kan skicka specifika banor för mappningarna för att indexera dem. Som standard indexeras alla mappningar \|\| Exempel: `https://<Server:port\>/bin/guides/map-find/indexing?paths=<map\_path\_in\_repository\>`)
 
-1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel, `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
+1. Du kan också skicka en rotmapp för att indexera DITA-mappningarna för en viss mapp (och dess undermappar). Till exempel: `http://<server:port\>/bin/guides/map-find/indexing?root=/content/dam/test`. Observera, att om både sökvägsparametern och rotparametern skickas, beaktas bara sökvägsparametern.
 
 1. API:t returnerar ett jobId. Om du vill kontrollera jobbets status kan du skicka en GET-förfrågan med jobb-ID till samma slutpunkt - `http://<server:port\>/bin/guides/map-find/indexing?jobId=\{jobId\}`\(Exempel: `http://localhost:8080/bin/guides/map-find/indexing?jobId=2022/9/15/7/27/7dfa1271-981e-4617-b5a4-c18379f11c42`\)
 
@@ -112,7 +112,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2023.07.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2.3 | 2.3 |
+| 2023.07.0 | 2.9-uuid-2 | 2.9-uuid-2 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -122,16 +122,14 @@ De buggar som har åtgärdats i olika områden listas nedan:
 
 ### Redigering
 
-- Textbundna attribut/visningsattribut visas inte i layoutvyn i Web Editor. (12498)
+- Textbundna attribut/visningsattribut visas inte i layoutvyn i Web Editor. 12498
 - Ladda upp filer i Sygen Plugin för AEM Guides fungerar inte i molntjänster om du har! i filnamnet. (12207)
 - DITA-kartpublicering är mycket långsam med redigerbar mall. (12075)
 - Konfigurationen för det globala profilanvändargränssnittet matchar inte mappprofilen. (11970)
 - Innehållsreferenser bryts när DITA-filer kopieras och klistras in. (11959)
-- Det går inte att redigera innehållsfragment i kolumnvyn med AEM stödlinjer installerade. (7342)
+- Det går inte att redigera innehållsfragment i kolumnvyn med AEM stödlinjer installerade. 7342
 - Innehållet förloras när en unwrapped xref finns under en underordnad elementtagg. (12532)
 
 ### Publicering
 
 - Arbetsflödet för godkännande fungerar inte när dokumentläget ändras till slutläge från filegenskaperna på den högra panelen. (11026)
-
-

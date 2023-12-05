@@ -1,10 +1,9 @@
 ---
 title: Publicering i PDF - Exempel på lärande (del 1)
 description: Med inbyggda PDF-publiceringsmotorn kan du styra dokumentets innehållslayout samtidigt som du kan ändra önskade avsnitt efter behov med hjälp av lättuppdaterat CSS, HTML och JavaScript.
-exl-id: e6fcb2cb-4dfe-4aa7-8c84-f11759898c41
-source-git-commit: 63c2103c18b2a6da450247b1ee6b676a00d5a510
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---

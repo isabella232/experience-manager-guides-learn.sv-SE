@@ -1,10 +1,9 @@
 ---
 title: Generera utdata av FrameMaker dokument
 description: Lär dig hur du genererar utdata av FrameMaker-dokument i AEM för att publicera dem i PDF, HTML 5 och EPUB-format.
-exl-id: d3cef05b-8574-4e86-ab94-c9b880fb9c29
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -31,4 +30,3 @@ Informationen i följande avsnitt är till för utgivare som ska använda arbets
 >[!IMPORTANT]
 >
 > Funktioner som beskrivs i det här avsnittet är endast tillgängliga för användare med utgivare eller administratörsbehörighet.
-

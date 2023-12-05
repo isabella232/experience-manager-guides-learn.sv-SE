@@ -1,13 +1,12 @@
 ---
 title: Generera element-ID automatiskt
 description: Lär dig generera element-ID automatiskt
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
-
 
 # Generera element-ID automatiskt {#id20CIL40016I}
 
@@ -25,7 +24,6 @@ Om du vill konfigurera ett mönster för automatiskt genererat ID skapar du en k
 
 | PID | Egenskapsnyckel | Egenskapsvärde |
 |---|------------|--------------|
-| `com.adobe.fmdita.xmleditor.config.XmlEditorConfig` | `xmleditor.pattern` | Standardvärdet för det här fältet är inställt på `${elementName}_${id}`. The `${elementName}` värdet ersätts med elementets namn. The `${id}` variabeln genererar sekventiellt nummer för elementet. Om du till exempel tilldelar styckeelementet ett automatiskt genererat ID:n får det första stycket i avsnittet eller dokumentet ett ID som p\_1, nästa stycke får p\_2 osv. I ett annat dokument startar dock ID-genereringsprocessen om. Det innebär att i ett annat dokument kan ID:n som p\_1 och p\_2 tilldelas styckeelement. **Standardvärde**: ``${elementName}_${id}`` |
+| `com.adobe.fmdita.xmleditor.config.XmlEditorConfig` | `xmleditor.pattern` | Standardvärdet för det här fältet är `${elementName}_${id}`. The `${elementName}` värdet ersätts med elementets namn. The `${id}` variabeln genererar sekventiellt nummer för elementet. Om du till exempel tilldelar styckeelementet ett automatiskt genererat ID:n får det första stycket i avsnittet eller dokumentet ett ID som p\_1, nästa stycke får p\_2 osv. I ett annat dokument startar dock ID-genereringsprocessen om. Det innebär att i ett annat dokument kan ID:n som p\_1 och p\_2 tilldelas styckeelement. **Standardvärde**: ``${elementName}_${id}`` |
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

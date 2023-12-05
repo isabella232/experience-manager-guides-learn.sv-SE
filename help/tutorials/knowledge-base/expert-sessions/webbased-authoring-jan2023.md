@@ -1,10 +1,9 @@
 ---
 title: Skapa webbaserat innehåll
 description: Lär dig hur du skapar strukturerat innehåll med webbredigeraren.
-exl-id: ab051c14-5c1e-4685-89e8-3c90dff9ea5e
-source-git-commit: 3d12389dbd7458a74bb9b9ec488e83bf39c8c9bf
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -42,14 +41,13 @@ Under den här sessionen får du lära dig mer om följande:
 
 - **Användarhandbok** - [Skapa innehåll](https://help.adobe.com/en_US/xml-documentation-for-adobe-experience-manager/index.html#t=DXML-master-map/authoring-content.html)
 
-- **Community-forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
+- **Community Forum** - Om du vill ha sessionsspecifika communityinteraktioner på Experience League går du till  [AEM Guides Forum](https://experienceleaguecommunities.adobe.com/t5/experience-manager-guides/bd-p/xml-documentation-discussions).
 
 >[!NOTE]
 >
 > Funktionerna som visas under den här sessionen finns i följande versioner av AEM.
 > - On-prem 4.1.3 eller senare
-> - Cloud Services 2211 och senare
-
+> - Cloud Service 2211 och senare
 
 ## Kontakta oss
 

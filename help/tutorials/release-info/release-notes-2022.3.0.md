@@ -1,11 +1,10 @@
 ---
-title: Versionsinformation för [!DNL AEM Guides], mars 2022-utgåvan
+title: Versionsinformation för [!DNL AEM Guides], mars 2022-versionen
 description: Marsutgåva av [!DNL Adobe Experience Manager Guides] as a Cloud Service
-exl-id: 885edbb5-dfe4-4bdc-bb66-0df64addb094
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 1%
+source-wordcount: '777'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 1%
 
 Uppgradera din nuvarande [!DNL Adobe Experience Manager Guides] as a Cloud Service (kallas senare *[!DNL AEM Guides]as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö du vill uppgradera.
-1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.3.123.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2022.3.123.
 1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till mars-versionen av [!DNL AEM Guides] as a Cloud Service.
 
 ## Kompatibilitetsmatris
@@ -27,7 +26,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 | FMPS | FrameMaker |
 | --- | --- |
 | Inte kompatibel | 2020 uppdatering 4 och senare |
-|  |  |
+| | |
 
 
 ### Syrgasanslutning
@@ -45,7 +44,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 [!DNL AEM Guides] as a Cloud Service March-versionen innehåller baslinjefunktionen som är integrerad i Web Editor. Nu kan du skapa baslinjer från Web Editor och använda dem för att publicera eller översätta ämnen från olika versioner.
 
-Obs! Uppdatera den senaste versionen för uppgraderat system **ui_config.json** för mappprofil.
+Obs! Om du har uppgraderat ett system måste du uppdatera det senaste **ui_config.json** för mappprofil.
 
 Använd den här funktionen om du vill skapa en baslinje med en specifik version av de ämnen som är tillgängliga ett visst datum och en viss tid. Du får även API-stöd för att skapa eller uppdatera en baslinje med en etikett som definierats för en ämnesversion.
 
@@ -63,7 +62,7 @@ Obs! Fliken Baslinje på kartkontrollpanelen är dold som standard. Administrat�
 
 Följande förbättringar är nu tillgängliga vid uppdatering av webbläsaren i Web Editor:
 
-* Nu har du stöd för att uppdatera webbläsaren medan du redigerar innehållet i webbredigeraren. Om du trycker på ikonen för uppdatering av webbläsaren när en eller flera filer med osparade ändringar öppnas för redigering, uppmanas du att spara filerna eller avbryta uppdateringsåtgärden.
+* Nu har du stöd för att uppdatera webbläsaren medan du redigerar innehållet i Web Editor. Om du trycker på ikonen för uppdatering av webbläsaren när en eller flera filer med osparade ändringar öppnas för redigering, uppmanas du att spara filerna eller avbryta uppdateringsåtgärden.
 
 * Även när du uppdaterar webbläsaren behålls vyerna från den vänstra panelen och den högra panelen.
 
@@ -81,13 +80,13 @@ Publiceringsprocessen har förbättrats ytterligare i mars-versionen av [!DNL AE
 
 De buggar som har åtgärdats i olika områden listas nedan:
 
-* Det går inte att lägga till förgrundselement, bakgrundselement i en bokmapp med hjälp av redigerarens redigeringsvy. (7652)
-* Referensträdet bryts när ett ämne har tagits bort och en flyttningsåtgärd har utförts. (8804)
-* Undantag tas emot när innehållet visas efter att en resurs har överförts. (3638)
-* Ett fel inträffar när filer vars överordnade mapp har specialtecken i filnamnet öppnas i Syrgas (med **Redigera i syrgas** ). (8918)
-* The **Sök i databas** går inte att hitta och markera DITA-kartan i XML-redigeraren. (8796)
-* Filtreringen ger inte rätt resultat när flera attribut läggs till i innehållet i XML-redigeraren. (8795)
-* Ett fel inträffar när en användare läggs till som administratör i mappprofilen när användar-ID:t är numeriskt. (8908)
+* Det går inte att lägga till förgrundselement, bakgrundselement i en bokmapp med hjälp av redigerarens redigeringsvy. 7652
+* Referensträdet bryts när ett ämne har tagits bort och en flyttningsåtgärd har utförts. 8804
+* Undantag tas emot när innehållet visas efter att en resurs har överförts. 3638
+* Ett fel inträffar när filer vars överordnade mapp har specialtecken i filnamnet öppnas i Syrgas (med **Redigera i syrgas** -knapp). (8918)
+* The **Sök i databas** går inte att hitta och markera DITA-kartan i XML-redigeraren. 8796
+* Filtreringen ger inte rätt resultat när flera attribut läggs till i innehållet i XML-redigeraren. 8795
+* Ett fel inträffar när en användare läggs till som administratör i mappprofilen när användar-ID:t är numeriskt. 8908
 
 ## Kända fel
 

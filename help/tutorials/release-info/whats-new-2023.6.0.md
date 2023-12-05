@@ -1,10 +1,9 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides, juni 2023-versionen
 description: Läs om de nya och förbättrade funktionerna i juni 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
-exl-id: ff6ac4a4-76a3-4b41-9da7-6a888de0eca5
-source-git-commit: f1292c94d77b724467d9eede59687bf0041cbce5
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1205'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -38,7 +37,7 @@ Mer information om alternativmenyn för en fil finns i **Databasvy** funktionsbe
 
 Nu kan du lägga till en vattenstämpel i utdata från PDF i dokumentet som ännu inte är godkänt. Den här vattenstämpeln visas inte om du genererar PDF för dokumentet i dokumentet Godkänt. Du kan till exempel lägga till en vattenstämpel i Utkast för PDF.
 
-Mer information finns i [Lägga till en vattenstämpel i utdata från PDF för utkast till dokument](../native-pdf/use-javascript-content-style.md#watermark-draft-document).
+Mer information finns i [Lägga till en vattenstämpel i PDF för utkast till dokument](../native-pdf/use-javascript-content-style.md#watermark-draft-document).
 
 ### Stöd för språkvariabler
 
@@ -50,13 +49,13 @@ Du kan lägga till språkvariablerna eller den lokaliserade versionen av etikett
 Du kan använda språkvariablerna för att definiera lokaliserade etiketter för element som Anteckning, Varning och Varning. Du kan uppdatera värdet för dessa variabler på ett eller flera språk, och sedan hämtas det lokaliserade värdet automatiskt i utdata från PDF.
 Du kan till exempel visa etiketten Note i PDF-utdata på följande sätt:
 
-* Engelska: Anteckning
+* Engelska: Note
 * Franska: Remarque
 * Tyska: Hinweis
 
 #### Språkvariabler i utdatamallarna
 
-Om du ville skapa PDF-utdata på olika språk var du tvungen att skapa olika PDF-mallar med lokaliserad text för varje språk. Med funktionen för språkvariabler behöver du bara skapa mallen en gång. För statisk text som du behöver lokalisera kan du sedan skapa motsvarande språkvariabler och använda dem i mallen.
+Om du vill skapa PDF-utdata på olika språk måste du skapa olika PDF-mallar med lokaliserad text för varje språk. Med funktionen för språkvariabler behöver du bara skapa mallen en gång. För statisk text som du behöver lokalisera kan du sedan skapa motsvarande språkvariabler och använda dem i mallen.
 Du kan skapa språkvariabler för längre text, till exempel en hel mening eller till och med ett stycke. Du kan också använda format och formatera dessa språkvariabler med HTML-kod.
 
 Mer information finns i [Stöd för språkvariabler](../native-pdf/native-pdf-language-variables.md).
@@ -74,7 +73,7 @@ I AEM kan du nu även välja metadataegenskaper för dina resurser och lägga ti
 >
 > AEM har också stöd för metadataegenskaperna för dina DITA-kartor.
 
-Mer information finns i [Lägg till fält och metadata](../native-pdf/design-page-layout.md#add-fields-metadata).
+Mer information finns i [Lägga till fält och metadata](../native-pdf/design-page-layout.md#add-fields-metadata).
 
 
 ## Förbättringar av schematron
@@ -108,7 +107,7 @@ Nu kan du enkelt navigera från webbredigeraren till AEM startsida.
 * Klicka på **Stödlinjer** ikon (![](assets/aem-guides-icon.png) ), för att gå tillbaka till AEM.
 
 
-Mer information finns i [AEM](../user-guide/web-editor-launch-editor.md#id2056BG00RZJ).
+Mer information finns i [AEM navigeringssida](../user-guide/web-editor-launch-editor.md#id2056BG00RZJ).
 
 ## Hantera hierarkiska definitioner av ämnesdefinitioner och uppräkningar
 

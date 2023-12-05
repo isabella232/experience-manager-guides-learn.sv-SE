@@ -1,10 +1,9 @@
 ---
 title: PDF | Generering av utdata från PDF
 description: Lär dig hur du använder publicering i PDF, skapar och genererar en förinställning för utdata i PDF, hämtar tillfälliga filer efter att utdata från PDF samt använder språkvariabler i AEM.
-exl-id: ec3d59b7-1dda-4fd1-848e-21d8a36ff5e4
-source-git-commit: 1305c960df98553edbd1fb65c8f6e8da7c232087
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3259'
 ht-degree: 0%
 
 ---
@@ -120,7 +119,7 @@ Om du vill använda en variabel måste du definiera den i `${<variable>}` format
 En av metadataegenskaperna som definieras i`jcr:content/metadata` noden är
 `dc:title`. Du kan ange `${dc:title}`och titelvärdet används i det slutliga resultatet.
 
-Du kan använda en enskild variabel eller en kombination av variabler för att definiera metadata. Till exempel, `${dc:title} ${dc:docstate}`. Du kan också använda kombinationen av en variabel och en sträng.  Till exempel, `View ${dc:title} in ${dc:language}`.
+Du kan använda en enskild variabel eller en kombination av variabler för att definiera metadata. Till exempel: `${dc:title} ${dc:docstate}`. Du kan också använda kombinationen av en variabel och en sträng.  Till exempel: `View ${dc:title} in ${dc:language}`.
 
 Använd språkvariabler för att definiera det lokaliserade värdet för metadataegenskaper. Beroende på vilket språk du väljer hämtas det lokaliserade värdet automatiskt i utdata från PDF. Du kan till exempel skriva ut&quot;Författare&quot; som metadatavärde på engelska och&quot;Autorin&quot; på tyska.
 
@@ -139,7 +138,7 @@ Används för att ange sidlayouter och ange alternativ för sidvisning för utda
 | **Sidvisning** | Använd sidvisningen för sidvyn som visar hur PDF visas när den öppnas. Välj en önskad vy i listrutan Sidvisning. <br><ul><li> **Standard**  Visar som standardinställningen för PDF-visningsprogrammet på en användares dator.  <br> <li> **Enkelsidig vy** Visar en sida i taget.   <br> <li> **Enkelsidig rullning** Visar en sida i en kontinuerlig lodrät kolumn.  <br> <li> **Dubbelsidig vy** Visar tvåsidigt uppslag sida vid sida. .<br> <li> **Dubbelsidig rullning** Visar tvåsidigt uppslag sida vid sida med kontinuerlig rullning. </ul> |
 | **Zooma** | Välj det här alternativet om du vill ändra storlek på sidvyn som visar hur PDF visas när den öppnas.  <br><ul><li> **Standard** Visas enligt standardinställningen för PDF-visningsprogrammet på användarens dator    <br> <li> **100 %** Gör att sidan visas i sin faktiska storlek.     <br> <li> **Anpassa till sida** Sidbredden och sidhöjden anpassas till dokumentrutan. .<br> <li> **Anpassa sidbredd** Gör att sidans bredd fyller ut dokumentfönstrets bredd.  <br> <li> **Anpassa sidhöjd** Gör att sidans höjd fyller ut dokumentrutans höjd. </ul> |
 
-**Dokumentskydd**
+**Säkerhet**
 
 Protect PDF genom att lägga till begränsningar för att öppna och läsa filen. Använd alternativen nedan för att undvika obehörig åtkomst.
 

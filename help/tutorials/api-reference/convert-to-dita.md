@@ -1,13 +1,12 @@
 ---
 title: REST API:er för konverteringsarbetsflöde
 description: Läs mer om REST API:er för konverteringsarbetsflöde
-source-git-commit: 8707acf3ba01b7488eea6597c434da73a901d037
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
-
 
 # REST API:er för konverteringsarbetsflöde {#id175UB30E05Z}
 
@@ -42,4 +41,3 @@ En GET-metod som konverterar InDesigner till DITA-format.
 **Parametrar**: |Namn|Typ|Obligatorisk|Beskrivning| |—|—|—|—| |``operation``|String|Yes|Namnet på den åtgärd som anropas. Värdet för den här parametern är ``idml2dita``. <br> **Obs!** Värdet är inte skiftlägeskänsligt.| |`inputFile`|String|Yes|Absolut sökväg för källfilerna i AEM InDesign-databasen.| |`destPath`|String|Ja|Absolut sökväg till målplatsen där de konverterade DITA-filerna ska sparas.| |`createRev`|Boolean|Ja|Ange om en version av filerna skapas \( `true`\) vid det angivna målet eller inte \( `false`\). Detta gäller endast när målplatsen innehåller en befintlig version av de konverterade filerna.|
 
 **Svarsvärden**: Returnerar ett HTTP 200-svar \(Klart\).
-

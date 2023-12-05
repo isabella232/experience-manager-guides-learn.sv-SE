@@ -1,10 +1,9 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, mars 2023-utgåvan
 description: Mars-utgåvan av Adobe Experience Manager Guides as a Cloud Service
-exl-id: b3fe7cc8-1654-467a-ab18-6e6912855ecc
-source-git-commit: 4bb9ce2690a2e76a5b2a93b65db7dd452e15d295
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '149'
 ht-degree: 0%
 
 ---
@@ -19,7 +18,7 @@ Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problem
 
 ## Öppna och spela upp video- eller ljudfiler i Web Editor
 
-AEM Guides innehåller nu en funktion för att öppna och spela upp ljud- och videofiler i Web Editor. Du kan ändra volymen eller vyn för videon. Du kan även välja att **Hämta**, ändra **Uppspelningshastighet**, eller visa **Bild-i-bild**.
+AEM Guides innehåller nu en funktion för att öppna och spela upp ljud- och videofiler i Web Editor. Du kan ändra volymen eller vyn för videon. Du kan även välja att **Ladda ned**, ändra **Uppspelningshastighet**, eller visa **Bild-i-bild**.
 
 <img src="assets/video-web-editor.png" alt="spela upp video" width="600">
 

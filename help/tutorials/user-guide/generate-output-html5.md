@@ -1,10 +1,9 @@
 ---
 title: Använd HTML5
 description: Lär dig hur du skapar en förinställning för HTML5 från webbredigeraren och kartpanelen. Konfigurera förinställningen för HTML5 i AEM.
-exl-id: c484289b-92aa-4790-b62b-650ecbe1b86b
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1153'
 ht-degree: 0%
 
 ---

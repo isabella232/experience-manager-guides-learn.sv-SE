@@ -1,13 +1,12 @@
 ---
 title: Hantera taggar för DITA-filer i AEM
 description: En kort artikel om hur du hanterar cq:taggar i AEM Guides
-source-git-commit: 06f7adfd4fbbc3b51c6d6c08689697c20c8ce8fe
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
-
 
 # Lägga till, ta bort och hantera taggar i DITA-innehåll
 
@@ -23,7 +22,7 @@ Taggning är en inbyggd AEM och AEM kan hjälpa dig att skapa och konfigurera de
 
 ## Lägga till, ta bort och hantera taggar i DITA-innehåll
 
-**Alla taggar som har skapats i AEM cq: taggar kan läggas till, tas bort och hanteras för ditt DITA-innehåll**
+**Alla taggar som skapas i AEM cq: -taggar kan läggas till, tas bort och hanteras för DITA-innehållet**
 
 Du kan lägga till taggar i DITA-innehåll på flera olika sätt, men den här artikeln kommer att koncentreras till AEM webbredigeringsgränssnittet för stödlinjer.
 
@@ -33,7 +32,7 @@ Du kan lägga till taggar i DITA-innehåll på flera olika sätt, men den här a
 2. Dubbelklicka på diamap och öppna i kartvyn
 3. Gå till fliken Hantera
 4. Gå till alternativet Metadata på fliken Hantera
-5. Alla dina direkta och indirekta redigeringsfiler läses in här.
+5. Alla dina direkta och indirekta redigeringsfiler visas här.
 6. Markera en eller flera filer och klicka på ikonen Hantera. Här kan du lägga till taggar till markerade filer.
 Du kan också ta bort befintliga taggar som är gemensamma för markerade filer.
 
@@ -60,4 +59,3 @@ Du kan också ta bort befintliga taggar som är gemensamma för markerade filer.
 
 
 **Kontakta respektive CSM för andra frågor**
-

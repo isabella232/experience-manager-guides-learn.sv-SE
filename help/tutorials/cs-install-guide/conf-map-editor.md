@@ -1,13 +1,12 @@
 ---
 title: Ange avancerad kartredigerare som standard
 description: Lär dig hur du anger den avancerade kartredigeraren som standard
-source-git-commit: 4f15166b1b250578f07e223b0260aacf402224be
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
-
 
 # Ange avancerad kartredigerare som standard {#id181AI0003PN}
 
@@ -19,11 +18,10 @@ Använd instruktionerna i [Konfigurationsåsidosättningar](download-install-add
 
 | PID | Egenskapsnyckel | Egenskapsvärde |
 |---|------------|--------------|
-| `com.adobe.fmdita.xmleditor.config.XmlEditorConfig` | ``fmdita.hide.oldmapeditor`` | Boolean \(true/false\). Om du vill använda den avancerade kartredigeraren som standard anger du egenskapen till true.<br> **Standardvärde**: false |
+| `com.adobe.fmdita.xmleditor.config.XmlEditorConfig` | ``fmdita.hide.oldmapeditor`` | Boolean \(true/false\). Om du vill använda den avancerade kartredigeraren som standard anger du den här egenskapen till true.<br> **Standardvärde**: false |
 
 >[!NOTE]
 >
 > När en författare skapar en kartfil och väljer att öppna den för redigering startas som standard redigeringsprogrammet för grundläggande karta. När alternativet Redigera har valts för en kartfil i resursgränssnittet öppnas den också i den grundläggande kartredigeraren.
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

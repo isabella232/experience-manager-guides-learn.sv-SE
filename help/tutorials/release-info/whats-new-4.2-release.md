@@ -1,16 +1,16 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides 4.2
 description: Läs om de nya och förbättrade funktionerna i 4.2-utgåvorna av Adobe Experience Manager Guides
-source-git-commit: a54ada55dad4ff8da8eee3dccb5ad9028b4cdc9e
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2423'
 ht-degree: 0%
 
 ---
 
 # Nyheter i version 4.2 av Adobe Experience Manager Guides (februari 2023)
 
-I den här artikeln beskrivs de nya och förbättrade funktionerna i version 4.2 av Adobe Experience Manager Guides (senare kallat *AEM stödlinjer*).
+I den här artikeln beskrivs de nya och förbättrade funktionerna i version 4.2 av Adobe Experience Manager Guides (kallas senare *AEM stödlinjer*).
 
 Mer information om uppgraderingsinstruktioner, kompatibilitetsmatris och problemen som åtgärdas i den här versionen finns i [Versionsinformation](release-notes-4.2.md) artikel.
 
@@ -46,7 +46,7 @@ Nu har AEM ett förbättrat användargränssnitt som hjälper dig att granska de
 * När du använder filtren filtreras kommentarerna på den högra panelen efter markeringen, och antalet kommentarer på den vänstra panelen uppdateras därefter.
 
 
-<img alt="granskningsuppgift" src="assets/comment-pop-up-panel.png" width="600">
+<img alt="granskningsåtgärd" src="assets/comment-pop-up-panel.png" width="600">
 
 
 Mer information finns i *Granska ämnen och kartor* i guiden Använda Adobe Experience Manager-stödlinjer.
@@ -70,7 +70,7 @@ Nu kan du kontrollera skillnaderna mellan den valda versionen och den senaste ö
 
 **Skicka versionsetiketten till målversionen**
 
-AEM kan du skicka källfilens etikett till målfilen. Det gör det enklare att identifiera källversionen för den översatta filen.
+Med AEM stödlinjer kan du skicka källfilens etikett till målfilen. Det gör det enklare att identifiera källversionen för den översatta filen.
 
 <img alt="översättningsetiketter" src="assets/translation-pass-source-label.png" width="600">
 
@@ -88,7 +88,7 @@ Mer information finns i *Översätta dokument från Web Editor* i guiden Använd
 
 ## Generera utdata i olika format från Web Editor
 
-Nu kan du enkelt generera utdata för dina ämnen eller DITA-kartor från Web Editor. Du kan konfigurera olika utdataförinställningar som AEM Site, PDF, HTML5, JSON (ett headless output-format) och anpassade utdata. Använd dessa för att generera respektive utdata. Du kan definiera attribut i dina DITA-avsnitt och sedan använda villkorsförinställningen för att tillämpa ett villkor när du publicerar utdata. Du kan också använda publiceringsfunktionen för baslinje för att selektivt publicera en specifik version av DITA-kartan eller ditt DITA-avsnitt.
+Nu kan du enkelt generera utdata för dina ämnen eller DITA-kartor från Web Editor. Du kan konfigurera olika utdataförinställningar som AEM Site, PDF, HTML5, JSON (ett headless output-format) och anpassade utdata. Använd dessa för att generera respektive utdata. Du kan definiera attribut i dina DITA-avsnitt och sedan använda villkorsförinställningen för att tillämpa ett villkor när du publicerar utdata. Du kan också använda publiceringsfunktionen Baslinje för att selektivt publicera en specifik version av DITA-kartan eller -avsnittet.
 
 **Hantera förinställningar för utdata för global profil och mappprofil**
 
@@ -107,7 +107,7 @@ Dessa globala förinställningar visas under **Utdata** -fliken för alla relate
 
 Nu kan du söka efter filer på en karta som innehåller viss text. Den sökta texten markeras i filerna. Du kan också ersätta det sökda ordet eller frasen med ett annat ord eller en annan fras i filerna. Välj **Ersätt enstaka förekomst** ikonen som ersätter den aktuella förekomsten och **Ersätt alla i filen** om du vill ersätta alla förekomster i den markerade filen. Du kan välja **Ersätt alla** om du vill ersätta alla förekomster av den sökta termen i alla filer.
 
-<img src="assets/map-find-replace.png" alt="sök efter ersättning" width="600">
+<img src="assets/map-find-replace.png" alt="sök och ersätt" width="600">
 
 
 Som standard är alternativen **Checka ut filen före ersättning** och **Skapa ny version efter ersättning** är markerade, så en fil checkas ut innan du ersätter texten och en ny version skapas när texten har ersatts. Du kan också söka efter strängen i de indirekta referenserna på DITA-kartan. Som standard är detta inaktiverat, så sökningen utförs endast på direktreferenser.
@@ -151,7 +151,7 @@ Nu kan du skapa dynamiska baslinjer baserat på etiketter med hjälp av AEM stö
 
 ## Ta bort och duplicera filer från databaspanelen
 
-Nu kan du enkelt ta bort filer (en fil i taget) från **Alternativ** menyn för den valda filen från databaspanelen. En bekräftelse visas innan filen tas bort. Om det inte finns någon referens till filen från någon annan fil tas den bort och ett meddelande om att åtgärden lyckades visas.
+Nu kan du enkelt ta bort filer (en fil i taget) från **Alternativ** den valda filens meny från databaspanelen. En bekräftelse visas innan filen tas bort. Om det inte finns någon referens till filen från någon annan fil tas den bort och ett meddelande om att åtgärden lyckades visas.
 
 <img src="assets/options-menu-repo-view-file-level.png" alt="menyn för filalternativ " width="500">
 

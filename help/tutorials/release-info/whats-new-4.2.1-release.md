@@ -1,9 +1,9 @@
 ---
 title: Versionsinformation | Nyheter i Adobe Experience Manager Guides 4.2.1
 description: Läs om de nya och förbättrade funktionerna i 4.2.1-utgåvorna av Adobe Experience Manager Guides
-source-git-commit: 6a1c6383f827bcd1e388290a793b69d372b7e7ce
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Nu kan du enkelt navigera från webbredigeraren till AEM navigeringssida.
 * Klicka på **Stödlinjer** ikon (![](assets/aem-guides-icon.png) ), för att gå tillbaka till AEM.
 
 
-Mer information finns i [AEM](../user-guide/web-editor-launch-editor.md#id2056BG00RZJ).
+Mer information finns i [AEM navigeringssida](../user-guide/web-editor-launch-editor.md#id2056BG00RZJ).
 
 ## Avancerat stöd för metadata vid PDF-publicering
 
@@ -62,7 +62,7 @@ Mer information finns i beskrivningen av funktionen Generera en multimedierappor
 
 ## PDF | Ändringsfält för att ange ändrade ämnen i innehållsförteckningen
 
-AEM Guides gör att du snabbt kan identifiera ändrade ämnen i innehållsförteckningen för PDF.  En ändringsbar visas till vänster om de ändrade ämnena i innehållsförteckningen. Du kan klicka på ämnet i innehållsförteckningen och visa detaljerade ändringar.
+AEM Guides gör att du snabbt kan identifiera ändrade ämnen i innehållsförteckningen för PDF.  Det visas ett ändringsfält till vänster om de ändrade ämnena i innehållsförteckningen. Du kan klicka på ämnet i innehållsförteckningen och visa de detaljerade ändringarna.
 
 <img src="assets/change-marker-toc.png" alt="Ändra markör i innehållsförteckning " width="500">
 
@@ -78,7 +78,7 @@ Mer information finns i [Använda anpassade format i fotnoter](../native-pdf/foo
 
 ## Öppna och spela upp video- eller ljudfiler i Web Editor
 
-AEM Guides innehåller nu en funktion för att öppna och spela upp ljud- och videofiler i Web Editor. Du kan ändra volymen eller vyn för videon. Du kan även välja att **Hämta**, ändra **Uppspelningshastighet**, eller visa **Bild-i-bild**.
+AEM Guides innehåller nu en funktion för att öppna och spela upp ljud- och videofiler i Web Editor. Du kan ändra volymen eller vyn för videon. Du kan även välja att **Ladda ned**, ändra **Uppspelningshastighet**, eller visa **Bild-i-bild**.
 
 <img src="assets/video-web-editor.png" alt="spela upp video" width="600">
 

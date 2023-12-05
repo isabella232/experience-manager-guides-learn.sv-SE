@@ -1,13 +1,12 @@
 ---
 title: REST API för att registrera en datakällkoppling
 description: Läs mer om REST API för att registrera en datakällkoppling
-source-git-commit: 8707acf3ba01b7488eea6597c434da73a901d037
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
-
 
 # REST API för att registrera en datakällkoppling {#id236LG0Y0CXA}
 
@@ -24,4 +23,3 @@ En GET-metod som registrerar en datakällkoppling.
 
 **Exempel**:\
 `http://host:4502/bin/guides/v1/konnect/config/register?path=/var/dxml/konnect/jira.json`
-

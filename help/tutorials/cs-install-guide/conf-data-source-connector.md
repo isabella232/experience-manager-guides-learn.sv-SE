@@ -1,13 +1,12 @@
 ---
 title: Konfigurera en datakällanslutning
 description: Lär dig hur du konfigurerar en datakällanslutning
-source-git-commit: fc142d8a6e907fac1321dfd5c2cb9615d523709d
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera en datakällanslutning
 
@@ -274,11 +273,10 @@ Andra fält anpassas baserat på den config-klass som valts för att köra anslu
 
 Överför filen till någon plats i AEM Assets.
 
-Till exempel,  `/content/dam/jira.json`
+Till exempel:  `/content/dam/jira.json`
 
 ## Skapa konfiguration med REST API
 
 Du kan registrera konfigurationen med REST API. Mer information finns i *REST API för att registrera en datakällkoppling* i API-referens för Adobe Experience Manager-guider.
 
 När du har konfigurerat datakällan visas kopplingen under panelen Datakällor i Web Editor. Sedan kan du ansluta till datakällan och infoga ett innehållskuvert i dina ämnen. Mer information finns i [Infoga ett innehållssfragment från datakällan](../user-guide/web-editor-content-snippet.md).
-

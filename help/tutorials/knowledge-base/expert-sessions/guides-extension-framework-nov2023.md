@@ -1,9 +1,9 @@
 ---
 title: Extension Framework of AEM Guides - Customize Web-Editor and Review UI
 description: Med hjälp av ramverket för Guides-tillägget kan du anpassa de önskade avsnitten i Granska användargränssnitt eller Webbredigerare med hjälp av JSON, CSS och JavaScript som är enkla att uppdatera.
-source-git-commit: 5ad664296478ed16f6f2d80e79a4812f5ff96f9c
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---

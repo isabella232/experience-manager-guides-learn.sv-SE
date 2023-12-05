@@ -1,13 +1,12 @@
 ---
 title: Användaradministration och -säkerhet
-description: Se hur användaradministration och säkerhet fungerar
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+description: Läs om hur användaradministration och säkerhet fungerar
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
-
 
 # Användaradministration och -säkerhet {#id181AED00G5Z}
 
@@ -39,7 +38,7 @@ I följande tabell visas olika uppgifter och grupper som kan utföra dessa uppgi
 | Skapa DITA-ämne | Ja |   | Ja |
 | Skapa DITA-karta | Ja |   | Ja |
 | Kartsamlingar | Ja |   | Ja |
-| Skapa granskningsuppgift | Ja |   | Ja |
+| Skapa granskningsaktivitet | Ja |   | Ja |
 | Granska ämne[1](#fntarg_1) | Ja | Ja | Ja |
 | Nyckelupplösning | Ja |   | Ja |
 | Öppna i FrameMaker | Ja |   | Ja |
@@ -62,14 +61,14 @@ I följande tabell visas olika uppgifter och grupper som kan utföra dessa uppgi
 | **Tillgängliga funktioner i DITA-kartkonsolen \(fliken Utdata\)** |
 | Visa genererade utdata | Ja |   | Ja |
 | **Tillgängliga funktioner i DITA-kartkonsolen \(fliken Ämnen\)** |
-| Skapa granskningsuppgift | Ja |   | Ja |
+| Skapa granskningsaktivitet | Ja |   | Ja |
 | Redigera | Ja |   | Ja |
 | **Tillgängliga funktioner i DITA-kartkonsolen \(fliken Baslinjer\)** |
 | Skapa |   |   | Ja |
 | Redigera |   |   | Ja |
 | Duplicera |   |   | Ja |
 | Ta bort |   |   | Ja |
-| DITA-kartkonsol \(fliken Rapporter\) | Ja |   | Ja |
+| DITA map console \(Reports tab\) | Ja |   | Ja |
 | **Tillgängliga funktioner i DITA-kartkonsolen \(Villkorsförinställningar\)** |
 | Skapa/redigera villkorsförinställning |   |   | Ja |
 
@@ -93,7 +92,7 @@ Följande lista innehåller rekommendationer och punkter som rör användargrupp
 
    - `/content/output/sites` -\> Läs och skriv
 
-   Du måste ge explicit läs- och skrivbehörighet till utgivaren om du använder någon annan plats än de standardpubliceringsplatser som nämns ovan.
+  Du måste ge explicit läs- och skrivbehörighet till utgivaren om du använder någon annan plats än de standardpubliceringsplatser som nämns ovan.
 
 - Alla användare under *Författare*, *Granskare* och *Utgivare* grupper har läsåtkomst för allt innehåll i DAM.
 
@@ -106,4 +105,3 @@ Följande lista innehåller rekommendationer och punkter som rör användargrupp
 - Om du vill ge en användare behörighet att ändra ett dokumenttillstånd måste du lägga till användaren i avsnittet om tillståndsövergång i dokumentets tillståndsprofil.
 
 [1](#fnsrc_1) If *Författare* och *Utgivare* är inbjudna till en granskning.[2](#fnsrc_2) Beroende på vilka rättigheter användaren har i dokumentets tillståndsprofil.
-

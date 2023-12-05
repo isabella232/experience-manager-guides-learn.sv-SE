@@ -1,13 +1,12 @@
 ---
 title: Anpassa Web Editor
-description: Lär dig hur du anpassar webbredigeraren
-source-git-commit: 419cb49fb122d8cf05f82ed4588fc28eac1b81bd
+description: Lär dig hur du anpassar Web Editor
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
 
 ---
-
 
 # Anpassa Web Editor {#id181AI0003PN}
 
@@ -56,5 +55,3 @@ AEM Guides innehåller en kraftfull Web Editor med vilken dina författare kan s
 - **[Ange avancerad kartredigerare som standard](conf-map-editor.md)**
 
 - **[Inkludera @navtitle-attribut som standard](auto-add-navtitle.md)**
-
-

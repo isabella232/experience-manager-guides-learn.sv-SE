@@ -1,10 +1,9 @@
 ---
-title: Så här lägger du till [!DNL AEM Guides] till [!DNL AEM as a Cloud Service] miljö
+title: Lägga till [!DNL AEM Guides] till [!DNL AEM as a Cloud Service] miljö
 description: Lär dig hur du lägger till [!DNL AEM Guides] till [!DNL AEM as a Cloud Service] miljö
-exl-id: a1e020c2-360c-4d71-b5fd-8179d9ceacda
-source-git-commit: b5e64512956f0a7f33c2021bc431d69239f2a088
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
@@ -19,7 +18,7 @@ Om du har köpt [!DNL AEM Guides] as a Cloud Service before March 29, 2022, foll
 
 * Om du börjar om kan du ersätta koden som har genererats av [!UICONTROL Cloud Manager] med koden från nedanstående rapport, som redan har ett XML-plugin-program integrerat: https://github.com/Adobe-TCS/XML-documentation-for-AEMaaCS
 
-* Om du redan har incheckade anpassningar i [!UICONTROL Cloud Manager] Git repo finns i nedanstående rapport med instruktioner om hur du lägger till XML-plugin i din befintliga kod: https://github.com/Adobe-TCS/DoX-Installer-for-AEMaaCS
+* Om du redan har incheckade anpassningar i [!UICONTROL Cloud Manager] git repo, du kan se rapporten nedan för instruktioner om hur du lägger till XML-plugin i din befintliga kod: https://github.com/Adobe-TCS/DoX-Installer-for-AEMaaCS
 
 ## Distribution via Cloud Manager
 

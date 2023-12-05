@@ -1,13 +1,12 @@
 ---
 title: Använd anpassad DITA-OT- och DITA-specialisering
 description: Lär dig hur du använder anpassad DITA-OT- och DITA-specialisering
-source-git-commit: 5ac066bb8db32944abd046f64da11eeb1bdbe467
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '2075'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
-
 
 # Använd anpassad DITA-OT- och DITA-specialisering {#id181GAJ0005Z}
 
@@ -61,8 +60,7 @@ Utför följande steg för att överföra ett anpassat DITA-OT-plugin-program ti
 
    - Kör integratorn \(för att installera det anpassade plugin-programmet\) i ett Mac/Linux OS för att undvika problem med filavgränsare - eftersom Windows och Linux OS har olika filavgränsare är det inbyggda plugin-programmet i Mac/Linux OS kompatibelt med både Windows- och Linux-installationen.
    - Se till att `DITA-OT.ZIP` filen innehåller en mapp med namnet&quot;DITA-OT&quot; som innehåller alla relevanta plugin-program och filer.
-   - Kontrollera att `DITA-OT.ZIP` filen som du skapar är av mimeType: &quot;nt:file&quot; \(motsvarar den primära typen av ZIP-fil när den överförs till AEM\). Använd ett WebDAV-verktyg eller koddistribution för att överföra den här ZIP-filen till önskad sökväg i AEM. \(Använd inte AEM pakethanterare för att distribuera den här ZIP-filen eftersom den inte är ett AEM innehållspaket utan bara en arkivfil.\)
-
+   - Kontrollera att `DITA-OT.ZIP` filen som du skapar är av mimeType: &quot;nt:file&quot; \(detta motsvarar den primära typen av ZIP-fil när den överförs till AEM\). Använd ett WebDAV-verktyg eller koddistribution för att överföra den här ZIP-filen till önskad sökväg i AEM. \(Använd inte AEM pakethanterare för att distribuera den här ZIP-filen eftersom den inte är ett AEM innehållspaket utan bara en arkivfil.\)
    >[!NOTE]
    >
    > Vi rekommenderar att du inte skriver över DITA-OT-standardpaketet. Du bör överföra ditt anpassade DITA-OT-paket som innehåller ditt plugin-program till någon annan plats under `apps` mapp.
@@ -101,22 +99,22 @@ Utför följande steg för att skapa en ny profil och konfigurera den så att de
    | **Profilegenskaper** |
    | Profilnamn | Ange ett unikt namn för den här profilen. |
    | Återanvänd utdata | *\(Valfritt\)* Om din profil baseras på en befintlig profil väljer du det här alternativet. Om du väljer det här alternativet kan du vara säker på att AEM inte extraherar innehållet i DITA-OT-paketet igen och återanvänder det befintliga DITA-OT-paketet. |
-   | Sökväg för profilextrahering | *\(Valfritt\)* Ange sökvägen där DITA-OT finns på disken. Som standard paketerar AEM stödlinjer ett DITA-OT-paket i sin databas och det extraheras på disken på den här sökvägen.<br>**Anteckning** Du kan definiera den här sökvägen med hjälp av en befintlig systemvariabel eller egenskap. Se beskrivningen av [DITA-OT-miljövariabler](#id181NH0YN0AX) för mer information. |
-   | Tilldelad sökväg | \(*Valfritt*\) Ange den sökväg i din innehållsdatabas som den här profilen gäller för. Du kan ange flera platser. |
+   | Sökväg för profilextrahering | *\(Valfritt\)* Ange sökvägen där DITA-OT finns på disken. Som standard paketerar AEM stödlinjer ett DITA-OT-paket i sin databas och det extraheras på disken på den här sökvägen.<br>**Anteckning** Du kan definiera den här sökvägen med hjälp av en befintlig systemvariabel eller systemegenskap. Se beskrivningen av [DITA-OT-miljövariabler](#id181NH0YN0AX) för mer information. |
+   | Tilldelad sökväg | \(*Valfritt*\) Ange den sökväg i din innehållsdatabas som profilen gäller för. Du kan ange flera platser. |
    | **DITA-OT-egenskaper** |
    | DITA-OT-timeout | \(*Valfritt*\) Ange tiden \(i sekunder\) för vilken AEM väntar på ett svar från DITA-OT-plugin-programmet. Om inget svar tas emot under den angivna tiden avbryts publiceringsaktiviteten och aktiviteten flaggas som misslyckad. Felloggarna är också tillgängliga i loggfilen för generering av utdata. <br>Standardvärde: 300 sekunder \(5 minuter\) |
    | DITA-OT PDF argument | Ange kommandoradsargumenten som bearbetas av det anpassade plugin-programmet DITA-OT för att generera utdata från PDF. För alla anpassade DITA-OT-profiler anger du följande kommandoradsargument:`-lib plugins/org.dita.pdf2.fop/lib/` |
-   | DITA-OT AEM argument | \(*Valfritt*\) Ange egna kommandoradsargument som bearbetas av det anpassade DITA-OT-plugin-programmet för att generera AEM platsutdata. |
+   | AEM | \(*Valfritt*\) Ange egna kommandoradsargument som bearbetas av det anpassade DITA-OT-plugin-programmet för att generera AEM platsutdata. |
    | DITA-OT-bibliotekssökvägar | \(*Valfritt*\) Ange ytterligare bibliotekssökvägar för DITA-OT-plugin-programmet. |
    | DITA-OT Bygg XML | \(*Valfritt*\) Ange sökvägen till det anpassade Ant-byggskriptet som paketerats med det anpassade DITA-OT-plugin-programmet. Den här sökvägen är relativ till DITA-OT-katalogen i filsystemet. |
    | DITA-OT Ant Script-mapp | \(Valfritt\) Ange sökvägen till skriptmappen DITA-OT Ant. Den här sökvägen är relativ till DITA-OT-katalogen i filsystemet. |
-   | DITA-OT-miljövariabler | *\(Valfritt\)* Ange miljövariabler som ska överföras till DITA-OT-processen. Som standard lägger AEM stödlinjer till fyra variabler - `ANT_OPTS`, `ANT_HOME`, `PATH`och `CLASSPATH`. <br> Du kan återanvända de befintliga systemmiljövariablerna eller egenskaperna för att skapa nya miljövariabler. Om du till exempel har `JAVA_HOME` systemvariabel som är definierad i ditt system och du vill definiera en ny systemvariabel som kallas `JAVA_BIN` som byggts med `JAVA_HOME`. Sedan kan du lägga till definitionen av `JAVA_BIN` as:<br> `JAVA_BIN= ${JAVA_HOME}/bin` <br> **Anteckning** Du kan också använda Java-systemegenskaper för att skapa miljövariabler. Om AEM startskript till exempel definierar en Java-systemegenskap `java.io.tmpdir` till en tillfällig katalog kan du använda den här egenskapen för att definiera den nya variabeln som: `${java.io.tmpdir}/fmdita/dita_ot`. <br> **Viktigt** Om du vill återanvända en befintlig systemvariabel eller egenskap måste den omslutas av `${}`. |
-   | Skriv över DITA-OT-utdata | *\(Valfritt\)* Om det här alternativet är markerat kan du ange det DITA-OT-paket som finns på din lokala dator för att generera utdata med DITA-OT. Den här konfigurationen ställs in vid aktivering av ConfigManager. <br> Om du vill ange sökvägen till ett DITA-OT-paket som lagras på AEM server avmarkerar du det här alternativet. |
+   | DITA-OT-miljövariabler | *\(Valfritt\)* Ange miljövariabler som ska överföras till DITA-OT-processen. Som standard lägger AEM stödlinjer till fyra variabler - `ANT_OPTS`, `ANT_HOME`, `PATH`och `CLASSPATH`. <br> Du kan återanvända de befintliga systemmiljövariablerna eller egenskaperna för att skapa nya miljövariabler. Om du har `JAVA_HOME` systemvariabel som är definierad i ditt system och du vill definiera en ny systemvariabel som kallas `JAVA_BIN` som byggts med `JAVA_HOME`. Sedan kan du lägga till definitionen av `JAVA_BIN` as:<br> `JAVA_BIN= ${JAVA_HOME}/bin` <br> **Anteckning** Du kan också använda Java-systemegenskaper för att skapa miljövariabler. Om AEM startskript till exempel definierar en Java-systemegenskap `java.io.tmpdir` till en tillfällig katalog kan du använda den här egenskapen för att definiera den nya variabeln som: `${java.io.tmpdir}/fmdita/dita_ot`. <br> **Viktigt** Om du vill återanvända en befintlig systemvariabel eller egenskap måste den omslutas av `${}`. |
+   | Skriv över DITA-OT-utdata | *\(Valfritt\)* Om det här alternativet är markerat kan du ange det DITA-OT-paket som finns på din lokala dator för att generera utdata med DITA-OT. Den här konfigurationen ställs in när ConfigManager aktiveras. <br> Om du vill ange sökvägen till ett DITA-OT-paket som lagras på AEM server avmarkerar du det här alternativet. |
    | AEM DITA-OT Zip Path/ Local DITA-OT Directory Path | Beroende på vad du har valt i Skriv över DITA-OT-utdata anger du den fullständiga sökvägen där den anpassade DITA-OT.zip-filen lagras. Detta kan vara sökvägen i AEM eller det lokala systemet. |
    | DITA-OT-plug-in-sökväg | Sökväg för det anpassade plugin-programmet. Denna plugin integreras automatiskt med DITA-OT-huvudpaketet. |
    | Integrera kataloger | \(*Valfritt*\) Sökväg till de anpassade DTD- och XSD-filerna catalog.xml i AEM. Detta bör endast anges när katalogerna saknas i DITA-OT-paketet. Katalogerna integreras automatiskt med huvudversionen av DITA-OT som ett plugin-program. |
    | Lägg till katalog för system-ID | \(*Valfritt*\) Välj det här alternativet endast om det saknas offentliga ID-poster i katalogen eller om DITA-filerna bara använder de system-ID som är relativa till serversökvägen som de överförs från. |
-   | Tillfällig DITA-OT-sökväg | *\(Valfritt\)* Ange en tillfällig plats där DITA-filer kopieras för bearbetning. Innan DITA-OT bearbetar filer kopieras de på den här tillfälliga platsen. Som standard är den tillfälliga lagringsplatsen: <br> **Anteckning** Du kan definiera den här sökvägen med hjälp av en befintlig systemvariabel eller egenskap. Se beskrivningen av [DITA-OT-miljövariabler](#id181NH0YN0AX) för mer information. |
+   | Tillfällig DITA-OT-sökväg | *\(Valfritt\)* Ange en tillfällig plats där DITA-filer kopieras för bearbetning. Innan DITA-OT bearbetar filer kopieras de på den här tillfälliga platsen. Som standard är den tillfälliga lagringsplatsen: <br> **Anteckning** Du kan definiera den här sökvägen med hjälp av en befintlig systemvariabel eller systemegenskap. Se beskrivningen av [DITA-OT-miljövariabler](#id181NH0YN0AX) för mer information. |
 
    >[!NOTE]
    >
@@ -127,7 +125,7 @@ Utför följande steg för att skapa en ny profil och konfigurera den så att de
 
 >[!NOTE]
 >
-> Du kan exportera den anpassade DITA-profilen som ett paket och överföra den till andra AEM Guides-instanser för att spara tid. Mer information finns i [Bilaga](appendix.md).
+> Du kan exportera den anpassade DITA-profilen som ett paket och överföra den till de andra AEM Guides-instanserna för att spara tid. Mer information finns i [Bilaga](appendix.md).
 
 ## Integrera DITA-specialisering {#id211MB0E00XA}
 
@@ -190,5 +188,4 @@ Följ de här stegen för att skapa en ny profil och konfigurera den så att den
 
 >[!NOTE]
 >
-> Du kan exportera den anpassade DITA-profilen som ett paket och överföra den till andra AEM Guides-instanser för att spara tid. Mer information finns i [Appendix.md](appendix.md).
-
+> Du kan exportera den anpassade DITA-profilen som ett paket och överföra den till de andra AEM Guides-instanserna för att spara tid. Mer information finns i [Appendix.md](appendix.md).

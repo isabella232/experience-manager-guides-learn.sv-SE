@@ -1,13 +1,12 @@
 ---
 title: Konfigurera tillåtna specialtecken
-description: Lär dig hur du konfigurerar tillåtna specialtecken
-source-git-commit: 801c306fa120e7889d4b9428fd5bee2849bf1956
+description: Lär dig konfigurera tillåtna specialtecken
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
 
 ---
-
 
 # Konfigurera tillåtna specialtecken {#id20CIL600035}
 
@@ -42,8 +41,7 @@ Strukturen för `symbols.json` filen förklaras nedan:
 - `"items"`: Detta definierar samlingen av specialtecken i kategorin.
 - `"name": "←", "title": "Left Arrow"`: Detta är definitionen av specialtecknet. Det börjar med `"name"` label, som inte får ändras. Namnet följs av specialtecknet. The `"title"` är namnet eller titeln på specialtecknet som visas som verktygstips för specialtecknet.
 
-   Du kan definiera flera definitioner av specialtecken i en kategori.
+  Du kan definiera flera definitioner av specialtecken i en kategori.
 
 
 **Överordnat ämne:**[ Anpassa Web Editor](conf-web-editor.md)
-

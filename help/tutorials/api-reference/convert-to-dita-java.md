@@ -1,13 +1,12 @@
 ---
 title: Java-baserade API:er för konverteringsarbetsflöde
 description: Läs mer om Java-baserade API:er för konverteringsarbetsflöde
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
-
 
 # Java-baserade API:er för konverteringsarbetsflöde {#id175UB30E05Z}
 
@@ -68,4 +67,3 @@ public static void convertWordToDita(Session session,
 **Parametrar**: |Namn|Typ|Beskrivning| |—|—|—| |`session`|javax.jcr.Session|En giltig JCR-session.| |`inputFile`|String|Absolut sökväg för Word-källfilerna i AEM.| |`destPath`|String|Absolut sökväg till målplatsen där de konverterade DITA-filerna ska sparas.| |`style2tagMap`|String|Absolut sökväg till den formatmappningsfil som ska användas för konvertering.| |`createRev`|Boolean|Ange om en version av filerna skapas \( `true`\) vid det angivna målet eller inte \( `false`\). Detta gäller endast när målplatsen innehåller en befintlig version av de konverterade filerna.|
 
 **Undantag**: Throws `RepositoryException`.
-

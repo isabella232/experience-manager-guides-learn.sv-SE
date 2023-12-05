@@ -1,10 +1,9 @@
 ---
 title: Stödlinjer för Tutorials för Experience Manager
 description: Hitta självstudievideor för Experience Manager Guides (tidigare XML Documentation för Adobe Experience Manager). Lär dig mer om inbyggt DITA-stöd och strukturerad redigering i Experience Manager.
-exl-id: 06dd1b77-1a98-430f-8322-475d4fa4947b
-source-git-commit: 7fa60a962a94ad5011359398cc668f8080859a8c
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -19,22 +18,22 @@ Med [!DNL AEM Guides] kan företag leverera sömlösa och personaliserade upplev
 
 >[!NOTE]
 > 
-> Adobe Experience Manager Guides hette tidigare _XML Documentation för Adobe Experience Manager_. Observera att vissa referenser i dokumentationen fortfarande kan avse tidigare branding men fortfarande gäller för det aktuella erbjudandet.
+> Adobe Experience Manager Guides kallades tidigare _XML Documentation för Adobe Experience Manager_. Observera att vissa referenser i dokumentationen fortfarande kan avse tidigare branding men fortfarande gäller för det aktuella erbjudandet.
 
 ## Nyheter
 
 * **[[!DNL AEM Guides] Komma igång-kurs](../courses/course-1/overview.md)**
 
-   _Lär dig hur du skapar, organiserar, redigerar och publicerar innehåll med [!DNL Adobe Experience Manager Guides]._
+  _Lär dig hur du skapar, organiserar, redigerar och publicerar innehåll med [!DNL Adobe Experience Manager Guides]._
 
 
 * **[[!DNL AEM Guides] Redigering i den inbyggda webbredigeraren](../courses/course-3/overview.md)**
 
-   _Lär dig hur du skapar innehåll med den inbyggda webbredigeraren i  [!DNL Adobe Experience Manager Guides]. Få en fullständig förståelse för användarinställningar, redigeringsinställningar, konfiguration, verktygsfält med mera._
+  _Lär dig hur du skapar innehåll med den inbyggda webbredigeraren i  [!DNL Adobe Experience Manager Guides]. Få en fullständig förståelse för användarinställningar, redigeringsinställningar, konfiguration, verktygsfält med mera._
 
 * **[Generera utdata med [!DNL AEM Guides]](../courses/course-2/overview.md)**
 
-   _Lär dig generera utdata med [!DNL Adobe Experience Manager Guides]. Lär dig mer om olika funktioner för generering av utdata - rapporter, baslinjer, villkor, felsökning, masspublicering och aktivering._
+  _Lär dig generera utdata med [!DNL Adobe Experience Manager Guides]. Lär dig mer om olika funktioner för generering av utdata - rapporter, baslinjer, villkor, felsökning, masspublicering och aktivering._
 
 
 <!--

@@ -1,13 +1,12 @@
 ---
 title: Händelsehanterare efter bearbetning
 description: Läs om händelsehanterare efter bearbetning
-source-git-commit: fad5049962f258bbe59c7d172436d82b3d6cd68f
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Händelsehanterare efter bearbetning {#id175UB30E05Z}
 
@@ -33,4 +32,3 @@ com/adobe/fmdita/postprocess/complete
 ```
 
 **Parametrar**: |Namn|Typ|Beskrivning| |—|—|—| |`path`|String|Sökvägen till filen som utlöste den här händelsen. Det här är vanligtvis den fil som en åtgärd har utförts på.| |`status`|String|Returstatus för åtgärden som utfördes. Möjliga alternativ är: - <br>- LYCKADES: Efterbearbetningen har slutförts. <br>- SLUTFÖRT MED FEL: Efterbearbetningen slutfördes, men med vissa fel. <br>- MISSLYCKADES: Efterbearbetningen misslyckades på grund av ett allvarligt fel.| |`message`|String|Om statusen ÄR SLUTFÖRD MED FEL eller MISSLYCKAD innehåller den här parametern information om felet eller orsaken till felet.| |`operation`|String|Efterbearbetningsåtgärden som utfördes på filen. Möjliga alternativ är:<br>- Tillägg <br>- Uppdatering <br>- Borttagning|
-

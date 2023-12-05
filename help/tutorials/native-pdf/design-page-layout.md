@@ -1,10 +1,9 @@
 ---
 title: Publiceringsfunktion för PDF | Designa en sidlayout
 description: Lär dig hur du utformar sidlayouten för att presentera information i olika delar av PDF.
-exl-id: b4d3bdc4-0d01-46eb-b182-540380220485
-source-git-commit: 5abcc887a24d838caabdf9a34a84ebc851ed4cbf
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '4807'
+source-wordcount: '4825'
 ht-degree: 0%
 
 ---

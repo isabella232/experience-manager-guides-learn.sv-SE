@@ -2,10 +2,9 @@
 title: Konfigurera anpassad DITA-OT i [!DNL AEM Guides]
 description: Lär dig hur du ställer in anpassad DITA-OT i [!DNL Adobe Experience Manager Guides]
 role: Admin
-exl-id: f479c2cf-5b8b-4517-be97-81303468007a
-source-git-commit: 6ae539eff23b1fd5f1d74878b03cf6dd5b20a57d
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '139'
 ht-degree: 0%
 
 ---
@@ -22,9 +21,8 @@ På en hög nivå är stegen:
 + Gör ändringar i DITA-OT som [lägga till nytt plugin-program](https://www.dita-ot.org/dev/topics/plugins-installing.html)eller anpassa befintliga plugin-program (se exempel i avsnittet med relaterade länkar nedan)
 + Överför `DITA-OT.zip` mottagen till `/apps/<project-folder>/dita_resources` (vi rekommenderar att du skapar en anpassad projektmapp)
 + Lägg till DITA-profil via **[!UICONTROL Tools]** > **[!UICONTROL Guides]** > **[!UICONTROL DITA Profiles]** (använd DITA-OT-sökvägen där den anpassade DITA-OT-filen överförs, se skärmbild nedan)
-   ![DITA-profiler](assets/dita-profile.png)
+  ![DITA-profiler](assets/dita-profile.png)
 
 >[!MORELIKETHIS]
 >
 >+ [Anpassa DITA-OT-pluginexempel](https://www.dita-ot.org/dev/topics/pdf-customization.html)
-

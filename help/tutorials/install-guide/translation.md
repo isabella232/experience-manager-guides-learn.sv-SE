@@ -1,39 +1,38 @@
 ---
-title: Översätta innehåll i AEM stödlinjer
+title: Översätta innehåll i AEM
 description: Lär dig hur du översätter innehåll
-source-git-commit: 9fe396dcfd2e3570ec386c958d7d4efdb4d608e5
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '707'
 ht-degree: 0%
 
 ---
-
 
 # Översätta innehåll {#id181GB0400UI}
 
 Automatisera översättning av sidinnehåll, resurser och användargenererat innehåll för att skapa och underhålla flerspråkiga webbplatser. Om du vill automatisera arbetsflöden för översättning integrerar du översättare med AEM och skapar projekt för översättning av innehåll till flera språk. AEM har stöd för arbetsflöden för översättning mellan människor och datorer.
 
-- Översättning: Innehållet skickas till översättningsleverantören och översätts av professionella översättare. När det är klart returneras det översatta innehållet och importeras till AEM. När översättningsleverantören är integrerad med AEM utbyts innehåll automatiskt mellan AEM och översättningsleverantören
+- Översättning till människor: Innehållet skickas till din översättningsleverantör och översätts av professionella översättare. När det är klart returneras det översatta innehållet och importeras till AEM. När översättningsleverantören är integrerad med AEM utbyts innehåll automatiskt mellan AEM och översättningsleverantören
 
-- Maskinöversättning: Maskinöversättningstjänsten översätter ditt innehåll omedelbart
+- Maskinöversättning: Maskinöversättningstjänsten översätter omedelbart ditt innehåll
 
 
 Översättning av innehåll omfattar följande steg:
 
 1. AEM [översättningstjänst](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-tic.html#ConnectingtoaTranslationServiceProvider) och skapa [konfigurationer för översättningsintegreringsramverk](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-tic.html#CreatingaTranslationIntegrationConfiguration).
 
-1. Koppla sidorna på ditt språk till överordnad [översättningstjänst och ramverkskonfigurationer](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-tic.html#ConfiguringPagesforTranslation).
+1. Associera sidorna på din språkinställning med [översättningstjänst och ramverkskonfigurationer](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-tic.html#ConfiguringPagesforTranslation).
 
 1. Identifiera typen av [innehåll att översätta](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-rules.html).
 
-1. [Förbered innehållet för översättning](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-prep.html) genom att skapa det överordnad språket och skapa rotsidorna för språkkopior.
+1. [Förbered innehållet för översättning](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-prep.html) genom att skapa språkinställningarna och skapa rotsidorna för språkkopior.
 
 1. Skapa [översättningsprojekt](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html) för att samla det innehåll som ska översättas och förbereda översättningsprocessen.
 
 1. Använd översättningsprojekt för att [hantera innehållsöversättning](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-manage.html) -processen.
 
 
-När översättningstjänstleverantören inte tillhandahåller någon koppling till AEM stöder AEM manuell export och import av översatt innehåll i XML-format.
+När översättningstjänstleverantören inte tillhandahåller någon koppling till integrering med AEM stöder AEM manuell export och import av översatt innehåll i XML-format.
 
 >[!TIP]
 >
@@ -82,6 +81,7 @@ Baserat på det översättningsarbetsflöde som används i konfigurationen bör 
    - Om du använder mänsklig översättning *Inaktivera* den **Komponentbaserat översättningsarbetsflöde** alternativ.
 
    - Om du använder maskinöversättning *Aktivera* den **Komponentbaserat översättningsarbetsflöde** alternativ.
+
    >[!NOTE]
    >
    > Om du använder översättningskoppling måste du kontrollera att du har konfigurerat anslutningen enligt beskrivningen i *[Konfigurera översättningsintegreringsramverket](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/tc-tic.html)* i AEM.
@@ -116,5 +116,3 @@ Som standard är alternativet för efterbearbetning av tillfälliga filer inakti
    - Om du vill köra efterbearbetningen av de temporära filerna ska du *Aktivera* den **Post-process language copies** alternativ.
 
 1. Klicka **Spara**.
-
-

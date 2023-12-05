@@ -1,10 +1,9 @@
 ---
 title: DITA-kartrapport från kartpanelen
 description: Generera DITA-kartrapporter från kartpanelen i AEM. Lär dig hur du genererar CSV-filen för en DITA-kartrapport.
-exl-id: 8ba1dc83-fa96-4ae0-bfa8-89b5a8949f08
-source-git-commit: 8504a0a52d381044bf1f0d6e7de3585ebecf3a7b
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---

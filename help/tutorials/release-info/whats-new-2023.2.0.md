@@ -1,13 +1,12 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, februari 2023-versionen
 description: Februariversion av Adobe Experience Manager Guides as a Cloud Service
-source-git-commit: 4bb9ce2690a2e76a5b2a93b65db7dd452e15d295
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1426'
 ht-degree: 0%
 
 ---
-
 
 # Nyheter i februari 2023-versionen av Adobe Experience Manager Guides as a Cloud Service
 
@@ -55,7 +54,7 @@ Nu har AEM ett förbättrat användargränssnitt som hjälper dig att granska de
 * När du använder filtren filtreras kommentarerna på den högra panelen efter markeringen, och antalet kommentarer på den vänstra panelen uppdateras därefter.
 
 
-   <img alt="granskningsuppgift" src="assets/comment-pop-up-panel.png" width="600">
+  <img alt="granskningsåtgärd" src="assets/comment-pop-up-panel.png" width="600">
 
 
 
@@ -65,7 +64,7 @@ Nu finns det användarvänliga förbättringar på kontrollpanelen Översättnin
 
 **Skicka versionsetiketten till målversionen**
 
-AEM kan du skicka källfilens etikett till målfilen. Det gör det enklare att identifiera källversionen för den översatta filen.
+Med AEM stödlinjer kan du skicka källfilens etikett till målfilen. Det gör det enklare att identifiera källversionen för den översatta filen.
 
 <img alt="översättningsetiketter" src="assets/translation-pass-source-label.png" width="600">
 
@@ -86,14 +85,14 @@ Vissa referenser på översättningsinstrumentpanelen kanske pågår. Nu finns d
 
 Nu kan du enkelt generera utdata för dina ämnen eller DITA-kartor från Web Editor. Du kan konfigurera olika utdataförinställningar som AEM Site, PDF, HTML5, JSON (ett headless output-format) och anpassade utdata. Du kan sedan använda dessa för att generera respektive utdata.
 
-Du kan definiera attribut i dina DITA-avsnitt och sedan använda villkorsförinställningen för att tillämpa ett villkor när du publicerar utdata. Du kan också använda publiceringsfunktionen för baslinje för att selektivt publicera en specifik version av DITA-kartan eller ditt DITA-avsnitt.
+Du kan definiera attribut i dina DITA-avsnitt och sedan använda villkorsförinställningen för att tillämpa ett villkor när du publicerar utdata. Du kan också använda publiceringsfunktionen Baslinje för att selektivt publicera en specifik version av DITA-kartan eller -avsnittet.
 
 
 ## Söka efter och ersätta text på mappningsnivå
 
 Med AEM stödlinjer kan du söka efter filer på en karta som innehåller viss text. Den sökta texten markeras i filerna. Nu kan du även ersätta det sökda ordet eller frasen med ett annat ord eller en annan fras i alla filer. Du kan välja **Ersätt alla** ikonen till höger överst i listan om du vill ersätta alla förekomster av den sökta termen i alla filer.
 
-<img src="assets/map-find-replace.png" alt="sök efter ersättning" width="600">
+<img src="assets/map-find-replace.png" alt="sök och ersätt" width="600">
 
 ## Ta bort och duplicera filer från databaspanelen
 
@@ -138,7 +137,6 @@ Nu kan du formatera sidmarkören i fotnoterna. Du kan till exempel lägga till h
 
 ## PDF | Ändringsfält för att ange ändrade ämnen i innehållsförteckningen
 
-AEM Guides gör att du snabbt kan identifiera ändrade ämnen i innehållsförteckningen för PDF.  En ändringsbar visas till vänster om de ändrade ämnena i innehållsförteckningen. Du kan klicka på ämnet i innehållsförteckningen och visa detaljerade ändringar.
+AEM Guides gör att du snabbt kan identifiera ändrade ämnen i innehållsförteckningen för PDF.  Det visas ett ändringsfält till vänster om de ändrade ämnena i innehållsförteckningen. Du kan klicka på ämnet i innehållsförteckningen och visa de detaljerade ändringarna.
 
 <img src="assets/change-marker-toc.png" alt="Ändra markör i innehållsförteckning " width="500">
-

@@ -1,11 +1,10 @@
 ---
 title: Versionsinformation | Adobe Experience Manager Guides as a Cloud Service, oktober 2022-versionen
 description: Oktober-versionen av Adobe Experience Manager Guides as a Cloud Service
-exl-id: 38638080-625c-49c3-9e54-56cc23831546
-source-git-commit: 67ba514616a0bf4449aeda035161d1caae0c3f50
+source-git-commit: 880cd344ceb65ea339be699ebcad41c0d62e168a
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 2%
+source-wordcount: '491'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +14,7 @@ ht-degree: 2%
 
 Uppgradera din nuvarande Adobe Experience Manager Guides as a Cloud Service (kallas senare *AEM stödlinjer as a Cloud Service*) genom att utföra följande steg:
 1. Ta en titt på Cloud Servicens Git-kod och växla till den gren som är konfigurerad i Cloud Servicens pipeline för den miljö som du vill uppgradera.
-1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Services Git-kod till 2022.10.183.
+1. Uppdatera `<dox.version>` egenskap i `/dox/dox.installer/pom.xml` fil med dina Cloud Service Git-kod till 2022.10.183.
 1. Genomför ändringarna och kör Cloud Servicens pipeline för att uppgradera till oktober-versionen av AEM Guides as a Cloud Service.
 
 ## Kompatibilitetsmatris
@@ -27,7 +26,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 | FMPS | FrameMaker |
 | --- | --- |
 | Inte kompatibel | 2020 uppdatering 4 och senare |
-|  |  |
+| | |
 
 *Originalplan och villkor skapade i AEM stöds i FMPS-versioner från och med 2020.2.
 
@@ -35,7 +34,7 @@ I det här avsnittet visas kompatibilitetsmatrisen för de program som stöds av
 
 | AEM stödlinjer som en Cloud-release | Syrgasanslutningsfönster | Syrgasanslutning Mac | Redigera i syrgasfönster | Redigera i Syrgas Mac |
 | --- | --- | --- | --- | --- |
-| 2022.10.0 | 2.7.13 | 2.7.13 | 2.3 | 2.3 |
+| 2022.10.0 | 2.7.13 | 2.7.13 | 2,3 | 2,3 |
 |  |  |  |  |
 
 
@@ -64,9 +63,9 @@ De buggar som har åtgärdats i olika områden listas nedan:
 * PDF | Fel uppstod vid borttagning av ämnen som bara innehåller resurser från utdata från PDF. (10554)
 * PDF | Tomma nyckelrutor visas i utdata från PDF. (10553)
 * PDF | `navtitle` for `topichead` inte respekteras. (10509)
-* PDF | Stöd krävs för amd64 JDK-varianter. (10465)
+* PDF | Stöd krävs för amd64 JDK-varianter. 10465
 * PDF | Det går inte att dölja ämnen som ligger före varandra från innehållsförteckningen. (10355)
 * PDF | Om du startar om sidnumret i kapitellayouten startas numreringen slumpmässigt från slutet av föregående kapitel. (10154)
-* Chrome-webbläsare | Skärmen blir tom när du drar och släpper element från gränssnittet. Om du till exempel drar ett villkor från villkorspanelen. (10524)
+* Krom webbläsare | Skärmen blir tom när du drar och släpper element från gränssnittet. Om du till exempel drar ett villkor från villkorspanelen. (10524)
 * Nodegenskaper tas bort efter att en resurs har kopierats och klistrats in. (10053)
-* Vid klickning  **Stäng** -användare omdirigerades till resurser - upplevelsen har korrigerats för att ta användare till AEM hemsida. (9654)
+* Vid klickning  **Stäng** -användare omdirigerades till resurser - upplevelsen har korrigerats för att ta användare till AEM hemsida. 9654
