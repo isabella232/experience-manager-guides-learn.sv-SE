@@ -2,14 +2,14 @@
 title: Videosjälvstudiekurser för [!DNL Adobe Experience Manager Guides]
 description: Se videosjälvstudiekurser om [!DNL Adobe Experience Manager Guides], AEM XML Add-on, AEM XML Plugin, AEM DoX och AEM Dox.
 exl-id: 4066431b-0838-45a6-b6b1-e366f210eb8d
-source-git-commit: 6a35536d55bec04d69d1c296b75b55f034f70186
+source-git-commit: 28aa657e4ab0bb1297469ea60f4b4f87ad07c961
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
-# Videosjälvstudiekurser för [!DNL Adobe Experience Manager Guides] {#overview}
+# Videor om användarhandböcker för AEM
 
 Titta på detta space för videobaserade kurser för [!DNL Adobe Experience Manager Guides].
 
