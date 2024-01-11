@@ -1,16 +1,16 @@
 ---
 user-guide-title: Självstudiekurser om Adobe Experience Manager Guides
 user-guide-description: En samling videor om användarhandböcker om Adobe Experience Manager.
-breadcrumb-title: Videor om användarhandböcker för AEM
-source-git-commit: 6a35536d55bec04d69d1c296b75b55f034f70186
+breadcrumb-title: Självstudiekurser om AEM Guides
+source-git-commit: b78894069aa2b1279365d716332b5f6e2e3be865
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 13%
+source-wordcount: '127'
+ht-degree: 14%
 
 ---
 
 
-# [!DNL Adobe Experience Manager Guides] självstudier {#videos}
+# Tutorials för [!DNL Adobe Experience Manager Guides] {#videos}
 
 + [[!DNL AEM Guides] Videor](overview.md)
 + Komma igång med [!DNL AEM Guides] {#getting-started}
