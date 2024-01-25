@@ -1,6 +1,6 @@
 ---
 user-guide-title: Självstudiekurser om Adobe Experience Manager Guides
-user-guide-description: En samling videor om användarhandböcker om Adobe Experience Manager.
+user-guide-description: En samling videor om Adobe Experience Manager Guides.
 breadcrumb-title: Självstudiekurser om AEM Guides
 source-git-commit: b78894069aa2b1279365d716332b5f6e2e3be865
 workflow-type: tm+mt
